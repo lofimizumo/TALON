@@ -11,6 +11,7 @@
 | 1 | [x] | [x] | REVISE_MAJOR |
 | 2 | [x] | [x] | REVISE_MAJOR |
 | 3 | [x] | [x] | REVISE_MAJOR |
+| 4 | [x] | — | (no supervisor_review) |
 
 ## Paths
 

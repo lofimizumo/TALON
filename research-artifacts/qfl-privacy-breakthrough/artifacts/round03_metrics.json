@@ -2822,11 +2822,11 @@
         "sparse_fraction": 0.25,
         "sparse_observed_rows": 20,
         "assignment_overlap_sparse": 1.0,
-        "t1p_mse": 0.3862592174261691,
+        "t1p_mse": 0.4212482906423943,
         "gard_sparse_cooccurrence_mse": 0.20277777351291976,
         "hybrid_best_blend": 0.0,
         "hybrid_best_mse": 0.20277777351291976,
-        "gard_t1p_mean_anchor_mse": 0.195822730932518
+        "gard_t1p_mean_anchor_mse": 0.1958227308153842
       },
       {
         "seed": 7,
@@ -2835,11 +2835,11 @@
         "sparse_fraction": 0.25,
         "sparse_observed_rows": 20,
         "assignment_overlap_sparse": 1.0,
-        "t1p_mse": 0.39743211142490387,
+        "t1p_mse": 0.46643478818714823,
         "gard_sparse_cooccurrence_mse": 0.35193625672535916,
         "hybrid_best_blend": 0.0,
         "hybrid_best_mse": 0.35193625672535916,
-        "gard_t1p_mean_anchor_mse": 0.33485951334892855
+        "gard_t1p_mean_anchor_mse": 0.3348595132744869
       },
       {
         "seed": 11,
@@ -2848,11 +2848,11 @@
         "sparse_fraction": 0.25,
         "sparse_observed_rows": 20,
         "assignment_overlap_sparse": 1.0,
-        "t1p_mse": 0.3659740733599576,
+        "t1p_mse": 0.398580046459215,
         "gard_sparse_cooccurrence_mse": 0.3108854159052784,
         "hybrid_best_blend": 0.0,
         "hybrid_best_mse": 0.3108854159052784,
-        "gard_t1p_mean_anchor_mse": 0.25718783646651877
+        "gard_t1p_mean_anchor_mse": 0.2571878364106558
       },
       {
         "seed": 19,
@@ -2861,11 +2861,11 @@
         "sparse_fraction": 0.25,
         "sparse_observed_rows": 20,
         "assignment_overlap_sparse": 1.0,
-        "t1p_mse": 0.5716848692657881,
+        "t1p_mse": 0.5686362397240023,
         "gard_sparse_cooccurrence_mse": 0.2885870761117387,
         "hybrid_best_blend": 0.0,
         "hybrid_best_mse": 0.2885870761117387,
-        "gard_t1p_mean_anchor_mse": 0.25946013334598744
+        "gard_t1p_mean_anchor_mse": 0.25946013334938334
       },
       {
         "seed": 23,
@@ -2874,11 +2874,11 @@
         "sparse_fraction": 0.25,
         "sparse_observed_rows": 20,
         "assignment_overlap_sparse": 1.0,
-        "t1p_mse": 0.40350173133535666,
+        "t1p_mse": 0.4029532746575785,
         "gard_sparse_cooccurrence_mse": 0.30855756189241623,
         "hybrid_best_blend": 0.0,
         "hybrid_best_mse": 0.30855756189241623,
-        "gard_t1p_mean_anchor_mse": 0.26418240834375095
+        "gard_t1p_mean_anchor_mse": 0.2641824083236552
       },
       {
         "seed": 3,
@@ -2887,11 +2887,11 @@
         "sparse_fraction": 0.25,
         "sparse_observed_rows": 20,
         "assignment_overlap_sparse": 0.7625,
-        "t1p_mse": 0.44378003586998765,
+        "t1p_mse": 0.4212482906423943,
         "gard_sparse_cooccurrence_mse": 0.7569414813322379,
         "hybrid_best_blend": 0.5,
-        "hybrid_best_mse": 0.4311037757191385,
-        "gard_t1p_mean_anchor_mse": 0.7386895250905855
+        "hybrid_best_mse": 0.39872878092974484,
+        "gard_t1p_mean_anchor_mse": 0.7386895251662137
       },
       {
         "seed": 7,
@@ -2900,11 +2900,11 @@
         "sparse_fraction": 0.25,
         "sparse_observed_rows": 20,
         "assignment_overlap_sparse": 0.7625,
-        "t1p_mse": 0.39743211142490387,
+        "t1p_mse": 0.4054809853402923,
         "gard_sparse_cooccurrence_mse": 0.6001706906377384,
         "hybrid_best_blend": 1.0,
-        "hybrid_best_mse": 0.39743211142490387,
-        "gard_t1p_mean_anchor_mse": 0.5592989309694598
+        "hybrid_best_mse": 0.4054809853402923,
+        "gard_t1p_mean_anchor_mse": 0.5592989309807862
       },
       {
         "seed": 11,
@@ -2913,11 +2913,11 @@
         "sparse_fraction": 0.25,
         "sparse_observed_rows": 20,
         "assignment_overlap_sparse": 0.75,
-        "t1p_mse": 0.3659740733599576,
+        "t1p_mse": 0.3985417563225193,
         "gard_sparse_cooccurrence_mse": 0.8413851029541448,
         "hybrid_best_blend": 1.0,
-        "hybrid_best_mse": 0.3659740733599576,
-        "gard_t1p_mean_anchor_mse": 0.8282362957336777
+        "hybrid_best_mse": 0.3985417563225193,
+        "gard_t1p_mean_anchor_mse": 0.8282362957515352
       },
       {
         "seed": 19,
@@ -2926,11 +2926,11 @@
         "sparse_fraction": 0.25,
         "sparse_observed_rows": 20,
         "assignment_overlap_sparse": 0.775,
-        "t1p_mse": 0.5716848692657881,
+        "t1p_mse": 0.5686362397240023,
         "gard_sparse_cooccurrence_mse": 0.4376671245521859,
         "hybrid_best_blend": 0.25,
-        "hybrid_best_mse": 0.3854115666325749,
-        "gard_t1p_mean_anchor_mse": 0.43442038031917246
+        "hybrid_best_mse": 0.39176015378369633,
+        "gard_t1p_mean_anchor_mse": 0.43442038027766183
       },
       {
         "seed": 23,
@@ -2939,11 +2939,11 @@
         "sparse_fraction": 0.25,
         "sparse_observed_rows": 20,
         "assignment_overlap_sparse": 0.75,
-        "t1p_mse": 0.40350173133535666,
+        "t1p_mse": 0.4029532746575785,
         "gard_sparse_cooccurrence_mse": 0.7833353858891209,
-        "hybrid_best_blend": 0.75,
-        "hybrid_best_mse": 0.39971892886008986,
-        "gard_t1p_mean_anchor_mse": 0.7501926114380273
+        "hybrid_best_blend": 1.0,
+        "hybrid_best_mse": 0.4029532746575785,
+        "gard_t1p_mean_anchor_mse": 0.7501926114533617
       },
       {
         "seed": 3,
@@ -2952,11 +2952,11 @@
         "sparse_fraction": 0.25,
         "sparse_observed_rows": 20,
         "assignment_overlap_sparse": 0.5,
-        "t1p_mse": 0.44378003586998765,
+        "t1p_mse": 0.4212482906423943,
         "gard_sparse_cooccurrence_mse": 1.5999148533282028,
-        "hybrid_best_blend": 0.75,
-        "hybrid_best_mse": 0.4178855115764448,
-        "gard_t1p_mean_anchor_mse": 1.6632852077734368
+        "hybrid_best_blend": 1.0,
+        "hybrid_best_mse": 0.4212482906423943,
+        "gard_t1p_mean_anchor_mse": 1.6632852078012546
       },
       {
         "seed": 7,
@@ -2965,11 +2965,11 @@
         "sparse_fraction": 0.25,
         "sparse_observed_rows": 20,
         "assignment_overlap_sparse": 0.5625,
-        "t1p_mse": 0.39743211142490387,
+        "t1p_mse": 0.4054809853402923,
         "gard_sparse_cooccurrence_mse": 0.6303649176627255,
         "hybrid_best_blend": 1.0,
-        "hybrid_best_mse": 0.39743211142490387,
-        "gard_t1p_mean_anchor_mse": 0.6468879497844222
+        "hybrid_best_mse": 0.4054809853402923,
+        "gard_t1p_mean_anchor_mse": 0.646887949837989
       },
       {
         "seed": 11,
@@ -2978,11 +2978,11 @@
         "sparse_fraction": 0.25,
         "sparse_observed_rows": 20,
         "assignment_overlap_sparse": 0.525,
-        "t1p_mse": 0.3659740733599576,
+        "t1p_mse": 0.3985417563225193,
         "gard_sparse_cooccurrence_mse": 0.5618327006976377,
         "hybrid_best_blend": 1.0,
-        "hybrid_best_mse": 0.3659740733599576,
-        "gard_t1p_mean_anchor_mse": 0.6823487628472985
+        "hybrid_best_mse": 0.3985417563225193,
+        "gard_t1p_mean_anchor_mse": 0.6823487627878659
       },
       {
         "seed": 19,
@@ -2991,11 +2991,11 @@
         "sparse_fraction": 0.25,
         "sparse_observed_rows": 20,
         "assignment_overlap_sparse": 0.5125,
-        "t1p_mse": 0.5716848692657881,
+        "t1p_mse": 0.5686362397240023,
         "gard_sparse_cooccurrence_mse": 0.5452699364701965,
         "hybrid_best_blend": 0.25,
-        "hybrid_best_mse": 0.4072428069664054,
-        "gard_t1p_mean_anchor_mse": 0.5395972256417841
+        "hybrid_best_mse": 0.37145450999942364,
+        "gard_t1p_mean_anchor_mse": 0.5395972257734654
       },
       {
         "seed": 23,
@@ -3004,19 +3004,19 @@
         "sparse_fraction": 0.25,
         "sparse_observed_rows": 20,
         "assignment_overlap_sparse": 0.5125,
-        "t1p_mse": 0.40350173133535666,
+        "t1p_mse": 0.4029532746575785,
         "gard_sparse_cooccurrence_mse": 1.118886606734474,
-        "hybrid_best_blend": 0.75,
-        "hybrid_best_mse": 0.40198731648554287,
-        "gard_t1p_mean_anchor_mse": 1.1026097833122688
+        "hybrid_best_blend": 1.0,
+        "hybrid_best_mse": 0.4029532746575785,
+        "gard_t1p_mean_anchor_mse": 1.102609783280299
       }
     ],
     "aggregate": [
       {
         "assignment_regime": "oracle",
         "metric": "t1p_mse",
-        "mean": 0.424970400562435,
-        "std": 0.07446276757830377,
+        "mean": 0.45157052793406766,
+        "std": 0.06327146849444053,
         "n_seeds": 5
       },
       {
@@ -3036,8 +3036,8 @@
       {
         "assignment_regime": "oracle",
         "metric": "gard_t1p_mean_anchor_mse",
-        "mean": 0.2623025244875407,
-        "std": 0.04409501733306566,
+        "mean": 0.26230252443471314,
+        "std": 0.04409501734496749,
         "n_seeds": 5
       },
       {
@@ -3050,8 +3050,8 @@
       {
         "assignment_regime": "wrong20",
         "metric": "t1p_mse",
-        "mean": 0.4364745642511988,
-        "std": 0.07199588397513665,
+        "mean": 0.4393721093373573,
+        "std": 0.06508416972081191,
         "n_seeds": 5
       },
       {
@@ -3064,29 +3064,29 @@
       {
         "assignment_regime": "wrong20",
         "metric": "hybrid_best_mse",
-        "mean": 0.3959280911993329,
-        "std": 0.021268764807251362,
+        "mean": 0.39949299020676626,
+        "std": 0.004671515280232889,
         "n_seeds": 5
       },
       {
         "assignment_regime": "wrong20",
         "metric": "gard_t1p_mean_anchor_mse",
-        "mean": 0.6621675487101845,
-        "std": 0.14396775923891267,
+        "mean": 0.6621675487259118,
+        "std": 0.143967759264462,
         "n_seeds": 5
       },
       {
         "assignment_regime": "wrong20",
         "metric": "hybrid_best_blend_mean",
-        "mean": 0.7,
-        "std": 0.291547594742265,
+        "mean": 0.75,
+        "std": 0.31622776601683794,
         "n_seeds": 5
       },
       {
         "assignment_regime": "wrong40",
         "metric": "t1p_mse",
-        "mean": 0.4364745642511988,
-        "std": 0.07199588397513665,
+        "mean": 0.4393721093373573,
+        "std": 0.06508416972081191,
         "n_seeds": 5
       },
       {
@@ -3099,22 +3099,22 @@
       {
         "assignment_regime": "wrong40",
         "metric": "hybrid_best_mse",
-        "mean": 0.39810436396265086,
-        "std": 0.017451015783814066,
+        "mean": 0.3999357633924416,
+        "std": 0.016169129407697984,
         "n_seeds": 5
       },
       {
         "assignment_regime": "wrong40",
         "metric": "gard_t1p_mean_anchor_mse",
-        "mean": 0.926945785871842,
-        "std": 0.4150548365172633,
+        "mean": 0.9269457858961747,
+        "std": 0.4150548364996252,
         "n_seeds": 5
       },
       {
         "assignment_regime": "wrong40",
         "metric": "hybrid_best_blend_mean",
-        "mean": 0.75,
-        "std": 0.27386127875258304,
+        "mean": 0.85,
+        "std": 0.3,
         "n_seeds": 5
       }
     ]
@@ -3137,7 +3137,7 @@
       "n_seeds": 5
     },
     "cooccurrence_beats_oracle_chain_wrong40": false,
-    "hybrid_beats_t1p_fraction_wrong40": 0.6
+    "hybrid_beats_t1p_fraction_wrong40": 0.2
   },
   "honesty_notes": [
     "INCIDENCE-REFINE uses greedy top-B relabeling; no access to true H during refine.",
@@ -3145,5 +3145,5 @@
     "Hybrid T1p uses true batch membership for partial rows (T1p tier); sparse rows still wrong-H stressed.",
     "Criterion A parent gate still fails for wrong40/unknown under level1+refine unless noted in JSON."
   ],
-  "runtime_sec": 2.2792009389959276
+  "runtime_sec": 2.2829761800239794
 }

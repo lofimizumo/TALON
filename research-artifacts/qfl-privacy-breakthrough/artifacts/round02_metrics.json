@@ -7545,11 +7545,11 @@
         "utility_gradient_mse": 11.25893549208052,
         "utility_loss_fraction_normalized": 1.349592784379619,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.4128416290610199,
-        "t1p_mse_defended": 0.7259016861096492,
+        "t1p_mse_undefended": 0.43101854816756185,
+        "t1p_mse_defended": 0.6666402062995493,
         "shard_stage2_mse": 0.32872726778671557,
-        "attack_reduction_vs_t1p": -0.7583054493817958,
-        "attack_reduction_vs_shard": -1.2082186579685499
+        "attack_reduction_vs_t1p": -0.5466624560212376,
+        "attack_reduction_vs_shard": -1.0279431359253044
       },
       {
         "seed": 3,
@@ -7558,11 +7558,11 @@
         "utility_gradient_mse": 10.551530592491225,
         "utility_loss_fraction_normalized": 1.3303046080049412,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.4128416290610199,
-        "t1p_mse_defended": 0.6793167852032918,
+        "t1p_mse_undefended": 0.43101854816756185,
+        "t1p_mse_defended": 0.7287371096971349,
         "shard_stage2_mse": 0.32872726778671557,
-        "attack_reduction_vs_t1p": -0.6454658091248002,
-        "attack_reduction_vs_shard": -1.0665057382585168
+        "attack_reduction_vs_t1p": -0.6907325979248407,
+        "attack_reduction_vs_shard": -1.216844117020293
       },
       {
         "seed": 3,
@@ -7571,11 +7571,11 @@
         "utility_gradient_mse": 9.804742480925137,
         "utility_loss_fraction_normalized": 1.3455998249834886,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.4128416290610199,
-        "t1p_mse_defended": 0.7498975608843519,
+        "t1p_mse_undefended": 0.43101854816756185,
+        "t1p_mse_defended": 1.1303879508600057,
         "shard_stage2_mse": 0.32872726778671557,
-        "attack_reduction_vs_t1p": -0.816429129470162,
-        "attack_reduction_vs_shard": -1.2812149595417788
+        "attack_reduction_vs_t1p": -1.62259699882001,
+        "attack_reduction_vs_shard": -2.4386802119300386
       },
       {
         "seed": 3,
@@ -7584,11 +7584,11 @@
         "utility_gradient_mse": 10.986875279626423,
         "utility_loss_fraction_normalized": 1.4848496830182736,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.4128416290610199,
-        "t1p_mse_defended": 0.7740951598905625,
+        "t1p_mse_undefended": 0.43101854816756185,
+        "t1p_mse_defended": 0.8177737556129145,
         "shard_stage2_mse": 0.32872726778671557,
-        "attack_reduction_vs_t1p": -0.8750414333244183,
-        "attack_reduction_vs_shard": -1.3548249133771586
+        "attack_reduction_vs_t1p": -0.8973052530792678,
+        "attack_reduction_vs_shard": -1.4876967497065121
       },
       {
         "seed": 3,
@@ -7597,11 +7597,11 @@
         "utility_gradient_mse": 10.333257844503146,
         "utility_loss_fraction_normalized": 1.3772456222693066,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.4128416290610199,
-        "t1p_mse_defended": 0.7945329468955696,
+        "t1p_mse_undefended": 0.43101854816756185,
+        "t1p_mse_defended": 0.802263616611868,
         "shard_stage2_mse": 0.32872726778671557,
-        "attack_reduction_vs_t1p": -0.9245465838866118,
-        "attack_reduction_vs_shard": -1.416997385842289
+        "attack_reduction_vs_t1p": -0.8613204002997608,
+        "attack_reduction_vs_shard": -1.4405143571247385
       },
       {
         "seed": 3,
@@ -7610,11 +7610,11 @@
         "utility_gradient_mse": 11.829275447151128,
         "utility_loss_fraction_normalized": 1.5621650870650383,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.4128416290610199,
-        "t1p_mse_defended": 0.5485416600418014,
+        "t1p_mse_undefended": 0.43101854816756185,
+        "t1p_mse_defended": 0.5637303935229911,
         "shard_stage2_mse": 0.32872726778671557,
-        "attack_reduction_vs_t1p": -0.3286975475061029,
-        "attack_reduction_vs_shard": -0.6686831723302782
+        "attack_reduction_vs_t1p": -0.30790286385502963,
+        "attack_reduction_vs_shard": -0.714887837928766
       },
       {
         "seed": 3,
@@ -7623,11 +7623,11 @@
         "utility_gradient_mse": 10.873391998507678,
         "utility_loss_fraction_normalized": 1.5629568129331957,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.4128416290610199,
-        "t1p_mse_defended": 8.120049800585402,
+        "t1p_mse_undefended": 0.43101854816756185,
+        "t1p_mse_defended": 7.392462542170367,
         "shard_stage2_mse": 0.32872726778671557,
-        "attack_reduction_vs_t1p": -18.66867977692536,
-        "attack_reduction_vs_shard": -23.701479300019137
+        "attack_reduction_vs_t1p": -16.151147145752272,
+        "attack_reduction_vs_shard": -21.488133071354262
       },
       {
         "seed": 3,
@@ -7636,11 +7636,11 @@
         "utility_gradient_mse": 11.92105234508974,
         "utility_loss_fraction_normalized": 1.6028074496815927,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.4128416290610199,
-        "t1p_mse_defended": 0.5423888968072728,
+        "t1p_mse_undefended": 0.43101854816756185,
+        "t1p_mse_defended": 0.547988781596956,
         "shard_stage2_mse": 0.32872726778671557,
-        "attack_reduction_vs_t1p": -0.3137941007569882,
-        "attack_reduction_vs_shard": -0.6499662484926101
+        "attack_reduction_vs_t1p": -0.27138097403622874,
+        "attack_reduction_vs_shard": -0.6670012965048624
       },
       {
         "seed": 3,
@@ -7649,11 +7649,11 @@
         "utility_gradient_mse": 12.2051087178623,
         "utility_loss_fraction_normalized": 1.626034245750929,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.4128416290610199,
-        "t1p_mse_defended": 0.55004351128521,
+        "t1p_mse_undefended": 0.43101854816756185,
+        "t1p_mse_defended": 0.5426932988989293,
         "shard_stage2_mse": 0.32872726778671557,
-        "attack_reduction_vs_t1p": -0.33233538617761593,
-        "attack_reduction_vs_shard": -0.6732518570442674
+        "attack_reduction_vs_t1p": -0.2590949999858312,
+        "attack_reduction_vs_shard": -0.6508922504446417
       },
       {
         "seed": 3,
@@ -7662,11 +7662,11 @@
         "utility_gradient_mse": 11.048380690042057,
         "utility_loss_fraction_normalized": 1.7099387881747286,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.4128416290610199,
-        "t1p_mse_defended": 0.6095723169889946,
+        "t1p_mse_undefended": 0.43101854816756185,
+        "t1p_mse_defended": 0.5832684692751088,
         "shard_stage2_mse": 0.32872726778671557,
-        "attack_reduction_vs_t1p": -0.4765282231237804,
-        "attack_reduction_vs_shard": -0.8543405939311872
+        "attack_reduction_vs_t1p": -0.35323287537119774,
+        "attack_reduction_vs_shard": -0.7743233568732859
       },
       {
         "seed": 3,
@@ -7675,11 +7675,11 @@
         "utility_gradient_mse": 16.062597093089618,
         "utility_loss_fraction_normalized": 2.338252386102936,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.4128416290610199,
-        "t1p_mse_defended": 0.3977109661698936,
+        "t1p_mse_undefended": 0.43101854816756185,
+        "t1p_mse_defended": 0.4079239619220655,
         "shard_stage2_mse": 0.32872726778671557,
-        "attack_reduction_vs_t1p": 0.0366500416286506,
-        "attack_reduction_vs_shard": -0.20985085553637717
+        "attack_reduction_vs_t1p": 0.05358142090098217,
+        "attack_reduction_vs_shard": -0.24091915060339386
       },
       {
         "seed": 3,
@@ -7688,11 +7688,11 @@
         "utility_gradient_mse": 13.282147448744666,
         "utility_loss_fraction_normalized": 1.9322480640954507,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.4128416290610199,
-        "t1p_mse_defended": 0.42969240392713387,
+        "t1p_mse_undefended": 0.43101854816756185,
+        "t1p_mse_defended": 0.3926344729408852,
         "shard_stage2_mse": 0.32872726778671557,
-        "attack_reduction_vs_t1p": -0.040816559377599315,
-        "attack_reduction_vs_shard": -0.3071395227423799
+        "attack_reduction_vs_t1p": 0.08905434670935441,
+        "attack_reduction_vs_shard": -0.1944079832027621
       },
       {
         "seed": 3,
@@ -7701,11 +7701,11 @@
         "utility_gradient_mse": 13.688049289221475,
         "utility_loss_fraction_normalized": 1.854983021406053,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.4128416290610199,
-        "t1p_mse_defended": 0.6213180302506816,
+        "t1p_mse_undefended": 0.43101854816756185,
+        "t1p_mse_defended": 0.5762471267845486,
         "shard_stage2_mse": 0.32872726778671557,
-        "attack_reduction_vs_t1p": -0.504979116722863,
-        "attack_reduction_vs_shard": -0.8900714699877115
+        "attack_reduction_vs_t1p": -0.3369427585759672,
+        "attack_reduction_vs_shard": -0.7529641841528905
       },
       {
         "seed": 3,
@@ -7714,11 +7714,11 @@
         "utility_gradient_mse": 16.487084080596034,
         "utility_loss_fraction_normalized": 2.147337152330417,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.4128416290610199,
-        "t1p_mse_defended": 0.4509903987112296,
+        "t1p_mse_undefended": 0.43101854816756185,
+        "t1p_mse_defended": 0.45900039662664766,
         "shard_stage2_mse": 0.32872726778671557,
-        "attack_reduction_vs_t1p": -0.09240533648938576,
-        "attack_reduction_vs_shard": -0.37192877776065925
+        "attack_reduction_vs_t1p": -0.06492028841461273,
+        "attack_reduction_vs_shard": -0.39629547532532583
       },
       {
         "seed": 3,
@@ -7727,11 +7727,11 @@
         "utility_gradient_mse": 12.841876800833433,
         "utility_loss_fraction_normalized": 1.9218061012768854,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.4128416290610199,
-        "t1p_mse_defended": 0.4364316052648796,
+        "t1p_mse_undefended": 0.43101854816756185,
+        "t1p_mse_defended": 0.4195158465653702,
         "shard_stage2_mse": 0.32872726778671557,
-        "attack_reduction_vs_t1p": -0.05714049781635033,
-        "attack_reduction_vs_shard": -0.32764041207571704
+        "attack_reduction_vs_t1p": 0.02668725429820684,
+        "attack_reduction_vs_shard": -0.2761820745505055
       },
       {
         "seed": 3,
@@ -7740,11 +7740,11 @@
         "utility_gradient_mse": 15.57570243735004,
         "utility_loss_fraction_normalized": 2.033849058627161,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.4128416290610199,
-        "t1p_mse_defended": 0.44731730787042734,
+        "t1p_mse_undefended": 0.43101854816756185,
+        "t1p_mse_defended": 0.42865386255603355,
         "shard_stage2_mse": 0.32872726778671557,
-        "attack_reduction_vs_t1p": -0.08350824234421328,
-        "attack_reduction_vs_shard": -0.36075510523409093
+        "attack_reduction_vs_t1p": 0.005486273436680511,
+        "attack_reduction_vs_shard": -0.3039802430814842
       },
       {
         "seed": 3,
@@ -7753,11 +7753,11 @@
         "utility_gradient_mse": 15.815051388684303,
         "utility_loss_fraction_normalized": 2.0825174560305775,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.4128416290610199,
-        "t1p_mse_defended": 0.4034333960403589,
+        "t1p_mse_undefended": 0.43101854816756185,
+        "t1p_mse_defended": 0.44473799859861196,
         "shard_stage2_mse": 0.32872726778671557,
-        "attack_reduction_vs_t1p": 0.022788963995853284,
-        "attack_reduction_vs_shard": -0.22725869002785015
+        "attack_reduction_vs_t1p": -0.031830301710627396,
+        "attack_reduction_vs_shard": -0.35290875500831986
       },
       {
         "seed": 3,
@@ -7766,11 +7766,11 @@
         "utility_gradient_mse": 14.42174738403944,
         "utility_loss_fraction_normalized": 1.863799699141053,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.4128416290610199,
-        "t1p_mse_defended": 0.8754177100589973,
+        "t1p_mse_undefended": 0.43101854816756185,
+        "t1p_mse_defended": 0.6805284538788812,
         "shard_stage2_mse": 0.32872726778671557,
-        "attack_reduction_vs_t1p": -1.120468597244118,
-        "attack_reduction_vs_shard": -1.6630517022609292
+        "attack_reduction_vs_t1p": -0.5788843815935281,
+        "attack_reduction_vs_shard": -1.0701916773159836
       },
       {
         "seed": 3,
@@ -7779,11 +7779,11 @@
         "utility_gradient_mse": 15.197683565160041,
         "utility_loss_fraction_normalized": 2.0384987267028505,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.4128416290610199,
-        "t1p_mse_defended": 0.41823618923910727,
+        "t1p_mse_undefended": 0.43101854816756185,
+        "t1p_mse_defended": 0.41404226504831054,
         "shard_stage2_mse": 0.32872726778671557,
-        "attack_reduction_vs_t1p": -0.013066899746415839,
-        "attack_reduction_vs_shard": -0.2722893116079035
+        "attack_reduction_vs_t1p": 0.039386432884209954,
+        "attack_reduction_vs_shard": -0.25953124557026075
       },
       {
         "seed": 3,
@@ -7792,11 +7792,11 @@
         "utility_gradient_mse": 15.577787387381562,
         "utility_loss_fraction_normalized": 2.0193659252525746,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.4128416290610199,
-        "t1p_mse_defended": 0.4508383730579481,
+        "t1p_mse_undefended": 0.43101854816756185,
+        "t1p_mse_defended": 0.44017711568624013,
         "shard_stage2_mse": 0.32872726778671557,
-        "attack_reduction_vs_t1p": -0.09203709442613439,
-        "attack_reduction_vs_shard": -0.3714663103349871
+        "attack_reduction_vs_t1p": -0.021248662169215615,
+        "attack_reduction_vs_shard": -0.3390343875331794
       },
       {
         "seed": 7,
@@ -7805,11 +7805,11 @@
         "utility_gradient_mse": 9.804576177282025,
         "utility_loss_fraction_normalized": 1.3103515553287026,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3840800408195941,
-        "t1p_mse_defended": 0.6670688819641108,
+        "t1p_mse_undefended": 0.43362651961738574,
+        "t1p_mse_defended": 0.6537123362276123,
         "shard_stage2_mse": 0.4195787466713209,
-        "attack_reduction_vs_t1p": -0.7367965295479626,
-        "attack_reduction_vs_shard": -0.5898538409207428
+        "attack_reduction_vs_t1p": -0.5075469480151289,
+        "attack_reduction_vs_shard": -0.5580206133264922
       },
       {
         "seed": 7,
@@ -7818,11 +7818,11 @@
         "utility_gradient_mse": 8.385152758160485,
         "utility_loss_fraction_normalized": 1.3107262228457985,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3840800408195941,
-        "t1p_mse_defended": 0.734290121510156,
+        "t1p_mse_undefended": 0.43362651961738574,
+        "t1p_mse_defended": 0.7462654531902797,
         "shard_stage2_mse": 0.4195787466713209,
-        "attack_reduction_vs_t1p": -0.911815360004762,
-        "attack_reduction_vs_shard": -0.7500651006171337
+        "attack_reduction_vs_t1p": -0.7209866542497303,
+        "attack_reduction_vs_shard": -0.7786064215851964
       },
       {
         "seed": 7,
@@ -7831,11 +7831,11 @@
         "utility_gradient_mse": 9.928255943665674,
         "utility_loss_fraction_normalized": 1.3622986001878634,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3840800408195941,
-        "t1p_mse_defended": 0.9074903375493206,
+        "t1p_mse_undefended": 0.43362651961738574,
+        "t1p_mse_defended": 0.8536697500701333,
         "shard_stage2_mse": 0.4195787466713209,
-        "attack_reduction_vs_t1p": -1.3627635937884546,
-        "attack_reduction_vs_shard": -1.1628605947007316
+        "attack_reduction_vs_t1p": -0.9686751419709674,
+        "attack_reduction_vs_shard": -1.0345876831050735
       },
       {
         "seed": 7,
@@ -7844,11 +7844,11 @@
         "utility_gradient_mse": 10.037731010191196,
         "utility_loss_fraction_normalized": 1.4541908259947167,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3840800408195941,
-        "t1p_mse_defended": 0.7465785760239693,
+        "t1p_mse_undefended": 0.43362651961738574,
+        "t1p_mse_defended": 0.7085854490512591,
         "shard_stage2_mse": 0.4195787466713209,
-        "attack_reduction_vs_t1p": -0.9438098747095374,
-        "attack_reduction_vs_shard": -0.7793527006476457
+        "attack_reduction_vs_t1p": -0.6340915903309738,
+        "attack_reduction_vs_shard": -0.6888020536615336
       },
       {
         "seed": 7,
@@ -7857,11 +7857,11 @@
         "utility_gradient_mse": 10.96793700126966,
         "utility_loss_fraction_normalized": 1.3965314129500037,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3840800408195941,
-        "t1p_mse_defended": 0.9393910076769411,
+        "t1p_mse_undefended": 0.43362651961738574,
+        "t1p_mse_defended": 0.9839487567641818,
         "shard_stage2_mse": 0.4195787466713209,
-        "attack_reduction_vs_t1p": -1.4458209431356042,
-        "attack_reduction_vs_shard": -1.238890828311706
+        "attack_reduction_vs_t1p": -1.2691157303579539,
+        "attack_reduction_vs_shard": -1.3450872203852664
       },
       {
         "seed": 7,
@@ -7870,11 +7870,11 @@
         "utility_gradient_mse": 12.995864968262874,
         "utility_loss_fraction_normalized": 1.7295515070928817,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3840800408195941,
-        "t1p_mse_defended": 0.5922479324191776,
+        "t1p_mse_undefended": 0.43362651961738574,
+        "t1p_mse_defended": 0.59401921737459,
         "shard_stage2_mse": 0.4195787466713209,
-        "attack_reduction_vs_t1p": -0.5419909119863946,
-        "attack_reduction_vs_shard": -0.41152986684313153
+        "attack_reduction_vs_t1p": -0.36988673547625295,
+        "attack_reduction_vs_shard": -0.4157514461520566
       },
       {
         "seed": 7,
@@ -7883,11 +7883,11 @@
         "utility_gradient_mse": 11.217870497282481,
         "utility_loss_fraction_normalized": 1.7082217550704142,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3840800408195941,
-        "t1p_mse_defended": 0.5096362514134676,
+        "t1p_mse_undefended": 0.43362651961738574,
+        "t1p_mse_defended": 0.5546898926479384,
         "shard_stage2_mse": 0.4195787466713209,
-        "attack_reduction_vs_t1p": -0.32690115926343677,
-        "attack_reduction_vs_shard": -0.21463790875159283
+        "attack_reduction_vs_t1p": -0.27918812054524267,
+        "attack_reduction_vs_shard": -0.3220161818216629
       },
       {
         "seed": 7,
@@ -7896,11 +7896,11 @@
         "utility_gradient_mse": 11.993861811971378,
         "utility_loss_fraction_normalized": 1.5703348103363617,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3840800408195941,
-        "t1p_mse_defended": 0.5325933156381326,
+        "t1p_mse_undefended": 0.43362651961738574,
+        "t1p_mse_defended": 0.5663218544478621,
         "shard_stage2_mse": 0.4195787466713209,
-        "attack_reduction_vs_t1p": -0.38667272191917035,
-        "attack_reduction_vs_shard": -0.2693524633061126
+        "attack_reduction_vs_t1p": -0.3060129600642536,
+        "attack_reduction_vs_shard": -0.34973913464566686
       },
       {
         "seed": 7,
@@ -7909,11 +7909,11 @@
         "utility_gradient_mse": 11.865466001238007,
         "utility_loss_fraction_normalized": 1.6078279065132006,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3840800408195941,
-        "t1p_mse_defended": 0.5411737401927204,
+        "t1p_mse_undefended": 0.43362651961738574,
+        "t1p_mse_defended": 0.5217449861808487,
         "shard_stage2_mse": 0.4195787466713209,
-        "attack_reduction_vs_t1p": -0.4090129209471589,
-        "attack_reduction_vs_shard": -0.2898025566977813
+        "attack_reduction_vs_t1p": -0.2032128169679639,
+        "attack_reduction_vs_shard": -0.24349717501196566
       },
       {
         "seed": 7,
@@ -7922,11 +7922,11 @@
         "utility_gradient_mse": 11.064324719087146,
         "utility_loss_fraction_normalized": 1.609864944823356,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3840800408195941,
-        "t1p_mse_defended": 0.5546497709525096,
+        "t1p_mse_undefended": 0.43362651961738574,
+        "t1p_mse_defended": 0.5961857515864274,
         "shard_stage2_mse": 0.4195787466713209,
-        "attack_reduction_vs_t1p": -0.4440994376300682,
-        "attack_reduction_vs_shard": -0.32192055806629605
+        "attack_reduction_vs_t1p": -0.3748830493865487,
+        "attack_reduction_vs_shard": -0.4209150399447008
       },
       {
         "seed": 7,
@@ -7935,11 +7935,11 @@
         "utility_gradient_mse": 13.079415395679172,
         "utility_loss_fraction_normalized": 2.021684888185328,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3840800408195941,
-        "t1p_mse_defended": 0.4030746256606945,
+        "t1p_mse_undefended": 0.43362651961738574,
+        "t1p_mse_defended": 0.39565418214676684,
         "shard_stage2_mse": 0.4195787466713209,
-        "attack_reduction_vs_t1p": -0.04945475635903285,
-        "attack_reduction_vs_shard": 0.039334978574486645
+        "attack_reduction_vs_t1p": 0.08756922317418259,
+        "attack_reduction_vs_shard": 0.05702043946304902
       },
       {
         "seed": 7,
@@ -7948,11 +7948,11 @@
         "utility_gradient_mse": 15.597122250106258,
         "utility_loss_fraction_normalized": 2.2032840286095126,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3840800408195941,
-        "t1p_mse_defended": 0.3936493541011302,
+        "t1p_mse_undefended": 0.43362651961738574,
+        "t1p_mse_defended": 0.4059696558389374,
         "shard_stage2_mse": 0.4195787466713209,
-        "attack_reduction_vs_t1p": -0.02491489341939257,
-        "attack_reduction_vs_shard": 0.061798632022948
+        "attack_reduction_vs_t1p": 0.06378037902951972,
+        "attack_reduction_vs_shard": 0.03243512913928459
       },
       {
         "seed": 7,
@@ -7961,11 +7961,11 @@
         "utility_gradient_mse": 12.668380454805297,
         "utility_loss_fraction_normalized": 1.8316427450690071,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3840800408195941,
-        "t1p_mse_defended": 0.4024257658227642,
+        "t1p_mse_undefended": 0.43362651961738574,
+        "t1p_mse_defended": 0.40322102021289896,
         "shard_stage2_mse": 0.4195787466713209,
-        "attack_reduction_vs_t1p": -0.04776536933296982,
-        "attack_reduction_vs_shard": 0.04088143402075983
+        "attack_reduction_vs_t1p": 0.07011909564782925,
+        "attack_reduction_vs_shard": 0.03898607016726663
       },
       {
         "seed": 7,
@@ -7974,11 +7974,11 @@
         "utility_gradient_mse": 13.956525371508993,
         "utility_loss_fraction_normalized": 2.065880695362295,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3840800408195941,
-        "t1p_mse_defended": 0.7091852848887821,
+        "t1p_mse_undefended": 0.43362651961738574,
+        "t1p_mse_defended": 0.624942574818278,
         "shard_stage2_mse": 0.4195787466713209,
-        "attack_reduction_vs_t1p": -0.8464518056586356,
-        "attack_reduction_vs_shard": -0.6902316681076459
+        "attack_reduction_vs_t1p": -0.441200080128175,
+        "attack_reduction_vs_shard": -0.4894524085792884
       },
       {
         "seed": 7,
@@ -7987,11 +7987,11 @@
         "utility_gradient_mse": 13.467940508563075,
         "utility_loss_fraction_normalized": 1.969934005704783,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3840800408195941,
-        "t1p_mse_defended": 0.48372635562046123,
+        "t1p_mse_undefended": 0.43362651961738574,
+        "t1p_mse_defended": 0.46705176264235687,
         "shard_stage2_mse": 0.4195787466713209,
-        "attack_reduction_vs_t1p": -0.259441533562198,
-        "attack_reduction_vs_shard": -0.1528857442328715
+        "attack_reduction_vs_t1p": -0.07708302309200143,
+        "attack_reduction_vs_shard": -0.11314447251596427
       },
       {
         "seed": 7,
@@ -8000,11 +8000,11 @@
         "utility_gradient_mse": 13.15796864261344,
         "utility_loss_fraction_normalized": 2.033301955326848,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3840800408195941,
-        "t1p_mse_defended": 0.3854193675624378,
+        "t1p_mse_undefended": 0.43362651961738574,
+        "t1p_mse_defended": 0.39249384772208057,
         "shard_stage2_mse": 0.4195787466713209,
-        "attack_reduction_vs_t1p": -0.003487103208970721,
-        "attack_reduction_vs_shard": 0.08141351147998455
+        "attack_reduction_vs_t1p": 0.09485737157312002,
+        "attack_reduction_vs_shard": 0.0645525998733616
       },
       {
         "seed": 7,
@@ -8013,11 +8013,11 @@
         "utility_gradient_mse": 13.02537724774909,
         "utility_loss_fraction_normalized": 1.747717602433117,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3840800408195941,
-        "t1p_mse_defended": 0.5111596990248701,
+        "t1p_mse_undefended": 0.43362651961738574,
+        "t1p_mse_defended": 0.4444987392202344,
         "shard_stage2_mse": 0.4195787466713209,
-        "attack_reduction_vs_t1p": -0.3308676439788405,
-        "attack_reduction_vs_shard": -0.21826880670218896
+        "attack_reduction_vs_t1p": -0.02507277371421357,
+        "attack_reduction_vs_shard": -0.05939288571361967
       },
       {
         "seed": 7,
@@ -8026,11 +8026,11 @@
         "utility_gradient_mse": 13.196721005338711,
         "utility_loss_fraction_normalized": 1.8158694022156177,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3840800408195941,
-        "t1p_mse_defended": 0.44018275020156084,
+        "t1p_mse_undefended": 0.43362651961738574,
+        "t1p_mse_defended": 0.47881106654277344,
         "shard_stage2_mse": 0.4195787466713209,
-        "attack_reduction_vs_t1p": -0.14607035883001962,
-        "attack_reduction_vs_shard": -0.04910640420588375
+        "attack_reduction_vs_t1p": -0.10420153030598023,
+        "attack_reduction_vs_shard": -0.14117092522289387
       },
       {
         "seed": 7,
@@ -8039,11 +8039,11 @@
         "utility_gradient_mse": 13.546972217174405,
         "utility_loss_fraction_normalized": 2.030712498720244,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3840800408195941,
-        "t1p_mse_defended": 0.4139525605776241,
+        "t1p_mse_undefended": 0.43362651961738574,
+        "t1p_mse_defended": 0.43211750183738923,
         "shard_stage2_mse": 0.4195787466713209,
-        "attack_reduction_vs_t1p": -0.07777680843369139,
-        "attack_reduction_vs_shard": 0.013409130320187757
+        "attack_reduction_vs_t1p": 0.0034799942155936403,
+        "attack_reduction_vs_shard": -0.029884152296900446
       },
       {
         "seed": 7,
@@ -8052,11 +8052,11 @@
         "utility_gradient_mse": 14.847912728745655,
         "utility_loss_fraction_normalized": 2.0089827640702698,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3840800408195941,
-        "t1p_mse_defended": 0.46187043247684334,
+        "t1p_mse_undefended": 0.43362651961738574,
+        "t1p_mse_defended": 0.4538407573897395,
         "shard_stage2_mse": 0.4195787466713209,
-        "attack_reduction_vs_t1p": -0.20253692821749114,
-        "attack_reduction_vs_shard": -0.1007955863852461
+        "attack_reduction_vs_t1p": -0.04661670091162784,
+        "attack_reduction_vs_shard": -0.08165811779131404
       },
       {
         "seed": 11,
@@ -8065,11 +8065,11 @@
         "utility_gradient_mse": 9.121841032561523,
         "utility_loss_fraction_normalized": 1.3868226603169955,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.358441552541359,
-        "t1p_mse_defended": 0.6793968090807241,
+        "t1p_mse_undefended": 0.4115496814400308,
+        "t1p_mse_defended": 0.826205468871118,
         "shard_stage2_mse": 0.37910681622795633,
-        "attack_reduction_vs_t1p": -0.8954186652294769,
-        "attack_reduction_vs_shard": -0.7920986381637725
+        "attack_reduction_vs_t1p": -1.0075473415024598,
+        "attack_reduction_vs_shard": -1.1793474385180192
       },
       {
         "seed": 11,
@@ -8078,11 +8078,11 @@
         "utility_gradient_mse": 9.536106444622918,
         "utility_loss_fraction_normalized": 1.4289854430259477,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.358441552541359,
-        "t1p_mse_defended": 0.6722225081752083,
+        "t1p_mse_undefended": 0.4115496814400308,
+        "t1p_mse_defended": 0.6441600510677195,
         "shard_stage2_mse": 0.37910681622795633,
-        "attack_reduction_vs_t1p": -0.8754034051273771,
-        "attack_reduction_vs_shard": -0.7731744178690843
+        "attack_reduction_vs_t1p": -0.5652060495194031,
+        "attack_reduction_vs_shard": -0.6991518577191369
       },
       {
         "seed": 11,
@@ -8091,11 +8091,11 @@
         "utility_gradient_mse": 8.634400184751128,
         "utility_loss_fraction_normalized": 1.4138180719309064,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.358441552541359,
-        "t1p_mse_defended": 0.8486747003797122,
+        "t1p_mse_undefended": 0.4115496814400308,
+        "t1p_mse_defended": 1.2186920863280588,
         "shard_stage2_mse": 0.37910681622795633,
-        "attack_reduction_vs_t1p": -1.367679456699673,
-        "attack_reduction_vs_shard": -1.2386163056203277
+        "attack_reduction_vs_t1p": -1.9612271404604193,
+        "attack_reduction_vs_shard": -2.214640397273314
       },
       {
         "seed": 11,
@@ -8104,11 +8104,11 @@
         "utility_gradient_mse": 8.873314851816493,
         "utility_loss_fraction_normalized": 1.4464337858550074,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.358441552541359,
-        "t1p_mse_defended": 0.8184168114946657,
+        "t1p_mse_undefended": 0.4115496814400308,
+        "t1p_mse_defended": 0.7936070186162019,
         "shard_stage2_mse": 0.37910681622795633,
-        "attack_reduction_vs_t1p": -1.2832643305221487,
-        "attack_reduction_vs_shard": -1.1588026816235164
+        "attack_reduction_vs_t1p": -0.9283383134676118,
+        "attack_reduction_vs_shard": -1.093359930882929
       },
       {
         "seed": 11,
@@ -8117,11 +8117,11 @@
         "utility_gradient_mse": 9.620719247541542,
         "utility_loss_fraction_normalized": 1.462135953607758,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.358441552541359,
-        "t1p_mse_defended": 0.7222404667456014,
+        "t1p_mse_undefended": 0.4115496814400308,
+        "t1p_mse_defended": 0.7175505605684036,
         "shard_stage2_mse": 0.37910681622795633,
-        "attack_reduction_vs_t1p": -1.014946262856244,
-        "attack_reduction_vs_shard": -0.9051107387932569
+        "attack_reduction_vs_t1p": -0.7435332668893389,
+        "attack_reduction_vs_shard": -0.8927398027497917
       },
       {
         "seed": 11,
@@ -8130,11 +8130,11 @@
         "utility_gradient_mse": 9.420043355287941,
         "utility_loss_fraction_normalized": 1.5408180011765877,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.358441552541359,
-        "t1p_mse_defended": 0.5420008771808091,
+        "t1p_mse_undefended": 0.4115496814400308,
+        "t1p_mse_defended": 0.5491699920389423,
         "shard_stage2_mse": 0.37910681622795633,
-        "attack_reduction_vs_t1p": -0.5121039213729832,
-        "attack_reduction_vs_shard": -0.4296785338064322
+        "attack_reduction_vs_t1p": -0.3343953763185332,
+        "attack_reduction_vs_shard": -0.4485890744542227
       },
       {
         "seed": 11,
@@ -8143,11 +8143,11 @@
         "utility_gradient_mse": 11.283986416018442,
         "utility_loss_fraction_normalized": 1.535557047031754,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.358441552541359,
-        "t1p_mse_defended": 0.5128814182277732,
+        "t1p_mse_undefended": 0.4115496814400308,
+        "t1p_mse_defended": 0.5462349953984821,
         "shard_stage2_mse": 0.37910681622795633,
-        "attack_reduction_vs_t1p": -0.4308648497682033,
-        "attack_reduction_vs_shard": -0.3528678363814446
+        "attack_reduction_vs_t1p": -0.32726380321127047,
+        "attack_reduction_vs_shard": -0.4408472019401304
       },
       {
         "seed": 11,
@@ -8156,11 +8156,11 @@
         "utility_gradient_mse": 10.927668684811318,
         "utility_loss_fraction_normalized": 1.7886732920120965,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.358441552541359,
-        "t1p_mse_defended": 0.547580534885949,
+        "t1p_mse_undefended": 0.4115496814400308,
+        "t1p_mse_defended": 0.5332580629683541,
         "shard_stage2_mse": 0.37910681622795633,
-        "attack_reduction_vs_t1p": -0.5276703579805138,
-        "attack_reduction_vs_shard": -0.4443964377487999
+        "attack_reduction_vs_t1p": -0.29573192986679087,
+        "attack_reduction_vs_shard": -0.4066169220436988
       },
       {
         "seed": 11,
@@ -8169,11 +8169,11 @@
         "utility_gradient_mse": 9.860540886588996,
         "utility_loss_fraction_normalized": 1.6057604782513728,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.358441552541359,
-        "t1p_mse_defended": 0.7107026456863703,
+        "t1p_mse_undefended": 0.4115496814400308,
+        "t1p_mse_defended": 0.6689477836563055,
         "shard_stage2_mse": 0.37910681622795633,
-        "attack_reduction_vs_t1p": -0.982757413719118,
-        "attack_reduction_vs_shard": -0.8746765166549417
+        "attack_reduction_vs_t1p": -0.6254362810235381,
+        "attack_reduction_vs_shard": -0.7645364182902694
       },
       {
         "seed": 11,
@@ -8182,11 +8182,11 @@
         "utility_gradient_mse": 10.863287860525633,
         "utility_loss_fraction_normalized": 1.631095855201609,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.358441552541359,
-        "t1p_mse_defended": 0.599487434394657,
+        "t1p_mse_undefended": 0.4115496814400308,
+        "t1p_mse_defended": 0.6220471998556465,
         "shard_stage2_mse": 0.37910681622795633,
-        "attack_reduction_vs_t1p": -0.6724830872544689,
-        "attack_reduction_vs_shard": -0.581315367419261
+        "attack_reduction_vs_t1p": -0.5114753525724414,
+        "attack_reduction_vs_shard": -0.6408230430803188
       },
       {
         "seed": 11,
@@ -8195,11 +8195,11 @@
         "utility_gradient_mse": 13.129468260872661,
         "utility_loss_fraction_normalized": 1.7863572683092452,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.358441552541359,
-        "t1p_mse_defended": 0.5637609128314216,
+        "t1p_mse_undefended": 0.4115496814400308,
+        "t1p_mse_defended": 0.43757894643613326,
         "shard_stage2_mse": 0.37910681622795633,
-        "attack_reduction_vs_t1p": -0.5728112682091222,
-        "attack_reduction_vs_shard": -0.48707669896505656
+        "attack_reduction_vs_t1p": -0.06324695697740523,
+        "attack_reduction_vs_shard": -0.1542365573638691
       },
       {
         "seed": 11,
@@ -8208,11 +8208,11 @@
         "utility_gradient_mse": 13.202922547516176,
         "utility_loss_fraction_normalized": 2.1370499449888323,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.358441552541359,
-        "t1p_mse_defended": 0.4220520022468814,
+        "t1p_mse_undefended": 0.4115496814400308,
+        "t1p_mse_defended": 0.40486673139801105,
         "shard_stage2_mse": 0.37910681622795633,
-        "attack_reduction_vs_t1p": -0.17746393869383392,
-        "attack_reduction_vs_shard": -0.11327990999007032
+        "attack_reduction_vs_t1p": 0.016238501312006326,
+        "attack_reduction_vs_shard": -0.06794896337227896
       },
       {
         "seed": 11,
@@ -8221,11 +8221,11 @@
         "utility_gradient_mse": 12.725954858148105,
         "utility_loss_fraction_normalized": 1.8756539390754217,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.358441552541359,
-        "t1p_mse_defended": 0.3821125966876906,
+        "t1p_mse_undefended": 0.4115496814400308,
+        "t1p_mse_defended": 0.37826315627818075,
         "shard_stage2_mse": 0.37910681622795633,
-        "attack_reduction_vs_t1p": -0.06603878366920157,
-        "attack_reduction_vs_shard": -0.00792858458637391
+        "attack_reduction_vs_t1p": 0.08088094017076874,
+        "attack_reduction_vs_shard": 0.002225388501768011
       },
       {
         "seed": 11,
@@ -8234,11 +8234,11 @@
         "utility_gradient_mse": 12.58333190714307,
         "utility_loss_fraction_normalized": 2.1472893109983193,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.358441552541359,
-        "t1p_mse_defended": 1.8773709508256509,
+        "t1p_mse_undefended": 0.4115496814400308,
+        "t1p_mse_defended": 1.2748168209248396,
         "shard_stage2_mse": 0.37910681622795633,
-        "attack_reduction_vs_t1p": -4.237592956271523,
-        "attack_reduction_vs_shard": -3.9520896762161897
+        "attack_reduction_vs_t1p": -2.0976012822174916,
+        "attack_reduction_vs_shard": -2.3626850437801
       },
       {
         "seed": 11,
@@ -8247,11 +8247,11 @@
         "utility_gradient_mse": 11.73650655727979,
         "utility_loss_fraction_normalized": 2.0171365283246216,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.358441552541359,
-        "t1p_mse_defended": 0.43783692592529544,
+        "t1p_mse_undefended": 0.4115496814400308,
+        "t1p_mse_defended": 0.4989692229995885,
         "shard_stage2_mse": 0.37910681622795633,
-        "attack_reduction_vs_t1p": -0.22150158881140136,
-        "attack_reduction_vs_shard": -0.15491705024376246
+        "attack_reduction_vs_t1p": -0.21241552478833858,
+        "attack_reduction_vs_shard": -0.3161705399133712
       },
       {
         "seed": 11,
@@ -8260,11 +8260,11 @@
         "utility_gradient_mse": 12.835231711225537,
         "utility_loss_fraction_normalized": 1.9500612806490163,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.358441552541359,
-        "t1p_mse_defended": 0.42688207943327716,
+        "t1p_mse_undefended": 0.4115496814400308,
+        "t1p_mse_defended": 0.3759061517051776,
         "shard_stage2_mse": 0.37910681622795633,
-        "attack_reduction_vs_t1p": -0.19093915425450314,
-        "attack_reduction_vs_shard": -0.12602058617852352
+        "attack_reduction_vs_t1p": 0.08660808486143123,
+        "attack_reduction_vs_shard": 0.008442645676025484
       },
       {
         "seed": 11,
@@ -8273,11 +8273,11 @@
         "utility_gradient_mse": 12.477917481041677,
         "utility_loss_fraction_normalized": 2.0159120985167056,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.358441552541359,
-        "t1p_mse_defended": 0.4078264270757873,
+        "t1p_mse_undefended": 0.4115496814400308,
+        "t1p_mse_defended": 0.3839707982982925,
         "shard_stage2_mse": 0.37910681622795633,
-        "attack_reduction_vs_t1p": -0.1377766449907618,
-        "attack_reduction_vs_shard": -0.07575598648841475
+        "attack_reduction_vs_t1p": 0.06701228159195394,
+        "attack_reduction_vs_shard": -0.01283010977943344
       },
       {
         "seed": 11,
@@ -8286,11 +8286,11 @@
         "utility_gradient_mse": 12.725082224730542,
         "utility_loss_fraction_normalized": 2.241514401025987,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.358441552541359,
-        "t1p_mse_defended": 0.3815847856283663,
+        "t1p_mse_undefended": 0.4115496814400308,
+        "t1p_mse_defended": 0.36912026673638504,
         "shard_stage2_mse": 0.37910681622795633,
-        "attack_reduction_vs_t1p": -0.06456626728380455,
-        "attack_reduction_vs_shard": -0.006536335656175396
+        "attack_reduction_vs_t1p": 0.1030967016064338,
+        "attack_reduction_vs_shard": 0.026342310568128635
       },
       {
         "seed": 11,
@@ -8299,11 +8299,11 @@
         "utility_gradient_mse": 12.448011881879852,
         "utility_loss_fraction_normalized": 2.012842750587898,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.358441552541359,
-        "t1p_mse_defended": 1.2018067966900094,
+        "t1p_mse_undefended": 0.4115496814400308,
+        "t1p_mse_defended": 1.2979929186604537,
         "shard_stage2_mse": 0.37910681622795633,
-        "attack_reduction_vs_t1p": -2.352866843057595,
-        "attack_reduction_vs_shard": -2.1701007347949264
+        "attack_reduction_vs_t1p": -2.1539154984125326,
+        "attack_reduction_vs_shard": -2.423818467774456
       },
       {
         "seed": 11,
@@ -8312,11 +8312,11 @@
         "utility_gradient_mse": 13.095571458816892,
         "utility_loss_fraction_normalized": 2.2187192338754977,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.358441552541359,
-        "t1p_mse_defended": 0.3847826193938219,
+        "t1p_mse_undefended": 0.4115496814400308,
+        "t1p_mse_defended": 0.44664532271895807,
         "shard_stage2_mse": 0.37910681622795633,
-        "attack_reduction_vs_t1p": -0.0734877601821109,
-        "attack_reduction_vs_shard": -0.014971514419969578
+        "attack_reduction_vs_t1p": -0.08527680341320165,
+        "attack_reduction_vs_shard": -0.17815165436221259
       },
       {
         "seed": 19,
@@ -8325,10 +8325,10 @@
         "utility_gradient_mse": 10.05388051084172,
         "utility_loss_fraction_normalized": 1.4971247080023078,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.5609434260805226,
+        "t1p_mse_undefended": 0.548316999833677,
         "t1p_mse_defended": 0.6826931361789528,
         "shard_stage2_mse": 1.3847556144522648,
-        "attack_reduction_vs_t1p": -0.2170445439554063,
+        "attack_reduction_vs_t1p": -0.24507016267238946,
         "attack_reduction_vs_shard": 0.506993776335769
       },
       {
@@ -8338,11 +8338,11 @@
         "utility_gradient_mse": 9.536197449175981,
         "utility_loss_fraction_normalized": 1.348150632393281,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.5609434260805226,
-        "t1p_mse_defended": 0.6654483291440477,
+        "t1p_mse_undefended": 0.548316999833677,
+        "t1p_mse_defended": 0.6726260910745078,
         "shard_stage2_mse": 1.3847556144522648,
-        "attack_reduction_vs_t1p": -0.18630203725486494,
-        "attack_reduction_vs_shard": 0.5194470979579574
+        "attack_reduction_vs_t1p": -0.22671026300212826,
+        "attack_reduction_vs_shard": 0.5142636837471407
       },
       {
         "seed": 19,
@@ -8351,11 +8351,11 @@
         "utility_gradient_mse": 11.560631202606459,
         "utility_loss_fraction_normalized": 1.385130440379795,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.5609434260805226,
-        "t1p_mse_defended": 0.6987519698449576,
+        "t1p_mse_undefended": 0.548316999833677,
+        "t1p_mse_defended": 0.6426618813321914,
         "shard_stage2_mse": 1.3847556144522648,
-        "attack_reduction_vs_t1p": -0.2456728029194386,
-        "attack_reduction_vs_shard": 0.49539690429683036
+        "attack_reduction_vs_t1p": -0.17206265997066006,
+        "attack_reduction_vs_shard": 0.5359023103969187
       },
       {
         "seed": 19,
@@ -8364,11 +8364,11 @@
         "utility_gradient_mse": 9.925617495569748,
         "utility_loss_fraction_normalized": 1.443712177190593,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.5609434260805226,
-        "t1p_mse_defended": 0.6859311954841172,
+        "t1p_mse_undefended": 0.548316999833677,
+        "t1p_mse_defended": 0.6803841716694684,
         "shard_stage2_mse": 1.3847556144522648,
-        "attack_reduction_vs_t1p": -0.22281706780471788,
-        "attack_reduction_vs_shard": 0.5046554147711942
+        "attack_reduction_vs_t1p": -0.24085915971208594,
+        "attack_reduction_vs_shard": 0.5086611929437153
       },
       {
         "seed": 19,
@@ -8377,11 +8377,11 @@
         "utility_gradient_mse": 10.444254221942309,
         "utility_loss_fraction_normalized": 1.4376549007958623,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.5609434260805226,
-        "t1p_mse_defended": 0.7133994650878667,
+        "t1p_mse_undefended": 0.548316999833677,
+        "t1p_mse_defended": 0.6919512900761111,
         "shard_stage2_mse": 1.3847556144522648,
-        "attack_reduction_vs_t1p": -0.27178505339228143,
-        "attack_reduction_vs_shard": 0.4848192290088318
+        "attack_reduction_vs_t1p": -0.2619548368662712,
+        "attack_reduction_vs_shard": 0.5003080089696477
       },
       {
         "seed": 19,
@@ -8390,11 +8390,11 @@
         "utility_gradient_mse": 12.130502410888225,
         "utility_loss_fraction_normalized": 1.5634479750407502,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.5609434260805226,
-        "t1p_mse_defended": 0.6585823879213627,
+        "t1p_mse_undefended": 0.548316999833677,
+        "t1p_mse_defended": 0.658970171278193,
         "shard_stage2_mse": 1.3847556144522648,
-        "attack_reduction_vs_t1p": -0.1740620485083002,
-        "attack_reduction_vs_shard": 0.5244053311299535
+        "attack_reduction_vs_t1p": -0.20180510813649932,
+        "attack_reduction_vs_shard": 0.5241252937336194
       },
       {
         "seed": 19,
@@ -8403,11 +8403,11 @@
         "utility_gradient_mse": 11.732402422165256,
         "utility_loss_fraction_normalized": 1.6225303555608386,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.5609434260805226,
-        "t1p_mse_defended": 0.5045895332675328,
+        "t1p_mse_undefended": 0.548316999833677,
+        "t1p_mse_defended": 0.5054219983321773,
         "shard_stage2_mse": 1.3847556144522648,
-        "attack_reduction_vs_t1p": 0.10046270299796745,
-        "attack_reduction_vs_shard": 0.63561113022306
+        "attack_reduction_vs_t1p": 0.07823029655201497,
+        "attack_reduction_vs_shard": 0.6350099663382877
       },
       {
         "seed": 19,
@@ -8416,11 +8416,11 @@
         "utility_gradient_mse": 11.87917532744902,
         "utility_loss_fraction_normalized": 1.6896760775163155,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.5609434260805226,
-        "t1p_mse_defended": 0.534859989956193,
+        "t1p_mse_undefended": 0.548316999833677,
+        "t1p_mse_defended": 0.5111732915153676,
         "shard_stage2_mse": 1.3847556144522648,
-        "attack_reduction_vs_t1p": 0.0464992277502605,
-        "attack_reduction_vs_shard": 0.6137513476211793
+        "attack_reduction_vs_t1p": 0.06774130353349672,
+        "attack_reduction_vs_shard": 0.6308566752281699
       },
       {
         "seed": 19,
@@ -8429,11 +8429,11 @@
         "utility_gradient_mse": 12.473246181659624,
         "utility_loss_fraction_normalized": 1.5390747760242756,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.5609434260805226,
-        "t1p_mse_defended": 0.5636831765311684,
+        "t1p_mse_undefended": 0.548316999833677,
+        "t1p_mse_defended": 0.5685153433027362,
         "shard_stage2_mse": 1.3847556144522648,
-        "attack_reduction_vs_t1p": -0.004884183187223057,
-        "attack_reduction_vs_shard": 0.5929367098077221
+        "attack_reduction_vs_t1p": -0.036836982028983334,
+        "attack_reduction_vs_shard": 0.5894471649948063
       },
       {
         "seed": 19,
@@ -8442,11 +8442,11 @@
         "utility_gradient_mse": 11.891230982984297,
         "utility_loss_fraction_normalized": 1.4760691780208728,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.5609434260805226,
-        "t1p_mse_defended": 0.6011013968768355,
+        "t1p_mse_undefended": 0.548316999833677,
+        "t1p_mse_defended": 0.5952588527205157,
         "shard_stage2_mse": 1.3847556144522648,
-        "attack_reduction_vs_t1p": -0.07159005512714267,
-        "attack_reduction_vs_shard": 0.5659151762207522
+        "attack_reduction_vs_t1p": -0.08561079248149839,
+        "attack_reduction_vs_shard": 0.5701343641376256
       },
       {
         "seed": 19,
@@ -8455,11 +8455,11 @@
         "utility_gradient_mse": 14.688410194371434,
         "utility_loss_fraction_normalized": 1.9338496967759653,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.5609434260805226,
-        "t1p_mse_defended": 0.4069133716039366,
+        "t1p_mse_undefended": 0.548316999833677,
+        "t1p_mse_defended": 0.43552023954991526,
         "shard_stage2_mse": 1.3847556144522648,
-        "attack_reduction_vs_t1p": 0.2745910680384286,
-        "attack_reduction_vs_shard": 0.7061478810000061
+        "attack_reduction_vs_t1p": 0.20571450514570366,
+        "attack_reduction_vs_shard": 0.6854894574865589
       },
       {
         "seed": 19,
@@ -8468,11 +8468,11 @@
         "utility_gradient_mse": 15.385609007484106,
         "utility_loss_fraction_normalized": 2.1834421552882266,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.5609434260805226,
-        "t1p_mse_defended": 0.4081614833255812,
+        "t1p_mse_undefended": 0.548316999833677,
+        "t1p_mse_defended": 0.4357913020023658,
         "shard_stage2_mse": 1.3847556144522648,
-        "attack_reduction_vs_t1p": 0.27236604557873856,
-        "attack_reduction_vs_shard": 0.7052465582621754
+        "attack_reduction_vs_t1p": 0.2052201516010702,
+        "attack_reduction_vs_shard": 0.6852937099845293
       },
       {
         "seed": 19,
@@ -8481,11 +8481,11 @@
         "utility_gradient_mse": 15.085222250944097,
         "utility_loss_fraction_normalized": 2.2054659099972187,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.5609434260805226,
-        "t1p_mse_defended": 0.37274435121879634,
+        "t1p_mse_undefended": 0.548316999833677,
+        "t1p_mse_defended": 0.4344208429478278,
         "shard_stage2_mse": 1.3847556144522648,
-        "attack_reduction_vs_t1p": 0.3355045555604935,
-        "attack_reduction_vs_shard": 0.7308230078083243
+        "attack_reduction_vs_t1p": 0.20771954347648847,
+        "attack_reduction_vs_shard": 0.6862833857368678
       },
       {
         "seed": 19,
@@ -8494,11 +8494,11 @@
         "utility_gradient_mse": 14.721278743728005,
         "utility_loss_fraction_normalized": 1.9581218254260533,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.5609434260805226,
-        "t1p_mse_defended": 0.41842339135623996,
+        "t1p_mse_undefended": 0.548316999833677,
+        "t1p_mse_defended": 0.4109245228730076,
         "shard_stage2_mse": 1.3847556144522648,
-        "attack_reduction_vs_t1p": 0.2540720295451401,
-        "attack_reduction_vs_shard": 0.6978359307669275
+        "attack_reduction_vs_t1p": 0.25057125167074,
+        "attack_reduction_vs_shard": 0.7032512317810335
       },
       {
         "seed": 19,
@@ -8507,11 +8507,11 @@
         "utility_gradient_mse": 15.034394545697348,
         "utility_loss_fraction_normalized": 1.9655130850542348,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.5609434260805226,
-        "t1p_mse_defended": 0.4735797138865731,
+        "t1p_mse_undefended": 0.548316999833677,
+        "t1p_mse_defended": 0.4680035617217206,
         "shard_stage2_mse": 1.3847556144522648,
-        "attack_reduction_vs_t1p": 0.1557442482290693,
-        "attack_reduction_vs_shard": 0.6580048429167078
+        "attack_reduction_vs_t1p": 0.14647263925123277,
+        "attack_reduction_vs_shard": 0.6620316561006776
       },
       {
         "seed": 19,
@@ -8520,11 +8520,11 @@
         "utility_gradient_mse": 14.83460011090029,
         "utility_loss_fraction_normalized": 1.98075267337682,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.5609434260805226,
-        "t1p_mse_defended": 0.39646585018950087,
+        "t1p_mse_undefended": 0.548316999833677,
+        "t1p_mse_defended": 0.402493927366141,
         "shard_stage2_mse": 1.3847556144522648,
-        "attack_reduction_vs_t1p": 0.2932159790877221,
-        "attack_reduction_vs_shard": 0.7136925490305221
+        "attack_reduction_vs_t1p": 0.265946655879298,
+        "attack_reduction_vs_shard": 0.7093393786127771
       },
       {
         "seed": 19,
@@ -8533,11 +8533,11 @@
         "utility_gradient_mse": 15.11005676044747,
         "utility_loss_fraction_normalized": 2.106634075480144,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.5609434260805226,
-        "t1p_mse_defended": 0.38790311997632754,
+        "t1p_mse_undefended": 0.548316999833677,
+        "t1p_mse_defended": 0.36149983570216454,
         "shard_stage2_mse": 1.3847556144522648,
-        "attack_reduction_vs_t1p": 0.30848085218375554,
-        "attack_reduction_vs_shard": 0.719876116819529
+        "attack_reduction_vs_t1p": 0.3407101442927729,
+        "attack_reduction_vs_shard": 0.7389432244005347
       },
       {
         "seed": 19,
@@ -8546,11 +8546,11 @@
         "utility_gradient_mse": 15.826399269441,
         "utility_loss_fraction_normalized": 1.9880061538404783,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.5609434260805226,
-        "t1p_mse_defended": 0.43663894136154896,
+        "t1p_mse_undefended": 0.548316999833677,
+        "t1p_mse_defended": 0.39621246814195915,
         "shard_stage2_mse": 1.3847556144522648,
-        "attack_reduction_vs_t1p": 0.22159896870086493,
-        "attack_reduction_vs_shard": 0.6846815879968395
+        "attack_reduction_vs_t1p": 0.2774025458591586,
+        "attack_reduction_vs_shard": 0.7138755286443236
       },
       {
         "seed": 19,
@@ -8559,11 +8559,11 @@
         "utility_gradient_mse": 14.343714076903098,
         "utility_loss_fraction_normalized": 2.203928737345305,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.5609434260805226,
-        "t1p_mse_defended": 0.38523204784632015,
+        "t1p_mse_undefended": 0.548316999833677,
+        "t1p_mse_defended": 0.4162667255197199,
         "shard_stage2_mse": 1.3847556144522648,
-        "attack_reduction_vs_t1p": 0.3132426017752802,
-        "attack_reduction_vs_shard": 0.721805029114327
+        "attack_reduction_vs_t1p": 0.2408283426448795,
+        "attack_reduction_vs_shard": 0.6993933650275376
       },
       {
         "seed": 19,
@@ -8572,11 +8572,11 @@
         "utility_gradient_mse": 15.4635597670944,
         "utility_loss_fraction_normalized": 2.0856842120560337,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.5609434260805226,
-        "t1p_mse_defended": 0.8310797423253657,
+        "t1p_mse_undefended": 0.548316999833677,
+        "t1p_mse_defended": 0.7300911430531024,
         "shard_stage2_mse": 1.3847556144522648,
-        "attack_reduction_vs_t1p": -0.4815749747391913,
-        "attack_reduction_vs_shard": 0.39983652447287865
+        "attack_reduction_vs_t1p": -0.33151287170480503,
+        "attack_reduction_vs_shard": 0.47276534903822187
       },
       {
         "seed": 23,
@@ -8585,10 +8585,10 @@
         "utility_gradient_mse": 12.360336403915426,
         "utility_loss_fraction_normalized": 1.6031282416815902,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3769213706150612,
+        "t1p_mse_undefended": 0.4182167211279886,
         "t1p_mse_defended": 2.104530878133041,
         "shard_stage2_mse": 0.39688411376151367,
-        "attack_reduction_vs_t1p": -4.58347454456844,
+        "attack_reduction_vs_t1p": -4.032153837505179,
         "attack_reduction_vs_shard": -4.302633199870646
       },
       {
@@ -8598,11 +8598,11 @@
         "utility_gradient_mse": 11.871138193267498,
         "utility_loss_fraction_normalized": 1.5451346778385184,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3769213706150612,
-        "t1p_mse_defended": 0.6801142298490375,
+        "t1p_mse_undefended": 0.4182167211279886,
+        "t1p_mse_defended": 0.7030866616966489,
         "shard_stage2_mse": 0.39688411376151367,
-        "attack_reduction_vs_t1p": -0.8043928598137735,
-        "attack_reduction_vs_shard": -0.7136342984433885
+        "attack_reduction_vs_t1p": -0.6811538759146849,
+        "attack_reduction_vs_shard": -0.7715162620974325
       },
       {
         "seed": 23,
@@ -8611,11 +8611,11 @@
         "utility_gradient_mse": 11.542666125017703,
         "utility_loss_fraction_normalized": 1.5108245988374687,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3769213706150612,
-        "t1p_mse_defended": 0.7044545266564063,
+        "t1p_mse_undefended": 0.4182167211279886,
+        "t1p_mse_defended": 0.741519287938086,
         "shard_stage2_mse": 0.39688411376151367,
-        "attack_reduction_vs_t1p": -0.8689694498003011,
-        "attack_reduction_vs_shard": -0.7749627718274223
+        "attack_reduction_vs_t1p": -0.7730503121398529,
+        "attack_reduction_vs_shard": -0.8683521517408541
       },
       {
         "seed": 23,
@@ -8624,11 +8624,11 @@
         "utility_gradient_mse": 12.880468843366108,
         "utility_loss_fraction_normalized": 1.6288171950938928,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3769213706150612,
-        "t1p_mse_defended": 0.6833800737221973,
+        "t1p_mse_undefended": 0.4182167211279886,
+        "t1p_mse_defended": 0.7015131875640025,
         "shard_stage2_mse": 0.39688411376151367,
-        "attack_reduction_vs_t1p": -0.8130573827826639,
-        "attack_reduction_vs_shard": -0.7218630074290102
+        "attack_reduction_vs_t1p": -0.6773915343985386,
+        "attack_reduction_vs_shard": -0.7675516939071525
       },
       {
         "seed": 23,
@@ -8637,11 +8637,11 @@
         "utility_gradient_mse": 12.613736019611588,
         "utility_loss_fraction_normalized": 1.539625904101252,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3769213706150612,
-        "t1p_mse_defended": 0.7489951161812525,
+        "t1p_mse_undefended": 0.4182167211279886,
+        "t1p_mse_defended": 0.721970855206131,
         "shard_stage2_mse": 0.39688411376151367,
-        "attack_reduction_vs_t1p": -0.9871388957305351,
-        "attack_reduction_vs_shard": -0.8871884517688735
+        "attack_reduction_vs_t1p": -0.7263079612380763,
+        "attack_reduction_vs_shard": -0.8190973893199487
       },
       {
         "seed": 23,
@@ -8650,11 +8650,11 @@
         "utility_gradient_mse": 12.403672682103315,
         "utility_loss_fraction_normalized": 1.6866507302594822,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3769213706150612,
-        "t1p_mse_defended": 62.57224069125659,
+        "t1p_mse_undefended": 0.4182167211279886,
+        "t1p_mse_defended": 91.44338551896432,
         "shard_stage2_mse": 0.39688411376151367,
-        "attack_reduction_vs_t1p": -165.00873701894656,
-        "attack_reduction_vs_shard": -156.65871830500134
+        "attack_reduction_vs_t1p": -217.6507160027672,
+        "attack_reduction_vs_shard": -229.40323950560628
       },
       {
         "seed": 23,
@@ -8663,11 +8663,11 @@
         "utility_gradient_mse": 14.313654220036446,
         "utility_loss_fraction_normalized": 1.9682383721288792,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3769213706150612,
-        "t1p_mse_defended": 0.5340790986815216,
+        "t1p_mse_undefended": 0.4182167211279886,
+        "t1p_mse_defended": 0.5533084663791795,
         "shard_stage2_mse": 0.39688411376151367,
-        "attack_reduction_vs_t1p": -0.4169509619738727,
-        "attack_reduction_vs_shard": -0.34568021284532424
+        "attack_reduction_vs_t1p": -0.32301851749693267,
+        "attack_reduction_vs_shard": -0.3941310503339035
       },
       {
         "seed": 23,
@@ -8676,11 +8676,11 @@
         "utility_gradient_mse": 13.1259057731571,
         "utility_loss_fraction_normalized": 1.7470597570044542,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3769213706150612,
-        "t1p_mse_defended": 0.5299274538874968,
+        "t1p_mse_undefended": 0.4182167211279886,
+        "t1p_mse_defended": 0.5125251848755994,
         "shard_stage2_mse": 0.39688411376151367,
-        "attack_reduction_vs_t1p": -0.40593634429048153,
-        "attack_reduction_vs_shard": -0.3352196157841896
+        "attack_reduction_vs_t1p": -0.22550141824374648,
+        "attack_reduction_vs_shard": -0.29137238580321223
       },
       {
         "seed": 23,
@@ -8689,11 +8689,11 @@
         "utility_gradient_mse": 13.04154118962674,
         "utility_loss_fraction_normalized": 1.7468145131414208,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3769213706150612,
-        "t1p_mse_defended": 0.5749567601733744,
+        "t1p_mse_undefended": 0.4182167211279886,
+        "t1p_mse_defended": 0.5632162570423445,
         "shard_stage2_mse": 0.39688411376151367,
-        "attack_reduction_vs_t1p": -0.5254023915788022,
-        "attack_reduction_vs_shard": -0.44867667975963377
+        "attack_reduction_vs_t1p": -0.34670908308800286,
+        "attack_reduction_vs_shard": -0.41909498897398345
       },
       {
         "seed": 23,
@@ -8702,11 +8702,11 @@
         "utility_gradient_mse": 14.944835336679972,
         "utility_loss_fraction_normalized": 1.9511368832664604,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3769213706150612,
-        "t1p_mse_defended": 0.5767492708395493,
+        "t1p_mse_undefended": 0.4182167211279886,
+        "t1p_mse_defended": 0.5988856130230068,
         "shard_stage2_mse": 0.39688411376151367,
-        "attack_reduction_vs_t1p": -0.5301580536503103,
-        "attack_reduction_vs_shard": -0.45319313835301567
+        "attack_reduction_vs_t1p": -0.43199825059057684,
+        "attack_reduction_vs_shard": -0.5089684677650643
       },
       {
         "seed": 23,
@@ -8715,11 +8715,11 @@
         "utility_gradient_mse": 16.68668780262854,
         "utility_loss_fraction_normalized": 2.1143898152492495,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3769213706150612,
-        "t1p_mse_defended": 0.3911632353115567,
+        "t1p_mse_undefended": 0.4182167211279886,
+        "t1p_mse_defended": 0.3884289823513054,
         "shard_stage2_mse": 0.39688411376151367,
-        "attack_reduction_vs_t1p": -0.03778471003980388,
-        "attack_reduction_vs_shard": 0.01441448083103325
+        "attack_reduction_vs_t1p": 0.07122560450558146,
+        "attack_reduction_vs_shard": 0.0213037789043099
       },
       {
         "seed": 23,
@@ -8728,11 +8728,11 @@
         "utility_gradient_mse": 15.186444833081604,
         "utility_loss_fraction_normalized": 1.9149215777981183,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3769213706150612,
-        "t1p_mse_defended": 0.416759910206468,
+        "t1p_mse_undefended": 0.4182167211279886,
+        "t1p_mse_defended": 0.4123602173123593,
         "shard_stage2_mse": 0.39688411376151367,
-        "attack_reduction_vs_t1p": -0.10569456310316983,
-        "attack_reduction_vs_shard": -0.05007959692964081
+        "attack_reduction_vs_t1p": 0.014003514254125271,
+        "attack_reduction_vs_shard": -0.038994011133802076
       },
       {
         "seed": 23,
@@ -8741,11 +8741,11 @@
         "utility_gradient_mse": 15.800913117642146,
         "utility_loss_fraction_normalized": 2.031037889543722,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3769213706150612,
-        "t1p_mse_defended": 0.44015387750216733,
+        "t1p_mse_undefended": 0.4182167211279886,
+        "t1p_mse_defended": 0.455632827960746,
         "shard_stage2_mse": 0.39688411376151367,
-        "attack_reduction_vs_t1p": -0.16776047159099305,
-        "attack_reduction_vs_shard": -0.10902367275565572
+        "attack_reduction_vs_t1p": -0.08946583181045709,
+        "attack_reduction_vs_shard": -0.14802485703555823
       },
       {
         "seed": 23,
@@ -8754,11 +8754,11 @@
         "utility_gradient_mse": 14.720027413838904,
         "utility_loss_fraction_normalized": 1.9575630859663753,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3769213706150612,
-        "t1p_mse_defended": 0.8513594255759953,
+        "t1p_mse_undefended": 0.4182167211279886,
+        "t1p_mse_defended": 0.719865464406712,
         "shard_stage2_mse": 0.39688411376151367,
-        "attack_reduction_vs_t1p": -1.2587189051837124,
-        "attack_reduction_vs_shard": -1.145108347893144
+        "attack_reduction_vs_t1p": -0.7212737512386755,
+        "attack_reduction_vs_shard": -0.8137925894390339
       },
       {
         "seed": 23,
@@ -8767,11 +8767,11 @@
         "utility_gradient_mse": 15.14629424197586,
         "utility_loss_fraction_normalized": 2.224338251793529,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3769213706150612,
-        "t1p_mse_defended": 0.45242661672541573,
+        "t1p_mse_undefended": 0.4182167211279886,
+        "t1p_mse_defended": 0.4449819939589684,
         "shard_stage2_mse": 0.39688411376151367,
-        "attack_reduction_vs_t1p": -0.20032094754177754,
-        "attack_reduction_vs_shard": -0.1399464000649755
+        "attack_reduction_vs_t1p": -0.06399857174239765,
+        "attack_reduction_vs_shard": -0.12118872620423549
       },
       {
         "seed": 23,
@@ -8780,11 +8780,11 @@
         "utility_gradient_mse": 14.930590736256539,
         "utility_loss_fraction_normalized": 2.0108092107796858,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3769213706150612,
-        "t1p_mse_defended": 0.46063725148730517,
+        "t1p_mse_undefended": 0.4182167211279886,
+        "t1p_mse_defended": 0.40062101201769645,
         "shard_stage2_mse": 0.39688411376151367,
-        "attack_reduction_vs_t1p": -0.22210436286920054,
-        "attack_reduction_vs_shard": -0.16063413856897424
+        "attack_reduction_vs_t1p": 0.04207318412050587,
+        "attack_reduction_vs_shard": -0.009415590411936403
       },
       {
         "seed": 23,
@@ -8793,11 +8793,11 @@
         "utility_gradient_mse": 15.226410280624691,
         "utility_loss_fraction_normalized": 1.9037143523408022,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3769213706150612,
-        "t1p_mse_defended": 3.5296576635217054,
+        "t1p_mse_undefended": 0.4182167211279886,
+        "t1p_mse_defended": 4.013273071265296,
         "shard_stage2_mse": 0.39688411376151367,
-        "attack_reduction_vs_t1p": -8.364440275068516,
-        "attack_reduction_vs_shard": -7.89342138204772
+        "attack_reduction_vs_t1p": -8.596156414886858,
+        "attack_reduction_vs_shard": -9.111951907646418
       },
       {
         "seed": 23,
@@ -8806,11 +8806,11 @@
         "utility_gradient_mse": 16.181270680143257,
         "utility_loss_fraction_normalized": 2.045205353548532,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3769213706150612,
-        "t1p_mse_defended": 0.39934715331850323,
+        "t1p_mse_undefended": 0.4182167211279886,
+        "t1p_mse_defended": 0.40383443790025514,
         "shard_stage2_mse": 0.39688411376151367,
-        "attack_reduction_vs_t1p": -0.0594972438597674,
-        "attack_reduction_vs_shard": -0.0062059414110728905
+        "attack_reduction_vs_t1p": 0.03438954613995926,
+        "attack_reduction_vs_shard": -0.017512225603763865
       },
       {
         "seed": 23,
@@ -8819,11 +8819,11 @@
         "utility_gradient_mse": 15.98589442424983,
         "utility_loss_fraction_normalized": 2.264566709977088,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3769213706150612,
-        "t1p_mse_defended": 539.1976255253896,
+        "t1p_mse_undefended": 0.4182167211279886,
+        "t1p_mse_defended": 2125.5917932458465,
         "shard_stage2_mse": 0.39688411376151367,
-        "attack_reduction_vs_t1p": -1429.5307885449045,
-        "attack_reduction_vs_shard": -1357.576992198261
+        "attack_reduction_vs_t1p": -5081.512692253983,
+        "attack_reduction_vs_shard": -5354.698854006304
       },
       {
         "seed": 23,
@@ -8832,18 +8832,18 @@
         "utility_gradient_mse": 16.27127992712928,
         "utility_loss_fraction_normalized": 2.1587673045490554,
         "meets_utility_constraint": false,
-        "t1p_mse_undefended": 0.3769213706150612,
-        "t1p_mse_defended": 0.5078488601347476,
+        "t1p_mse_undefended": 0.4182167211279886,
+        "t1p_mse_defended": 0.5349010057987322,
         "shard_stage2_mse": 0.39688411376151367,
-        "attack_reduction_vs_t1p": -0.3473602181432127,
-        "attack_reduction_vs_shard": -0.27958979088770564
+        "attack_reduction_vs_t1p": -0.2790043505578399,
+        "attack_reduction_vs_shard": -0.34775111235657175
       }
     ],
     "summary": {
       "n_grid_cells": 100,
       "n_feasible_utility": 0,
       "best_feasible_cell": null,
-      "mean_undefended_t1p_mse": 0.4186456038235113,
+      "mean_undefended_t1p_mse": 0.4485456940373288,
       "any_feasible_improves_t1p": false,
       "breakthrough_B_50pct_at_10pct_utility": false
     },
@@ -8853,5 +8853,5 @@
     "status": "parked_round03",
     "reason": "Tier-specific rank/sensitivity bound at T1p 7 rows/epoch not implemented; dof heuristic failed R01."
   },
-  "runtime_sec": 34.66222099005245
+  "runtime_sec": 34.32931998395361
 }

@@ -6,7 +6,7 @@
     "lasa_qterm": "/workspace/research-artifacts/qfl-terminal-snapshot"
   },
   "rounds_planned": 10,
-  "current_round": 3,
+  "current_round": 4,
   "min_rounds_before_accept": 8,
   "stop_mode": "until_round_10_or_breakthrough_accept",
   "supervisor_policy": "strict_no_early_accept",
