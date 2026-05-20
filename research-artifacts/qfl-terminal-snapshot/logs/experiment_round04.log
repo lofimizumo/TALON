@@ -1,28 +1,28 @@
-2026-05-20 08:47:34,038 INFO Round 04 LASA-QTERM (Q-SNAP-T) benchmark started
-2026-05-20 08:47:42,660 INFO seed=3 src=smooth shard=0.4014 qterm_T1=0.9886 qterm_T1p=0.4088 qterm_b80=0.1872 shard_b80=0.4487
-2026-05-20 08:47:51,321 INFO seed=7 src=smooth shard=0.4406 qterm_T1=0.9864 qterm_T1p=0.4243 qterm_b80=0.1993 shard_b80=0.4418
-2026-05-20 08:48:00,031 INFO seed=11 src=smooth shard=0.3726 qterm_T1=0.9739 qterm_T1p=0.4005 qterm_b80=0.1591 shard_b80=0.4012
-2026-05-20 08:48:09,021 INFO seed=19 src=smooth shard=0.7645 qterm_T1=0.9944 qterm_T1p=0.5821 qterm_b80=0.0956 shard_b80=1.6880
-2026-05-20 08:48:17,730 INFO seed=23 src=smooth shard=0.4379 qterm_T1=0.9891 qterm_T1p=0.4125 qterm_b80=0.1585 shard_b80=0.4057
-2026-05-20 08:48:26,776 INFO seed=3 src=mnist shard=0.5018 qterm_T1=1.0000 qterm_T1p=0.6486 qterm_b80=0.1189 shard_b80=0.5982
-2026-05-20 08:48:35,813 INFO seed=7 src=mnist shard=0.6636 qterm_T1=1.0000 qterm_T1p=0.6199 qterm_b80=0.1228 shard_b80=0.5454
-2026-05-20 08:48:44,936 INFO seed=11 src=mnist shard=0.5750 qterm_T1=1.0000 qterm_T1p=0.5385 qterm_b80=0.1168 shard_b80=0.4814
-2026-05-20 08:48:53,932 INFO seed=19 src=mnist shard=0.8494 qterm_T1=1.0000 qterm_T1p=0.7970 qterm_b80=0.0996 shard_b80=0.7364
-2026-05-20 08:49:03,045 INFO seed=23 src=mnist shard=0.4371 qterm_T1=1.0000 qterm_T1p=0.5718 qterm_b80=0.0957 shard_b80=0.5089
-2026-05-20 08:49:03,048 INFO Wrote /workspace/research-artifacts/qfl-terminal-snapshot/artifacts/round04_metrics.json
-2026-05-20 08:49:03,049 INFO === acceptance_table[smooth] ===
-2026-05-20 08:49:03,049 INFO   tier=T1 method=lasa_qterm_T1 mse=0.9865 rows=10 note=T1 impossible; impossibility paper/impossibility_t1.md
-2026-05-20 08:49:03,049 INFO   tier=T1 method=passive_mean_broadcast mse=1.0000 rows=10 note=T1 lower bound
-2026-05-20 08:49:03,049 INFO   tier=T1p method=lasa_qterm_T1p mse=0.4457 rows=70 note=Honest partial; non-primary tier
-2026-05-20 08:49:03,049 INFO   tier=T1b method=lasa_qterm_T1b_full mse=0.0015 rows=320 note=4x row budget vs SHARD-80; non-primary
-2026-05-20 08:49:03,050 INFO   tier=T1b@80 method=lasa_qterm_T1b_budget80 mse=0.1599 rows=80 note=80 terminal vs 80 intermediate (matched)
-2026-05-20 08:49:03,050 INFO   tier=T2 method=shard_stage2_oracle mse=0.4834 rows=0 note=Oracle upper bound
-2026-05-20 08:49:03,050 INFO   tier=T2@80 method=shard_budget80_intermediate mse=0.6771 rows=0 note=Oracle @ matched 80 rows
-2026-05-20 08:49:03,050 INFO === acceptance_table[mnist] ===
-2026-05-20 08:49:03,050 INFO   tier=T1 method=lasa_qterm_T1 mse=1.0000 rows=10 note=T1 impossible; impossibility paper/impossibility_t1.md
-2026-05-20 08:49:03,051 INFO   tier=T1 method=passive_mean_broadcast mse=1.0000 rows=10 note=T1 lower bound
-2026-05-20 08:49:03,051 INFO   tier=T1p method=lasa_qterm_T1p mse=0.6352 rows=70 note=Honest partial; non-primary tier
-2026-05-20 08:49:03,051 INFO   tier=T1b method=lasa_qterm_T1b_full mse=0.0021 rows=320 note=4x row budget vs SHARD-80; non-primary
-2026-05-20 08:49:03,051 INFO   tier=T1b@80 method=lasa_qterm_T1b_budget80 mse=0.1107 rows=80 note=80 terminal vs 80 intermediate (matched)
-2026-05-20 08:49:03,051 INFO   tier=T2 method=shard_stage2_oracle mse=0.6054 rows=0 note=Oracle upper bound
-2026-05-20 08:49:03,051 INFO   tier=T2@80 method=shard_budget80_intermediate mse=0.5741 rows=0 note=Oracle @ matched 80 rows
+2026-05-20 08:51:57,000 INFO Round 04 LASA-QTERM (Q-SNAP-T) benchmark started
+2026-05-20 08:52:05,622 INFO seed=3 src=smooth shard=0.4014 qterm_T1=0.9886 qterm_T1p=0.4221 qterm_b80=0.1872 shard_b80=0.4487
+2026-05-20 08:52:14,399 INFO seed=7 src=smooth shard=0.4406 qterm_T1=0.9864 qterm_T1p=0.4190 qterm_b80=0.1993 shard_b80=0.4418
+2026-05-20 08:52:23,079 INFO seed=11 src=smooth shard=0.3726 qterm_T1=0.9739 qterm_T1p=0.4470 qterm_b80=0.1591 shard_b80=0.4012
+2026-05-20 08:52:32,115 INFO seed=19 src=smooth shard=0.7645 qterm_T1=0.9944 qterm_T1p=0.6745 qterm_b80=0.0956 shard_b80=1.6880
+2026-05-20 08:52:40,958 INFO seed=23 src=smooth shard=0.4379 qterm_T1=0.9891 qterm_T1p=0.4191 qterm_b80=0.1585 shard_b80=0.4057
+2026-05-20 08:52:49,986 INFO seed=3 src=mnist shard=0.5018 qterm_T1=1.0000 qterm_T1p=0.5952 qterm_b80=0.1189 shard_b80=0.5982
+2026-05-20 08:52:59,140 INFO seed=7 src=mnist shard=0.6636 qterm_T1=1.0000 qterm_T1p=0.6139 qterm_b80=0.1228 shard_b80=0.5454
+2026-05-20 08:53:08,394 INFO seed=11 src=mnist shard=0.5750 qterm_T1=1.0000 qterm_T1p=0.5597 qterm_b80=0.1168 shard_b80=0.4814
+2026-05-20 08:53:17,587 INFO seed=19 src=mnist shard=0.8494 qterm_T1=1.0000 qterm_T1p=0.6544 qterm_b80=0.0996 shard_b80=0.7364
+2026-05-20 08:53:26,782 INFO seed=23 src=mnist shard=0.4371 qterm_T1=1.0000 qterm_T1p=0.5671 qterm_b80=0.0957 shard_b80=0.5089
+2026-05-20 08:53:26,784 INFO Wrote /workspace/research-artifacts/qfl-terminal-snapshot/artifacts/round04_metrics.json
+2026-05-20 08:53:26,785 INFO === acceptance_table[smooth] ===
+2026-05-20 08:53:26,785 INFO   tier=T1 method=lasa_qterm_T1 mse=0.9865 rows=10 note=T1 impossible; impossibility paper/impossibility_t1.md
+2026-05-20 08:53:26,785 INFO   tier=T1 method=passive_mean_broadcast mse=1.0000 rows=10 note=T1 lower bound
+2026-05-20 08:53:26,785 INFO   tier=T1p method=lasa_qterm_T1p mse=0.4763 rows=70 note=Honest partial; non-primary tier
+2026-05-20 08:53:26,785 INFO   tier=T1b method=lasa_qterm_T1b_full mse=0.0015 rows=320 note=4x row budget vs SHARD-80; non-primary
+2026-05-20 08:53:26,785 INFO   tier=T1b@80 method=lasa_qterm_T1b_budget80 mse=0.1599 rows=80 note=80 terminal vs 80 intermediate (matched)
+2026-05-20 08:53:26,785 INFO   tier=T2 method=shard_stage2_oracle mse=0.4834 rows=0 note=Oracle upper bound
+2026-05-20 08:53:26,785 INFO   tier=T2@80 method=shard_budget80_intermediate mse=0.6771 rows=0 note=Oracle @ matched 80 rows
+2026-05-20 08:53:26,785 INFO === acceptance_table[mnist] ===
+2026-05-20 08:53:26,785 INFO   tier=T1 method=lasa_qterm_T1 mse=1.0000 rows=10 note=T1 impossible; impossibility paper/impossibility_t1.md
+2026-05-20 08:53:26,785 INFO   tier=T1 method=passive_mean_broadcast mse=1.0000 rows=10 note=T1 lower bound
+2026-05-20 08:53:26,785 INFO   tier=T1p method=lasa_qterm_T1p mse=0.5981 rows=70 note=Honest partial; non-primary tier
+2026-05-20 08:53:26,785 INFO   tier=T1b method=lasa_qterm_T1b_full mse=0.0021 rows=320 note=4x row budget vs SHARD-80; non-primary
+2026-05-20 08:53:26,785 INFO   tier=T1b@80 method=lasa_qterm_T1b_budget80 mse=0.1107 rows=80 note=80 terminal vs 80 intermediate (matched)
+2026-05-20 08:53:26,785 INFO   tier=T2 method=shard_stage2_oracle mse=0.6054 rows=0 note=Oracle upper bound
+2026-05-20 08:53:26,785 INFO   tier=T2@80 method=shard_budget80_intermediate mse=0.5741 rows=0 note=Oracle @ matched 80 rows

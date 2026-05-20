@@ -1,5 +1,7 @@
 # TALON research run (`06.TALON`)
 
+**Related QFL run (individual snapshots, separate folder):** [`research-artifacts/qfl-terminal-snapshot/`](research-artifacts/qfl-terminal-snapshot/) — **LASA-QTERM**, terminal tiers without within-epoch intermediates.
+
 **Goal:** Find a stronger direction than SHARD by prioritizing Stage 2 / full-method redesign and reducing the requirement for intermediate minibatch gradients. Stage-3-only improvements are background.
 
 **Status:** **Phase 1 ACCEPT** (Round 10) + **Phase 2 scoped ACCEPT** (Round 14, minibatch fix, 2026-05-20)
