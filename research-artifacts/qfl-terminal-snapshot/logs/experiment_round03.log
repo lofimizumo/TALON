@@ -1,0 +1,15 @@
+2026-05-20 08:39:47,672 INFO Round 03 QFL terminal-snapshot benchmark started
+2026-05-20 08:39:47,672 INFO N=32 B=4 E=10 budget_rows=80 seeds=[3, 7, 11, 19, 23]
+2026-05-20 08:40:09,920 INFO seed=3 src=smooth shard=0.4014 shard_b80=0.4487 graph=0.9886 honest_p7=0.3812 b1_b80=0.1872
+2026-05-20 08:40:31,958 INFO seed=7 src=smooth shard=0.4406 shard_b80=0.4418 graph=0.9864 honest_p7=0.4329 b1_b80=0.1993
+2026-05-20 08:40:54,048 INFO seed=11 src=smooth shard=0.3726 shard_b80=0.4012 graph=0.9739 honest_p7=0.4026 b1_b80=0.1591
+2026-05-20 08:41:16,485 INFO seed=19 src=smooth shard=0.7645 shard_b80=1.6880 graph=0.9944 honest_p7=0.6199 b1_b80=0.0956
+2026-05-20 08:41:38,157 INFO seed=23 src=smooth shard=0.4379 shard_b80=0.4057 graph=0.9891 honest_p7=0.3696 b1_b80=0.1585
+2026-05-20 08:42:00,977 INFO seed=3 src=mnist shard=0.5018 shard_b80=0.5982 graph=1.0000 honest_p7=0.5783 b1_b80=0.1189
+2026-05-20 08:42:24,084 INFO seed=7 src=mnist shard=0.6636 shard_b80=0.5454 graph=1.0000 honest_p7=0.5864 b1_b80=0.1228
+2026-05-20 08:42:47,028 INFO seed=11 src=mnist shard=0.5750 shard_b80=0.4814 graph=1.0000 honest_p7=0.5354 b1_b80=0.1168
+2026-05-20 08:43:09,456 INFO seed=19 src=mnist shard=0.8494 shard_b80=0.7364 graph=1.0000 honest_p7=0.6471 b1_b80=0.0996
+2026-05-20 08:43:32,450 INFO seed=23 src=mnist shard=0.4371 shard_b80=0.5089 graph=1.0000 honest_p7=0.5846 b1_b80=0.0957
+2026-05-20 08:43:32,455 INFO Wrote /workspace/research-artifacts/qfl-terminal-snapshot/artifacts/round03_metrics.json
+2026-05-20 08:43:32,455 INFO HEADLINE[T1] best=graph_term_terminal mse=0.9865 ratio_vs_shard=2.04 impossibility=True
+2026-05-20 08:43:32,455 INFO HEADLINE[budget80] shard=0.6771 b1=0.1599 ratio=0.24

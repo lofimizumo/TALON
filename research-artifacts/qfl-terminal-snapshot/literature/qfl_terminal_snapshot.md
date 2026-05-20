@@ -6,10 +6,13 @@
 |------|-------------|----------------------------------|
 | T0 | Passive final model only | No (TALON class moments only under probes) |
 | T1 | Terminal epoch summary \(c^{(e)} = A^{(e)}\bar{s}\) per probe round | **Mean \(\bar{s}\) only** (H1) |
+| T1b | B=1 per-client terminal: \(g^{(e,i)} = A^{(e)} s_i\) (one row per sample per epoch) | **Yes** (Round 02: MSE ≈ 0.0015, 0 within-epoch intermediates) |
+| T1p | Partial terminal: last \(p\) of \(K\) minibatch rows per epoch | **Partial** (Round 03 honest \(p{=}7\): MSE ≈ 0.44 vs SHARD 0.48, 70 rows, no imputation) |
+| T1p-pad | Partial + mean-imputed early rows (`pad_partial_for_shard`) | Upper bound only (Round 03: padded better than honest at small \(p\)) |
 | T2 | All intermediate \(g^{(e,k)}\) (SHARD Stage 2) | Yes under rank + assignment (vendored attacker) |
 | T3 | T2 + snapshot inversion to \(x\) | Input recovery (SHARD L3) |
 
-Round 01 implements **T1** attacks vs **T2** oracle.
+Round 01 implements **T1** attacks vs **T2** oracle. Round 02 adds **T1b**, **T1p**, graph ablations, and hardened SHARD diagnostics. Round 03 adds **formal T1 impossibility** (`paper/impossibility_t1.md`), **imputation-free partial**, and **80-row budget-matched** SHARD vs B=1 comparisons with **tier-specific headlines**.
 
 ## LASA linear structure (SurrogateQFL)
 
@@ -50,9 +53,17 @@ Stacking \(c^{(e)}\) across epochs constrains the **same** \(\bar{s}\) under noi
 - **T1b identifiability:** B=1 terminals give linear measurements \(A^{(e)} s_i\) per client per epoch—SHARD B=1 path recovers individuals without within-epoch intermediates.
 - **Partial trajectory:** MSE vs terminal-row count brackets SHARD; last 7/8 rows ≈ full oracle MSE on smooth synthetic data.
 
+## Round 03 findings
+
+- **T1 impossibility:** Stacked epoch terminals \(c^{(e)} = A^{(e)}\bar{s}\) depend only on \(\bar{s}\); all \(s_i - \bar{s}\) lie in a joint nullspace (proof in `paper/impossibility_t1.md`). Best T1 MSE ≈ 0.987 vs SHARD 0.483 (**2.04×**) on smooth — not an under-powered SHARD, a different observation class.
+- **graph_lambda** now affects Fiedler spread; ablation is informative (best λ often 10.0 on smooth).
+- **Honest partial** (`partial_honest_last_7`): MSE ≈ 0.44, no imputed rows; can beat padded-at-small-\(p\) but needs 70 row budget.
+- **Budget 80:** `b1_client_budget80` MSE ≈ 0.16 vs `shard_budget80` ≈ 0.68 (ratio 0.24×) — 2× met at equal rows, but B=1 is per-client channel (non-acceptance for primary T1 goal).
+- **New T1 attacks** (active-probe graph, cross-epoch consistency): do not break impossibility; MSE remains ≈ 0.99–1.0 on MNIST.
+
 ## Open gaps
 
-- Formal impossibility theorem for T1 (stacked \(c^{(e)}\) only).
-- Assignment-aware terminal tier without full row budget.
+- Assignment-aware terminal tier without full row budget or per-client inflation.
+- Honest **partial @ 80 rows** (equal SHARD budget, B>1, no imputation).
 - Coupled **terminal head updates + LASA snapshots** in real QFL stacks.
-- Honest graph from metadata vs co-occurrence (Round 05 negative); MNIST graph spread still weak.
+- SHARD strict matching_acc vs Hungarian MSE (0% matching at good MSE).
