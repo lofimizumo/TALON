@@ -44,14 +44,14 @@ Pivot from Round 04 assignment mechanisms to **client-side Snapshot-DP**: add Ga
 | Config | T1p attack ↑ | Utility loss (norm.) |
 |--------|-------------:|---------------------:|
 | Gaussian ε=8, σ=0.5 (seed 19) | **+268%** | 285% |
-| Closest-to-B (Laplace ε=0.5, σ=0.02) | +0.2% | **188%** (still ≫10%) |
+| Closest-to-B (Laplace ε=4, σ=0.02) | +0.6% | **188%** (still ≫10%) |
 
 Snapshot-DP **can** inflate T1p attack MSE at high σ, but **no** grid point satisfies the ≤10% utility gate. Minimum observed utility loss ≈ **188%** (Laplace σ=0.02). SHARD/JASPER Stage-2 attack MSE barely moves (<12% increase) at any feasible noise level tested.
 
 ## Conclusions
 
 1. **Criterion B:** **Not met** — utility–privacy tradeoff is unfavorable for batch-mean DP on this surrogate; same class of failure as Round 02 QFL-SHIELD (0 feasible utility cells).
-2. **Best defense config (operational):** none for B; **closest tradeoff** = Laplace ε=0.5, σ=0.02 (lowest utility harm in grid, still 18.8× budget).
+2. **Best defense config (operational):** none for B; **closest tradeoff** = Laplace ε=4, σ=0.02 (lowest utility harm in grid, still 18.8× budget).
 3. **Strongest attack degradation:** Gaussian σ=0.5 (ε irrelevant when σ>0) on T1p only.
 4. **Secondary row gate:** **Not met** (depends on B-feasible config).
 
