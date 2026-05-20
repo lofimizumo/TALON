@@ -61,6 +61,13 @@ Stacking \(c^{(e)}\) across epochs constrains the **same** \(\bar{s}\) under noi
 - **Budget 80:** `b1_client_budget80` MSE ≈ 0.16 vs `shard_budget80` ≈ 0.68 (ratio 0.24×) — 2× met at equal rows, but B=1 is per-client channel (non-acceptance for primary T1 goal).
 - **New T1 attacks** (active-probe graph, cross-epoch consistency): do not break impossibility; MSE remains ≈ 0.99–1.0 on MNIST.
 
+## Round 04 — LASA-QTERM acceptance package
+
+- **Method name:** LASA-QTERM (alias Q-SNAP-T); production `code/qterm_attack.py`.
+- **Papers:** `paper/method.md`, `paper/scope.md`.
+- **Benchmark:** `code/benchmark_round04.py` — smooth + MNIST, `acceptance_table` in `artifacts/round04_metrics.json`.
+- **Tutorial:** `tutorial/tutorial.md` (QFL-focused; parent TALON as related work).
+
 ## Open gaps
 
 - Assignment-aware terminal tier without full row budget or per-client inflation.

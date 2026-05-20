@@ -8,7 +8,10 @@
 
 | Round | Scientist | Supervisor | Verdict |
 |-------|-----------|------------|---------|
-| 1 | [ ] | [ ] | |
+| 1 | [x] | [x] | REVISE |
+| 2 | [x] | [x] | REVISE_MAJOR |
+| 3 | [x] | — | Impossibility + budget-honest tiers |
+| 4 | [x] | pending | **LASA-QTERM** acceptance package |
 
 ## Paths
 

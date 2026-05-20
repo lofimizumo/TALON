@@ -5,7 +5,7 @@
   "parent_talon_status": "PHASE2_SCOPED_ACCEPT",
   "shard_vendored_path": "vendor/shard_sim",
   "rounds_planned": 8,
-  "current_round": 3,
+  "current_round": 4,
   "stop_mode": "until_acceptance",
   "acceptance": {
     "supervisor_verdicts": ["ACCEPT", "ACCEPT_WITH_MINOR"],

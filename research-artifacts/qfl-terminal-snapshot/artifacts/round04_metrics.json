@@ -1,0 +1,1089 @@
+{
+  "benchmark": "round04_lasa_qterm",
+  "method_name": "LASA-QTERM",
+  "method_alias": "Q-SNAP-T",
+  "production_module": "code/qterm_attack.py",
+  "papers": {
+    "method": "paper/method.md",
+    "scope": "paper/scope.md",
+    "impossibility": "paper/impossibility_t1.md"
+  },
+  "simulator": {
+    "surrogate": "SurrogateQFL",
+    "n_samples": 32,
+    "batch_size": 4,
+    "n_epochs": 10,
+    "dim_g": 32,
+    "seeds": [
+      3,
+      7,
+      11,
+      19,
+      23
+    ],
+    "gradient_row_budget_matched": 80,
+    "partial_rows_per_epoch": 7
+  },
+  "tracks": {
+    "smooth": [
+      {
+        "seed": 3,
+        "snapshot_source": "smooth",
+        "shard_stage2_oracle": {
+          "snapshot_mse": 0.40144914746701243,
+          "fixed_order_mse": 1.6251131092350246,
+          "observed_intermediate_batch_gradients": 80,
+          "observed_terminal_gradient_rows": 0,
+          "runtime_sec": 4.237334334000479,
+          "matching_acc": 0.0,
+          "snapshot_row_std": 4.851101263262063
+        },
+        "shard_budget80_intermediate": {
+          "snapshot_mse": 0.4486771127668312,
+          "fixed_order_mse": 1.7823944608411924,
+          "observed_intermediate_batch_gradients": 80,
+          "observed_terminal_gradient_rows": 0,
+          "runtime_sec": 4.269256996980403,
+          "matching_acc": 0.0,
+          "snapshot_row_std": 5.101432982035645,
+          "gradient_row_budget": 80,
+          "gradient_rows_used": 80
+        },
+        "passive_mean_broadcast": {
+          "snapshot_mse": 1.0000000307358161,
+          "fixed_order_mse": 1.000000030735816,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 10,
+          "snapshot_row_std": 1.3136335981433192e-15
+        },
+        "lasa_qterm_T1": {
+          "snapshot_mse": 0.9886377124638883,
+          "fixed_order_mse": 1.0040471811481877,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 10,
+          "snapshot_row_std": 0.24303983178606803,
+          "tier": "T1",
+          "method": "lasa_qterm_graph_term_map",
+          "graph_lambda": 10.0,
+          "spread_scale": 0.5,
+          "impossibility_note": "T1 identifies s_bar only; see paper/impossibility_t1.md"
+        },
+        "lasa_qterm_T1p": {
+          "snapshot_mse": 0.4087633578383458,
+          "fixed_order_mse": 1.5801861551924437,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 70,
+          "snapshot_row_std": 3.573863587005425,
+          "tier": "T1p",
+          "method": "lasa_qterm_partial_honest",
+          "rows_per_epoch": 7,
+          "imputation_free": true,
+          "partial_graph_lambda": 0.35
+        },
+        "lasa_qterm_T1b_full": {
+          "snapshot_mse": 3.368360452979884e-07,
+          "fixed_order_mse": 1.9159825743688237,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 320,
+          "snapshot_row_std": 5.629069658178288,
+          "tier": "T1b",
+          "method": "lasa_qterm_b1_full",
+          "gradient_row_budget": null,
+          "non_acceptance_for_primary_t1": true
+        },
+        "lasa_qterm_T1b_budget80": {
+          "snapshot_mse": 0.18720748458008785,
+          "fixed_order_mse": 1.7782710808550672,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 80,
+          "snapshot_row_std": 4.976197271840121,
+          "tier": "T1b",
+          "method": "lasa_qterm_b1_budget",
+          "gradient_row_budget": 80,
+          "non_acceptance_for_primary_t1": true
+        },
+        "level1_mean_rel_error": 0.000295360850071986
+      },
+      {
+        "seed": 7,
+        "snapshot_source": "smooth",
+        "shard_stage2_oracle": {
+          "snapshot_mse": 0.44063430198172826,
+          "fixed_order_mse": 1.8383045403675757,
+          "observed_intermediate_batch_gradients": 80,
+          "observed_terminal_gradient_rows": 0,
+          "runtime_sec": 4.272371586004738,
+          "matching_acc": 0.0,
+          "snapshot_row_std": 4.971627574769508
+        },
+        "shard_budget80_intermediate": {
+          "snapshot_mse": 0.4417992028740286,
+          "fixed_order_mse": 1.6545604144254253,
+          "observed_intermediate_batch_gradients": 80,
+          "observed_terminal_gradient_rows": 0,
+          "runtime_sec": 4.274523033993319,
+          "matching_acc": 0.0,
+          "snapshot_row_std": 5.042379564121179,
+          "gradient_row_budget": 80,
+          "gradient_rows_used": 80
+        },
+        "passive_mean_broadcast": {
+          "snapshot_mse": 1.0000000411934657,
+          "fixed_order_mse": 1.0000000411934657,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 10,
+          "snapshot_row_std": 1.2994827337208943e-15
+        },
+        "lasa_qterm_T1": {
+          "snapshot_mse": 0.986444230069911,
+          "fixed_order_mse": 0.9940048485027546,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 10,
+          "snapshot_row_std": 0.2451223208312402,
+          "tier": "T1",
+          "method": "lasa_qterm_graph_term_map",
+          "graph_lambda": 10.0,
+          "spread_scale": 0.5,
+          "impossibility_note": "T1 identifies s_bar only; see paper/impossibility_t1.md"
+        },
+        "lasa_qterm_T1p": {
+          "snapshot_mse": 0.4243251654797079,
+          "fixed_order_mse": 1.498650510987982,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 70,
+          "snapshot_row_std": 3.6840504713820237,
+          "tier": "T1p",
+          "method": "lasa_qterm_partial_honest",
+          "rows_per_epoch": 7,
+          "imputation_free": true,
+          "partial_graph_lambda": 0.35
+        },
+        "lasa_qterm_T1b_full": {
+          "snapshot_mse": 0.007300696031407847,
+          "fixed_order_mse": 1.814505194310718,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 320,
+          "snapshot_row_std": 5.553247057034083,
+          "tier": "T1b",
+          "method": "lasa_qterm_b1_full",
+          "gradient_row_budget": null,
+          "non_acceptance_for_primary_t1": true
+        },
+        "lasa_qterm_T1b_budget80": {
+          "snapshot_mse": 0.1992654280117092,
+          "fixed_order_mse": 1.6956924636350745,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 80,
+          "snapshot_row_std": 4.814639337507446,
+          "tier": "T1b",
+          "method": "lasa_qterm_b1_budget",
+          "gradient_row_budget": 80,
+          "non_acceptance_for_primary_t1": true
+        },
+        "level1_mean_rel_error": 0.00033902753035364044
+      },
+      {
+        "seed": 11,
+        "snapshot_source": "smooth",
+        "shard_stage2_oracle": {
+          "snapshot_mse": 0.37256572783766895,
+          "fixed_order_mse": 1.8535560035920535,
+          "observed_intermediate_batch_gradients": 80,
+          "observed_terminal_gradient_rows": 0,
+          "runtime_sec": 4.283635093015619,
+          "matching_acc": 0.0,
+          "snapshot_row_std": 4.638754040774106
+        },
+        "shard_budget80_intermediate": {
+          "snapshot_mse": 0.40115955539505843,
+          "fixed_order_mse": 2.174252255894469,
+          "observed_intermediate_batch_gradients": 80,
+          "observed_terminal_gradient_rows": 0,
+          "runtime_sec": 4.3101537359762006,
+          "matching_acc": 0.0,
+          "snapshot_row_std": 5.171396615520767,
+          "gradient_row_budget": 80,
+          "gradient_rows_used": 80
+        },
+        "passive_mean_broadcast": {
+          "snapshot_mse": 1.0000000443833876,
+          "fixed_order_mse": 1.0000000443833876,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 10,
+          "snapshot_row_std": 1.121270291988505e-15
+        },
+        "lasa_qterm_T1": {
+          "snapshot_mse": 0.9739242575877005,
+          "fixed_order_mse": 0.9945925131162326,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 10,
+          "snapshot_row_std": 0.24663703383680557,
+          "tier": "T1",
+          "method": "lasa_qterm_graph_term_map",
+          "graph_lambda": 10.0,
+          "spread_scale": 0.5,
+          "impossibility_note": "T1 identifies s_bar only; see paper/impossibility_t1.md"
+        },
+        "lasa_qterm_T1p": {
+          "snapshot_mse": 0.4005339076780871,
+          "fixed_order_mse": 1.3114875089052183,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 70,
+          "snapshot_row_std": 3.683929239626636,
+          "tier": "T1p",
+          "method": "lasa_qterm_partial_honest",
+          "rows_per_epoch": 7,
+          "imputation_free": true,
+          "partial_graph_lambda": 0.35
+        },
+        "lasa_qterm_T1b_full": {
+          "snapshot_mse": 3.3206398647362713e-07,
+          "fixed_order_mse": 2.119775992589564,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 320,
+          "snapshot_row_std": 5.631924092975579,
+          "tier": "T1b",
+          "method": "lasa_qterm_b1_full",
+          "gradient_row_budget": null,
+          "non_acceptance_for_primary_t1": true
+        },
+        "lasa_qterm_T1b_budget80": {
+          "snapshot_mse": 0.15909611227912712,
+          "fixed_order_mse": 1.8747973833179992,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 80,
+          "snapshot_row_std": 4.863471262103268,
+          "tier": "T1b",
+          "method": "lasa_qterm_b1_budget",
+          "gradient_row_budget": 80,
+          "non_acceptance_for_primary_t1": true
+        },
+        "level1_mean_rel_error": 0.000349723150915658
+      },
+      {
+        "seed": 19,
+        "snapshot_source": "smooth",
+        "shard_stage2_oracle": {
+          "snapshot_mse": 0.7645107123732826,
+          "fixed_order_mse": 2.4329699298133143,
+          "observed_intermediate_batch_gradients": 80,
+          "observed_terminal_gradient_rows": 0,
+          "runtime_sec": 4.389915128995199,
+          "matching_acc": 0.0,
+          "snapshot_row_std": 6.086828364708154
+        },
+        "shard_budget80_intermediate": {
+          "snapshot_mse": 1.6880193605679936,
+          "fixed_order_mse": 3.4245199836293696,
+          "observed_intermediate_batch_gradients": 80,
+          "observed_terminal_gradient_rows": 0,
+          "runtime_sec": 4.47974127298221,
+          "matching_acc": 0.0,
+          "snapshot_row_std": 8.167357482750802,
+          "gradient_row_budget": 80,
+          "gradient_rows_used": 80
+        },
+        "passive_mean_broadcast": {
+          "snapshot_mse": 1.0000000432888858,
+          "fixed_order_mse": 1.0000000432888856,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 10,
+          "snapshot_row_std": 1.2994827337208943e-15
+        },
+        "lasa_qterm_T1": {
+          "snapshot_mse": 0.9944273477729715,
+          "fixed_order_mse": 1.0037787788267374,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 10,
+          "snapshot_row_std": 0.24243477346713166,
+          "tier": "T1",
+          "method": "lasa_qterm_graph_term_map",
+          "graph_lambda": 10.0,
+          "spread_scale": 0.5,
+          "impossibility_note": "T1 identifies s_bar only; see paper/impossibility_t1.md"
+        },
+        "lasa_qterm_T1p": {
+          "snapshot_mse": 0.5821218292488672,
+          "fixed_order_mse": 1.639382455981067,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 70,
+          "snapshot_row_std": 4.345967505149467,
+          "tier": "T1p",
+          "method": "lasa_qterm_partial_honest",
+          "rows_per_epoch": 7,
+          "imputation_free": true,
+          "partial_graph_lambda": 0.35
+        },
+        "lasa_qterm_T1b_full": {
+          "snapshot_mse": 3.663163814849635e-07,
+          "fixed_order_mse": 1.9046223107112563,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 320,
+          "snapshot_row_std": 5.628542036208,
+          "tier": "T1b",
+          "method": "lasa_qterm_b1_full",
+          "gradient_row_budget": null,
+          "non_acceptance_for_primary_t1": true
+        },
+        "lasa_qterm_T1b_budget80": {
+          "snapshot_mse": 0.09564104640745542,
+          "fixed_order_mse": 1.7996073940370925,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 80,
+          "snapshot_row_std": 5.086860948042576,
+          "tier": "T1b",
+          "method": "lasa_qterm_b1_budget",
+          "gradient_row_budget": 80,
+          "non_acceptance_for_primary_t1": true
+        },
+        "level1_mean_rel_error": 0.00035136810852013837
+      },
+      {
+        "seed": 23,
+        "snapshot_source": "smooth",
+        "shard_stage2_oracle": {
+          "snapshot_mse": 0.4379312745957979,
+          "fixed_order_mse": 2.162519379974622,
+          "observed_intermediate_batch_gradients": 80,
+          "observed_terminal_gradient_rows": 0,
+          "runtime_sec": 4.274926593003329,
+          "matching_acc": 0.0,
+          "snapshot_row_std": 5.2875330429373095
+        },
+        "shard_budget80_intermediate": {
+          "snapshot_mse": 0.4056700972379613,
+          "fixed_order_mse": 1.8650393343687963,
+          "observed_intermediate_batch_gradients": 80,
+          "observed_terminal_gradient_rows": 0,
+          "runtime_sec": 4.3219525659806095,
+          "matching_acc": 0.0,
+          "snapshot_row_std": 5.3008356327001085,
+          "gradient_row_budget": 80,
+          "gradient_rows_used": 80
+        },
+        "passive_mean_broadcast": {
+          "snapshot_mse": 1.0000000748112885,
+          "fixed_order_mse": 1.0000000748112885,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 10,
+          "snapshot_row_std": 1.3229834214604202e-15
+        },
+        "lasa_qterm_T1": {
+          "snapshot_mse": 0.9890724593159815,
+          "fixed_order_mse": 1.0049503502056139,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 10,
+          "snapshot_row_std": 0.23534656519086636,
+          "tier": "T1",
+          "method": "lasa_qterm_graph_term_map",
+          "graph_lambda": 10.0,
+          "spread_scale": 0.5,
+          "impossibility_note": "T1 identifies s_bar only; see paper/impossibility_t1.md"
+        },
+        "lasa_qterm_T1p": {
+          "snapshot_mse": 0.4125191634574573,
+          "fixed_order_mse": 1.3708403818496446,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 70,
+          "snapshot_row_std": 3.8799809603375035,
+          "tier": "T1p",
+          "method": "lasa_qterm_partial_honest",
+          "rows_per_epoch": 7,
+          "imputation_free": true,
+          "partial_graph_lambda": 0.35
+        },
+        "lasa_qterm_T1b_full": {
+          "snapshot_mse": 0.00010210230647219226,
+          "fixed_order_mse": 1.8601583641646084,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 320,
+          "snapshot_row_std": 5.633080104498944,
+          "tier": "T1b",
+          "method": "lasa_qterm_b1_full",
+          "gradient_row_budget": null,
+          "non_acceptance_for_primary_t1": true
+        },
+        "lasa_qterm_T1b_budget80": {
+          "snapshot_mse": 0.15850589376094662,
+          "fixed_order_mse": 1.6595922469664288,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 80,
+          "snapshot_row_std": 4.933727558534272,
+          "tier": "T1b",
+          "method": "lasa_qterm_b1_budget",
+          "gradient_row_budget": 80,
+          "non_acceptance_for_primary_t1": true
+        },
+        "level1_mean_rel_error": 0.00047584389718872646
+      }
+    ],
+    "mnist": [
+      {
+        "seed": 3,
+        "snapshot_source": "mnist",
+        "shard_stage2_oracle": {
+          "snapshot_mse": 0.5017751580766822,
+          "fixed_order_mse": 2.174171951901814,
+          "observed_intermediate_batch_gradients": 80,
+          "observed_terminal_gradient_rows": 0,
+          "runtime_sec": 4.550143402011599,
+          "matching_acc": 0.0,
+          "snapshot_row_std": 5.558785473205069
+        },
+        "shard_budget80_intermediate": {
+          "snapshot_mse": 0.5981571036037479,
+          "fixed_order_mse": 1.97397751629786,
+          "observed_intermediate_batch_gradients": 80,
+          "observed_terminal_gradient_rows": 0,
+          "runtime_sec": 4.259068103972822,
+          "matching_acc": 0.0,
+          "snapshot_row_std": 5.45761410247025,
+          "gradient_row_budget": 80,
+          "gradient_rows_used": 80
+        },
+        "passive_mean_broadcast": {
+          "snapshot_mse": 1.0000000307365027,
+          "fixed_order_mse": 1.0000000307365027,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 10,
+          "snapshot_row_std": 3.975108226838627e-19
+        },
+        "lasa_qterm_T1": {
+          "snapshot_mse": 0.999996490468342,
+          "fixed_order_mse": 0.9999997074891602,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 10,
+          "snapshot_row_std": 7.178358561364703e-05,
+          "tier": "T1",
+          "method": "lasa_qterm_graph_term_map",
+          "graph_lambda": 10.0,
+          "spread_scale": 0.5,
+          "impossibility_note": "T1 identifies s_bar only; see paper/impossibility_t1.md"
+        },
+        "lasa_qterm_T1p": {
+          "snapshot_mse": 0.6485993608386535,
+          "fixed_order_mse": 1.5777942370004245,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 70,
+          "snapshot_row_std": 4.305077264814542,
+          "tier": "T1p",
+          "method": "lasa_qterm_partial_honest",
+          "rows_per_epoch": 7,
+          "imputation_free": true,
+          "partial_graph_lambda": 0.35
+        },
+        "lasa_qterm_T1b_full": {
+          "snapshot_mse": 3.3683604529798237e-07,
+          "fixed_order_mse": 2.135885653971612,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 320,
+          "snapshot_row_std": 5.447779772977497,
+          "tier": "T1b",
+          "method": "lasa_qterm_b1_full",
+          "gradient_row_budget": null,
+          "non_acceptance_for_primary_t1": true
+        },
+        "lasa_qterm_T1b_budget80": {
+          "snapshot_mse": 0.11885075426844666,
+          "fixed_order_mse": 1.847207002998569,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 80,
+          "snapshot_row_std": 4.6963745084043325,
+          "tier": "T1b",
+          "method": "lasa_qterm_b1_budget",
+          "gradient_row_budget": 80,
+          "non_acceptance_for_primary_t1": true
+        },
+        "level1_mean_rel_error": 991.8666150269883
+      },
+      {
+        "seed": 7,
+        "snapshot_source": "mnist",
+        "shard_stage2_oracle": {
+          "snapshot_mse": 0.6635668566189061,
+          "fixed_order_mse": 2.0109779591603614,
+          "observed_intermediate_batch_gradients": 80,
+          "observed_terminal_gradient_rows": 0,
+          "runtime_sec": 4.466341907973401,
+          "matching_acc": 0.0,
+          "snapshot_row_std": 5.385732919282474
+        },
+        "shard_budget80_intermediate": {
+          "snapshot_mse": 0.5453846089333199,
+          "fixed_order_mse": 2.187923732899673,
+          "observed_intermediate_batch_gradients": 80,
+          "observed_terminal_gradient_rows": 0,
+          "runtime_sec": 4.404467121989001,
+          "matching_acc": 0.0,
+          "snapshot_row_std": 5.573481704052682,
+          "gradient_row_budget": 80,
+          "gradient_rows_used": 80
+        },
+        "passive_mean_broadcast": {
+          "snapshot_mse": 1.0000000411945498,
+          "fixed_order_mse": 1.00000004119455,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 10,
+          "snapshot_row_std": 5.613940903656429e-19
+        },
+        "lasa_qterm_T1": {
+          "snapshot_mse": 0.9999960886086001,
+          "fixed_order_mse": 1.000001541886737,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 10,
+          "snapshot_row_std": 8.310039843480909e-05,
+          "tier": "T1",
+          "method": "lasa_qterm_graph_term_map",
+          "graph_lambda": 10.0,
+          "spread_scale": 0.5,
+          "impossibility_note": "T1 identifies s_bar only; see paper/impossibility_t1.md"
+        },
+        "lasa_qterm_T1p": {
+          "snapshot_mse": 0.619927542049119,
+          "fixed_order_mse": 1.6772436216256892,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 70,
+          "snapshot_row_std": 4.2957985409577,
+          "tier": "T1p",
+          "method": "lasa_qterm_partial_honest",
+          "rows_per_epoch": 7,
+          "imputation_free": true,
+          "partial_graph_lambda": 0.35
+        },
+        "lasa_qterm_T1b_full": {
+          "snapshot_mse": 0.010629115385567536,
+          "fixed_order_mse": 1.9712241301702798,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 320,
+          "snapshot_row_std": 5.402319298740076,
+          "tier": "T1b",
+          "method": "lasa_qterm_b1_full",
+          "gradient_row_budget": null,
+          "non_acceptance_for_primary_t1": true
+        },
+        "lasa_qterm_T1b_budget80": {
+          "snapshot_mse": 0.12277039936790868,
+          "fixed_order_mse": 1.7805192974156685,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 80,
+          "snapshot_row_std": 4.752721411185602,
+          "tier": "T1b",
+          "method": "lasa_qterm_b1_budget",
+          "gradient_row_budget": 80,
+          "non_acceptance_for_primary_t1": true
+        },
+        "level1_mean_rel_error": 1148.2361905859955
+      },
+      {
+        "seed": 11,
+        "snapshot_source": "mnist",
+        "shard_stage2_oracle": {
+          "snapshot_mse": 0.5750331397339761,
+          "fixed_order_mse": 1.8442098174177561,
+          "observed_intermediate_batch_gradients": 80,
+          "observed_terminal_gradient_rows": 0,
+          "runtime_sec": 4.506392982963007,
+          "matching_acc": 0.0,
+          "snapshot_row_std": 5.330438024717372
+        },
+        "shard_budget80_intermediate": {
+          "snapshot_mse": 0.48139103437825537,
+          "fixed_order_mse": 1.8332605172412886,
+          "observed_intermediate_batch_gradients": 80,
+          "observed_terminal_gradient_rows": 0,
+          "runtime_sec": 4.450986228999682,
+          "matching_acc": 0.0,
+          "snapshot_row_std": 5.234645387002633,
+          "gradient_row_budget": 80,
+          "gradient_rows_used": 80
+        },
+        "passive_mean_broadcast": {
+          "snapshot_mse": 1.0000000443842967,
+          "fixed_order_mse": 1.0000000443842967,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 10,
+          "snapshot_row_std": 5.755138541606231e-19
+        },
+        "lasa_qterm_T1": {
+          "snapshot_mse": 0.9999920586723832,
+          "fixed_order_mse": 0.999998351403428,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 10,
+          "snapshot_row_std": 8.62574042546729e-05,
+          "tier": "T1",
+          "method": "lasa_qterm_graph_term_map",
+          "graph_lambda": 10.0,
+          "spread_scale": 0.5,
+          "impossibility_note": "T1 identifies s_bar only; see paper/impossibility_t1.md"
+        },
+        "lasa_qterm_T1p": {
+          "snapshot_mse": 0.5385042240792268,
+          "fixed_order_mse": 1.5880358342488006,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 70,
+          "snapshot_row_std": 4.213317288197451,
+          "tier": "T1p",
+          "method": "lasa_qterm_partial_honest",
+          "rows_per_epoch": 7,
+          "imputation_free": true,
+          "partial_graph_lambda": 0.35
+        },
+        "lasa_qterm_T1b_full": {
+          "snapshot_mse": 3.320639864736554e-07,
+          "fixed_order_mse": 2.134665731650027,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 320,
+          "snapshot_row_std": 5.525370605184563,
+          "tier": "T1b",
+          "method": "lasa_qterm_b1_full",
+          "gradient_row_budget": null,
+          "non_acceptance_for_primary_t1": true
+        },
+        "lasa_qterm_T1b_budget80": {
+          "snapshot_mse": 0.1167819273598884,
+          "fixed_order_mse": 1.9292800979712608,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 80,
+          "snapshot_row_std": 4.922286073938606,
+          "tier": "T1b",
+          "method": "lasa_qterm_b1_budget",
+          "gradient_row_budget": 80,
+          "non_acceptance_for_primary_t1": true
+        },
+        "level1_mean_rel_error": 1191.8579830368046
+      },
+      {
+        "seed": 19,
+        "snapshot_source": "mnist",
+        "shard_stage2_oracle": {
+          "snapshot_mse": 0.8494071644318746,
+          "fixed_order_mse": 2.2241062426299054,
+          "observed_intermediate_batch_gradients": 80,
+          "observed_terminal_gradient_rows": 0,
+          "runtime_sec": 4.424164757016115,
+          "matching_acc": 0.0,
+          "snapshot_row_std": 6.4842587415983495
+        },
+        "shard_budget80_intermediate": {
+          "snapshot_mse": 0.7364390243122179,
+          "fixed_order_mse": 2.3313314660087348,
+          "observed_intermediate_batch_gradients": 80,
+          "observed_terminal_gradient_rows": 0,
+          "runtime_sec": 4.403331301000435,
+          "matching_acc": 0.0,
+          "snapshot_row_std": 6.412484291455606,
+          "gradient_row_budget": 80,
+          "gradient_rows_used": 80
+        },
+        "passive_mean_broadcast": {
+          "snapshot_mse": 1.0000000432900031,
+          "fixed_order_mse": 1.0000000432900031,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 10,
+          "snapshot_row_std": 6.136354725093746e-19
+        },
+        "lasa_qterm_T1": {
+          "snapshot_mse": 0.9999961354177557,
+          "fixed_order_mse": 0.9999996596187143,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 10,
+          "snapshot_row_std": 8.51872643170676e-05,
+          "tier": "T1",
+          "method": "lasa_qterm_graph_term_map",
+          "graph_lambda": 10.0,
+          "spread_scale": 0.5,
+          "impossibility_note": "T1 identifies s_bar only; see paper/impossibility_t1.md"
+        },
+        "lasa_qterm_T1p": {
+          "snapshot_mse": 0.7970160125530881,
+          "fixed_order_mse": 1.8084922911567505,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 70,
+          "snapshot_row_std": 4.90721247731522,
+          "tier": "T1p",
+          "method": "lasa_qterm_partial_honest",
+          "rows_per_epoch": 7,
+          "imputation_free": true,
+          "partial_graph_lambda": 0.35
+        },
+        "lasa_qterm_T1b_full": {
+          "snapshot_mse": 3.663163814848174e-07,
+          "fixed_order_mse": 2.050468949997705,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 320,
+          "snapshot_row_std": 5.489310973730541,
+          "tier": "T1b",
+          "method": "lasa_qterm_b1_full",
+          "gradient_row_budget": null,
+          "non_acceptance_for_primary_t1": true
+        },
+        "lasa_qterm_T1b_budget80": {
+          "snapshot_mse": 0.09957563390782871,
+          "fixed_order_mse": 1.7915639292287922,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 80,
+          "snapshot_row_std": 4.792257499804219,
+          "tier": "T1b",
+          "method": "lasa_qterm_b1_budget",
+          "gradient_row_budget": 80,
+          "non_acceptance_for_primary_t1": true
+        },
+        "level1_mean_rel_error": 1177.0713703679571
+      },
+      {
+        "seed": 23,
+        "snapshot_source": "mnist",
+        "shard_stage2_oracle": {
+          "snapshot_mse": 0.4370855658181293,
+          "fixed_order_mse": 2.1592118254918806,
+          "observed_intermediate_batch_gradients": 80,
+          "observed_terminal_gradient_rows": 0,
+          "runtime_sec": 4.493917639018036,
+          "matching_acc": 0.0,
+          "snapshot_row_std": 5.28372207721927
+        },
+        "shard_budget80_intermediate": {
+          "snapshot_mse": 0.5089213306537927,
+          "fixed_order_mse": 1.9661977406287567,
+          "observed_intermediate_batch_gradients": 80,
+          "observed_terminal_gradient_rows": 0,
+          "runtime_sec": 4.452603914018255,
+          "matching_acc": 0.0,
+          "snapshot_row_std": 5.627128128723109,
+          "gradient_row_budget": 80,
+          "gradient_rows_used": 80
+        },
+        "passive_mean_broadcast": {
+          "snapshot_mse": 1.0000000748118831,
+          "fixed_order_mse": 1.000000074811883,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 10,
+          "snapshot_row_std": 6.840419083374826e-19
+        },
+        "lasa_qterm_T1": {
+          "snapshot_mse": 0.9999916132425796,
+          "fixed_order_mse": 1.0000014733604556,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 10,
+          "snapshot_row_std": 0.00011198314935976044,
+          "tier": "T1",
+          "method": "lasa_qterm_graph_term_map",
+          "graph_lambda": 10.0,
+          "spread_scale": 0.5,
+          "impossibility_note": "T1 identifies s_bar only; see paper/impossibility_t1.md"
+        },
+        "lasa_qterm_T1p": {
+          "snapshot_mse": 0.5717823720667761,
+          "fixed_order_mse": 1.6293131234379468,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 70,
+          "snapshot_row_std": 4.404917917040614,
+          "tier": "T1p",
+          "method": "lasa_qterm_partial_honest",
+          "rows_per_epoch": 7,
+          "imputation_free": true,
+          "partial_graph_lambda": 0.35
+        },
+        "lasa_qterm_T1b_full": {
+          "snapshot_mse": 3.42866860342867e-07,
+          "fixed_order_mse": 2.1365212206062374,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 320,
+          "snapshot_row_std": 5.529359837573805,
+          "tier": "T1b",
+          "method": "lasa_qterm_b1_full",
+          "gradient_row_budget": null,
+          "non_acceptance_for_primary_t1": true
+        },
+        "lasa_qterm_T1b_budget80": {
+          "snapshot_mse": 0.09572521860719552,
+          "fixed_order_mse": 1.9591017388818337,
+          "observed_intermediate_batch_gradients": 0,
+          "observed_terminal_gradient_rows": 80,
+          "snapshot_row_std": 4.98576252781761,
+          "tier": "T1b",
+          "method": "lasa_qterm_b1_budget",
+          "gradient_row_budget": 80,
+          "non_acceptance_for_primary_t1": true
+        },
+        "level1_mean_rel_error": 1547.3223621503798
+      }
+    ]
+  },
+  "summary": {
+    "smooth": {
+      "shard_stage2_oracle": {
+        "snapshot_mse_mean": 0.48341823285109803,
+        "snapshot_mse_std": 0.14277234955154308,
+        "fixed_order_mse_mean": 1.9824925925965182,
+        "observed_intermediate_batch_gradients_mean": 80.0,
+        "observed_terminal_gradient_rows_mean": 0.0,
+        "snapshot_row_std_mean": 5.1671688572902275,
+        "matching_acc_mean": 0.0
+      },
+      "shard_budget80_intermediate": {
+        "snapshot_mse_mean": 0.6770650657683747,
+        "snapshot_mse_std": 0.5058297636737947,
+        "fixed_order_mse_mean": 2.1801532898318507,
+        "observed_intermediate_batch_gradients_mean": 80.0,
+        "observed_terminal_gradient_rows_mean": 0.0,
+        "snapshot_row_std_mean": 5.7566804554257,
+        "matching_acc_mean": 0.0
+      },
+      "passive_mean_broadcast": {
+        "snapshot_mse_mean": 1.0000000468825687,
+        "snapshot_mse_std": 1.4780103948831533e-08,
+        "fixed_order_mse_mean": 1.0000000468825687,
+        "observed_intermediate_batch_gradients_mean": 0.0,
+        "observed_terminal_gradient_rows_mean": 10.0,
+        "snapshot_row_std_mean": 1.2713705558068066e-15
+      },
+      "lasa_qterm_T1": {
+        "snapshot_mse_mean": 0.9865012014420905,
+        "snapshot_mse_std": 0.0068144347456348025,
+        "fixed_order_mse_mean": 1.0002747343599052,
+        "observed_intermediate_batch_gradients_mean": 0.0,
+        "observed_terminal_gradient_rows_mean": 10.0,
+        "snapshot_row_std_mean": 0.24251610502242235
+      },
+      "lasa_qterm_T1p": {
+        "snapshot_mse_mean": 0.445652684740493,
+        "snapshot_mse_std": 0.06866301361895011,
+        "fixed_order_mse_mean": 1.480109402583271,
+        "observed_intermediate_batch_gradients_mean": 0.0,
+        "observed_terminal_gradient_rows_mean": 70.0,
+        "snapshot_row_std_mean": 3.8335583527002113
+      },
+      "lasa_qterm_T1b_full": {
+        "snapshot_mse_mean": 0.0014807667108586594,
+        "snapshot_mse_std": 0.0029102315207549406,
+        "fixed_order_mse_mean": 1.923008887228994,
+        "observed_intermediate_batch_gradients_mean": 0.0,
+        "observed_terminal_gradient_rows_mean": 320.0,
+        "snapshot_row_std_mean": 5.615172589778979
+      },
+      "lasa_qterm_T1b_budget80": {
+        "snapshot_mse_mean": 0.15994319300786525,
+        "snapshot_mse_std": 0.03585283585140648,
+        "fixed_order_mse_mean": 1.7615921137623325,
+        "observed_intermediate_batch_gradients_mean": 0.0,
+        "observed_terminal_gradient_rows_mean": 80.0,
+        "snapshot_row_std_mean": 4.934979275605537
+      }
+    },
+    "mnist": {
+      "shard_stage2_oracle": {
+        "snapshot_mse_mean": 0.6053735769359136,
+        "snapshot_mse_std": 0.14346628790913132,
+        "fixed_order_mse_mean": 2.0825355593203434,
+        "observed_intermediate_batch_gradients_mean": 80.0,
+        "observed_terminal_gradient_rows_mean": 0.0,
+        "snapshot_row_std_mean": 5.608587447204507,
+        "matching_acc_mean": 0.0
+      },
+      "shard_budget80_intermediate": {
+        "snapshot_mse_mean": 0.5740586203762668,
+        "snapshot_mse_std": 0.09011157463454562,
+        "fixed_order_mse_mean": 2.058538194615262,
+        "observed_intermediate_batch_gradients_mean": 80.0,
+        "observed_terminal_gradient_rows_mean": 0.0,
+        "snapshot_row_std_mean": 5.661070722740855,
+        "matching_acc_mean": 0.0
+      },
+      "passive_mean_broadcast": {
+        "snapshot_mse_mean": 1.000000046883447,
+        "snapshot_mse_std": 1.4780010139348072e-08,
+        "fixed_order_mse_mean": 1.0000000468834471,
+        "observed_intermediate_batch_gradients_mean": 0.0,
+        "observed_terminal_gradient_rows_mean": 10.0,
+        "snapshot_row_std_mean": 5.664192296113972e-19
+      },
+      "lasa_qterm_T1": {
+        "snapshot_mse_mean": 0.999994477281932,
+        "snapshot_mse_std": 2.1656916273893375e-06,
+        "fixed_order_mse_mean": 1.000000146751699,
+        "observed_intermediate_batch_gradients_mean": 0.0,
+        "observed_terminal_gradient_rows_mean": 10.0,
+        "snapshot_row_std_mean": 8.766236039599141e-05
+      },
+      "lasa_qterm_T1p": {
+        "snapshot_mse_mean": 0.6351659023173728,
+        "snapshot_mse_std": 0.08940813784176967,
+        "fixed_order_mse_mean": 1.6561758214939224,
+        "observed_intermediate_batch_gradients_mean": 0.0,
+        "observed_terminal_gradient_rows_mean": 70.0,
+        "snapshot_row_std_mean": 4.425264697665105
+      },
+      "lasa_qterm_T1b_full": {
+        "snapshot_mse_mean": 0.0021260986937682268,
+        "snapshot_mse_std": 0.0042515083459159315,
+        "fixed_order_mse_mean": 2.0857531372791724,
+        "observed_intermediate_batch_gradients_mean": 0.0,
+        "observed_terminal_gradient_rows_mean": 320.0,
+        "snapshot_row_std_mean": 5.478828097641296
+      },
+      "lasa_qterm_T1b_budget80": {
+        "snapshot_mse_mean": 0.11074078670225358,
+        "snapshot_mse_std": 0.010928004917604135,
+        "fixed_order_mse_mean": 1.8615344132992249,
+        "observed_intermediate_batch_gradients_mean": 0.0,
+        "observed_terminal_gradient_rows_mean": 80.0,
+        "snapshot_row_std_mean": 4.829880404230074
+      }
+    }
+  },
+  "acceptance_table": {
+    "smooth": [
+      {
+        "tier": "T1",
+        "method": "lasa_qterm_T1",
+        "rows_mean": 10.0,
+        "intermediate_mean": 0.0,
+        "mse_mean": 0.9865012014420905,
+        "mse_over_shard_full": 2.040678514800561,
+        "meets_2x_at_tier_budget": false,
+        "acceptance_note": "T1 impossible; impossibility paper/impossibility_t1.md"
+      },
+      {
+        "tier": "T1",
+        "method": "passive_mean_broadcast",
+        "rows_mean": 10.0,
+        "intermediate_mean": 0.0,
+        "mse_mean": 1.0000000468825687,
+        "mse_over_shard_full": 2.0686022556178343,
+        "meets_2x_at_tier_budget": false,
+        "acceptance_note": "T1 lower bound"
+      },
+      {
+        "tier": "T1p",
+        "method": "lasa_qterm_T1p",
+        "rows_mean": 70.0,
+        "intermediate_mean": 0.0,
+        "mse_mean": 0.445652684740493,
+        "mse_over_shard_full": 0.9218781056563138,
+        "meets_2x_at_tier_budget": true,
+        "acceptance_note": "Honest partial; non-primary tier"
+      },
+      {
+        "tier": "T1b",
+        "method": "lasa_qterm_T1b_full",
+        "rows_mean": 320.0,
+        "intermediate_mean": 0.0,
+        "mse_mean": 0.0014807667108586594,
+        "mse_over_shard_full": 0.0030631172145192207,
+        "meets_2x_at_tier_budget": true,
+        "acceptance_note": "4x row budget vs SHARD-80; non-primary"
+      },
+      {
+        "tier": "T1b@80",
+        "method": "lasa_qterm_T1b_budget80",
+        "rows_mean": 80.0,
+        "intermediate_mean": 0.0,
+        "mse_mean": 0.15994319300786525,
+        "mse_over_shard_budget80": 0.23623016618993917,
+        "meets_2x_at_equal_rows": true,
+        "acceptance_note": "80 terminal vs 80 intermediate (matched)"
+      },
+      {
+        "tier": "T2",
+        "method": "shard_stage2_oracle",
+        "rows_mean": 0.0,
+        "intermediate_mean": 80.0,
+        "mse_mean": 0.48341823285109803,
+        "mse_over_shard_full": 1.0,
+        "acceptance_note": "Oracle upper bound"
+      },
+      {
+        "tier": "T2@80",
+        "method": "shard_budget80_intermediate",
+        "rows_mean": 0.0,
+        "intermediate_mean": 80,
+        "mse_mean": 0.6770650657683747,
+        "acceptance_note": "Oracle @ matched 80 rows"
+      }
+    ],
+    "mnist": [
+      {
+        "tier": "T1",
+        "method": "lasa_qterm_T1",
+        "rows_mean": 10.0,
+        "intermediate_mean": 0.0,
+        "mse_mean": 0.999994477281932,
+        "mse_over_shard_full": 1.6518634366953777,
+        "meets_2x_at_tier_budget": false,
+        "acceptance_note": "T1 impossible; impossibility paper/impossibility_t1.md"
+      },
+      {
+        "tier": "T1",
+        "method": "passive_mean_broadcast",
+        "rows_mean": 10.0,
+        "intermediate_mean": 0.0,
+        "mse_mean": 1.000000046883447,
+        "mse_over_shard_full": 1.6518726369672878,
+        "meets_2x_at_tier_budget": false,
+        "acceptance_note": "T1 lower bound"
+      },
+      {
+        "tier": "T1p",
+        "method": "lasa_qterm_T1p",
+        "rows_mean": 70.0,
+        "intermediate_mean": 0.0,
+        "mse_mean": 0.6351659023173728,
+        "mse_over_shard_full": 1.0492131247819774,
+        "meets_2x_at_tier_budget": true,
+        "acceptance_note": "Honest partial; non-primary tier"
+      },
+      {
+        "tier": "T1b",
+        "method": "lasa_qterm_T1b_full",
+        "rows_mean": 320.0,
+        "intermediate_mean": 0.0,
+        "mse_mean": 0.0021260986937682268,
+        "mse_over_shard_full": 0.003512044091070894,
+        "meets_2x_at_tier_budget": true,
+        "acceptance_note": "4x row budget vs SHARD-80; non-primary"
+      },
+      {
+        "tier": "T1b@80",
+        "method": "lasa_qterm_T1b_budget80",
+        "rows_mean": 80.0,
+        "intermediate_mean": 0.0,
+        "mse_mean": 0.11074078670225358,
+        "mse_over_shard_budget80": 0.192908498838792,
+        "meets_2x_at_equal_rows": true,
+        "acceptance_note": "80 terminal vs 80 intermediate (matched)"
+      },
+      {
+        "tier": "T2",
+        "method": "shard_stage2_oracle",
+        "rows_mean": 0.0,
+        "intermediate_mean": 80.0,
+        "mse_mean": 0.6053735769359136,
+        "mse_over_shard_full": 1.0,
+        "acceptance_note": "Oracle upper bound"
+      },
+      {
+        "tier": "T2@80",
+        "method": "shard_budget80_intermediate",
+        "rows_mean": 0.0,
+        "intermediate_mean": 80,
+        "mse_mean": 0.5740586203762668,
+        "acceptance_note": "Oracle @ matched 80 rows"
+      }
+    ]
+  },
+  "acceptance_verdict": {
+    "primary_t1_path": "impossibility",
+    "config_primary_goal_met": false,
+    "tier_honest_headlines": true,
+    "mnist_included": true,
+    "production_attack": true
+  },
+  "round04_deliverables": {
+    "method_named": true,
+    "qterm_attack_py": true,
+    "benchmark_consolidated": true,
+    "paper_method_scope": true,
+    "tutorial_updated": true
+  }
+}
