@@ -1302,7 +1302,7 @@
     "minibatch_tango_dopt_mse_median": 0.2797289970554694,
     "minibatch_tango_joint_mse_median": 0.2764648324792708,
     "minibatch_tango_mb_mse_median": 0.011406367115738615,
-    "shard_level3_reconstruction_mse": 0.033222670939095686
+    "shard_level3_reconstruction_mse": 0.03641520202046264
   },
   "joint_vs_dopt_fix": {
     "dopt_beats_joint": 0.0,
@@ -5837,7 +5837,7 @@
   "plots": [
     "artifacts/round14_minibatch_methods.svg"
   ],
-  "runtime_seconds": 4.010762453079224,
+  "runtime_seconds": 3.8823180198669434,
   "scenario_configs": {
     "balanced_clean": {
       "bias_scale": 1.2,
@@ -6243,14 +6243,14 @@
       "dim_g": 24,
       "input_dim": 16,
       "level2_matching_accuracy": 0.0,
-      "level3_reconstruction_mse": 0.033222670939095686,
-      "mean_snapshot_rel_error": 3.6250889510419876e-08,
+      "level3_reconstruction_mse": 0.03641520202046264,
+      "mean_snapshot_rel_error": 4.222336180314943e-08,
       "method": "shard_level1_level2_level3_invert",
       "n_epochs": 3,
       "n_samples": 4,
       "note": "Requires all intermediate batch gradients per epoch; cannot run from terminal deltas alone.",
       "observation_tier": "tier3_intermediate_batch_gradients",
-      "runtime_seconds": 2.089853525161743,
+      "runtime_seconds": 1.9393715858459473,
       "target": "individual_inputs",
       "terminal_only_feasible": false
     },

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="420" viewBox="0 0 880 420">
+<rect width="100%" height="100%" fill="white"/>
+<text x="440.0" y="22" text-anchor="middle" font-size="14" font-family="sans-serif">Round 11: prototype MSE — minibatch-primary methods</text>
+<line x1="62" x2="818" y1="358" y2="358" stroke="#333"/>
+<line x1="62" x2="62" y1="62" y2="358" stroke="#333"/>
+<text x="62.0" y="390" transform="rotate(22 62.0,390)" text-anchor="start" font-size="10">minibatch_sgd</text>
+<text x="818.0" y="390" transform="rotate(22 818.0,390)" text-anchor="start" font-size="10">minibatch_nonzero_init</text>
+<polyline fill="none" stroke="#d62728" stroke-width="2.2" points="62.0,189.8 818.0,100.6"/>
+<circle cx="62.0" cy="189.8" r="3.5" fill="#d62728"/>
+<circle cx="818.0" cy="100.6" r="3.5" fill="#d62728"/><polyline fill="none" stroke="#2ca02c" stroke-width="2.2" points="62.0,357.7 818.0,357.6"/>
+<circle cx="62.0" cy="357.7" r="3.5" fill="#2ca02c"/>
+<circle cx="818.0" cy="357.6" r="3.5" fill="#2ca02c"/><polyline fill="none" stroke="#17becf" stroke-width="2.2" points="62.0,357.7 818.0,357.6"/>
+<circle cx="62.0" cy="357.7" r="3.5" fill="#17becf"/>
+<circle cx="818.0" cy="357.6" r="3.5" fill="#17becf"/><polyline fill="none" stroke="#ff7f0e" stroke-width="2.2" points="62.0,338.8 818.0,243.3"/>
+<circle cx="62.0" cy="338.8" r="3.5" fill="#ff7f0e"/>
+<circle cx="818.0" cy="243.3" r="3.5" fill="#ff7f0e"/><polyline fill="none" stroke="#9467bd" stroke-width="2.2" points="62.0,354.2 818.0,353.6"/>
+<circle cx="62.0" cy="354.2" r="3.5" fill="#9467bd"/>
+<circle cx="818.0" cy="353.6" r="3.5" fill="#9467bd"/>
+<circle cx="660" cy="54" r="4" fill="#d62728"/><text x="672" y="58" font-size="10">TANGO vanilla</text>
+<circle cx="660" cy="72" r="4" fill="#2ca02c"/><text x="672" y="76" font-size="10">TANGO-MB</text>
+<circle cx="660" cy="90" r="4" fill="#17becf"/><text x="672" y="94" font-size="10">STORM</text>
+<circle cx="660" cy="108" r="4" fill="#ff7f0e"/><text x="672" y="112" font-size="10">passive</text>
+<circle cx="660" cy="126" r="4" fill="#9467bd"/><text x="672" y="130" font-size="10">passive+MB</text>
+<text transform="translate(14,210.0) rotate(-90)" text-anchor="middle" font-size="12">prototype MSE</text>
+</svg>

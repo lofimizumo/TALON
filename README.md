@@ -2,7 +2,7 @@
 
 **Goal:** Find a stronger direction than SHARD by prioritizing Stage 2 / full-method redesign and reducing the requirement for intermediate minibatch gradients. Stage-3-only improvements are background.
 
-**Status:** **ACCEPTED — paper-ready TALON/TANGO method** (Round 10 supervisor verdict `ACCEPT`, 2026-05-20)
+**Status:** **Phase 1 ACCEPT** (Round 10) + **Phase 2 scoped ACCEPT** (Round 14, minibatch fix, 2026-05-20)
 
 | Round | Scientist | Supervisor | Verdict |
 |-------|-----------|------------|---------|
@@ -16,6 +16,10 @@
 | 8 | done | done | ACCEPT AS FINAL PAPER DIRECTION |
 | 9 | done | done | **ACCEPT_WITH_MINOR** (evaluation closure) |
 | 10 | done | done | **ACCEPT** (paper-ready: proofs, decoder, frozen MLP) |
+| 11 | done | done | **REVISE_MAJOR** (TANGO-MB scaling fix; not yet fundamental) |
+| 12 | done | done | **REVISE_MAJOR** (proofs, counts, ablations) |
+| 13 | done | done | **REVISE_MINOR** (JOINT/COUPLED/DOPT failed honestly) |
+| 14 | done | done | **ACCEPT_WITH_MINOR** (Phase 2 scoped accept) |
 
 ## Final Outcome: TALON / TANGO
 
@@ -25,7 +29,9 @@
 
 Supported thesis:
 
-> Active terminal probes identify class-level hidden prototypes and aggregate moments under exact-regime assumptions, but not individual samples. Minibatch SGD breaks the first-order estimator. SHARD-equivalent individual recovery requires stronger observations or side information.
+> Active terminal probes identify class-level hidden prototypes under terminal-only observation. **TANGO-MB** corrects minibatch \(1/B\) gradient scaling (\(T_{\mathrm{eff}}=T\cdot N/B\)) at \(W_0=0\); harder joint/trajectory estimators do not beat it. Individual samples remain non-identifiable; SHARD Tier-3 needs intermediate gradients.
+
+See **`paper/phase2_scope.md`** for scoped Phase-2 claims and documented failures.
 
 ## Paper artifacts
 
@@ -43,6 +49,9 @@ cd /workspace
 python3 code/benchmark_round08.py   # TANGO stress tests
 python3 code/benchmark_round09.py   # baselines + extended stress
 python3 code/benchmark_round10.py   # decoder probe + frozen MLP
+python3 code/benchmark_round11.py   # TANGO-MB minibatch fix
+python3 code/benchmark_round14.py   # Phase 2 primary + SHARD cross
+python3 code/shard_cross_round14.py # SHARD level3_invert tier demo
 ```
 
 ## Key results (Round 10)
