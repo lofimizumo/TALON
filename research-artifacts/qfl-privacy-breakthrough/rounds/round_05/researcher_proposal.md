@@ -70,4 +70,4 @@ Snapshot-DP **can** inflate T1p attack MSE at high σ, but **no** grid point sat
 ## Answers
 
 1. **B pass?** **No.**
-2. **Best defense config for B?** **None.** Closest: **Laplace, ε=0.5, σ=0.02.** Strongest T1p harm: **Gaussian, σ=0.5.**
+2. **Best defense config for B?** **None.** Closest: **Laplace, ε=4, σ=0.02.** Strongest T1p harm: **Gaussian, σ=0.5.**

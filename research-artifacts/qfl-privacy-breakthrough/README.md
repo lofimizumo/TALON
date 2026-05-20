@@ -13,6 +13,8 @@
 | 3 | [x] | [x] | REVISE_MAJOR |
 | 4 | [x] | [x] | REVISE_MAJOR |
 | 5 | [x] | [x] | REVISE_MAJOR |
+| 6 | — | — | (skipped) |
+| 7 | [x] | — | scientist-only |
 
 ## Paths
 
