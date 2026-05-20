@@ -1,4 +1,4 @@
-# TALON/TANGO Manuscript Draft (Round 13)
+# TALON/TANGO Manuscript Draft (Round 14)
 
 Working title: **Beyond SHARD: Tiered Gradient Leakage and Identifiability Limits Under Active Terminal Probing**
 
@@ -8,7 +8,7 @@ Formal proofs: `paper/proofs.md`. LaTeX fragment: `paper/method.tex`.
 
 ## Abstract
 
-Federated learning often leaks only **terminal** client model updates, not intermediate minibatch gradients required by SHARD-style reconstruction. We introduce **TALON** (observation tiers) and **TANGO** (active terminal probing) for recovering class counts, class sums, and hidden prototypes under a linear-head, first-order model. We prove aggregate identifiability in the full-batch exact regime and **Lemma MB-A** for minibatch divisor correction at \(W_0=0\), with **Lemma MB-B** drift bounds (mean \(\|W_M-W_0\|_F \approx 0.112\)). Round 13 retests **TANGO-MB** on primary `minibatch_sgd`: prototype MSE **0.011** (median **0.011**, IQR **0.005**) vs passive **0.753**; count MAE **0.100** vs passive **0.295**. **TANGO-JOINT**, **TANGO-COUPLED**, and trajectory-midpoint estimators **do not** beat TANGO-MB (means **0.27–0.28**). Honest scaling-only ablation **`passive_mb_scale_only`** yields **0.151** (median **0.140**) — active gain over scaling is **\(\approx 14\times\)**, not the inflated **\(\approx 26\times\)** from Round 12’s coupled `passive_mb`. Individual sample recovery remains impossible (Theorem 2).
+Federated learning often leaks only **terminal** client model updates, not intermediate minibatch gradients required by SHARD-style reconstruction. We introduce **TALON** (observation tiers) and **TANGO** (active terminal probing) for recovering class counts, class sums, and hidden prototypes under a linear-head, first-order model. We prove aggregate identifiability in the full-batch exact regime and **Lemma MB-A** for minibatch divisor correction at \(W_0=0\), with **Lemma MB-B** drift bounds (mean \(\|W_M-W_0\|_F \approx 0.112\)). Round 14 closes Phase-2 scoped acceptance: **TANGO-MB** on primary `minibatch_sgd` (see `artifacts/round14_metrics.json`); **TANGO-JOINT** (uniform weights) and **TANGO-DOPT** are **distinct** estimators and both **fail** vs TANGO-MB. Honest scaling-only **`passive_mb_scale_only`** isolates Lemma MB-A; active gain \(\approx 14\times\) over scaling-only. **SHARD** `level3_invert` cross (synthetic tier table): individual reconstruction under intermediate gradients; terminal-only TANGO targets class prototypes — not comparable metrics. Scoped claims: `paper/phase2_scope.md`. Individual recovery remains impossible (Theorem 2).
 
 ---
 
@@ -22,8 +22,9 @@ Federated learning often leaks only **terminal** client model updates, not inter
 | Passive multi-round | 0.753 / 0.751 | 0.295 |
 | **passive_mb_scale_only (R11)** | **0.151** / **0.140** / 0.032 | — |
 | **TANGO-MB (active)** | **0.011** / **0.011** / 0.005 | **0.100** |
-| TANGO-JOINT | 0.283 / 0.280 / 0.038 | 0.195 |
-| TANGO-COUPLED | 0.272 / 0.276 | — |
+| TANGO-JOINT (uniform, R14) | see R14 JSON | — |
+| TANGO-DOPT | see R14 JSON | — |
+| TANGO-COUPLED | ~0.27 (R13–14) | — |
 
 Vanilla TANGO mis-scales terminal deltas (\(T\) vs \(T_{\mathrm{eff}}=T(N/B)\)). TANGO-MB fixes Lemma MB-A; residual \(\sim 0.01\) MSE vs exact \(1.5\times 10^{-4}\) correlates with within-step drift (Lemma MB-B; mean \(\|W_M-W_0\|_F \approx 0.112\) in `artifacts/round13_metrics.json`).
 
@@ -35,7 +36,7 @@ Count recovery uses the least-perturbed probe round for bias moments under MB; p
 
 ### 1.3 Scope
 
-Synthetic hidden-feature / frozen-MLP simulator; not deployed CNN FL; not secure aggregation; SHARD L3 baseline still required at project level (`config.json`).
+Synthetic hidden-feature / frozen-MLP simulator; not deployed CNN FL; secure aggregation out of scope (note in R14 JSON). SHARD L3 tier cross: `artifacts/round14_metrics.json` → `shard_baseline_cross`. Full claim fence: `paper/phase2_scope.md`.
 
 ---
 
@@ -49,9 +50,9 @@ Synthetic hidden-feature / frozen-MLP simulator; not deployed CNN FL; not secure
 
 ---
 
-## 3. Experiments (Round 12 headlines)
+## 3. Experiments (Round 14 headlines)
 
-Source: `artifacts/round12_metrics.json`, log `logs/experiment_round12.log`.
+Source: `artifacts/round14_metrics.json`, log `logs/experiment_round14.log`.
 
 **Primary `minibatch_sgd` (8 seeds):** see table §1.1.
 
@@ -63,4 +64,4 @@ Source: `artifacts/round12_metrics.json`, log `logs/experiment_round12.log`.
 
 ## 4. Conclusion
 
-Minibatch failure mode is addressed by principled \(T_{\mathrm{eff}}\) scaling plus explicit drift and count estimators. Phase-2 primary prototype and count gates pass on the simulator; global ACCEPT still requires supervisor sign-off and SHARD comparison per project config.
+Minibatch failure mode is addressed by principled \(T_{\mathrm{eff}}\) scaling plus explicit drift and count estimators. **Scoped Phase-2 ACCEPT** is supportable on the simulator (see `paper/phase2_scope.md`); holistic ACCEPT still excludes deployed CNN FL and secure-aggregation settings without stakeholder scope waiver.

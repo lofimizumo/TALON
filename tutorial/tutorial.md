@@ -227,10 +227,40 @@ Unsafe claims:
 - GARD solves missing intermediate gradients in the full unknown-assignment setting.
 - JOLI is a new leakage channel.
 
+## 11. Round 14 — Minibatch fix (Lemma MB-A / TANGO-MB)
+
+Round 09 showed vanilla TANGO **fails** on `minibatch_sgd` (prototype MSE \(\gg 1\)) because terminal deltas must be scaled by **effective gradient steps** \(T_{\mathrm{eff}} = T \cdot (N/B)\) under PyTorch \(1/B\) normalization, not raw local step count \(T\).
+
+**TANGO-MB** (`code/benchmark_round14.py`):
+
+1. Scale terminal \(\Delta W, \Delta b\) by \(T / T_{\mathrm{eff}}\) (Lemma MB-A).
+2. Active multi-round probing + `estimate_counts_mb` (least-perturbed round for counts).
+3. Report **median + IQR** over 8 seeds on primary `minibatch_sgd`.
+
+Run:
+
+```bash
+cd /workspace
+python3 code/benchmark_round14.py
+```
+
+Outputs: `artifacts/round14_metrics.json`, `artifacts/round14_minibatch_methods.svg`, `logs/experiment_round14.log`.
+
+**Primary (typical):** TANGO-MB prototype MSE median \(\approx 0.01\) vs passive \(\approx 0.75\); scaling-only `passive_mb_scale_only` \(\approx 0.14\).
+
+**Failed extensions (do not use for claims):** TANGO-JOINT (uniform joint LS), TANGO-DOPT (D-opt weights) — distinct in Round 14, both \(\gg\) TANGO-MB. TANGO-COUPLED likewise fails.
+
+**SHARD cross:** `shard_baseline_cross` in metrics JSON — SHARD `level3_invert` needs **intermediate** batch gradients (Tier 3); terminal-only TANGO is Tier 1 (class prototypes). See `paper/phase2_scope.md`.
+
+**Secure aggregation:** Not implemented; masked global sums are out of scope for the current threat model (note in R14 JSON).
+
 ## 10. Code Map
 
 | File | Role |
 |---|---|
+| `code/benchmark_round14.py` | Phase-2 scoped closure + SHARD tier cross |
+| `code/shard_cross_round14.py` | Synthetic SHARD L1–L3 vs TANGO-MB table |
+| `paper/phase2_scope.md` | Scoped ACCEPT claim fence |
 | `code/benchmark_round10.py` | Decoder probe + frozen MLP backbone |
 | `artifacts/round10_metrics.json` | Round-10 metrics |
 | `paper/proofs.md` | Formal theorem proofs |

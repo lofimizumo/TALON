@@ -199,11 +199,13 @@ This is one Newton/Jacobian correction, not full iterative FL inversion.
 
 ---
 
-## Lemma MB-JOINT (Round 13 — joint bias moments; negative result)
+## Lemma MB-JOINT (Round 13–14 — joint bias moments; negative result)
 
-**Procedure (`tango_joint` in `code/benchmark_round13.py`):** After \(T_{\mathrm{eff}}\) scaling, estimate counts by weighted LS over all rounds from bias equations \(n_c \approx N(p^{(r)}_c - g^{(r)}_c)\) with D-opt round weights \(w_r \propto 1/(\|p^{(r)}-\mathbf{1}/C\|+\epsilon)\), renormalize \(\sum_c n_c = N\), then solve weight moments for class sums per coordinate.
+**TANGO-JOINT (`tango_joint` in `code/benchmark_round14.py`):** After \(T_{\mathrm{eff}}\) scaling, joint ridge LS on stacked bias and weight moments with **uniform** round weights (\(w_r = 1/R\)).
 
-**Empirical (primary `minibatch_sgd`):** Prototype MSE mean **0.283** (median **0.280**) vs TANGO-MB **0.011** — **joint fitting does not beat** sequential uniform-round count selection. Aggressive probe rounds violate a shared-\(n_c\) linear model; stacking bias equations without hard exclusion harms counts.
+**TANGO-DOPT (`tango_dopt`):** Same stacked system with **D-opt** round weights \(w_r \propto 1/(\|p^{(r)}-\mathbf{1}/C\|+\epsilon)\), renormalized. Round 13 incorrectly used D-opt weights for both; Round 14 separates them.
+
+**Empirical (primary `minibatch_sgd`, Round 14):** Both JOINT and DOPT prototype MSE \(\gg\) TANGO-MB (**~0.01**); neither beats sequential `estimate_counts_mb`. D-opt weighting does **not** rescue joint inversion. Aggressive probe rounds violate a shared-\(n_c\) linear model; stacking bias equations without hard exclusion harms counts.
 
 **Coupled / trajectory variants:** `tango_coupled` (3 fixed-point bias Jacobian steps) mean **0.272**; `tango_trajectory_midpoint` mean **0.272** — same failure mode. Primary estimator remains **TANGO-MB**.
 
