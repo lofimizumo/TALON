@@ -7,6 +7,22 @@
   "rounds_planned": 8,
   "current_round": 4,
   "stop_mode": "until_acceptance",
+  "supervisor_status": {
+    "round": 4,
+    "verdict": "ACCEPT_WITH_MINOR",
+    "run_acceptance": true,
+    "reviewed_at": "2026-05-20T08:52:00Z",
+    "primary_t1_goal_met": false,
+    "impossibility_accepted": true,
+    "method_package": "LASA-QTERM",
+    "recommend_stop_run": true
+  },
+  "acceptance_tiers": {
+    "T1": "impossibility_accepted",
+    "T1p": "positive_non_primary_honest_partial",
+    "T1b": "positive_non_primary_b1_at_matched_budget",
+    "T2": "shard_oracle_baseline"
+  },
   "acceptance": {
     "supervisor_verdicts": ["ACCEPT", "ACCEPT_WITH_MINOR"],
     "max_critical_issues": 0,
