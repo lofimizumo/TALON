@@ -1,0 +1,37 @@
+2026-05-20 16:26:17,300 INFO Round 07 TANGO benchmark started
+2026-05-20 16:26:17,300 INFO config={'n_classes': 3, 'n_per_class': 8, 'dim_x': 10, 'prototype_scale': 2.0, 'within_class_std': 0.55, 'lr': 0.04, 'local_steps': 3, 'probe_rounds': (1, 2, 4, 8), 'seeds': (3, 7, 11, 19, 23, 29, 31, 37)}
+2026-05-20 16:26:17,309 INFO seed=3 rounds=1 proto_mse=0.127284 mean_mse=0.127213 indiv_mse=0.391132 residual=0.00000000
+2026-05-20 16:26:17,311 INFO seed=3 rounds=2 proto_mse=0.000332 mean_mse=0.000220 indiv_mse=0.264181 residual=0.00000000
+2026-05-20 16:26:17,313 INFO seed=3 rounds=4 proto_mse=0.000191 mean_mse=0.000072 indiv_mse=0.264039 residual=0.00000001
+2026-05-20 16:26:17,315 INFO seed=3 rounds=8 proto_mse=0.000179 mean_mse=0.000083 indiv_mse=0.264027 residual=0.00000003
+2026-05-20 16:26:17,317 INFO seed=7 rounds=1 proto_mse=0.135155 mean_mse=0.135095 indiv_mse=0.361476 residual=0.00000000
+2026-05-20 16:26:17,319 INFO seed=7 rounds=2 proto_mse=0.000402 mean_mse=0.000214 indiv_mse=0.226723 residual=0.00000001
+2026-05-20 16:26:17,321 INFO seed=7 rounds=4 proto_mse=0.000266 mean_mse=0.000135 indiv_mse=0.226587 residual=0.00000003
+2026-05-20 16:26:17,323 INFO seed=7 rounds=8 proto_mse=0.000219 mean_mse=0.000108 indiv_mse=0.226540 residual=0.00000003
+2026-05-20 16:26:17,325 INFO seed=11 rounds=1 proto_mse=0.155968 mean_mse=0.155875 indiv_mse=0.487890 residual=0.00000000
+2026-05-20 16:26:17,327 INFO seed=11 rounds=2 proto_mse=0.000233 mean_mse=0.000135 indiv_mse=0.281374 residual=0.00000002
+2026-05-20 16:26:17,329 INFO seed=11 rounds=4 proto_mse=0.000129 mean_mse=0.000064 indiv_mse=0.281460 residual=0.00000006
+2026-05-20 16:26:17,331 INFO seed=11 rounds=8 proto_mse=0.000157 mean_mse=0.000085 indiv_mse=0.281473 residual=0.00000006
+2026-05-20 16:26:17,333 INFO seed=19 rounds=1 proto_mse=0.119838 mean_mse=0.119759 indiv_mse=0.445332 residual=0.00000000
+2026-05-20 16:26:17,335 INFO seed=19 rounds=2 proto_mse=0.000256 mean_mse=0.000140 indiv_mse=0.244877 residual=0.00000000
+2026-05-20 16:26:17,337 INFO seed=19 rounds=4 proto_mse=0.000182 mean_mse=0.000050 indiv_mse=0.244802 residual=0.00000002
+2026-05-20 16:26:17,339 INFO seed=19 rounds=8 proto_mse=0.000094 mean_mse=0.000042 indiv_mse=0.244715 residual=0.00000003
+2026-05-20 16:26:17,341 INFO seed=23 rounds=1 proto_mse=0.127497 mean_mse=0.127415 indiv_mse=0.505439 residual=0.00000000
+2026-05-20 16:26:17,343 INFO seed=23 rounds=2 proto_mse=0.000325 mean_mse=0.000144 indiv_mse=0.359085 residual=0.00000001
+2026-05-20 16:26:17,344 INFO seed=23 rounds=4 proto_mse=0.000254 mean_mse=0.000047 indiv_mse=0.359150 residual=0.00000002
+2026-05-20 16:26:17,347 INFO seed=23 rounds=8 proto_mse=0.000125 mean_mse=0.000039 indiv_mse=0.359113 residual=0.00000004
+2026-05-20 16:26:17,349 INFO seed=29 rounds=1 proto_mse=0.165269 mean_mse=0.165266 indiv_mse=0.450899 residual=0.00000000
+2026-05-20 16:26:17,350 INFO seed=29 rounds=2 proto_mse=0.000273 mean_mse=0.000090 indiv_mse=0.285903 residual=0.00000002
+2026-05-20 16:26:17,352 INFO seed=29 rounds=4 proto_mse=0.000201 mean_mse=0.000075 indiv_mse=0.285831 residual=0.00000004
+2026-05-20 16:26:17,354 INFO seed=29 rounds=8 proto_mse=0.000177 mean_mse=0.000096 indiv_mse=0.285807 residual=0.00000007
+2026-05-20 16:26:17,356 INFO seed=31 rounds=1 proto_mse=0.188069 mean_mse=0.187997 indiv_mse=0.420380 residual=0.00000000
+2026-05-20 16:26:17,358 INFO seed=31 rounds=2 proto_mse=0.000294 mean_mse=0.000090 indiv_mse=0.232605 residual=0.00000001
+2026-05-20 16:26:17,360 INFO seed=31 rounds=4 proto_mse=0.000181 mean_mse=0.000106 indiv_mse=0.232492 residual=0.00000004
+2026-05-20 16:26:17,362 INFO seed=31 rounds=8 proto_mse=0.000164 mean_mse=0.000079 indiv_mse=0.232474 residual=0.00000007
+2026-05-20 16:26:17,364 INFO seed=37 rounds=1 proto_mse=0.126051 mean_mse=0.126005 indiv_mse=0.365168 residual=0.00000000
+2026-05-20 16:26:17,366 INFO seed=37 rounds=2 proto_mse=0.000079 mean_mse=0.000014 indiv_mse=0.239196 residual=0.00000002
+2026-05-20 16:26:17,368 INFO seed=37 rounds=4 proto_mse=0.000099 mean_mse=0.000027 indiv_mse=0.239216 residual=0.00000003
+2026-05-20 16:26:17,370 INFO seed=37 rounds=8 proto_mse=0.000089 mean_mse=0.000042 indiv_mse=0.239206 residual=0.00000004
+2026-05-20 16:26:17,372 INFO wrote /Users/yetao/Documents/06.My Papers/CQU/2026/01.SHARD/research-artifacts/novel-inversion-vs-shard/artifacts/round07_metrics.json
+2026-05-20 16:26:17,372 INFO wrote /Users/yetao/Documents/06.My Papers/CQU/2026/01.SHARD/research-artifacts/novel-inversion-vs-shard/artifacts/round07_terminal_update_metrics.svg
+2026-05-20 16:26:17,372 INFO headline={'best_probe_rounds': 8, 'best_prototype_mse_mean': 0.00015058279086769822, 'best_dataset_mean_mse_mean': 7.170007492918697e-05, 'best_individual_mse_mean': 0.26666941892460394, 'within_class_variance_mean': 0.2531765239357706, 'viability': 'viable as a weaker aggregate/prototype leakage contribution; not viable as individual sample recovery'}

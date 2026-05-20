@@ -1,0 +1,35 @@
+2026-05-20 16:03:23,414 INFO Round 04 config: SimConfig(n_samples=48, batch_size=4, dim_g=32, true_rank=4, n_epochs=5, noise_std=0.01, mean_anchor_weight=100.0, graph_lambda=0.35)
+2026-05-20 16:03:23,415 INFO Seeds=[3, 7, 11, 19, 23] fractions=[1.0, 0.6, 0.4, 0.25, 0.15]
+2026-05-20 16:03:23,415 INFO === observation_fraction=1.00 ===
+2026-05-20 16:03:23,428 INFO seed=3 rows=60/60 rank=48 shard_mse=0.002024 gard_mse=0.02082 gain=0.10x
+2026-05-20 16:03:23,429 INFO seed=7 rows=60/60 rank=48 shard_mse=0.001982 gard_mse=0.02107 gain=0.09x
+2026-05-20 16:03:23,430 INFO seed=11 rows=60/60 rank=48 shard_mse=0.001806 gard_mse=0.01704 gain=0.11x
+2026-05-20 16:03:23,431 INFO seed=19 rows=60/60 rank=48 shard_mse=0.002543 gard_mse=0.01955 gain=0.13x
+2026-05-20 16:03:23,432 INFO seed=23 rows=60/60 rank=48 shard_mse=0.001503 gard_mse=0.02019 gain=0.07x
+2026-05-20 16:03:23,432 INFO === observation_fraction=0.60 ===
+2026-05-20 16:03:23,433 INFO seed=3 rows=36/60 rank=37 shard_mse=0.2371 gard_mse=0.0392 gain=6.05x
+2026-05-20 16:03:23,434 INFO seed=7 rows=36/60 rank=37 shard_mse=0.187 gard_mse=0.03304 gain=5.66x
+2026-05-20 16:03:23,434 INFO seed=11 rows=36/60 rank=37 shard_mse=0.2514 gard_mse=0.03206 gain=7.84x
+2026-05-20 16:03:23,435 INFO seed=19 rows=36/60 rank=37 shard_mse=0.2183 gard_mse=0.03293 gain=6.63x
+2026-05-20 16:03:23,436 INFO seed=23 rows=36/60 rank=37 shard_mse=0.3698 gard_mse=0.03392 gain=10.90x
+2026-05-20 16:03:23,436 INFO === observation_fraction=0.40 ===
+2026-05-20 16:03:23,436 INFO seed=3 rows=24/60 rank=25 shard_mse=0.5026 gard_mse=0.07663 gain=6.56x
+2026-05-20 16:03:23,437 INFO seed=7 rows=24/60 rank=25 shard_mse=0.4772 gard_mse=0.1077 gain=4.43x
+2026-05-20 16:03:23,438 INFO seed=11 rows=24/60 rank=25 shard_mse=0.4393 gard_mse=0.04353 gain=10.09x
+2026-05-20 16:03:23,438 INFO seed=19 rows=24/60 rank=25 shard_mse=0.495 gard_mse=0.0714 gain=6.93x
+2026-05-20 16:03:23,439 INFO seed=23 rows=24/60 rank=25 shard_mse=0.5243 gard_mse=0.05621 gain=9.33x
+2026-05-20 16:03:23,439 INFO === observation_fraction=0.25 ===
+2026-05-20 16:03:23,439 INFO seed=3 rows=15/60 rank=16 shard_mse=0.6481 gard_mse=0.1003 gain=6.46x
+2026-05-20 16:03:23,441 INFO seed=7 rows=15/60 rank=16 shard_mse=0.6211 gard_mse=0.1121 gain=5.54x
+2026-05-20 16:03:23,441 INFO seed=11 rows=15/60 rank=16 shard_mse=0.6604 gard_mse=0.09895 gain=6.67x
+2026-05-20 16:03:23,442 INFO seed=19 rows=15/60 rank=16 shard_mse=0.726 gard_mse=0.1941 gain=3.74x
+2026-05-20 16:03:23,443 INFO seed=23 rows=15/60 rank=16 shard_mse=0.7413 gard_mse=0.1571 gain=4.72x
+2026-05-20 16:03:23,443 INFO === observation_fraction=0.15 ===
+2026-05-20 16:03:23,443 INFO seed=3 rows=9/60 rank=10 shard_mse=0.7412 gard_mse=0.2018 gain=3.67x
+2026-05-20 16:03:23,444 INFO seed=7 rows=9/60 rank=10 shard_mse=0.7475 gard_mse=0.1948 gain=3.84x
+2026-05-20 16:03:23,444 INFO seed=11 rows=9/60 rank=10 shard_mse=0.8123 gard_mse=0.3131 gain=2.59x
+2026-05-20 16:03:23,445 INFO seed=19 rows=9/60 rank=10 shard_mse=0.7781 gard_mse=0.3663 gain=2.12x
+2026-05-20 16:03:23,445 INFO seed=23 rows=9/60 rank=10 shard_mse=0.8839 gard_mse=0.3638 gain=2.43x
+2026-05-20 16:03:23,888 INFO Wrote /Users/yetao/Documents/06.My Papers/CQU/2026/01.SHARD/research-artifacts/novel-inversion-vs-shard/artifacts/round04_metrics.json
+2026-05-20 16:03:23,889 INFO Wrote /Users/yetao/Documents/06.My Papers/CQU/2026/01.SHARD/research-artifacts/novel-inversion-vs-shard/artifacts/round04_stage2_missing_observations.png
+2026-05-20 16:03:23,889 INFO Runtime 0.03s

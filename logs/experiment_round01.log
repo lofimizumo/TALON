@@ -1,0 +1,35 @@
+# Round 01 experiment log
+
+## Environment
+
+```bash
+cd research-artifacts/novel-inversion-vs-shard
+python3 -m venv .venv
+.venv/bin/pip install torch numpy scipy matplotlib torchvision
+```
+
+## Command
+
+```bash
+.venv/bin/python code/benchmark_round01.py 2>&1 | tee logs/experiment_round01.log
+```
+
+## Config (from benchmark)
+
+- MNIST: N=12, resize=14 (d=196)
+- SurrogateQFL: dim_g=160, seed=7
+- SHARD L3: n_batch=120, adam_steps=800, L-BFGS max_iter=300
+- LAPIN: 5 lstsq seeds + 48 random, 25 GN steps each, L-BFGS polish
+
+## Key stdout (metrics JSON)
+
+```
+SHARD L3:  MSE=0.0127  PSNR=19.0 dB  snap_match=0.58  runtime=4.9s
+LAPIN:     MSE=0.0877  PSNR=10.6 dB  snap_match=0.00  runtime=4.1s
+```
+
+## Outputs
+
+- artifacts/round01_metrics.json
+- artifacts/round01_reconstruction_grid.png
+- artifacts/round01_metrics_bar.png

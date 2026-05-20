@@ -1,0 +1,133 @@
+2026-05-20 14:21:11,527 INFO Using device: mps
+2026-05-20 14:21:11,527 INFO N=20 (Round 03; paper simulator default is 12, increased for stability)
+2026-05-20 14:21:11,527 INFO === Pareto sweep: resize=28 dim_g=100 seeds=[7, 11, 23] lambdas=[0.0, 0.001, 0.005, 0.01, 0.02] ===
+2026-05-20 14:21:11,528 INFO   seed=7 (SHARD baseline once)
+2026-05-20 14:21:27,884 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 784
+2026-05-20 14:21:44,057 INFO JOLI inversion complete: N=20, d=784, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0000
+2026-05-20 14:21:44,057 INFO   seed=7 tv_lbfgs=0
+2026-05-20 14:21:44,057 INFO   seed=7 tv_lbfgs=0.001
+2026-05-20 14:21:59,400 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 784
+2026-05-20 14:22:20,572 INFO JOLI inversion complete: N=20, d=784, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0010
+2026-05-20 14:22:20,573 INFO   seed=7 tv_lbfgs=0.005
+2026-05-20 14:22:35,984 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 784
+2026-05-20 14:22:57,335 INFO JOLI inversion complete: N=20, d=784, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0050
+2026-05-20 14:22:57,336 INFO   seed=7 tv_lbfgs=0.01
+2026-05-20 14:23:12,788 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 784
+2026-05-20 14:23:33,831 INFO JOLI inversion complete: N=20, d=784, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0100
+2026-05-20 14:23:33,832 INFO   seed=7 tv_lbfgs=0.02
+2026-05-20 14:23:49,717 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 784
+2026-05-20 14:24:10,878 INFO JOLI inversion complete: N=20, d=784, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0200
+2026-05-20 14:24:10,878 INFO   seed=11 (SHARD baseline once)
+2026-05-20 14:24:26,791 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 784
+2026-05-20 14:24:42,644 INFO JOLI inversion complete: N=20, d=784, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0000
+2026-05-20 14:24:42,645 INFO   seed=11 tv_lbfgs=0
+2026-05-20 14:24:42,645 INFO   seed=11 tv_lbfgs=0.001
+2026-05-20 14:24:59,784 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 784
+2026-05-20 14:25:21,975 INFO JOLI inversion complete: N=20, d=784, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0010
+2026-05-20 14:25:21,975 INFO   seed=11 tv_lbfgs=0.005
+2026-05-20 14:25:38,836 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 784
+2026-05-20 14:26:01,377 INFO JOLI inversion complete: N=20, d=784, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0050
+2026-05-20 14:26:01,378 INFO   seed=11 tv_lbfgs=0.01
+2026-05-20 14:26:15,760 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 784
+2026-05-20 14:26:35,159 INFO JOLI inversion complete: N=20, d=784, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0100
+2026-05-20 14:26:35,159 INFO   seed=11 tv_lbfgs=0.02
+2026-05-20 14:26:48,846 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 784
+2026-05-20 14:27:09,066 INFO JOLI inversion complete: N=20, d=784, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0200
+2026-05-20 14:27:09,067 INFO   seed=23 (SHARD baseline once)
+2026-05-20 14:27:23,255 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 784
+2026-05-20 14:27:37,475 INFO JOLI inversion complete: N=20, d=784, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0000
+2026-05-20 14:27:37,475 INFO   seed=23 tv_lbfgs=0
+2026-05-20 14:27:37,475 INFO   seed=23 tv_lbfgs=0.001
+2026-05-20 14:27:51,701 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 784
+2026-05-20 14:28:11,862 INFO JOLI inversion complete: N=20, d=784, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0010
+2026-05-20 14:28:11,863 INFO   seed=23 tv_lbfgs=0.005
+2026-05-20 14:28:27,016 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 784
+2026-05-20 14:28:47,259 INFO JOLI inversion complete: N=20, d=784, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0050
+2026-05-20 14:28:47,265 INFO   seed=23 tv_lbfgs=0.01
+2026-05-20 14:29:01,515 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 784
+2026-05-20 14:29:21,637 INFO JOLI inversion complete: N=20, d=784, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0100
+2026-05-20 14:29:21,638 INFO   seed=23 tv_lbfgs=0.02
+2026-05-20 14:29:36,883 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 784
+2026-05-20 14:29:57,014 INFO JOLI inversion complete: N=20, d=784, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0200
+2026-05-20 14:29:57,015 INFO Selected operating point: tv_lbfgs=0.005
+2026-05-20 14:29:57,015 INFO === Held-out validation seed=31 at λ=0.005 ===
+2026-05-20 14:30:10,881 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 784
+2026-05-20 14:30:30,590 INFO JOLI inversion complete: N=20, d=784, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0050
+2026-05-20 14:30:30,591 INFO === Control ablation_tv_off_14x14: resize=14 dim_g=160 tv_lbfgs=0.0 ===
+2026-05-20 14:30:30,591 INFO   seed=7
+2026-05-20 14:30:31,778 WARNING L-BFGS did not converge for snapshot 0: residual = 1.43e-02
+2026-05-20 14:30:33,014 WARNING L-BFGS did not converge for snapshot 1: residual = 3.88e-02
+2026-05-20 14:30:34,201 WARNING L-BFGS did not converge for snapshot 2: residual = 1.33e-03
+2026-05-20 14:30:35,402 WARNING L-BFGS did not converge for snapshot 3: residual = 1.93e-03
+2026-05-20 14:30:36,571 WARNING L-BFGS did not converge for snapshot 4: residual = 5.30e-02
+2026-05-20 14:30:37,712 WARNING L-BFGS did not converge for snapshot 5: residual = 1.21e-02
+2026-05-20 14:30:39,973 WARNING L-BFGS did not converge for snapshot 7: residual = 1.72e-02
+2026-05-20 14:30:42,261 WARNING L-BFGS did not converge for snapshot 9: residual = 7.61e-03
+2026-05-20 14:30:43,322 WARNING L-BFGS did not converge for snapshot 10: residual = 6.07e-04
+2026-05-20 14:30:44,488 WARNING L-BFGS did not converge for snapshot 11: residual = 1.34e-03
+2026-05-20 14:30:45,737 WARNING L-BFGS did not converge for snapshot 12: residual = 4.72e-03
+2026-05-20 14:30:46,912 WARNING L-BFGS did not converge for snapshot 13: residual = 1.35e-02
+2026-05-20 14:30:49,151 WARNING L-BFGS did not converge for snapshot 15: residual = 4.30e-03
+2026-05-20 14:30:50,335 WARNING L-BFGS did not converge for snapshot 16: residual = 8.30e-03
+2026-05-20 14:30:51,500 WARNING L-BFGS did not converge for snapshot 17: residual = 3.75e-03
+2026-05-20 14:30:52,654 WARNING L-BFGS did not converge for snapshot 18: residual = 6.28e-04
+2026-05-20 14:30:53,811 WARNING L-BFGS did not converge for snapshot 19: residual = 8.84e-04
+2026-05-20 14:30:53,811 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 196
+2026-05-20 14:31:17,312 INFO JOLI inversion complete: N=20, d=196, dim_g=160, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0000
+2026-05-20 14:31:17,312 INFO   seed=11
+2026-05-20 14:31:18,564 WARNING L-BFGS did not converge for snapshot 0: residual = 6.69e-02
+2026-05-20 14:31:19,690 WARNING L-BFGS did not converge for snapshot 1: residual = 4.02e-03
+2026-05-20 14:31:20,832 WARNING L-BFGS did not converge for snapshot 2: residual = 5.47e-04
+2026-05-20 14:31:21,976 WARNING L-BFGS did not converge for snapshot 3: residual = 2.87e-03
+2026-05-20 14:31:24,192 WARNING L-BFGS did not converge for snapshot 5: residual = 4.56e-03
+2026-05-20 14:31:26,446 WARNING L-BFGS did not converge for snapshot 7: residual = 1.33e-02
+2026-05-20 14:31:28,680 WARNING L-BFGS did not converge for snapshot 9: residual = 4.72e-04
+2026-05-20 14:31:29,898 WARNING L-BFGS did not converge for snapshot 10: residual = 1.04e-01
+2026-05-20 14:31:32,105 WARNING L-BFGS did not converge for snapshot 12: residual = 2.17e-02
+2026-05-20 14:31:33,272 WARNING L-BFGS did not converge for snapshot 13: residual = 7.85e-03
+2026-05-20 14:31:35,410 WARNING L-BFGS did not converge for snapshot 15: residual = 3.23e-03
+2026-05-20 14:31:36,574 WARNING L-BFGS did not converge for snapshot 16: residual = 8.32e-03
+2026-05-20 14:31:37,697 WARNING L-BFGS did not converge for snapshot 17: residual = 8.02e-03
+2026-05-20 14:31:38,789 WARNING L-BFGS did not converge for snapshot 18: residual = 1.20e-03
+2026-05-20 14:31:39,963 WARNING L-BFGS did not converge for snapshot 19: residual = 9.35e-03
+2026-05-20 14:31:39,963 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 196
+2026-05-20 14:32:02,601 INFO JOLI inversion complete: N=20, d=196, dim_g=160, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0000
+2026-05-20 14:32:02,602 INFO   seed=23
+2026-05-20 14:32:03,737 WARNING L-BFGS did not converge for snapshot 0: residual = 8.35e-02
+2026-05-20 14:32:04,921 WARNING L-BFGS did not converge for snapshot 1: residual = 5.57e-03
+2026-05-20 14:32:07,471 WARNING L-BFGS did not converge for snapshot 3: residual = 1.14e-04
+2026-05-20 14:32:10,152 WARNING L-BFGS did not converge for snapshot 5: residual = 1.49e-03
+2026-05-20 14:32:11,268 WARNING L-BFGS did not converge for snapshot 6: residual = 7.28e-04
+2026-05-20 14:32:12,501 WARNING L-BFGS did not converge for snapshot 7: residual = 1.68e-02
+2026-05-20 14:32:13,553 WARNING L-BFGS did not converge for snapshot 8: residual = 1.35e-04
+2026-05-20 14:32:15,812 WARNING L-BFGS did not converge for snapshot 10: residual = 2.32e-02
+2026-05-20 14:32:17,999 WARNING L-BFGS did not converge for snapshot 12: residual = 4.38e-03
+2026-05-20 14:32:19,089 WARNING L-BFGS did not converge for snapshot 13: residual = 9.91e-03
+2026-05-20 14:32:20,203 WARNING L-BFGS did not converge for snapshot 14: residual = 3.14e-04
+2026-05-20 14:32:21,338 WARNING L-BFGS did not converge for snapshot 15: residual = 4.11e-04
+2026-05-20 14:32:22,440 WARNING L-BFGS did not converge for snapshot 16: residual = 7.24e-03
+2026-05-20 14:32:23,603 WARNING L-BFGS did not converge for snapshot 17: residual = 5.35e-04
+2026-05-20 14:32:24,754 WARNING L-BFGS did not converge for snapshot 18: residual = 4.46e-03
+2026-05-20 14:32:25,911 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 196
+2026-05-20 14:32:48,592 INFO JOLI inversion complete: N=20, d=196, dim_g=160, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0000
+2026-05-20 14:32:48,592 INFO === Control overdetermined_14x14: resize=14 dim_g=256 tv_lbfgs=None ===
+2026-05-20 14:32:48,593 INFO   seed=7
+2026-05-20 14:32:59,641 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 196
+2026-05-20 14:33:10,483 INFO JOLI inversion complete: N=20, d=196, dim_g=256, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0000
+2026-05-20 14:33:10,484 INFO   seed=11
+2026-05-20 14:33:22,668 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 196
+2026-05-20 14:33:33,868 INFO JOLI inversion complete: N=20, d=196, dim_g=256, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0000
+2026-05-20 14:33:33,869 INFO   seed=23
+2026-05-20 14:33:45,680 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 196
+2026-05-20 14:33:57,472 INFO JOLI inversion complete: N=20, d=196, dim_g=256, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0000
+2026-05-20 14:33:57,472 INFO === Control square_mnist_28x28: resize=28 dim_g=784 tv_lbfgs=None ===
+2026-05-20 14:33:57,473 INFO   seed=7
+2026-05-20 14:34:19,096 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 784
+2026-05-20 14:34:41,776 INFO JOLI inversion complete: N=20, d=784, dim_g=784, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0000
+2026-05-20 14:34:41,777 INFO   seed=11
+2026-05-20 14:35:04,509 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 784
+2026-05-20 14:35:27,295 INFO JOLI inversion complete: N=20, d=784, dim_g=784, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0000
+2026-05-20 14:35:27,297 INFO   seed=23
+2026-05-20 14:35:52,276 INFO Level 3 inversion complete: 20 snapshots inverted to input dimension 784
+2026-05-20 14:36:17,359 INFO JOLI inversion complete: N=20, d=784, dim_g=784, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0000
+2026-05-20 14:36:17,758 INFO Wrote /Users/yetao/Documents/06.My Papers/CQU/2026/01.SHARD/research-artifacts/novel-inversion-vs-shard/artifacts/round03_metrics.json

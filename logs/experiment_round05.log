@@ -1,0 +1,404 @@
+2026-05-20 16:10:35,371 INFO Round 05 config: SimConfig(n_samples=48, batch_size=4, dim_g=32, true_rank=4, n_epochs=5, noise_std=0.01, mean_anchor_weight=100.0, validation_fraction=0.25, ridge_grid=(0.0, 0.003, 0.01, 0.03, 0.1, 0.3, 1.0, 3.0), graph_lambda_grid=(0.0, 0.003, 0.01, 0.03, 0.1, 0.3, 1.0, 3.0, 10.0), low_rank_grid=(2, 4, 8, 12), random_fractions=(1.0, 0.8, 0.6, 0.4, 0.25, 0.15), prefix_epochs=(5, 4, 3, 2, 1), target_snapshot_mse=0.1)
+2026-05-20 16:10:35,371 INFO Seeds=[3, 7, 11, 19, 23, 29, 31, 37]
+2026-05-20 16:10:35,371 INFO Assignment regimes=['oracle', 'wrong20', 'wrong40', 'unknown_random']
+2026-05-20 16:10:35,371 INFO Scenarios=[('random_fraction', 1.0), ('random_fraction', 0.8), ('random_fraction', 0.6), ('random_fraction', 0.4), ('random_fraction', 0.25), ('random_fraction', 0.15), ('prefix_epochs', 5), ('prefix_epochs', 4), ('prefix_epochs', 3), ('prefix_epochs', 2), ('prefix_epochs', 1)]
+2026-05-20 16:10:35,371 INFO === protocol=random_fraction budget=1.0 assignment=oracle ===
+2026-05-20 16:10:35,390 INFO seed=3 rows=60/60 overlap=1.00 rank=48 ls=0.002252 ridge=0.002252 lowrank=0.006518 gard_oracle=0.002252 gard_noisy=0.002252 gard_wrong=0.002252
+2026-05-20 16:10:35,397 INFO seed=7 rows=60/60 overlap=1.00 rank=48 ls=0.001679 ridge=0.001679 lowrank=0.005602 gard_oracle=0.001679 gard_noisy=0.001679 gard_wrong=0.001679
+2026-05-20 16:10:35,405 INFO seed=11 rows=60/60 overlap=1.00 rank=48 ls=0.00179 ridge=0.00179 lowrank=0.01178 gard_oracle=0.00179 gard_noisy=0.00179 gard_wrong=0.00179
+2026-05-20 16:10:35,412 INFO seed=19 rows=60/60 overlap=1.00 rank=48 ls=0.002243 ridge=0.002243 lowrank=0.005969 gard_oracle=0.002243 gard_noisy=0.002243 gard_wrong=0.002243
+2026-05-20 16:10:35,419 INFO seed=23 rows=60/60 overlap=1.00 rank=48 ls=0.001725 ridge=0.01391 lowrank=0.01771 gard_oracle=0.001725 gard_noisy=0.001725 gard_wrong=0.001725
+2026-05-20 16:10:35,426 INFO seed=29 rows=60/60 overlap=1.00 rank=48 ls=0.001591 ridge=0.001591 lowrank=0.005448 gard_oracle=0.001591 gard_noisy=0.001591 gard_wrong=0.001591
+2026-05-20 16:10:35,433 INFO seed=31 rows=60/60 overlap=1.00 rank=48 ls=0.003122 ridge=0.003122 lowrank=0.01253 gard_oracle=0.003122 gard_noisy=0.003122 gard_wrong=0.003122
+2026-05-20 16:10:35,440 INFO seed=37 rows=60/60 overlap=1.00 rank=48 ls=0.002444 ridge=0.002444 lowrank=0.01178 gard_oracle=0.002444 gard_noisy=0.002444 gard_wrong=0.002444
+2026-05-20 16:10:35,440 INFO === protocol=random_fraction budget=1.0 assignment=wrong20 ===
+2026-05-20 16:10:35,449 INFO seed=3 rows=60/60 overlap=0.76 rank=48 ls=2.79 ridge=0.5528 lowrank=0.5543 gard_oracle=2.79 gard_noisy=2.79 gard_wrong=2.79
+2026-05-20 16:10:35,458 INFO seed=7 rows=60/60 overlap=0.75 rank=48 ls=1.573 ridge=0.5205 lowrank=0.5219 gard_oracle=1.573 gard_noisy=1.573 gard_wrong=1.573
+2026-05-20 16:10:35,467 INFO seed=11 rows=60/60 overlap=0.75 rank=48 ls=1.717 ridge=0.4524 lowrank=0.456 gard_oracle=1.717 gard_noisy=1.717 gard_wrong=1.717
+2026-05-20 16:10:35,476 INFO seed=19 rows=60/60 overlap=0.76 rank=48 ls=1.766 ridge=0.5208 lowrank=0.5221 gard_oracle=1.766 gard_noisy=1.766 gard_wrong=1.766
+2026-05-20 16:10:35,486 INFO seed=23 rows=60/60 overlap=0.75 rank=48 ls=2.188 ridge=0.6078 lowrank=0.6096 gard_oracle=2.188 gard_noisy=2.188 gard_wrong=2.188
+2026-05-20 16:10:35,495 INFO seed=29 rows=60/60 overlap=0.75 rank=48 ls=1.266 ridge=0.5865 lowrank=0.588 gard_oracle=1.266 gard_noisy=1.266 gard_wrong=1.266
+2026-05-20 16:10:35,504 INFO seed=31 rows=60/60 overlap=0.75 rank=48 ls=1.457 ridge=0.5341 lowrank=0.5357 gard_oracle=1.457 gard_noisy=1.457 gard_wrong=1.457
+2026-05-20 16:10:35,512 INFO seed=37 rows=60/60 overlap=0.75 rank=48 ls=1.338 ridge=0.4358 lowrank=0.4379 gard_oracle=1.338 gard_noisy=1.338 gard_wrong=1.338
+2026-05-20 16:10:35,513 INFO === protocol=random_fraction budget=1.0 assignment=wrong40 ===
+2026-05-20 16:10:35,521 INFO seed=3 rows=60/60 overlap=0.53 rank=48 ls=2.535 ridge=0.843 lowrank=0.8435 gard_oracle=2.535 gard_noisy=2.535 gard_wrong=2.535
+2026-05-20 16:10:35,530 INFO seed=7 rows=60/60 overlap=0.52 rank=48 ls=2.879 ridge=0.9041 lowrank=0.9278 gard_oracle=2.879 gard_noisy=2.879 gard_wrong=2.879
+2026-05-20 16:10:35,539 INFO seed=11 rows=60/60 overlap=0.52 rank=48 ls=4.835 ridge=0.8655 lowrank=0.8965 gard_oracle=4.835 gard_noisy=4.835 gard_wrong=4.835
+2026-05-20 16:10:35,549 INFO seed=19 rows=60/60 overlap=0.52 rank=48 ls=2.566 ridge=0.7223 lowrank=0.7245 gard_oracle=2.566 gard_noisy=2.566 gard_wrong=2.566
+2026-05-20 16:10:35,558 INFO seed=23 rows=60/60 overlap=0.52 rank=48 ls=3.316 ridge=0.9507 lowrank=0.9515 gard_oracle=3.316 gard_noisy=3.316 gard_wrong=3.316
+2026-05-20 16:10:35,567 INFO seed=29 rows=60/60 overlap=0.51 rank=48 ls=3.545 ridge=0.9415 lowrank=0.9613 gard_oracle=3.545 gard_noisy=3.545 gard_wrong=3.545
+2026-05-20 16:10:35,575 INFO seed=31 rows=60/60 overlap=0.52 rank=48 ls=3.001 ridge=0.8121 lowrank=0.8129 gard_oracle=3.001 gard_noisy=3.001 gard_wrong=3.001
+2026-05-20 16:10:35,584 INFO seed=37 rows=60/60 overlap=0.52 rank=48 ls=2.622 ridge=0.9311 lowrank=0.9318 gard_oracle=2.622 gard_noisy=2.622 gard_wrong=2.622
+2026-05-20 16:10:35,584 INFO === protocol=random_fraction budget=1.0 assignment=unknown_random ===
+2026-05-20 16:10:35,592 INFO seed=3 rows=60/60 overlap=0.08 rank=48 ls=5.597 ridge=0.9956 lowrank=0.9956 gard_oracle=5.597 gard_noisy=5.597 gard_wrong=5.597
+2026-05-20 16:10:35,599 INFO seed=7 rows=60/60 overlap=0.08 rank=48 ls=5.538 ridge=0.9953 lowrank=0.9952 gard_oracle=5.538 gard_noisy=5.538 gard_wrong=5.538
+2026-05-20 16:10:35,607 INFO seed=11 rows=60/60 overlap=0.06 rank=48 ls=9.982 ridge=1.061 lowrank=1.061 gard_oracle=9.982 gard_noisy=9.982 gard_wrong=9.982
+2026-05-20 16:10:35,614 INFO seed=19 rows=60/60 overlap=0.08 rank=48 ls=5.552 ridge=1.011 lowrank=1.011 gard_oracle=5.552 gard_noisy=5.552 gard_wrong=5.552
+2026-05-20 16:10:35,622 INFO seed=23 rows=60/60 overlap=0.09 rank=48 ls=3.688 ridge=1.006 lowrank=0.9987 gard_oracle=3.688 gard_noisy=3.688 gard_wrong=3.688
+2026-05-20 16:10:35,629 INFO seed=29 rows=60/60 overlap=0.07 rank=48 ls=3.862 ridge=1.079 lowrank=1.064 gard_oracle=3.862 gard_noisy=3.862 gard_wrong=3.862
+2026-05-20 16:10:35,636 INFO seed=31 rows=60/60 overlap=0.07 rank=48 ls=4.581 ridge=1.003 lowrank=0.997 gard_oracle=4.581 gard_noisy=4.581 gard_wrong=4.581
+2026-05-20 16:10:35,644 INFO seed=37 rows=60/60 overlap=0.09 rank=48 ls=4.103 ridge=1.01 lowrank=1.008 gard_oracle=4.103 gard_noisy=4.103 gard_wrong=4.103
+2026-05-20 16:10:35,644 INFO === protocol=random_fraction budget=0.8 assignment=oracle ===
+2026-05-20 16:10:35,651 INFO seed=3 rows=48/60 overlap=1.00 rank=48 ls=0.01989 ridge=0.01989 lowrank=0.02431 gard_oracle=0.01989 gard_noisy=0.01989 gard_wrong=0.01989
+2026-05-20 16:10:35,657 INFO seed=7 rows=48/60 overlap=1.00 rank=48 ls=0.009583 ridge=0.009583 lowrank=0.01376 gard_oracle=0.009583 gard_noisy=0.009583 gard_wrong=0.009583
+2026-05-20 16:10:35,664 INFO seed=11 rows=48/60 overlap=1.00 rank=48 ls=0.01708 ridge=0.01708 lowrank=0.02128 gard_oracle=0.01708 gard_noisy=0.01708 gard_wrong=0.01708
+2026-05-20 16:10:35,671 INFO seed=19 rows=48/60 overlap=1.00 rank=48 ls=0.05476 ridge=0.05476 lowrank=0.05882 gard_oracle=0.05476 gard_noisy=0.05476 gard_wrong=0.05476
+2026-05-20 16:10:35,678 INFO seed=23 rows=48/60 overlap=1.00 rank=48 ls=0.01477 ridge=0.01477 lowrank=0.01853 gard_oracle=0.01477 gard_noisy=0.01477 gard_wrong=0.01477
+2026-05-20 16:10:35,685 INFO seed=29 rows=48/60 overlap=1.00 rank=48 ls=0.00874 ridge=0.00874 lowrank=0.01292 gard_oracle=0.00874 gard_noisy=0.00874 gard_wrong=0.00874
+2026-05-20 16:10:35,692 INFO seed=31 rows=48/60 overlap=1.00 rank=48 ls=0.01133 ridge=0.01133 lowrank=0.01576 gard_oracle=0.01133 gard_noisy=0.01133 gard_wrong=0.01133
+2026-05-20 16:10:35,698 INFO seed=37 rows=48/60 overlap=1.00 rank=48 ls=0.2989 ridge=0.2989 lowrank=0.3036 gard_oracle=0.2989 gard_noisy=0.2989 gard_wrong=0.2989
+2026-05-20 16:10:35,699 INFO === protocol=random_fraction budget=0.8 assignment=wrong20 ===
+2026-05-20 16:10:35,707 INFO seed=3 rows=48/60 overlap=0.76 rank=48 ls=111.5 ridge=0.5862 lowrank=0.5875 gard_oracle=111.5 gard_noisy=111.5 gard_wrong=111.5
+2026-05-20 16:10:35,715 INFO seed=7 rows=48/60 overlap=0.75 rank=48 ls=12.76 ridge=0.5414 lowrank=0.5429 gard_oracle=12.76 gard_noisy=12.76 gard_wrong=12.76
+2026-05-20 16:10:35,723 INFO seed=11 rows=48/60 overlap=0.75 rank=48 ls=19.56 ridge=0.7667 lowrank=0.7673 gard_oracle=19.56 gard_noisy=19.56 gard_wrong=19.56
+2026-05-20 16:10:35,732 INFO seed=19 rows=48/60 overlap=0.75 rank=48 ls=17.11 ridge=0.6071 lowrank=0.6082 gard_oracle=17.11 gard_noisy=17.11 gard_wrong=17.11
+2026-05-20 16:10:35,740 INFO seed=23 rows=48/60 overlap=0.75 rank=48 ls=35.46 ridge=0.5947 lowrank=0.5962 gard_oracle=35.46 gard_noisy=35.46 gard_wrong=35.46
+2026-05-20 16:10:35,749 INFO seed=29 rows=48/60 overlap=0.76 rank=48 ls=15.33 ridge=0.5879 lowrank=0.7187 gard_oracle=15.33 gard_noisy=15.33 gard_wrong=15.33
+2026-05-20 16:10:35,757 INFO seed=31 rows=48/60 overlap=0.76 rank=48 ls=57.84 ridge=0.6948 lowrank=0.6963 gard_oracle=57.84 gard_noisy=57.84 gard_wrong=57.84
+2026-05-20 16:10:35,767 INFO seed=37 rows=48/60 overlap=0.76 rank=47 ls=17.84 ridge=0.5632 lowrank=0.5649 gard_oracle=0.1773 gard_noisy=0.3336 gard_wrong=0.8048
+2026-05-20 16:10:35,767 INFO === protocol=random_fraction budget=0.8 assignment=wrong40 ===
+2026-05-20 16:10:35,775 INFO seed=3 rows=48/60 overlap=0.52 rank=48 ls=10.39 ridge=0.7957 lowrank=0.7976 gard_oracle=10.39 gard_noisy=10.39 gard_wrong=10.39
+2026-05-20 16:10:35,784 INFO seed=7 rows=48/60 overlap=0.53 rank=48 ls=19.47 ridge=1.411 lowrank=1.411 gard_oracle=19.47 gard_noisy=19.47 gard_wrong=19.47
+2026-05-20 16:10:35,792 INFO seed=11 rows=48/60 overlap=0.52 rank=48 ls=44.83 ridge=0.8103 lowrank=0.8121 gard_oracle=44.83 gard_noisy=44.83 gard_wrong=44.83
+2026-05-20 16:10:35,800 INFO seed=19 rows=48/60 overlap=0.51 rank=48 ls=23.1 ridge=0.8233 lowrank=0.8237 gard_oracle=23.1 gard_noisy=23.1 gard_wrong=23.1
+2026-05-20 16:10:35,811 INFO seed=23 rows=48/60 overlap=0.53 rank=47 ls=7.283 ridge=0.8338 lowrank=0.8344 gard_oracle=0.5002 gard_noisy=0.671 gard_wrong=0.9081
+2026-05-20 16:10:35,819 INFO seed=29 rows=48/60 overlap=0.52 rank=48 ls=31.2 ridge=0.8649 lowrank=0.8656 gard_oracle=31.2 gard_noisy=31.2 gard_wrong=31.2
+2026-05-20 16:10:35,829 INFO seed=31 rows=48/60 overlap=0.51 rank=47 ls=9.257 ridge=0.9119 lowrank=0.9125 gard_oracle=0.5438 gard_noisy=0.7043 gard_wrong=1.014
+2026-05-20 16:10:35,837 INFO seed=37 rows=48/60 overlap=0.54 rank=48 ls=73.85 ridge=0.8206 lowrank=0.7624 gard_oracle=73.85 gard_noisy=73.85 gard_wrong=73.85
+2026-05-20 16:10:35,837 INFO === protocol=random_fraction budget=0.8 assignment=unknown_random ===
+2026-05-20 16:10:35,845 INFO seed=3 rows=48/60 overlap=0.09 rank=48 ls=140.7 ridge=1.016 lowrank=1.017 gard_oracle=140.7 gard_noisy=140.7 gard_wrong=140.7
+2026-05-20 16:10:35,852 INFO seed=7 rows=48/60 overlap=0.07 rank=48 ls=48.94 ridge=1.012 lowrank=1.013 gard_oracle=48.94 gard_noisy=48.94 gard_wrong=48.94
+2026-05-20 16:10:35,859 INFO seed=11 rows=48/60 overlap=0.10 rank=48 ls=23.85 ridge=1.21 lowrank=1.209 gard_oracle=23.85 gard_noisy=23.85 gard_wrong=23.85
+2026-05-20 16:10:35,866 INFO seed=19 rows=48/60 overlap=0.06 rank=48 ls=5203 ridge=1.014 lowrank=1.014 gard_oracle=5203 gard_noisy=5203 gard_wrong=5203
+2026-05-20 16:10:35,874 INFO seed=23 rows=48/60 overlap=0.11 rank=48 ls=41.51 ridge=1.002 lowrank=1.004 gard_oracle=41.51 gard_noisy=41.51 gard_wrong=41.51
+2026-05-20 16:10:35,881 INFO seed=29 rows=48/60 overlap=0.08 rank=48 ls=395 ridge=1.001 lowrank=1.003 gard_oracle=395 gard_noisy=395 gard_wrong=395
+2026-05-20 16:10:35,889 INFO seed=31 rows=48/60 overlap=0.11 rank=48 ls=197.5 ridge=1.012 lowrank=1.012 gard_oracle=197.5 gard_noisy=197.5 gard_wrong=197.5
+2026-05-20 16:10:35,896 INFO seed=37 rows=48/60 overlap=0.09 rank=48 ls=18.7 ridge=1.004 lowrank=1.004 gard_oracle=18.7 gard_noisy=18.7 gard_wrong=18.7
+2026-05-20 16:10:35,896 INFO === protocol=random_fraction budget=0.6 assignment=oracle ===
+2026-05-20 16:10:35,904 INFO seed=3 rows=36/60 overlap=1.00 rank=37 ls=0.2243 ridge=0.2769 lowrank=0.2792 gard_oracle=0.0119 gard_noisy=0.09373 gard_wrong=0.2243
+2026-05-20 16:10:35,913 INFO seed=7 rows=36/60 overlap=1.00 rank=37 ls=0.1935 ridge=0.1983 lowrank=0.2008 gard_oracle=0.008382 gard_noisy=0.03999 gard_wrong=0.1935
+2026-05-20 16:10:35,921 INFO seed=11 rows=36/60 overlap=1.00 rank=37 ls=0.2049 ridge=0.2049 lowrank=0.2078 gard_oracle=0.009665 gard_noisy=0.05968 gard_wrong=0.2049
+2026-05-20 16:10:35,930 INFO seed=19 rows=36/60 overlap=1.00 rank=37 ls=0.2252 ridge=0.2252 lowrank=0.2274 gard_oracle=0.01099 gard_noisy=0.04945 gard_wrong=0.2252
+2026-05-20 16:10:35,938 INFO seed=23 rows=36/60 overlap=1.00 rank=37 ls=0.2499 ridge=0.3393 lowrank=0.3419 gard_oracle=0.01137 gard_noisy=0.08943 gard_wrong=0.2499
+2026-05-20 16:10:35,947 INFO seed=29 rows=36/60 overlap=1.00 rank=37 ls=0.2847 ridge=0.2847 lowrank=0.2874 gard_oracle=0.0133 gard_noisy=0.0574 gard_wrong=0.2847
+2026-05-20 16:10:35,955 INFO seed=31 rows=36/60 overlap=1.00 rank=37 ls=0.1838 ridge=0.1838 lowrank=0.1869 gard_oracle=0.01119 gard_noisy=0.0618 gard_wrong=0.1838
+2026-05-20 16:10:35,964 INFO seed=37 rows=36/60 overlap=1.00 rank=37 ls=0.2643 ridge=0.2643 lowrank=0.267 gard_oracle=0.008918 gard_noisy=0.06903 gard_wrong=0.2643
+2026-05-20 16:10:35,964 INFO === protocol=random_fraction budget=0.6 assignment=wrong20 ===
+2026-05-20 16:10:35,973 INFO seed=3 rows=36/60 overlap=0.75 rank=37 ls=1.736 ridge=0.8442 lowrank=0.8446 gard_oracle=0.4296 gard_noisy=0.7119 gard_wrong=0.9649
+2026-05-20 16:10:35,983 INFO seed=7 rows=36/60 overlap=0.75 rank=37 ls=1.304 ridge=0.6177 lowrank=0.6187 gard_oracle=0.2435 gard_noisy=0.5263 gard_wrong=0.7714
+2026-05-20 16:10:35,992 INFO seed=11 rows=36/60 overlap=0.76 rank=37 ls=1.482 ridge=0.8238 lowrank=0.8242 gard_oracle=0.2331 gard_noisy=0.354 gard_wrong=0.9752
+2026-05-20 16:10:36,002 INFO seed=19 rows=36/60 overlap=0.76 rank=37 ls=1.369 ridge=0.6709 lowrank=0.6727 gard_oracle=0.2398 gard_noisy=0.5045 gard_wrong=0.904
+2026-05-20 16:10:36,011 INFO seed=23 rows=36/60 overlap=0.76 rank=37 ls=1.274 ridge=0.7045 lowrank=0.7077 gard_oracle=0.4185 gard_noisy=0.4737 gard_wrong=0.9233
+2026-05-20 16:10:36,021 INFO seed=29 rows=36/60 overlap=0.75 rank=37 ls=1.422 ridge=0.7361 lowrank=0.737 gard_oracle=0.2646 gard_noisy=0.5731 gard_wrong=0.9736
+2026-05-20 16:10:36,030 INFO seed=31 rows=36/60 overlap=0.76 rank=37 ls=1.876 ridge=0.7423 lowrank=0.7433 gard_oracle=0.2932 gard_noisy=0.515 gard_wrong=0.8746
+2026-05-20 16:10:36,040 INFO seed=37 rows=36/60 overlap=0.75 rank=37 ls=1.837 ridge=0.6802 lowrank=0.681 gard_oracle=0.2599 gard_noisy=0.4939 gard_wrong=0.9854
+2026-05-20 16:10:36,040 INFO === protocol=random_fraction budget=0.6 assignment=wrong40 ===
+2026-05-20 16:10:36,052 INFO seed=3 rows=36/60 overlap=0.53 rank=37 ls=2.616 ridge=0.8854 lowrank=0.9241 gard_oracle=0.5238 gard_noisy=0.7718 gard_wrong=0.9961
+2026-05-20 16:10:36,062 INFO seed=7 rows=36/60 overlap=0.53 rank=37 ls=4.008 ridge=0.9533 lowrank=0.9094 gard_oracle=0.6811 gard_noisy=0.8995 gard_wrong=1.008
+2026-05-20 16:10:36,072 INFO seed=11 rows=36/60 overlap=0.54 rank=37 ls=5.556 ridge=0.8841 lowrank=0.9055 gard_oracle=0.5351 gard_noisy=0.7905 gard_wrong=0.9821
+2026-05-20 16:10:36,082 INFO seed=19 rows=36/60 overlap=0.52 rank=37 ls=5.183 ridge=0.8912 lowrank=0.9258 gard_oracle=0.7266 gard_noisy=0.8743 gard_wrong=0.981
+2026-05-20 16:10:36,092 INFO seed=23 rows=36/60 overlap=0.51 rank=37 ls=3.171 ridge=0.9725 lowrank=0.9792 gard_oracle=0.7875 gard_noisy=0.9337 gard_wrong=0.9747
+2026-05-20 16:10:36,101 INFO seed=29 rows=36/60 overlap=0.52 rank=37 ls=3.009 ridge=0.8599 lowrank=0.8627 gard_oracle=0.5042 gard_noisy=0.7463 gard_wrong=1.011
+2026-05-20 16:10:36,111 INFO seed=31 rows=36/60 overlap=0.52 rank=37 ls=2.94 ridge=0.8681 lowrank=0.8694 gard_oracle=0.4819 gard_noisy=0.7219 gard_wrong=0.8881
+2026-05-20 16:10:36,122 INFO seed=37 rows=36/60 overlap=0.52 rank=37 ls=2.071 ridge=0.7768 lowrank=0.7777 gard_oracle=0.3305 gard_noisy=0.5315 gard_wrong=1.227
+2026-05-20 16:10:36,122 INFO === protocol=random_fraction budget=0.6 assignment=unknown_random ===
+2026-05-20 16:10:36,131 INFO seed=3 rows=36/60 overlap=0.08 rank=37 ls=5.552 ridge=0.9999 lowrank=1.001 gard_oracle=0.9306 gard_noisy=0.9934 gard_wrong=1.007
+2026-05-20 16:10:36,140 INFO seed=7 rows=36/60 overlap=0.06 rank=37 ls=8.874 ridge=1.005 lowrank=1.013 gard_oracle=1.097 gard_noisy=1.003 gard_wrong=1.016
+2026-05-20 16:10:36,149 INFO seed=11 rows=36/60 overlap=0.10 rank=37 ls=5.384 ridge=1.017 lowrank=1.012 gard_oracle=1.12 gard_noisy=1.014 gard_wrong=1.066
+2026-05-20 16:10:36,158 INFO seed=19 rows=36/60 overlap=0.08 rank=37 ls=4.679 ridge=1.003 lowrank=1.007 gard_oracle=0.9154 gard_noisy=1.016 gard_wrong=1.012
+2026-05-20 16:10:36,167 INFO seed=23 rows=36/60 overlap=0.10 rank=37 ls=2.937 ridge=0.9983 lowrank=0.9983 gard_oracle=1.018 gard_noisy=0.9941 gard_wrong=1.03
+2026-05-20 16:10:36,176 INFO seed=29 rows=36/60 overlap=0.08 rank=37 ls=2.879 ridge=0.9745 lowrank=0.9788 gard_oracle=0.7866 gard_noisy=0.965 gard_wrong=1.049
+2026-05-20 16:10:36,185 INFO seed=31 rows=36/60 overlap=0.08 rank=37 ls=4.088 ridge=1.008 lowrank=1.008 gard_oracle=1.052 gard_noisy=1.027 gard_wrong=1.047
+2026-05-20 16:10:36,193 INFO seed=37 rows=36/60 overlap=0.11 rank=37 ls=4.152 ridge=1.051 lowrank=1.078 gard_oracle=1.126 gard_noisy=1.028 gard_wrong=1.125
+2026-05-20 16:10:36,193 INFO === protocol=random_fraction budget=0.4 assignment=oracle ===
+2026-05-20 16:10:36,201 INFO seed=3 rows=24/60 overlap=1.00 rank=25 ls=0.5326 ridge=0.6169 lowrank=0.6181 gard_oracle=0.02444 gard_noisy=0.188 gard_wrong=0.5326
+2026-05-20 16:10:36,209 INFO seed=7 rows=24/60 overlap=1.00 rank=25 ls=0.3833 ridge=0.3833 lowrank=0.3842 gard_oracle=0.01827 gard_noisy=0.1207 gard_wrong=0.3833
+2026-05-20 16:10:36,217 INFO seed=11 rows=24/60 overlap=1.00 rank=25 ls=0.4618 ridge=0.4618 lowrank=0.4646 gard_oracle=0.02229 gard_noisy=0.1412 gard_wrong=0.4618
+2026-05-20 16:10:36,225 INFO seed=19 rows=24/60 overlap=1.00 rank=25 ls=0.4935 ridge=0.5009 lowrank=0.5019 gard_oracle=0.02624 gard_noisy=0.1766 gard_wrong=0.4935
+2026-05-20 16:10:36,233 INFO seed=23 rows=24/60 overlap=1.00 rank=25 ls=0.5981 ridge=0.6035 lowrank=0.6046 gard_oracle=0.02129 gard_noisy=0.2457 gard_wrong=0.5981
+2026-05-20 16:10:36,241 INFO seed=29 rows=24/60 overlap=1.00 rank=25 ls=0.4894 ridge=0.4942 lowrank=0.4952 gard_oracle=0.0295 gard_noisy=0.2092 gard_wrong=0.4894
+2026-05-20 16:10:36,249 INFO seed=31 rows=24/60 overlap=1.00 rank=25 ls=0.4336 ridge=0.4336 lowrank=0.435 gard_oracle=0.02497 gard_noisy=0.1581 gard_wrong=0.4336
+2026-05-20 16:10:36,257 INFO seed=37 rows=24/60 overlap=1.00 rank=25 ls=0.4677 ridge=0.4938 lowrank=0.4951 gard_oracle=0.02146 gard_noisy=0.1723 gard_wrong=0.4677
+2026-05-20 16:10:36,257 INFO === protocol=random_fraction budget=0.4 assignment=wrong20 ===
+2026-05-20 16:10:36,266 INFO seed=3 rows=24/60 overlap=0.75 rank=25 ls=0.9962 ridge=0.85 lowrank=0.8504 gard_oracle=0.3978 gard_noisy=0.6701 gard_wrong=1.009
+2026-05-20 16:10:36,274 INFO seed=7 rows=24/60 overlap=0.75 rank=25 ls=0.9139 ridge=0.7835 lowrank=0.7843 gard_oracle=0.4332 gard_noisy=0.604 gard_wrong=1.121
+2026-05-20 16:10:36,282 INFO seed=11 rows=24/60 overlap=0.76 rank=25 ls=0.9614 ridge=0.6888 lowrank=0.6916 gard_oracle=0.4197 gard_noisy=0.456 gard_wrong=0.963
+2026-05-20 16:10:36,291 INFO seed=19 rows=24/60 overlap=0.76 rank=25 ls=0.9126 ridge=0.8069 lowrank=0.8072 gard_oracle=0.2475 gard_noisy=0.4461 gard_wrong=1.001
+2026-05-20 16:10:36,300 INFO seed=23 rows=24/60 overlap=0.76 rank=25 ls=0.8884 ridge=0.8147 lowrank=0.815 gard_oracle=0.4468 gard_noisy=0.5898 gard_wrong=0.8884
+2026-05-20 16:10:36,308 INFO seed=29 rows=24/60 overlap=0.75 rank=25 ls=1.105 ridge=0.7696 lowrank=0.77 gard_oracle=0.3219 gard_noisy=0.5837 gard_wrong=1.105
+2026-05-20 16:10:36,317 INFO seed=31 rows=24/60 overlap=0.76 rank=25 ls=0.9626 ridge=0.8767 lowrank=0.8773 gard_oracle=0.3656 gard_noisy=0.8045 gard_wrong=0.947
+2026-05-20 16:10:36,325 INFO seed=37 rows=24/60 overlap=0.76 rank=25 ls=0.7978 ridge=0.6525 lowrank=0.6532 gard_oracle=0.268 gard_noisy=0.4857 gard_wrong=0.7978
+2026-05-20 16:10:36,325 INFO === protocol=random_fraction budget=0.4 assignment=wrong40 ===
+2026-05-20 16:10:36,334 INFO seed=3 rows=24/60 overlap=0.51 rank=25 ls=1.556 ridge=0.8941 lowrank=0.8943 gard_oracle=0.5832 gard_noisy=0.7257 gard_wrong=1.031
+2026-05-20 16:10:36,343 INFO seed=7 rows=24/60 overlap=0.53 rank=25 ls=1.729 ridge=0.9608 lowrank=0.961 gard_oracle=0.7572 gard_noisy=0.819 gard_wrong=0.9642
+2026-05-20 16:10:36,351 INFO seed=11 rows=24/60 overlap=0.51 rank=25 ls=1.918 ridge=0.9765 lowrank=0.9818 gard_oracle=0.8612 gard_noisy=0.9867 gard_wrong=1.001
+2026-05-20 16:10:36,359 INFO seed=19 rows=24/60 overlap=0.52 rank=25 ls=2.1 ridge=0.9777 lowrank=0.9805 gard_oracle=0.7981 gard_noisy=0.9815 gard_wrong=0.9746
+2026-05-20 16:10:36,368 INFO seed=23 rows=24/60 overlap=0.53 rank=25 ls=1.048 ridge=0.9036 lowrank=0.9044 gard_oracle=0.6379 gard_noisy=0.7729 gard_wrong=0.951
+2026-05-20 16:10:36,376 INFO seed=29 rows=24/60 overlap=0.51 rank=25 ls=1.481 ridge=0.9399 lowrank=0.9405 gard_oracle=1.481 gard_noisy=0.7833 gard_wrong=1.004
+2026-05-20 16:10:36,385 INFO seed=31 rows=24/60 overlap=0.52 rank=25 ls=1.403 ridge=0.8897 lowrank=0.9513 gard_oracle=0.7362 gard_noisy=0.9833 gard_wrong=0.9611
+2026-05-20 16:10:36,394 INFO seed=37 rows=24/60 overlap=0.53 rank=25 ls=1.724 ridge=0.9652 lowrank=0.9653 gard_oracle=0.7806 gard_noisy=0.8381 gard_wrong=0.9674
+2026-05-20 16:10:36,394 INFO === protocol=random_fraction budget=0.4 assignment=unknown_random ===
+2026-05-20 16:10:36,402 INFO seed=3 rows=24/60 overlap=0.10 rank=25 ls=2.129 ridge=1.001 lowrank=1.003 gard_oracle=0.974 gard_noisy=1.005 gard_wrong=1.013
+2026-05-20 16:10:36,410 INFO seed=7 rows=24/60 overlap=0.08 rank=25 ls=2.82 ridge=1.005 lowrank=1.001 gard_oracle=1.011 gard_noisy=1 gard_wrong=1.067
+2026-05-20 16:10:36,418 INFO seed=11 rows=24/60 overlap=0.07 rank=25 ls=2.185 ridge=1.006 lowrank=1.218 gard_oracle=1.052 gard_noisy=1.002 gard_wrong=1.015
+2026-05-20 16:10:36,427 INFO seed=19 rows=24/60 overlap=0.10 rank=25 ls=1.759 ridge=1 lowrank=0.9987 gard_oracle=0.9187 gard_noisy=1 gard_wrong=1.02
+2026-05-20 16:10:36,435 INFO seed=23 rows=24/60 overlap=0.05 rank=25 ls=1.681 ridge=1.225 lowrank=1.374 gard_oracle=1.109 gard_noisy=1.007 gard_wrong=0.9976
+2026-05-20 16:10:36,443 INFO seed=29 rows=24/60 overlap=0.07 rank=25 ls=1.897 ridge=1.017 lowrank=1.017 gard_oracle=0.9784 gard_noisy=1.001 gard_wrong=1.061
+2026-05-20 16:10:36,451 INFO seed=31 rows=24/60 overlap=0.10 rank=25 ls=2.154 ridge=0.9874 lowrank=0.9874 gard_oracle=0.9075 gard_noisy=0.9754 gard_wrong=1.008
+2026-05-20 16:10:36,459 INFO seed=37 rows=24/60 overlap=0.17 rank=25 ls=2.581 ridge=0.9961 lowrank=0.9961 gard_oracle=1.097 gard_noisy=0.9885 gard_wrong=0.986
+2026-05-20 16:10:36,459 INFO === protocol=random_fraction budget=0.25 assignment=oracle ===
+2026-05-20 16:10:36,466 INFO seed=3 rows=15/60 overlap=1.00 rank=16 ls=0.6033 ridge=0.6033 lowrank=0.6035 gard_oracle=0.05182 gard_noisy=0.2669 gard_wrong=0.6033
+2026-05-20 16:10:36,474 INFO seed=7 rows=15/60 overlap=1.00 rank=16 ls=0.6583 ridge=0.6583 lowrank=0.6591 gard_oracle=0.06305 gard_noisy=0.3463 gard_wrong=0.6583
+2026-05-20 16:10:36,481 INFO seed=11 rows=15/60 overlap=1.00 rank=16 ls=0.6158 ridge=0.6243 lowrank=0.6246 gard_oracle=0.05052 gard_noisy=0.3663 gard_wrong=0.6158
+2026-05-20 16:10:36,489 INFO seed=19 rows=15/60 overlap=1.00 rank=16 ls=0.7034 ridge=0.745 lowrank=0.8406 gard_oracle=0.04089 gard_noisy=0.3593 gard_wrong=0.7034
+2026-05-20 16:10:36,496 INFO seed=23 rows=15/60 overlap=1.00 rank=16 ls=0.6994 ridge=0.6994 lowrank=0.6997 gard_oracle=0.03908 gard_noisy=0.3251 gard_wrong=0.6994
+2026-05-20 16:10:36,503 INFO seed=29 rows=15/60 overlap=1.00 rank=16 ls=0.6827 ridge=0.7265 lowrank=0.7267 gard_oracle=0.06582 gard_noisy=0.3601 gard_wrong=0.6827
+2026-05-20 16:10:36,510 INFO seed=31 rows=15/60 overlap=1.00 rank=16 ls=0.7167 ridge=0.7167 lowrank=0.7169 gard_oracle=0.06546 gard_noisy=0.4751 gard_wrong=0.7167
+2026-05-20 16:10:36,518 INFO seed=37 rows=15/60 overlap=1.00 rank=16 ls=0.7307 ridge=0.8354 lowrank=0.8502 gard_oracle=0.05432 gard_noisy=0.4028 gard_wrong=0.9562
+2026-05-20 16:10:36,518 INFO === protocol=random_fraction budget=0.25 assignment=wrong20 ===
+2026-05-20 16:10:36,525 INFO seed=3 rows=15/60 overlap=0.75 rank=16 ls=0.954 ridge=0.954 lowrank=0.9769 gard_oracle=0.954 gard_noisy=0.954 gard_wrong=0.954
+2026-05-20 16:10:36,533 INFO seed=7 rows=15/60 overlap=0.75 rank=16 ls=0.8783 ridge=0.8374 lowrank=0.8379 gard_oracle=0.3608 gard_noisy=0.6205 gard_wrong=0.8783
+2026-05-20 16:10:36,541 INFO seed=11 rows=15/60 overlap=0.75 rank=16 ls=1.004 ridge=0.9665 lowrank=0.9753 gard_oracle=0.6716 gard_noisy=0.9728 gard_wrong=0.9711
+2026-05-20 16:10:36,549 INFO seed=19 rows=15/60 overlap=0.75 rank=16 ls=0.8954 ridge=0.8862 lowrank=0.9307 gard_oracle=0.5701 gard_noisy=0.6976 gard_wrong=0.8954
+2026-05-20 16:10:36,556 INFO seed=23 rows=15/60 overlap=0.75 rank=16 ls=0.9713 ridge=0.9745 lowrank=0.9745 gard_oracle=0.5894 gard_noisy=0.7543 gard_wrong=0.9979
+2026-05-20 16:10:36,564 INFO seed=29 rows=15/60 overlap=0.75 rank=16 ls=0.8376 ridge=0.8086 lowrank=0.8088 gard_oracle=0.4051 gard_noisy=0.6118 gard_wrong=1.074
+2026-05-20 16:10:36,572 INFO seed=31 rows=15/60 overlap=0.75 rank=16 ls=0.9483 ridge=0.9751 lowrank=0.9752 gard_oracle=0.497 gard_noisy=0.7607 gard_wrong=0.9916
+2026-05-20 16:10:36,580 INFO seed=37 rows=15/60 overlap=0.75 rank=16 ls=0.9347 ridge=0.9729 lowrank=0.9729 gard_oracle=0.7858 gard_noisy=0.9823 gard_wrong=0.9877
+2026-05-20 16:10:36,580 INFO === protocol=random_fraction budget=0.25 assignment=wrong40 ===
+2026-05-20 16:10:36,588 INFO seed=3 rows=15/60 overlap=0.53 rank=16 ls=1.206 ridge=0.9786 lowrank=0.9787 gard_oracle=0.7851 gard_noisy=0.9846 gard_wrong=1.013
+2026-05-20 16:10:36,596 INFO seed=7 rows=15/60 overlap=0.50 rank=16 ls=1.118 ridge=0.9764 lowrank=0.9639 gard_oracle=0.6597 gard_noisy=0.8742 gard_wrong=1.035
+2026-05-20 16:10:36,604 INFO seed=11 rows=15/60 overlap=0.52 rank=16 ls=1.267 ridge=0.9887 lowrank=0.9926 gard_oracle=0.992 gard_noisy=0.9391 gard_wrong=1.047
+2026-05-20 16:10:36,612 INFO seed=19 rows=15/60 overlap=0.55 rank=16 ls=1.078 ridge=0.9809 lowrank=0.9851 gard_oracle=0.8392 gard_noisy=0.9864 gard_wrong=0.989
+2026-05-20 16:10:36,619 INFO seed=23 rows=15/60 overlap=0.52 rank=16 ls=1.306 ridge=0.9902 lowrank=0.9916 gard_oracle=0.9444 gard_noisy=0.9305 gard_wrong=1.062
+2026-05-20 16:10:36,627 INFO seed=29 rows=15/60 overlap=0.62 rank=16 ls=1.062 ridge=0.9359 lowrank=0.936 gard_oracle=0.7883 gard_noisy=0.8566 gard_wrong=0.9966
+2026-05-20 16:10:36,635 INFO seed=31 rows=15/60 overlap=0.55 rank=16 ls=1.007 ridge=0.9808 lowrank=0.9367 gard_oracle=0.7185 gard_noisy=0.9157 gard_wrong=1.049
+2026-05-20 16:10:36,643 INFO seed=37 rows=15/60 overlap=0.52 rank=16 ls=1.102 ridge=0.9629 lowrank=0.9633 gard_oracle=0.8868 gard_noisy=0.9028 gard_wrong=1.006
+2026-05-20 16:10:36,643 INFO === protocol=random_fraction budget=0.25 assignment=unknown_random ===
+2026-05-20 16:10:36,651 INFO seed=3 rows=15/60 overlap=0.13 rank=16 ls=1.671 ridge=0.9979 lowrank=1.003 gard_oracle=0.8899 gard_noisy=1 gard_wrong=1.021
+2026-05-20 16:10:36,658 INFO seed=7 rows=15/60 overlap=0.08 rank=16 ls=1.246 ridge=0.9915 lowrank=0.9915 gard_oracle=0.9453 gard_noisy=0.9944 gard_wrong=1.064
+2026-05-20 16:10:36,666 INFO seed=11 rows=15/60 overlap=0.07 rank=16 ls=1.482 ridge=1.008 lowrank=1.008 gard_oracle=1.074 gard_noisy=1.192 gard_wrong=1.048
+2026-05-20 16:10:36,673 INFO seed=19 rows=15/60 overlap=0.08 rank=16 ls=1.476 ridge=1.007 lowrank=1.059 gard_oracle=1.144 gard_noisy=1.004 gard_wrong=1.041
+2026-05-20 16:10:36,680 INFO seed=23 rows=15/60 overlap=0.10 rank=16 ls=1.466 ridge=1.004 lowrank=1.004 gard_oracle=1.106 gard_noisy=1.006 gard_wrong=0.9795
+2026-05-20 16:10:36,688 INFO seed=29 rows=15/60 overlap=0.07 rank=16 ls=1.474 ridge=1.001 lowrank=1.001 gard_oracle=0.9378 gard_noisy=1.004 gard_wrong=1.044
+2026-05-20 16:10:36,695 INFO seed=31 rows=15/60 overlap=0.08 rank=16 ls=1.216 ridge=0.9896 lowrank=0.9896 gard_oracle=0.9413 gard_noisy=0.9914 gard_wrong=0.9867
+2026-05-20 16:10:36,703 INFO seed=37 rows=15/60 overlap=0.12 rank=16 ls=1.536 ridge=1.004 lowrank=1.004 gard_oracle=1.038 gard_noisy=1.002 gard_wrong=1.028
+2026-05-20 16:10:36,703 INFO === protocol=random_fraction budget=0.15 assignment=oracle ===
+2026-05-20 16:10:36,710 INFO seed=3 rows=9/60 overlap=1.00 rank=10 ls=0.8197 ridge=0.977 lowrank=0.977 gard_oracle=0.1378 gard_noisy=0.7227 gard_wrong=0.9967
+2026-05-20 16:10:36,717 INFO seed=7 rows=9/60 overlap=1.00 rank=10 ls=0.8038 ridge=0.8241 lowrank=0.8242 gard_oracle=0.16 gard_noisy=0.6008 gard_wrong=0.8038
+2026-05-20 16:10:36,724 INFO seed=11 rows=9/60 overlap=1.00 rank=10 ls=0.7893 ridge=0.7893 lowrank=0.7893 gard_oracle=0.08749 gard_noisy=0.5042 gard_wrong=0.7893
+2026-05-20 16:10:36,731 INFO seed=19 rows=9/60 overlap=1.00 rank=10 ls=0.7412 ridge=0.969 lowrank=0.969 gard_oracle=0.1329 gard_noisy=0.4172 gard_wrong=0.9413
+2026-05-20 16:10:36,738 INFO seed=23 rows=9/60 overlap=1.00 rank=10 ls=0.797 ridge=0.934 lowrank=0.934 gard_oracle=0.1333 gard_noisy=0.6035 gard_wrong=0.98
+2026-05-20 16:10:36,745 INFO seed=29 rows=9/60 overlap=1.00 rank=10 ls=0.86 ridge=0.8629 lowrank=0.8766 gard_oracle=0.1781 gard_noisy=0.7283 gard_wrong=1.22
+2026-05-20 16:10:36,752 INFO seed=31 rows=9/60 overlap=1.00 rank=10 ls=0.7851 ridge=0.7851 lowrank=0.7853 gard_oracle=0.1831 gard_noisy=0.5375 gard_wrong=0.7851
+2026-05-20 16:10:36,759 INFO seed=37 rows=9/60 overlap=1.00 rank=10 ls=0.8183 ridge=0.8183 lowrank=0.8183 gard_oracle=0.1889 gard_noisy=0.5949 gard_wrong=0.8183
+2026-05-20 16:10:36,759 INFO === protocol=random_fraction budget=0.15 assignment=wrong20 ===
+2026-05-20 16:10:36,767 INFO seed=3 rows=9/60 overlap=0.75 rank=10 ls=0.9602 ridge=0.9382 lowrank=0.9389 gard_oracle=0.6454 gard_noisy=0.9602 gard_wrong=0.9602
+2026-05-20 16:10:36,774 INFO seed=7 rows=9/60 overlap=0.75 rank=10 ls=0.9619 ridge=0.9319 lowrank=0.9243 gard_oracle=0.7345 gard_noisy=0.8196 gard_wrong=1.003
+2026-05-20 16:10:36,781 INFO seed=11 rows=9/60 overlap=0.75 rank=10 ls=0.9492 ridge=0.9492 lowrank=0.9492 gard_oracle=0.8083 gard_noisy=0.9492 gard_wrong=0.9492
+2026-05-20 16:10:36,789 INFO seed=19 rows=9/60 overlap=0.75 rank=10 ls=0.9052 ridge=0.9791 lowrank=0.9791 gard_oracle=0.5448 gard_noisy=0.7396 gard_wrong=0.9791
+2026-05-20 16:10:36,796 INFO seed=23 rows=9/60 overlap=0.75 rank=10 ls=0.9882 ridge=0.9837 lowrank=0.9837 gard_oracle=0.8304 gard_noisy=0.7871 gard_wrong=0.9907
+2026-05-20 16:10:36,804 INFO seed=29 rows=9/60 overlap=0.75 rank=10 ls=0.9903 ridge=0.9883 lowrank=0.9892 gard_oracle=0.8999 gard_noisy=0.9916 gard_wrong=1.013
+2026-05-20 16:10:36,812 INFO seed=31 rows=9/60 overlap=0.75 rank=10 ls=0.9348 ridge=0.9348 lowrank=0.9355 gard_oracle=0.9348 gard_noisy=0.9348 gard_wrong=0.9348
+2026-05-20 16:10:36,819 INFO seed=37 rows=9/60 overlap=0.75 rank=10 ls=0.8735 ridge=0.8989 lowrank=0.899 gard_oracle=0.5516 gard_noisy=0.906 gard_wrong=1.023
+2026-05-20 16:10:36,819 INFO === protocol=random_fraction budget=0.15 assignment=wrong40 ===
+2026-05-20 16:10:36,827 INFO seed=3 rows=9/60 overlap=0.53 rank=10 ls=0.9624 ridge=0.9349 lowrank=0.9576 gard_oracle=0.9624 gard_noisy=0.9624 gard_wrong=0.9624
+2026-05-20 16:10:36,835 INFO seed=7 rows=9/60 overlap=0.50 rank=10 ls=1.09 ridge=0.9913 lowrank=0.9924 gard_oracle=0.8618 gard_noisy=0.9919 gard_wrong=1.044
+2026-05-20 16:10:36,842 INFO seed=11 rows=9/60 overlap=0.56 rank=10 ls=1.078 ridge=0.9909 lowrank=0.9909 gard_oracle=0.7776 gard_noisy=0.9929 gard_wrong=0.9884
+2026-05-20 16:10:36,850 INFO seed=19 rows=9/60 overlap=0.53 rank=10 ls=1.08 ridge=0.9888 lowrank=0.9879 gard_oracle=0.8472 gard_noisy=0.9936 gard_wrong=0.9968
+2026-05-20 16:10:36,858 INFO seed=23 rows=9/60 overlap=0.53 rank=10 ls=1.004 ridge=0.9441 lowrank=0.9441 gard_oracle=0.899 gard_noisy=0.8437 gard_wrong=1.004
+2026-05-20 16:10:36,865 INFO seed=29 rows=9/60 overlap=0.50 rank=10 ls=0.9967 ridge=0.9967 lowrank=1.002 gard_oracle=0.9967 gard_noisy=0.9967 gard_wrong=1.516
+2026-05-20 16:10:36,873 INFO seed=31 rows=9/60 overlap=0.56 rank=10 ls=1.052 ridge=1.052 lowrank=1.052 gard_oracle=1.044 gard_noisy=1.052 gard_wrong=1.052
+2026-05-20 16:10:36,881 INFO seed=37 rows=9/60 overlap=0.53 rank=10 ls=1.09 ridge=1.019 lowrank=1.045 gard_oracle=1.09 gard_noisy=1.09 gard_wrong=1.09
+2026-05-20 16:10:36,881 INFO === protocol=random_fraction budget=0.15 assignment=unknown_random ===
+2026-05-20 16:10:36,888 INFO seed=3 rows=9/60 overlap=0.14 rank=10 ls=1.227 ridge=1.003 lowrank=1.004 gard_oracle=0.9612 gard_noisy=1.002 gard_wrong=1.019
+2026-05-20 16:10:36,895 INFO seed=7 rows=9/60 overlap=0.06 rank=10 ls=1.326 ridge=1.01 lowrank=1.01 gard_oracle=1.132 gard_noisy=1.048 gard_wrong=1.326
+2026-05-20 16:10:36,902 INFO seed=11 rows=9/60 overlap=0.00 rank=10 ls=1.298 ridge=1.298 lowrank=1.223 gard_oracle=1.921 gard_noisy=1.502 gard_wrong=1.298
+2026-05-20 16:10:36,910 INFO seed=19 rows=9/60 overlap=0.06 rank=10 ls=1.363 ridge=1 lowrank=1 gard_oracle=1.311 gard_noisy=1.138 gard_wrong=1.018
+2026-05-20 16:10:36,917 INFO seed=23 rows=9/60 overlap=0.14 rank=10 ls=1.217 ridge=0.9977 lowrank=0.9981 gard_oracle=1.047 gard_noisy=0.9988 gard_wrong=1.043
+2026-05-20 16:10:36,924 INFO seed=29 rows=9/60 overlap=0.19 rank=10 ls=1.213 ridge=1.196 lowrank=1.196 gard_oracle=1.213 gard_noisy=1.255 gard_wrong=1.213
+2026-05-20 16:10:36,932 INFO seed=31 rows=9/60 overlap=0.03 rank=10 ls=1.288 ridge=1.006 lowrank=1.005 gard_oracle=1.037 gard_noisy=1.003 gard_wrong=1.074
+2026-05-20 16:10:36,939 INFO seed=37 rows=9/60 overlap=0.06 rank=10 ls=1.283 ridge=1.283 lowrank=1.221 gard_oracle=1.283 gard_noisy=1.283 gard_wrong=1.283
+2026-05-20 16:10:36,939 INFO === protocol=prefix_epochs budget=5 assignment=oracle ===
+2026-05-20 16:10:36,946 INFO seed=3 rows=60/60 overlap=1.00 rank=48 ls=0.002252 ridge=0.002252 lowrank=0.006518 gard_oracle=0.002252 gard_noisy=0.002252 gard_wrong=0.002252
+2026-05-20 16:10:36,954 INFO seed=7 rows=60/60 overlap=1.00 rank=48 ls=0.001679 ridge=0.001679 lowrank=0.005602 gard_oracle=0.001679 gard_noisy=0.001679 gard_wrong=0.001679
+2026-05-20 16:10:36,961 INFO seed=11 rows=60/60 overlap=1.00 rank=48 ls=0.00179 ridge=0.00179 lowrank=0.01178 gard_oracle=0.00179 gard_noisy=0.00179 gard_wrong=0.00179
+2026-05-20 16:10:36,968 INFO seed=19 rows=60/60 overlap=1.00 rank=48 ls=0.002243 ridge=0.002243 lowrank=0.005969 gard_oracle=0.002243 gard_noisy=0.002243 gard_wrong=0.002243
+2026-05-20 16:10:36,976 INFO seed=23 rows=60/60 overlap=1.00 rank=48 ls=0.001725 ridge=0.01391 lowrank=0.01771 gard_oracle=0.001725 gard_noisy=0.001725 gard_wrong=0.001725
+2026-05-20 16:10:36,983 INFO seed=29 rows=60/60 overlap=1.00 rank=48 ls=0.001591 ridge=0.001591 lowrank=0.005448 gard_oracle=0.001591 gard_noisy=0.001591 gard_wrong=0.001591
+2026-05-20 16:10:36,990 INFO seed=31 rows=60/60 overlap=1.00 rank=48 ls=0.003122 ridge=0.003122 lowrank=0.01253 gard_oracle=0.003122 gard_noisy=0.003122 gard_wrong=0.003122
+2026-05-20 16:10:36,997 INFO seed=37 rows=60/60 overlap=1.00 rank=48 ls=0.002444 ridge=0.002444 lowrank=0.01178 gard_oracle=0.002444 gard_noisy=0.002444 gard_wrong=0.002444
+2026-05-20 16:10:36,997 INFO === protocol=prefix_epochs budget=5 assignment=wrong20 ===
+2026-05-20 16:10:37,006 INFO seed=3 rows=60/60 overlap=0.76 rank=48 ls=2.79 ridge=0.5528 lowrank=0.5543 gard_oracle=2.79 gard_noisy=2.79 gard_wrong=2.79
+2026-05-20 16:10:37,015 INFO seed=7 rows=60/60 overlap=0.75 rank=48 ls=1.573 ridge=0.5205 lowrank=0.5219 gard_oracle=1.573 gard_noisy=1.573 gard_wrong=1.573
+2026-05-20 16:10:37,024 INFO seed=11 rows=60/60 overlap=0.75 rank=48 ls=1.717 ridge=0.4524 lowrank=0.456 gard_oracle=1.717 gard_noisy=1.717 gard_wrong=1.717
+2026-05-20 16:10:37,033 INFO seed=19 rows=60/60 overlap=0.76 rank=48 ls=1.766 ridge=0.5208 lowrank=0.5221 gard_oracle=1.766 gard_noisy=1.766 gard_wrong=1.766
+2026-05-20 16:10:37,042 INFO seed=23 rows=60/60 overlap=0.75 rank=48 ls=2.188 ridge=0.6078 lowrank=0.6096 gard_oracle=2.188 gard_noisy=2.188 gard_wrong=2.188
+2026-05-20 16:10:37,050 INFO seed=29 rows=60/60 overlap=0.75 rank=48 ls=1.266 ridge=0.5865 lowrank=0.588 gard_oracle=1.266 gard_noisy=1.266 gard_wrong=1.266
+2026-05-20 16:10:37,059 INFO seed=31 rows=60/60 overlap=0.75 rank=48 ls=1.457 ridge=0.5341 lowrank=0.5357 gard_oracle=1.457 gard_noisy=1.457 gard_wrong=1.457
+2026-05-20 16:10:37,068 INFO seed=37 rows=60/60 overlap=0.75 rank=48 ls=1.338 ridge=0.4358 lowrank=0.4379 gard_oracle=1.338 gard_noisy=1.338 gard_wrong=1.338
+2026-05-20 16:10:37,068 INFO === protocol=prefix_epochs budget=5 assignment=wrong40 ===
+2026-05-20 16:10:37,077 INFO seed=3 rows=60/60 overlap=0.53 rank=48 ls=2.535 ridge=0.843 lowrank=0.8435 gard_oracle=2.535 gard_noisy=2.535 gard_wrong=2.535
+2026-05-20 16:10:37,086 INFO seed=7 rows=60/60 overlap=0.52 rank=48 ls=2.879 ridge=0.9041 lowrank=0.9278 gard_oracle=2.879 gard_noisy=2.879 gard_wrong=2.879
+2026-05-20 16:10:37,095 INFO seed=11 rows=60/60 overlap=0.52 rank=48 ls=4.835 ridge=0.8655 lowrank=0.8965 gard_oracle=4.835 gard_noisy=4.835 gard_wrong=4.835
+2026-05-20 16:10:37,104 INFO seed=19 rows=60/60 overlap=0.52 rank=48 ls=2.566 ridge=0.7223 lowrank=0.7245 gard_oracle=2.566 gard_noisy=2.566 gard_wrong=2.566
+2026-05-20 16:10:37,113 INFO seed=23 rows=60/60 overlap=0.52 rank=48 ls=3.316 ridge=0.9507 lowrank=0.9515 gard_oracle=3.316 gard_noisy=3.316 gard_wrong=3.316
+2026-05-20 16:10:37,122 INFO seed=29 rows=60/60 overlap=0.51 rank=48 ls=3.545 ridge=0.9415 lowrank=0.9613 gard_oracle=3.545 gard_noisy=3.545 gard_wrong=3.545
+2026-05-20 16:10:37,131 INFO seed=31 rows=60/60 overlap=0.52 rank=48 ls=3.001 ridge=0.8121 lowrank=0.8129 gard_oracle=3.001 gard_noisy=3.001 gard_wrong=3.001
+2026-05-20 16:10:37,139 INFO seed=37 rows=60/60 overlap=0.52 rank=48 ls=2.622 ridge=0.9311 lowrank=0.9318 gard_oracle=2.622 gard_noisy=2.622 gard_wrong=2.622
+2026-05-20 16:10:37,139 INFO === protocol=prefix_epochs budget=5 assignment=unknown_random ===
+2026-05-20 16:10:37,147 INFO seed=3 rows=60/60 overlap=0.08 rank=48 ls=5.597 ridge=0.9956 lowrank=0.9956 gard_oracle=5.597 gard_noisy=5.597 gard_wrong=5.597
+2026-05-20 16:10:37,154 INFO seed=7 rows=60/60 overlap=0.08 rank=48 ls=5.538 ridge=0.9953 lowrank=0.9952 gard_oracle=5.538 gard_noisy=5.538 gard_wrong=5.538
+2026-05-20 16:10:37,161 INFO seed=11 rows=60/60 overlap=0.06 rank=48 ls=9.982 ridge=1.061 lowrank=1.061 gard_oracle=9.982 gard_noisy=9.982 gard_wrong=9.982
+2026-05-20 16:10:37,168 INFO seed=19 rows=60/60 overlap=0.08 rank=48 ls=5.552 ridge=1.011 lowrank=1.011 gard_oracle=5.552 gard_noisy=5.552 gard_wrong=5.552
+2026-05-20 16:10:37,176 INFO seed=23 rows=60/60 overlap=0.09 rank=48 ls=3.688 ridge=1.006 lowrank=0.9987 gard_oracle=3.688 gard_noisy=3.688 gard_wrong=3.688
+2026-05-20 16:10:37,183 INFO seed=29 rows=60/60 overlap=0.07 rank=48 ls=3.862 ridge=1.079 lowrank=1.064 gard_oracle=3.862 gard_noisy=3.862 gard_wrong=3.862
+2026-05-20 16:10:37,191 INFO seed=31 rows=60/60 overlap=0.07 rank=48 ls=4.581 ridge=1.003 lowrank=0.997 gard_oracle=4.581 gard_noisy=4.581 gard_wrong=4.581
+2026-05-20 16:10:37,198 INFO seed=37 rows=60/60 overlap=0.09 rank=48 ls=4.103 ridge=1.01 lowrank=1.008 gard_oracle=4.103 gard_noisy=4.103 gard_wrong=4.103
+2026-05-20 16:10:37,198 INFO === protocol=prefix_epochs budget=4 assignment=oracle ===
+2026-05-20 16:10:37,207 INFO seed=3 rows=48/60 overlap=1.00 rank=45 ls=0.08447 ridge=0.08447 lowrank=0.0883 gard_oracle=0.005764 gard_noisy=0.03196 gard_wrong=0.08447
+2026-05-20 16:10:37,215 INFO seed=7 rows=48/60 overlap=1.00 rank=45 ls=0.04058 ridge=0.04058 lowrank=0.04393 gard_oracle=0.00453 gard_noisy=0.02476 gard_wrong=0.04058
+2026-05-20 16:10:37,224 INFO seed=11 rows=48/60 overlap=1.00 rank=45 ls=0.08944 ridge=0.08944 lowrank=0.09349 gard_oracle=0.00426 gard_noisy=0.02943 gard_wrong=0.08944
+2026-05-20 16:10:37,233 INFO seed=19 rows=48/60 overlap=1.00 rank=45 ls=0.07295 ridge=0.07295 lowrank=0.07651 gard_oracle=0.004812 gard_noisy=0.01838 gard_wrong=0.07295
+2026-05-20 16:10:37,241 INFO seed=23 rows=48/60 overlap=1.00 rank=45 ls=0.06562 ridge=0.08796 lowrank=0.09125 gard_oracle=0.004197 gard_noisy=0.03168 gard_wrong=0.06562
+2026-05-20 16:10:37,250 INFO seed=29 rows=48/60 overlap=1.00 rank=45 ls=0.08589 ridge=0.08589 lowrank=0.08954 gard_oracle=0.006298 gard_noisy=0.03363 gard_wrong=0.08589
+2026-05-20 16:10:37,259 INFO seed=31 rows=48/60 overlap=1.00 rank=45 ls=0.08932 ridge=0.08932 lowrank=0.09349 gard_oracle=0.005857 gard_noisy=0.0424 gard_wrong=0.2031
+2026-05-20 16:10:37,268 INFO seed=37 rows=48/60 overlap=1.00 rank=45 ls=0.07378 ridge=0.07378 lowrank=0.07761 gard_oracle=0.004856 gard_noisy=0.03098 gard_wrong=0.07378
+2026-05-20 16:10:37,268 INFO === protocol=prefix_epochs budget=4 assignment=wrong20 ===
+2026-05-20 16:10:37,276 INFO seed=3 rows=48/60 overlap=0.76 rank=48 ls=426.6 ridge=0.6572 lowrank=0.7066 gard_oracle=426.6 gard_noisy=426.6 gard_wrong=426.6
+2026-05-20 16:10:37,285 INFO seed=7 rows=48/60 overlap=0.76 rank=48 ls=65.18 ridge=0.5762 lowrank=0.5772 gard_oracle=65.18 gard_noisy=65.18 gard_wrong=65.18
+2026-05-20 16:10:37,293 INFO seed=11 rows=48/60 overlap=0.76 rank=48 ls=4.438 ridge=0.586 lowrank=0.5874 gard_oracle=4.438 gard_noisy=4.438 gard_wrong=4.438
+2026-05-20 16:10:37,302 INFO seed=19 rows=48/60 overlap=0.77 rank=48 ls=14.57 ridge=0.543 lowrank=0.5439 gard_oracle=14.57 gard_noisy=14.57 gard_wrong=14.57
+2026-05-20 16:10:37,310 INFO seed=23 rows=48/60 overlap=0.76 rank=48 ls=19.07 ridge=0.6846 lowrank=0.6859 gard_oracle=19.07 gard_noisy=19.07 gard_wrong=19.07
+2026-05-20 16:10:37,318 INFO seed=29 rows=48/60 overlap=0.75 rank=48 ls=10.14 ridge=0.6056 lowrank=0.6071 gard_oracle=10.14 gard_noisy=10.14 gard_wrong=10.14
+2026-05-20 16:10:37,326 INFO seed=31 rows=48/60 overlap=0.76 rank=48 ls=7.549 ridge=0.5019 lowrank=0.5061 gard_oracle=7.549 gard_noisy=7.549 gard_wrong=7.549
+2026-05-20 16:10:37,334 INFO seed=37 rows=48/60 overlap=0.75 rank=48 ls=6.46 ridge=0.5919 lowrank=0.5931 gard_oracle=6.46 gard_noisy=6.46 gard_wrong=6.46
+2026-05-20 16:10:37,334 INFO === protocol=prefix_epochs budget=4 assignment=wrong40 ===
+2026-05-20 16:10:37,343 INFO seed=3 rows=48/60 overlap=0.54 rank=48 ls=12 ridge=0.9447 lowrank=0.96 gard_oracle=12 gard_noisy=12 gard_wrong=12
+2026-05-20 16:10:37,351 INFO seed=7 rows=48/60 overlap=0.52 rank=48 ls=23.76 ridge=0.7312 lowrank=0.7321 gard_oracle=23.76 gard_noisy=23.76 gard_wrong=23.76
+2026-05-20 16:10:37,359 INFO seed=11 rows=48/60 overlap=0.51 rank=48 ls=197.9 ridge=0.8983 lowrank=0.873 gard_oracle=197.9 gard_noisy=197.9 gard_wrong=197.9
+2026-05-20 16:10:37,368 INFO seed=19 rows=48/60 overlap=0.52 rank=48 ls=23.51 ridge=0.8433 lowrank=0.8439 gard_oracle=23.51 gard_noisy=23.51 gard_wrong=23.51
+2026-05-20 16:10:37,376 INFO seed=23 rows=48/60 overlap=0.52 rank=48 ls=21.84 ridge=0.9569 lowrank=0.9571 gard_oracle=21.84 gard_noisy=21.84 gard_wrong=21.84
+2026-05-20 16:10:37,384 INFO seed=29 rows=48/60 overlap=0.51 rank=48 ls=935 ridge=0.9506 lowrank=0.9677 gard_oracle=935 gard_noisy=935 gard_wrong=935
+2026-05-20 16:10:37,393 INFO seed=31 rows=48/60 overlap=0.52 rank=48 ls=24.57 ridge=0.8041 lowrank=0.8047 gard_oracle=24.57 gard_noisy=24.57 gard_wrong=24.57
+2026-05-20 16:10:37,401 INFO seed=37 rows=48/60 overlap=0.52 rank=48 ls=20.03 ridge=0.9509 lowrank=0.9614 gard_oracle=20.03 gard_noisy=20.03 gard_wrong=20.03
+2026-05-20 16:10:37,401 INFO === protocol=prefix_epochs budget=4 assignment=unknown_random ===
+2026-05-20 16:10:37,409 INFO seed=3 rows=48/60 overlap=0.09 rank=48 ls=155.1 ridge=0.9959 lowrank=0.9829 gard_oracle=155.1 gard_noisy=155.1 gard_wrong=155.1
+2026-05-20 16:10:37,416 INFO seed=7 rows=48/60 overlap=0.07 rank=48 ls=22.52 ridge=1.007 lowrank=1.311 gard_oracle=22.52 gard_noisy=22.52 gard_wrong=22.52
+2026-05-20 16:10:37,423 INFO seed=11 rows=48/60 overlap=0.06 rank=48 ls=27.87 ridge=1.014 lowrank=1.011 gard_oracle=27.87 gard_noisy=27.87 gard_wrong=27.87
+2026-05-20 16:10:37,430 INFO seed=19 rows=48/60 overlap=0.08 rank=48 ls=5354 ridge=1.011 lowrank=1.01 gard_oracle=5354 gard_noisy=5354 gard_wrong=5354
+2026-05-20 16:10:37,437 INFO seed=23 rows=48/60 overlap=0.11 rank=48 ls=50.16 ridge=1.072 lowrank=1.071 gard_oracle=50.16 gard_noisy=50.16 gard_wrong=50.16
+2026-05-20 16:10:37,445 INFO seed=29 rows=48/60 overlap=0.08 rank=48 ls=109 ridge=1.015 lowrank=1.015 gard_oracle=109 gard_noisy=109 gard_wrong=109
+2026-05-20 16:10:37,452 INFO seed=31 rows=48/60 overlap=0.07 rank=48 ls=176.9 ridge=1.003 lowrank=0.9975 gard_oracle=176.9 gard_noisy=176.9 gard_wrong=176.9
+2026-05-20 16:10:37,459 INFO seed=37 rows=48/60 overlap=0.08 rank=48 ls=41.76 ridge=1.058 lowrank=1.057 gard_oracle=41.76 gard_noisy=41.76 gard_wrong=41.76
+2026-05-20 16:10:37,459 INFO === protocol=prefix_epochs budget=3 assignment=oracle ===
+2026-05-20 16:10:37,467 INFO seed=3 rows=36/60 overlap=1.00 rank=34 ls=0.3151 ridge=0.3151 lowrank=0.3173 gard_oracle=0.0129 gard_noisy=0.09304 gard_wrong=0.3151
+2026-05-20 16:10:37,476 INFO seed=7 rows=36/60 overlap=1.00 rank=34 ls=0.2429 ridge=0.2429 lowrank=0.2449 gard_oracle=0.009712 gard_noisy=0.06379 gard_wrong=0.2429
+2026-05-20 16:10:37,484 INFO seed=11 rows=36/60 overlap=1.00 rank=34 ls=0.3207 ridge=0.3215 lowrank=0.3241 gard_oracle=0.01106 gard_noisy=0.08081 gard_wrong=0.3207
+2026-05-20 16:10:37,492 INFO seed=19 rows=36/60 overlap=1.00 rank=34 ls=0.2444 ridge=0.2444 lowrank=0.2465 gard_oracle=0.01122 gard_noisy=0.05562 gard_wrong=0.2444
+2026-05-20 16:10:37,501 INFO seed=23 rows=36/60 overlap=1.00 rank=34 ls=0.3581 ridge=0.3641 lowrank=0.3665 gard_oracle=0.01312 gard_noisy=0.09793 gard_wrong=0.3581
+2026-05-20 16:10:37,509 INFO seed=29 rows=36/60 overlap=1.00 rank=34 ls=0.3672 ridge=0.3672 lowrank=0.3695 gard_oracle=0.02 gard_noisy=0.113 gard_wrong=0.3672
+2026-05-20 16:10:37,517 INFO seed=31 rows=36/60 overlap=1.00 rank=34 ls=0.3395 ridge=0.3411 lowrank=0.3436 gard_oracle=0.01255 gard_noisy=0.1053 gard_wrong=0.3395
+2026-05-20 16:10:37,525 INFO seed=37 rows=36/60 overlap=1.00 rank=34 ls=0.2809 ridge=0.2809 lowrank=0.2833 gard_oracle=0.01134 gard_noisy=0.06832 gard_wrong=0.2809
+2026-05-20 16:10:37,525 INFO === protocol=prefix_epochs budget=3 assignment=wrong20 ===
+2026-05-20 16:10:37,535 INFO seed=3 rows=36/60 overlap=0.76 rank=37 ls=1.658 ridge=0.6899 lowrank=0.6979 gard_oracle=0.2847 gard_noisy=0.5146 gard_wrong=0.9566
+2026-05-20 16:10:37,544 INFO seed=7 rows=36/60 overlap=0.76 rank=37 ls=1.598 ridge=0.6069 lowrank=0.6076 gard_oracle=0.2051 gard_noisy=0.3267 gard_wrong=0.8042
+2026-05-20 16:10:37,554 INFO seed=11 rows=36/60 overlap=0.76 rank=37 ls=1.657 ridge=0.6203 lowrank=0.6215 gard_oracle=0.1865 gard_noisy=0.3761 gard_wrong=1.657
+2026-05-20 16:10:37,563 INFO seed=19 rows=36/60 overlap=0.76 rank=37 ls=1.553 ridge=0.6036 lowrank=0.6068 gard_oracle=0.18 gard_noisy=0.3341 gard_wrong=0.9261
+2026-05-20 16:10:37,573 INFO seed=23 rows=36/60 overlap=0.75 rank=37 ls=1.268 ridge=0.7295 lowrank=0.8143 gard_oracle=0.3065 gard_noisy=0.5725 gard_wrong=0.8701
+2026-05-20 16:10:37,582 INFO seed=29 rows=36/60 overlap=0.75 rank=37 ls=1.958 ridge=0.7363 lowrank=0.7375 gard_oracle=0.2793 gard_noisy=0.5163 gard_wrong=0.9972
+2026-05-20 16:10:37,592 INFO seed=31 rows=36/60 overlap=0.75 rank=37 ls=1.353 ridge=0.8211 lowrank=0.8215 gard_oracle=0.2346 gard_noisy=0.5092 gard_wrong=0.7619
+2026-05-20 16:10:37,601 INFO seed=37 rows=36/60 overlap=0.75 rank=37 ls=1.88 ridge=0.6941 lowrank=0.6948 gard_oracle=0.2764 gard_noisy=0.4221 gard_wrong=0.9866
+2026-05-20 16:10:37,601 INFO === protocol=prefix_epochs budget=3 assignment=wrong40 ===
+2026-05-20 16:10:37,611 INFO seed=3 rows=36/60 overlap=0.53 rank=37 ls=2.881 ridge=0.961 lowrank=0.9691 gard_oracle=0.5936 gard_noisy=0.9163 gard_wrong=1.015
+2026-05-20 16:10:37,620 INFO seed=7 rows=36/60 overlap=0.51 rank=37 ls=3.281 ridge=0.8602 lowrank=0.8901 gard_oracle=0.5039 gard_noisy=0.7386 gard_wrong=0.9563
+2026-05-20 16:10:37,630 INFO seed=11 rows=36/60 overlap=0.51 rank=37 ls=3.518 ridge=0.9578 lowrank=0.9579 gard_oracle=0.6538 gard_noisy=0.8204 gard_wrong=1.117
+2026-05-20 16:10:37,640 INFO seed=19 rows=36/60 overlap=0.53 rank=37 ls=2.547 ridge=0.7634 lowrank=0.9782 gard_oracle=0.3835 gard_noisy=0.5817 gard_wrong=0.9333
+2026-05-20 16:10:37,650 INFO seed=23 rows=36/60 overlap=0.51 rank=37 ls=2.614 ridge=0.9103 lowrank=0.911 gard_oracle=0.5969 gard_noisy=0.8463 gard_wrong=0.9606
+2026-05-20 16:10:37,660 INFO seed=29 rows=36/60 overlap=0.51 rank=37 ls=3.694 ridge=0.9674 lowrank=0.9746 gard_oracle=0.5287 gard_noisy=0.9255 gard_wrong=0.9829
+2026-05-20 16:10:37,669 INFO seed=31 rows=36/60 overlap=0.52 rank=37 ls=4.467 ridge=0.9529 lowrank=0.9693 gard_oracle=0.68 gard_noisy=0.9723 gard_wrong=0.938
+2026-05-20 16:10:37,679 INFO seed=37 rows=36/60 overlap=0.52 rank=37 ls=3.001 ridge=0.9127 lowrank=0.9874 gard_oracle=0.751 gard_noisy=0.7844 gard_wrong=1.015
+2026-05-20 16:10:37,679 INFO === protocol=prefix_epochs budget=3 assignment=unknown_random ===
+2026-05-20 16:10:37,688 INFO seed=3 rows=36/60 overlap=0.10 rank=37 ls=3.603 ridge=0.99 lowrank=0.99 gard_oracle=0.9162 gard_noisy=0.9523 gard_wrong=0.9935
+2026-05-20 16:10:37,696 INFO seed=7 rows=36/60 overlap=0.07 rank=37 ls=6.64 ridge=0.9894 lowrank=1.009 gard_oracle=0.9358 gard_noisy=0.9895 gard_wrong=1.028
+2026-05-20 16:10:37,705 INFO seed=11 rows=36/60 overlap=0.07 rank=37 ls=5.578 ridge=1.041 lowrank=1.087 gard_oracle=1.065 gard_noisy=1.01 gard_wrong=1.039
+2026-05-20 16:10:37,714 INFO seed=19 rows=36/60 overlap=0.08 rank=37 ls=5.064 ridge=1.006 lowrank=1.006 gard_oracle=1.121 gard_noisy=1.007 gard_wrong=1.127
+2026-05-20 16:10:37,722 INFO seed=23 rows=36/60 overlap=0.12 rank=37 ls=2.977 ridge=1.006 lowrank=1.006 gard_oracle=1.044 gard_noisy=1.002 gard_wrong=1.068
+2026-05-20 16:10:37,731 INFO seed=29 rows=36/60 overlap=0.08 rank=37 ls=3.005 ridge=1.014 lowrank=1.014 gard_oracle=1.235 gard_noisy=1.084 gard_wrong=1.011
+2026-05-20 16:10:37,740 INFO seed=31 rows=36/60 overlap=0.08 rank=37 ls=5.253 ridge=1.01 lowrank=1.008 gard_oracle=1.045 gard_noisy=1.001 gard_wrong=1.007
+2026-05-20 16:10:37,748 INFO seed=37 rows=36/60 overlap=0.06 rank=37 ls=4.074 ridge=1.017 lowrank=1.017 gard_oracle=1.156 gard_noisy=1.01 gard_wrong=1.046
+2026-05-20 16:10:37,749 INFO === protocol=prefix_epochs budget=2 assignment=oracle ===
+2026-05-20 16:10:37,756 INFO seed=3 rows=24/60 overlap=1.00 rank=23 ls=0.5747 ridge=0.5747 lowrank=0.5754 gard_oracle=0.03555 gard_noisy=0.2385 gard_wrong=0.5747
+2026-05-20 16:10:37,764 INFO seed=7 rows=24/60 overlap=1.00 rank=23 ls=0.5156 ridge=0.5156 lowrank=0.5164 gard_oracle=0.02602 gard_noisy=0.2142 gard_wrong=0.5156
+2026-05-20 16:10:37,772 INFO seed=11 rows=24/60 overlap=1.00 rank=23 ls=0.5155 ridge=0.5179 lowrank=0.6688 gard_oracle=0.02191 gard_noisy=0.1799 gard_wrong=1.179
+2026-05-20 16:10:37,780 INFO seed=19 rows=24/60 overlap=1.00 rank=23 ls=0.4555 ridge=0.4555 lowrank=0.4564 gard_oracle=0.02303 gard_noisy=0.1207 gard_wrong=0.4555
+2026-05-20 16:10:37,788 INFO seed=23 rows=24/60 overlap=1.00 rank=23 ls=0.5823 ridge=0.5823 lowrank=0.5833 gard_oracle=0.02595 gard_noisy=0.2278 gard_wrong=0.5823
+2026-05-20 16:10:37,796 INFO seed=29 rows=24/60 overlap=1.00 rank=23 ls=0.5549 ridge=0.5549 lowrank=0.5559 gard_oracle=0.05491 gard_noisy=0.3172 gard_wrong=0.5549
+2026-05-20 16:10:37,804 INFO seed=31 rows=24/60 overlap=1.00 rank=23 ls=0.5591 ridge=0.5591 lowrank=0.5602 gard_oracle=0.02764 gard_noisy=0.27 gard_wrong=0.5591
+2026-05-20 16:10:37,811 INFO seed=37 rows=24/60 overlap=1.00 rank=23 ls=0.5333 ridge=0.5356 lowrank=0.5366 gard_oracle=0.02956 gard_noisy=0.1808 gard_wrong=0.5333
+2026-05-20 16:10:37,811 INFO === protocol=prefix_epochs budget=2 assignment=wrong20 ===
+2026-05-20 16:10:37,820 INFO seed=3 rows=24/60 overlap=0.76 rank=25 ls=0.8163 ridge=0.7352 lowrank=0.7371 gard_oracle=0.3035 gard_noisy=0.5149 gard_wrong=0.8163
+2026-05-20 16:10:37,828 INFO seed=7 rows=24/60 overlap=0.76 rank=25 ls=0.8154 ridge=0.6625 lowrank=0.6627 gard_oracle=0.2743 gard_noisy=0.4209 gard_wrong=0.8154
+2026-05-20 16:10:37,837 INFO seed=11 rows=24/60 overlap=0.76 rank=25 ls=0.9469 ridge=0.6888 lowrank=0.6901 gard_oracle=0.2324 gard_noisy=0.4167 gard_wrong=0.855
+2026-05-20 16:10:37,845 INFO seed=19 rows=24/60 overlap=0.75 rank=25 ls=0.8638 ridge=0.7374 lowrank=0.7393 gard_oracle=0.2814 gard_noisy=0.4728 gard_wrong=1.257
+2026-05-20 16:10:37,854 INFO seed=23 rows=24/60 overlap=0.75 rank=25 ls=1.004 ridge=0.8449 lowrank=0.8454 gard_oracle=0.3525 gard_noisy=0.6875 gard_wrong=0.9314
+2026-05-20 16:10:37,863 INFO seed=29 rows=24/60 overlap=0.75 rank=25 ls=1.021 ridge=1.021 lowrank=1.023 gard_oracle=0.3824 gard_noisy=0.9034 gard_wrong=1.021
+2026-05-20 16:10:37,872 INFO seed=31 rows=24/60 overlap=0.75 rank=25 ls=0.8332 ridge=0.9447 lowrank=0.9449 gard_oracle=0.2579 gard_noisy=0.5014 gard_wrong=0.942
+2026-05-20 16:10:37,880 INFO seed=37 rows=24/60 overlap=0.75 rank=25 ls=0.8292 ridge=0.9459 lowrank=0.844 gard_oracle=0.326 gard_noisy=0.5358 gard_wrong=1.021
+2026-05-20 16:10:37,880 INFO === protocol=prefix_epochs budget=2 assignment=wrong40 ===
+2026-05-20 16:10:37,889 INFO seed=3 rows=24/60 overlap=0.53 rank=25 ls=1.214 ridge=0.9751 lowrank=0.9751 gard_oracle=0.7909 gard_noisy=0.8658 gard_wrong=1.016
+2026-05-20 16:10:37,897 INFO seed=7 rows=24/60 overlap=0.52 rank=25 ls=1.575 ridge=0.9542 lowrank=0.9542 gard_oracle=0.4891 gard_noisy=0.9077 gard_wrong=0.9516
+2026-05-20 16:10:37,906 INFO seed=11 rows=24/60 overlap=0.52 rank=25 ls=1.583 ridge=0.9943 lowrank=0.98 gard_oracle=0.8732 gard_noisy=0.8203 gard_wrong=1.234
+2026-05-20 16:10:37,914 INFO seed=19 rows=24/60 overlap=0.53 rank=25 ls=1.358 ridge=0.9648 lowrank=0.9749 gard_oracle=0.7439 gard_noisy=0.9675 gard_wrong=1.21
+2026-05-20 16:10:37,923 INFO seed=23 rows=24/60 overlap=0.51 rank=25 ls=1.38 ridge=0.9696 lowrank=0.9697 gard_oracle=0.7407 gard_noisy=0.8394 gard_wrong=0.9459
+2026-05-20 16:10:37,932 INFO seed=29 rows=24/60 overlap=0.51 rank=25 ls=1.735 ridge=0.9796 lowrank=0.982 gard_oracle=0.8282 gard_noisy=0.9842 gard_wrong=0.981
+2026-05-20 16:10:37,940 INFO seed=31 rows=24/60 overlap=0.52 rank=25 ls=1.3 ridge=0.969 lowrank=0.969 gard_oracle=0.7888 gard_noisy=0.9821 gard_wrong=0.9562
+2026-05-20 16:10:37,949 INFO seed=37 rows=24/60 overlap=0.52 rank=25 ls=1.43 ridge=0.9767 lowrank=0.9769 gard_oracle=0.6211 gard_noisy=0.8269 gard_wrong=0.9933
+2026-05-20 16:10:37,949 INFO === protocol=prefix_epochs budget=2 assignment=unknown_random ===
+2026-05-20 16:10:37,957 INFO seed=3 rows=24/60 overlap=0.08 rank=25 ls=1.827 ridge=1.004 lowrank=1.003 gard_oracle=1.031 gard_noisy=1.001 gard_wrong=1.23
+2026-05-20 16:10:37,964 INFO seed=7 rows=24/60 overlap=0.07 rank=25 ls=1.893 ridge=1.002 lowrank=1.007 gard_oracle=0.959 gard_noisy=0.9958 gard_wrong=1.021
+2026-05-20 16:10:37,972 INFO seed=11 rows=24/60 overlap=0.09 rank=25 ls=2.109 ridge=1.103 lowrank=1.073 gard_oracle=1.129 gard_noisy=1.104 gard_wrong=1.07
+2026-05-20 16:10:37,981 INFO seed=19 rows=24/60 overlap=0.08 rank=25 ls=2.658 ridge=1.009 lowrank=1.009 gard_oracle=1.054 gard_noisy=1.088 gard_wrong=0.9898
+2026-05-20 16:10:37,989 INFO seed=23 rows=24/60 overlap=0.08 rank=25 ls=1.829 ridge=1.002 lowrank=1.002 gard_oracle=1.026 gard_noisy=1 gard_wrong=1.041
+2026-05-20 16:10:37,997 INFO seed=29 rows=24/60 overlap=0.05 rank=25 ls=2.054 ridge=1.651 lowrank=1.567 gard_oracle=2.214 gard_noisy=1.812 gard_wrong=2.054
+2026-05-20 16:10:38,005 INFO seed=31 rows=24/60 overlap=0.09 rank=25 ls=2.373 ridge=1.007 lowrank=1.007 gard_oracle=1.085 gard_noisy=1.022 gard_wrong=1.003
+2026-05-20 16:10:38,012 INFO seed=37 rows=24/60 overlap=0.06 rank=25 ls=2.338 ridge=1.011 lowrank=1.008 gard_oracle=1.14 gard_noisy=1.167 gard_wrong=1.028
+2026-05-20 16:10:38,012 INFO === protocol=prefix_epochs budget=1 assignment=oracle ===
+2026-05-20 16:10:38,019 INFO seed=3 rows=12/60 overlap=1.00 rank=12 ls=0.8101 ridge=0.8101 lowrank=0.8101 gard_oracle=0.07658 gard_noisy=0.4803 gard_wrong=0.8101
+2026-05-20 16:10:38,027 INFO seed=7 rows=12/60 overlap=1.00 rank=12 ls=0.6384 ridge=0.6384 lowrank=0.6384 gard_oracle=0.08147 gard_noisy=0.3454 gard_wrong=0.6384
+2026-05-20 16:10:38,034 INFO seed=11 rows=12/60 overlap=1.00 rank=12 ls=0.7392 ridge=0.7392 lowrank=0.7392 gard_oracle=0.06098 gard_noisy=0.4417 gard_wrong=0.7392
+2026-05-20 16:10:38,041 INFO seed=19 rows=12/60 overlap=1.00 rank=12 ls=0.6976 ridge=0.6976 lowrank=0.6979 gard_oracle=0.05324 gard_noisy=0.2892 gard_wrong=0.6976
+2026-05-20 16:10:38,048 INFO seed=23 rows=12/60 overlap=1.00 rank=12 ls=0.7809 ridge=0.7809 lowrank=0.7809 gard_oracle=0.07073 gard_noisy=0.4662 gard_wrong=0.7809
+2026-05-20 16:10:38,055 INFO seed=29 rows=12/60 overlap=1.00 rank=12 ls=0.7742 ridge=0.7742 lowrank=0.7742 gard_oracle=0.1563 gard_noisy=0.5185 gard_wrong=0.7742
+2026-05-20 16:10:38,062 INFO seed=31 rows=12/60 overlap=1.00 rank=12 ls=0.7408 ridge=0.7408 lowrank=0.7408 gard_oracle=0.1124 gard_noisy=0.5226 gard_wrong=0.7408
+2026-05-20 16:10:38,069 INFO seed=37 rows=12/60 overlap=1.00 rank=12 ls=0.7621 ridge=0.7621 lowrank=0.7621 gard_oracle=0.08173 gard_noisy=0.4818 gard_wrong=0.7621
+2026-05-20 16:10:38,069 INFO === protocol=prefix_epochs budget=1 assignment=wrong20 ===
+2026-05-20 16:10:38,076 INFO seed=3 rows=12/60 overlap=0.75 rank=13 ls=0.847 ridge=0.847 lowrank=0.8863 gard_oracle=0.4497 gard_noisy=0.6922 gard_wrong=1.048
+2026-05-20 16:10:38,084 INFO seed=7 rows=12/60 overlap=0.75 rank=13 ls=0.8077 ridge=0.9582 lowrank=0.9582 gard_oracle=0.4608 gard_noisy=0.4965 gard_wrong=1.064
+2026-05-20 16:10:38,092 INFO seed=11 rows=12/60 overlap=0.75 rank=13 ls=0.8362 ridge=0.9683 lowrank=0.9751 gard_oracle=0.3306 gard_noisy=0.5681 gard_wrong=1.067
+2026-05-20 16:10:38,099 INFO seed=19 rows=12/60 overlap=0.75 rank=13 ls=0.8229 ridge=0.8229 lowrank=0.8229 gard_oracle=0.295 gard_noisy=0.5009 gard_wrong=0.8229
+2026-05-20 16:10:38,107 INFO seed=23 rows=12/60 overlap=0.75 rank=13 ls=0.9185 ridge=0.9108 lowrank=0.9114 gard_oracle=0.7985 gard_noisy=0.9852 gard_wrong=1.209
+2026-05-20 16:10:38,114 INFO seed=29 rows=12/60 overlap=0.75 rank=13 ls=0.9064 ridge=0.9064 lowrank=0.9064 gard_oracle=0.9064 gard_noisy=0.7087 gard_wrong=0.9064
+2026-05-20 16:10:38,122 INFO seed=31 rows=12/60 overlap=0.75 rank=13 ls=0.8384 ridge=0.824 lowrank=0.824 gard_oracle=0.3229 gard_noisy=0.6251 gard_wrong=0.8384
+2026-05-20 16:10:38,129 INFO seed=37 rows=12/60 overlap=0.75 rank=13 ls=0.9275 ridge=0.8972 lowrank=0.9409 gard_oracle=0.7443 gard_noisy=0.748 gard_wrong=1.022
+2026-05-20 16:10:38,130 INFO === protocol=prefix_epochs budget=1 assignment=wrong40 ===
+2026-05-20 16:10:38,137 INFO seed=3 rows=12/60 overlap=0.56 rank=13 ls=1.049 ridge=1.049 lowrank=1.049 gard_oracle=1.049 gard_noisy=1.049 gard_wrong=1.049
+2026-05-20 16:10:38,145 INFO seed=7 rows=12/60 overlap=0.50 rank=13 ls=0.9736 ridge=0.9687 lowrank=0.9789 gard_oracle=0.7225 gard_noisy=0.9779 gard_wrong=0.9823
+2026-05-20 16:10:38,152 INFO seed=11 rows=12/60 overlap=0.52 rank=13 ls=1.026 ridge=0.9587 lowrank=0.9458 gard_oracle=0.8094 gard_noisy=0.8047 gard_wrong=1.109
+2026-05-20 16:10:38,160 INFO seed=19 rows=12/60 overlap=0.54 rank=13 ls=1.029 ridge=0.9809 lowrank=0.9809 gard_oracle=0.7678 gard_noisy=0.9814 gard_wrong=1.266
+2026-05-20 16:10:38,167 INFO seed=23 rows=12/60 overlap=0.52 rank=13 ls=1.082 ridge=0.9663 lowrank=0.9707 gard_oracle=0.8301 gard_noisy=0.9858 gard_wrong=0.991
+2026-05-20 16:10:38,175 INFO seed=29 rows=12/60 overlap=0.52 rank=13 ls=1.17 ridge=0.9889 lowrank=1.008 gard_oracle=0.8647 gard_noisy=0.8706 gard_wrong=1.026
+2026-05-20 16:10:38,182 INFO seed=31 rows=12/60 overlap=0.50 rank=13 ls=1.074 ridge=0.9295 lowrank=0.9338 gard_oracle=0.7883 gard_noisy=0.8722 gard_wrong=1.046
+2026-05-20 16:10:38,190 INFO seed=37 rows=12/60 overlap=0.52 rank=13 ls=1.096 ridge=1.096 lowrank=1.096 gard_oracle=1.096 gard_noisy=1.096 gard_wrong=1.096
+2026-05-20 16:10:38,190 INFO === protocol=prefix_epochs budget=1 assignment=unknown_random ===
+2026-05-20 16:10:38,197 INFO seed=3 rows=12/60 overlap=0.12 rank=13 ls=1.299 ridge=1.002 lowrank=1.001 gard_oracle=0.9978 gard_noisy=1 gard_wrong=1.006
+2026-05-20 16:10:38,205 INFO seed=7 rows=12/60 overlap=0.06 rank=13 ls=1.149 ridge=1.087 lowrank=1.086 gard_oracle=1.149 gard_noisy=1.149 gard_wrong=1.149
+2026-05-20 16:10:38,212 INFO seed=11 rows=12/60 overlap=0.12 rank=13 ls=1.308 ridge=1.051 lowrank=1.171 gard_oracle=1.1 gard_noisy=1.011 gard_wrong=1.175
+2026-05-20 16:10:38,219 INFO seed=19 rows=12/60 overlap=0.10 rank=13 ls=1.426 ridge=1.005 lowrank=1.007 gard_oracle=1.039 gard_noisy=1.006 gard_wrong=1.006
+2026-05-20 16:10:38,226 INFO seed=23 rows=12/60 overlap=0.08 rank=13 ls=1.307 ridge=1.001 lowrank=1.001 gard_oracle=1.098 gard_noisy=1.021 gard_wrong=1.032
+2026-05-20 16:10:38,234 INFO seed=29 rows=12/60 overlap=0.04 rank=13 ls=1.474 ridge=1.474 lowrank=1.472 gard_oracle=1.474 gard_noisy=1.474 gard_wrong=1.474
+2026-05-20 16:10:38,241 INFO seed=31 rows=12/60 overlap=0.10 rank=13 ls=1.515 ridge=1.003 lowrank=0.9992 gard_oracle=1.095 gard_noisy=0.9995 gard_wrong=0.9915
+2026-05-20 16:10:38,249 INFO seed=37 rows=12/60 overlap=0.04 rank=13 ls=1.474 ridge=1.003 lowrank=1.005 gard_oracle=1.084 gard_noisy=1.002 gard_wrong=1.061
+2026-05-20 16:10:38,753 INFO Wrote /Users/yetao/Documents/06.My Papers/CQU/2026/01.SHARD/research-artifacts/novel-inversion-vs-shard/artifacts/round05_metrics.json
+2026-05-20 16:10:38,753 INFO Wrote /Users/yetao/Documents/06.My Papers/CQU/2026/01.SHARD/research-artifacts/novel-inversion-vs-shard/artifacts/round05_random_oracle_assignment.png
+2026-05-20 16:10:38,753 INFO Wrote /Users/yetao/Documents/06.My Papers/CQU/2026/01.SHARD/research-artifacts/novel-inversion-vs-shard/artifacts/round05_assignment_stress.png
+2026-05-20 16:10:38,753 INFO Runtime 2.89s

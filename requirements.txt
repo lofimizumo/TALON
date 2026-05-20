@@ -1,0 +1,7 @@
+# TALON research benchmarks (rounds 01–08)
+numpy>=1.22
+scipy>=1.9
+matplotlib>=3.6
+pillow>=9.0
+torch>=2.0
+torchvision>=0.15

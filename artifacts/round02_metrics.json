@@ -1,0 +1,368 @@
+{
+  "round": 2,
+  "method": "JOLI",
+  "baseline": "ShardAttacker.level3_invert (canonical)",
+  "seeds": [
+    7,
+    11,
+    23
+  ],
+  "regimes": [
+    {
+      "name": "compressive_28x28",
+      "n_samples": 12,
+      "resize": 28,
+      "d": 784,
+      "dim_g": 100,
+      "compressive_dim_g_lt_d": true,
+      "seeds": [
+        7,
+        11,
+        23
+      ],
+      "per_seed": [
+        {
+          "seed": 7,
+          "shard_l3_canonical": {
+            "input_mse": 0.27599940108089843,
+            "input_psnr_db": 5.590918603534169,
+            "snapshot_match_acc": 1.0,
+            "mean_snapshot_residual": 9.922563215525315e-09,
+            "runtime_sec": 13.5635451249982
+          },
+          "joli": {
+            "input_mse": 0.12054294759909079,
+            "input_psnr_db": 9.188581930707901,
+            "snapshot_match_acc": 0.08333333333333333,
+            "mean_snapshot_residual": 0.20599021017551422,
+            "runtime_sec": 16.451028916002542
+          },
+          "budget": {
+            "shard": {
+              "n_batch_starts": 500,
+              "n_lstsq_seeds": 5,
+              "adam_steps": 2000,
+              "lbfgs_max_iter": 500,
+              "api": "ShardAttacker.level3_invert"
+            },
+            "joli": {
+              "n_batch_starts": 500,
+              "n_lstsq_seeds": 5,
+              "adam_steps": 2000,
+              "lbfgs_max_iter": 500,
+              "tv_adam": 0.0,
+              "tv_lbfgs": 0.005,
+              "tv_prior_when_dim_g_lt_d": true,
+              "api": "joli_invert"
+            }
+          }
+        },
+        {
+          "seed": 11,
+          "shard_l3_canonical": {
+            "input_mse": 0.2842655021735212,
+            "input_psnr_db": 5.4627584212012685,
+            "snapshot_match_acc": 1.0,
+            "mean_snapshot_residual": 1.3876115367850161e-08,
+            "runtime_sec": 11.692249790998176
+          },
+          "joli": {
+            "input_mse": 0.1461114762850474,
+            "input_psnr_db": 8.35315671187354,
+            "snapshot_match_acc": 0.0,
+            "mean_snapshot_residual": 0.22835613787174225,
+            "runtime_sec": 19.120374541002093
+          },
+          "budget": {
+            "shard": {
+              "n_batch_starts": 500,
+              "n_lstsq_seeds": 5,
+              "adam_steps": 2000,
+              "lbfgs_max_iter": 500,
+              "api": "ShardAttacker.level3_invert"
+            },
+            "joli": {
+              "n_batch_starts": 500,
+              "n_lstsq_seeds": 5,
+              "adam_steps": 2000,
+              "lbfgs_max_iter": 500,
+              "tv_adam": 0.0,
+              "tv_lbfgs": 0.005,
+              "tv_prior_when_dim_g_lt_d": true,
+              "api": "joli_invert"
+            }
+          }
+        },
+        {
+          "seed": 23,
+          "shard_l3_canonical": {
+            "input_mse": 0.2808085254767619,
+            "input_psnr_db": 5.515897109606551,
+            "snapshot_match_acc": 1.0,
+            "mean_snapshot_residual": 1.0039973297182314e-08,
+            "runtime_sec": 12.982248874999641
+          },
+          "joli": {
+            "input_mse": 0.13897178340515304,
+            "input_psnr_db": 8.570733692092375,
+            "snapshot_match_acc": 0.16666666666666666,
+            "mean_snapshot_residual": 0.13286498188972473,
+            "runtime_sec": 15.351017041000887
+          },
+          "budget": {
+            "shard": {
+              "n_batch_starts": 500,
+              "n_lstsq_seeds": 5,
+              "adam_steps": 2000,
+              "lbfgs_max_iter": 500,
+              "api": "ShardAttacker.level3_invert"
+            },
+            "joli": {
+              "n_batch_starts": 500,
+              "n_lstsq_seeds": 5,
+              "adam_steps": 2000,
+              "lbfgs_max_iter": 500,
+              "tv_adam": 0.0,
+              "tv_lbfgs": 0.005,
+              "tv_prior_when_dim_g_lt_d": true,
+              "api": "joli_invert"
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "shard_l3_canonical": {
+          "input_mse": 0.28035780957706047,
+          "input_mse_std": 0.0033896376831993465,
+          "input_psnr_db": 5.523191378113996,
+          "input_psnr_db_std": 0.05257479021162507,
+          "snapshot_match_acc": 1.0,
+          "snapshot_match_acc_std": 0.0,
+          "mean_snapshot_residual": 1.1279550626852597e-08,
+          "mean_snapshot_residual_std": 1.836674099645423e-09,
+          "runtime_sec": 12.746014596998672,
+          "runtime_sec_std": 0.7820023581974438
+        },
+        "joli": {
+          "input_mse": 0.13520873576309708,
+          "input_mse_std": 0.010772118654453378,
+          "input_psnr_db": 8.704157444891273,
+          "input_psnr_db_std": 0.35386932373812413,
+          "snapshot_match_acc": 0.08333333333333333,
+          "snapshot_match_acc_std": 0.06804138174397717,
+          "mean_snapshot_residual": 0.18907044331232706,
+          "mean_snapshot_residual_std": 0.04077866354458709,
+          "runtime_sec": 16.974140166001842,
+          "runtime_sec_std": 1.582666110420579
+        }
+      },
+      "budget": {
+        "shard": {
+          "n_batch_starts": 500,
+          "n_lstsq_seeds": 5,
+          "adam_steps": 2000,
+          "lbfgs_max_iter": 500,
+          "api": "ShardAttacker.level3_invert"
+        },
+        "joli": {
+          "n_batch_starts": 500,
+          "n_lstsq_seeds": 5,
+          "adam_steps": 2000,
+          "lbfgs_max_iter": 500,
+          "tv_adam": 0.0,
+          "tv_lbfgs": 0.005,
+          "tv_prior_when_dim_g_lt_d": true,
+          "api": "joli_invert"
+        }
+      }
+    },
+    {
+      "name": "reference_14x14",
+      "n_samples": 12,
+      "resize": 14,
+      "d": 196,
+      "dim_g": 160,
+      "compressive_dim_g_lt_d": true,
+      "seeds": [
+        7,
+        11,
+        23
+      ],
+      "per_seed": [
+        {
+          "seed": 7,
+          "shard_l3_canonical": {
+            "input_mse": 0.005873219697823959,
+            "input_psnr_db": 22.311237533256012,
+            "snapshot_match_acc": 0.9166666666666666,
+            "mean_snapshot_residual": 0.012347858399152756,
+            "runtime_sec": 19.072273792000487
+          },
+          "joli": {
+            "input_mse": 0.005873219697823959,
+            "input_psnr_db": 22.311237533256012,
+            "snapshot_match_acc": 0.9166666666666666,
+            "mean_snapshot_residual": 0.012347858399152756,
+            "runtime_sec": 15.636455125000793
+          },
+          "budget": {
+            "shard": {
+              "n_batch_starts": 500,
+              "n_lstsq_seeds": 5,
+              "adam_steps": 2000,
+              "lbfgs_max_iter": 500,
+              "api": "ShardAttacker.level3_invert"
+            },
+            "joli": {
+              "n_batch_starts": 500,
+              "n_lstsq_seeds": 5,
+              "adam_steps": 2000,
+              "lbfgs_max_iter": 500,
+              "tv_adam": 0.0,
+              "tv_lbfgs": 0.0,
+              "tv_prior_when_dim_g_lt_d": true,
+              "api": "joli_invert"
+            }
+          }
+        },
+        {
+          "seed": 11,
+          "shard_l3_canonical": {
+            "input_mse": 0.005064451068713458,
+            "input_psnr_db": 22.95467620540243,
+            "snapshot_match_acc": 0.8333333333333334,
+            "mean_snapshot_residual": 0.01639985851943493,
+            "runtime_sec": 15.54494020799757
+          },
+          "joli": {
+            "input_mse": 0.005064451068713458,
+            "input_psnr_db": 22.95467620540243,
+            "snapshot_match_acc": 0.8333333333333334,
+            "mean_snapshot_residual": 0.01639985851943493,
+            "runtime_sec": 15.708990917002666
+          },
+          "budget": {
+            "shard": {
+              "n_batch_starts": 500,
+              "n_lstsq_seeds": 5,
+              "adam_steps": 2000,
+              "lbfgs_max_iter": 500,
+              "api": "ShardAttacker.level3_invert"
+            },
+            "joli": {
+              "n_batch_starts": 500,
+              "n_lstsq_seeds": 5,
+              "adam_steps": 2000,
+              "lbfgs_max_iter": 500,
+              "tv_adam": 0.0,
+              "tv_lbfgs": 0.0,
+              "tv_prior_when_dim_g_lt_d": true,
+              "api": "joli_invert"
+            }
+          }
+        },
+        {
+          "seed": 23,
+          "shard_l3_canonical": {
+            "input_mse": 0.0038514549292075016,
+            "input_psnr_db": 24.14375180007376,
+            "snapshot_match_acc": 0.9166666666666666,
+            "mean_snapshot_residual": 0.01098391693085432,
+            "runtime_sec": 16.711983209002938
+          },
+          "joli": {
+            "input_mse": 0.0038514549292075016,
+            "input_psnr_db": 24.14375180007376,
+            "snapshot_match_acc": 0.9166666666666666,
+            "mean_snapshot_residual": 0.01098391693085432,
+            "runtime_sec": 15.517770042002667
+          },
+          "budget": {
+            "shard": {
+              "n_batch_starts": 500,
+              "n_lstsq_seeds": 5,
+              "adam_steps": 2000,
+              "lbfgs_max_iter": 500,
+              "api": "ShardAttacker.level3_invert"
+            },
+            "joli": {
+              "n_batch_starts": 500,
+              "n_lstsq_seeds": 5,
+              "adam_steps": 2000,
+              "lbfgs_max_iter": 500,
+              "tv_adam": 0.0,
+              "tv_lbfgs": 0.0,
+              "tv_prior_when_dim_g_lt_d": true,
+              "api": "joli_invert"
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "shard_l3_canonical": {
+          "input_mse": 0.004929708565248306,
+          "input_mse_std": 0.000830862945611261,
+          "input_psnr_db": 23.1365551795774,
+          "input_psnr_db_std": 0.7590946824816389,
+          "snapshot_match_acc": 0.8888888888888888,
+          "snapshot_match_acc_std": 0.03928371006591927,
+          "mean_snapshot_residual": 0.013243877949814001,
+          "mean_snapshot_residual_std": 0.0023000353764097694,
+          "runtime_sec": 17.109732403000333,
+          "runtime_sec_std": 1.4672363747769477
+        },
+        "joli": {
+          "input_mse": 0.004929708565248306,
+          "input_mse_std": 0.000830862945611261,
+          "input_psnr_db": 23.1365551795774,
+          "input_psnr_db_std": 0.7590946824816389,
+          "snapshot_match_acc": 0.8888888888888888,
+          "snapshot_match_acc_std": 0.03928371006591927,
+          "mean_snapshot_residual": 0.013243877949814001,
+          "mean_snapshot_residual_std": 0.0023000353764097694,
+          "runtime_sec": 15.621072028002041,
+          "runtime_sec_std": 0.07881977549615353
+        }
+      },
+      "budget": {
+        "shard": {
+          "n_batch_starts": 500,
+          "n_lstsq_seeds": 5,
+          "adam_steps": 2000,
+          "lbfgs_max_iter": 500,
+          "api": "ShardAttacker.level3_invert"
+        },
+        "joli": {
+          "n_batch_starts": 500,
+          "n_lstsq_seeds": 5,
+          "adam_steps": 2000,
+          "lbfgs_max_iter": 500,
+          "tv_adam": 0.0,
+          "tv_lbfgs": 0.0,
+          "tv_prior_when_dim_g_lt_d": true,
+          "api": "joli_invert"
+        }
+      }
+    }
+  ],
+  "headline": {
+    "compressive_28x28": {
+      "joli_beats_shard_mse": true,
+      "joli_beats_shard_psnr": true,
+      "joli_beats_shard_snapshot_match": false,
+      "shard_mse_mean_std": "0.2804\u00b10.0034",
+      "joli_mse_mean_std": "0.1352\u00b10.0108",
+      "shard_psnr_mean_std": "5.52\u00b10.05",
+      "joli_psnr_mean_std": "8.70\u00b10.35"
+    },
+    "reference_14x14": {
+      "joli_beats_shard_mse": false,
+      "joli_beats_shard_psnr": false,
+      "joli_beats_shard_snapshot_match": false,
+      "shard_mse_mean_std": "0.0049\u00b10.0008",
+      "joli_mse_mean_std": "0.0049\u00b10.0008",
+      "shard_psnr_mean_std": "23.14\u00b10.76",
+      "joli_psnr_mean_std": "23.14\u00b10.76"
+    }
+  }
+}

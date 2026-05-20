@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="420" viewBox="0 0 760 420">
+<rect width="100%" height="100%" fill="white"/>
+<text x="380.0" y="24" text-anchor="middle" font-size="16" font-family="sans-serif">Round 07: terminal-update aggregate inversion</text>
+<line x1="51" x2="704" y1="364.0" y2="364.0" stroke="#eee" /><text x="46" y="368.0" text-anchor="end" font-size="11">0.000</text><line x1="51" x2="704" y1="302.4" y2="302.4" stroke="#eee" /><text x="46" y="306.4" text-anchor="end" font-size="11">0.094</text><line x1="51" x2="704" y1="240.8" y2="240.8" stroke="#eee" /><text x="46" y="244.8" text-anchor="end" font-size="11">0.189</text><line x1="51" x2="704" y1="179.2" y2="179.2" stroke="#eee" /><text x="46" y="183.2" text-anchor="end" font-size="11">0.283</text><line x1="51" x2="704" y1="117.6" y2="117.6" stroke="#eee" /><text x="46" y="121.6" text-anchor="end" font-size="11">0.377</text><line x1="51" x2="704" y1="56.0" y2="56.0" stroke="#eee" /><text x="46" y="60.0" text-anchor="end" font-size="11">0.471</text>
+<line x1="56" x2="704" y1="364" y2="364" stroke="#333"/>
+<line x1="56" x2="56" y1="56" y2="364" stroke="#333"/>
+<text x="56.0" y="400" text-anchor="middle" font-size="12">1</text>
+<text x="148.6" y="400" text-anchor="middle" font-size="12">2</text>
+<text x="333.7" y="400" text-anchor="middle" font-size="12">4</text>
+<text x="704.0" y="400" text-anchor="middle" font-size="12">8</text>
+<text x="380.0" y="416" text-anchor="middle" font-size="12">observed terminal server rounds</text>
+<text transform="translate(16,210.0) rotate(-90)" text-anchor="middle" font-size="12">mean squared error</text>
+<polyline fill="none" stroke="#1f77b4" stroke-width="2.5" points="56.0,270.5 148.6,363.8 333.7,363.9 704.0,363.9" />
+<circle cx="56.0" cy="270.5" r="4" fill="#1f77b4" />
+<circle cx="148.6" cy="363.8" r="4" fill="#1f77b4" />
+<circle cx="333.7" cy="363.9" r="4" fill="#1f77b4" />
+<circle cx="704.0" cy="363.9" r="4" fill="#1f77b4" />
+<polyline fill="none" stroke="#d62728" stroke-width="2.5" points="56.0,84.0 148.6,189.7 333.7,189.7 704.0,189.7" />
+<circle cx="56.0" cy="84.0" r="4" fill="#d62728" />
+<circle cx="148.6" cy="189.7" r="4" fill="#d62728" />
+<circle cx="333.7" cy="189.7" r="4" fill="#d62728" />
+<circle cx="704.0" cy="189.7" r="4" fill="#d62728" />
+<polyline fill="none" stroke="#2ca02c" stroke-width="2.5" points="56.0,198.6 148.6,198.6 333.7,198.6 704.0,198.6" />
+<circle cx="56.0" cy="198.6" r="4" fill="#2ca02c" />
+<circle cx="148.6" cy="198.6" r="4" fill="#2ca02c" />
+<circle cx="333.7" cy="198.6" r="4" fill="#2ca02c" />
+<circle cx="704.0" cy="198.6" r="4" fill="#2ca02c" />
+<rect x="505" y="54" width="210" height="74" fill="white" stroke="#ddd"/>
+<circle cx="522" cy="74" r="4" fill="#1f77b4"/><text x="534" y="78" font-size="12">prototype MSE</text>
+<circle cx="522" cy="96" r="4" fill="#d62728"/><text x="534" y="100" font-size="12">individual via prototypes</text>
+<circle cx="522" cy="118" r="4" fill="#2ca02c"/><text x="534" y="122" font-size="12">within-class lower bound</text>
+</svg>

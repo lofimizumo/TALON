@@ -1,0 +1,19 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Local datasets (MNIST etc. downloaded at runtime)
+data/
+
+# Large regenerated caches (keep artifacts/ and logs/ in repo)
+vendor/shard_sim/__pycache__/

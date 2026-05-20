@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="500" viewBox="0 0 780 500">
+<rect width="100%" height="100%" fill="white"/>
+<text x="390.0" y="25" text-anchor="middle" font-family="sans-serif" font-size="18">Round 06 Stage-2 Recovery: unknown_epoch</text>
+<line x1="70" y1="435" x2="755" y2="435" stroke="#333"/>
+<line x1="70" y1="45" x2="70" y2="435" stroke="#333"/>
+<line x1="70" y1="420.4" x2="755" y2="420.4" stroke="#333" stroke-dasharray="5,5" opacity="0.6"/>
+<text x="750" y="414.4" text-anchor="end" font-family="sans-serif" font-size="11">MSE=0.10</text>
+<line x1="70.0" y1="435" x2="70.0" y2="440" stroke="#333"/>
+<text x="70.0" y="457" text-anchor="middle" font-family="sans-serif" font-size="11">1.00</text>
+<line x1="252.7" y1="435" x2="252.7" y2="440" stroke="#333"/>
+<text x="252.7" y="457" text-anchor="middle" font-family="sans-serif" font-size="11">0.80</text>
+<line x1="435.3" y1="435" x2="435.3" y2="440" stroke="#333"/>
+<text x="435.3" y="457" text-anchor="middle" font-family="sans-serif" font-size="11">0.60</text>
+<line x1="618.0" y1="435" x2="618.0" y2="440" stroke="#333"/>
+<text x="618.0" y="457" text-anchor="middle" font-family="sans-serif" font-size="11">0.40</text>
+<line x1="755.0" y1="435" x2="755.0" y2="440" stroke="#333"/>
+<text x="755.0" y="457" text-anchor="middle" font-family="sans-serif" font-size="11">0.25</text>
+<line x1="65" y1="420.4" x2="70" y2="420.4" stroke="#333"/>
+<text x="62" y="424.4" text-anchor="end" font-family="sans-serif" font-size="11">0.1</text>
+<line x1="65" y1="348.6" x2="70" y2="348.6" stroke="#333"/>
+<text x="62" y="352.6" text-anchor="end" font-family="sans-serif" font-size="11">0.3</text>
+<line x1="65" y1="269.9" x2="70" y2="269.9" stroke="#333"/>
+<text x="62" y="273.9" text-anchor="end" font-family="sans-serif" font-size="11">1</text>
+<line x1="65" y1="198.1" x2="70" y2="198.1" stroke="#333"/>
+<text x="62" y="202.1" text-anchor="end" font-family="sans-serif" font-size="11">3</text>
+<line x1="65" y1="119.4" x2="70" y2="119.4" stroke="#333"/>
+<text x="62" y="123.4" text-anchor="end" font-family="sans-serif" font-size="11">10</text>
+<text x="412.5" y="482" text-anchor="middle" font-family="sans-serif" font-size="13">Observed batch-average fraction</text>
+<text x="18" y="240.0" transform="rotate(-90 18 240.0)" text-anchor="middle" font-family="sans-serif" font-size="13">Snapshot MSE</text>
+<polyline fill="none" stroke="#4C78A8" stroke-width="2.3" points="70.0,150.2 252.7,45.0 435.3,171.4 618.0,235.0 755.0,247.6"/>
+<circle cx="70.0" cy="150.2" r="3.5" fill="#4C78A8"/>
+<circle cx="252.7" cy="45.0" r="3.5" fill="#4C78A8"/>
+<circle cx="435.3" cy="171.4" r="3.5" fill="#4C78A8"/>
+<circle cx="618.0" cy="235.0" r="3.5" fill="#4C78A8"/>
+<circle cx="755.0" cy="247.6" r="3.5" fill="#4C78A8"/>
+<line x1="585" y1="57" x2="610" y2="57" stroke="#4C78A8" stroke-width="2.3"/>
+<text x="617" y="61" font-family="sans-serif" font-size="11">SHARD fixed LS</text>
+<polyline fill="none" stroke="#F58518" stroke-width="2.3" points="70.0,258.3 252.7,260.9 435.3,262.3 618.0,265.9 755.0,262.1"/>
+<circle cx="70.0" cy="258.3" r="3.5" fill="#F58518"/>
+<circle cx="252.7" cy="260.9" r="3.5" fill="#F58518"/>
+<circle cx="435.3" cy="262.3" r="3.5" fill="#F58518"/>
+<circle cx="618.0" cy="265.9" r="3.5" fill="#F58518"/>
+<circle cx="755.0" cy="262.1" r="3.5" fill="#F58518"/>
+<line x1="585" y1="74" x2="610" y2="74" stroke="#F58518" stroke-width="2.3"/>
+<text x="617" y="78" font-family="sans-serif" font-size="11">GARD conditional</text>
+<polyline fill="none" stroke="#54A24B" stroke-width="2.3" points="70.0,233.5 252.7,251.2 435.3,250.0 618.0,263.1 755.0,249.4"/>
+<circle cx="70.0" cy="233.5" r="3.5" fill="#54A24B"/>
+<circle cx="252.7" cy="251.2" r="3.5" fill="#54A24B"/>
+<circle cx="435.3" cy="250.0" r="3.5" fill="#54A24B"/>
+<circle cx="618.0" cy="263.1" r="3.5" fill="#54A24B"/>
+<circle cx="755.0" cy="249.4" r="3.5" fill="#54A24B"/>
+<line x1="585" y1="91" x2="610" y2="91" stroke="#54A24B" stroke-width="2.3"/>
+<text x="617" y="95" font-family="sans-serif" font-size="11">JASPER joint soft</text>
+</svg>

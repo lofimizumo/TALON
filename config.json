@@ -1,0 +1,25 @@
+{
+  "goal": "Propose and validate a significantly better method than current SHARD under the same broad honest-but-curious gradient-leakage setting. Prioritize Stage 2 / snapshot disaggregation and mitigation of the overly strong requirement for access to every intermediate local-round gradient. Stage 3-only polish is no longer sufficient; the full three-stage SHARD design may be discarded if a better solution respects the threat model.",
+  "slug": "06.TALON",
+  "workspace_root": "/Users/yetao/Documents/06.My Papers/CQU/2026",
+  "run_root": "/Users/yetao/Documents/06.My Papers/CQU/2026/06.TALON",
+  "shard_repo": "/Users/yetao/Documents/06.My Papers/CQU/2026/01.SHARD",
+  "rounds_planned": 8,
+  "stop_mode": "run_rounds_04_to_08_even_if_previous_acceptance",
+  "acceptance": {
+    "supervisor_verdicts": ["ACCEPT"],
+    "max_critical_issues": 0,
+    "require_tutorial_pdf": false,
+    "require_runnable_experiments": true,
+    "require_baseline_comparison_vs_shard": true,
+    "require_stage2_or_full_method_improvement": true,
+    "require_threat_model_mitigation": true,
+    "stage3_only_is_insufficient": true
+  },
+  "domain_notes": "Working folder: 06.TALON/. SHARD simulator vendored at vendor/shard_sim/ (no runtime import from 01.SHARD). 01.SHARD is optional read-only for the LaTeX paper only.",
+  "baseline_code_path": "vendor/shard_sim/attacker.py level3_invert",
+  "vendored_code": "vendor/shard_sim",
+  "paper_context_path": "01.SHARD/shard_neurips2026/shard_method.tex",
+  "started_at": "2026-05-20T00:00:00Z",
+  "relocated_at": "2026-05-20T16:45:00+10:00"
+}

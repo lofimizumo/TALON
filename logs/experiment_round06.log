@@ -1,0 +1,290 @@
+2026-05-20 16:19:39,648 INFO Round 06 config: SimConfig(n_samples=36, batch_size=4, dim_g=24, true_rank=4, n_epochs=5, noise_std=0.01, mean_anchor_weight=20.0, ridge_lambda=0.03, gard_lambda=0.3, jasper_graph_lambda=0.03, sinkhorn_tau=0.35, sinkhorn_iters=80, jasper_iters=16, jasper_damping=0.45, random_fractions=(1.0, 0.8, 0.6, 0.4, 0.25), prefix_epochs=(5, 4, 3, 2, 1), target_snapshot_mse=0.1)
+2026-05-20 16:19:39,648 INFO Seeds=(3, 7, 11, 19, 23, 29)
+2026-05-20 16:19:39,648 INFO Assignment regimes=('oracle', 'corrupt25', 'corrupt50', 'unknown_epoch')
+2026-05-20 16:19:39,648 INFO Scenarios=[('random_fraction', 1.0), ('random_fraction', 0.8), ('random_fraction', 0.6), ('random_fraction', 0.4), ('random_fraction', 0.25), ('prefix_epochs', 5), ('prefix_epochs', 4), ('prefix_epochs', 3), ('prefix_epochs', 2), ('prefix_epochs', 1)]
+2026-05-20 16:19:39,648 INFO === protocol=random_fraction budget=1.0 assignment=oracle ===
+2026-05-20 16:19:39,725 INFO seed=3 rows=45/45 prior_overlap=1.00 ls_mse=0.002705 gard_mse=0.07216 jasper_mse=0.06266 jasper_overlap=1.000 jasper_true_resid=0.003194
+2026-05-20 16:19:39,792 INFO seed=7 rows=45/45 prior_overlap=1.00 ls_mse=0.003712 gard_mse=0.0731 jasper_mse=0.06655 jasper_overlap=1.000 jasper_true_resid=0.003211
+2026-05-20 16:19:39,860 INFO seed=11 rows=45/45 prior_overlap=1.00 ls_mse=0.002361 gard_mse=0.05717 jasper_mse=0.05454 jasper_overlap=1.000 jasper_true_resid=0.002973
+2026-05-20 16:19:39,930 INFO seed=19 rows=45/45 prior_overlap=1.00 ls_mse=0.002302 gard_mse=0.07825 jasper_mse=0.07859 jasper_overlap=1.000 jasper_true_resid=0.003248
+2026-05-20 16:19:39,999 INFO seed=23 rows=45/45 prior_overlap=1.00 ls_mse=0.003525 gard_mse=0.05593 jasper_mse=0.05047 jasper_overlap=1.000 jasper_true_resid=0.002929
+2026-05-20 16:19:40,067 INFO seed=29 rows=45/45 prior_overlap=1.00 ls_mse=0.001712 gard_mse=0.09493 jasper_mse=0.08766 jasper_overlap=1.000 jasper_true_resid=0.00359
+2026-05-20 16:19:40,067 INFO === protocol=random_fraction budget=1.0 assignment=corrupt25 ===
+2026-05-20 16:19:40,136 INFO seed=3 rows=45/45 prior_overlap=0.75 ls_mse=1.466 gard_mse=0.3046 jasper_mse=0.3886 jasper_overlap=0.717 jasper_true_resid=0.05505
+2026-05-20 16:19:40,209 INFO seed=7 rows=45/45 prior_overlap=0.75 ls_mse=1.754 gard_mse=0.316 jasper_mse=0.3196 jasper_overlap=0.756 jasper_true_resid=0.03717
+2026-05-20 16:19:40,279 INFO seed=11 rows=45/45 prior_overlap=0.76 ls_mse=1.446 gard_mse=0.2604 jasper_mse=0.2756 jasper_overlap=0.772 jasper_true_resid=0.03526
+2026-05-20 16:19:40,348 INFO seed=19 rows=45/45 prior_overlap=0.76 ls_mse=1.574 gard_mse=0.2875 jasper_mse=0.2997 jasper_overlap=0.778 jasper_true_resid=0.03787
+2026-05-20 16:19:40,418 INFO seed=23 rows=45/45 prior_overlap=0.76 ls_mse=1.781 gard_mse=0.2798 jasper_mse=0.3049 jasper_overlap=0.761 jasper_true_resid=0.04366
+2026-05-20 16:19:40,487 INFO seed=29 rows=45/45 prior_overlap=0.75 ls_mse=2.063 gard_mse=0.3468 jasper_mse=0.3167 jasper_overlap=0.772 jasper_true_resid=0.03214
+2026-05-20 16:19:40,488 INFO === protocol=random_fraction budget=1.0 assignment=corrupt50 ===
+2026-05-20 16:19:40,557 INFO seed=3 rows=45/45 prior_overlap=0.52 ls_mse=3.634 gard_mse=0.5786 jasper_mse=0.4929 jasper_overlap=0.494 jasper_true_resid=0.07018
+2026-05-20 16:19:40,625 INFO seed=7 rows=45/45 prior_overlap=0.54 ls_mse=2.817 gard_mse=0.5301 jasper_mse=0.4887 jasper_overlap=0.522 jasper_true_resid=0.07069
+2026-05-20 16:19:40,694 INFO seed=11 rows=45/45 prior_overlap=0.53 ls_mse=2.161 gard_mse=0.4586 jasper_mse=0.3995 jasper_overlap=0.489 jasper_true_resid=0.07108
+2026-05-20 16:19:40,762 INFO seed=19 rows=45/45 prior_overlap=0.53 ls_mse=2.813 gard_mse=0.5926 jasper_mse=0.7782 jasper_overlap=0.456 jasper_true_resid=0.1705
+2026-05-20 16:19:40,834 INFO seed=23 rows=45/45 prior_overlap=0.54 ls_mse=2.711 gard_mse=0.5748 jasper_mse=0.6077 jasper_overlap=0.506 jasper_true_resid=0.09895
+2026-05-20 16:19:40,904 INFO seed=29 rows=45/45 prior_overlap=0.52 ls_mse=2.478 gard_mse=0.6387 jasper_mse=0.6425 jasper_overlap=0.483 jasper_true_resid=0.09043
+2026-05-20 16:19:40,904 INFO === protocol=random_fraction budget=1.0 assignment=unknown_epoch ===
+2026-05-20 16:19:40,972 INFO seed=3 rows=45/45 prior_overlap=0.11 ls_mse=5.355 gard_mse=1.142 jasper_mse=1.52 jasper_overlap=0.122 jasper_true_resid=0.3069
+2026-05-20 16:19:41,038 INFO seed=7 rows=45/45 prior_overlap=0.12 ls_mse=7.89 gard_mse=1.02 jasper_mse=1.639 jasper_overlap=0.111 jasper_true_resid=0.3426
+2026-05-20 16:19:41,106 INFO seed=11 rows=45/45 prior_overlap=0.11 ls_mse=10.31 gard_mse=1.321 jasper_mse=2.216 jasper_overlap=0.050 jasper_true_resid=0.5164
+2026-05-20 16:19:41,174 INFO seed=19 rows=45/45 prior_overlap=0.08 ls_mse=5.364 gard_mse=1.027 jasper_mse=1.576 jasper_overlap=0.089 jasper_true_resid=0.3372
+2026-05-20 16:19:41,242 INFO seed=23 rows=45/45 prior_overlap=0.09 ls_mse=4.746 gard_mse=1.388 jasper_mse=1.885 jasper_overlap=0.067 jasper_true_resid=0.4703
+2026-05-20 16:19:41,310 INFO seed=29 rows=45/45 prior_overlap=0.13 ls_mse=3.775 gard_mse=1.261 jasper_mse=1.632 jasper_overlap=0.122 jasper_true_resid=0.3131
+2026-05-20 16:19:41,310 INFO === protocol=random_fraction budget=0.8 assignment=oracle ===
+2026-05-20 16:19:41,377 INFO seed=3 rows=36/45 prior_overlap=1.00 ls_mse=0.1331 gard_mse=0.1025 jasper_mse=0.109 jasper_overlap=1.000 jasper_true_resid=0.004146
+2026-05-20 16:19:41,445 INFO seed=7 rows=36/45 prior_overlap=1.00 ls_mse=0.2227 gard_mse=0.09145 jasper_mse=0.1016 jasper_overlap=1.000 jasper_true_resid=0.004159
+2026-05-20 16:19:41,512 INFO seed=11 rows=36/45 prior_overlap=1.00 ls_mse=3.561 gard_mse=0.08158 jasper_mse=0.08877 jasper_overlap=1.000 jasper_true_resid=0.004024
+2026-05-20 16:19:41,578 INFO seed=19 rows=36/45 prior_overlap=1.00 ls_mse=0.1141 gard_mse=0.1165 jasper_mse=0.1273 jasper_overlap=1.000 jasper_true_resid=0.004281
+2026-05-20 16:19:41,644 INFO seed=23 rows=36/45 prior_overlap=1.00 ls_mse=0.156 gard_mse=0.07498 jasper_mse=0.07787 jasper_overlap=1.000 jasper_true_resid=0.004085
+2026-05-20 16:19:41,710 INFO seed=29 rows=36/45 prior_overlap=1.00 ls_mse=0.1441 gard_mse=0.1588 jasper_mse=0.1654 jasper_overlap=1.000 jasper_true_resid=0.004763
+2026-05-20 16:19:41,710 INFO === protocol=random_fraction budget=0.8 assignment=corrupt25 ===
+2026-05-20 16:19:41,777 INFO seed=3 rows=36/45 prior_overlap=0.78 ls_mse=17.09 gard_mse=0.3156 jasper_mse=0.2762 jasper_overlap=0.764 jasper_true_resid=0.03012
+2026-05-20 16:19:41,845 INFO seed=7 rows=36/45 prior_overlap=0.76 ls_mse=15.69 gard_mse=0.316 jasper_mse=0.3158 jasper_overlap=0.736 jasper_true_resid=0.03639
+2026-05-20 16:19:41,912 INFO seed=11 rows=36/45 prior_overlap=0.76 ls_mse=8.581 gard_mse=0.3067 jasper_mse=0.3299 jasper_overlap=0.729 jasper_true_resid=0.03489
+2026-05-20 16:19:41,982 INFO seed=19 rows=36/45 prior_overlap=0.76 ls_mse=14.85 gard_mse=0.3376 jasper_mse=0.3029 jasper_overlap=0.778 jasper_true_resid=0.02727
+2026-05-20 16:19:42,049 INFO seed=23 rows=36/45 prior_overlap=0.76 ls_mse=11.25 gard_mse=0.2982 jasper_mse=0.3364 jasper_overlap=0.750 jasper_true_resid=0.04326
+2026-05-20 16:19:42,116 INFO seed=29 rows=36/45 prior_overlap=0.76 ls_mse=14.94 gard_mse=0.384 jasper_mse=0.4761 jasper_overlap=0.722 jasper_true_resid=0.04006
+2026-05-20 16:19:42,116 INFO === protocol=random_fraction budget=0.8 assignment=corrupt50 ===
+2026-05-20 16:19:42,184 INFO seed=3 rows=36/45 prior_overlap=0.53 ls_mse=12.6 gard_mse=0.4922 jasper_mse=0.6656 jasper_overlap=0.486 jasper_true_resid=0.09997
+2026-05-20 16:19:42,253 INFO seed=7 rows=36/45 prior_overlap=0.57 ls_mse=9.969 gard_mse=0.5028 jasper_mse=0.8664 jasper_overlap=0.424 jasper_true_resid=0.1457
+2026-05-20 16:19:42,329 INFO seed=11 rows=36/45 prior_overlap=0.53 ls_mse=32.57 gard_mse=0.6376 jasper_mse=0.5534 jasper_overlap=0.479 jasper_true_resid=0.08666
+2026-05-20 16:19:42,405 INFO seed=19 rows=36/45 prior_overlap=0.53 ls_mse=9.655 gard_mse=0.6502 jasper_mse=0.7236 jasper_overlap=0.486 jasper_true_resid=0.1122
+2026-05-20 16:19:42,478 INFO seed=23 rows=36/45 prior_overlap=0.52 ls_mse=11.97 gard_mse=0.7003 jasper_mse=0.9354 jasper_overlap=0.410 jasper_true_resid=0.1548
+2026-05-20 16:19:42,552 INFO seed=29 rows=36/45 prior_overlap=0.53 ls_mse=226.9 gard_mse=0.6004 jasper_mse=0.6894 jasper_overlap=0.451 jasper_true_resid=0.08576
+2026-05-20 16:19:42,552 INFO === protocol=random_fraction budget=0.8 assignment=unknown_epoch ===
+2026-05-20 16:19:42,618 INFO seed=3 rows=36/45 prior_overlap=0.10 ls_mse=23.79 gard_mse=1.29 jasper_mse=1.473 jasper_overlap=0.111 jasper_true_resid=0.3091
+2026-05-20 16:19:42,686 INFO seed=7 rows=36/45 prior_overlap=0.17 ls_mse=12.79 gard_mse=1.071 jasper_mse=1.258 jasper_overlap=0.076 jasper_true_resid=0.3185
+2026-05-20 16:19:42,756 INFO seed=11 rows=36/45 prior_overlap=0.09 ls_mse=16.78 gard_mse=1.158 jasper_mse=1.502 jasper_overlap=0.083 jasper_true_resid=0.3742
+2026-05-20 16:19:42,823 INFO seed=19 rows=36/45 prior_overlap=0.08 ls_mse=60.05 gard_mse=1.059 jasper_mse=1.168 jasper_overlap=0.132 jasper_true_resid=0.2111
+2026-05-20 16:19:42,890 INFO seed=23 rows=36/45 prior_overlap=0.07 ls_mse=57.11 gard_mse=1.245 jasper_mse=1.57 jasper_overlap=0.111 jasper_true_resid=0.3497
+2026-05-20 16:19:42,956 INFO seed=29 rows=36/45 prior_overlap=0.17 ls_mse=16.6 gard_mse=1.061 jasper_mse=1.02 jasper_overlap=0.097 jasper_true_resid=0.2292
+2026-05-20 16:19:42,956 INFO === protocol=random_fraction budget=0.6 assignment=oracle ===
+2026-05-20 16:19:43,026 INFO seed=3 rows=27/45 prior_overlap=1.00 ls_mse=0.2519 gard_mse=0.1439 jasper_mse=0.1688 jasper_overlap=1.000 jasper_true_resid=0.00573
+2026-05-20 16:19:43,096 INFO seed=7 rows=27/45 prior_overlap=1.00 ls_mse=0.3818 gard_mse=0.1407 jasper_mse=0.1767 jasper_overlap=1.000 jasper_true_resid=0.00538
+2026-05-20 16:19:43,157 INFO seed=11 rows=27/45 prior_overlap=1.00 ls_mse=0.3849 gard_mse=0.1289 jasper_mse=0.1446 jasper_overlap=1.000 jasper_true_resid=0.005856
+2026-05-20 16:19:43,223 INFO seed=19 rows=27/45 prior_overlap=1.00 ls_mse=0.3688 gard_mse=0.1633 jasper_mse=0.1993 jasper_overlap=1.000 jasper_true_resid=0.005481
+2026-05-20 16:19:43,292 INFO seed=23 rows=27/45 prior_overlap=1.00 ls_mse=0.2554 gard_mse=0.1136 jasper_mse=0.1509 jasper_overlap=1.000 jasper_true_resid=0.005001
+2026-05-20 16:19:43,359 INFO seed=29 rows=27/45 prior_overlap=1.00 ls_mse=0.3442 gard_mse=0.1977 jasper_mse=0.2634 jasper_overlap=1.000 jasper_true_resid=0.00555
+2026-05-20 16:19:43,359 INFO === protocol=random_fraction budget=0.6 assignment=corrupt25 ===
+2026-05-20 16:19:43,425 INFO seed=3 rows=27/45 prior_overlap=0.77 ls_mse=3.894 gard_mse=0.3819 jasper_mse=0.4424 jasper_overlap=0.750 jasper_true_resid=0.04092
+2026-05-20 16:19:43,493 INFO seed=7 rows=27/45 prior_overlap=0.76 ls_mse=3.715 gard_mse=0.5075 jasper_mse=0.5148 jasper_overlap=0.741 jasper_true_resid=0.03911
+2026-05-20 16:19:43,555 INFO seed=11 rows=27/45 prior_overlap=0.75 ls_mse=1.202 gard_mse=0.316 jasper_mse=0.3418 jasper_overlap=0.731 jasper_true_resid=0.04204
+2026-05-20 16:19:43,621 INFO seed=19 rows=27/45 prior_overlap=0.75 ls_mse=1.238 gard_mse=0.3794 jasper_mse=0.3564 jasper_overlap=0.741 jasper_true_resid=0.02764
+2026-05-20 16:19:43,691 INFO seed=23 rows=27/45 prior_overlap=0.76 ls_mse=2.21 gard_mse=0.3328 jasper_mse=0.3442 jasper_overlap=0.741 jasper_true_resid=0.03006
+2026-05-20 16:19:43,759 INFO seed=29 rows=27/45 prior_overlap=0.76 ls_mse=1.977 gard_mse=0.4305 jasper_mse=0.5855 jasper_overlap=0.694 jasper_true_resid=0.05245
+2026-05-20 16:19:43,760 INFO === protocol=random_fraction budget=0.6 assignment=corrupt50 ===
+2026-05-20 16:19:43,822 INFO seed=3 rows=27/45 prior_overlap=0.53 ls_mse=3.651 gard_mse=0.6988 jasper_mse=0.5826 jasper_overlap=0.444 jasper_true_resid=0.08872
+2026-05-20 16:19:43,883 INFO seed=7 rows=27/45 prior_overlap=0.53 ls_mse=3.392 gard_mse=0.6689 jasper_mse=0.6556 jasper_overlap=0.481 jasper_true_resid=0.09783
+2026-05-20 16:19:43,947 INFO seed=11 rows=27/45 prior_overlap=0.53 ls_mse=8.522 gard_mse=0.5995 jasper_mse=0.5036 jasper_overlap=0.509 jasper_true_resid=0.06982
+2026-05-20 16:19:44,008 INFO seed=19 rows=27/45 prior_overlap=0.52 ls_mse=2.4 gard_mse=0.6014 jasper_mse=0.7713 jasper_overlap=0.435 jasper_true_resid=0.0948
+2026-05-20 16:19:44,079 INFO seed=23 rows=27/45 prior_overlap=0.52 ls_mse=2.169 gard_mse=0.4579 jasper_mse=0.4509 jasper_overlap=0.500 jasper_true_resid=0.07031
+2026-05-20 16:19:44,150 INFO seed=29 rows=27/45 prior_overlap=0.52 ls_mse=3.438 gard_mse=0.7059 jasper_mse=0.838 jasper_overlap=0.444 jasper_true_resid=0.0923
+2026-05-20 16:19:44,150 INFO === protocol=random_fraction budget=0.6 assignment=unknown_epoch ===
+2026-05-20 16:19:44,198 INFO seed=3 rows=27/45 prior_overlap=0.13 ls_mse=3.448 gard_mse=1.308 jasper_mse=1.576 jasper_overlap=0.102 jasper_true_resid=0.2958
+2026-05-20 16:19:44,252 INFO seed=7 rows=27/45 prior_overlap=0.13 ls_mse=4.248 gard_mse=1.102 jasper_mse=1.487 jasper_overlap=0.056 jasper_true_resid=0.3547
+2026-05-20 16:19:44,304 INFO seed=11 rows=27/45 prior_overlap=0.09 ls_mse=6.827 gard_mse=1.237 jasper_mse=1.45 jasper_overlap=0.111 jasper_true_resid=0.3463
+2026-05-20 16:19:44,358 INFO seed=19 rows=27/45 prior_overlap=0.13 ls_mse=5.481 gard_mse=0.9895 jasper_mse=1.02 jasper_overlap=0.139 jasper_true_resid=0.196
+2026-05-20 16:19:44,408 INFO seed=23 rows=27/45 prior_overlap=0.12 ls_mse=4.364 gard_mse=1.068 jasper_mse=1.431 jasper_overlap=0.157 jasper_true_resid=0.3523
+2026-05-20 16:19:44,458 INFO seed=29 rows=27/45 prior_overlap=0.16 ls_mse=2.694 gard_mse=1.038 jasper_mse=1.174 jasper_overlap=0.130 jasper_true_resid=0.1686
+2026-05-20 16:19:44,458 INFO === protocol=random_fraction budget=0.4 assignment=oracle ===
+2026-05-20 16:19:44,518 INFO seed=3 rows=18/45 prior_overlap=1.00 ls_mse=0.5706 gard_mse=0.2751 jasper_mse=0.3513 jasper_overlap=1.000 jasper_true_resid=0.006775
+2026-05-20 16:19:44,582 INFO seed=7 rows=18/45 prior_overlap=1.00 ls_mse=0.5196 gard_mse=0.3062 jasper_mse=0.3487 jasper_overlap=1.000 jasper_true_resid=0.008504
+2026-05-20 16:19:44,642 INFO seed=11 rows=18/45 prior_overlap=1.00 ls_mse=0.7062 gard_mse=0.2987 jasper_mse=0.3762 jasper_overlap=1.000 jasper_true_resid=0.009517
+2026-05-20 16:19:44,701 INFO seed=19 rows=18/45 prior_overlap=1.00 ls_mse=0.6547 gard_mse=0.3173 jasper_mse=0.4063 jasper_overlap=1.000 jasper_true_resid=0.007503
+2026-05-20 16:19:44,762 INFO seed=23 rows=18/45 prior_overlap=1.00 ls_mse=0.5601 gard_mse=0.2257 jasper_mse=0.2964 jasper_overlap=1.000 jasper_true_resid=0.0079
+2026-05-20 16:19:44,824 INFO seed=29 rows=18/45 prior_overlap=1.00 ls_mse=0.6495 gard_mse=0.3588 jasper_mse=0.4455 jasper_overlap=1.000 jasper_true_resid=0.006043
+2026-05-20 16:19:44,824 INFO === protocol=random_fraction budget=0.4 assignment=corrupt25 ===
+2026-05-20 16:19:44,902 INFO seed=3 rows=18/45 prior_overlap=0.75 ls_mse=0.8883 gard_mse=0.416 jasper_mse=0.4969 jasper_overlap=0.722 jasper_true_resid=0.03304
+2026-05-20 16:19:44,967 INFO seed=7 rows=18/45 prior_overlap=0.75 ls_mse=1.033 gard_mse=0.6185 jasper_mse=0.7583 jasper_overlap=0.639 jasper_true_resid=0.06853
+2026-05-20 16:19:45,028 INFO seed=11 rows=18/45 prior_overlap=0.75 ls_mse=1.008 gard_mse=0.5177 jasper_mse=0.6228 jasper_overlap=0.722 jasper_true_resid=0.03934
+2026-05-20 16:19:45,088 INFO seed=19 rows=18/45 prior_overlap=0.75 ls_mse=1.24 gard_mse=0.6339 jasper_mse=0.6696 jasper_overlap=0.736 jasper_true_resid=0.03799
+2026-05-20 16:19:45,150 INFO seed=23 rows=18/45 prior_overlap=0.75 ls_mse=1.164 gard_mse=0.4464 jasper_mse=0.4287 jasper_overlap=0.764 jasper_true_resid=0.03693
+2026-05-20 16:19:45,211 INFO seed=29 rows=18/45 prior_overlap=0.75 ls_mse=1.098 gard_mse=0.6191 jasper_mse=0.7119 jasper_overlap=0.722 jasper_true_resid=0.02768
+2026-05-20 16:19:45,211 INFO === protocol=random_fraction budget=0.4 assignment=corrupt50 ===
+2026-05-20 16:19:45,269 INFO seed=3 rows=18/45 prior_overlap=0.51 ls_mse=1.195 gard_mse=0.6289 jasper_mse=0.6375 jasper_overlap=0.486 jasper_true_resid=0.06278
+2026-05-20 16:19:45,323 INFO seed=7 rows=18/45 prior_overlap=0.56 ls_mse=1.766 gard_mse=0.7368 jasper_mse=0.8266 jasper_overlap=0.389 jasper_true_resid=0.1045
+2026-05-20 16:19:45,380 INFO seed=11 rows=18/45 prior_overlap=0.51 ls_mse=1.633 gard_mse=0.9589 jasper_mse=1.259 jasper_overlap=0.333 jasper_true_resid=0.1998
+2026-05-20 16:19:45,437 INFO seed=19 rows=18/45 prior_overlap=0.51 ls_mse=1.42 gard_mse=0.7529 jasper_mse=0.7091 jasper_overlap=0.444 jasper_true_resid=0.07684
+2026-05-20 16:19:45,503 INFO seed=23 rows=18/45 prior_overlap=0.51 ls_mse=1.155 gard_mse=0.729 jasper_mse=0.7826 jasper_overlap=0.472 jasper_true_resid=0.1002
+2026-05-20 16:19:45,561 INFO seed=29 rows=18/45 prior_overlap=0.54 ls_mse=1.131 gard_mse=0.6525 jasper_mse=0.5953 jasper_overlap=0.500 jasper_true_resid=0.04824
+2026-05-20 16:19:45,561 INFO === protocol=random_fraction budget=0.4 assignment=unknown_epoch ===
+2026-05-20 16:19:45,600 INFO seed=3 rows=18/45 prior_overlap=0.11 ls_mse=1.448 gard_mse=0.8779 jasper_mse=0.8849 jasper_overlap=0.181 jasper_true_resid=0.1844
+2026-05-20 16:19:45,638 INFO seed=7 rows=18/45 prior_overlap=0.11 ls_mse=1.596 gard_mse=1.091 jasper_mse=0.8431 jasper_overlap=0.167 jasper_true_resid=0.1269
+2026-05-20 16:19:45,678 INFO seed=11 rows=18/45 prior_overlap=0.14 ls_mse=2.229 gard_mse=1.262 jasper_mse=1.434 jasper_overlap=0.097 jasper_true_resid=0.3102
+2026-05-20 16:19:45,720 INFO seed=19 rows=18/45 prior_overlap=0.08 ls_mse=1.376 gard_mse=1.085 jasper_mse=1.299 jasper_overlap=0.083 jasper_true_resid=0.2309
+2026-05-20 16:19:45,758 INFO seed=23 rows=18/45 prior_overlap=0.11 ls_mse=2.196 gard_mse=1.163 jasper_mse=1.284 jasper_overlap=0.111 jasper_true_resid=0.2994
+2026-05-20 16:19:45,798 INFO seed=29 rows=18/45 prior_overlap=0.21 ls_mse=1.392 gard_mse=0.8938 jasper_mse=0.9113 jasper_overlap=0.153 jasper_true_resid=0.1595
+2026-05-20 16:19:45,798 INFO === protocol=random_fraction budget=0.25 assignment=oracle ===
+2026-05-20 16:19:45,843 INFO seed=3 rows=11/45 prior_overlap=1.00 ls_mse=0.7157 gard_mse=0.3499 jasper_mse=0.4682 jasper_overlap=1.000 jasper_true_resid=0.008529
+2026-05-20 16:19:45,891 INFO seed=7 rows=11/45 prior_overlap=1.00 ls_mse=0.7295 gard_mse=0.4134 jasper_mse=0.4971 jasper_overlap=1.000 jasper_true_resid=0.01162
+2026-05-20 16:19:45,947 INFO seed=11 rows=11/45 prior_overlap=1.00 ls_mse=0.7229 gard_mse=0.3868 jasper_mse=0.5052 jasper_overlap=1.000 jasper_true_resid=0.01004
+2026-05-20 16:19:45,993 INFO seed=19 rows=11/45 prior_overlap=1.00 ls_mse=0.7405 gard_mse=0.4079 jasper_mse=0.5272 jasper_overlap=1.000 jasper_true_resid=0.007847
+2026-05-20 16:19:46,050 INFO seed=23 rows=11/45 prior_overlap=1.00 ls_mse=0.7173 gard_mse=0.4507 jasper_mse=0.549 jasper_overlap=1.000 jasper_true_resid=0.008157
+2026-05-20 16:19:46,096 INFO seed=29 rows=11/45 prior_overlap=1.00 ls_mse=0.8297 gard_mse=0.5144 jasper_mse=0.6198 jasper_overlap=1.000 jasper_true_resid=0.008035
+2026-05-20 16:19:46,096 INFO === protocol=random_fraction budget=0.25 assignment=corrupt25 ===
+2026-05-20 16:19:46,141 INFO seed=3 rows=11/45 prior_overlap=0.75 ls_mse=0.8373 gard_mse=0.4737 jasper_mse=0.5453 jasper_overlap=0.750 jasper_true_resid=0.03993
+2026-05-20 16:19:46,188 INFO seed=7 rows=11/45 prior_overlap=0.75 ls_mse=1.033 gard_mse=0.7371 jasper_mse=0.7418 jasper_overlap=0.636 jasper_true_resid=0.06136
+2026-05-20 16:19:46,243 INFO seed=11 rows=11/45 prior_overlap=0.75 ls_mse=0.8973 gard_mse=0.6149 jasper_mse=0.6605 jasper_overlap=0.773 jasper_true_resid=0.02738
+2026-05-20 16:19:46,290 INFO seed=19 rows=11/45 prior_overlap=0.75 ls_mse=0.882 gard_mse=0.5428 jasper_mse=0.6636 jasper_overlap=0.727 jasper_true_resid=0.04283
+2026-05-20 16:19:46,345 INFO seed=23 rows=11/45 prior_overlap=0.77 ls_mse=0.8983 gard_mse=0.5968 jasper_mse=0.6687 jasper_overlap=0.727 jasper_true_resid=0.03253
+2026-05-20 16:19:46,392 INFO seed=29 rows=11/45 prior_overlap=0.80 ls_mse=0.9368 gard_mse=0.6917 jasper_mse=0.7728 jasper_overlap=0.773 jasper_true_resid=0.03394
+2026-05-20 16:19:46,393 INFO === protocol=random_fraction budget=0.25 assignment=corrupt50 ===
+2026-05-20 16:19:46,435 INFO seed=3 rows=11/45 prior_overlap=0.52 ls_mse=1.039 gard_mse=0.7891 jasper_mse=0.8591 jasper_overlap=0.455 jasper_true_resid=0.08927
+2026-05-20 16:19:46,482 INFO seed=7 rows=11/45 prior_overlap=0.52 ls_mse=1.153 gard_mse=0.6795 jasper_mse=0.6699 jasper_overlap=0.477 jasper_true_resid=0.07054
+2026-05-20 16:19:46,535 INFO seed=11 rows=11/45 prior_overlap=0.55 ls_mse=1.229 gard_mse=0.8969 jasper_mse=0.922 jasper_overlap=0.455 jasper_true_resid=0.1331
+2026-05-20 16:19:46,581 INFO seed=19 rows=11/45 prior_overlap=0.55 ls_mse=1.034 gard_mse=0.737 jasper_mse=0.7989 jasper_overlap=0.409 jasper_true_resid=0.07011
+2026-05-20 16:19:46,630 INFO seed=23 rows=11/45 prior_overlap=0.50 ls_mse=1.345 gard_mse=0.9143 jasper_mse=1.063 jasper_overlap=0.364 jasper_true_resid=0.1347
+2026-05-20 16:19:46,676 INFO seed=29 rows=11/45 prior_overlap=0.50 ls_mse=0.9277 gard_mse=0.7191 jasper_mse=0.7853 jasper_overlap=0.455 jasper_true_resid=0.06967
+2026-05-20 16:19:46,676 INFO === protocol=random_fraction budget=0.25 assignment=unknown_epoch ===
+2026-05-20 16:19:46,702 INFO seed=3 rows=11/45 prior_overlap=0.09 ls_mse=1.669 gard_mse=1.296 jasper_mse=1.692 jasper_overlap=0.068 jasper_true_resid=0.4057
+2026-05-20 16:19:46,728 INFO seed=7 rows=11/45 prior_overlap=0.09 ls_mse=1.367 gard_mse=1.036 jasper_mse=1.351 jasper_overlap=0.068 jasper_true_resid=0.3225
+2026-05-20 16:19:46,759 INFO seed=11 rows=11/45 prior_overlap=0.02 ls_mse=1.317 gard_mse=1.15 jasper_mse=1.274 jasper_overlap=0.091 jasper_true_resid=0.2545
+2026-05-20 16:19:46,787 INFO seed=19 rows=11/45 prior_overlap=0.18 ls_mse=1.291 gard_mse=0.8744 jasper_mse=0.8765 jasper_overlap=0.182 jasper_true_resid=0.1096
+2026-05-20 16:19:46,818 INFO seed=23 rows=11/45 prior_overlap=0.16 ls_mse=1.435 gard_mse=1.102 jasper_mse=1.623 jasper_overlap=0.045 jasper_true_resid=0.3981
+2026-05-20 16:19:46,844 INFO seed=29 rows=11/45 prior_overlap=0.09 ls_mse=1.358 gard_mse=1.297 jasper_mse=1.387 jasper_overlap=0.159 jasper_true_resid=0.1792
+2026-05-20 16:19:46,844 INFO === protocol=prefix_epochs budget=5 assignment=oracle ===
+2026-05-20 16:19:46,908 INFO seed=3 rows=45/45 prior_overlap=1.00 ls_mse=0.002705 gard_mse=0.07216 jasper_mse=0.06266 jasper_overlap=1.000 jasper_true_resid=0.003194
+2026-05-20 16:19:46,973 INFO seed=7 rows=45/45 prior_overlap=1.00 ls_mse=0.003712 gard_mse=0.0731 jasper_mse=0.06655 jasper_overlap=1.000 jasper_true_resid=0.003211
+2026-05-20 16:19:47,038 INFO seed=11 rows=45/45 prior_overlap=1.00 ls_mse=0.002361 gard_mse=0.05717 jasper_mse=0.05454 jasper_overlap=1.000 jasper_true_resid=0.002973
+2026-05-20 16:19:47,103 INFO seed=19 rows=45/45 prior_overlap=1.00 ls_mse=0.002302 gard_mse=0.07825 jasper_mse=0.07859 jasper_overlap=1.000 jasper_true_resid=0.003248
+2026-05-20 16:19:47,168 INFO seed=23 rows=45/45 prior_overlap=1.00 ls_mse=0.003525 gard_mse=0.05593 jasper_mse=0.05047 jasper_overlap=1.000 jasper_true_resid=0.002929
+2026-05-20 16:19:47,233 INFO seed=29 rows=45/45 prior_overlap=1.00 ls_mse=0.001712 gard_mse=0.09493 jasper_mse=0.08766 jasper_overlap=1.000 jasper_true_resid=0.00359
+2026-05-20 16:19:47,233 INFO === protocol=prefix_epochs budget=5 assignment=corrupt25 ===
+2026-05-20 16:19:47,299 INFO seed=3 rows=45/45 prior_overlap=0.75 ls_mse=1.466 gard_mse=0.3046 jasper_mse=0.3886 jasper_overlap=0.717 jasper_true_resid=0.05505
+2026-05-20 16:19:47,367 INFO seed=7 rows=45/45 prior_overlap=0.75 ls_mse=1.754 gard_mse=0.316 jasper_mse=0.3196 jasper_overlap=0.756 jasper_true_resid=0.03717
+2026-05-20 16:19:47,434 INFO seed=11 rows=45/45 prior_overlap=0.76 ls_mse=1.446 gard_mse=0.2604 jasper_mse=0.2756 jasper_overlap=0.772 jasper_true_resid=0.03526
+2026-05-20 16:19:47,500 INFO seed=19 rows=45/45 prior_overlap=0.76 ls_mse=1.574 gard_mse=0.2875 jasper_mse=0.2997 jasper_overlap=0.778 jasper_true_resid=0.03787
+2026-05-20 16:19:47,567 INFO seed=23 rows=45/45 prior_overlap=0.76 ls_mse=1.781 gard_mse=0.2798 jasper_mse=0.3049 jasper_overlap=0.761 jasper_true_resid=0.04366
+2026-05-20 16:19:47,633 INFO seed=29 rows=45/45 prior_overlap=0.75 ls_mse=2.063 gard_mse=0.3468 jasper_mse=0.3167 jasper_overlap=0.772 jasper_true_resid=0.03214
+2026-05-20 16:19:47,633 INFO === protocol=prefix_epochs budget=5 assignment=corrupt50 ===
+2026-05-20 16:19:47,699 INFO seed=3 rows=45/45 prior_overlap=0.52 ls_mse=3.634 gard_mse=0.5786 jasper_mse=0.4929 jasper_overlap=0.494 jasper_true_resid=0.07018
+2026-05-20 16:19:47,765 INFO seed=7 rows=45/45 prior_overlap=0.54 ls_mse=2.817 gard_mse=0.5301 jasper_mse=0.4887 jasper_overlap=0.522 jasper_true_resid=0.07069
+2026-05-20 16:19:47,831 INFO seed=11 rows=45/45 prior_overlap=0.53 ls_mse=2.161 gard_mse=0.4586 jasper_mse=0.3995 jasper_overlap=0.489 jasper_true_resid=0.07108
+2026-05-20 16:19:47,898 INFO seed=19 rows=45/45 prior_overlap=0.53 ls_mse=2.813 gard_mse=0.5926 jasper_mse=0.7782 jasper_overlap=0.456 jasper_true_resid=0.1705
+2026-05-20 16:19:47,964 INFO seed=23 rows=45/45 prior_overlap=0.54 ls_mse=2.711 gard_mse=0.5748 jasper_mse=0.6077 jasper_overlap=0.506 jasper_true_resid=0.09895
+2026-05-20 16:19:48,031 INFO seed=29 rows=45/45 prior_overlap=0.52 ls_mse=2.478 gard_mse=0.6387 jasper_mse=0.6425 jasper_overlap=0.483 jasper_true_resid=0.09043
+2026-05-20 16:19:48,031 INFO === protocol=prefix_epochs budget=5 assignment=unknown_epoch ===
+2026-05-20 16:19:48,097 INFO seed=3 rows=45/45 prior_overlap=0.11 ls_mse=5.355 gard_mse=1.142 jasper_mse=1.52 jasper_overlap=0.122 jasper_true_resid=0.3069
+2026-05-20 16:19:48,162 INFO seed=7 rows=45/45 prior_overlap=0.12 ls_mse=7.89 gard_mse=1.02 jasper_mse=1.639 jasper_overlap=0.111 jasper_true_resid=0.3426
+2026-05-20 16:19:48,226 INFO seed=11 rows=45/45 prior_overlap=0.11 ls_mse=10.31 gard_mse=1.321 jasper_mse=2.216 jasper_overlap=0.050 jasper_true_resid=0.5164
+2026-05-20 16:19:48,292 INFO seed=19 rows=45/45 prior_overlap=0.08 ls_mse=5.364 gard_mse=1.027 jasper_mse=1.576 jasper_overlap=0.089 jasper_true_resid=0.3372
+2026-05-20 16:19:48,357 INFO seed=23 rows=45/45 prior_overlap=0.09 ls_mse=4.746 gard_mse=1.388 jasper_mse=1.885 jasper_overlap=0.067 jasper_true_resid=0.4703
+2026-05-20 16:19:48,422 INFO seed=29 rows=45/45 prior_overlap=0.13 ls_mse=3.775 gard_mse=1.261 jasper_mse=1.632 jasper_overlap=0.122 jasper_true_resid=0.3131
+2026-05-20 16:19:48,422 INFO === protocol=prefix_epochs budget=4 assignment=oracle ===
+2026-05-20 16:19:48,474 INFO seed=3 rows=36/45 prior_overlap=1.00 ls_mse=0.0446 gard_mse=0.1004 jasper_mse=0.1046 jasper_overlap=1.000 jasper_true_resid=0.00423
+2026-05-20 16:19:48,526 INFO seed=7 rows=36/45 prior_overlap=1.00 ls_mse=0.07175 gard_mse=0.1199 jasper_mse=0.119 jasper_overlap=1.000 jasper_true_resid=0.004628
+2026-05-20 16:19:48,579 INFO seed=11 rows=36/45 prior_overlap=1.00 ls_mse=0.07356 gard_mse=0.07463 jasper_mse=0.08516 jasper_overlap=1.000 jasper_true_resid=0.003691
+2026-05-20 16:19:48,632 INFO seed=19 rows=36/45 prior_overlap=1.00 ls_mse=0.2229 gard_mse=0.1251 jasper_mse=0.1526 jasper_overlap=1.000 jasper_true_resid=0.004068
+2026-05-20 16:19:48,684 INFO seed=23 rows=36/45 prior_overlap=1.00 ls_mse=0.08593 gard_mse=0.1045 jasper_mse=0.1145 jasper_overlap=1.000 jasper_true_resid=0.004407
+2026-05-20 16:19:48,736 INFO seed=29 rows=36/45 prior_overlap=1.00 ls_mse=0.0842 gard_mse=0.1163 jasper_mse=0.1191 jasper_overlap=1.000 jasper_true_resid=0.004629
+2026-05-20 16:19:48,736 INFO === protocol=prefix_epochs budget=4 assignment=corrupt25 ===
+2026-05-20 16:19:48,790 INFO seed=3 rows=36/45 prior_overlap=0.75 ls_mse=21.31 gard_mse=0.3483 jasper_mse=0.4256 jasper_overlap=0.736 jasper_true_resid=0.04791
+2026-05-20 16:19:48,843 INFO seed=7 rows=36/45 prior_overlap=0.75 ls_mse=19.55 gard_mse=0.3771 jasper_mse=0.3452 jasper_overlap=0.764 jasper_true_resid=0.03157
+2026-05-20 16:19:48,896 INFO seed=11 rows=36/45 prior_overlap=0.76 ls_mse=21.28 gard_mse=0.25 jasper_mse=0.2365 jasper_overlap=0.771 jasper_true_resid=0.0355
+2026-05-20 16:19:48,949 INFO seed=19 rows=36/45 prior_overlap=0.76 ls_mse=12.12 gard_mse=0.3354 jasper_mse=0.3802 jasper_overlap=0.764 jasper_true_resid=0.04398
+2026-05-20 16:19:49,005 INFO seed=23 rows=36/45 prior_overlap=0.76 ls_mse=51.33 gard_mse=0.3459 jasper_mse=0.3987 jasper_overlap=0.736 jasper_true_resid=0.03678
+2026-05-20 16:19:49,058 INFO seed=29 rows=36/45 prior_overlap=0.75 ls_mse=19.68 gard_mse=0.3706 jasper_mse=0.3434 jasper_overlap=0.771 jasper_true_resid=0.03296
+2026-05-20 16:19:49,058 INFO === protocol=prefix_epochs budget=4 assignment=corrupt50 ===
+2026-05-20 16:19:49,111 INFO seed=3 rows=36/45 prior_overlap=0.52 ls_mse=20.98 gard_mse=0.6655 jasper_mse=0.6965 jasper_overlap=0.479 jasper_true_resid=0.1114
+2026-05-20 16:19:49,165 INFO seed=7 rows=36/45 prior_overlap=0.56 ls_mse=39.25 gard_mse=0.6765 jasper_mse=0.6967 jasper_overlap=0.472 jasper_true_resid=0.1055
+2026-05-20 16:19:49,218 INFO seed=11 rows=36/45 prior_overlap=0.54 ls_mse=16.32 gard_mse=0.4573 jasper_mse=0.4271 jasper_overlap=0.493 jasper_true_resid=0.07007
+2026-05-20 16:19:49,272 INFO seed=19 rows=36/45 prior_overlap=0.53 ls_mse=35.71 gard_mse=0.6811 jasper_mse=0.853 jasper_overlap=0.451 jasper_true_resid=0.1654
+2026-05-20 16:19:49,325 INFO seed=23 rows=36/45 prior_overlap=0.53 ls_mse=11 gard_mse=0.6715 jasper_mse=0.8411 jasper_overlap=0.417 jasper_true_resid=0.1326
+2026-05-20 16:19:49,379 INFO seed=29 rows=36/45 prior_overlap=0.51 ls_mse=116.1 gard_mse=0.6778 jasper_mse=0.6413 jasper_overlap=0.486 jasper_true_resid=0.09313
+2026-05-20 16:19:49,379 INFO === protocol=prefix_epochs budget=4 assignment=unknown_epoch ===
+2026-05-20 16:19:49,431 INFO seed=3 rows=36/45 prior_overlap=0.12 ls_mse=13.59 gard_mse=1.19 jasper_mse=1.445 jasper_overlap=0.111 jasper_true_resid=0.2901
+2026-05-20 16:19:49,484 INFO seed=7 rows=36/45 prior_overlap=0.09 ls_mse=8.596 gard_mse=0.9758 jasper_mse=1.412 jasper_overlap=0.083 jasper_true_resid=0.2905
+2026-05-20 16:19:49,537 INFO seed=11 rows=36/45 prior_overlap=0.10 ls_mse=9.828 gard_mse=1.342 jasper_mse=1.453 jasper_overlap=0.097 jasper_true_resid=0.413
+2026-05-20 16:19:49,647 INFO seed=19 rows=36/45 prior_overlap=0.09 ls_mse=34.13 gard_mse=1.046 jasper_mse=1.438 jasper_overlap=0.132 jasper_true_resid=0.2506
+2026-05-20 16:19:49,731 INFO seed=23 rows=36/45 prior_overlap=0.10 ls_mse=9.899 gard_mse=1.332 jasper_mse=1.729 jasper_overlap=0.097 jasper_true_resid=0.3314
+2026-05-20 16:19:49,786 INFO seed=29 rows=36/45 prior_overlap=0.13 ls_mse=6.261 gard_mse=1.168 jasper_mse=1.551 jasper_overlap=0.069 jasper_true_resid=0.331
+2026-05-20 16:19:49,786 INFO === protocol=prefix_epochs budget=3 assignment=oracle ===
+2026-05-20 16:19:49,825 INFO seed=3 rows=27/45 prior_overlap=1.00 ls_mse=0.2788 gard_mse=0.1524 jasper_mse=0.1822 jasper_overlap=1.000 jasper_true_resid=0.005611
+2026-05-20 16:19:49,865 INFO seed=7 rows=27/45 prior_overlap=1.00 ls_mse=0.3066 gard_mse=0.1687 jasper_mse=0.2002 jasper_overlap=1.000 jasper_true_resid=0.005854
+2026-05-20 16:19:49,905 INFO seed=11 rows=27/45 prior_overlap=1.00 ls_mse=0.3824 gard_mse=0.1368 jasper_mse=0.1866 jasper_overlap=1.000 jasper_true_resid=0.004545
+2026-05-20 16:19:49,945 INFO seed=19 rows=27/45 prior_overlap=1.00 ls_mse=0.3975 gard_mse=0.1807 jasper_mse=0.234 jasper_overlap=1.000 jasper_true_resid=0.005212
+2026-05-20 16:19:49,984 INFO seed=23 rows=27/45 prior_overlap=1.00 ls_mse=0.4022 gard_mse=0.1641 jasper_mse=0.2417 jasper_overlap=1.000 jasper_true_resid=0.004844
+2026-05-20 16:19:50,022 INFO seed=29 rows=27/45 prior_overlap=1.00 ls_mse=0.3217 gard_mse=0.201 jasper_mse=0.2434 jasper_overlap=1.000 jasper_true_resid=0.005705
+2026-05-20 16:19:50,023 INFO === protocol=prefix_epochs budget=3 assignment=corrupt25 ===
+2026-05-20 16:19:50,064 INFO seed=3 rows=27/45 prior_overlap=0.75 ls_mse=1.481 gard_mse=0.3895 jasper_mse=0.4714 jasper_overlap=0.685 jasper_true_resid=0.04763
+2026-05-20 16:19:50,106 INFO seed=7 rows=27/45 prior_overlap=0.75 ls_mse=1.92 gard_mse=0.4656 jasper_mse=0.4544 jasper_overlap=0.741 jasper_true_resid=0.04154
+2026-05-20 16:19:50,146 INFO seed=11 rows=27/45 prior_overlap=0.75 ls_mse=1.859 gard_mse=0.3415 jasper_mse=0.3596 jasper_overlap=0.759 jasper_true_resid=0.04155
+2026-05-20 16:19:50,187 INFO seed=19 rows=27/45 prior_overlap=0.76 ls_mse=1.369 gard_mse=0.4163 jasper_mse=0.5248 jasper_overlap=0.713 jasper_true_resid=0.04577
+2026-05-20 16:19:50,228 INFO seed=23 rows=27/45 prior_overlap=0.76 ls_mse=3.779 gard_mse=0.4252 jasper_mse=0.5501 jasper_overlap=0.778 jasper_true_resid=0.03238
+2026-05-20 16:19:50,268 INFO seed=29 rows=27/45 prior_overlap=0.75 ls_mse=1.957 gard_mse=0.435 jasper_mse=0.4374 jasper_overlap=0.750 jasper_true_resid=0.03295
+2026-05-20 16:19:50,268 INFO === protocol=prefix_epochs budget=3 assignment=corrupt50 ===
+2026-05-20 16:19:50,309 INFO seed=3 rows=27/45 prior_overlap=0.51 ls_mse=3.221 gard_mse=0.7315 jasper_mse=0.879 jasper_overlap=0.444 jasper_true_resid=0.1123
+2026-05-20 16:19:50,350 INFO seed=7 rows=27/45 prior_overlap=0.55 ls_mse=3.691 gard_mse=0.6957 jasper_mse=0.8037 jasper_overlap=0.426 jasper_true_resid=0.1074
+2026-05-20 16:19:50,392 INFO seed=11 rows=27/45 prior_overlap=0.56 ls_mse=2.978 gard_mse=0.5566 jasper_mse=0.8862 jasper_overlap=0.463 jasper_true_resid=0.1229
+2026-05-20 16:19:50,437 INFO seed=19 rows=27/45 prior_overlap=0.54 ls_mse=3.907 gard_mse=0.6605 jasper_mse=0.735 jasper_overlap=0.472 jasper_true_resid=0.123
+2026-05-20 16:19:50,483 INFO seed=23 rows=27/45 prior_overlap=0.53 ls_mse=2.556 gard_mse=0.711 jasper_mse=1.103 jasper_overlap=0.389 jasper_true_resid=0.1707
+2026-05-20 16:19:50,529 INFO seed=29 rows=27/45 prior_overlap=0.51 ls_mse=2.805 gard_mse=0.6796 jasper_mse=0.6115 jasper_overlap=0.491 jasper_true_resid=0.08935
+2026-05-20 16:19:50,529 INFO === protocol=prefix_epochs budget=3 assignment=unknown_epoch ===
+2026-05-20 16:19:50,574 INFO seed=3 rows=27/45 prior_overlap=0.14 ls_mse=2.271 gard_mse=1.162 jasper_mse=1.379 jasper_overlap=0.148 jasper_true_resid=0.2212
+2026-05-20 16:19:50,617 INFO seed=7 rows=27/45 prior_overlap=0.07 ls_mse=2.127 gard_mse=0.8914 jasper_mse=1.114 jasper_overlap=0.120 jasper_true_resid=0.2094
+2026-05-20 16:19:50,660 INFO seed=11 rows=27/45 prior_overlap=0.12 ls_mse=2.359 gard_mse=1.103 jasper_mse=1.53 jasper_overlap=0.130 jasper_true_resid=0.3507
+2026-05-20 16:19:50,704 INFO seed=19 rows=27/45 prior_overlap=0.07 ls_mse=2.273 gard_mse=1.064 jasper_mse=1.458 jasper_overlap=0.120 jasper_true_resid=0.2535
+2026-05-20 16:19:50,745 INFO seed=23 rows=27/45 prior_overlap=0.07 ls_mse=2.365 gard_mse=1.354 jasper_mse=1.574 jasper_overlap=0.074 jasper_true_resid=0.3089
+2026-05-20 16:19:50,785 INFO seed=29 rows=27/45 prior_overlap=0.17 ls_mse=2.017 gard_mse=1.044 jasper_mse=0.9906 jasper_overlap=0.120 jasper_true_resid=0.2344
+2026-05-20 16:19:50,785 INFO === protocol=prefix_epochs budget=2 assignment=oracle ===
+2026-05-20 16:19:50,812 INFO seed=3 rows=18/45 prior_overlap=1.00 ls_mse=0.606 gard_mse=0.3218 jasper_mse=0.4077 jasper_overlap=1.000 jasper_true_resid=0.005746
+2026-05-20 16:19:50,839 INFO seed=7 rows=18/45 prior_overlap=1.00 ls_mse=0.6178 gard_mse=0.3209 jasper_mse=0.3916 jasper_overlap=1.000 jasper_true_resid=0.005885
+2026-05-20 16:19:50,866 INFO seed=11 rows=18/45 prior_overlap=1.00 ls_mse=0.5618 gard_mse=0.2224 jasper_mse=0.3146 jasper_overlap=1.000 jasper_true_resid=0.006007
+2026-05-20 16:19:50,893 INFO seed=19 rows=18/45 prior_overlap=1.00 ls_mse=0.6382 gard_mse=0.2679 jasper_mse=0.3719 jasper_overlap=1.000 jasper_true_resid=0.005934
+2026-05-20 16:19:50,919 INFO seed=23 rows=18/45 prior_overlap=1.00 ls_mse=0.6162 gard_mse=0.2583 jasper_mse=0.377 jasper_overlap=1.000 jasper_true_resid=0.005682
+2026-05-20 16:19:50,946 INFO seed=29 rows=18/45 prior_overlap=1.00 ls_mse=0.6352 gard_mse=0.284 jasper_mse=0.4021 jasper_overlap=1.000 jasper_true_resid=0.005795
+2026-05-20 16:19:50,946 INFO === protocol=prefix_epochs budget=2 assignment=corrupt25 ===
+2026-05-20 16:19:50,974 INFO seed=3 rows=18/45 prior_overlap=0.75 ls_mse=1.152 gard_mse=0.5157 jasper_mse=0.5108 jasper_overlap=0.792 jasper_true_resid=0.01969
+2026-05-20 16:19:51,002 INFO seed=7 rows=18/45 prior_overlap=0.75 ls_mse=1.07 gard_mse=0.5308 jasper_mse=0.5628 jasper_overlap=0.681 jasper_true_resid=0.04023
+2026-05-20 16:19:51,031 INFO seed=11 rows=18/45 prior_overlap=0.75 ls_mse=0.9859 gard_mse=0.4522 jasper_mse=0.4942 jasper_overlap=0.722 jasper_true_resid=0.04809
+2026-05-20 16:19:51,059 INFO seed=19 rows=18/45 prior_overlap=0.76 ls_mse=1.049 gard_mse=0.4789 jasper_mse=0.5476 jasper_overlap=0.764 jasper_true_resid=0.02934
+2026-05-20 16:19:51,086 INFO seed=23 rows=18/45 prior_overlap=0.75 ls_mse=0.9288 gard_mse=0.5011 jasper_mse=0.5296 jasper_overlap=0.778 jasper_true_resid=0.02382
+2026-05-20 16:19:51,113 INFO seed=29 rows=18/45 prior_overlap=0.75 ls_mse=0.8352 gard_mse=0.4686 jasper_mse=0.5135 jasper_overlap=0.736 jasper_true_resid=0.04001
+2026-05-20 16:19:51,113 INFO === protocol=prefix_epochs budget=2 assignment=corrupt50 ===
+2026-05-20 16:19:51,141 INFO seed=3 rows=18/45 prior_overlap=0.51 ls_mse=1.572 gard_mse=0.867 jasper_mse=1.175 jasper_overlap=0.375 jasper_true_resid=0.1534
+2026-05-20 16:19:51,168 INFO seed=7 rows=18/45 prior_overlap=0.54 ls_mse=1.864 gard_mse=0.7341 jasper_mse=0.8314 jasper_overlap=0.403 jasper_true_resid=0.1246
+2026-05-20 16:19:51,195 INFO seed=11 rows=18/45 prior_overlap=0.56 ls_mse=1.541 gard_mse=0.634 jasper_mse=0.8353 jasper_overlap=0.458 jasper_true_resid=0.104
+2026-05-20 16:19:51,223 INFO seed=19 rows=18/45 prior_overlap=0.53 ls_mse=1.58 gard_mse=0.6621 jasper_mse=0.6203 jasper_overlap=0.514 jasper_true_resid=0.1001
+2026-05-20 16:19:51,250 INFO seed=23 rows=18/45 prior_overlap=0.53 ls_mse=1.485 gard_mse=0.7867 jasper_mse=0.9548 jasper_overlap=0.444 jasper_true_resid=0.1156
+2026-05-20 16:19:51,278 INFO seed=29 rows=18/45 prior_overlap=0.51 ls_mse=1.574 gard_mse=0.8492 jasper_mse=0.8099 jasper_overlap=0.486 jasper_true_resid=0.07117
+2026-05-20 16:19:51,278 INFO === protocol=prefix_epochs budget=2 assignment=unknown_epoch ===
+2026-05-20 16:19:51,305 INFO seed=3 rows=18/45 prior_overlap=0.14 ls_mse=1.611 gard_mse=1.214 jasper_mse=1.435 jasper_overlap=0.028 jasper_true_resid=0.269
+2026-05-20 16:19:51,332 INFO seed=7 rows=18/45 prior_overlap=0.07 ls_mse=1.313 gard_mse=0.9318 jasper_mse=1.077 jasper_overlap=0.153 jasper_true_resid=0.1821
+2026-05-20 16:19:51,358 INFO seed=11 rows=18/45 prior_overlap=0.12 ls_mse=1.496 gard_mse=1.102 jasper_mse=1.438 jasper_overlap=0.083 jasper_true_resid=0.3116
+2026-05-20 16:19:51,385 INFO seed=19 rows=18/45 prior_overlap=0.07 ls_mse=1.36 gard_mse=0.988 jasper_mse=1.256 jasper_overlap=0.125 jasper_true_resid=0.2354
+2026-05-20 16:19:51,411 INFO seed=23 rows=18/45 prior_overlap=0.07 ls_mse=1.708 gard_mse=1.341 jasper_mse=1.534 jasper_overlap=0.097 jasper_true_resid=0.2969
+2026-05-20 16:19:51,438 INFO seed=29 rows=18/45 prior_overlap=0.17 ls_mse=1.423 gard_mse=1.13 jasper_mse=1.12 jasper_overlap=0.139 jasper_true_resid=0.2286
+2026-05-20 16:19:51,438 INFO === protocol=prefix_epochs budget=1 assignment=oracle ===
+2026-05-20 16:19:51,452 INFO seed=3 rows=9/45 prior_overlap=1.00 ls_mse=0.7692 gard_mse=0.5158 jasper_mse=0.6088 jasper_overlap=1.000 jasper_true_resid=0.006598
+2026-05-20 16:19:51,466 INFO seed=7 rows=9/45 prior_overlap=1.00 ls_mse=0.8168 gard_mse=0.5315 jasper_mse=0.6351 jasper_overlap=1.000 jasper_true_resid=0.006854
+2026-05-20 16:19:51,480 INFO seed=11 rows=9/45 prior_overlap=1.00 ls_mse=0.7454 gard_mse=0.3555 jasper_mse=0.5041 jasper_overlap=1.000 jasper_true_resid=0.00882
+2026-05-20 16:19:51,494 INFO seed=19 rows=9/45 prior_overlap=1.00 ls_mse=0.8116 gard_mse=0.4644 jasper_mse=0.6064 jasper_overlap=1.000 jasper_true_resid=0.007424
+2026-05-20 16:19:51,508 INFO seed=23 rows=9/45 prior_overlap=1.00 ls_mse=0.7908 gard_mse=0.4626 jasper_mse=0.5823 jasper_overlap=1.000 jasper_true_resid=0.007428
+2026-05-20 16:19:51,522 INFO seed=29 rows=9/45 prior_overlap=1.00 ls_mse=0.81 gard_mse=0.4577 jasper_mse=0.6189 jasper_overlap=1.000 jasper_true_resid=0.00699
+2026-05-20 16:19:51,522 INFO === protocol=prefix_epochs budget=1 assignment=corrupt25 ===
+2026-05-20 16:19:51,536 INFO seed=3 rows=9/45 prior_overlap=0.75 ls_mse=0.9177 gard_mse=0.6004 jasper_mse=0.6046 jasper_overlap=0.694 jasper_true_resid=0.02242
+2026-05-20 16:19:51,551 INFO seed=7 rows=9/45 prior_overlap=0.75 ls_mse=0.9634 gard_mse=0.6776 jasper_mse=0.6664 jasper_overlap=0.806 jasper_true_resid=0.02396
+2026-05-20 16:19:51,566 INFO seed=11 rows=9/45 prior_overlap=0.75 ls_mse=0.8275 gard_mse=0.5111 jasper_mse=0.5544 jasper_overlap=0.750 jasper_true_resid=0.03739
+2026-05-20 16:19:51,580 INFO seed=19 rows=9/45 prior_overlap=0.75 ls_mse=0.8738 gard_mse=0.5932 jasper_mse=0.725 jasper_overlap=0.694 jasper_true_resid=0.0343
+2026-05-20 16:19:51,595 INFO seed=23 rows=9/45 prior_overlap=0.75 ls_mse=1.007 gard_mse=0.7624 jasper_mse=0.763 jasper_overlap=0.778 jasper_true_resid=0.03449
+2026-05-20 16:19:51,609 INFO seed=29 rows=9/45 prior_overlap=0.75 ls_mse=0.8938 gard_mse=0.6066 jasper_mse=0.6393 jasper_overlap=0.722 jasper_true_resid=0.02934
+2026-05-20 16:19:51,609 INFO === protocol=prefix_epochs budget=1 assignment=corrupt50 ===
+2026-05-20 16:19:51,624 INFO seed=3 rows=9/45 prior_overlap=0.50 ls_mse=1.248 gard_mse=0.9831 jasper_mse=1.125 jasper_overlap=0.333 jasper_true_resid=0.1461
+2026-05-20 16:19:51,638 INFO seed=7 rows=9/45 prior_overlap=0.53 ls_mse=1.007 gard_mse=0.7191 jasper_mse=0.7548 jasper_overlap=0.472 jasper_true_resid=0.07336
+2026-05-20 16:19:51,652 INFO seed=11 rows=9/45 prior_overlap=0.53 ls_mse=1.116 gard_mse=0.8732 jasper_mse=0.9133 jasper_overlap=0.556 jasper_true_resid=0.08286
+2026-05-20 16:19:51,666 INFO seed=19 rows=9/45 prior_overlap=0.56 ls_mse=1.086 gard_mse=0.772 jasper_mse=0.7523 jasper_overlap=0.528 jasper_true_resid=0.07219
+2026-05-20 16:19:51,681 INFO seed=23 rows=9/45 prior_overlap=0.53 ls_mse=1.04 gard_mse=0.8022 jasper_mse=0.9461 jasper_overlap=0.500 jasper_true_resid=0.1041
+2026-05-20 16:19:51,695 INFO seed=29 rows=9/45 prior_overlap=0.53 ls_mse=1.138 gard_mse=0.9421 jasper_mse=0.9709 jasper_overlap=0.444 jasper_true_resid=0.1078
+2026-05-20 16:19:51,695 INFO === protocol=prefix_epochs budget=1 assignment=unknown_epoch ===
+2026-05-20 16:19:51,709 INFO seed=3 rows=9/45 prior_overlap=0.11 ls_mse=1.401 gard_mse=1.365 jasper_mse=1.58 jasper_overlap=0.056 jasper_true_resid=0.3109
+2026-05-20 16:19:51,723 INFO seed=7 rows=9/45 prior_overlap=0.11 ls_mse=1.127 gard_mse=1.065 jasper_mse=1.203 jasper_overlap=0.083 jasper_true_resid=0.2454
+2026-05-20 16:19:51,737 INFO seed=11 rows=9/45 prior_overlap=0.17 ls_mse=1.309 gard_mse=1.095 jasper_mse=1.223 jasper_overlap=0.139 jasper_true_resid=0.2773
+2026-05-20 16:19:51,751 INFO seed=19 rows=9/45 prior_overlap=0.14 ls_mse=1.145 gard_mse=1.055 jasper_mse=1.105 jasper_overlap=0.139 jasper_true_resid=0.1837
+2026-05-20 16:19:51,765 INFO seed=23 rows=9/45 prior_overlap=0.03 ls_mse=1.338 gard_mse=1.363 jasper_mse=1.539 jasper_overlap=0.056 jasper_true_resid=0.3115
+2026-05-20 16:19:51,779 INFO seed=29 rows=9/45 prior_overlap=0.14 ls_mse=1.246 gard_mse=1.255 jasper_mse=1.201 jasper_overlap=0.056 jasper_true_resid=0.3247
+2026-05-20 16:19:51,793 INFO Wrote /Users/yetao/Documents/06.My Papers/CQU/2026/01.SHARD/research-artifacts/novel-inversion-vs-shard/artifacts/round06_metrics.json
+2026-05-20 16:19:51,793 INFO Wrote /Users/yetao/Documents/06.My Papers/CQU/2026/01.SHARD/research-artifacts/novel-inversion-vs-shard/artifacts/round06_mse_oracle.svg
+2026-05-20 16:19:51,794 INFO Wrote /Users/yetao/Documents/06.My Papers/CQU/2026/01.SHARD/research-artifacts/novel-inversion-vs-shard/artifacts/round06_mse_corrupt25.svg
+2026-05-20 16:19:51,794 INFO Wrote /Users/yetao/Documents/06.My Papers/CQU/2026/01.SHARD/research-artifacts/novel-inversion-vs-shard/artifacts/round06_mse_corrupt50.svg
+2026-05-20 16:19:51,794 INFO Wrote /Users/yetao/Documents/06.My Papers/CQU/2026/01.SHARD/research-artifacts/novel-inversion-vs-shard/artifacts/round06_mse_unknown_epoch.svg
+2026-05-20 16:19:51,794 INFO Runtime 12.13s

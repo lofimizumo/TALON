@@ -1,0 +1,86 @@
+{
+  "pareto_points": [
+    {
+      "tv_lbfgs": 0.0,
+      "input_mse_mean": 0.280164092661428,
+      "input_mse_std": 0.0034048280134265393,
+      "input_psnr_db_mean": 5.526194274997297,
+      "snapshot_match_acc_mean": 1.0,
+      "mean_snapshot_residual_mean": 1.071704917402864e-08,
+      "shard_input_mse_mean": 0.280164092661428
+    },
+    {
+      "tv_lbfgs": 0.001,
+      "input_mse_mean": 0.15169413868514314,
+      "input_mse_std": 0.011431821192382539,
+      "input_psnr_db_mean": 8.202903835759594,
+      "snapshot_match_acc_mean": 0.3166666666666667,
+      "mean_snapshot_residual_mean": 0.09616140276193619,
+      "shard_input_mse_mean": 0.280164092661428
+    },
+    {
+      "tv_lbfgs": 0.005,
+      "input_mse_mean": 0.13504551810010532,
+      "input_mse_std": 0.011117518251830945,
+      "input_psnr_db_mean": 8.70992548076684,
+      "snapshot_match_acc_mean": 0.08333333333333333,
+      "mean_snapshot_residual_mean": 0.17473011215527853,
+      "shard_input_mse_mean": 0.280164092661428
+    },
+    {
+      "tv_lbfgs": 0.01,
+      "input_mse_mean": 0.12487064694984991,
+      "input_mse_std": 0.01090217570643494,
+      "input_psnr_db_mean": 9.05167262846224,
+      "snapshot_match_acc_mean": 0.03333333333333333,
+      "mean_snapshot_residual_mean": 0.23054788510004678,
+      "shard_input_mse_mean": 0.280164092661428
+    },
+    {
+      "tv_lbfgs": 0.02,
+      "input_mse_mean": 0.11597147686120719,
+      "input_mse_std": 0.010885587738982409,
+      "input_psnr_db_mean": 9.37516295781578,
+      "snapshot_match_acc_mean": 0.016666666666666666,
+      "mean_snapshot_residual_mean": 0.28925881286462146,
+      "shard_input_mse_mean": 0.280164092661428
+    }
+  ],
+  "operating_point": {
+    "selected_tv_lbfgs": 0.005,
+    "criterion": "min input MSE among lambdas with snapshot_match_acc >= 0.05 on tuning seeds",
+    "tuning_seeds": [
+      7,
+      11,
+      23
+    ],
+    "heldout_seed": 31,
+    "tuning_metrics": {
+      "tv_lbfgs": 0.005,
+      "input_mse": 0.13504551810010532,
+      "input_psnr_db": 8.70992548076684,
+      "snapshot_match_acc": 0.08333333333333333,
+      "mean_snapshot_residual": 0.17473011215527853
+    },
+    "shard_reference_mse": 0.280164092661428,
+    "mse_improvement_factor_vs_shard": 2.0745900834246904,
+    "heldout_validation": {
+      "seed": 31,
+      "shard_l3_canonical": {
+        "input_mse": 0.2754279118764157,
+        "input_psnr_db": 5.5999205042744125,
+        "snapshot_match_acc": 1.0,
+        "mean_snapshot_residual": 8.834183162775844e-09,
+        "runtime_sec": 13.856846791997668
+      },
+      "joli": {
+        "input_mse": 0.11584477012405513,
+        "input_psnr_db": 9.361235678950052,
+        "snapshot_match_acc": 0.0,
+        "mean_snapshot_residual": 0.17817965149879456,
+        "runtime_sec": 19.709331624995684
+      },
+      "joli_beats_shard_mse": true
+    }
+  }
+}

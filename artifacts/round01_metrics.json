@@ -1,0 +1,27 @@
+{
+  "config": {
+    "n_samples": 12,
+    "resize": 14,
+    "d": 196,
+    "dim_g": 160,
+    "seed": 7,
+    "shard_adam_steps": 800,
+    "shard_n_batch": 120
+  },
+  "shard_l3": {
+    "input_mse": 0.01265253689223023,
+    "input_psnr_db": 18.97822387702743,
+    "snapshot_match_acc": 0.5833333333333334,
+    "pixel_match_acc_0.1": 0.0,
+    "mean_snapshot_residual": 0.037991832941770554,
+    "runtime_sec": 5.542796707995876
+  },
+  "lapin": {
+    "input_mse": 0.08774272769269956,
+    "input_psnr_db": 10.567888686377735,
+    "snapshot_match_acc": 0.0,
+    "pixel_match_acc_0.1": 0.0,
+    "mean_snapshot_residual": 0.26701006293296814,
+    "runtime_sec": 4.470894540994777
+  }
+}
