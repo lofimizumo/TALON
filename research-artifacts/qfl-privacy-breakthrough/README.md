@@ -13,11 +13,11 @@
 | 3 | [x] | [x] | REVISE_MAJOR |
 | 4 | [x] | [x] | REVISE_MAJOR |
 | 5 | [x] | [x] | REVISE_MAJOR |
-| 6 | — | — | (skipped) |
-| 7 | [x] | — | scientist-only |
-| 8 | [x] | — | scientist-only (QFL-PRIVACY-MAP) |
-| 9 | [x] | — | scientist-only (PROBE-RAND fail) |
-| 10 | [x] | — | **ACCEPT** (held-out replication) |
+| 6 | [x] | [x] | REVISE_MAJOR |
+| 7 | [x] | [x] | REVISE_MAJOR |
+| 8 | [x] | [x] | REVISE_MAJOR |
+| 9 | [x] | [x] | REVISE_MAJOR |
+| 10 | [x] | [x] | **ACCEPT** |
 
 **Final status:** ACCEPT — see `paper/final_privacy_breakthrough.md`, `config.json`
 
