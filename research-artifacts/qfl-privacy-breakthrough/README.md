@@ -16,6 +16,10 @@
 | 6 | — | — | (skipped) |
 | 7 | [x] | — | scientist-only |
 | 8 | [x] | — | scientist-only (QFL-PRIVACY-MAP) |
+| 9 | [x] | — | scientist-only (PROBE-RAND fail) |
+| 10 | [x] | — | **ACCEPT** (held-out replication) |
+
+**Final status:** ACCEPT — see `paper/final_privacy_breakthrough.md`, `config.json`
 
 ## Paths
 

@@ -1,0 +1,24 @@
+2026-05-20 10:49:29,438 INFO Round 10 — held-out replication seeds=[41, 43, 47, 53, 59] (QFL-PRIVACY-MAP acceptance)
+2026-05-20 10:49:29,441 INFO GARD-SPARSE oracle seed=41 rows=15/60 mse=0.03402
+2026-05-20 10:49:29,443 INFO GARD-SPARSE oracle seed=43 rows=15/60 mse=0.04396
+2026-05-20 10:49:29,445 INFO GARD-SPARSE oracle seed=47 rows=15/60 mse=0.0684
+2026-05-20 10:49:29,446 INFO GARD-SPARSE oracle seed=53 rows=15/60 mse=0.04275
+2026-05-20 10:49:29,447 INFO GARD-SPARSE oracle seed=59 rows=15/60 mse=0.05635
+2026-05-20 10:49:35,007 INFO LEAK-CERT-T1p seed=41 emp=0.4132 cert=1.08 naive_bc=1 ratio=0.93 cover=True
+2026-05-20 10:49:35,008 INFO LEAK-CERT-T1p seed=43 emp=0.4245 cert=1.08 naive_bc=1 ratio=0.93 cover=True
+2026-05-20 10:49:35,009 INFO LEAK-CERT-T1p seed=47 emp=0.3806 cert=1.08 naive_bc=1 ratio=0.93 cover=True
+2026-05-20 10:49:35,010 INFO LEAK-CERT-T1p seed=53 emp=0.4331 cert=1.08 naive_bc=1 ratio=0.93 cover=True
+2026-05-20 10:49:35,010 INFO LEAK-CERT-T1p seed=59 emp=0.4755 cert=1.08 naive_bc=1 ratio=0.93 cover=True
+2026-05-20 10:49:35,282 INFO wrong40 frac=0.25 seed=41 gard=0.9852 jasper=0.9631
+2026-05-20 10:49:35,559 INFO wrong40 frac=0.25 seed=43 gard=0.8903 jasper=0.9363
+2026-05-20 10:49:35,839 INFO wrong40 frac=0.25 seed=47 gard=1.007 jasper=0.9507
+2026-05-20 10:49:36,118 INFO wrong40 frac=0.25 seed=53 gard=0.9423 jasper=0.9402
+2026-05-20 10:49:36,391 INFO wrong40 frac=0.25 seed=59 gard=0.9211 jasper=0.9423
+2026-05-20 10:49:36,744 INFO wrong40 frac=0.50 seed=41 gard=2.943 jasper=0.9099
+2026-05-20 10:49:37,093 INFO wrong40 frac=0.50 seed=43 gard=3.139 jasper=0.903
+2026-05-20 10:49:37,446 INFO wrong40 frac=0.50 seed=47 gard=2.374 jasper=0.9164
+2026-05-20 10:49:37,804 INFO wrong40 frac=0.50 seed=53 gard=2.143 jasper=0.9204
+2026-05-20 10:49:38,150 INFO wrong40 frac=0.50 seed=59 gard=4.141 jasper=0.8918
+2026-05-20 10:49:38,151 INFO Wrote /workspace/research-artifacts/qfl-privacy-breakthrough/artifacts/round10_metrics.json
+2026-05-20 10:49:38,151 INFO Acceptance: ACCEPT | two_signals=True | A=True ABT1=True C_2x=False
+2026-05-20 10:49:38,151 INFO Runtime 8.71s
