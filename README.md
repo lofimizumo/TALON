@@ -53,10 +53,20 @@ Balanced synthetic hidden-feature benchmark, 8 active terminal probes, **zero in
 - Individual reconstruction from prototypes: `0.266669`
 - Within-class variance floor: `0.253177`
 
+## Cursor Cloud
+
+Skills and subagents for Cloud Agents live under:
+
+- `.cursor/skills/autonomous-research/`
+- `.cursor/agents/research-scientist.md`, `research-supervisor.md`
+
+See `AGENTS.md` for how agents should use them.
+
 ## Layout
 
 | Path | Role |
 |------|------|
+| `.cursor/skills/` | Agent skills (synced via git for Cloud) |
 | `config.json` | Run metadata and acceptance criteria |
 | `rounds/round_0N/` | Proposals, reviews, revision logs |
 | `code/` | Benchmarks and methods |
