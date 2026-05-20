@@ -1,0 +1,411 @@
+{
+  "benchmark": "round01_qfl_vqc_mnist_recon",
+  "method_name_stack": "SurrogateQFL + SHARD/LASA-QTERM + L3 (shard/joli)",
+  "mnist_choice": {
+    "resolution": 8,
+    "rationale": "8x8 via FederatedDataLoader for Round-1 tractability (d=64); 28x28 deferred to Round 2 after snapshot/L3 tuning.",
+    "loader": "shard_sim.FederatedDataLoader",
+    "data_root": "/workspace/data"
+  },
+  "simulator": {
+    "dim_g": 100,
+    "n_samples": 32,
+    "batch_size": 4,
+    "n_epochs": 10,
+    "noise_level": 0.01,
+    "shard_max_iter": 200,
+    "partial_rows_t1p": 7,
+    "seeds": [
+      3,
+      7,
+      11
+    ],
+    "device": "cpu"
+  },
+  "targets": {
+    "input_mse_max": 0.05,
+    "psnr_min_db": 18.0,
+    "snapshot_mse_max_weak": 0.15
+  },
+  "per_seed": [
+    {
+      "seed": 3,
+      "image_shape": [
+        8,
+        8
+      ],
+      "d": 64,
+      "dim_g": 100,
+      "paths": {
+        "shard_oracle": {
+          "snapshot_recovery": {
+            "snapshot_mse": 0.013643816860056461,
+            "observed_intermediate_batch_gradients": 80,
+            "observed_terminal_gradient_rows": 0,
+            "recovery_runtime_sec": 5.853746970999055
+          },
+          "l3": {
+            "shard_l3": {
+              "snapshot_mse": 0.013643816860056461,
+              "input_mse": 0.058582129405107035,
+              "input_psnr_db": 12.322348461730286,
+              "image_matching_acc": 0.0,
+              "l3_runtime_sec": 37.649257389013655
+            },
+            "joli_l3": {
+              "snapshot_mse": 0.013643816860056461,
+              "input_mse": 0.058582129405107035,
+              "input_psnr_db": 12.322348461730286,
+              "image_matching_acc": 0.0,
+              "l3_runtime_sec": 37.08195052796509
+            }
+          }
+        },
+        "lasa_qterm_T1p": {
+          "snapshot_recovery": {
+            "snapshot_mse": 0.009625810187488181,
+            "tier": "T1p",
+            "method": "lasa_qterm_partial_honest",
+            "observed_terminal_gradient_rows": 70,
+            "observed_intermediate_batch_gradients": 0,
+            "recovery_runtime_sec": 0.11120865901466459
+          },
+          "l3": {
+            "shard_l3": {
+              "snapshot_mse": 0.009625810187488181,
+              "input_mse": 0.03356313955882362,
+              "input_psnr_db": 14.741374212253733,
+              "image_matching_acc": 0.0,
+              "l3_runtime_sec": 36.38648110500071
+            },
+            "joli_l3": {
+              "snapshot_mse": 0.009625810187488181,
+              "input_mse": 0.03356313955882362,
+              "input_psnr_db": 14.741374212253733,
+              "image_matching_acc": 0.0,
+              "l3_runtime_sec": 34.162158049002755
+            }
+          }
+        },
+        "lasa_qterm_T1b": {
+          "snapshot_recovery": {
+            "snapshot_mse": 0.002524264777011321,
+            "tier": "T1b",
+            "method": "lasa_qterm_b1_full",
+            "observed_terminal_gradient_rows": 320,
+            "observed_intermediate_batch_gradients": 0,
+            "recovery_runtime_sec": 0.08601775398710743
+          },
+          "l3": {
+            "shard_l3": {
+              "snapshot_mse": 0.002524264777011321,
+              "input_mse": 0.007685544771588565,
+              "input_psnr_db": 21.14325343140227,
+              "image_matching_acc": 0.03125,
+              "l3_runtime_sec": 37.746412462031
+            },
+            "joli_l3": {
+              "snapshot_mse": 0.002524264777011321,
+              "input_mse": 0.007685544771588565,
+              "input_psnr_db": 21.14325343140227,
+              "image_matching_acc": 0.03125,
+              "l3_runtime_sec": 35.95691877696663
+            }
+          }
+        }
+      },
+      "grid_sample": null
+    },
+    {
+      "seed": 7,
+      "image_shape": [
+        8,
+        8
+      ],
+      "d": 64,
+      "dim_g": 100,
+      "paths": {
+        "shard_oracle": {
+          "snapshot_recovery": {
+            "snapshot_mse": 0.3569462387680218,
+            "observed_intermediate_batch_gradients": 80,
+            "observed_terminal_gradient_rows": 0,
+            "recovery_runtime_sec": 5.960191134014167
+          },
+          "l3": {
+            "shard_l3": {
+              "snapshot_mse": 0.3569462387680218,
+              "input_mse": 0.2053872633318572,
+              "input_psnr_db": 6.874264917815834,
+              "image_matching_acc": 0.0,
+              "l3_runtime_sec": 29.336108168994542
+            },
+            "joli_l3": {
+              "snapshot_mse": 0.3569462387680218,
+              "input_mse": 0.2053872427464068,
+              "input_psnr_db": 6.874265353098324,
+              "image_matching_acc": 0.0,
+              "l3_runtime_sec": 28.51847930304939
+            }
+          }
+        },
+        "lasa_qterm_T1p": {
+          "snapshot_recovery": {
+            "snapshot_mse": 0.3379918295050256,
+            "tier": "T1p",
+            "method": "lasa_qterm_partial_honest",
+            "observed_terminal_gradient_rows": 70,
+            "observed_intermediate_batch_gradients": 0,
+            "recovery_runtime_sec": 0.14905660500517115
+          },
+          "l3": {
+            "shard_l3": {
+              "snapshot_mse": 0.3379918295050256,
+              "input_mse": 0.13448018841870657,
+              "input_psnr_db": 8.713416910829576,
+              "image_matching_acc": 0.0,
+              "l3_runtime_sec": 32.42549858300481
+            },
+            "joli_l3": {
+              "snapshot_mse": 0.3379918295050256,
+              "input_mse": 0.13448018841870657,
+              "input_psnr_db": 8.713416910829576,
+              "image_matching_acc": 0.0,
+              "l3_runtime_sec": 28.550174574018456
+            }
+          }
+        },
+        "lasa_qterm_T1b": {
+          "snapshot_recovery": {
+            "snapshot_mse": 1.1457556655955528e-07,
+            "tier": "T1b",
+            "method": "lasa_qterm_b1_full",
+            "observed_terminal_gradient_rows": 320,
+            "observed_intermediate_batch_gradients": 0,
+            "recovery_runtime_sec": 0.05948131700279191
+          },
+          "l3": {
+            "shard_l3": {
+              "snapshot_mse": 1.1457556655955528e-07,
+              "input_mse": 7.930330460116074e-07,
+              "input_psnr_db": 61.00708715076514,
+              "image_matching_acc": 1.0,
+              "l3_runtime_sec": 28.01047972298693
+            },
+            "joli_l3": {
+              "snapshot_mse": 1.1457556655955528e-07,
+              "input_mse": 7.930330460116074e-07,
+              "input_psnr_db": 61.00708715076514,
+              "image_matching_acc": 1.0,
+              "l3_runtime_sec": 31.49768535903422
+            }
+          }
+        }
+      },
+      "grid_sample": null
+    },
+    {
+      "seed": 11,
+      "image_shape": [
+        8,
+        8
+      ],
+      "d": 64,
+      "dim_g": 100,
+      "paths": {
+        "shard_oracle": {
+          "snapshot_recovery": {
+            "snapshot_mse": 0.16075659411164397,
+            "observed_intermediate_batch_gradients": 80,
+            "observed_terminal_gradient_rows": 0,
+            "recovery_runtime_sec": 6.248849503987003
+          },
+          "l3": {
+            "shard_l3": {
+              "snapshot_mse": 0.16075659411164397,
+              "input_mse": 0.17592775606022582,
+              "input_psnr_db": 7.546656366491686,
+              "image_matching_acc": 0.0,
+              "l3_runtime_sec": 37.88163679896388
+            },
+            "joli_l3": {
+              "snapshot_mse": 0.16075659411164397,
+              "input_mse": 0.17592775606022582,
+              "input_psnr_db": 7.546656366491686,
+              "image_matching_acc": 0.0,
+              "l3_runtime_sec": 29.70925143000204
+            }
+          }
+        },
+        "lasa_qterm_T1p": {
+          "snapshot_recovery": {
+            "snapshot_mse": 0.05770127737462752,
+            "tier": "T1p",
+            "method": "lasa_qterm_partial_honest",
+            "observed_terminal_gradient_rows": 70,
+            "observed_intermediate_batch_gradients": 0,
+            "recovery_runtime_sec": 0.1104755109990947
+          },
+          "l3": {
+            "shard_l3": {
+              "snapshot_mse": 0.05770127737462752,
+              "input_mse": 0.10061197985527226,
+              "input_psnr_db": 9.973503048140977,
+              "image_matching_acc": 0.0,
+              "l3_runtime_sec": 30.56272316299146
+            },
+            "joli_l3": {
+              "snapshot_mse": 0.05770127737462752,
+              "input_mse": 0.10061178928260033,
+              "input_psnr_db": 9.973511274272528,
+              "image_matching_acc": 0.0,
+              "l3_runtime_sec": 31.450065718963742
+            }
+          }
+        },
+        "lasa_qterm_T1b": {
+          "snapshot_recovery": {
+            "snapshot_mse": 1.0844296048010864e-07,
+            "tier": "T1b",
+            "method": "lasa_qterm_b1_full",
+            "observed_terminal_gradient_rows": 320,
+            "observed_intermediate_batch_gradients": 0,
+            "recovery_runtime_sec": 0.10607490799156949
+          },
+          "l3": {
+            "shard_l3": {
+              "snapshot_mse": 1.0844296048010864e-07,
+              "input_mse": 5.334533551441507e-07,
+              "input_psnr_db": 62.7290354904014,
+              "image_matching_acc": 1.0,
+              "l3_runtime_sec": 31.97002813499421
+            },
+            "joli_l3": {
+              "snapshot_mse": 1.0844296048010864e-07,
+              "input_mse": 5.334533551441507e-07,
+              "input_psnr_db": 62.7290354904014,
+              "image_matching_acc": 1.0,
+              "l3_runtime_sec": 36.76648681500228
+            }
+          }
+        }
+      },
+      "grid_sample": null
+    }
+  ],
+  "grid_png": "/workspace/research-artifacts/qfl-vqc-mnist-recon/artifacts/round01_recon_grid.png",
+  "summary": {
+    "shard_oracle__shard_l3": {
+      "n_ok": 3,
+      "snapshot_mse_mean": 0.17711554991324074,
+      "snapshot_mse_std": 0.1406291809408882,
+      "input_mse_mean": 0.1466323829323967,
+      "input_mse_std": 0.06341188638226965,
+      "input_psnr_db_mean": 8.914423248679268,
+      "input_psnr_db_std": 2.4253512815500518,
+      "l3_runtime_sec_mean": 34.95566745232403,
+      "l3_runtime_sec_std": 3.974760785396034
+    },
+    "shard_oracle__joli_l3": {
+      "n_ok": 3,
+      "snapshot_mse_mean": 0.17711554991324074,
+      "snapshot_mse_std": 0.1406291809408882,
+      "input_mse_mean": 0.14663237607057988,
+      "input_mse_std": 0.0634118800243891,
+      "input_psnr_db_mean": 8.914423393773431,
+      "input_psnr_db_std": 2.4253511594996686,
+      "l3_runtime_sec_mean": 31.769893753672175,
+      "l3_runtime_sec_std": 3.787518531929605
+    },
+    "lasa_qterm_T1p__shard_l3": {
+      "n_ok": 3,
+      "snapshot_mse_mean": 0.1351063056890471,
+      "snapshot_mse_std": 0.14479805354787154,
+      "input_mse_mean": 0.08955176927760082,
+      "input_mse_std": 0.04193494073096107,
+      "input_psnr_db_mean": 11.14276472374143,
+      "input_psnr_db_std": 2.5960799880421233,
+      "l3_runtime_sec_mean": 33.124900950332325,
+      "l3_runtime_sec_std": 2.4284304801450753
+    },
+    "lasa_qterm_T1p__joli_l3": {
+      "n_ok": 3,
+      "snapshot_mse_mean": 0.1351063056890471,
+      "snapshot_mse_std": 0.14479805354787154,
+      "input_mse_mean": 0.08955170575337684,
+      "input_mse_std": 0.04193492397673687,
+      "input_psnr_db_mean": 11.142767465785278,
+      "input_psnr_db_std": 2.596078753041643,
+      "l3_runtime_sec_mean": 31.387466113994986,
+      "l3_runtime_sec_std": 2.2915102245434698
+    },
+    "lasa_qterm_T1b__shard_l3": {
+      "n_ok": 3,
+      "snapshot_mse_mean": 0.0008414959318461202,
+      "snapshot_mse_std": 0.001189897261588403,
+      "input_mse_mean": 0.002562290419329907,
+      "input_mse_std": 0.0036226878957755816,
+      "input_psnr_db_mean": 48.29312535752294,
+      "input_psnr_db_std": 19.210725055285486,
+      "l3_runtime_sec_mean": 32.57564010667071,
+      "l3_runtime_sec_std": 3.9976802415047312
+    },
+    "lasa_qterm_T1b__joli_l3": {
+      "n_ok": 3,
+      "snapshot_mse_mean": 0.0008414959318461202,
+      "snapshot_mse_std": 0.001189897261588403,
+      "input_mse_mean": 0.002562290419329907,
+      "input_mse_std": 0.0036226878957755816,
+      "input_psnr_db_mean": 48.29312535752294,
+      "input_psnr_db_std": 19.210725055285486,
+      "l3_runtime_sec_mean": 34.74036365033438,
+      "l3_runtime_sec_std": 2.316617070601613
+    }
+  },
+  "headline": {
+    "best_path": "lasa_qterm_T1b__shard_l3",
+    "best_input_mse_mean": 0.002562290419329907,
+    "best_input_psnr_db_mean": 48.29312535752294,
+    "gap_to_targets": {
+      "input_mse": {
+        "value": 0.002562290419329907,
+        "target": 0.05,
+        "gap": -0.0474377095806701,
+        "meets_target": true
+      },
+      "psnr_db": {
+        "value": 48.29312535752294,
+        "target": 18.0,
+        "gap": -30.29312535752294,
+        "meets_target": true
+      }
+    },
+    "ranking_by_input_mse": [
+      [
+        "lasa_qterm_T1b__shard_l3",
+        0.002562290419329907
+      ],
+      [
+        "lasa_qterm_T1b__joli_l3",
+        0.002562290419329907
+      ],
+      [
+        "lasa_qterm_T1p__joli_l3",
+        0.08955170575337684
+      ],
+      [
+        "lasa_qterm_T1p__shard_l3",
+        0.08955176927760082
+      ],
+      [
+        "shard_oracle__joli_l3",
+        0.14663237607057988
+      ],
+      [
+        "shard_oracle__shard_l3",
+        0.1466323829323967
+      ]
+    ]
+  },
+  "honest_verdict": "Best path lasa_qterm_T1b__shard_l3: input MSE 0.0026 (target \u22640.05), PSNR 48.29 dB (target \u226518.0). Targets met (unexpected at 8x8 Round 1)."
+}

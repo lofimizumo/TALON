@@ -1,0 +1,260 @@
+2026-05-20 14:55:58,448 INFO Round-01 MNIST E2E recon: resize=8 dim_g=100 N=32 seeds=[3, 7, 11] device=cpu qterm=/workspace/research-artifacts/qfl-terminal-snapshot/code
+2026-05-20 14:56:05,717 WARNING L-BFGS did not converge for snapshot 0: residual = 9.47e-01
+2026-05-20 14:56:06,949 WARNING L-BFGS did not converge for snapshot 1: residual = 4.12e+00
+2026-05-20 14:56:08,145 WARNING L-BFGS did not converge for snapshot 2: residual = 1.59e+00
+2026-05-20 14:56:09,307 WARNING L-BFGS did not converge for snapshot 3: residual = 8.48e-01
+2026-05-20 14:56:10,542 WARNING L-BFGS did not converge for snapshot 4: residual = 9.33e-01
+2026-05-20 14:56:11,897 WARNING L-BFGS did not converge for snapshot 5: residual = 1.21e+00
+2026-05-20 14:56:13,119 WARNING L-BFGS did not converge for snapshot 6: residual = 1.43e+00
+2026-05-20 14:56:14,352 WARNING L-BFGS did not converge for snapshot 7: residual = 9.85e-01
+2026-05-20 14:56:15,615 WARNING L-BFGS did not converge for snapshot 8: residual = 3.57e+00
+2026-05-20 14:56:17,069 WARNING L-BFGS did not converge for snapshot 9: residual = 2.40e+00
+2026-05-20 14:56:18,227 WARNING L-BFGS did not converge for snapshot 10: residual = 1.77e+00
+2026-05-20 14:56:19,390 WARNING L-BFGS did not converge for snapshot 11: residual = 5.65e-01
+2026-05-20 14:56:20,450 WARNING L-BFGS did not converge for snapshot 12: residual = 1.94e+00
+2026-05-20 14:56:21,548 WARNING L-BFGS did not converge for snapshot 13: residual = 2.06e+00
+2026-05-20 14:56:22,712 WARNING L-BFGS did not converge for snapshot 14: residual = 5.53e-01
+2026-05-20 14:56:23,795 WARNING L-BFGS did not converge for snapshot 15: residual = 1.77e+00
+2026-05-20 14:56:24,903 WARNING L-BFGS did not converge for snapshot 16: residual = 4.83e+00
+2026-05-20 14:56:25,993 WARNING L-BFGS did not converge for snapshot 17: residual = 1.88e+00
+2026-05-20 14:56:27,083 WARNING L-BFGS did not converge for snapshot 18: residual = 3.31e-01
+2026-05-20 14:56:28,175 WARNING L-BFGS did not converge for snapshot 19: residual = 9.86e-01
+2026-05-20 14:56:29,291 WARNING L-BFGS did not converge for snapshot 20: residual = 7.30e-01
+2026-05-20 14:56:30,364 WARNING L-BFGS did not converge for snapshot 21: residual = 6.17e-01
+2026-05-20 14:56:31,475 WARNING L-BFGS did not converge for snapshot 22: residual = 1.22e+00
+2026-05-20 14:56:32,660 WARNING L-BFGS did not converge for snapshot 23: residual = 8.86e-01
+2026-05-20 14:56:33,850 WARNING L-BFGS did not converge for snapshot 24: residual = 6.16e-01
+2026-05-20 14:56:35,032 WARNING L-BFGS did not converge for snapshot 25: residual = 1.77e-01
+2026-05-20 14:56:36,180 WARNING L-BFGS did not converge for snapshot 26: residual = 7.25e-01
+2026-05-20 14:56:37,266 WARNING L-BFGS did not converge for snapshot 27: residual = 6.68e-01
+2026-05-20 14:56:38,440 WARNING L-BFGS did not converge for snapshot 28: residual = 4.56e-01
+2026-05-20 14:56:39,606 WARNING L-BFGS did not converge for snapshot 29: residual = 1.95e-01
+2026-05-20 14:56:40,987 WARNING L-BFGS did not converge for snapshot 30: residual = 5.69e-01
+2026-05-20 14:56:42,162 WARNING L-BFGS did not converge for snapshot 31: residual = 5.78e-01
+2026-05-20 14:56:42,163 INFO seed=3 shard_oracle shard_l3 snap_mse=0.0136 input_mse=0.0586 psnr=12.32
+2026-05-20 14:57:19,245 INFO JOLI inversion complete: N=32, d=64, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0000
+2026-05-20 14:57:19,246 INFO seed=3 shard_oracle joli_l3 snap_mse=0.0136 input_mse=0.0586 psnr=12.32
+2026-05-20 14:57:20,516 WARNING L-BFGS did not converge for snapshot 0: residual = 2.79e-01
+2026-05-20 14:57:21,679 WARNING L-BFGS did not converge for snapshot 1: residual = 2.49e-01
+2026-05-20 14:57:22,862 WARNING L-BFGS did not converge for snapshot 2: residual = 1.36e+00
+2026-05-20 14:57:24,018 WARNING L-BFGS did not converge for snapshot 3: residual = 5.84e-01
+2026-05-20 14:57:25,163 WARNING L-BFGS did not converge for snapshot 4: residual = 1.48e+00
+2026-05-20 14:57:26,330 WARNING L-BFGS did not converge for snapshot 5: residual = 1.32e+00
+2026-05-20 14:57:27,487 WARNING L-BFGS did not converge for snapshot 6: residual = 1.16e+00
+2026-05-20 14:57:28,650 WARNING L-BFGS did not converge for snapshot 7: residual = 5.73e-01
+2026-05-20 14:57:29,759 WARNING L-BFGS did not converge for snapshot 8: residual = 2.51e-01
+2026-05-20 14:57:30,908 WARNING L-BFGS did not converge for snapshot 9: residual = 3.63e-01
+2026-05-20 14:57:32,063 WARNING L-BFGS did not converge for snapshot 10: residual = 1.31e-01
+2026-05-20 14:57:33,202 WARNING L-BFGS did not converge for snapshot 11: residual = 4.53e-01
+2026-05-20 14:57:34,332 WARNING L-BFGS did not converge for snapshot 12: residual = 1.15e-01
+2026-05-20 14:57:35,474 WARNING L-BFGS did not converge for snapshot 13: residual = 1.86e-01
+2026-05-20 14:57:36,638 WARNING L-BFGS did not converge for snapshot 14: residual = 1.30e+00
+2026-05-20 14:57:37,771 WARNING L-BFGS did not converge for snapshot 15: residual = 4.84e-01
+2026-05-20 14:57:38,908 WARNING L-BFGS did not converge for snapshot 16: residual = 1.74e-01
+2026-05-20 14:57:40,045 WARNING L-BFGS did not converge for snapshot 17: residual = 2.46e-01
+2026-05-20 14:57:41,184 WARNING L-BFGS did not converge for snapshot 18: residual = 4.47e-01
+2026-05-20 14:57:42,315 WARNING L-BFGS did not converge for snapshot 19: residual = 3.56e-01
+2026-05-20 14:57:43,443 WARNING L-BFGS did not converge for snapshot 20: residual = 4.24e-01
+2026-05-20 14:57:44,577 WARNING L-BFGS did not converge for snapshot 21: residual = 2.11e+00
+2026-05-20 14:57:45,701 WARNING L-BFGS did not converge for snapshot 22: residual = 3.90e-01
+2026-05-20 14:57:46,834 WARNING L-BFGS did not converge for snapshot 23: residual = 3.00e-01
+2026-05-20 14:57:47,964 WARNING L-BFGS did not converge for snapshot 24: residual = 3.25e-01
+2026-05-20 14:57:49,093 WARNING L-BFGS did not converge for snapshot 25: residual = 1.68e-01
+2026-05-20 14:57:50,361 WARNING L-BFGS did not converge for snapshot 26: residual = 1.71e-01
+2026-05-20 14:57:51,445 WARNING L-BFGS did not converge for snapshot 27: residual = 4.10e-01
+2026-05-20 14:57:52,521 WARNING L-BFGS did not converge for snapshot 28: residual = 4.68e-01
+2026-05-20 14:57:53,582 WARNING L-BFGS did not converge for snapshot 29: residual = 4.70e-01
+2026-05-20 14:57:54,655 WARNING L-BFGS did not converge for snapshot 30: residual = 5.54e-01
+2026-05-20 14:57:55,744 WARNING L-BFGS did not converge for snapshot 31: residual = 1.70e+00
+2026-05-20 14:57:55,746 INFO seed=3 lasa_qterm_T1p shard_l3 snap_mse=0.0096 input_mse=0.0336 psnr=14.74
+2026-05-20 14:58:29,908 INFO JOLI inversion complete: N=32, d=64, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0000
+2026-05-20 14:58:29,909 INFO seed=3 lasa_qterm_T1p joli_l3 snap_mse=0.0096 input_mse=0.0336 psnr=14.74
+2026-05-20 14:58:31,164 WARNING L-BFGS did not converge for snapshot 0: residual = 2.23e-02
+2026-05-20 14:58:32,247 WARNING L-BFGS did not converge for snapshot 1: residual = 1.55e-01
+2026-05-20 14:58:33,434 WARNING L-BFGS did not converge for snapshot 2: residual = 6.83e-02
+2026-05-20 14:58:34,713 WARNING L-BFGS did not converge for snapshot 3: residual = 6.49e-02
+2026-05-20 14:58:35,862 WARNING L-BFGS did not converge for snapshot 4: residual = 1.02e-01
+2026-05-20 14:58:37,038 WARNING L-BFGS did not converge for snapshot 5: residual = 1.25e-01
+2026-05-20 14:58:38,199 WARNING L-BFGS did not converge for snapshot 6: residual = 2.07e-02
+2026-05-20 14:58:39,402 WARNING L-BFGS did not converge for snapshot 7: residual = 3.63e-02
+2026-05-20 14:58:40,585 WARNING L-BFGS did not converge for snapshot 8: residual = 8.51e-02
+2026-05-20 14:58:41,788 WARNING L-BFGS did not converge for snapshot 9: residual = 2.42e-02
+2026-05-20 14:58:42,972 WARNING L-BFGS did not converge for snapshot 10: residual = 2.89e-02
+2026-05-20 14:58:44,120 WARNING L-BFGS did not converge for snapshot 11: residual = 1.01e-01
+2026-05-20 14:58:45,258 WARNING L-BFGS did not converge for snapshot 12: residual = 6.23e-02
+2026-05-20 14:58:46,464 WARNING L-BFGS did not converge for snapshot 13: residual = 8.75e-02
+2026-05-20 14:58:47,822 WARNING L-BFGS did not converge for snapshot 14: residual = 3.11e-02
+2026-05-20 14:58:49,014 WARNING L-BFGS did not converge for snapshot 15: residual = 5.74e-02
+2026-05-20 14:58:50,242 WARNING L-BFGS did not converge for snapshot 16: residual = 1.11e-01
+2026-05-20 14:58:51,441 WARNING L-BFGS did not converge for snapshot 17: residual = 1.15e-01
+2026-05-20 14:58:52,635 WARNING L-BFGS did not converge for snapshot 18: residual = 1.08e-01
+2026-05-20 14:58:53,834 WARNING L-BFGS did not converge for snapshot 19: residual = 2.14e-02
+2026-05-20 14:58:55,067 WARNING L-BFGS did not converge for snapshot 20: residual = 7.07e-02
+2026-05-20 14:58:56,241 WARNING L-BFGS did not converge for snapshot 21: residual = 1.03e-02
+2026-05-20 14:58:57,436 WARNING L-BFGS did not converge for snapshot 22: residual = 6.41e-02
+2026-05-20 14:58:58,640 WARNING L-BFGS did not converge for snapshot 23: residual = 4.44e-02
+2026-05-20 14:58:59,792 WARNING L-BFGS did not converge for snapshot 24: residual = 1.52e-02
+2026-05-20 14:59:00,948 WARNING L-BFGS did not converge for snapshot 25: residual = 1.20e-01
+2026-05-20 14:59:02,110 WARNING L-BFGS did not converge for snapshot 26: residual = 1.03e-03
+2026-05-20 14:59:03,231 WARNING L-BFGS did not converge for snapshot 27: residual = 5.61e-02
+2026-05-20 14:59:04,338 WARNING L-BFGS did not converge for snapshot 28: residual = 4.57e-02
+2026-05-20 14:59:05,499 WARNING L-BFGS did not converge for snapshot 29: residual = 3.69e-02
+2026-05-20 14:59:06,614 WARNING L-BFGS did not converge for snapshot 30: residual = 6.62e-02
+2026-05-20 14:59:07,741 WARNING L-BFGS did not converge for snapshot 31: residual = 2.25e-02
+2026-05-20 14:59:07,742 INFO seed=3 lasa_qterm_T1b shard_l3 snap_mse=0.0025 input_mse=0.0077 psnr=21.14
+2026-05-20 14:59:43,698 INFO JOLI inversion complete: N=32, d=64, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0000
+2026-05-20 14:59:43,700 INFO seed=3 lasa_qterm_T1b joli_l3 snap_mse=0.0025 input_mse=0.0077 psnr=21.14
+2026-05-20 14:59:50,902 WARNING L-BFGS did not converge for snapshot 0: residual = 5.44e+01
+2026-05-20 14:59:51,829 WARNING L-BFGS did not converge for snapshot 1: residual = 1.62e+00
+2026-05-20 14:59:52,707 WARNING L-BFGS did not converge for snapshot 2: residual = 7.81e+00
+2026-05-20 14:59:53,604 WARNING L-BFGS did not converge for snapshot 3: residual = 6.83e+00
+2026-05-20 14:59:54,489 WARNING L-BFGS did not converge for snapshot 4: residual = 1.90e+01
+2026-05-20 14:59:55,397 WARNING L-BFGS did not converge for snapshot 5: residual = 6.15e+00
+2026-05-20 14:59:56,297 WARNING L-BFGS did not converge for snapshot 6: residual = 2.41e+01
+2026-05-20 14:59:57,286 WARNING L-BFGS did not converge for snapshot 7: residual = 1.79e+01
+2026-05-20 14:59:58,191 WARNING L-BFGS did not converge for snapshot 8: residual = 1.73e+02
+2026-05-20 14:59:59,147 WARNING L-BFGS did not converge for snapshot 9: residual = 7.41e+01
+2026-05-20 15:00:00,039 WARNING L-BFGS did not converge for snapshot 10: residual = 1.23e+00
+2026-05-20 15:00:00,949 WARNING L-BFGS did not converge for snapshot 11: residual = 4.26e+01
+2026-05-20 15:00:01,851 WARNING L-BFGS did not converge for snapshot 12: residual = 4.02e+00
+2026-05-20 15:00:02,734 WARNING L-BFGS did not converge for snapshot 13: residual = 1.01e+01
+2026-05-20 15:00:03,675 WARNING L-BFGS did not converge for snapshot 14: residual = 5.81e+01
+2026-05-20 15:00:04,597 WARNING L-BFGS did not converge for snapshot 15: residual = 1.55e+01
+2026-05-20 15:00:05,479 WARNING L-BFGS did not converge for snapshot 16: residual = 5.77e+00
+2026-05-20 15:00:06,383 WARNING L-BFGS did not converge for snapshot 17: residual = 9.44e+01
+2026-05-20 15:00:07,337 WARNING L-BFGS did not converge for snapshot 18: residual = 4.37e+01
+2026-05-20 15:00:08,216 WARNING L-BFGS did not converge for snapshot 19: residual = 4.70e+00
+2026-05-20 15:00:09,165 WARNING L-BFGS did not converge for snapshot 20: residual = 1.05e+01
+2026-05-20 15:00:10,068 WARNING L-BFGS did not converge for snapshot 21: residual = 2.25e+01
+2026-05-20 15:00:10,970 WARNING L-BFGS did not converge for snapshot 22: residual = 1.35e+01
+2026-05-20 15:00:11,933 WARNING L-BFGS did not converge for snapshot 23: residual = 3.08e-01
+2026-05-20 15:00:12,791 WARNING L-BFGS did not converge for snapshot 24: residual = 3.87e+01
+2026-05-20 15:00:13,686 WARNING L-BFGS did not converge for snapshot 25: residual = 2.69e+01
+2026-05-20 15:00:14,604 WARNING L-BFGS did not converge for snapshot 26: residual = 3.21e+01
+2026-05-20 15:00:15,544 WARNING L-BFGS did not converge for snapshot 27: residual = 2.73e+01
+2026-05-20 15:00:16,452 WARNING L-BFGS did not converge for snapshot 28: residual = 7.44e+01
+2026-05-20 15:00:17,368 WARNING L-BFGS did not converge for snapshot 29: residual = 8.75e+01
+2026-05-20 15:00:18,259 WARNING L-BFGS did not converge for snapshot 30: residual = 1.06e+02
+2026-05-20 15:00:19,160 WARNING L-BFGS did not converge for snapshot 31: residual = 4.27e+00
+2026-05-20 15:00:19,161 INFO seed=7 shard_oracle shard_l3 snap_mse=0.3569 input_mse=0.2054 psnr=6.87
+2026-05-20 15:00:47,679 INFO JOLI inversion complete: N=32, d=64, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0000
+2026-05-20 15:00:47,680 INFO seed=7 shard_oracle joli_l3 snap_mse=0.3569 input_mse=0.2054 psnr=6.87
+2026-05-20 15:00:48,742 WARNING L-BFGS did not converge for snapshot 0: residual = 3.01e-01
+2026-05-20 15:00:49,634 WARNING L-BFGS did not converge for snapshot 1: residual = 4.93e+02
+2026-05-20 15:00:50,566 WARNING L-BFGS did not converge for snapshot 2: residual = 5.77e+00
+2026-05-20 15:00:51,501 WARNING L-BFGS did not converge for snapshot 3: residual = 6.40e-01
+2026-05-20 15:00:52,381 WARNING L-BFGS did not converge for snapshot 4: residual = 9.23e+00
+2026-05-20 15:00:53,254 WARNING L-BFGS did not converge for snapshot 5: residual = 2.64e+02
+2026-05-20 15:00:54,136 WARNING L-BFGS did not converge for snapshot 6: residual = 1.57e+00
+2026-05-20 15:00:54,993 WARNING L-BFGS did not converge for snapshot 7: residual = 1.74e+00
+2026-05-20 15:00:55,903 WARNING L-BFGS did not converge for snapshot 8: residual = 3.83e+00
+2026-05-20 15:00:57,062 WARNING L-BFGS did not converge for snapshot 9: residual = 2.18e+01
+2026-05-20 15:00:58,219 WARNING L-BFGS did not converge for snapshot 10: residual = 7.31e+00
+2026-05-20 15:00:59,425 WARNING L-BFGS did not converge for snapshot 11: residual = 4.43e+00
+2026-05-20 15:01:00,615 WARNING L-BFGS did not converge for snapshot 12: residual = 1.87e+02
+2026-05-20 15:01:01,824 WARNING L-BFGS did not converge for snapshot 13: residual = 1.03e+01
+2026-05-20 15:01:03,109 WARNING L-BFGS did not converge for snapshot 14: residual = 5.45e-01
+2026-05-20 15:01:04,171 WARNING L-BFGS did not converge for snapshot 15: residual = 6.03e+00
+2026-05-20 15:01:05,283 WARNING L-BFGS did not converge for snapshot 16: residual = 1.22e-01
+2026-05-20 15:01:06,366 WARNING L-BFGS did not converge for snapshot 17: residual = 2.77e+00
+2026-05-20 15:01:07,491 WARNING L-BFGS did not converge for snapshot 18: residual = 4.00e+00
+2026-05-20 15:01:08,565 WARNING L-BFGS did not converge for snapshot 19: residual = 1.82e+00
+2026-05-20 15:01:09,651 WARNING L-BFGS did not converge for snapshot 20: residual = 2.43e+01
+2026-05-20 15:01:10,730 WARNING L-BFGS did not converge for snapshot 21: residual = 7.62e+00
+2026-05-20 15:01:11,810 WARNING L-BFGS did not converge for snapshot 22: residual = 4.18e-01
+2026-05-20 15:01:12,700 WARNING L-BFGS did not converge for snapshot 23: residual = 3.01e+00
+2026-05-20 15:01:13,623 WARNING L-BFGS did not converge for snapshot 24: residual = 2.30e+00
+2026-05-20 15:01:14,610 WARNING L-BFGS did not converge for snapshot 25: residual = 6.33e+00
+2026-05-20 15:01:15,521 WARNING L-BFGS did not converge for snapshot 26: residual = 8.78e+00
+2026-05-20 15:01:16,551 WARNING L-BFGS did not converge for snapshot 27: residual = 2.74e-01
+2026-05-20 15:01:17,479 WARNING L-BFGS did not converge for snapshot 28: residual = 2.79e+00
+2026-05-20 15:01:18,407 WARNING L-BFGS did not converge for snapshot 29: residual = 4.07e+00
+2026-05-20 15:01:19,365 WARNING L-BFGS did not converge for snapshot 30: residual = 1.02e-01
+2026-05-20 15:01:20,254 WARNING L-BFGS did not converge for snapshot 31: residual = 8.11e+00
+2026-05-20 15:01:20,256 INFO seed=7 lasa_qterm_T1p shard_l3 snap_mse=0.3380 input_mse=0.1345 psnr=8.71
+2026-05-20 15:01:48,805 INFO JOLI inversion complete: N=32, d=64, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0000
+2026-05-20 15:01:48,807 INFO seed=7 lasa_qterm_T1p joli_l3 snap_mse=0.3380 input_mse=0.1345 psnr=8.71
+2026-05-20 15:02:16,878 INFO seed=7 lasa_qterm_T1b shard_l3 snap_mse=0.0000 input_mse=0.0000 psnr=61.01
+2026-05-20 15:02:48,375 INFO JOLI inversion complete: N=32, d=64, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0000
+2026-05-20 15:02:48,377 INFO seed=7 lasa_qterm_T1b joli_l3 snap_mse=0.0000 input_mse=0.0000 psnr=61.01
+2026-05-20 15:02:56,123 WARNING L-BFGS did not converge for snapshot 0: residual = 1.37e+01
+2026-05-20 15:02:57,415 WARNING L-BFGS did not converge for snapshot 1: residual = 1.30e+00
+2026-05-20 15:02:58,613 WARNING L-BFGS did not converge for snapshot 2: residual = 1.83e+00
+2026-05-20 15:02:59,819 WARNING L-BFGS did not converge for snapshot 3: residual = 8.49e+00
+2026-05-20 15:03:01,065 WARNING L-BFGS did not converge for snapshot 4: residual = 7.89e+00
+2026-05-20 15:03:02,264 WARNING L-BFGS did not converge for snapshot 5: residual = 2.00e+01
+2026-05-20 15:03:03,418 WARNING L-BFGS did not converge for snapshot 6: residual = 3.88e+01
+2026-05-20 15:03:04,574 WARNING L-BFGS did not converge for snapshot 7: residual = 4.75e+00
+2026-05-20 15:03:05,732 WARNING L-BFGS did not converge for snapshot 8: residual = 8.97e+00
+2026-05-20 15:03:06,892 WARNING L-BFGS did not converge for snapshot 9: residual = 2.66e+01
+2026-05-20 15:03:08,057 WARNING L-BFGS did not converge for snapshot 10: residual = 1.51e+01
+2026-05-20 15:03:09,234 WARNING L-BFGS did not converge for snapshot 11: residual = 8.42e+00
+2026-05-20 15:03:10,386 WARNING L-BFGS did not converge for snapshot 12: residual = 9.65e+00
+2026-05-20 15:03:11,506 WARNING L-BFGS did not converge for snapshot 13: residual = 1.01e+01
+2026-05-20 15:03:12,629 WARNING L-BFGS did not converge for snapshot 14: residual = 6.55e+00
+2026-05-20 15:03:13,845 WARNING L-BFGS did not converge for snapshot 15: residual = 4.29e+00
+2026-05-20 15:03:14,997 WARNING L-BFGS did not converge for snapshot 16: residual = 1.38e+01
+2026-05-20 15:03:16,204 WARNING L-BFGS did not converge for snapshot 17: residual = 8.87e+00
+2026-05-20 15:03:17,306 WARNING L-BFGS did not converge for snapshot 18: residual = 3.27e+01
+2026-05-20 15:03:18,399 WARNING L-BFGS did not converge for snapshot 19: residual = 4.51e+01
+2026-05-20 15:03:19,509 WARNING L-BFGS did not converge for snapshot 20: residual = 6.34e+00
+2026-05-20 15:03:20,719 WARNING L-BFGS did not converge for snapshot 21: residual = 5.27e+00
+2026-05-20 15:03:21,946 WARNING L-BFGS did not converge for snapshot 22: residual = 7.84e+00
+2026-05-20 15:03:23,174 WARNING L-BFGS did not converge for snapshot 23: residual = 2.16e+01
+2026-05-20 15:03:24,375 WARNING L-BFGS did not converge for snapshot 24: residual = 5.88e+00
+2026-05-20 15:03:25,583 WARNING L-BFGS did not converge for snapshot 25: residual = 2.61e+01
+2026-05-20 15:03:26,763 WARNING L-BFGS did not converge for snapshot 26: residual = 1.03e+01
+2026-05-20 15:03:27,952 WARNING L-BFGS did not converge for snapshot 27: residual = 5.83e+01
+2026-05-20 15:03:29,175 WARNING L-BFGS did not converge for snapshot 28: residual = 3.87e+00
+2026-05-20 15:03:30,442 WARNING L-BFGS did not converge for snapshot 29: residual = 5.66e+00
+2026-05-20 15:03:31,648 WARNING L-BFGS did not converge for snapshot 30: residual = 1.13e+01
+2026-05-20 15:03:32,705 WARNING L-BFGS did not converge for snapshot 31: residual = 2.93e+00
+2026-05-20 15:03:32,706 INFO seed=11 shard_oracle shard_l3 snap_mse=0.1608 input_mse=0.1759 psnr=7.55
+2026-05-20 15:04:02,415 INFO JOLI inversion complete: N=32, d=64, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0000
+2026-05-20 15:04:02,416 INFO seed=11 shard_oracle joli_l3 snap_mse=0.1608 input_mse=0.1759 psnr=7.55
+2026-05-20 15:04:03,393 WARNING L-BFGS did not converge for snapshot 0: residual = 9.68e-01
+2026-05-20 15:04:04,260 WARNING L-BFGS did not converge for snapshot 1: residual = 2.29e+01
+2026-05-20 15:04:05,150 WARNING L-BFGS did not converge for snapshot 2: residual = 9.89e-01
+2026-05-20 15:04:06,015 WARNING L-BFGS did not converge for snapshot 3: residual = 7.41e+00
+2026-05-20 15:04:06,876 WARNING L-BFGS did not converge for snapshot 4: residual = 3.61e+00
+2026-05-20 15:04:07,768 WARNING L-BFGS did not converge for snapshot 5: residual = 1.40e+00
+2026-05-20 15:04:08,655 WARNING L-BFGS did not converge for snapshot 6: residual = 6.48e+00
+2026-05-20 15:04:09,535 WARNING L-BFGS did not converge for snapshot 7: residual = 5.71e+00
+2026-05-20 15:04:10,540 WARNING L-BFGS did not converge for snapshot 8: residual = 7.57e-01
+2026-05-20 15:04:11,401 WARNING L-BFGS did not converge for snapshot 9: residual = 3.86e+00
+2026-05-20 15:04:12,271 WARNING L-BFGS did not converge for snapshot 10: residual = 5.71e+00
+2026-05-20 15:04:13,148 WARNING L-BFGS did not converge for snapshot 11: residual = 9.21e-01
+2026-05-20 15:04:14,489 WARNING L-BFGS did not converge for snapshot 12: residual = 3.13e+00
+2026-05-20 15:04:15,657 WARNING L-BFGS did not converge for snapshot 13: residual = 3.21e+00
+2026-05-20 15:04:16,782 WARNING L-BFGS did not converge for snapshot 14: residual = 4.68e+01
+2026-05-20 15:04:17,950 WARNING L-BFGS did not converge for snapshot 15: residual = 3.36e-01
+2026-05-20 15:04:19,077 WARNING L-BFGS did not converge for snapshot 16: residual = 3.47e-01
+2026-05-20 15:04:20,277 WARNING L-BFGS did not converge for snapshot 17: residual = 2.96e+00
+2026-05-20 15:04:21,468 WARNING L-BFGS did not converge for snapshot 18: residual = 6.97e-01
+2026-05-20 15:04:22,497 WARNING L-BFGS did not converge for snapshot 19: residual = 1.06e+01
+2026-05-20 15:04:23,377 WARNING L-BFGS did not converge for snapshot 20: residual = 3.62e-01
+2026-05-20 15:04:24,285 WARNING L-BFGS did not converge for snapshot 21: residual = 4.98e+00
+2026-05-20 15:04:25,203 WARNING L-BFGS did not converge for snapshot 22: residual = 9.04e-01
+2026-05-20 15:04:26,089 WARNING L-BFGS did not converge for snapshot 23: residual = 2.29e+00
+2026-05-20 15:04:26,971 WARNING L-BFGS did not converge for snapshot 24: residual = 2.62e+00
+2026-05-20 15:04:27,868 WARNING L-BFGS did not converge for snapshot 25: residual = 4.92e-01
+2026-05-20 15:04:28,748 WARNING L-BFGS did not converge for snapshot 26: residual = 5.84e+00
+2026-05-20 15:04:29,627 WARNING L-BFGS did not converge for snapshot 27: residual = 8.97e-01
+2026-05-20 15:04:30,532 WARNING L-BFGS did not converge for snapshot 28: residual = 3.26e+00
+2026-05-20 15:04:31,373 WARNING L-BFGS did not converge for snapshot 29: residual = 2.01e+00
+2026-05-20 15:04:32,223 WARNING L-BFGS did not converge for snapshot 30: residual = 4.84e+00
+2026-05-20 15:04:33,089 WARNING L-BFGS did not converge for snapshot 31: residual = 4.06e+00
+2026-05-20 15:04:33,091 INFO seed=11 lasa_qterm_T1p shard_l3 snap_mse=0.0577 input_mse=0.1006 psnr=9.97
+2026-05-20 15:05:04,539 INFO JOLI inversion complete: N=32, d=64, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0000
+2026-05-20 15:05:04,543 INFO seed=11 lasa_qterm_T1p joli_l3 snap_mse=0.0577 input_mse=0.1006 psnr=9.97
+2026-05-20 15:05:36,621 INFO seed=11 lasa_qterm_T1b shard_l3 snap_mse=0.0000 input_mse=0.0000 psnr=62.73
+2026-05-20 15:06:13,388 INFO JOLI inversion complete: N=32, d=64, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0000
+2026-05-20 15:06:13,391 INFO seed=11 lasa_qterm_T1b joli_l3 snap_mse=0.0000 input_mse=0.0000 psnr=62.73
+2026-05-20 15:06:14,097 INFO Wrote /workspace/research-artifacts/qfl-vqc-mnist-recon/artifacts/round01_metrics.json
+2026-05-20 15:06:14,097 INFO HEADLINE best=lasa_qterm_T1b__shard_l3 input_mse=0.0026 psnr=48.29 gap_mse=-0.0474 gap_psnr=-30.29
+t_mse=0.1006 psnr=9.97
+2026-05-20 15:05:36,621 INFO seed=11 lasa_qterm_T1b shard_l3 snap_mse=0.0000 input_mse=0.0000 psnr=62.73
+2026-05-20 15:06:13,388 INFO JOLI inversion complete: N=32, d=64, dim_g=100, n_batch=500, adam_steps=2000, tv_adam=0.0000, tv_lbfgs=0.0000
+2026-05-20 15:06:13,391 INFO seed=11 lasa_qterm_T1b joli_l3 snap_mse=0.0000 input_mse=0.0000 psnr=62.73
+2026-05-20 15:06:14,097 INFO Wrote /workspace/research-artifacts/qfl-vqc-mnist-recon/artifacts/round01_metrics.json
+2026-05-20 15:06:14,097 INFO HEADLINE best=lasa_qterm_T1b__shard_l3 input_mse=0.0026 psnr=48.29 gap_mse=-0.0474 gap_psnr=-30.29
