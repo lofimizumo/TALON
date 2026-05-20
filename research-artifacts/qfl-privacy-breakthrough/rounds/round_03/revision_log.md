@@ -21,4 +21,4 @@ Implemented all four Round 03 mission items in `code/benchmark_round03.py`; re-u
 
 ## Supervisor review
 
-Not produced this round (per task instructions).
+`rounds/round_03/supervisor_review.md` — **REVISE_MAJOR**. Assignment barrier unbroken; Round 04 must pursue JASPER-style soft assignment, ASSIGN-LOCK with measurable wrong40 gain, defense B, or cert C. No ACCEPT before round 8.
