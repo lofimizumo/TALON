@@ -1,0 +1,27 @@
+{
+  "goal": "Breakthrough QFL privacy research informed by LASA-QTERM: improve SHARD Stage-2 under partial/realistic observations, or novel privacy-preserving mechanisms (defenses, leak budgets, detection) with measurable superiority over baselines—not documentation-only limits.",
+  "slug": "qfl-privacy-breakthrough",
+  "parent_runs": {
+    "talon": "/workspace",
+    "lasa_qterm": "/workspace/research-artifacts/qfl-terminal-snapshot"
+  },
+  "rounds_planned": 10,
+  "current_round": 1,
+  "min_rounds_before_accept": 8,
+  "stop_mode": "until_round_10_or_breakthrough_accept",
+  "supervisor_policy": "strict_no_early_accept",
+  "acceptance": {
+    "supervisor_verdicts": ["ACCEPT"],
+    "max_critical_issues": 0,
+    "require_runnable_experiments": true,
+    "require_qfl_surrogate_or_shard": true,
+    "require_measurable_breakthrough": true,
+    "breakthrough_definition": "At least one of: (A) >=25% reduction in observed rows vs SHARD Stage-2 at equal snapshot MSE; (B) defense reduces attacker snapshot MSE by >=50% vs undefended at <=10% utility loss; (C) novel privacy certificate with proved bound tighter than naive mean-only baseline by >=2x",
+    "forbid_accept_on_negative_result_only": true,
+    "forbid_accept_on_limits_essay_only": true,
+    "forbid_accept_before_round": 8,
+    "early_accept_requires_two_independent_breakthrough_signals": true
+  },
+  "domain_notes": "Build on qfl-terminal-snapshot impossibility (T1), T1p/T1b tiers, parent TALON. Use vendor/shard_sim via code/_paths.py. Prior GARD/JASPER in parent rounds/05-06.",
+  "started_at": "2026-05-20T09:00:00Z"
+}
