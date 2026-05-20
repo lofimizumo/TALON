@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="420" viewBox="0 0 700 420">
+<rect width="100%" height="100%" fill="white"/>
+<text x="350.0" y="22" text-anchor="middle" font-size="15" font-family="sans-serif">Round 09: TANGO count MAE vs prototype MSE (8 rounds)</text>
+<line x1="58" x2="642" y1="362" y2="362" stroke="#333"/>
+<line x1="58" x2="58" y1="58" y2="362" stroke="#333"/>
+<text x="58.0" y="392" transform="rotate(22 58.0,392)" text-anchor="start" font-size="10">balanced_clean</text>
+<text x="155.3" y="392" transform="rotate(22 155.3,392)" text-anchor="start" font-size="10">imbalanced_clean</text>
+<text x="252.7" y="392" transform="rotate(22 252.7,392)" text-anchor="start" font-size="10">minibatch_sgd</text>
+<text x="350.0" y="392" transform="rotate(22 350.0,392)" text-anchor="start" font-size="10">nonzero_init_head</text>
+<text x="447.3" y="392" transform="rotate(22 447.3,392)" text-anchor="start" font-size="10">large_10class_30dim</text>
+<text x="544.7" y="392" transform="rotate(22 544.7,392)" text-anchor="start" font-size="10">more_local_steps</text>
+<text x="642.0" y="392" transform="rotate(22 642.0,392)" text-anchor="start" font-size="10">high_within_class_variance</text>
+<polyline fill="none" stroke="#d62728" stroke-width="2.5" points="58.0,357.7 155.3,350.6 252.7,97.7 350.0,285.7 447.3,359.0 544.7,346.6 642.0,356.7"/>
+<polyline fill="none" stroke="#1f77b4" stroke-width="2.5" points="58.0,362.0 155.3,362.0 252.7,97.7 350.0,361.6 447.3,362.0 544.7,361.9 642.0,362.0"/>
+<rect x="490" y="50" width="185" height="52" fill="white" stroke="#ddd"/>
+<circle cx="505" cy="66" r="4" fill="#d62728"/><text x="518" y="70" font-size="11">count MAE</text>
+<circle cx="505" cy="88" r="4" fill="#1f77b4"/><text x="518" y="92" font-size="11">prototype MSE</text>
+</svg>

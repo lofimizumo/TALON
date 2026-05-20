@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420">
+<rect width="100%" height="100%" fill="white"/>
+<text x="460.0" y="22" text-anchor="middle" font-size="15" font-family="sans-serif">Round 09: prototype MSE by method (8 active/passive rounds)</text>
+<line x1="62" x2="858" y1="358" y2="358" stroke="#333"/>
+<line x1="62" x2="62" y1="62" y2="358" stroke="#333"/>
+<text x="62.0" y="390" transform="rotate(24 62.0,390)" text-anchor="start" font-size="10">balanced_clean</text>
+<text x="194.7" y="390" transform="rotate(24 194.7,390)" text-anchor="start" font-size="10">imbalanced_clean</text>
+<text x="327.3" y="390" transform="rotate(24 327.3,390)" text-anchor="start" font-size="10">minibatch_sgd</text>
+<text x="460.0" y="390" transform="rotate(24 460.0,390)" text-anchor="start" font-size="10">nonzero_init_head</text>
+<text x="592.7" y="390" transform="rotate(24 592.7,390)" text-anchor="start" font-size="10">large_10class_30dim</text>
+<text x="725.3" y="390" transform="rotate(24 725.3,390)" text-anchor="start" font-size="10">more_local_steps</text>
+<text x="858.0" y="390" transform="rotate(24 858.0,390)" text-anchor="start" font-size="10">high_within_class_variance</text>
+<polyline fill="none" stroke="#1f77b4" stroke-width="2.2" points="62.0,358.0 194.7,358.0 327.3,100.6 460.0,357.6 592.7,358.0 725.3,357.9 858.0,358.0"/>
+<circle cx="62.0" cy="358.0" r="3.5" fill="#1f77b4"/>
+<circle cx="194.7" cy="358.0" r="3.5" fill="#1f77b4"/>
+<circle cx="327.3" cy="100.6" r="3.5" fill="#1f77b4"/>
+<circle cx="460.0" cy="357.6" r="3.5" fill="#1f77b4"/>
+<circle cx="592.7" cy="358.0" r="3.5" fill="#1f77b4"/>
+<circle cx="725.3" cy="357.9" r="3.5" fill="#1f77b4"/>
+<circle cx="858.0" cy="358.0" r="3.5" fill="#1f77b4"/><polyline fill="none" stroke="#ff7f0e" stroke-width="2.2" points="62.0,352.4 194.7,347.1 327.3,328.6 460.0,350.4 592.7,357.3 725.3,352.4 858.0,351.6"/>
+<circle cx="62.0" cy="352.4" r="3.5" fill="#ff7f0e"/>
+<circle cx="194.7" cy="347.1" r="3.5" fill="#ff7f0e"/>
+<circle cx="327.3" cy="328.6" r="3.5" fill="#ff7f0e"/>
+<circle cx="460.0" cy="350.4" r="3.5" fill="#ff7f0e"/>
+<circle cx="592.7" cy="357.3" r="3.5" fill="#ff7f0e"/>
+<circle cx="725.3" cy="352.4" r="3.5" fill="#ff7f0e"/>
+<circle cx="858.0" cy="351.6" r="3.5" fill="#ff7f0e"/><polyline fill="none" stroke="#9467bd" stroke-width="2.2" points="62.0,341.9 194.7,341.1 327.3,341.9 460.0,341.9 592.7,350.7 725.3,341.9 858.0,339.6"/>
+<circle cx="62.0" cy="341.9" r="3.5" fill="#9467bd"/>
+<circle cx="194.7" cy="341.1" r="3.5" fill="#9467bd"/>
+<circle cx="327.3" cy="341.9" r="3.5" fill="#9467bd"/>
+<circle cx="460.0" cy="341.9" r="3.5" fill="#9467bd"/>
+<circle cx="592.7" cy="350.7" r="3.5" fill="#9467bd"/>
+<circle cx="725.3" cy="341.9" r="3.5" fill="#9467bd"/>
+<circle cx="858.0" cy="339.6" r="3.5" fill="#9467bd"/><polyline fill="none" stroke="#2ca02c" stroke-width="2.2" points="62.0,358.0 194.7,358.0 327.3,358.0 460.0,358.0 592.7,358.0 725.3,358.0 858.0,358.0"/>
+<circle cx="62.0" cy="358.0" r="3.5" fill="#2ca02c"/>
+<circle cx="194.7" cy="358.0" r="3.5" fill="#2ca02c"/>
+<circle cx="327.3" cy="358.0" r="3.5" fill="#2ca02c"/>
+<circle cx="460.0" cy="358.0" r="3.5" fill="#2ca02c"/>
+<circle cx="592.7" cy="358.0" r="3.5" fill="#2ca02c"/>
+<circle cx="725.3" cy="358.0" r="3.5" fill="#2ca02c"/>
+<circle cx="858.0" cy="358.0" r="3.5" fill="#2ca02c"/>
+<circle cx="710" cy="58" r="4" fill="#1f77b4"/><text x="722" y="62" font-size="11">TANGO active</text>
+<circle cx="710" cy="78" r="4" fill="#ff7f0e"/><text x="722" y="82" font-size="11">passive multi-round</text>
+<circle cx="710" cy="98" r="4" fill="#9467bd"/><text x="722" y="102" font-size="11">public prior</text>
+<circle cx="710" cy="118" r="4" fill="#2ca02c"/><text x="722" y="122" font-size="11">oracle aggregate</text>
+<text transform="translate(14,210.0) rotate(-90)" text-anchor="middle" font-size="12">prototype MSE</text>
+</svg>

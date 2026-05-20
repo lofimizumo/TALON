@@ -1,0 +1,81 @@
+% TALON/TANGO method section (draft)
+% Compile with pdflatex if desired; also summarized in paper/draft.md
+
+\section{Threat Model: Active Terminal Probing}
+\label{sec:threat}
+
+We consider a federated client that trains only a \emph{linear classifier head}
+on fixed hidden features $x_i \in \mathbb{R}^d$, initialized with $W_0=0$ and
+server-chosen bias $b^{(r)}$ each round $r$.
+The honest-but-curious \emph{server} observes terminal weight and bias deltas
+$(\Delta W^{(r)}, \Delta b^{(r)})$ after $T$ local steps with learning rate $\eta$
+over $N$ samples, and knows $(\eta, T, N)$ and all probe biases $b^{(r)}$.
+The server does \textbf{not} observe intermediate minibatch gradients, batch order,
+or per-sample snapshots.
+This is \textbf{active terminal probing}: the server designs probes; it is
+\textbf{not} passive logging of a single neutral update.
+
+\section{TANGO Estimator}
+\label{sec:tango}
+
+From terminal deltas, recover one-step average gradients
+$\bar g^{(r)}_c = -\Delta b^{(r)}_c/(\eta T)$ and
+$\bar h^{(r)}_{c,k} = -\Delta W^{(r)}_{k,c}/(\eta T)$.
+With $p^{(r)}=\mathrm{softmax}(b^{(r)})$, Lemma~A (Appendix) gives
+$N\bar g^{(r)}_c = p^{(r)}_c S - S_c$ and
+$N\bar h^{(r)}_{c,k} = p^{(r)}_c S_k - S_{c,k}$.
+Counts: $\hat n_c = N\,\mathrm{mean}_r(p^{(r)}_c - \bar g^{(r)}_c)$.
+For each coordinate $k$, solve the stacked linear system with constraint
+$S_k=\sum_c S_{c,k}$ (TANGO \texttt{lstsq}); prototypes $\hat\mu_c=\hat S_c/\hat n_c$.
+
+\section{Theory (Exact Tier)}
+\label{sec:theory}
+
+\textbf{Theorem 1 (aggregate identifiability).}
+Under the assumptions in \texttt{theorem\_scope.exact}
+(linear head, $W_0=0$, full-batch, first-order terminals, full-rank probes),
+class sums, counts, prototypes, and dataset mean are unique.
+\emph{Proof:} Appendix, Theorem~1.
+
+\textbf{Theorem 2 (individual non-identifiability).}
+Within-class perturbations with zero sum leave all terminal observations unchanged.
+Individual samples are not identifiable from terminal aggregates alone.
+\emph{Proof:} Appendix, Theorem~2.
+
+\section{Baselines}
+\label{sec:baselines}
+
+\begin{itemize}
+  \item \textbf{Passive multi-round:} repeated zero bias (no probe diversity).
+  \item \textbf{Public prior:} single-round crude dataset mean for all classes.
+  \item \textbf{Oracle aggregate:} ground-truth sums/counts (ceiling, not an attack).
+\end{itemize}
+Report \textbf{count MAE} and \textbf{prototype MSE} separately; passive can beat
+TANGO on counts in neutral-bias regimes while TANGO wins on prototypes.
+
+\section{Limits and Negative Results}
+\label{sec:limits}
+
+\textbf{Minibatch SGD breaks the first-order estimator.}
+Round~09/10: on \texttt{minibatch\_sgd}, TANGO prototype MSE $\approx 6.59$ vs
+passive multi-round $\approx 0.75$; active probing is \emph{worse} than passive.
+The exact theorems do not apply; manuscript claims must lead with this limit.
+
+\textbf{No individual recovery.} Better prototypes do not imply sample reconstruction;
+individual MSE stays near the within-class variance floor (Theorem~2).
+
+\textbf{Hidden-representation endpoint.} Round~10 decoder probe: linear map from hidden
+to synthetic pixels shows recovered prototypes track \emph{decodable} class means when
+TANGO succeeds, but this does not claim raw-image inversion without the decoder.
+
+\textbf{Frozen nonlinear backbone.} Random MLP features held fixed during local training;
+Tier-1 TANGO remains accurate (prototype MSE $\ll 10^{-3}$), supporting the
+``fixed features + linear head'' story but not representation drift during training.
+
+\section{Semantic Decoder Probe (Round 10)}
+\label{sec:decoder}
+
+Synthetic pixels $y_i = D x_i$ with fixed linear $D$.
+Evaluate pixel-space class-mean MSE $\|D\hat\mu_c - D\mu_c\|^2$ and correlation
+between true and estimated hidden prototypes.
+When TANGO fails (minibatch), pixel leakage metrics degrade correspondingly.

@@ -1,0 +1,35 @@
+2026-05-20 07:15:24,730 INFO Round 10 TALON manuscript-closing benchmark started
+2026-05-20 07:15:24,742 INFO decoder scenario=decoder_balanced seed=3 hidden_mse=0.000179 pixel_mse=0.000179 corr=1.0000
+2026-05-20 07:15:24,744 INFO decoder scenario=decoder_balanced seed=7 hidden_mse=0.000219 pixel_mse=0.000219 corr=1.0000
+2026-05-20 07:15:24,746 INFO decoder scenario=decoder_balanced seed=11 hidden_mse=0.000157 pixel_mse=0.000157 corr=1.0000
+2026-05-20 07:15:24,749 INFO decoder scenario=decoder_balanced seed=19 hidden_mse=0.000094 pixel_mse=0.000094 corr=1.0000
+2026-05-20 07:15:24,751 INFO decoder scenario=decoder_balanced seed=23 hidden_mse=0.000125 pixel_mse=0.000125 corr=1.0000
+2026-05-20 07:15:24,753 INFO decoder scenario=decoder_balanced seed=29 hidden_mse=0.000177 pixel_mse=0.000177 corr=1.0000
+2026-05-20 07:15:24,756 INFO decoder scenario=decoder_balanced seed=31 hidden_mse=0.000164 pixel_mse=0.000164 corr=1.0000
+2026-05-20 07:15:24,758 INFO decoder scenario=decoder_balanced seed=37 hidden_mse=0.000089 pixel_mse=0.000089 corr=1.0000
+2026-05-20 07:15:24,762 INFO decoder scenario=decoder_minibatch seed=3 hidden_mse=1.415312 pixel_mse=1.415312 corr=0.9993
+2026-05-20 07:15:24,766 INFO decoder scenario=decoder_minibatch seed=7 hidden_mse=2.283492 pixel_mse=2.283492 corr=0.9991
+2026-05-20 07:15:24,770 INFO decoder scenario=decoder_minibatch seed=11 hidden_mse=1.243278 pixel_mse=1.243278 corr=0.9989
+2026-05-20 07:15:24,774 INFO decoder scenario=decoder_minibatch seed=19 hidden_mse=6.236028 pixel_mse=6.236028 corr=0.9993
+2026-05-20 07:15:24,777 INFO decoder scenario=decoder_minibatch seed=23 hidden_mse=1.334516 pixel_mse=1.334516 corr=0.9996
+2026-05-20 07:15:24,781 INFO decoder scenario=decoder_minibatch seed=29 hidden_mse=1.038834 pixel_mse=1.038834 corr=0.9989
+2026-05-20 07:15:24,785 INFO decoder scenario=decoder_minibatch seed=31 hidden_mse=2.183711 pixel_mse=2.183711 corr=0.9987
+2026-05-20 07:15:24,789 INFO decoder scenario=decoder_minibatch seed=37 hidden_mse=36.966372 pixel_mse=36.966372 corr=0.9996
+2026-05-20 07:15:24,791 INFO frozen_mlp scenario=frozen_mlp_balanced seed=3 tango_mse=0.001335 passive_mse=0.282238 gain=211.4x
+2026-05-20 07:15:24,793 INFO frozen_mlp scenario=frozen_mlp_balanced seed=7 tango_mse=0.000652 passive_mse=0.251064 gain=385.3x
+2026-05-20 07:15:24,795 INFO frozen_mlp scenario=frozen_mlp_balanced seed=11 tango_mse=0.002960 passive_mse=0.498472 gain=168.4x
+2026-05-20 07:15:24,797 INFO frozen_mlp scenario=frozen_mlp_balanced seed=19 tango_mse=0.013344 passive_mse=0.716003 gain=53.7x
+2026-05-20 07:15:24,799 INFO frozen_mlp scenario=frozen_mlp_balanced seed=23 tango_mse=0.001921 passive_mse=0.092285 gain=48.1x
+2026-05-20 07:15:24,801 INFO frozen_mlp scenario=frozen_mlp_balanced seed=29 tango_mse=0.001753 passive_mse=0.485695 gain=277.1x
+2026-05-20 07:15:24,803 INFO frozen_mlp scenario=frozen_mlp_balanced seed=31 tango_mse=0.001604 passive_mse=0.381385 gain=237.7x
+2026-05-20 07:15:24,805 INFO frozen_mlp scenario=frozen_mlp_balanced seed=37 tango_mse=0.000622 passive_mse=0.225229 gain=362.4x
+2026-05-20 07:15:24,807 INFO frozen_mlp scenario=frozen_mlp_imbalanced seed=3 tango_mse=0.003112 passive_mse=0.711467 gain=228.6x
+2026-05-20 07:15:24,809 INFO frozen_mlp scenario=frozen_mlp_imbalanced seed=7 tango_mse=0.001831 passive_mse=0.545432 gain=297.9x
+2026-05-20 07:15:24,811 INFO frozen_mlp scenario=frozen_mlp_imbalanced seed=11 tango_mse=0.003992 passive_mse=0.765049 gain=191.6x
+2026-05-20 07:15:24,813 INFO frozen_mlp scenario=frozen_mlp_imbalanced seed=19 tango_mse=0.013823 passive_mse=0.859725 gain=62.2x
+2026-05-20 07:15:24,815 INFO frozen_mlp scenario=frozen_mlp_imbalanced seed=23 tango_mse=0.003017 passive_mse=0.137178 gain=45.5x
+2026-05-20 07:15:24,816 INFO frozen_mlp scenario=frozen_mlp_imbalanced seed=29 tango_mse=0.003003 passive_mse=0.811718 gain=270.3x
+2026-05-20 07:15:24,818 INFO frozen_mlp scenario=frozen_mlp_imbalanced seed=31 tango_mse=0.002368 passive_mse=0.639839 gain=270.2x
+2026-05-20 07:15:24,820 INFO frozen_mlp scenario=frozen_mlp_imbalanced seed=37 tango_mse=0.003919 passive_mse=0.432649 gain=110.4x
+2026-05-20 07:15:24,821 INFO wrote /workspace/artifacts/round10_metrics.json
+2026-05-20 07:15:24,822 INFO headline={'decoder_balanced_hidden_mse': 0.00015058279086769904, 'decoder_balanced_pixel_mse': 0.0001505827908676993, 'decoder_balanced_hidden_corr': 0.999991750952977, 'decoder_balanced_pixel_corr': 0.9999920033401559, 'decoder_balanced_lstsq_pixel_mse_from_est': 0.0001505827908676979, 'decoder_minibatch_pixel_mse': 6.587692807101612, 'decoder_minibatch_hidden_mse': 6.587692807101611, 'frozen_mlp_balanced_tango_mse': 0.0030237965563268947, 'frozen_mlp_balanced_passive_mse': 0.3665464279813333, 'frozen_mlp_balanced_gain_x': 217.99977679016237}
