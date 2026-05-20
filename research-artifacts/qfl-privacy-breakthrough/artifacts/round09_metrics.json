@@ -1,0 +1,308 @@
+{
+  "benchmark": "round09_probe_rand_breakthrough",
+  "breakthrough_lane": "PROBE-RAND",
+  "threat_model": {
+    "server_publishes": "A^(e) per round to clients only (not to SHARD attacker)",
+    "attacker_observes": "batch gradients, wrong secure-aggregation incidence H",
+    "attacker_does_not_observe": "per-round A^(e) (must guess stale/pooled A to decode)"
+  },
+  "round09_config": {
+    "breakthrough_lane": "PROBE-RAND",
+    "fraction": 0.5,
+    "assignment_regime": "wrong40",
+    "mean_anchor_mode": "level1_estimate",
+    "seeds": [
+      3,
+      7,
+      11,
+      19,
+      23
+    ]
+  },
+  "round07_config": {
+    "jasper_iters": 14,
+    "jasper_damping": 0.42,
+    "sinkhorn_tau": 0.26,
+    "sinkhorn_iters": 95,
+    "entropy_lambda": 0.1,
+    "ridge_lambda": 0.025,
+    "jasper_graph_lambda": 0.1,
+    "spectral_graph_alpha": 0.35,
+    "spectral_knn_k": 5,
+    "multi_epoch_warm_decay": 0.55,
+    "t1p_rows": 70,
+    "t1p_partial_per_epoch": 7,
+    "cert_noise_std": 0.01,
+    "cert_trace_slack": 1.08
+  },
+  "per_seed": [
+    {
+      "seed": 3,
+      "assignment_overlap": 0.53125,
+      "oracle_decode_row_mse": 9.910034527761192e-05,
+      "client_grad_mse_static_a": 0.00010122173891796357,
+      "client_grad_mse_probe_rand": 9.91003452774137e-05,
+      "baseline_round07_jasper_mse": 0.8953557531731249,
+      "baseline_round07_gard_mse": 2.4851221709821036,
+      "probe_rand_snapshot_rows_jasper_mse": 0.9235686858142835,
+      "probe_rand_jasper_by_decode": {
+        "oracle_per_epoch": {
+          "gard_mse": 2.4844217035424734,
+          "jasper_mse": 0.9227297345228385,
+          "hard_overlap": 0.4375,
+          "encoding_residual_mse": 0.0354511610149338,
+          "level1_mse_vs_true_ebar": 9.43306150533168e-07,
+          "level1_oracle_coeff_mse": 8.481470931674968e-07
+        },
+        "stale_first_epoch": {
+          "gard_mse": 3.941778600713018,
+          "jasper_mse": 0.9926462729809242,
+          "hard_overlap": 0.44375,
+          "encoding_residual_mse": 0.040390867561986885,
+          "level1_mse_vs_true_ebar": 9.43306150533168e-07,
+          "level1_oracle_coeff_mse": 8.481470931674968e-07
+        },
+        "pooled_lstsq": {
+          "gard_mse": 599635.3673810316,
+          "jasper_mse": 793.7112958534681,
+          "hard_overlap": 0.4,
+          "encoding_residual_mse": 1617.373161909764,
+          "level1_mse_vs_true_ebar": 9.43306150533168e-07,
+          "level1_oracle_coeff_mse": 8.481470931674968e-07
+        },
+        "raw_gradient": {
+          "gard_mse": 4.215493280592795,
+          "jasper_mse": 1.028878762383899,
+          "hard_overlap": 0.4375,
+          "encoding_residual_mse": 0.0403908675619061,
+          "level1_mse_vs_true_ebar": 9.43306150533168e-07,
+          "level1_oracle_coeff_mse": 8.481470931674968e-07
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "assignment_overlap": 0.5125,
+      "oracle_decode_row_mse": 9.764408570704492e-05,
+      "client_grad_mse_static_a": 0.00010071915944509899,
+      "client_grad_mse_probe_rand": 9.764408570684955e-05,
+      "baseline_round07_jasper_mse": 0.8929386534988344,
+      "baseline_round07_gard_mse": 1.9924914341043665,
+      "probe_rand_snapshot_rows_jasper_mse": 0.8826186043746391,
+      "probe_rand_jasper_by_decode": {
+        "oracle_per_epoch": {
+          "gard_mse": 2.0017869482475206,
+          "jasper_mse": 0.8824181229832816,
+          "hard_overlap": 0.46875,
+          "encoding_residual_mse": 0.040241293893251616,
+          "level1_mse_vs_true_ebar": 1.3352303155890374e-06,
+          "level1_oracle_coeff_mse": 1.7836514497348707e-06
+        },
+        "stale_first_epoch": {
+          "gard_mse": 3.295061873370866,
+          "jasper_mse": 1.0083305978548514,
+          "hard_overlap": 0.46875,
+          "encoding_residual_mse": 0.05027973216535009,
+          "level1_mse_vs_true_ebar": 1.3352303155890374e-06,
+          "level1_oracle_coeff_mse": 1.7836514497348707e-06
+        },
+        "pooled_lstsq": {
+          "gard_mse": 1530.7259198870097,
+          "jasper_mse": 7.058811332860768,
+          "hard_overlap": 0.3125,
+          "encoding_residual_mse": 24.733981954143935,
+          "level1_mse_vs_true_ebar": 1.3352303155890374e-06,
+          "level1_oracle_coeff_mse": 1.7836514497348707e-06
+        },
+        "raw_gradient": {
+          "gard_mse": 3.4571897915343635,
+          "jasper_mse": 1.0369087949503828,
+          "hard_overlap": 0.4875,
+          "encoding_residual_mse": 0.050279732165249516,
+          "level1_mse_vs_true_ebar": 1.3352303155890374e-06,
+          "level1_oracle_coeff_mse": 1.7836514497348707e-06
+        }
+      }
+    },
+    {
+      "seed": 11,
+      "assignment_overlap": 0.53125,
+      "oracle_decode_row_mse": 0.0001004999771918581,
+      "client_grad_mse_static_a": 0.0001004588895874213,
+      "client_grad_mse_probe_rand": 0.0001004999771916572,
+      "baseline_round07_jasper_mse": 0.8940044587966414,
+      "baseline_round07_gard_mse": 2.7692813146776856,
+      "probe_rand_snapshot_rows_jasper_mse": 0.8948559758481713,
+      "probe_rand_jasper_by_decode": {
+        "oracle_per_epoch": {
+          "gard_mse": 2.7798390683321172,
+          "jasper_mse": 0.8948352399275374,
+          "hard_overlap": 0.49375,
+          "encoding_residual_mse": 0.03810889166820961,
+          "level1_mse_vs_true_ebar": 1.4140291900014954e-06,
+          "level1_oracle_coeff_mse": 1.2202692483447816e-06
+        },
+        "stale_first_epoch": {
+          "gard_mse": 3.030462419756376,
+          "jasper_mse": 1.0301077130257537,
+          "hard_overlap": 0.4625,
+          "encoding_residual_mse": 0.042334803721227075,
+          "level1_mse_vs_true_ebar": 1.4140291900014954e-06,
+          "level1_oracle_coeff_mse": 1.2202692483447816e-06
+        },
+        "pooled_lstsq": {
+          "gard_mse": 454.94666249611106,
+          "jasper_mse": 4.309716633627714,
+          "hard_overlap": 0.36875,
+          "encoding_residual_mse": 17.197081710962465,
+          "level1_mse_vs_true_ebar": 1.4140291900014954e-06,
+          "level1_oracle_coeff_mse": 1.2202692483447816e-06
+        },
+        "raw_gradient": {
+          "gard_mse": 2.996858726371191,
+          "jasper_mse": 1.009432921295745,
+          "hard_overlap": 0.48125,
+          "encoding_residual_mse": 0.04233480372114239,
+          "level1_mse_vs_true_ebar": 1.4140291900014954e-06,
+          "level1_oracle_coeff_mse": 1.2202692483447816e-06
+        }
+      }
+    },
+    {
+      "seed": 19,
+      "assignment_overlap": 0.51875,
+      "oracle_decode_row_mse": 9.617249015745706e-05,
+      "client_grad_mse_static_a": 9.840773302127598e-05,
+      "client_grad_mse_probe_rand": 9.617249015726454e-05,
+      "baseline_round07_jasper_mse": 0.9055269572884161,
+      "baseline_round07_gard_mse": 4.764022274306212,
+      "probe_rand_snapshot_rows_jasper_mse": 0.8824256843602967,
+      "probe_rand_jasper_by_decode": {
+        "oracle_per_epoch": {
+          "gard_mse": 4.760052592804858,
+          "jasper_mse": 0.882210153591793,
+          "hard_overlap": 0.45625,
+          "encoding_residual_mse": 0.028845158769143748,
+          "level1_mse_vs_true_ebar": 1.2729046235435026e-06,
+          "level1_oracle_coeff_mse": 1.291917406904342e-06
+        },
+        "stale_first_epoch": {
+          "gard_mse": 6.1319095856462855,
+          "jasper_mse": 0.9954244587965583,
+          "hard_overlap": 0.4875,
+          "encoding_residual_mse": 0.04974108889198782,
+          "level1_mse_vs_true_ebar": 1.2729046235435026e-06,
+          "level1_oracle_coeff_mse": 1.291917406904342e-06
+        },
+        "pooled_lstsq": {
+          "gard_mse": 75289.92471137729,
+          "jasper_mse": 237.9412112985973,
+          "hard_overlap": 0.31875,
+          "encoding_residual_mse": 1568.811686156151,
+          "level1_mse_vs_true_ebar": 1.2729046235435026e-06,
+          "level1_oracle_coeff_mse": 1.291917406904342e-06
+        },
+        "raw_gradient": {
+          "gard_mse": 6.335393184989528,
+          "jasper_mse": 1.0547744418733946,
+          "hard_overlap": 0.5,
+          "encoding_residual_mse": 0.049741088891888344,
+          "level1_mse_vs_true_ebar": 1.2729046235435026e-06,
+          "level1_oracle_coeff_mse": 1.291917406904342e-06
+        }
+      }
+    },
+    {
+      "seed": 23,
+      "assignment_overlap": 0.55625,
+      "oracle_decode_row_mse": 9.94380255979239e-05,
+      "client_grad_mse_static_a": 9.896609688589183e-05,
+      "client_grad_mse_probe_rand": 9.943802559772524e-05,
+      "baseline_round07_jasper_mse": 0.884089689374628,
+      "baseline_round07_gard_mse": 2.8160150158829693,
+      "probe_rand_snapshot_rows_jasper_mse": 0.9054003066008153,
+      "probe_rand_jasper_by_decode": {
+        "oracle_per_epoch": {
+          "gard_mse": 2.8170531163675303,
+          "jasper_mse": 0.9052967589526131,
+          "hard_overlap": 0.45625,
+          "encoding_residual_mse": 0.02339586521762532,
+          "level1_mse_vs_true_ebar": 9.137874876409987e-07,
+          "level1_oracle_coeff_mse": 1.7283574542393851e-06
+        },
+        "stale_first_epoch": {
+          "gard_mse": 4.088939935986485,
+          "jasper_mse": 0.9848587618590516,
+          "hard_overlap": 0.4875,
+          "encoding_residual_mse": 0.03765746794038185,
+          "level1_mse_vs_true_ebar": 9.137874876409987e-07,
+          "level1_oracle_coeff_mse": 1.7283574542393851e-06
+        },
+        "pooled_lstsq": {
+          "gard_mse": 49338.81008049981,
+          "jasper_mse": 114.99253611226389,
+          "hard_overlap": 0.325,
+          "encoding_residual_mse": 182.2528784083249,
+          "level1_mse_vs_true_ebar": 9.137874876409987e-07,
+          "level1_oracle_coeff_mse": 1.7283574542393851e-06
+        },
+        "raw_gradient": {
+          "gard_mse": 4.391982661211433,
+          "jasper_mse": 1.03355744379679,
+          "hard_overlap": 0.4625,
+          "encoding_residual_mse": 0.037657467940306534,
+          "level1_mse_vs_true_ebar": 9.137874876409987e-07,
+          "level1_oracle_coeff_mse": 1.7283574542393851e-06
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "n_seeds": 5,
+    "baseline_jasper_mse_mean": 0.8943831024263289,
+    "client_grad_mse_probe_rand_mean": 9.857098478618204e-05,
+    "client_grad_mse_static_a_mean": 9.995472357153033e-05,
+    "probe_rand_decode": {
+      "oracle_per_epoch": {
+        "jasper_mse_mean": 0.8974980019956128,
+        "gard_mse_mean": 2.9686306858589,
+        "encoding_residual_mse_mean": 0.03320847411263282
+      },
+      "stale_first_epoch": {
+        "jasper_mse_mean": 1.002273560903428,
+        "gard_mse_mean": 4.097630483094606,
+        "encoding_residual_mse_mean": 0.04408079205618674
+      },
+      "pooled_lstsq": {
+        "jasper_mse_mean": 231.60271424616354,
+        "gard_mse_mean": 145249.95495105835,
+        "encoding_residual_mse_mean": 682.0737580278692
+      },
+      "raw_gradient": {
+        "jasper_mse_mean": 1.0327104728600425,
+        "gard_mse_mean": 4.279383528939862,
+        "encoding_residual_mse_mean": 0.04408079205609858
+      }
+    },
+    "jasper_recovers_under_wrong40": {
+      "baseline_at_50pct": 0.8943831024263289,
+      "probe_rand_stale_decode": 1.002273560903428,
+      "probe_rand_oracle_decode_cheating": 0.8974980019956128,
+      "stale_worse_than_baseline": true,
+      "oracle_near_baseline": true,
+      "defense_breaks_cooccurrence_without_a": false
+    }
+  },
+  "verdict": {
+    "probe_rand_breaks_jasper_without_per_epoch_a": false,
+    "jasper_still_recovers_if_attacker_knows_a_per_epoch": true,
+    "clients_train_with_published_a": true,
+    "honest_failure": true
+  },
+  "honesty_notes": [
+    "PROBE-RAND does not hide A from a server-side attacker who logs probes; threat is SHARD/JASPER path with wrong H and no per-round A publication.",
+    "oracle_per_epoch decode is an upper bound (cheating); stale_first_epoch models legacy single-A assumption.",
+    "SUBSPACE-MIX deferred (single high-risk lane per Round 09)."
+  ],
+  "runtime_sec": 14.82937802298693
+}

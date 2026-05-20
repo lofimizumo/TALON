@@ -1,0 +1,9 @@
+2026-05-20 10:47:14,431 INFO Round 09 — PROBE-RAND: per-round random A^(e), JASPER @ wrong40 50% rows
+2026-05-20 10:47:29,259 INFO seed=3 baseline_jasper=0.8954 stale_decode_jasper=0.9926 client_mse=9.91e-05
+2026-05-20 10:47:29,260 INFO seed=7 baseline_jasper=0.8929 stale_decode_jasper=1.008 client_mse=9.764e-05
+2026-05-20 10:47:29,260 INFO seed=11 baseline_jasper=0.894 stale_decode_jasper=1.03 client_mse=0.0001005
+2026-05-20 10:47:29,260 INFO seed=19 baseline_jasper=0.9055 stale_decode_jasper=0.9954 client_mse=9.617e-05
+2026-05-20 10:47:29,260 INFO seed=23 baseline_jasper=0.8841 stale_decode_jasper=0.9849 client_mse=9.944e-05
+2026-05-20 10:47:29,262 INFO Wrote /workspace/research-artifacts/qfl-privacy-breakthrough/artifacts/round09_metrics.json
+2026-05-20 10:47:29,262 INFO Verdict: {'probe_rand_breaks_jasper_without_per_epoch_a': False, 'jasper_still_recovers_if_attacker_knows_a_per_epoch': True, 'clients_train_with_published_a': True, 'honest_failure': True}
+2026-05-20 10:47:29,262 INFO Runtime 14.83s
