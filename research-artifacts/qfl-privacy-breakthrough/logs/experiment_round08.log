@@ -1,0 +1,33 @@
+2026-05-20 10:46:02,678 INFO Round 08 — QFL-PRIVACY-MAP defender/auditor audit bundle
+2026-05-20 10:46:02,688 INFO T1 seed=3 mse=0.9999
+2026-05-20 10:46:02,688 INFO T1 seed=7 mse=0.9999
+2026-05-20 10:46:02,688 INFO T1 seed=11 mse=0.9999
+2026-05-20 10:46:02,688 INFO T1 seed=19 mse=0.9999
+2026-05-20 10:46:02,688 INFO T1 seed=23 mse=0.9999
+2026-05-20 10:46:02,688 INFO T1 audit: Terminal-only map depends only on dataset mean; per-sample snapshots not identifiable.
+2026-05-20 10:46:06,466 INFO LEAK-CERT-T1p v2 seed=3 emp=0.4032 cert=1.08 naive_bc=1 ratio_bc=0.93 naive_tr=16 ratio_tr=14.81 cover=True honest_2x=False
+2026-05-20 10:46:06,466 INFO LEAK-CERT-T1p v2 seed=7 emp=0.4233 cert=1.08 naive_bc=1 ratio_bc=0.93 naive_tr=16 ratio_tr=14.81 cover=True honest_2x=False
+2026-05-20 10:46:06,466 INFO LEAK-CERT-T1p v2 seed=11 emp=0.3855 cert=1.08 naive_bc=1 ratio_bc=0.93 naive_tr=16 ratio_tr=14.81 cover=True honest_2x=False
+2026-05-20 10:46:06,466 INFO LEAK-CERT-T1p v2 seed=19 emp=0.5359 cert=1.08 naive_bc=1 ratio_bc=0.93 naive_tr=16 ratio_tr=14.81 cover=True honest_2x=False
+2026-05-20 10:46:06,466 INFO LEAK-CERT-T1p v2 seed=23 emp=0.4024 cert=1.08 naive_bc=1 ratio_bc=0.93 naive_tr=16 ratio_tr=14.81 cover=True honest_2x=False
+2026-05-20 10:46:06,466 INFO T1p audit: Criterion C fails under honest naive; Round 07 trace-inflated baseline was gaming.
+2026-05-20 10:46:06,468 INFO GARD-SPARSE oracle seed=3 rows=15 mse=0.05232
+2026-05-20 10:46:06,469 INFO GARD-SPARSE oracle seed=7 rows=15 mse=0.06399
+2026-05-20 10:46:06,471 INFO GARD-SPARSE oracle seed=11 rows=15 mse=0.05309
+2026-05-20 10:46:06,472 INFO GARD-SPARSE oracle seed=19 rows=15 mse=0.04088
+2026-05-20 10:46:06,473 INFO GARD-SPARSE oracle seed=23 rows=15 mse=0.03919
+2026-05-20 10:46:06,473 INFO S2-oracle audit: Oracle GARD-SPARSE @ 25% rows: mean MSE 0.0499 (≤) 0.1; 75% row reduction vs full.
+2026-05-20 10:46:06,751 INFO wrong40 frac=0.25 seed=3 gard=0.9981 jasper=0.9583
+2026-05-20 10:46:07,048 INFO wrong40 frac=0.25 seed=7 gard=0.9733 jasper=0.9571
+2026-05-20 10:46:07,339 INFO wrong40 frac=0.25 seed=11 gard=0.9685 jasper=0.9719
+2026-05-20 10:46:07,631 INFO wrong40 frac=0.25 seed=19 gard=1.01 jasper=0.9425
+2026-05-20 10:46:08,040 INFO wrong40 frac=0.25 seed=23 gard=0.9972 jasper=0.9044
+2026-05-20 10:46:08,472 INFO wrong40 frac=0.50 seed=3 gard=2.485 jasper=0.9106
+2026-05-20 10:46:08,888 INFO wrong40 frac=0.50 seed=7 gard=1.992 jasper=0.9054
+2026-05-20 10:46:09,247 INFO wrong40 frac=0.50 seed=11 gard=2.769 jasper=0.9156
+2026-05-20 10:46:09,624 INFO wrong40 frac=0.50 seed=19 gard=4.764 jasper=0.906
+2026-05-20 10:46:10,094 INFO wrong40 frac=0.50 seed=23 gard=2.816 jasper=0.8981
+2026-05-20 10:46:10,094 INFO S2-wrong40 audit: ABT-1 floor holds: wrong incidence blocks snapshot MSE < 0.15 at tested fractions.
+2026-05-20 10:46:10,095 INFO Wrote /workspace/research-artifacts/qfl-privacy-breakthrough/artifacts/round08_metrics.json
+2026-05-20 10:46:10,095 INFO Gates: T1=True A_oracle=True C_honest=False ABT1=True
+2026-05-20 10:46:10,095 INFO Runtime 7.42s

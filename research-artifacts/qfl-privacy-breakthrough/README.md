@@ -15,6 +15,7 @@
 | 5 | [x] | [x] | REVISE_MAJOR |
 | 6 | — | — | (skipped) |
 | 7 | [x] | — | scientist-only |
+| 8 | [x] | — | scientist-only (QFL-PRIVACY-MAP) |
 
 ## Paths
 

@@ -1,0 +1,1000 @@
+{
+  "benchmark": "round08_qfl_privacy_map_audit_bundle",
+  "framework_id": "QFL-PRIVACY-MAP",
+  "theorem_abt1": "ABT-1",
+  "theorem_abt1_path": "/workspace/research-artifacts/qfl-privacy-breakthrough/paper/assignment_barrier_theorem.md",
+  "privacy_map_path": "/workspace/research-artifacts/qfl-privacy-breakthrough/paper/privacy_map.md",
+  "seeds": [
+    3,
+    7,
+    11,
+    19,
+    23
+  ],
+  "stage2_config": {
+    "n_samples": 48,
+    "batch_size": 4,
+    "dim_g": 32,
+    "true_rank": 4,
+    "n_epochs": 5,
+    "noise_std": 0.01,
+    "mean_anchor_weight": 100.0,
+    "validation_fraction": 0.25,
+    "graph_lambda_grid": [
+      0.0,
+      0.003,
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1.0,
+      3.0,
+      10.0
+    ],
+    "random_fractions": [
+      1.0,
+      0.6,
+      0.4,
+      0.25,
+      0.15
+    ],
+    "target_snapshot_mse": 0.1
+  },
+  "qfl_config": {
+    "n_samples": 32,
+    "batch_size": 4,
+    "n_epochs": 10,
+    "dim_g": 32,
+    "true_rank": 4,
+    "noise_level": 0.01,
+    "partial_rows": 7,
+    "shield_rank": 2,
+    "shield_noise_std": 0.15,
+    "utility_metric": "gradient_mse"
+  },
+  "round07_config": {
+    "jasper_iters": 14,
+    "jasper_damping": 0.42,
+    "sinkhorn_tau": 0.26,
+    "sinkhorn_iters": 95,
+    "entropy_lambda": 0.1,
+    "ridge_lambda": 0.025,
+    "jasper_graph_lambda": 0.1,
+    "spectral_graph_alpha": 0.35,
+    "spectral_knn_k": 5,
+    "multi_epoch_warm_decay": 0.55,
+    "t1p_rows": 70,
+    "t1p_partial_per_epoch": 7,
+    "cert_noise_std": 0.01,
+    "cert_trace_slack": 1.08
+  },
+  "raw_runs": {
+    "t1": [
+      {
+        "seed": 3,
+        "t1_mse": 0.999924564512584,
+        "n_terminal_epochs": 10
+      },
+      {
+        "seed": 7,
+        "t1_mse": 0.9999473587090637,
+        "n_terminal_epochs": 10
+      },
+      {
+        "seed": 11,
+        "t1_mse": 0.9999322013853178,
+        "n_terminal_epochs": 10
+      },
+      {
+        "seed": 19,
+        "t1_mse": 0.9999194162917944,
+        "n_terminal_epochs": 10
+      },
+      {
+        "seed": 23,
+        "t1_mse": 0.9999236826213389,
+        "n_terminal_epochs": 10
+      }
+    ],
+    "leak_cert_t1p_v2_honest": [
+      {
+        "seed": 3,
+        "empirical_t1p_mse": 0.4032409806562558,
+        "n_obs_t1p_rows": 70,
+        "cert_naive_broadcast": 1.0000010299220645,
+        "cert_naive_trace_inflated": 15.999999999874627,
+        "cert_t1p_trace_upper": 1.0799999999915373,
+        "cert_tight_upper_bound": 1.0799999999915373,
+        "naive_broadcast_over_cert": 0.9259268795647225,
+        "naive_trace_over_cert": 14.814814814814815,
+        "cert_covers_empirical": true,
+        "criterion_c_2x_honest_naive": false,
+        "criterion_c_2x_trace_inflated": true
+      },
+      {
+        "seed": 7,
+        "empirical_t1p_mse": 0.42333763655307244,
+        "n_obs_t1p_rows": 70,
+        "cert_naive_broadcast": 1.000001206417011,
+        "cert_naive_trace_inflated": 15.999999999872133,
+        "cert_t1p_trace_upper": 1.079999999991369,
+        "cert_tight_upper_bound": 1.079999999991369,
+        "naive_broadcast_over_cert": 0.9259270429861136,
+        "naive_trace_over_cert": 14.814814814814815,
+        "cert_covers_empirical": true,
+        "criterion_c_2x_honest_naive": false,
+        "criterion_c_2x_trace_inflated": true
+      },
+      {
+        "seed": 11,
+        "empirical_t1p_mse": 0.3854670704698831,
+        "n_obs_t1p_rows": 70,
+        "cert_naive_broadcast": 1.0000021965421406,
+        "cert_naive_trace_inflated": 15.999999999874262,
+        "cert_t1p_trace_upper": 1.0799999999915129,
+        "cert_tight_upper_bound": 1.0799999999915129,
+        "naive_broadcast_over_cert": 0.9259279597685177,
+        "naive_trace_over_cert": 14.814814814814813,
+        "cert_covers_empirical": true,
+        "criterion_c_2x_honest_naive": false,
+        "criterion_c_2x_trace_inflated": true
+      },
+      {
+        "seed": 19,
+        "empirical_t1p_mse": 0.5359462905714669,
+        "n_obs_t1p_rows": 70,
+        "cert_naive_broadcast": 1.00000116326913,
+        "cert_naive_trace_inflated": 15.99999999987551,
+        "cert_t1p_trace_upper": 1.079999999991597,
+        "cert_tight_upper_bound": 1.079999999991597,
+        "naive_broadcast_over_cert": 0.9259270030341763,
+        "naive_trace_over_cert": 14.814814814814813,
+        "cert_covers_empirical": true,
+        "criterion_c_2x_honest_naive": false,
+        "criterion_c_2x_trace_inflated": true
+      },
+      {
+        "seed": 23,
+        "empirical_t1p_mse": 0.40242280337926695,
+        "n_obs_t1p_rows": 70,
+        "cert_naive_broadcast": 1.0000017544048927,
+        "cert_naive_trace_inflated": 15.999999999875264,
+        "cert_t1p_trace_upper": 1.0799999999915804,
+        "cert_tight_upper_bound": 1.0799999999915804,
+        "naive_broadcast_over_cert": 0.9259275503821192,
+        "naive_trace_over_cert": 14.814814814814815,
+        "cert_covers_empirical": true,
+        "criterion_c_2x_honest_naive": false,
+        "criterion_c_2x_trace_inflated": true
+      }
+    ],
+    "gard_sparse_oracle_frac_0.25": [
+      {
+        "fraction": 0.25,
+        "observed_rows": 15,
+        "full_rows": 60,
+        "shard_ls_mse": 0.6032329185017292,
+        "gard_sparse_mse": 0.052320452531936214,
+        "selected_graph_lambda": 0.003,
+        "rank_augmented": 16,
+        "seed": 3
+      },
+      {
+        "fraction": 0.25,
+        "observed_rows": 15,
+        "full_rows": 60,
+        "shard_ls_mse": 0.6583408567398545,
+        "gard_sparse_mse": 0.06398968690498942,
+        "selected_graph_lambda": 0.01,
+        "rank_augmented": 16,
+        "seed": 7
+      },
+      {
+        "fraction": 0.25,
+        "observed_rows": 15,
+        "full_rows": 60,
+        "shard_ls_mse": 0.6157649788536531,
+        "gard_sparse_mse": 0.0530932933338871,
+        "selected_graph_lambda": 0.003,
+        "rank_augmented": 16,
+        "seed": 11
+      },
+      {
+        "fraction": 0.25,
+        "observed_rows": 15,
+        "full_rows": 60,
+        "shard_ls_mse": 0.7033919230287431,
+        "gard_sparse_mse": 0.040882053657539,
+        "selected_graph_lambda": 0.003,
+        "rank_augmented": 16,
+        "seed": 19
+      },
+      {
+        "fraction": 0.25,
+        "observed_rows": 15,
+        "full_rows": 60,
+        "shard_ls_mse": 0.6994370980690418,
+        "gard_sparse_mse": 0.03919187293017656,
+        "selected_graph_lambda": 0.003,
+        "rank_augmented": 16,
+        "seed": 23
+      }
+    ],
+    "wrong40_gard": [
+      {
+        "seed": 3,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.55,
+        "incidence_rank_used": 21,
+        "incidence_rank_true": 21,
+        "snapshot_mse": 0.9980548045753946,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.24150023313996272,
+          "residual_mse_true_h": 0.2434312693466647,
+          "ratio_true_over_used": null
+        }
+      },
+      {
+        "seed": 7,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.55,
+        "incidence_rank_used": 21,
+        "incidence_rank_true": 21,
+        "snapshot_mse": 0.9733226667918451,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.13276551209872417,
+          "residual_mse_true_h": 0.1804165955212585,
+          "ratio_true_over_used": null
+        }
+      },
+      {
+        "seed": 11,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.525,
+        "incidence_rank_used": 21,
+        "incidence_rank_true": 21,
+        "snapshot_mse": 0.9685234719666685,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.1816214051880382,
+          "residual_mse_true_h": 0.20075921409518963,
+          "ratio_true_over_used": null
+        }
+      },
+      {
+        "seed": 19,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.525,
+        "incidence_rank_used": 21,
+        "incidence_rank_true": 21,
+        "snapshot_mse": 1.0096708921240762,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.20616400277638824,
+          "residual_mse_true_h": 0.2094182273277026,
+          "ratio_true_over_used": null
+        }
+      },
+      {
+        "seed": 23,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.55,
+        "incidence_rank_used": 21,
+        "incidence_rank_true": 21,
+        "snapshot_mse": 0.9971912849097988,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.231321430708537,
+          "residual_mse_true_h": 0.23210069137651357,
+          "ratio_true_over_used": null
+        }
+      },
+      {
+        "seed": 3,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.53125,
+        "incidence_rank_used": 32,
+        "incidence_rank_true": 32,
+        "snapshot_mse": 2.4851221709821036,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.03652730551381496,
+          "residual_mse_true_h": 0.4435621898310774,
+          "ratio_true_over_used": null
+        }
+      },
+      {
+        "seed": 7,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.5125,
+        "incidence_rank_used": 32,
+        "incidence_rank_true": 32,
+        "snapshot_mse": 1.9924914341043665,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.04289390948850901,
+          "residual_mse_true_h": 0.47904088001463807,
+          "ratio_true_over_used": null
+        }
+      },
+      {
+        "seed": 11,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.53125,
+        "incidence_rank_used": 32,
+        "incidence_rank_true": 32,
+        "snapshot_mse": 2.7692813146776856,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.039936121606467354,
+          "residual_mse_true_h": 0.4790552257578004,
+          "ratio_true_over_used": null
+        }
+      },
+      {
+        "seed": 19,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.51875,
+        "incidence_rank_used": 32,
+        "incidence_rank_true": 32,
+        "snapshot_mse": 4.764022274306212,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.030915901721070106,
+          "residual_mse_true_h": 0.815551641492644,
+          "ratio_true_over_used": null
+        }
+      },
+      {
+        "seed": 23,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.55625,
+        "incidence_rank_used": 32,
+        "incidence_rank_true": 32,
+        "snapshot_mse": 2.8160150158829693,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.028659488864535444,
+          "residual_mse_true_h": 0.4655590040048729,
+          "ratio_true_over_used": null
+        }
+      }
+    ],
+    "wrong40_jasper_q": [
+      {
+        "seed": 3,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.55,
+        "t1p_warm_blend": 0.65,
+        "t1p_warm_mse": 0.41698703391327896,
+        "snapshot_mse": 0.9583336833709863,
+        "jasper_q_hard_overlap": 0.475,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.1899658797379868,
+          "residual_mse_true_h": 0.21724260808182408,
+          "ratio_true_over_used": 1.1435875136180198
+        }
+      },
+      {
+        "seed": 7,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.55,
+        "t1p_warm_blend": 0.65,
+        "t1p_warm_mse": 0.4054809853402923,
+        "snapshot_mse": 0.9570704942381414,
+        "jasper_q_hard_overlap": 0.45,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.17662561137436533,
+          "residual_mse_true_h": 0.19875379812619626,
+          "ratio_true_over_used": 1.1252830015966897
+        }
+      },
+      {
+        "seed": 11,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.525,
+        "t1p_warm_blend": 0.65,
+        "t1p_warm_mse": 0.3985417563225193,
+        "snapshot_mse": 0.9718660282492954,
+        "jasper_q_hard_overlap": 0.425,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.18073580734970657,
+          "residual_mse_true_h": 0.19954890019680152,
+          "ratio_true_over_used": 1.1040916745993417
+        }
+      },
+      {
+        "seed": 19,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.525,
+        "t1p_warm_blend": 0.65,
+        "t1p_warm_mse": 0.5686362397240023,
+        "snapshot_mse": 0.9425234844160273,
+        "jasper_q_hard_overlap": 0.5,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.1922444462239234,
+          "residual_mse_true_h": 0.19299856064251084,
+          "ratio_true_over_used": 1.0039226850678904
+        }
+      },
+      {
+        "seed": 23,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.55,
+        "t1p_warm_blend": 0.65,
+        "t1p_warm_mse": 0.4029532746575785,
+        "snapshot_mse": 0.9044341026596925,
+        "jasper_q_hard_overlap": 0.575,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.19187010967141377,
+          "residual_mse_true_h": 0.18622513189771311,
+          "ratio_true_over_used": 0.970579170547367
+        }
+      },
+      {
+        "seed": 3,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.53125,
+        "t1p_warm_blend": 0.65,
+        "t1p_warm_mse": 0.4212482906423943,
+        "snapshot_mse": 0.9105743330111754,
+        "jasper_q_hard_overlap": 0.45625,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.16935275478065157,
+          "residual_mse_true_h": 0.17635850650367504,
+          "ratio_true_over_used": 1.041367804923501
+        }
+      },
+      {
+        "seed": 7,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.5125,
+        "t1p_warm_blend": 0.65,
+        "t1p_warm_mse": 0.4054809853402923,
+        "snapshot_mse": 0.9054316547874695,
+        "jasper_q_hard_overlap": 0.48125,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.18247864108687625,
+          "residual_mse_true_h": 0.19237859487894976,
+          "ratio_true_over_used": 1.0542526716173881
+        }
+      },
+      {
+        "seed": 11,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.53125,
+        "t1p_warm_blend": 0.65,
+        "t1p_warm_mse": 0.3761593148016776,
+        "snapshot_mse": 0.9155814624569457,
+        "jasper_q_hard_overlap": 0.45625,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.15200472616036104,
+          "residual_mse_true_h": 0.1556944954390943,
+          "ratio_true_over_used": 1.0242740431296897
+        }
+      },
+      {
+        "seed": 19,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.51875,
+        "t1p_warm_blend": 0.65,
+        "t1p_warm_mse": 0.5227503025460994,
+        "snapshot_mse": 0.9060095033485659,
+        "jasper_q_hard_overlap": 0.49375,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.19336558028278866,
+          "residual_mse_true_h": 0.20042548084813747,
+          "ratio_true_over_used": 1.036510637286243
+        }
+      },
+      {
+        "seed": 23,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.55625,
+        "t1p_warm_blend": 0.65,
+        "t1p_warm_mse": 0.44753577743105066,
+        "snapshot_mse": 0.8980925874965943,
+        "jasper_q_hard_overlap": 0.4625,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.17939117562384513,
+          "residual_mse_true_h": 0.18791820129285042,
+          "ratio_true_over_used": 1.0475331389035831
+        }
+      }
+    ]
+  },
+  "privacy_map": {
+    "framework_id": "QFL-PRIVACY-MAP",
+    "tier_table": [
+      {
+        "tier_id": "T1",
+        "observation_class": "Epoch-terminal-only (LASA-QTERM T1)",
+        "defender_posture_short": "Terminal-only publish",
+        "auditor_channel_short": "LASA-QTERM T1",
+        "status": "IMPOSSIBLE",
+        "key_metric": "T1 MSE mean=1.000",
+        "audit": {
+          "tier_id": "T1",
+          "status": "IMPOSSIBLE",
+          "t1_mse_mean": 0.9999294447040198,
+          "pass": true,
+          "verdict": "Terminal-only map depends only on dataset mean; per-sample snapshots not identifiable."
+        }
+      },
+      {
+        "tier_id": "T1p",
+        "observation_class": "Partial terminal rows (p<K per epoch)",
+        "defender_posture_short": "Partial terminal rows",
+        "auditor_channel_short": "LEAK-CERT v2 (honest naive)",
+        "status": "CERT_WEAK",
+        "key_metric": "naive/cert=0.93\u00d7 (emp=0.430)",
+        "audit": {
+          "tier_id": "T1p",
+          "status": "CERT_WEAK",
+          "empirical_t1p_mse_mean": 0.43008295632598903,
+          "cert_tight_mean": 1.0799999999915193,
+          "naive_baseline_mean": 1.0000014701110478,
+          "naive_over_cert_ratio_mean": 0.9259272871471298,
+          "criterion_c_2x_honest_naive": false,
+          "cert_covers_empirical_all": true,
+          "round07_trace_inflated_gaming_detected": true,
+          "pass": false,
+          "verdict": "Criterion C fails under honest naive; Round 07 trace-inflated baseline was gaming.",
+          "per_run": [
+            {
+              "seed": 3,
+              "empirical_t1p_mse": 0.4032409806562558,
+              "n_obs_t1p_rows": 70,
+              "cert_naive_broadcast": 1.0000010299220645,
+              "cert_naive_trace_inflated": 15.999999999874627,
+              "cert_t1p_trace_upper": 1.0799999999915373,
+              "cert_tight_upper_bound": 1.0799999999915373,
+              "naive_broadcast_over_cert": 0.9259268795647225,
+              "naive_trace_over_cert": 14.814814814814815,
+              "cert_covers_empirical": true,
+              "criterion_c_2x_honest_naive": false,
+              "criterion_c_2x_trace_inflated": true
+            },
+            {
+              "seed": 7,
+              "empirical_t1p_mse": 0.42333763655307244,
+              "n_obs_t1p_rows": 70,
+              "cert_naive_broadcast": 1.000001206417011,
+              "cert_naive_trace_inflated": 15.999999999872133,
+              "cert_t1p_trace_upper": 1.079999999991369,
+              "cert_tight_upper_bound": 1.079999999991369,
+              "naive_broadcast_over_cert": 0.9259270429861136,
+              "naive_trace_over_cert": 14.814814814814815,
+              "cert_covers_empirical": true,
+              "criterion_c_2x_honest_naive": false,
+              "criterion_c_2x_trace_inflated": true
+            },
+            {
+              "seed": 11,
+              "empirical_t1p_mse": 0.3854670704698831,
+              "n_obs_t1p_rows": 70,
+              "cert_naive_broadcast": 1.0000021965421406,
+              "cert_naive_trace_inflated": 15.999999999874262,
+              "cert_t1p_trace_upper": 1.0799999999915129,
+              "cert_tight_upper_bound": 1.0799999999915129,
+              "naive_broadcast_over_cert": 0.9259279597685177,
+              "naive_trace_over_cert": 14.814814814814813,
+              "cert_covers_empirical": true,
+              "criterion_c_2x_honest_naive": false,
+              "criterion_c_2x_trace_inflated": true
+            },
+            {
+              "seed": 19,
+              "empirical_t1p_mse": 0.5359462905714669,
+              "n_obs_t1p_rows": 70,
+              "cert_naive_broadcast": 1.00000116326913,
+              "cert_naive_trace_inflated": 15.99999999987551,
+              "cert_t1p_trace_upper": 1.079999999991597,
+              "cert_tight_upper_bound": 1.079999999991597,
+              "naive_broadcast_over_cert": 0.9259270030341763,
+              "naive_trace_over_cert": 14.814814814814813,
+              "cert_covers_empirical": true,
+              "criterion_c_2x_honest_naive": false,
+              "criterion_c_2x_trace_inflated": true
+            },
+            {
+              "seed": 23,
+              "empirical_t1p_mse": 0.40242280337926695,
+              "n_obs_t1p_rows": 70,
+              "cert_naive_broadcast": 1.0000017544048927,
+              "cert_naive_trace_inflated": 15.999999999875264,
+              "cert_t1p_trace_upper": 1.0799999999915804,
+              "cert_tight_upper_bound": 1.0799999999915804,
+              "naive_broadcast_over_cert": 0.9259275503821192,
+              "naive_trace_over_cert": 14.814814814814815,
+              "cert_covers_empirical": true,
+              "criterion_c_2x_honest_naive": false,
+              "criterion_c_2x_trace_inflated": true
+            }
+          ]
+        }
+      },
+      {
+        "tier_id": "S2-oracle",
+        "observation_class": "Stage-2 batch means + oracle incidence + chain graph",
+        "defender_posture_short": "Oracle incidence + graph",
+        "auditor_channel_short": "GARD-SPARSE",
+        "status": "CONDITIONAL_THREAT",
+        "key_metric": "GARD MSE=0.050 @ 75% reduction",
+        "audit": {
+          "tier_id": "S2-oracle",
+          "status": "CONDITIONAL_THREAT",
+          "fraction": 0.25,
+          "observed_rows_mean": 15,
+          "full_rows": 60,
+          "row_reduction_vs_full": 0.75,
+          "gard_sparse_mse_mean": 0.04989547187170566,
+          "target_mse": 0.1,
+          "parent_mean_reaches_target": true,
+          "pass": true,
+          "verdict": "Oracle GARD-SPARSE @ 25% rows: mean MSE 0.0499 (\u2264) 0.1; 75% row reduction vs full.",
+          "per_run": [
+            {
+              "fraction": 0.25,
+              "observed_rows": 15,
+              "full_rows": 60,
+              "shard_ls_mse": 0.6032329185017292,
+              "gard_sparse_mse": 0.052320452531936214,
+              "selected_graph_lambda": 0.003,
+              "rank_augmented": 16,
+              "seed": 3
+            },
+            {
+              "fraction": 0.25,
+              "observed_rows": 15,
+              "full_rows": 60,
+              "shard_ls_mse": 0.6583408567398545,
+              "gard_sparse_mse": 0.06398968690498942,
+              "selected_graph_lambda": 0.01,
+              "rank_augmented": 16,
+              "seed": 7
+            },
+            {
+              "fraction": 0.25,
+              "observed_rows": 15,
+              "full_rows": 60,
+              "shard_ls_mse": 0.6157649788536531,
+              "gard_sparse_mse": 0.0530932933338871,
+              "selected_graph_lambda": 0.003,
+              "rank_augmented": 16,
+              "seed": 11
+            },
+            {
+              "fraction": 0.25,
+              "observed_rows": 15,
+              "full_rows": 60,
+              "shard_ls_mse": 0.7033919230287431,
+              "gard_sparse_mse": 0.040882053657539,
+              "selected_graph_lambda": 0.003,
+              "rank_augmented": 16,
+              "seed": 19
+            },
+            {
+              "fraction": 0.25,
+              "observed_rows": 15,
+              "full_rows": 60,
+              "shard_ls_mse": 0.6994370980690418,
+              "gard_sparse_mse": 0.03919187293017656,
+              "selected_graph_lambda": 0.003,
+              "rank_augmented": 16,
+              "seed": 23
+            }
+          ]
+        }
+      },
+      {
+        "tier_id": "S2-wrong40",
+        "observation_class": "Stage-2 batch means + wrong40 incidence",
+        "defender_posture_short": "Hide batch assignment",
+        "auditor_channel_short": "GARD + JASPER-Q",
+        "status": "BARRIER",
+        "key_metric": "JASPER mean @50%=0.907",
+        "audit": {
+          "tier_id": "S2-wrong40",
+          "theorem_id": "ABT-1",
+          "status": "BARRIER",
+          "assignment_regime": "wrong40",
+          "fraction_checks": [
+            {
+              "fraction": 0.25,
+              "gard_mean_mse": 0.9893526240735568,
+              "jasper_mean_mse": 0.9468455585868286,
+              "abt1_floor": 0.15,
+              "barrier_holds": true
+            },
+            {
+              "fraction": 0.5,
+              "gard_mean_mse": 2.9653864419906677,
+              "jasper_mean_mse": 0.9071379082201501,
+              "abt1_floor": 0.15,
+              "barrier_holds": true
+            }
+          ],
+          "pass": true,
+          "verdict": "ABT-1 floor holds: wrong incidence blocks snapshot MSE < 0.15 at tested fractions."
+        }
+      }
+    ],
+    "tier_table_markdown": "| Tier | Observation | Defender | Auditor | Status | Key metric |\n|------|-------------|----------|---------|--------|------------|\n| **T1** | Epoch-terminal-only (LASA-QTERM T1) | Terminal-only publish | LASA-QTERM T1 | IMPOSSIBLE | T1 MSE mean=1.000 |\n| **T1p** | Partial terminal rows (p<K per epoch) | Partial terminal rows | LEAK-CERT v2 (honest naive) | CERT_WEAK | naive/cert=0.93\u00d7 (emp=0.430) |\n| **S2-oracle** | Stage-2 batch means + oracle incidence + chain graph | Oracle incidence + graph | GARD-SPARSE | CONDITIONAL_THREAT | GARD MSE=0.050 @ 75% reduction |\n| **S2-wrong40** | Stage-2 batch means + wrong40 incidence | Hide batch assignment | GARD + JASPER-Q | BARRIER | JASPER mean @50%=0.907 |",
+    "config_breakthrough": {
+      "A_gard_oracle_75pct_reduction_at_mse_0.10": true,
+      "C_leak_cert_2x_honest_naive": false,
+      "T1_impossibility_confirmed": true,
+      "ABT1_wrong40_barrier": true
+    },
+    "audits": {
+      "T1": {
+        "tier_id": "T1",
+        "status": "IMPOSSIBLE",
+        "t1_mse_mean": 0.9999294447040198,
+        "pass": true,
+        "verdict": "Terminal-only map depends only on dataset mean; per-sample snapshots not identifiable."
+      },
+      "T1p": {
+        "tier_id": "T1p",
+        "status": "CERT_WEAK",
+        "empirical_t1p_mse_mean": 0.43008295632598903,
+        "cert_tight_mean": 1.0799999999915193,
+        "naive_baseline_mean": 1.0000014701110478,
+        "naive_over_cert_ratio_mean": 0.9259272871471298,
+        "criterion_c_2x_honest_naive": false,
+        "cert_covers_empirical_all": true,
+        "round07_trace_inflated_gaming_detected": true,
+        "pass": false,
+        "verdict": "Criterion C fails under honest naive; Round 07 trace-inflated baseline was gaming.",
+        "per_run": [
+          {
+            "seed": 3,
+            "empirical_t1p_mse": 0.4032409806562558,
+            "n_obs_t1p_rows": 70,
+            "cert_naive_broadcast": 1.0000010299220645,
+            "cert_naive_trace_inflated": 15.999999999874627,
+            "cert_t1p_trace_upper": 1.0799999999915373,
+            "cert_tight_upper_bound": 1.0799999999915373,
+            "naive_broadcast_over_cert": 0.9259268795647225,
+            "naive_trace_over_cert": 14.814814814814815,
+            "cert_covers_empirical": true,
+            "criterion_c_2x_honest_naive": false,
+            "criterion_c_2x_trace_inflated": true
+          },
+          {
+            "seed": 7,
+            "empirical_t1p_mse": 0.42333763655307244,
+            "n_obs_t1p_rows": 70,
+            "cert_naive_broadcast": 1.000001206417011,
+            "cert_naive_trace_inflated": 15.999999999872133,
+            "cert_t1p_trace_upper": 1.079999999991369,
+            "cert_tight_upper_bound": 1.079999999991369,
+            "naive_broadcast_over_cert": 0.9259270429861136,
+            "naive_trace_over_cert": 14.814814814814815,
+            "cert_covers_empirical": true,
+            "criterion_c_2x_honest_naive": false,
+            "criterion_c_2x_trace_inflated": true
+          },
+          {
+            "seed": 11,
+            "empirical_t1p_mse": 0.3854670704698831,
+            "n_obs_t1p_rows": 70,
+            "cert_naive_broadcast": 1.0000021965421406,
+            "cert_naive_trace_inflated": 15.999999999874262,
+            "cert_t1p_trace_upper": 1.0799999999915129,
+            "cert_tight_upper_bound": 1.0799999999915129,
+            "naive_broadcast_over_cert": 0.9259279597685177,
+            "naive_trace_over_cert": 14.814814814814813,
+            "cert_covers_empirical": true,
+            "criterion_c_2x_honest_naive": false,
+            "criterion_c_2x_trace_inflated": true
+          },
+          {
+            "seed": 19,
+            "empirical_t1p_mse": 0.5359462905714669,
+            "n_obs_t1p_rows": 70,
+            "cert_naive_broadcast": 1.00000116326913,
+            "cert_naive_trace_inflated": 15.99999999987551,
+            "cert_t1p_trace_upper": 1.079999999991597,
+            "cert_tight_upper_bound": 1.079999999991597,
+            "naive_broadcast_over_cert": 0.9259270030341763,
+            "naive_trace_over_cert": 14.814814814814813,
+            "cert_covers_empirical": true,
+            "criterion_c_2x_honest_naive": false,
+            "criterion_c_2x_trace_inflated": true
+          },
+          {
+            "seed": 23,
+            "empirical_t1p_mse": 0.40242280337926695,
+            "n_obs_t1p_rows": 70,
+            "cert_naive_broadcast": 1.0000017544048927,
+            "cert_naive_trace_inflated": 15.999999999875264,
+            "cert_t1p_trace_upper": 1.0799999999915804,
+            "cert_tight_upper_bound": 1.0799999999915804,
+            "naive_broadcast_over_cert": 0.9259275503821192,
+            "naive_trace_over_cert": 14.814814814814815,
+            "cert_covers_empirical": true,
+            "criterion_c_2x_honest_naive": false,
+            "criterion_c_2x_trace_inflated": true
+          }
+        ]
+      },
+      "S2-oracle": {
+        "tier_id": "S2-oracle",
+        "status": "CONDITIONAL_THREAT",
+        "fraction": 0.25,
+        "observed_rows_mean": 15,
+        "full_rows": 60,
+        "row_reduction_vs_full": 0.75,
+        "gard_sparse_mse_mean": 0.04989547187170566,
+        "target_mse": 0.1,
+        "parent_mean_reaches_target": true,
+        "pass": true,
+        "verdict": "Oracle GARD-SPARSE @ 25% rows: mean MSE 0.0499 (\u2264) 0.1; 75% row reduction vs full.",
+        "per_run": [
+          {
+            "fraction": 0.25,
+            "observed_rows": 15,
+            "full_rows": 60,
+            "shard_ls_mse": 0.6032329185017292,
+            "gard_sparse_mse": 0.052320452531936214,
+            "selected_graph_lambda": 0.003,
+            "rank_augmented": 16,
+            "seed": 3
+          },
+          {
+            "fraction": 0.25,
+            "observed_rows": 15,
+            "full_rows": 60,
+            "shard_ls_mse": 0.6583408567398545,
+            "gard_sparse_mse": 0.06398968690498942,
+            "selected_graph_lambda": 0.01,
+            "rank_augmented": 16,
+            "seed": 7
+          },
+          {
+            "fraction": 0.25,
+            "observed_rows": 15,
+            "full_rows": 60,
+            "shard_ls_mse": 0.6157649788536531,
+            "gard_sparse_mse": 0.0530932933338871,
+            "selected_graph_lambda": 0.003,
+            "rank_augmented": 16,
+            "seed": 11
+          },
+          {
+            "fraction": 0.25,
+            "observed_rows": 15,
+            "full_rows": 60,
+            "shard_ls_mse": 0.7033919230287431,
+            "gard_sparse_mse": 0.040882053657539,
+            "selected_graph_lambda": 0.003,
+            "rank_augmented": 16,
+            "seed": 19
+          },
+          {
+            "fraction": 0.25,
+            "observed_rows": 15,
+            "full_rows": 60,
+            "shard_ls_mse": 0.6994370980690418,
+            "gard_sparse_mse": 0.03919187293017656,
+            "selected_graph_lambda": 0.003,
+            "rank_augmented": 16,
+            "seed": 23
+          }
+        ]
+      },
+      "S2-wrong40": {
+        "tier_id": "S2-wrong40",
+        "theorem_id": "ABT-1",
+        "status": "BARRIER",
+        "assignment_regime": "wrong40",
+        "fraction_checks": [
+          {
+            "fraction": 0.25,
+            "gard_mean_mse": 0.9893526240735568,
+            "jasper_mean_mse": 0.9468455585868286,
+            "abt1_floor": 0.15,
+            "barrier_holds": true
+          },
+          {
+            "fraction": 0.5,
+            "gard_mean_mse": 2.9653864419906677,
+            "jasper_mean_mse": 0.9071379082201501,
+            "abt1_floor": 0.15,
+            "barrier_holds": true
+          }
+        ],
+        "pass": true,
+        "verdict": "ABT-1 floor holds: wrong incidence blocks snapshot MSE < 0.15 at tested fractions."
+      }
+    }
+  },
+  "leak_cert_fix": {
+    "round07_issue": "trace-inflated naive baseline gamed criterion C (~14.8\u00d7)",
+    "round08_fix": "criterion C uses cert_naive_broadcast (mean-only) only",
+    "trace_inflated_retained_for_audit": true
+  },
+  "honesty_notes": [
+    "QFL-PRIVACY-MAP: defender chooses publish tier; auditor runs max attack for that tier.",
+    "T1 impossibility cites qfl-terminal-snapshot; not relitigated here.",
+    "GARD-SPARSE 75% reduction requires oracle assignment + chain graph (Round 01).",
+    "ABT-1 wrong40 barrier: proof sketch in paper/assignment_barrier_theorem.md.",
+    "LEAK-CERT v2 cert covers empirical T1p; honest 2\u00d7 criterion C fails (naive\u2248cert).",
+    "No supervisor_review.md for Round 08 (scientist-only integration)."
+  ],
+  "runtime_sec": 7.415963289968204
+}
