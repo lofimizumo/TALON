@@ -151,7 +151,51 @@ Takeaways:
 
 Round 08 stress results remain in `artifacts/round08_metrics.json` for reference.
 
-## 7. How to Write the Paper
+## 7. Round 10 Results (proofs + decoder + frozen backbone)
+
+Run:
+
+```bash
+cd /workspace
+python3 code/benchmark_round10.py
+```
+
+Outputs:
+
+- `artifacts/round10_metrics.json`
+- `artifacts/round10_decoder_probe.svg`
+- `artifacts/round10_frozen_mlp.svg`
+- `logs/experiment_round10.log`
+- `paper/proofs.md`, `paper/draft.md`, `paper/method.tex`
+
+### Formal proofs
+
+`paper/proofs.md` contains complete proofs for aggregate identifiability (Theorem 1) and individual non-identifiability (Theorem 2), with assumptions matching `theorem_scope.exact` in the metrics JSON.
+
+### Decoder semantic probe
+
+Fixed linear decoder $y = xD$ to synthetic 28-D "pixels." When TANGO is accurate (`decoder_balanced`):
+
+| Metric | Value |
+|---|---:|
+| Hidden prototype MSE | `0.000151` |
+| Pixel class-mean MSE | `0.000151` |
+| Hidden / pixel correlation | ≈ `1.0` |
+
+Under minibatch (`decoder_minibatch`), pixel MSE rises to `6.5877` — semantic leakage tracks Tier-1 failure. High correlation alone is misleading when MSE is huge.
+
+### Frozen MLP features
+
+Nonlinear $\phi(x)$ is frozen; only the linear head trains:
+
+| Scenario | TANGO proto MSE | Passive proto MSE | Gain |
+|---|---:|---:|---:|
+| frozen_mlp_balanced | `0.00302` | `0.367` | **218x** |
+| frozen_mlp_imbalanced | `0.00438` | `0.613` | **185x** |
+
+Supports Tier-1 under fixed representations; does **not** prove robustness to representation drift during local training.
+
+## 8. How to Write the Paper
 
 Recommended title shape:
 
@@ -166,7 +210,7 @@ Recommended structure:
 5. **Experiments:** show Round-08 TANGO stress tests, Round-05 GARD conditional gains, Round-06 JASPER negative assignment results, and Round-03 JOLI context.
 6. **Limits:** make clear that terminal-only attacks recover aggregate hidden prototypes, not individual samples.
 
-## 8. Claim Discipline
+## 9. Claim Discipline
 
 Safe claims:
 
@@ -183,10 +227,14 @@ Unsafe claims:
 - GARD solves missing intermediate gradients in the full unknown-assignment setting.
 - JOLI is a new leakage channel.
 
-## 9. Code Map
+## 10. Code Map
 
 | File | Role |
 |---|---|
+| `code/benchmark_round10.py` | Decoder probe + frozen MLP backbone |
+| `artifacts/round10_metrics.json` | Round-10 metrics |
+| `paper/proofs.md` | Formal theorem proofs |
+| `paper/draft.md` | Limits-first manuscript draft |
 | `code/benchmark_round09.py` | Paper-readiness benchmark with baselines and extended stress |
 | `artifacts/round09_metrics.json` | Round-09 metrics (count + prototype separate) |
 | `artifacts/round09_baselines.svg` | Method comparison plot |
