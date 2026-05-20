@@ -129,11 +129,81 @@ Therefore all terminal \(\Delta W^{(r)}, \Delta b^{(r)}\) match. Two distinct da
 
 ---
 
+## Lemma MB-A (Minibatch effective steps at \(W_0 = 0\))
+
+**Assumptions:** Same as Lemma A at fixed \(W_0 = 0\) **within one local step** (weights frozen while summing minibatch contributions); client performs one shuffled pass per local step with equal minibatch size \(B\); \(N\) divisible by \(B\); PyTorch-style per-minibatch normalization \(1/B\); public \(\eta, T, B, N\).
+
+**Claim:** Let \(M = N/B\). Over one local step at \(W_0\), the summed minibatch bias gradient equals \((N/B)\) times the full-batch bias gradient at \(W_0\). Over \(T\) local steps (reshuffled each step),
+\[
+\Delta b \approx -\eta\, T_{\mathrm{eff}}\, \nabla_b \mathcal{L}\Big|_{W_0}, \quad
+\Delta W \approx -\eta\, T_{\mathrm{eff}}\, \nabla_W \mathcal{L}\Big|_{W_0}, \quad
+T_{\mathrm{eff}} = T \cdot \frac{N}{B}.
+\]
+Hence Lemma A holds after replacing \(T\) with \(T_{\mathrm{eff}}\) in `avg_grad = -\Delta/(\eta T_{\mathrm{eff}})` (`effective_gradient_steps` in `code/benchmark_round12.py`).
+
+**Proof.** With \(W_0 = 0\), \(\pi_{i,c} = p_c\) for all \(i\) during that step. For minibatch \(b\) with index set \(\mathcal{I}_b\), \(|\mathcal{I}_b| = B\),
+\[
+\frac{\partial \mathcal{L}_b}{\partial b_c}
+= \sum_{i \in \mathcal{I}_b} \frac{\pi_{i,c} - \mathbf{1}[y_i=c]}{B}
+= \frac{1}{B}\sum_{i \in \mathcal{I}_b} (p_c - \mathbf{1}[y_i=c]).
+\]
+Summing over \(M\) disjoint minibatches covering all samples (shuffle irrelevant to the sum at fixed \(W_0\)):
+\[
+\sum_{b=1}^{M} \frac{\partial \mathcal{L}_b}{\partial b_c}
+= \frac{1}{B}\sum_{i=1}^{N} (p_c - \mathbf{1}[y_i=c])
+= \frac{1}{B}\bigl(N p_c - n_c\bigr).
+\]
+Compare full-batch one step (`benchmark_round09.py`): \(\partial \mathcal{L}/\partial b_c = (1/N)(N p_c - n_c)\) after the \(1/N\) normalization, so the terminal bias increment from one full-batch step scales as \((N p_c - n_c)/N\), while the minibatch sum scales as \((N p_c - n_c)/B\). Ratio \(= N/B\). The weight block is identical with \(x_i\) factored out. Accumulating \(T\) local steps gives \(T_{\mathrm{eff}} = T(N/B)\). ∎
+
+**Remark (Round 11 algebra error).** The incorrect identity \((1/B)\sum_b (B p - n_c^{(b)}) = (M/B)(N p - n_c)\) double-counts \(M\); the correct sum **already partitions** all \(N\) samples once, yielding \((N/B)(N p - n_c)\) only when expressed against a **mis-scaled** full-batch denominator — the lemma above states the comparison to full-batch normalization explicitly.
+
+---
+
+## Lemma MB-B (Within-step drift bound — Round 12)
+
+**Setup:** One local step with \(M\) minibatches; weights updated as \(W^{(m+1)} = W^{(m)} - \eta G^{(m)}\) where \(G^{(m)}\) is the minibatch weight gradient at \(W^{(m)}\). Let \(W_0\) be the step start and \(W_M\) the step end.
+
+**Claim (first-order).** Under \(\|G^{(m)}\| \le G_{\max}\) for all \(m\),
+\[
+\|W_M - W_0\|_F \le \eta M G_{\max} = \eta \frac{N}{B} G_{\max}.
+\]
+For softmax linear head, the bias-gradient error from replacing frozen \(W_0\) with terminal \(W_M\) within the step is bounded by
+\[
+\Bigl\|\nabla_b \mathcal{L}(W_M) - \nabla_b \mathcal{L}(W_0)\Bigr\|_2
+\le L_b\, \|W_M - W_0\|_F,
+\]
+with \(L_b \le 2\sqrt{C}\,\|X\|_2\) in the simulator (Lipschitz constant of \(\pi(W^\top x)\) w.r.t. \(W\) at fixed \(x\)).
+
+**Empirical bound (code).** `within_step_weight_drift` in `code/benchmark_round12.py` measures \(\|W_M - W_0\|_F\) per local step on `minibatch_sgd`; mean drift \(\approx 0.42\) with \(T_{\mathrm{eff}} = 18\) explains the prototype MSE floor \(\approx 0.01\) vs exact tier \(1.5\times 10^{-4}\) (see `artifacts/round12_metrics.json`).
+
+**Drift-corrected second pass (`tango_mb_drift2`).** Scale terminal deltas by \((1 + \hat\delta)^{-1}\) with \(\hat\delta = \|\Delta W\|_F / (\eta T_{\mathrm{eff}} \hat G)\) before re-inversion; reduces median prototype MSE on primary minibatch vs single-pass TANGO-MB.
+
+---
+
+## Lemma MB-Iter (One Jacobian step for \(W_0 \neq 0\) — Round 12)
+
+**Assumptions:** Known \(W_0\) (public init or attacker estimate); minibatch training as above; first-order expansion of \(\pi_{i,c}(W)\) around \(W_0\):
+\[
+\pi_{i,c}(W) \approx p^{(r)}_c + (x_i^\top \otimes e_c^\top)\,\mathrm{vec}(W - W_0),
+\]
+with round-\(r\) bias \(b^{(r)}\) absorbed into \(p^{(r)} = \mathrm{softmax}(b^{(r)})\) at \(W_0 = 0\) head init.
+
+**Procedure (`tango_mb_iter` in `code/benchmark_round12.py`):**
+1. Apply Lemma MB-A scaling; solve for \((S, S_c, n_c)\) at \(W_0\).
+2. Form \(\hat W = W_0 - \eta T_{\mathrm{eff}}\,\widehat{\nabla_W \mathcal{L}}\) from recovered weight moments.
+3. Recompute class-conditional mean probabilities \(\tilde p^{(r)}_c\) at \(\hat W\) and bias-correct \(\bar g^{(r)}\) by \((\tilde p^{(r)}_c - p^{(r)}_c)\); re-solve counts and prototypes.
+
+This is one Newton/Jacobian correction, not full iterative FL inversion.
+
+**Empirical (Round 11→12):** `minibatch_nonzero_init` prototype MSE improves vs single-pass TANGO-MB when `init_weight_scale > 0`.
+
+---
+
 ## Scope boundaries (not covered by Theorems 1–2)
 
 | Violation | Effect |
 |---|---|
-| Minibatch SGD | Batch composition enters gradients; Lemma A fails (Round 09/10: prototype MSE \(\gg 1\)). |
+| Minibatch SGD (vanilla \(T\)) | Lemma A scaling wrong (Round 09/10: prototype MSE \(\gg 1\)). **Corrected** by Lemma MB-A / TANGO-MB (Rounds 11–12). |
 | Nonzero unknown \(W_0\) | Initial \(\pi_{i,c}\) depends on \(x_i\); weight system nonlinear in aggregates. |
 | Nonlinear representation drift | Hidden features change during local training; frozen-feature experiments test partial mitigation (Round 10). |
 | Passive single-round probing | Rank deficiency; passive baseline in Round 09. |
@@ -147,6 +217,11 @@ These map to `theorem_scope.approximate_empirical` scenarios in metrics JSON.
 | Proof object | Code reference |
 |---|---|
 | Lemma A equations | `estimate_counts`, `tango_estimate_sums` in `code/benchmark_round09.py` |
+| Lemma MB-A scaling | `effective_gradient_steps`, `tango_mb_estimate_sums` in `code/benchmark_round12.py` |
+| Lemma MB-B drift | `within_step_weight_drift`, `tango_mb_drift2` in `code/benchmark_round12.py` |
+| Lemma MB-Iter | `tango_mb_iter_estimate_sums` in `code/benchmark_round12.py` |
+| MB count (bias LS) | `estimate_counts_mb` in `code/benchmark_round12.py` |
+| Stack+ridge (passive) | `stack_mb_ridge_estimate_sums` in `code/benchmark_round12.py` |
 | Theorem 1 linear solve | per-coordinate `lstsq` in `tango_estimate_sums` |
 | Theorem 2 floor | `within_class_variance`, `individual_mse_from_prototypes` |
 | Probe full-rank | `design_condition_number` |
