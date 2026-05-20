@@ -12,6 +12,7 @@
 | 2 | [x] | [x] | REVISE_MAJOR |
 | 3 | [x] | [x] | REVISE_MAJOR |
 | 4 | [x] | [x] | REVISE_MAJOR |
+| 5 | [x] | [x] | REVISE_MAJOR |
 
 ## Paths
 
