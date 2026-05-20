@@ -5,7 +5,10 @@
   "run_root": "/Users/yetao/Documents/06.My Papers/CQU/2026/06.TALON",
   "shard_repo": "/Users/yetao/Documents/06.My Papers/CQU/2026/01.SHARD",
   "rounds_planned": 12,
-  "current_round": 8,
+  "current_round": 10,
+  "status": "ACCEPTED",
+  "accepted_at": "2026-05-20T07:15:00Z",
+  "final_verdict_round": 10,
   "stop_mode": "until_acceptance",
   "acceptance": {
     "supervisor_verdicts": ["ACCEPT"],

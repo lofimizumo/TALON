@@ -485,7 +485,7 @@
     "paper/method.tex",
     "paper/draft.md"
   ],
-  "runtime_seconds": 0.10912489891052246,
+  "runtime_seconds": 0.09059405326843262,
   "theorem_scope": {
     "approximate_empirical": [
       "decoder_minibatch",
