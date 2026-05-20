@@ -1,4 +1,4 @@
-# TALON/TANGO Manuscript Draft (Round 12)
+# TALON/TANGO Manuscript Draft (Round 13)
 
 Working title: **Beyond SHARD: Tiered Gradient Leakage and Identifiability Limits Under Active Terminal Probing**
 
@@ -8,7 +8,7 @@ Formal proofs: `paper/proofs.md`. LaTeX fragment: `paper/method.tex`.
 
 ## Abstract
 
-Federated learning often leaks only **terminal** client model updates, not intermediate minibatch gradients required by SHARD-style reconstruction. We introduce **TALON** (observation tiers) and **TANGO** (active terminal probing) for recovering class counts, class sums, and hidden prototypes under a linear-head, first-order model. We prove aggregate identifiability in the full-batch exact regime and **Lemma MB-A** for minibatch divisor correction at \(W_0=0\), with **Lemma MB-B** drift bounds tied to code. Round 12 shows **TANGO-MB** on primary `minibatch_sgd`: prototype MSE **0.011** (median **0.011**) vs passive **0.753**; count MAE **0.100** vs passive **0.295**; scaling-only passive+MB **0.284** — most gain is **active probing**, not bookkeeping alone. **STORM** is removed; **TANGO-MB-drift2** and **stack-MB-ridge** add differentiated tiers. Count and prototype metrics are reported **separately**. Individual sample recovery remains impossible (Theorem 2).
+Federated learning often leaks only **terminal** client model updates, not intermediate minibatch gradients required by SHARD-style reconstruction. We introduce **TALON** (observation tiers) and **TANGO** (active terminal probing) for recovering class counts, class sums, and hidden prototypes under a linear-head, first-order model. We prove aggregate identifiability in the full-batch exact regime and **Lemma MB-A** for minibatch divisor correction at \(W_0=0\), with **Lemma MB-B** drift bounds (mean \(\|W_M-W_0\|_F \approx 0.112\)). Round 13 retests **TANGO-MB** on primary `minibatch_sgd`: prototype MSE **0.011** (median **0.011**, IQR **0.005**) vs passive **0.753**; count MAE **0.100** vs passive **0.295**. **TANGO-JOINT**, **TANGO-COUPLED**, and trajectory-midpoint estimators **do not** beat TANGO-MB (means **0.27–0.28**). Honest scaling-only ablation **`passive_mb_scale_only`** yields **0.151** (median **0.140**) — active gain over scaling is **\(\approx 14\times\)**, not the inflated **\(\approx 26\times\)** from Round 12’s coupled `passive_mb`. Individual sample recovery remains impossible (Theorem 2).
 
 ---
 
@@ -16,17 +16,18 @@ Federated learning often leaks only **terminal** client model updates, not inter
 
 ### 1.1 Minibatch SGD (Phase-2 primary)
 
-| Method | Prototype MSE (mean / median) | Count MAE |
+| Method | Prototype MSE (mean / median / IQR) | Count MAE |
 |---|---:|---:|
 | TANGO vanilla | 6.588 / — | — |
 | Passive multi-round | 0.753 / 0.751 | 0.295 |
-| Passive + MB scaling only | **0.284** / 0.282 | — |
-| **TANGO-MB (active)** | **0.011** / **0.011** | **0.100** |
-| TANGO-MB-drift2 | 0.025 / — | — |
+| **passive_mb_scale_only (R11)** | **0.151** / **0.140** / 0.032 | — |
+| **TANGO-MB (active)** | **0.011** / **0.011** / 0.005 | **0.100** |
+| TANGO-JOINT | 0.283 / 0.280 / 0.038 | 0.195 |
+| TANGO-COUPLED | 0.272 / 0.276 | — |
 
-Vanilla TANGO mis-scales terminal deltas (\(T\) vs \(T_{\mathrm{eff}}=T(N/B)\)). TANGO-MB fixes Lemma MB-A; residual \(\sim 0.01\) MSE vs exact \(1.5\times 10^{-4}\) is bounded by within-step drift (Lemma MB-B; mean \(\|W_M-W_0\|_F \approx 0.11\) in `artifacts/round12_metrics.json`).
+Vanilla TANGO mis-scales terminal deltas (\(T\) vs \(T_{\mathrm{eff}}=T(N/B)\)). TANGO-MB fixes Lemma MB-A; residual \(\sim 0.01\) MSE vs exact \(1.5\times 10^{-4}\) correlates with within-step drift (Lemma MB-B; mean \(\|W_M-W_0\|_F \approx 0.112\) in `artifacts/round13_metrics.json`).
 
-**Active vs scaling:** passive+MB improves over passive (\(0.28\) vs \(0.75\)) but active TANGO-MB adds **\(\approx 26\times\)** further prototype gain on the primary scenario.
+**Active vs scaling (honest):** scaling-only **0.151** vs passive **0.753**; active TANGO-MB adds **\(\approx 14\times\)** over scaling-only (not \(\approx 26\times\) using Round 12 coupled passive_mb **0.284**).
 
 ### 1.2 Dual metrics
 

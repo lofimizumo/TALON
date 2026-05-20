@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="460" viewBox="0 0 960 460">
+<rect width="100%" height="100%" fill="white"/>
+<text x="480.0" y="22" text-anchor="middle" font-size="14" font-family="sans-serif">Round 13: prototype MSE (median over seeds)</text>
+<line x1="62" x2="898" y1="398" y2="398" stroke="#333"/>
+<line x1="62" x2="62" y1="62" y2="398" stroke="#333"/>
+<text x="62.0" y="430" transform="rotate(22 62.0,430)" text-anchor="start" font-size="10">minibatch_sgd</text>
+<text x="271.0" y="430" transform="rotate(22 271.0,430)" text-anchor="start" font-size="10">minibatch_nonzero_init</text>
+<text x="480.0" y="430" transform="rotate(22 480.0,430)" text-anchor="start" font-size="10">minibatch_label_noise</text>
+<text x="689.0" y="430" transform="rotate(22 689.0,430)" text-anchor="start" font-size="10">minibatch_terminal_noise</text>
+<text x="898.0" y="430" transform="rotate(22 898.0,430)" text-anchor="start" font-size="10">frozen_mlp_minibatch</text>
+<polyline fill="none" stroke="#2ca02c" stroke-width="2.2" points="62.0,395.7 271.0,395.0 480.0,395.4 689.0,395.7 898.0,379.6"/>
+<circle cx="62.0" cy="395.7" r="3.5" fill="#2ca02c"/>
+<circle cx="271.0" cy="395.0" r="3.5" fill="#2ca02c"/>
+<circle cx="480.0" cy="395.4" r="3.5" fill="#2ca02c"/>
+<circle cx="689.0" cy="395.7" r="3.5" fill="#2ca02c"/>
+<circle cx="898.0" cy="379.6" r="3.5" fill="#2ca02c"/><polyline fill="none" stroke="#1f77b4" stroke-width="2.2" points="62.0,341.3 271.0,340.9 480.0,346.7 689.0,341.3 898.0,281.7"/>
+<circle cx="62.0" cy="341.3" r="3.5" fill="#1f77b4"/>
+<circle cx="271.0" cy="340.9" r="3.5" fill="#1f77b4"/>
+<circle cx="480.0" cy="346.7" r="3.5" fill="#1f77b4"/>
+<circle cx="689.0" cy="341.3" r="3.5" fill="#1f77b4"/>
+<circle cx="898.0" cy="281.7" r="3.5" fill="#1f77b4"/><polyline fill="none" stroke="#9467bd" stroke-width="2.2" points="62.0,342.0 271.0,343.0 480.0,347.6 689.0,342.0 898.0,282.9"/>
+<circle cx="62.0" cy="342.0" r="3.5" fill="#9467bd"/>
+<circle cx="271.0" cy="343.0" r="3.5" fill="#9467bd"/>
+<circle cx="480.0" cy="347.6" r="3.5" fill="#9467bd"/>
+<circle cx="689.0" cy="342.0" r="3.5" fill="#9467bd"/>
+<circle cx="898.0" cy="282.9" r="3.5" fill="#9467bd"/><polyline fill="none" stroke="#ff7f0e" stroke-width="2.2" points="62.0,245.9 271.0,105.8 480.0,213.4 689.0,245.5 898.0,174.2"/>
+<circle cx="62.0" cy="245.9" r="3.5" fill="#ff7f0e"/>
+<circle cx="271.0" cy="105.8" r="3.5" fill="#ff7f0e"/>
+<circle cx="480.0" cy="213.4" r="3.5" fill="#ff7f0e"/>
+<circle cx="689.0" cy="245.5" r="3.5" fill="#ff7f0e"/>
+<circle cx="898.0" cy="174.2" r="3.5" fill="#ff7f0e"/><polyline fill="none" stroke="#8c564b" stroke-width="2.2" points="62.0,369.6 271.0,363.0 480.0,368.5 689.0,369.6 898.0,321.7"/>
+<circle cx="62.0" cy="369.6" r="3.5" fill="#8c564b"/>
+<circle cx="271.0" cy="363.0" r="3.5" fill="#8c564b"/>
+<circle cx="480.0" cy="368.5" r="3.5" fill="#8c564b"/>
+<circle cx="689.0" cy="369.6" r="3.5" fill="#8c564b"/>
+<circle cx="898.0" cy="321.7" r="3.5" fill="#8c564b"/>
+<circle cx="710" cy="54" r="4" fill="#2ca02c"/><text x="722" y="58" font-size="10">TANGO-MB</text>
+<circle cx="710" cy="72" r="4" fill="#1f77b4"/><text x="722" y="76" font-size="10">TANGO-JOINT</text>
+<circle cx="710" cy="90" r="4" fill="#9467bd"/><text x="722" y="94" font-size="10">TANGO-COUPLED</text>
+<circle cx="710" cy="108" r="4" fill="#ff7f0e"/><text x="722" y="112" font-size="10">passive</text>
+<circle cx="710" cy="126" r="4" fill="#8c564b"/><text x="722" y="130" font-size="10">scale-only (R11)</text>
+<text transform="translate(14,230.0) rotate(-90)" text-anchor="middle" font-size="12">prototype MSE (median)</text>
+</svg>

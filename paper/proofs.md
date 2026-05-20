@@ -174,9 +174,9 @@ For softmax linear head, the bias-gradient error from replacing frozen \(W_0\) w
 \]
 with \(L_b \le 2\sqrt{C}\,\|X\|_2\) in the simulator (Lipschitz constant of \(\pi(W^\top x)\) w.r.t. \(W\) at fixed \(x\)).
 
-**Empirical bound (code).** `within_step_weight_drift` in `code/benchmark_round12.py` measures \(\|W_M - W_0\|_F\) per local step on `minibatch_sgd`; mean drift \(\approx 0.42\) with \(T_{\mathrm{eff}} = 18\) explains the prototype MSE floor \(\approx 0.01\) vs exact tier \(1.5\times 10^{-4}\) (see `artifacts/round12_metrics.json`).
+**Empirical bound (code).** `within_step_weight_drift` in `code/benchmark_round12.py` measures \(\|W_M - W_0\|_F\) per local step on `minibatch_sgd`; mean drift \(\approx 0.112\) (std \(\approx 0.004\)) with \(T_{\mathrm{eff}} = 18\) — see `lemma_mb_b_empirical` in `artifacts/round12_metrics.json`. The \(\sim 0.01\) prototype MSE floor vs exact tier \(1.5\times 10^{-4}\) is consistent with first-order drift perturbation but **not** tightly predicted by \(\|W_M-W_0\|_F\) alone.
 
-**Drift-corrected second pass (`tango_mb_drift2`).** Scale terminal deltas by \((1 + \hat\delta)^{-1}\) with \(\hat\delta = \|\Delta W\|_F / (\eta T_{\mathrm{eff}} \hat G)\) before re-inversion; reduces median prototype MSE on primary minibatch vs single-pass TANGO-MB.
+**Drift-corrected second pass (`tango_mb_drift2`, Round 12 only).** Ad hoc inflation of \(T_{\mathrm{eff}}\); **does not** beat TANGO-MB on primary (`tango_mb_drift2` mean **0.025** vs **0.011**). Demoted to secondary ablation; not used in Round 13 primary estimators.
 
 ---
 
@@ -199,6 +199,18 @@ This is one Newton/Jacobian correction, not full iterative FL inversion.
 
 ---
 
+## Lemma MB-JOINT (Round 13 — joint bias moments; negative result)
+
+**Procedure (`tango_joint` in `code/benchmark_round13.py`):** After \(T_{\mathrm{eff}}\) scaling, estimate counts by weighted LS over all rounds from bias equations \(n_c \approx N(p^{(r)}_c - g^{(r)}_c)\) with D-opt round weights \(w_r \propto 1/(\|p^{(r)}-\mathbf{1}/C\|+\epsilon)\), renormalize \(\sum_c n_c = N\), then solve weight moments for class sums per coordinate.
+
+**Empirical (primary `minibatch_sgd`):** Prototype MSE mean **0.283** (median **0.280**) vs TANGO-MB **0.011** — **joint fitting does not beat** sequential uniform-round count selection. Aggressive probe rounds violate a shared-\(n_c\) linear model; stacking bias equations without hard exclusion harms counts.
+
+**Coupled / trajectory variants:** `tango_coupled` (3 fixed-point bias Jacobian steps) mean **0.272**; `tango_trajectory_midpoint` mean **0.272** — same failure mode. Primary estimator remains **TANGO-MB**.
+
+**Honest scaling ablation:** `passive_mb_scale_only` (R11: scale + `tango_estimate_sums`) mean **0.151** on primary — restores fair active-vs-scaling comparison (\(\approx 14\times\) active gain, not \(\approx 26\times\) from R12 coupled `passive_mb`).
+
+---
+
 ## Scope boundaries (not covered by Theorems 1–2)
 
 | Violation | Effect |
@@ -218,10 +230,12 @@ These map to `theorem_scope.approximate_empirical` scenarios in metrics JSON.
 |---|---|
 | Lemma A equations | `estimate_counts`, `tango_estimate_sums` in `code/benchmark_round09.py` |
 | Lemma MB-A scaling | `effective_gradient_steps`, `tango_mb_estimate_sums` in `code/benchmark_round12.py` |
-| Lemma MB-B drift | `within_step_weight_drift`, `tango_mb_drift2` in `code/benchmark_round12.py` |
+| Lemma MB-B drift | `within_step_weight_drift` in `code/benchmark_round12.py` |
 | Lemma MB-Iter | `tango_mb_iter_estimate_sums` in `code/benchmark_round12.py` |
 | MB count (bias LS) | `estimate_counts_mb` in `code/benchmark_round12.py` |
-| Stack+ridge (passive) | `stack_mb_ridge_estimate_sums` in `code/benchmark_round12.py` |
+| TANGO-JOINT | `joint_mb_moment_invert`, `tango_joint_estimate_sums` in `code/benchmark_round13.py` |
+| TANGO-COUPLED | `tango_coupled_estimate_sums` in `code/benchmark_round13.py` |
+| Honest scaling ablation | `passive_mb_scale_only_estimate_sums` in `code/benchmark_round13.py` |
 | Theorem 1 linear solve | per-coordinate `lstsq` in `tango_estimate_sums` |
 | Theorem 2 floor | `within_class_variance`, `individual_mse_from_prototypes` |
 | Probe full-rank | `design_condition_number` |
