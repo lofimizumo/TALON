@@ -31,7 +31,7 @@
       "shard_stage2_oracle": {
         "snapshot_mse": 0.40144914746701243,
         "observed_intermediate_batch_gradients": 80,
-        "runtime_sec": 1.0722233220003545,
+        "runtime_sec": 1.0589234019862488,
         "matching_acc": 0.0
       },
       "passive_mean_broadcast": {
@@ -54,7 +54,7 @@
       "shard_stage2_oracle": {
         "snapshot_mse": 0.3767126180955058,
         "observed_intermediate_batch_gradients": 80,
-        "runtime_sec": 1.0855061970069073,
+        "runtime_sec": 1.1355975379701704,
         "matching_acc": 0.0
       },
       "passive_mean_broadcast": {
@@ -77,7 +77,7 @@
       "shard_stage2_oracle": {
         "snapshot_mse": 0.37256572783766895,
         "observed_intermediate_batch_gradients": 80,
-        "runtime_sec": 1.0452878599753603,
+        "runtime_sec": 1.0967249079840258,
         "matching_acc": 0.0
       },
       "passive_mean_broadcast": {
@@ -100,7 +100,7 @@
       "shard_stage2_oracle": {
         "snapshot_mse": 0.7072190343765963,
         "observed_intermediate_batch_gradients": 80,
-        "runtime_sec": 1.1193738169968128,
+        "runtime_sec": 1.1404319100547582,
         "matching_acc": 0.0
       },
       "passive_mean_broadcast": {
@@ -123,7 +123,7 @@
       "shard_stage2_oracle": {
         "snapshot_mse": 0.36444207297995695,
         "observed_intermediate_batch_gradients": 80,
-        "runtime_sec": 1.0865055829635821,
+        "runtime_sec": 1.0903161820024252,
         "matching_acc": 0.0
       },
       "passive_mean_broadcast": {
@@ -148,7 +148,7 @@
       "snapshot_mse_std": 0.1319496910048421,
       "observed_intermediate_batch_gradients_mean": 80.0,
       "matching_acc_mean": 0.0,
-      "runtime_sec_mean": 1.0817793557886035
+      "runtime_sec_mean": 1.1043987879995256
     },
     "passive_mean_broadcast": {
       "snapshot_mse_mean": 1.0000000468825687,
@@ -171,7 +171,7 @@
     "best_terminal_method": "graph_rank_terminal",
     "best_terminal_mse_mean": 1.0000000468825574,
     "terminal_to_shard_mse_ratio": 2.249831659823241,
-    "beats_passive_baseline": true
+    "beats_passive_baseline": false
   },
   "honest_verdict": "Terminal-only methods do not approach SHARD Stage-2 fidelity without batch-mean rows; graph priors marginally beat mean broadcast but remain far above oracle.",
   "parent_talon_limit": "Parent TALON terminal probes recover class aggregates, not individuals; this run targets per-sample snapshots S in R^{N x dim_g}."

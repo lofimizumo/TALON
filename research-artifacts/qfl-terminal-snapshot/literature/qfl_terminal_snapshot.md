@@ -30,11 +30,12 @@ Stacking \(c^{(e)}\) across epochs constrains the **same** \(\bar{s}\) under noi
 | Family | Needs beyond T1? | Round 01 |
 |--------|------------------|----------|
 | Mean broadcast | No | Baseline |
-| Graph MAP (GARD-style) | Oracle graph on indices | `graph_term_terminal` |
+| Graph MAP (GARD-style) | Oracle graph on indices | `graph_term_terminal` (Round 02: Fiedler spread, not mean-only MAP) |
 | Graph low-rank subspace | Rank + graph | `graph_rank_terminal` |
 | SHARD Stage 2 | All batch rows + assignment | Oracle |
+| Partial terminal SHARD | Last \(p\) rows/epoch, 0 early intermediates | `partial_terminal_last_*` |
 | JASPER / soft assignment | Partial rows or soft incidence | Round 03+ |
-| B=1 client terminals | Per-sample \(g\) each round | Round 02+ |
+| B=1 client terminals | Per-sample \(g\) each round | `b1_client_terminal` (Round 02) |
 
 ## Citations
 
@@ -43,8 +44,15 @@ Stacking \(c^{(e)}\) across epochs constrains the **same** \(\bar{s}\) under noi
 - Snapshot inversion survey: `/workspace/literature/qfl_snapshot_inversion.md`
 - Bridge doc: `literature/parent_talon_bridge.md`
 
+## Round 02 findings
+
+- **Graph degeneracy (Round 01):** Mean-only MAP has a constant Laplacian nullspace; anchor RHS is row-constant, so \(\lambda\) cannot spread rows. Fix uses Fiedler-mode prior + mean re-projection (still T1-limited; MSE ≈ 0.985 vs passive 1.0).
+- **T1b identifiability:** B=1 terminals give linear measurements \(A^{(e)} s_i\) per client per epoch—SHARD B=1 path recovers individuals without within-epoch intermediates.
+- **Partial trajectory:** MSE vs terminal-row count brackets SHARD; last 7/8 rows ≈ full oracle MSE on smooth synthetic data.
+
 ## Open gaps
 
-- Identifiability proof for T1 + graph prior (when does \(\lambda\) break symmetry enough?).
+- Formal impossibility theorem for T1 (stacked \(c^{(e)}\) only).
+- Assignment-aware terminal tier without full row budget.
 - Coupled **terminal head updates + LASA snapshots** in real QFL stacks.
-- Honest graph from metadata vs co-occurrence (Round 05 negative).
+- Honest graph from metadata vs co-occurrence (Round 05 negative); MNIST graph spread still weak.

@@ -1,0 +1,14 @@
+2026-05-20 08:29:34,282 INFO Round 02 QFL terminal-snapshot benchmark started
+2026-05-20 08:29:34,282 INFO N=32 B=4 E=10 dim_g=32 seeds=[3, 7, 11, 19, 23] shard_max_iter=200
+2026-05-20 08:29:51,521 INFO seed=3 src=smooth shard_mse=0.4014 match=0.0% graph_term=0.9878(row_std=0.267) b1=0.0000 partial_1=0.5602
+2026-05-20 08:30:08,521 INFO seed=7 src=smooth shard_mse=0.4406 match=0.0% graph_term=0.9853(row_std=0.270) b1=0.0073 partial_1=0.5716
+2026-05-20 08:30:25,976 INFO seed=11 src=smooth shard_mse=0.3726 match=0.0% graph_term=0.9716(row_std=0.271) b1=0.0000 partial_1=0.5447
+2026-05-20 08:30:43,653 INFO seed=19 src=smooth shard_mse=0.7645 match=0.0% graph_term=0.9941(row_std=0.267) b1=0.0000 partial_1=0.6086
+2026-05-20 08:31:00,865 INFO seed=23 src=smooth shard_mse=0.4379 match=0.0% graph_term=0.9882(row_std=0.259) b1=0.0001 partial_1=0.5529
+2026-05-20 08:31:19,528 INFO seed=3 src=mnist shard_mse=0.5018 match=0.0% graph_term=1.0000(row_std=0.000) b1=0.0000 partial_1=0.7635
+2026-05-20 08:31:37,067 INFO seed=7 src=mnist shard_mse=0.6636 match=0.0% graph_term=1.0000(row_std=0.000) b1=0.0106 partial_1=0.6889
+2026-05-20 08:31:55,075 INFO seed=11 src=mnist shard_mse=0.5750 match=0.0% graph_term=1.0000(row_std=0.000) b1=0.0000 partial_1=0.6863
+2026-05-20 08:32:12,342 INFO seed=19 src=mnist shard_mse=0.8494 match=0.0% graph_term=1.0000(row_std=0.000) b1=0.0000 partial_1=0.8619
+2026-05-20 08:32:29,948 INFO seed=23 src=mnist shard_mse=0.4371 match=0.0% graph_term=1.0000(row_std=0.000) b1=0.0000 partial_1=0.6663
+2026-05-20 08:32:29,952 INFO Wrote /workspace/research-artifacts/qfl-terminal-snapshot/artifacts/round02_metrics.json
+2026-05-20 08:32:29,952 INFO HEADLINE[smooth] shard_mse=0.4834 best=b1_client_terminal mse=0.0015 ratio=0.00 shard_match=0.0% graph_row_std=0.2668 passive_row_std=0.0000
