@@ -26,12 +26,14 @@ This is a better paper direction than claiming that terminal-only observations r
 
 **TANGO** means **Terminal Aggregate Neural Gradient Observation**.
 
-Threat model:
+Threat model (**active terminal probing**, not passive honest-but-curious):
 
 - The server observes terminal client model deltas across repeated rounds.
 - The server knows the architecture, learning rate, local step count, and initial model state.
-- The server may choose ordinary initial classifier biases as active probes.
+- The server **actively chooses** initial classifier biases as probes across rounds.
 - The server does not observe intermediate minibatch gradients, batch order, batch incidence, batch-average snapshots, or per-sample snapshots.
+
+This is weaker than SHARD's intermediate-gradient assumption but stronger than passively logging a single neutral terminal update.
 
 For a linear softmax head initialized with zero weights and bias \(b^{(r)}\), define
 \[
@@ -51,9 +53,11 @@ The privacy endpoint is therefore **class-level hidden-representation leakage**,
 
 ## 4. The Key Theorems
 
-### Terminal Aggregate Identifiability
+### Terminal Aggregate Identifiability (exact tier)
 
-Under a linear softmax head, known public hyperparameters, known initial biases, repeated terminal updates, and a full-rank probe design, terminal aggregate updates identify:
+**Exact theorem assumptions:** linear softmax head, **zero initial head weights**, **full-batch** local training, first-order terminal deltas, known \(\eta,T,N\), known probe biases with full-rank design.
+
+Under those assumptions, terminal aggregate updates identify:
 
 - class sums \(S_c\);
 - class counts \(n_c\);
@@ -61,6 +65,8 @@ Under a linear softmax head, known public hyperparameters, known initial biases,
 - dataset mean \(S/N\).
 
 Proof idea: each feature coordinate gives a linear system in \((S,S_1,\ldots,S_C)\). Distinct probes make the coefficient matrix full rank. Bias updates provide count equations.
+
+**Approximate tier (empirical):** minibatch SGD, nonzero initial weights, and many local steps break or degrade the first-order estimator. Round 09 reports these separately from the exact theorem.
 
 ### Individual Non-Identifiability
 
@@ -97,33 +103,53 @@ JASPER was the joint soft-assignment attempt. It is useful mainly as a negative 
 
 TANGO is the main threat-model reduction. It removes intermediate minibatch gradients entirely but changes the target to aggregate/prototype leakage.
 
-## 6. Round 08 Results
+## 6. Round 09 Results (paper-readiness benchmark)
 
 Run:
 
 ```bash
-cd "/Users/yetao/Documents/06.My Papers/CQU/2026/06.TALON"
-.venv/bin/python code/benchmark_round08.py
+cd /workspace
+python3 code/benchmark_round09.py
 ```
 
 Outputs:
 
-- `artifacts/round08_metrics.json`
-- `artifacts/round08_tango_stress.svg`
-- `logs/experiment_round08.log`
+- `artifacts/round09_metrics.json`
+- `artifacts/round09_baselines.svg`
+- `artifacts/round09_count_vs_proto.svg`
+- `logs/experiment_round09.log`
 
-Headline over 8 seeds:
+### Baselines on balanced clean (8 active/passive rounds, 8 seeds)
 
-| Scenario | Best active rounds | Prototype MSE | One-round prototype MSE | Active gain | Individual MSE | Within-class floor |
-|---|---:|---:|---:|---:|---:|---:|
-| balanced clean | 8 | `0.0001506` | `0.1431415` | `950.6x` | `0.266669` | `0.253177` |
-| imbalanced clean | 8 | `0.0003817` | `0.2792532` | `731.5x` | `0.267185` | `0.252630` |
-| terminal noise 1e-3 | 8 | `0.0002822` | `0.1435491` | `508.6x` | `0.266736` | `0.253177` |
-| weak bias / poor condition | 4 | `0.0003295` | `0.1431415` | `434.4x` | `0.266801` | `0.253177` |
-| more local steps | 8 | `0.0019079` | `0.1444444` | `75.7x` | `0.277133` | `0.253177` |
-| high within-class variance | 8 | `0.0003575` | `0.1647381` | `460.8x` | `0.982833` | `0.836947` |
+| Method | Prototype MSE | Count MAE | Individual MSE |
+|---|---:|---:|---:|
+| TANGO active | `0.000151` | `0.0419` | `0.2667` |
+| Passive multi-round (neutral bias) | `0.143141` | `0.0152` | `0.4285` |
+| Public statistical prior | `0.412694` | n/a | `0.6659` |
+| Oracle aggregate (upper bound) | `0.0` | `0.0` | `0.2667` |
 
-Takeaway: active terminal probes robustly recover prototypes, but individual reconstruction remains bounded by within-class variance.
+TANGO vs passive prototype gain: **950.6x**. Oracle aggregate shows the ceiling if moments were perfect; it is not a runnable attack.
+
+### Extended stress (TANGO active)
+
+| Scenario | Prototype MSE | Count MAE | Notes |
+|---|---:|---:|---|
+| balanced_clean | `0.000151` | `0.0419` | Reproduces Round 08 |
+| imbalanced_clean | `0.000382` | `0.1107` | Count harder under imbalance |
+| minibatch_sgd | `6.5877` | `2.5743` | **Fails** — first-order model breaks |
+| nonzero_init_head | `0.009720` | `0.7428` | Prototype OK, counts degraded |
+| large_10class_30dim | `0.000011` | `0.0294` | Scale-up succeeds |
+| more_local_steps | `0.001908` | `0.1495` | Moderate approximation error |
+| high_within_class_variance | `0.000358` | `0.0519` | Individual MSE `0.983` near floor |
+
+Takeaways:
+
+- Report **count recovery** and **prototype recovery** separately.
+- Active probing remains essential in the exact regime; passive and public priors are much worse.
+- Minibatch SGD is an honest negative result and must not be folded into the exact theorem.
+- Individual reconstruction does not improve with better prototypes.
+
+Round 08 stress results remain in `artifacts/round08_metrics.json` for reference.
 
 ## 7. How to Write the Paper
 
@@ -161,11 +187,13 @@ Unsafe claims:
 
 | File | Role |
 |---|---|
-| `code/benchmark_round08.py` | Final TANGO stress benchmark |
-| `artifacts/round08_metrics.json` | Final stress metrics |
-| `artifacts/round08_tango_stress.svg` | Final stress plot |
-| `rounds/round_08/researcher_proposal.md` | Final integrated proposal |
-| `rounds/round_08/revision_log.md` | Round-08 change log |
+| `code/benchmark_round09.py` | Paper-readiness benchmark with baselines and extended stress |
+| `artifacts/round09_metrics.json` | Round-09 metrics (count + prototype separate) |
+| `artifacts/round09_baselines.svg` | Method comparison plot |
+| `artifacts/round09_count_vs_proto.svg` | Count MAE vs prototype MSE plot |
+| `rounds/round_09/researcher_proposal.md` | Round-09 integrated proposal |
+| `paper/outline.md` | Draft paper section skeleton |
+| `code/benchmark_round08.py` | Round-08 TANGO stress benchmark |
 | `code/benchmark_round07.py` | Original TANGO proof of concept |
 | `code/benchmark_round06.py` | JASPER assignment negative result |
 | `code/benchmark_round05.py` | GARD stress test |
