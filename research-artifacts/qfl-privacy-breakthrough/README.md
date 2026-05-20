@@ -10,6 +10,7 @@
 |-------|-----------|------------|---------|
 | 1 | [x] | [x] | REVISE_MAJOR |
 | 2 | [x] | [ ] | scientist complete |
+| 3 | [x] | [ ] | scientist complete |
 
 ## Paths
 
