@@ -1,0 +1,93 @@
+2026-05-20 10:29:54,079 INFO Round 05 — Snapshot-DP defense (Gaussian/Laplace on batch means)
+2026-05-20 10:29:54,733 INFO Undefended seed=3 t1p=0.4 shard=0.9994 jasper=0.9583
+2026-05-20 10:29:55,370 INFO Undefended seed=7 t1p=0.4026 shard=1.144 jasper=0.9571
+2026-05-20 10:29:56,008 INFO Undefended seed=11 t1p=0.3985 shard=1.007 jasper=0.9534
+2026-05-20 10:29:56,518 INFO Undefended seed=19 t1p=0.5686 shard=0.9648 jasper=0.9551
+2026-05-20 10:29:57,241 INFO Undefended seed=23 t1p=0.403 shard=1.009 jasper=0.9388
+2026-05-20 10:30:00,561 INFO Grid gaussian eps=0.50 sigma=0.020 util_mean=2.061 t1p_inc=-0.01 shard_inc=0.00 jasper_inc=0.00 B_any=False
+2026-05-20 10:30:03,680 INFO Grid gaussian eps=0.50 sigma=0.050 util_mean=2.075 t1p_inc=0.04 shard_inc=0.00 jasper_inc=-0.01 B_any=False
+2026-05-20 10:30:07,157 INFO Grid gaussian eps=0.50 sigma=0.100 util_mean=2.117 t1p_inc=0.08 shard_inc=0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:30:10,550 INFO Grid gaussian eps=0.50 sigma=0.150 util_mean=2.182 t1p_inc=0.20 shard_inc=0.01 jasper_inc=0.00 B_any=False
+2026-05-20 10:30:13,721 INFO Grid gaussian eps=0.50 sigma=0.200 util_mean=2.270 t1p_inc=0.31 shard_inc=0.02 jasper_inc=-0.01 B_any=False
+2026-05-20 10:30:16,651 INFO Grid gaussian eps=0.50 sigma=0.300 util_mean=2.514 t1p_inc=0.77 shard_inc=0.04 jasper_inc=0.01 B_any=False
+2026-05-20 10:30:19,924 INFO Grid gaussian eps=0.50 sigma=0.500 util_mean=3.278 t1p_inc=1.93 shard_inc=0.11 jasper_inc=0.01 B_any=False
+2026-05-20 10:30:23,302 INFO Grid gaussian eps=1.00 sigma=0.020 util_mean=2.061 t1p_inc=0.05 shard_inc=0.00 jasper_inc=-0.01 B_any=False
+2026-05-20 10:30:26,589 INFO Grid gaussian eps=1.00 sigma=0.050 util_mean=2.075 t1p_inc=0.03 shard_inc=0.00 jasper_inc=0.00 B_any=False
+2026-05-20 10:30:30,001 INFO Grid gaussian eps=1.00 sigma=0.100 util_mean=2.117 t1p_inc=0.07 shard_inc=0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:30:33,272 INFO Grid gaussian eps=1.00 sigma=0.150 util_mean=2.182 t1p_inc=0.22 shard_inc=0.01 jasper_inc=-0.00 B_any=False
+2026-05-20 10:30:36,437 INFO Grid gaussian eps=1.00 sigma=0.200 util_mean=2.270 t1p_inc=0.35 shard_inc=0.02 jasper_inc=-0.00 B_any=False
+2026-05-20 10:30:39,333 INFO Grid gaussian eps=1.00 sigma=0.300 util_mean=2.514 t1p_inc=0.70 shard_inc=0.04 jasper_inc=0.00 B_any=False
+2026-05-20 10:30:42,239 INFO Grid gaussian eps=1.00 sigma=0.500 util_mean=3.278 t1p_inc=2.12 shard_inc=0.11 jasper_inc=0.01 B_any=False
+2026-05-20 10:30:45,761 INFO Grid gaussian eps=2.00 sigma=0.020 util_mean=2.061 t1p_inc=0.03 shard_inc=0.00 jasper_inc=-0.01 B_any=False
+2026-05-20 10:30:48,952 INFO Grid gaussian eps=2.00 sigma=0.050 util_mean=2.075 t1p_inc=0.05 shard_inc=0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:30:52,204 INFO Grid gaussian eps=2.00 sigma=0.100 util_mean=2.117 t1p_inc=0.06 shard_inc=0.00 jasper_inc=0.00 B_any=False
+2026-05-20 10:30:55,267 INFO Grid gaussian eps=2.00 sigma=0.150 util_mean=2.182 t1p_inc=0.21 shard_inc=0.01 jasper_inc=0.00 B_any=False
+2026-05-20 10:30:58,725 INFO Grid gaussian eps=2.00 sigma=0.200 util_mean=2.270 t1p_inc=0.34 shard_inc=0.02 jasper_inc=0.01 B_any=False
+2026-05-20 10:31:01,464 INFO Grid gaussian eps=2.00 sigma=0.300 util_mean=2.514 t1p_inc=0.70 shard_inc=0.04 jasper_inc=0.00 B_any=False
+2026-05-20 10:31:04,595 INFO Grid gaussian eps=2.00 sigma=0.500 util_mean=3.278 t1p_inc=2.02 shard_inc=0.11 jasper_inc=0.01 B_any=False
+2026-05-20 10:31:07,820 INFO Grid gaussian eps=4.00 sigma=0.020 util_mean=2.061 t1p_inc=0.03 shard_inc=0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:31:10,952 INFO Grid gaussian eps=4.00 sigma=0.050 util_mean=2.075 t1p_inc=0.04 shard_inc=0.00 jasper_inc=-0.01 B_any=False
+2026-05-20 10:31:14,169 INFO Grid gaussian eps=4.00 sigma=0.100 util_mean=2.117 t1p_inc=0.05 shard_inc=0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:31:17,356 INFO Grid gaussian eps=4.00 sigma=0.150 util_mean=2.182 t1p_inc=0.22 shard_inc=0.01 jasper_inc=-0.00 B_any=False
+2026-05-20 10:31:20,474 INFO Grid gaussian eps=4.00 sigma=0.200 util_mean=2.270 t1p_inc=0.33 shard_inc=0.02 jasper_inc=-0.01 B_any=False
+2026-05-20 10:31:23,660 INFO Grid gaussian eps=4.00 sigma=0.300 util_mean=2.514 t1p_inc=0.76 shard_inc=0.04 jasper_inc=0.01 B_any=False
+2026-05-20 10:31:26,798 INFO Grid gaussian eps=4.00 sigma=0.500 util_mean=3.278 t1p_inc=2.01 shard_inc=0.11 jasper_inc=0.01 B_any=False
+2026-05-20 10:31:29,984 INFO Grid gaussian eps=8.00 sigma=0.020 util_mean=2.061 t1p_inc=0.00 shard_inc=0.00 jasper_inc=-0.01 B_any=False
+2026-05-20 10:31:33,324 INFO Grid gaussian eps=8.00 sigma=0.050 util_mean=2.075 t1p_inc=0.05 shard_inc=0.00 jasper_inc=-0.01 B_any=False
+2026-05-20 10:31:36,525 INFO Grid gaussian eps=8.00 sigma=0.100 util_mean=2.117 t1p_inc=0.06 shard_inc=0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:31:39,719 INFO Grid gaussian eps=8.00 sigma=0.150 util_mean=2.182 t1p_inc=0.25 shard_inc=0.01 jasper_inc=0.01 B_any=False
+2026-05-20 10:31:43,051 INFO Grid gaussian eps=8.00 sigma=0.200 util_mean=2.270 t1p_inc=0.33 shard_inc=0.02 jasper_inc=-0.00 B_any=False
+2026-05-20 10:31:46,537 INFO Grid gaussian eps=8.00 sigma=0.300 util_mean=2.514 t1p_inc=0.75 shard_inc=0.04 jasper_inc=0.00 B_any=False
+2026-05-20 10:31:49,884 INFO Grid gaussian eps=8.00 sigma=0.500 util_mean=3.278 t1p_inc=1.96 shard_inc=0.11 jasper_inc=0.01 B_any=False
+2026-05-20 10:31:53,129 INFO Grid gaussian eps=16.00 sigma=0.020 util_mean=2.061 t1p_inc=0.03 shard_inc=0.00 jasper_inc=-0.01 B_any=False
+2026-05-20 10:31:56,355 INFO Grid gaussian eps=16.00 sigma=0.050 util_mean=2.075 t1p_inc=0.06 shard_inc=0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:31:59,567 INFO Grid gaussian eps=16.00 sigma=0.100 util_mean=2.117 t1p_inc=0.06 shard_inc=0.00 jasper_inc=0.01 B_any=False
+2026-05-20 10:32:03,088 INFO Grid gaussian eps=16.00 sigma=0.150 util_mean=2.182 t1p_inc=0.18 shard_inc=0.01 jasper_inc=-0.00 B_any=False
+2026-05-20 10:32:06,207 INFO Grid gaussian eps=16.00 sigma=0.200 util_mean=2.270 t1p_inc=0.32 shard_inc=0.02 jasper_inc=0.00 B_any=False
+2026-05-20 10:32:09,498 INFO Grid gaussian eps=16.00 sigma=0.300 util_mean=2.514 t1p_inc=0.72 shard_inc=0.04 jasper_inc=0.00 B_any=False
+2026-05-20 10:32:12,171 INFO Grid gaussian eps=16.00 sigma=0.500 util_mean=3.278 t1p_inc=2.11 shard_inc=0.11 jasper_inc=0.01 B_any=False
+2026-05-20 10:32:15,360 INFO Grid laplace eps=0.50 sigma=0.020 util_mean=2.056 t1p_inc=-0.01 shard_inc=-0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:32:18,772 INFO Grid laplace eps=0.50 sigma=0.050 util_mean=2.056 t1p_inc=0.03 shard_inc=0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:32:22,065 INFO Grid laplace eps=0.50 sigma=0.100 util_mean=2.057 t1p_inc=0.02 shard_inc=0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:32:25,364 INFO Grid laplace eps=0.50 sigma=0.150 util_mean=2.059 t1p_inc=0.03 shard_inc=0.00 jasper_inc=-0.01 B_any=False
+2026-05-20 10:32:28,656 INFO Grid laplace eps=0.50 sigma=0.200 util_mean=2.062 t1p_inc=0.05 shard_inc=0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:32:31,883 INFO Grid laplace eps=0.50 sigma=0.300 util_mean=2.073 t1p_inc=0.07 shard_inc=0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:32:35,245 INFO Grid laplace eps=0.50 sigma=0.500 util_mean=2.111 t1p_inc=0.09 shard_inc=0.01 jasper_inc=0.00 B_any=False
+2026-05-20 10:32:38,787 INFO Grid laplace eps=1.00 sigma=0.020 util_mean=2.056 t1p_inc=-0.01 shard_inc=-0.00 jasper_inc=0.00 B_any=False
+2026-05-20 10:32:42,185 INFO Grid laplace eps=1.00 sigma=0.050 util_mean=2.056 t1p_inc=0.03 shard_inc=0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:32:45,563 INFO Grid laplace eps=1.00 sigma=0.100 util_mean=2.057 t1p_inc=0.02 shard_inc=0.00 jasper_inc=0.00 B_any=False
+2026-05-20 10:32:48,955 INFO Grid laplace eps=1.00 sigma=0.150 util_mean=2.059 t1p_inc=0.07 shard_inc=0.00 jasper_inc=0.00 B_any=False
+2026-05-20 10:32:52,332 INFO Grid laplace eps=1.00 sigma=0.200 util_mean=2.062 t1p_inc=0.05 shard_inc=0.00 jasper_inc=0.00 B_any=False
+2026-05-20 10:32:55,961 INFO Grid laplace eps=1.00 sigma=0.300 util_mean=2.073 t1p_inc=0.05 shard_inc=0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:32:59,144 INFO Grid laplace eps=1.00 sigma=0.500 util_mean=2.111 t1p_inc=0.13 shard_inc=0.01 jasper_inc=0.00 B_any=False
+2026-05-20 10:33:02,311 INFO Grid laplace eps=2.00 sigma=0.020 util_mean=2.056 t1p_inc=-0.01 shard_inc=-0.00 jasper_inc=0.00 B_any=False
+2026-05-20 10:33:05,521 INFO Grid laplace eps=2.00 sigma=0.050 util_mean=2.056 t1p_inc=0.01 shard_inc=0.00 jasper_inc=0.01 B_any=False
+2026-05-20 10:33:08,529 INFO Grid laplace eps=2.00 sigma=0.100 util_mean=2.057 t1p_inc=0.05 shard_inc=0.00 jasper_inc=0.01 B_any=False
+2026-05-20 10:33:11,874 INFO Grid laplace eps=2.00 sigma=0.150 util_mean=2.059 t1p_inc=0.04 shard_inc=0.00 jasper_inc=0.00 B_any=False
+2026-05-20 10:33:15,470 INFO Grid laplace eps=2.00 sigma=0.200 util_mean=2.062 t1p_inc=0.08 shard_inc=0.00 jasper_inc=0.00 B_any=False
+2026-05-20 10:33:18,540 INFO Grid laplace eps=2.00 sigma=0.300 util_mean=2.073 t1p_inc=0.04 shard_inc=0.00 jasper_inc=0.00 B_any=False
+2026-05-20 10:33:21,435 INFO Grid laplace eps=2.00 sigma=0.500 util_mean=2.111 t1p_inc=0.17 shard_inc=0.01 jasper_inc=-0.00 B_any=False
+2026-05-20 10:33:24,657 INFO Grid laplace eps=4.00 sigma=0.020 util_mean=2.056 t1p_inc=-0.01 shard_inc=-0.00 jasper_inc=0.00 B_any=False
+2026-05-20 10:33:27,825 INFO Grid laplace eps=4.00 sigma=0.050 util_mean=2.056 t1p_inc=0.02 shard_inc=0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:33:30,924 INFO Grid laplace eps=4.00 sigma=0.100 util_mean=2.057 t1p_inc=0.02 shard_inc=0.00 jasper_inc=-0.01 B_any=False
+2026-05-20 10:33:34,286 INFO Grid laplace eps=4.00 sigma=0.150 util_mean=2.059 t1p_inc=0.02 shard_inc=0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:33:37,286 INFO Grid laplace eps=4.00 sigma=0.200 util_mean=2.062 t1p_inc=0.07 shard_inc=0.00 jasper_inc=0.00 B_any=False
+2026-05-20 10:33:40,450 INFO Grid laplace eps=4.00 sigma=0.300 util_mean=2.073 t1p_inc=0.05 shard_inc=0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:33:43,433 INFO Grid laplace eps=4.00 sigma=0.500 util_mean=2.111 t1p_inc=0.17 shard_inc=0.01 jasper_inc=-0.00 B_any=False
+2026-05-20 10:33:46,640 INFO Grid laplace eps=8.00 sigma=0.020 util_mean=2.056 t1p_inc=-0.01 shard_inc=-0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:33:49,633 INFO Grid laplace eps=8.00 sigma=0.050 util_mean=2.056 t1p_inc=0.02 shard_inc=0.00 jasper_inc=-0.01 B_any=False
+2026-05-20 10:33:52,674 INFO Grid laplace eps=8.00 sigma=0.100 util_mean=2.057 t1p_inc=0.02 shard_inc=0.00 jasper_inc=-0.01 B_any=False
+2026-05-20 10:33:55,400 INFO Grid laplace eps=8.00 sigma=0.150 util_mean=2.059 t1p_inc=0.02 shard_inc=0.00 jasper_inc=0.00 B_any=False
+2026-05-20 10:33:57,778 INFO Grid laplace eps=8.00 sigma=0.200 util_mean=2.062 t1p_inc=0.07 shard_inc=0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:34:00,149 INFO Grid laplace eps=8.00 sigma=0.300 util_mean=2.073 t1p_inc=0.05 shard_inc=0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:34:02,512 INFO Grid laplace eps=8.00 sigma=0.500 util_mean=2.111 t1p_inc=0.17 shard_inc=0.01 jasper_inc=-0.00 B_any=False
+2026-05-20 10:34:04,867 INFO Grid laplace eps=16.00 sigma=0.020 util_mean=2.056 t1p_inc=-0.01 shard_inc=-0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:34:07,209 INFO Grid laplace eps=16.00 sigma=0.050 util_mean=2.056 t1p_inc=0.02 shard_inc=0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:34:09,609 INFO Grid laplace eps=16.00 sigma=0.100 util_mean=2.057 t1p_inc=0.02 shard_inc=0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:34:11,951 INFO Grid laplace eps=16.00 sigma=0.150 util_mean=2.059 t1p_inc=0.02 shard_inc=0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:34:14,288 INFO Grid laplace eps=16.00 sigma=0.200 util_mean=2.062 t1p_inc=0.07 shard_inc=0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:34:16,635 INFO Grid laplace eps=16.00 sigma=0.300 util_mean=2.073 t1p_inc=0.05 shard_inc=0.00 jasper_inc=-0.00 B_any=False
+2026-05-20 10:34:18,976 INFO Grid laplace eps=16.00 sigma=0.500 util_mean=2.111 t1p_inc=0.17 shard_inc=0.01 jasper_inc=-0.00 B_any=False
+2026-05-20 10:34:18,990 INFO Wrote /workspace/research-artifacts/qfl-privacy-breakthrough/artifacts/round05_metrics.json
+2026-05-20 10:34:18,991 INFO Criterion B pass=False best=None secondary=False
+2026-05-20 10:34:18,991 INFO Runtime 264.90s
