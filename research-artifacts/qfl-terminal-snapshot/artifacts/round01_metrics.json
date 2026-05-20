@@ -1,0 +1,178 @@
+{
+  "benchmark": "round01_qfl_terminal_snapshot",
+  "simulator": {
+    "surrogate": "SurrogateQFL",
+    "attacker_oracle": "ShardAttacker.level2_disaggregate",
+    "n_samples": 32,
+    "batch_size": 4,
+    "n_epochs": 10,
+    "dim_g": 32,
+    "n_params": 32,
+    "noise_level": 0.01,
+    "true_rank": 4,
+    "snapshot_generator": "smooth_low_rank_graph_correlated",
+    "seeds": [
+      3,
+      7,
+      11,
+      19,
+      23
+    ],
+    "shard_max_iter": 50
+  },
+  "threat_model": {
+    "terminal_methods_observation": "Per-epoch terminal gradient c_e = mean_k g^(e,k) and public A^(e); zero intermediate minibatch rows",
+    "shard_oracle_observation": "All E*K intermediate batch-gradient rows",
+    "graph_prior": "Oracle chain graph on sample index order (side information)"
+  },
+  "per_seed": [
+    {
+      "seed": 3,
+      "shard_stage2_oracle": {
+        "snapshot_mse": 0.40144914746701243,
+        "observed_intermediate_batch_gradients": 80,
+        "runtime_sec": 1.0722233220003545,
+        "matching_acc": 0.0
+      },
+      "passive_mean_broadcast": {
+        "snapshot_mse": 1.0000000307358161,
+        "observed_intermediate_batch_gradients": 0
+      },
+      "graph_term_terminal": {
+        "snapshot_mse": 1.0000000307358063,
+        "observed_intermediate_batch_gradients": 0
+      },
+      "graph_rank_terminal": {
+        "snapshot_mse": 1.0000000307358037,
+        "observed_intermediate_batch_gradients": 0
+      },
+      "level1_mean_rel_error": 0.000295360850071986,
+      "level1_terminal_mean_rel_error": 0.000295360850071986
+    },
+    {
+      "seed": 7,
+      "shard_stage2_oracle": {
+        "snapshot_mse": 0.3767126180955058,
+        "observed_intermediate_batch_gradients": 80,
+        "runtime_sec": 1.0855061970069073,
+        "matching_acc": 0.0
+      },
+      "passive_mean_broadcast": {
+        "snapshot_mse": 1.0000000411934657,
+        "observed_intermediate_batch_gradients": 0
+      },
+      "graph_term_terminal": {
+        "snapshot_mse": 1.0000000411934542,
+        "observed_intermediate_batch_gradients": 0
+      },
+      "graph_rank_terminal": {
+        "snapshot_mse": 1.0000000411934526,
+        "observed_intermediate_batch_gradients": 0
+      },
+      "level1_mean_rel_error": 0.00033902753035364044,
+      "level1_terminal_mean_rel_error": 0.00033902753035364044
+    },
+    {
+      "seed": 11,
+      "shard_stage2_oracle": {
+        "snapshot_mse": 0.37256572783766895,
+        "observed_intermediate_batch_gradients": 80,
+        "runtime_sec": 1.0452878599753603,
+        "matching_acc": 0.0
+      },
+      "passive_mean_broadcast": {
+        "snapshot_mse": 1.0000000443833876,
+        "observed_intermediate_batch_gradients": 0
+      },
+      "graph_term_terminal": {
+        "snapshot_mse": 1.0000000443833756,
+        "observed_intermediate_batch_gradients": 0
+      },
+      "graph_rank_terminal": {
+        "snapshot_mse": 1.0000000443833819,
+        "observed_intermediate_batch_gradients": 0
+      },
+      "level1_mean_rel_error": 0.000349723150915658,
+      "level1_terminal_mean_rel_error": 0.000349723150915658
+    },
+    {
+      "seed": 19,
+      "shard_stage2_oracle": {
+        "snapshot_mse": 0.7072190343765963,
+        "observed_intermediate_batch_gradients": 80,
+        "runtime_sec": 1.1193738169968128,
+        "matching_acc": 0.0
+      },
+      "passive_mean_broadcast": {
+        "snapshot_mse": 1.0000000432888858,
+        "observed_intermediate_batch_gradients": 0
+      },
+      "graph_term_terminal": {
+        "snapshot_mse": 1.0000000432888745,
+        "observed_intermediate_batch_gradients": 0
+      },
+      "graph_rank_terminal": {
+        "snapshot_mse": 1.0000000432888738,
+        "observed_intermediate_batch_gradients": 0
+      },
+      "level1_mean_rel_error": 0.00035136810852013837,
+      "level1_terminal_mean_rel_error": 0.00035136810852013837
+    },
+    {
+      "seed": 23,
+      "shard_stage2_oracle": {
+        "snapshot_mse": 0.36444207297995695,
+        "observed_intermediate_batch_gradients": 80,
+        "runtime_sec": 1.0865055829635821,
+        "matching_acc": 0.0
+      },
+      "passive_mean_broadcast": {
+        "snapshot_mse": 1.0000000748112885,
+        "observed_intermediate_batch_gradients": 0
+      },
+      "graph_term_terminal": {
+        "snapshot_mse": 1.0000000748112794,
+        "observed_intermediate_batch_gradients": 0
+      },
+      "graph_rank_terminal": {
+        "snapshot_mse": 1.0000000748112745,
+        "observed_intermediate_batch_gradients": 0
+      },
+      "level1_mean_rel_error": 0.00047584389718872646,
+      "level1_terminal_mean_rel_error": 0.00047584389718872646
+    }
+  ],
+  "summary": {
+    "shard_stage2_oracle": {
+      "snapshot_mse_mean": 0.44447772015134807,
+      "snapshot_mse_std": 0.1319496910048421,
+      "observed_intermediate_batch_gradients_mean": 80.0,
+      "matching_acc_mean": 0.0,
+      "runtime_sec_mean": 1.0817793557886035
+    },
+    "passive_mean_broadcast": {
+      "snapshot_mse_mean": 1.0000000468825687,
+      "snapshot_mse_std": 1.4780103948831533e-08,
+      "observed_intermediate_batch_gradients_mean": 0.0
+    },
+    "graph_term_terminal": {
+      "snapshot_mse_mean": 1.0000000468825578,
+      "snapshot_mse_std": 1.4780104488004279e-08,
+      "observed_intermediate_batch_gradients_mean": 0.0
+    },
+    "graph_rank_terminal": {
+      "snapshot_mse_mean": 1.0000000468825574,
+      "snapshot_mse_std": 1.4780103165832526e-08,
+      "observed_intermediate_batch_gradients_mean": 0.0
+    }
+  },
+  "headline": {
+    "shard_stage2_mse_mean": 0.44447772015134807,
+    "best_terminal_method": "graph_rank_terminal",
+    "best_terminal_mse_mean": 1.0000000468825574,
+    "terminal_to_shard_mse_ratio": 2.249831659823241,
+    "beats_passive_baseline": true
+  },
+  "honest_verdict": "Terminal-only methods do not approach SHARD Stage-2 fidelity without batch-mean rows; graph priors marginally beat mean broadcast but remain far above oracle.",
+  "parent_talon_limit": "Parent TALON terminal probes recover class aggregates, not individuals; this run targets per-sample snapshots S in R^{N x dim_g}."
+}
