@@ -5,7 +5,7 @@
     "document": "paper/assignment_barrier_theorem.md",
     "document_present": true,
     "falsifiable_prediction_mse_floor_at_25pct_rows": 0.15,
-    "observed_jasper_mean_mse_at_25pct": 0.9468455585868286,
+    "observed_jasper_mean_mse_at_25pct": 0.9524656795429145,
     "prediction_holds_at_25pct": true
   },
   "round06_config": {
@@ -235,13 +235,13 @@
           "full_rows": 80,
           "assignment_overlap_prior": 0.53125,
           "t1p_warm_blend": 0.65,
-          "t1p_warm_mse": 0.41698703391327896,
-          "snapshot_mse": 0.9143848617040979,
-          "jasper_q_hard_overlap": 0.45,
+          "t1p_warm_mse": 0.4212482906423943,
+          "snapshot_mse": 0.9105743330111754,
+          "jasper_q_hard_overlap": 0.45625,
           "used_vs_true_residual": {
-            "residual_mse_used_h": 0.16982223470212016,
-            "residual_mse_true_h": 0.1737602702280768,
-            "ratio_true_over_used": 1.0231891632615966
+            "residual_mse_used_h": 0.16935275478065157,
+            "residual_mse_true_h": 0.17635850650367504,
+            "ratio_true_over_used": 1.041367804923501
           }
         },
         {
@@ -253,13 +253,13 @@
           "full_rows": 80,
           "assignment_overlap_prior": 0.5125,
           "t1p_warm_blend": 0.65,
-          "t1p_warm_mse": 0.4441073253243028,
-          "snapshot_mse": 0.9042960723142752,
-          "jasper_q_hard_overlap": 0.48125,
+          "t1p_warm_mse": 0.4244935407714613,
+          "snapshot_mse": 0.8950892824036071,
+          "jasper_q_hard_overlap": 0.475,
           "used_vs_true_residual": {
-            "residual_mse_used_h": 0.18121213592400526,
-            "residual_mse_true_h": 0.18947285376350148,
-            "ratio_true_over_used": 1.0455858974200298
+            "residual_mse_used_h": 0.1812323518184215,
+            "residual_mse_true_h": 0.18752205250567872,
+            "ratio_true_over_used": 1.0347051761131418
           }
         },
         {
@@ -271,13 +271,13 @@
           "full_rows": 80,
           "assignment_overlap_prior": 0.53125,
           "t1p_warm_blend": 0.65,
-          "t1p_warm_mse": 0.3761593148016776,
-          "snapshot_mse": 0.9155814624569457,
-          "jasper_q_hard_overlap": 0.45625,
+          "t1p_warm_mse": 0.3884210527712004,
+          "snapshot_mse": 0.8939884840085353,
+          "jasper_q_hard_overlap": 0.49375,
           "used_vs_true_residual": {
-            "residual_mse_used_h": 0.15200472616036104,
-            "residual_mse_true_h": 0.1556944954390943,
-            "ratio_true_over_used": 1.0242740431296897
+            "residual_mse_used_h": 0.1502597216371294,
+            "residual_mse_true_h": 0.154807142051331,
+            "ratio_true_over_used": 1.0302637351158113
           }
         },
         {
@@ -289,13 +289,13 @@
           "full_rows": 80,
           "assignment_overlap_prior": 0.51875,
           "t1p_warm_blend": 0.65,
-          "t1p_warm_mse": 0.5227503025460994,
-          "snapshot_mse": 0.9060095033485659,
-          "jasper_q_hard_overlap": 0.49375,
+          "t1p_warm_mse": 0.5667018721962565,
+          "snapshot_mse": 0.8897971414647545,
+          "jasper_q_hard_overlap": 0.46875,
           "used_vs_true_residual": {
-            "residual_mse_used_h": 0.19336558028278866,
-            "residual_mse_true_h": 0.20042548084813747,
-            "ratio_true_over_used": 1.036510637286243
+            "residual_mse_used_h": 0.20003559499015852,
+            "residual_mse_true_h": 0.20408507780153293,
+            "ratio_true_over_used": 1.020243811165576
           }
         },
         {
@@ -307,23 +307,23 @@
           "full_rows": 80,
           "assignment_overlap_prior": 0.55625,
           "t1p_warm_blend": 0.65,
-          "t1p_warm_mse": 0.4029532746575785,
-          "snapshot_mse": 0.8993655310419466,
-          "jasper_q_hard_overlap": 0.44375,
+          "t1p_warm_mse": 0.39770902056941076,
+          "snapshot_mse": 0.8936639585348225,
+          "jasper_q_hard_overlap": 0.475,
           "used_vs_true_residual": {
-            "residual_mse_used_h": 0.17991955091178966,
-            "residual_mse_true_h": 0.1900527495146681,
-            "ratio_true_over_used": 1.056320719741272
+            "residual_mse_used_h": 0.18084312710747746,
+            "residual_mse_true_h": 0.18743501476564378,
+            "ratio_true_over_used": 1.0364508608295004
           }
         }
       ],
       "gate": {
         "per_seed_mse": {
-          "3": 0.9143848617040979,
-          "7": 0.9042960723142752,
-          "11": 0.9155814624569457,
-          "19": 0.9060095033485659,
-          "23": 0.8993655310419466
+          "3": 0.9105743330111754,
+          "7": 0.8950892824036071,
+          "11": 0.8939884840085353,
+          "19": 0.8897971414647545,
+          "23": 0.8936639585348225
         },
         "per_seed_pass": {
           "3": false,
@@ -334,20 +334,20 @@
         },
         "n_pass": 0,
         "n_seeds": 5,
-        "mean_mse": 0.9079274861731663,
+        "mean_mse": 0.8966226398845789,
         "passes_gate": false
       }
     },
     "best_attacker": {
       "method": "jasper_q_joint_soft_gard",
-      "mean_mse": 0.9079274861731663,
+      "mean_mse": 0.8966226398845789,
       "gate": {
         "per_seed_mse": {
-          "3": 0.9143848617040979,
-          "7": 0.9042960723142752,
-          "11": 0.9155814624569457,
-          "19": 0.9060095033485659,
-          "23": 0.8993655310419466
+          "3": 0.9105743330111754,
+          "7": 0.8950892824036071,
+          "11": 0.8939884840085353,
+          "19": 0.8897971414647545,
+          "23": 0.8936639585348225
         },
         "per_seed_pass": {
           "3": false,
@@ -358,7 +358,7 @@
         },
         "n_pass": 0,
         "n_seeds": 5,
-        "mean_mse": 0.9079274861731663,
+        "mean_mse": 0.8966226398845789,
         "passes_gate": false
       }
     }
@@ -376,7 +376,7 @@
         "full_rows": 80,
         "assignment_overlap_prior": 1.0,
         "t1p_warm_blend": 0.0,
-        "t1p_warm_mse": 0.41698703391327896,
+        "t1p_warm_mse": 0.4212482906423943,
         "snapshot_mse": 0.7669076930603491,
         "jasper_q_hard_overlap": 1.0,
         "used_vs_true_residual": {
@@ -394,7 +394,7 @@
         "full_rows": 80,
         "assignment_overlap_prior": 1.0,
         "t1p_warm_blend": 0.0,
-        "t1p_warm_mse": 0.43327136356169765,
+        "t1p_warm_mse": 0.4025843830557773,
         "snapshot_mse": 0.7652632154731427,
         "jasper_q_hard_overlap": 1.0,
         "used_vs_true_residual": {
@@ -412,7 +412,7 @@
         "full_rows": 80,
         "assignment_overlap_prior": 1.0,
         "t1p_warm_blend": 0.0,
-        "t1p_warm_mse": 0.35169067345887384,
+        "t1p_warm_mse": 0.3985417563225193,
         "snapshot_mse": 0.7806022220032391,
         "jasper_q_hard_overlap": 1.0,
         "used_vs_true_residual": {
@@ -430,7 +430,7 @@
         "full_rows": 80,
         "assignment_overlap_prior": 1.0,
         "t1p_warm_blend": 0.0,
-        "t1p_warm_mse": 0.6100918571685705,
+        "t1p_warm_mse": 0.5686362397240023,
         "snapshot_mse": 0.7417961940719398,
         "jasper_q_hard_overlap": 1.0,
         "used_vs_true_residual": {
@@ -448,7 +448,7 @@
         "full_rows": 80,
         "assignment_overlap_prior": 1.0,
         "t1p_warm_blend": 0.0,
-        "t1p_warm_mse": 0.4029532746575785,
+        "t1p_warm_mse": 0.41129872222501584,
         "snapshot_mse": 0.7509590555023828,
         "jasper_q_hard_overlap": 1.0,
         "used_vs_true_residual": {
@@ -464,37 +464,37 @@
     "per_seed": [
       {
         "seed": 3,
-        "t1p_mse_level1_recovery": 0.4050674244592009,
+        "t1p_mse_level1_recovery": 0.4163640019099001,
         "recovery_stack": "ShardAttacker.level1_mean_recovery + QtermAttack.T1P"
       },
       {
         "seed": 7,
-        "t1p_mse_level1_recovery": 0.42594224136851233,
+        "t1p_mse_level1_recovery": 0.3895767375663535,
         "recovery_stack": "ShardAttacker.level1_mean_recovery + QtermAttack.T1P"
       },
       {
         "seed": 11,
-        "t1p_mse_level1_recovery": 0.4003803630571982,
+        "t1p_mse_level1_recovery": 0.4057821184522462,
         "recovery_stack": "ShardAttacker.level1_mean_recovery + QtermAttack.T1P"
       },
       {
         "seed": 19,
-        "t1p_mse_level1_recovery": 0.5158233248693992,
+        "t1p_mse_level1_recovery": 0.5332505968142206,
         "recovery_stack": "ShardAttacker.level1_mean_recovery + QtermAttack.T1P"
       },
       {
         "seed": 23,
-        "t1p_mse_level1_recovery": 0.4426046318663875,
+        "t1p_mse_level1_recovery": 0.4095356876295878,
         "recovery_stack": "ShardAttacker.level1_mean_recovery + QtermAttack.T1P"
       }
     ],
-    "mean_mse": 0.4379635971241396,
+    "mean_mse": 0.4309018284744616,
     "round05_flat_mean_baseline_reference": 0.427
   },
   "used_vs_true_aggregate": {
-    "jasper_mean_residual_used_h": 0.17526484559621297,
-    "jasper_mean_residual_true_h": 0.18188116995869563,
-    "jasper_mean_ratio_true_over_used": 1.0371760921677662
+    "jasper_mean_residual_used_h": 0.17634471006676772,
+    "jasper_mean_residual_true_h": 0.1820415587255723,
+    "jasper_mean_ratio_true_over_used": 1.0326062776295062
   },
   "config_breakthrough": {
     "A_wrong40_mse_0.15_at_50pct_rows": false,
@@ -517,5 +517,5 @@
     "used_vs_true residual: low used-H residual does not imply low snapshot MSE under wrong40.",
     "Theorem ABT-1 in paper/assignment_barrier_theorem.md \u2014 rank deficiency under wrong incidence."
   ],
-  "runtime_sec": 7.311681042017881
+  "runtime_sec": 5.3912985639763065
 }

@@ -118,10 +118,10 @@
         "observed_rows": 20,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.55,
-        "t1p_warm_mse": 0.5877801452954943,
+        "t1p_warm_mse": 0.5619680080588003,
         "methods": {
           "gard_cooccurrence_wrong_h": 2.4923792749482043,
-          "jasper_q_v7_multi_epoch_spectral": 0.9616595949849915,
+          "jasper_q_v7_multi_epoch_spectral": 0.9612223566010263,
           "jasper_q_v7_hard_overlap": 0.475
         }
       },
@@ -133,11 +133,11 @@
         "observed_rows": 20,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.55,
-        "t1p_warm_mse": 0.536421727878997,
+        "t1p_warm_mse": 0.5769135638415588,
         "methods": {
           "gard_cooccurrence_wrong_h": 2.7623001655228405,
-          "jasper_q_v7_multi_epoch_spectral": 0.9633554386149359,
-          "jasper_q_v7_hard_overlap": 0.4375
+          "jasper_q_v7_multi_epoch_spectral": 0.9630223642956144,
+          "jasper_q_v7_hard_overlap": 0.4625
         }
       },
       {
@@ -148,11 +148,11 @@
         "observed_rows": 20,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.525,
-        "t1p_warm_mse": 0.5916177605836792,
+        "t1p_warm_mse": 0.5473951454973373,
         "methods": {
           "gard_cooccurrence_wrong_h": 2.7767892573963904,
-          "jasper_q_v7_multi_epoch_spectral": 0.9455815069159752,
-          "jasper_q_v7_hard_overlap": 0.4625
+          "jasper_q_v7_multi_epoch_spectral": 0.9528257855406315,
+          "jasper_q_v7_hard_overlap": 0.4375
         }
       },
       {
@@ -163,11 +163,11 @@
         "observed_rows": 20,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.525,
-        "t1p_warm_mse": 0.6012081112148843,
+        "t1p_warm_mse": 0.63277642975666,
         "methods": {
           "gard_cooccurrence_wrong_h": 2.497132732765887,
-          "jasper_q_v7_multi_epoch_spectral": 0.9503055546881072,
-          "jasper_q_v7_hard_overlap": 0.45
+          "jasper_q_v7_multi_epoch_spectral": 0.9497318707920139,
+          "jasper_q_v7_hard_overlap": 0.5
         }
       },
       {
@@ -178,10 +178,10 @@
         "observed_rows": 20,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.55,
-        "t1p_warm_mse": 0.5025560695052904,
+        "t1p_warm_mse": 0.5470285597811224,
         "methods": {
           "gard_cooccurrence_wrong_h": 2.737654456823683,
-          "jasper_q_v7_multi_epoch_spectral": 0.9519566548041087,
+          "jasper_q_v7_multi_epoch_spectral": 0.9359229287152482,
           "jasper_q_v7_hard_overlap": 0.475
         }
       },
@@ -193,7 +193,7 @@
         "observed_rows": 20,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.5583409731443214,
+        "t1p_warm_mse": 0.5666596462361023,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.3639297956439175,
           "jasper_q_v7_multi_epoch_spectral": 0.8393253285194733,
@@ -208,7 +208,7 @@
         "observed_rows": 20,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.5667364926334396,
+        "t1p_warm_mse": 0.565014981065015,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.36187064846469075,
           "jasper_q_v7_multi_epoch_spectral": 0.8453017779330521,
@@ -223,7 +223,7 @@
         "observed_rows": 20,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.5661111329663562,
+        "t1p_warm_mse": 0.5679206823289227,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.37981485386065594,
           "jasper_q_v7_multi_epoch_spectral": 0.8404465435710485,
@@ -238,7 +238,7 @@
         "observed_rows": 20,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.6290265468129272,
+        "t1p_warm_mse": 0.6248160457634413,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.49028824993165016,
           "jasper_q_v7_multi_epoch_spectral": 0.8765744652442606,
@@ -253,7 +253,7 @@
         "observed_rows": 20,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.5294055585423109,
+        "t1p_warm_mse": 0.5897724676189393,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.41463432471132644,
           "jasper_q_v7_multi_epoch_spectral": 0.8515227535608312,
@@ -268,11 +268,11 @@
         "observed_rows": 28,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.5625,
-        "t1p_warm_mse": 0.5841579310866871,
+        "t1p_warm_mse": 0.5385901430661446,
         "methods": {
           "gard_cooccurrence_wrong_h": 14.859383863562279,
-          "jasper_q_v7_multi_epoch_spectral": 0.9623204668967065,
-          "jasper_q_v7_hard_overlap": 0.4107142857142857
+          "jasper_q_v7_multi_epoch_spectral": 0.9681141454184311,
+          "jasper_q_v7_hard_overlap": 0.4375
         }
       },
       {
@@ -283,10 +283,10 @@
         "observed_rows": 28,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.5267857142857143,
-        "t1p_warm_mse": 0.5881733648206992,
+        "t1p_warm_mse": 0.5524841667377466,
         "methods": {
           "gard_cooccurrence_wrong_h": 12.738906151765946,
-          "jasper_q_v7_multi_epoch_spectral": 0.9309163925529472,
+          "jasper_q_v7_multi_epoch_spectral": 0.9326923243080749,
           "jasper_q_v7_hard_overlap": 0.42857142857142855
         }
       },
@@ -298,10 +298,10 @@
         "observed_rows": 28,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.5178571428571429,
-        "t1p_warm_mse": 0.6010590571751735,
+        "t1p_warm_mse": 0.5536721244445821,
         "methods": {
           "gard_cooccurrence_wrong_h": 44.818125949429756,
-          "jasper_q_v7_multi_epoch_spectral": 0.9345682544396696,
+          "jasper_q_v7_multi_epoch_spectral": 0.9500179169331566,
           "jasper_q_v7_hard_overlap": 0.4017857142857143
         }
       },
@@ -313,11 +313,11 @@
         "observed_rows": 28,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.5446428571428571,
-        "t1p_warm_mse": 0.5672245020958399,
+        "t1p_warm_mse": 0.616065053970967,
         "methods": {
           "gard_cooccurrence_wrong_h": 9.257145429479024,
-          "jasper_q_v7_multi_epoch_spectral": 0.958412956487586,
-          "jasper_q_v7_hard_overlap": 0.4017857142857143
+          "jasper_q_v7_multi_epoch_spectral": 0.9333023840603472,
+          "jasper_q_v7_hard_overlap": 0.44642857142857145
         }
       },
       {
@@ -328,11 +328,11 @@
         "observed_rows": 28,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.5,
-        "t1p_warm_mse": 0.5461527194124769,
+        "t1p_warm_mse": 0.5587356128348024,
         "methods": {
           "gard_cooccurrence_wrong_h": 6.9954552098644065,
-          "jasper_q_v7_multi_epoch_spectral": 0.9540455079817678,
-          "jasper_q_v7_hard_overlap": 0.4107142857142857
+          "jasper_q_v7_multi_epoch_spectral": 0.9314667277971218,
+          "jasper_q_v7_hard_overlap": 0.39285714285714285
         }
       },
       {
@@ -343,7 +343,7 @@
         "observed_rows": 28,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.606073203403176,
+        "t1p_warm_mse": 0.5630265578777996,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.19666903959892001,
           "jasper_q_v7_multi_epoch_spectral": 0.8205956522972816,
@@ -358,7 +358,7 @@
         "observed_rows": 28,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.561278983504762,
+        "t1p_warm_mse": 0.6061719233301279,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.17228041827681845,
           "jasper_q_v7_multi_epoch_spectral": 0.8182467001968659,
@@ -373,7 +373,7 @@
         "observed_rows": 28,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.5773421268382294,
+        "t1p_warm_mse": 0.537115969408393,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.4005260671588046,
           "jasper_q_v7_multi_epoch_spectral": 0.8103187712567572,
@@ -388,7 +388,7 @@
         "observed_rows": 28,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.6388103088827116,
+        "t1p_warm_mse": 0.6393299531110141,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.2603642472633584,
           "jasper_q_v7_multi_epoch_spectral": 0.8224063456849828,
@@ -403,7 +403,7 @@
         "observed_rows": 28,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.5616467351061039,
+        "t1p_warm_mse": 0.5532571264002097,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.4193361477364161,
           "jasper_q_v7_multi_epoch_spectral": 0.8003022755393877,
@@ -418,11 +418,11 @@
         "observed_rows": 40,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.53125,
-        "t1p_warm_mse": 0.5774422502605892,
+        "t1p_warm_mse": 0.6398469023823581,
         "methods": {
           "gard_cooccurrence_wrong_h": 2.4851221709821036,
-          "jasper_q_v7_multi_epoch_spectral": 0.9290467315824297,
-          "jasper_q_v7_hard_overlap": 0.43125
+          "jasper_q_v7_multi_epoch_spectral": 0.8944604150902953,
+          "jasper_q_v7_hard_overlap": 0.4375
         }
       },
       {
@@ -433,11 +433,11 @@
         "observed_rows": 40,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.5125,
-        "t1p_warm_mse": 0.583563050423759,
+        "t1p_warm_mse": 0.600970384295711,
         "methods": {
           "gard_cooccurrence_wrong_h": 1.9924914341043665,
-          "jasper_q_v7_multi_epoch_spectral": 0.9103026568543735,
-          "jasper_q_v7_hard_overlap": 0.475
+          "jasper_q_v7_multi_epoch_spectral": 0.8941582098166372,
+          "jasper_q_v7_hard_overlap": 0.4875
         }
       },
       {
@@ -448,11 +448,11 @@
         "observed_rows": 40,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.53125,
-        "t1p_warm_mse": 0.5686111183281368,
+        "t1p_warm_mse": 0.5524011198984089,
         "methods": {
           "gard_cooccurrence_wrong_h": 2.7692813146776856,
-          "jasper_q_v7_multi_epoch_spectral": 0.8864724242161777,
-          "jasper_q_v7_hard_overlap": 0.4625
+          "jasper_q_v7_multi_epoch_spectral": 0.9173135764667972,
+          "jasper_q_v7_hard_overlap": 0.45
         }
       },
       {
@@ -463,11 +463,11 @@
         "observed_rows": 40,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.51875,
-        "t1p_warm_mse": 0.5920239535333827,
+        "t1p_warm_mse": 0.584664080333015,
         "methods": {
           "gard_cooccurrence_wrong_h": 4.764022274306212,
-          "jasper_q_v7_multi_epoch_spectral": 0.9066331575386779,
-          "jasper_q_v7_hard_overlap": 0.40625
+          "jasper_q_v7_multi_epoch_spectral": 0.8943434381047797,
+          "jasper_q_v7_hard_overlap": 0.45
         }
       },
       {
@@ -478,11 +478,11 @@
         "observed_rows": 40,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.55625,
-        "t1p_warm_mse": 0.5188696065419536,
+        "t1p_warm_mse": 0.5693004360688114,
         "methods": {
           "gard_cooccurrence_wrong_h": 2.8160150158829693,
-          "jasper_q_v7_multi_epoch_spectral": 0.9018353008536182,
-          "jasper_q_v7_hard_overlap": 0.425
+          "jasper_q_v7_multi_epoch_spectral": 0.8919754321543465,
+          "jasper_q_v7_hard_overlap": 0.4375
         }
       },
       {
@@ -493,7 +493,7 @@
         "observed_rows": 40,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.5608102713104846,
+        "t1p_warm_mse": 0.5779324609649261,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.047389189658056774,
           "jasper_q_v7_multi_epoch_spectral": 0.7496729142674209,
@@ -508,7 +508,7 @@
         "observed_rows": 40,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.5606380721878146,
+        "t1p_warm_mse": 0.5998501207914995,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.09608755403562969,
           "jasper_q_v7_multi_epoch_spectral": 0.7488772548580789,
@@ -523,7 +523,7 @@
         "observed_rows": 40,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.5574632132175532,
+        "t1p_warm_mse": 0.5533166418725842,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.01962961825648584,
           "jasper_q_v7_multi_epoch_spectral": 0.7626316119342347,
@@ -538,7 +538,7 @@
         "observed_rows": 40,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.6369961565119895,
+        "t1p_warm_mse": 0.6930776893782797,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.04264598098457076,
           "jasper_q_v7_multi_epoch_spectral": 0.7239514647439311,
@@ -553,7 +553,7 @@
         "observed_rows": 40,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.5402576078633797,
+        "t1p_warm_mse": 0.5378278700763477,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.02494508981513085,
           "jasper_q_v7_multi_epoch_spectral": 0.7336037059101077,
@@ -568,11 +568,11 @@
         "observed_rows": 52,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.5288461538461539,
-        "t1p_warm_mse": 0.5930170279187401,
+        "t1p_warm_mse": 0.5795908575349954,
         "methods": {
           "gard_cooccurrence_wrong_h": 1.3300833541701405,
-          "jasper_q_v7_multi_epoch_spectral": 0.9154491219943396,
-          "jasper_q_v7_hard_overlap": 0.40865384615384615
+          "jasper_q_v7_multi_epoch_spectral": 0.8978734072548558,
+          "jasper_q_v7_hard_overlap": 0.4423076923076923
         }
       },
       {
@@ -583,11 +583,11 @@
         "observed_rows": 52,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.5432692307692307,
-        "t1p_warm_mse": 0.5645941669749126,
+        "t1p_warm_mse": 0.589940373962919,
         "methods": {
           "gard_cooccurrence_wrong_h": 1.4630267884310872,
-          "jasper_q_v7_multi_epoch_spectral": 0.8861995984523034,
-          "jasper_q_v7_hard_overlap": 0.47115384615384615
+          "jasper_q_v7_multi_epoch_spectral": 0.9054372208083914,
+          "jasper_q_v7_hard_overlap": 0.4951923076923077
         }
       },
       {
@@ -598,11 +598,11 @@
         "observed_rows": 52,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.5192307692307693,
-        "t1p_warm_mse": 0.5834619148178581,
+        "t1p_warm_mse": 0.5536406775926515,
         "methods": {
           "gard_cooccurrence_wrong_h": 1.6355815291668316,
-          "jasper_q_v7_multi_epoch_spectral": 0.8631714082771569,
-          "jasper_q_v7_hard_overlap": 0.47115384615384615
+          "jasper_q_v7_multi_epoch_spectral": 0.8925346893606432,
+          "jasper_q_v7_hard_overlap": 0.46634615384615385
         }
       },
       {
@@ -613,11 +613,11 @@
         "observed_rows": 52,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.5288461538461539,
-        "t1p_warm_mse": 0.6513097741641383,
+        "t1p_warm_mse": 0.6084433288433522,
         "methods": {
           "gard_cooccurrence_wrong_h": 1.4536766495948203,
-          "jasper_q_v7_multi_epoch_spectral": 0.9200200305508155,
-          "jasper_q_v7_hard_overlap": 0.40384615384615385
+          "jasper_q_v7_multi_epoch_spectral": 0.8794847782806599,
+          "jasper_q_v7_hard_overlap": 0.4519230769230769
         }
       },
       {
@@ -628,10 +628,10 @@
         "observed_rows": 52,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.5625,
-        "t1p_warm_mse": 0.5406069477421134,
+        "t1p_warm_mse": 0.5606929411428732,
         "methods": {
           "gard_cooccurrence_wrong_h": 1.4299971400500204,
-          "jasper_q_v7_multi_epoch_spectral": 0.8777791265273029,
+          "jasper_q_v7_multi_epoch_spectral": 0.8860522348686074,
           "jasper_q_v7_hard_overlap": 0.47115384615384615
         }
       },
@@ -643,7 +643,7 @@
         "observed_rows": 52,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.5690974152570615,
+        "t1p_warm_mse": 0.5669449965866098,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.0010372673178774168,
           "jasper_q_v7_multi_epoch_spectral": 0.7192003411465863,
@@ -658,7 +658,7 @@
         "observed_rows": 52,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.580196744631224,
+        "t1p_warm_mse": 0.5745599878548366,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.02821355181853469,
           "jasper_q_v7_multi_epoch_spectral": 0.7281461401642766,
@@ -673,7 +673,7 @@
         "observed_rows": 52,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.5585370673187601,
+        "t1p_warm_mse": 0.550708054744613,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.0016903822000538886,
           "jasper_q_v7_multi_epoch_spectral": 0.7076018622685533,
@@ -688,7 +688,7 @@
         "observed_rows": 52,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.5712560973907054,
+        "t1p_warm_mse": 0.5792531441795685,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.03774497462400754,
           "jasper_q_v7_multi_epoch_spectral": 0.7085516390921912,
@@ -703,7 +703,7 @@
         "observed_rows": 52,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.5344683306992244,
+        "t1p_warm_mse": 0.5179679549832772,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.004619020102206264,
           "jasper_q_v7_multi_epoch_spectral": 0.6938959549315259,
@@ -718,11 +718,11 @@
         "observed_rows": 60,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.5208333333333334,
-        "t1p_warm_mse": 0.5583368129416506,
+        "t1p_warm_mse": 0.5294840152294019,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.8474518756592822,
-          "jasper_q_v7_multi_epoch_spectral": 0.8766480572690424,
-          "jasper_q_v7_hard_overlap": 0.4583333333333333
+          "jasper_q_v7_multi_epoch_spectral": 0.8597841686523425,
+          "jasper_q_v7_hard_overlap": 0.475
         }
       },
       {
@@ -733,11 +733,11 @@
         "observed_rows": 60,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.5375,
-        "t1p_warm_mse": 0.5658182284413287,
+        "t1p_warm_mse": 0.5947415974884607,
         "methods": {
           "gard_cooccurrence_wrong_h": 1.2343439426270861,
-          "jasper_q_v7_multi_epoch_spectral": 0.8800907401594809,
-          "jasper_q_v7_hard_overlap": 0.45
+          "jasper_q_v7_multi_epoch_spectral": 0.9018546806308837,
+          "jasper_q_v7_hard_overlap": 0.42916666666666664
         }
       },
       {
@@ -748,11 +748,11 @@
         "observed_rows": 60,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.5333333333333333,
-        "t1p_warm_mse": 0.51096254438176,
+        "t1p_warm_mse": 0.5535080509515755,
         "methods": {
           "gard_cooccurrence_wrong_h": 1.0498583364125404,
-          "jasper_q_v7_multi_epoch_spectral": 0.9076108815292789,
-          "jasper_q_v7_hard_overlap": 0.43333333333333335
+          "jasper_q_v7_multi_epoch_spectral": 0.8712131213279669,
+          "jasper_q_v7_hard_overlap": 0.425
         }
       },
       {
@@ -763,11 +763,11 @@
         "observed_rows": 60,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.5458333333333333,
-        "t1p_warm_mse": 0.5822980208309658,
+        "t1p_warm_mse": 0.6152439243086085,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.9781490234416219,
-          "jasper_q_v7_multi_epoch_spectral": 0.9112761720099509,
-          "jasper_q_v7_hard_overlap": 0.425
+          "jasper_q_v7_multi_epoch_spectral": 0.8620193006053076,
+          "jasper_q_v7_hard_overlap": 0.475
         }
       },
       {
@@ -778,10 +778,10 @@
         "observed_rows": 60,
         "t1p_warm_blend": 0.65,
         "assignment_overlap_prior": 0.5416666666666666,
-        "t1p_warm_mse": 0.5459774485960445,
+        "t1p_warm_mse": 0.5122568338320719,
         "methods": {
           "gard_cooccurrence_wrong_h": 1.4486871351874278,
-          "jasper_q_v7_multi_epoch_spectral": 0.8626408326092267,
+          "jasper_q_v7_multi_epoch_spectral": 0.8452917936808106,
           "jasper_q_v7_hard_overlap": 0.5
         }
       },
@@ -793,7 +793,7 @@
         "observed_rows": 60,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.6235658929661145,
+        "t1p_warm_mse": 0.5681519010574909,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.0014084419844483456,
           "jasper_q_v7_multi_epoch_spectral": 0.692242727420461,
@@ -808,7 +808,7 @@
         "observed_rows": 60,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.5637853850461128,
+        "t1p_warm_mse": 0.5729321918663054,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.0008970432374867563,
           "jasper_q_v7_multi_epoch_spectral": 0.6786500513961843,
@@ -823,7 +823,7 @@
         "observed_rows": 60,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.565385848470408,
+        "t1p_warm_mse": 0.5767989640828721,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.0026509516507603683,
           "jasper_q_v7_multi_epoch_spectral": 0.6844901217068597,
@@ -838,7 +838,7 @@
         "observed_rows": 60,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.6050877960958571,
+        "t1p_warm_mse": 0.6141892652133882,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.002119150693913499,
           "jasper_q_v7_multi_epoch_spectral": 0.6858994216161186,
@@ -853,7 +853,7 @@
         "observed_rows": 60,
         "t1p_warm_blend": 0.0,
         "assignment_overlap_prior": 1.0,
-        "t1p_warm_mse": 0.5703985493666965,
+        "t1p_warm_mse": 0.5390774470339763,
         "methods": {
           "gard_cooccurrence_wrong_h": 0.0035991958922075686,
           "jasper_q_v7_multi_epoch_spectral": 0.6693012202290081,
@@ -903,8 +903,8 @@
         "assignment_regime": "wrong40",
         "mean_anchor_mode": "level1_estimate",
         "method": "jasper_q_v7_multi_epoch_spectral",
-        "snapshot_mse_mean": 0.9545717500016238,
-        "snapshot_mse_std": 0.006830144189518543,
+        "snapshot_mse_mean": 0.9525450611889068,
+        "snapshot_mse_std": 0.009688730261512003,
         "n_seeds": 5
       },
       {
@@ -912,8 +912,8 @@
         "assignment_regime": "wrong40",
         "mean_anchor_mode": "level1_estimate",
         "method": "jasper_q_v7_hard_overlap",
-        "snapshot_mse_mean": 0.45999999999999996,
-        "snapshot_mse_std": 0.014577379737113242,
+        "snapshot_mse_mean": 0.47000000000000003,
+        "snapshot_mse_std": 0.020310096011589895,
         "n_seeds": 5
       },
       {
@@ -957,8 +957,8 @@
         "assignment_regime": "wrong40",
         "mean_anchor_mode": "level1_estimate",
         "method": "jasper_q_v7_multi_epoch_spectral",
-        "snapshot_mse_mean": 0.9480527156717354,
-        "snapshot_mse_std": 0.012824204764443382,
+        "snapshot_mse_mean": 0.9431186997034263,
+        "snapshot_mse_std": 0.014235233126783825,
         "n_seeds": 5
       },
       {
@@ -966,8 +966,8 @@
         "assignment_regime": "wrong40",
         "mean_anchor_mode": "level1_estimate",
         "method": "jasper_q_v7_hard_overlap",
-        "snapshot_mse_mean": 0.4107142857142857,
-        "snapshot_mse_std": 0.00978075995544938,
+        "snapshot_mse_mean": 0.42142857142857143,
+        "snapshot_mse_std": 0.020671137326411123,
         "n_seeds": 5
       },
       {
@@ -1011,8 +1011,8 @@
         "assignment_regime": "wrong40",
         "mean_anchor_mode": "level1_estimate",
         "method": "jasper_q_v7_multi_epoch_spectral",
-        "snapshot_mse_mean": 0.9068580542090554,
-        "snapshot_mse_std": 0.013748128825060105,
+        "snapshot_mse_mean": 0.8984502143265711,
+        "snapshot_mse_std": 0.009475807585699762,
         "n_seeds": 5
       },
       {
@@ -1020,8 +1020,8 @@
         "assignment_regime": "wrong40",
         "mean_anchor_mode": "level1_estimate",
         "method": "jasper_q_v7_hard_overlap",
-        "snapshot_mse_mean": 0.43999999999999995,
-        "snapshot_mse_std": 0.02518680209951235,
+        "snapshot_mse_mean": 0.4525,
+        "snapshot_mse_std": 0.01837117307087383,
         "n_seeds": 5
       },
       {
@@ -1065,8 +1065,8 @@
         "assignment_regime": "wrong40",
         "mean_anchor_mode": "level1_estimate",
         "method": "jasper_q_v7_multi_epoch_spectral",
-        "snapshot_mse_mean": 0.8925238571603836,
-        "snapshot_mse_std": 0.021911535336050673,
+        "snapshot_mse_mean": 0.8922764661146315,
+        "snapshot_mse_std": 0.009021820500619592,
         "n_seeds": 5
       },
       {
@@ -1074,8 +1074,8 @@
         "assignment_regime": "wrong40",
         "mean_anchor_mode": "level1_estimate",
         "method": "jasper_q_v7_hard_overlap",
-        "snapshot_mse_mean": 0.44519230769230766,
-        "snapshot_mse_std": 0.031832587225474704,
+        "snapshot_mse_mean": 0.46538461538461534,
+        "snapshot_mse_std": 0.018091238194448835,
         "n_seeds": 5
       },
       {
@@ -1119,8 +1119,8 @@
         "assignment_regime": "wrong40",
         "mean_anchor_mode": "level1_estimate",
         "method": "jasper_q_v7_multi_epoch_spectral",
-        "snapshot_mse_mean": 0.8876533367153959,
-        "snapshot_mse_std": 0.01876313591259639,
+        "snapshot_mse_mean": 0.8680326129794622,
+        "snapshot_mse_std": 0.01884351090149029,
         "n_seeds": 5
       },
       {
@@ -1128,8 +1128,8 @@
         "assignment_regime": "wrong40",
         "mean_anchor_mode": "level1_estimate",
         "method": "jasper_q_v7_hard_overlap",
-        "snapshot_mse_mean": 0.4533333333333333,
-        "snapshot_mse_std": 0.02614064523559687,
+        "snapshot_mse_mean": 0.4608333333333333,
+        "snapshot_mse_std": 0.02905932629027116,
         "n_seeds": 5
       }
     ],
@@ -1164,7 +1164,7 @@
             "target_mse": 0.05,
             "fraction": 0.75,
             "observed_rows": 60,
-            "mean_mse": 0.8876533367153959,
+            "mean_mse": 0.8680326129794622,
             "per_seed_pass_rate": 0.0,
             "n_seeds_pass": 0,
             "n_seeds": 5
@@ -1173,7 +1173,7 @@
             "target_mse": 0.05,
             "fraction": 0.65,
             "observed_rows": 52,
-            "mean_mse": 0.8925238571603836,
+            "mean_mse": 0.8922764661146315,
             "per_seed_pass_rate": 0.0,
             "n_seeds_pass": 0,
             "n_seeds": 5
@@ -1182,7 +1182,7 @@
             "target_mse": 0.05,
             "fraction": 0.5,
             "observed_rows": 40,
-            "mean_mse": 0.9068580542090554,
+            "mean_mse": 0.8984502143265711,
             "per_seed_pass_rate": 0.0,
             "n_seeds_pass": 0,
             "n_seeds": 5
@@ -1191,7 +1191,7 @@
             "target_mse": 0.05,
             "fraction": 0.35,
             "observed_rows": 28,
-            "mean_mse": 0.9480527156717354,
+            "mean_mse": 0.9431186997034263,
             "per_seed_pass_rate": 0.0,
             "n_seeds_pass": 0,
             "n_seeds": 5
@@ -1200,7 +1200,7 @@
             "target_mse": 0.05,
             "fraction": 0.25,
             "observed_rows": 20,
-            "mean_mse": 0.9545717500016238,
+            "mean_mse": 0.9525450611889068,
             "per_seed_pass_rate": 0.0,
             "n_seeds_pass": 0,
             "n_seeds": 5
@@ -1209,7 +1209,7 @@
             "target_mse": 0.1,
             "fraction": 0.75,
             "observed_rows": 60,
-            "mean_mse": 0.8876533367153959,
+            "mean_mse": 0.8680326129794622,
             "per_seed_pass_rate": 0.0,
             "n_seeds_pass": 0,
             "n_seeds": 5
@@ -1218,7 +1218,7 @@
             "target_mse": 0.1,
             "fraction": 0.65,
             "observed_rows": 52,
-            "mean_mse": 0.8925238571603836,
+            "mean_mse": 0.8922764661146315,
             "per_seed_pass_rate": 0.0,
             "n_seeds_pass": 0,
             "n_seeds": 5
@@ -1227,7 +1227,7 @@
             "target_mse": 0.1,
             "fraction": 0.5,
             "observed_rows": 40,
-            "mean_mse": 0.9068580542090554,
+            "mean_mse": 0.8984502143265711,
             "per_seed_pass_rate": 0.0,
             "n_seeds_pass": 0,
             "n_seeds": 5
@@ -1236,7 +1236,7 @@
             "target_mse": 0.1,
             "fraction": 0.35,
             "observed_rows": 28,
-            "mean_mse": 0.9480527156717354,
+            "mean_mse": 0.9431186997034263,
             "per_seed_pass_rate": 0.0,
             "n_seeds_pass": 0,
             "n_seeds": 5
@@ -1245,7 +1245,7 @@
             "target_mse": 0.1,
             "fraction": 0.25,
             "observed_rows": 20,
-            "mean_mse": 0.9545717500016238,
+            "mean_mse": 0.9525450611889068,
             "per_seed_pass_rate": 0.0,
             "n_seeds_pass": 0,
             "n_seeds": 5
@@ -1254,7 +1254,7 @@
             "target_mse": 0.15,
             "fraction": 0.75,
             "observed_rows": 60,
-            "mean_mse": 0.8876533367153959,
+            "mean_mse": 0.8680326129794622,
             "per_seed_pass_rate": 0.0,
             "n_seeds_pass": 0,
             "n_seeds": 5
@@ -1263,7 +1263,7 @@
             "target_mse": 0.15,
             "fraction": 0.65,
             "observed_rows": 52,
-            "mean_mse": 0.8925238571603836,
+            "mean_mse": 0.8922764661146315,
             "per_seed_pass_rate": 0.0,
             "n_seeds_pass": 0,
             "n_seeds": 5
@@ -1272,7 +1272,7 @@
             "target_mse": 0.15,
             "fraction": 0.5,
             "observed_rows": 40,
-            "mean_mse": 0.9068580542090554,
+            "mean_mse": 0.8984502143265711,
             "per_seed_pass_rate": 0.0,
             "n_seeds_pass": 0,
             "n_seeds": 5
@@ -1281,7 +1281,7 @@
             "target_mse": 0.15,
             "fraction": 0.35,
             "observed_rows": 28,
-            "mean_mse": 0.9480527156717354,
+            "mean_mse": 0.9431186997034263,
             "per_seed_pass_rate": 0.0,
             "n_seeds_pass": 0,
             "n_seeds": 5
@@ -1290,7 +1290,7 @@
             "target_mse": 0.15,
             "fraction": 0.25,
             "observed_rows": 20,
-            "mean_mse": 0.9545717500016238,
+            "mean_mse": 0.9525450611889068,
             "per_seed_pass_rate": 0.0,
             "n_seeds_pass": 0,
             "n_seeds": 5
@@ -1491,8 +1491,8 @@
       "assignment_regime": "wrong40",
       "mean_anchor_mode": "level1_estimate",
       "method": "jasper_q_v7_multi_epoch_spectral",
-      "snapshot_mse_mean": 0.8876533367153959,
-      "snapshot_mse_std": 0.01876313591259639,
+      "snapshot_mse_mean": 0.8680326129794622,
+      "snapshot_mse_std": 0.01884351090149029,
       "n_seeds": 5
     }
   },
@@ -1500,7 +1500,7 @@
     "per_run": [
       {
         "seed": 3,
-        "empirical_t1p_mse": 0.41216257384428157,
+        "empirical_t1p_mse": 0.389172481573496,
         "n_obs_t1p_rows": 70,
         "cert_naive_broadcast": 1.0000010299220645,
         "cert_naive_trace_inflated": 15.999999999874627,
@@ -1515,7 +1515,7 @@
       },
       {
         "seed": 7,
-        "empirical_t1p_mse": 0.41754867295224873,
+        "empirical_t1p_mse": 0.45535333881990203,
         "n_obs_t1p_rows": 70,
         "cert_naive_broadcast": 1.000001206417011,
         "cert_naive_trace_inflated": 15.999999999872133,
@@ -1530,7 +1530,7 @@
       },
       {
         "seed": 11,
-        "empirical_t1p_mse": 0.38202583461375594,
+        "empirical_t1p_mse": 0.38796714565003665,
         "n_obs_t1p_rows": 70,
         "cert_naive_broadcast": 1.0000021965421406,
         "cert_naive_trace_inflated": 15.999999999874262,
@@ -1545,7 +1545,7 @@
       },
       {
         "seed": 19,
-        "empirical_t1p_mse": 0.5072460612099069,
+        "empirical_t1p_mse": 0.5951280254016807,
         "n_obs_t1p_rows": 70,
         "cert_naive_broadcast": 1.00000116326913,
         "cert_naive_trace_inflated": 15.99999999987551,
@@ -1560,7 +1560,7 @@
       },
       {
         "seed": 23,
-        "empirical_t1p_mse": 0.40235896853408976,
+        "empirical_t1p_mse": 0.4434065307752961,
         "n_obs_t1p_rows": 70,
         "cert_naive_broadcast": 1.0000017544048927,
         "cert_naive_trace_inflated": 15.999999999875264,
@@ -1575,7 +1575,7 @@
       }
     ],
     "aggregate": {
-      "empirical_t1p_mse_mean": 0.4242684222308566,
+      "empirical_t1p_mse_mean": 0.4542055044440823,
       "cert_tight_mean": 1.0799999999915193,
       "cert_naive_trace_mean": 15.999999999874358,
       "naive_trace_over_cert_ratio_mean": 14.814814814814813,
@@ -1593,7 +1593,7 @@
   "breakthrough_status": {
     "assignment_barrier_broken": false,
     "jasper_q_v7_best_wrong40_fraction": 0.75,
-    "jasper_q_v7_best_wrong40_mse": 0.8876533367153959
+    "jasper_q_v7_best_wrong40_mse": 0.8680326129794622
   },
   "honesty_notes": [
     "JASPER-Q v7: multi-epoch T1p warm-start + spectral knn graph on recovered snapshots.",
@@ -1602,5 +1602,5 @@
     "LEAK-CERT v2: Ky-Fan tail + trace floor; naive baseline trace-inflated for criterion C.",
     "Relaxed gates (0.15@50%, wrong40@0.10@40%) are Round 07 pre-registered; config.json A unchanged."
   ],
-  "runtime_sec": 47.73076774197398
+  "runtime_sec": 47.873705870995764
 }

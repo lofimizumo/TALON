@@ -1,6 +1,8 @@
 # TALON research run (`06.TALON`)
 
-**Related QFL run (individual snapshots, separate folder):** [`research-artifacts/qfl-terminal-snapshot/`](research-artifacts/qfl-terminal-snapshot/) — **LASA-QTERM**, terminal tiers without within-epoch intermediates.
+**Related QFL runs (separate folders):**
+- [`research-artifacts/qfl-terminal-snapshot/`](research-artifacts/qfl-terminal-snapshot/) — **LASA-QTERM** (individual snapshots; T1 impossible)
+- [`research-artifacts/qfl-privacy-breakthrough/`](research-artifacts/qfl-privacy-breakthrough/) — **QFL-PRIVACY-MAP** (10-round audit; **ACCEPT** Round 10)
 
 **Goal:** Find a stronger direction than SHARD by prioritizing Stage 2 / full-method redesign and reducing the requirement for intermediate minibatch gradients. Stage-3-only improvements are background.
 
