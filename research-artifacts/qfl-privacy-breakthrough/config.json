@@ -6,7 +6,7 @@
     "lasa_qterm": "/workspace/research-artifacts/qfl-terminal-snapshot"
   },
   "rounds_planned": 10,
-  "current_round": 5,
+  "current_round": 7,
   "min_rounds_before_accept": 8,
   "stop_mode": "until_round_10_or_breakthrough_accept",
   "supervisor_policy": "strict_no_early_accept",
@@ -16,7 +16,7 @@
     "require_runnable_experiments": true,
     "require_qfl_surrogate_or_shard": true,
     "require_measurable_breakthrough": true,
-    "breakthrough_definition": "At least one of: (A) >=25% reduction in observed rows vs SHARD Stage-2 at equal snapshot MSE; (B) defense reduces attacker snapshot MSE by >=50% vs undefended at <=10% utility loss; (C) novel privacy certificate with proved bound tighter than naive mean-only baseline by >=2x",
+    "breakthrough_definition": "At least one of: (A) >=25% reduction in observed rows vs SHARD Stage-2 at equal snapshot MSE; (B) defense increases attacker snapshot MSE by >=50% vs undefended (attack worse) at <=10% normalized utility loss; (C) novel privacy certificate with proved bound tighter than naive mean-only baseline by >=2x",
     "forbid_accept_on_negative_result_only": true,
     "forbid_accept_on_limits_essay_only": true,
     "forbid_accept_before_round": 8,
