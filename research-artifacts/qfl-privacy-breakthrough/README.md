@@ -8,7 +8,8 @@
 
 | Round | Scientist | Supervisor | Verdict |
 |-------|-----------|------------|---------|
-| 1 | [x] | [ ] | scientist complete |
+| 1 | [x] | [x] | REVISE_MAJOR |
+| 2 | [x] | [ ] | scientist complete |
 
 ## Paths
 
