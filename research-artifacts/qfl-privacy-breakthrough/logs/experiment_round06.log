@@ -1,0 +1,10 @@
+2026-05-20 10:42:57,486 INFO Round 06 — Path 2 wrong40@50% + theorem ABT-1
+2026-05-20 10:42:59,243 INFO seed=3 gard_mse=1.001 jasper_mse=0.9106 used_res=0.1694 true_res=0.1764 ratio=1.04
+2026-05-20 10:42:59,243 INFO seed=7 gard_mse=1.87 jasper_mse=0.8951 used_res=0.1812 true_res=0.1875 ratio=1.03
+2026-05-20 10:42:59,243 INFO seed=11 gard_mse=0.956 jasper_mse=0.894 used_res=0.1503 true_res=0.1548 ratio=1.03
+2026-05-20 10:42:59,243 INFO seed=19 gard_mse=0.9961 jasper_mse=0.8898 used_res=0.2 true_res=0.2041 ratio=1.02
+2026-05-20 10:42:59,243 INFO seed=23 gard_mse=0.9577 jasper_mse=0.8937 used_res=0.1808 true_res=0.1874 ratio=1.04
+2026-05-20 10:43:02,879 INFO Wrote /workspace/research-artifacts/qfl-privacy-breakthrough/artifacts/round06_metrics.json
+2026-05-20 10:43:02,879 INFO Path2 A_wrong40_mse_0.15_at_50pct_rows=False gard_mean=1.156 jasper_mean=0.8966 best=jasper_q_joint_soft_gard
+2026-05-20 10:43:02,879 INFO Theorem ABT-1 present=True ref_025_mean=0.9525
+2026-05-20 10:43:02,879 INFO Runtime 5.39s

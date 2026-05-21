@@ -1,0 +1,4 @@
+2026-05-20 18:49:24,658 INFO Round-03 MNIST 28x28 dim_g=100 seeds=[3, 7, 11] device=cpu adam_grid=(2000, 4000, 6000) lbfgs=1000 n_batch=500 parallel_workers=3
+2026-05-20 18:51:25,319 INFO seed=7 oracle_snap_mse=0.0000 (B=1 level2_disaggregate_b1) t1p_snap_mse=0.0665
+2026-05-20 18:52:44,249 INFO seed=11 oracle_snap_mse=0.0000 (B=1 level2_disaggregate_b1) t1p_snap_mse=0.0595
+2026-05-20 18:53:20,112 INFO seed=3 oracle_snap_mse=0.0043 (B=1 level2_disaggregate_b1) t1p_snap_mse=0.0191

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="440" viewBox="0 0 920 440">
+<rect width="100%" height="100%" fill="white"/>
+<text x="460.0" y="22" text-anchor="middle" font-size="14" font-family="sans-serif">Round 12: prototype MSE (median over seeds)</text>
+<line x1="62" x2="858" y1="378" y2="378" stroke="#333"/>
+<line x1="62" x2="62" y1="62" y2="378" stroke="#333"/>
+<text x="62.0" y="410" transform="rotate(22 62.0,410)" text-anchor="start" font-size="10">minibatch_sgd</text>
+<text x="261.0" y="410" transform="rotate(22 261.0,410)" text-anchor="start" font-size="10">minibatch_nonzero_init</text>
+<text x="460.0" y="410" transform="rotate(22 460.0,410)" text-anchor="start" font-size="10">minibatch_label_noise</text>
+<text x="659.0" y="410" transform="rotate(22 659.0,410)" text-anchor="start" font-size="10">minibatch_terminal_noise</text>
+<text x="858.0" y="410" transform="rotate(22 858.0,410)" text-anchor="start" font-size="10">frozen_mlp_minibatch</text>
+<polyline fill="none" stroke="#d62728" stroke-width="2.2" points="62.0,226.3 261.0,191.7 460.0,285.2 659.0,227.8 858.0,103.2"/>
+<circle cx="62.0" cy="226.3" r="3.5" fill="#d62728"/>
+<circle cx="261.0" cy="191.7" r="3.5" fill="#d62728"/>
+<circle cx="460.0" cy="285.2" r="3.5" fill="#d62728"/>
+<circle cx="659.0" cy="227.8" r="3.5" fill="#d62728"/>
+<circle cx="858.0" cy="103.2" r="3.5" fill="#d62728"/><polyline fill="none" stroke="#2ca02c" stroke-width="2.2" points="62.0,377.0 261.0,376.8 460.0,376.9 659.0,377.1 858.0,370.3"/>
+<circle cx="62.0" cy="377.0" r="3.5" fill="#2ca02c"/>
+<circle cx="261.0" cy="376.8" r="3.5" fill="#2ca02c"/>
+<circle cx="460.0" cy="376.9" r="3.5" fill="#2ca02c"/>
+<circle cx="659.0" cy="377.1" r="3.5" fill="#2ca02c"/>
+<circle cx="858.0" cy="370.3" r="3.5" fill="#2ca02c"/><polyline fill="none" stroke="#17becf" stroke-width="2.2" points="62.0,375.9 261.0,375.7 460.0,376.2 659.0,375.9 858.0,367.3"/>
+<circle cx="62.0" cy="375.9" r="3.5" fill="#17becf"/>
+<circle cx="261.0" cy="375.7" r="3.5" fill="#17becf"/>
+<circle cx="460.0" cy="376.2" r="3.5" fill="#17becf"/>
+<circle cx="659.0" cy="375.9" r="3.5" fill="#17becf"/>
+<circle cx="858.0" cy="367.3" r="3.5" fill="#17becf"/><polyline fill="none" stroke="#ff7f0e" stroke-width="2.2" points="62.0,314.7 261.0,256.4 460.0,301.2 659.0,314.5 858.0,284.9"/>
+<circle cx="62.0" cy="314.7" r="3.5" fill="#ff7f0e"/>
+<circle cx="261.0" cy="256.4" r="3.5" fill="#ff7f0e"/>
+<circle cx="460.0" cy="301.2" r="3.5" fill="#ff7f0e"/>
+<circle cx="659.0" cy="314.5" r="3.5" fill="#ff7f0e"/>
+<circle cx="858.0" cy="284.9" r="3.5" fill="#ff7f0e"/><polyline fill="none" stroke="#9467bd" stroke-width="2.2" points="62.0,354.4 261.0,354.2 460.0,356.6 659.0,354.4 858.0,329.6"/>
+<circle cx="62.0" cy="354.4" r="3.5" fill="#9467bd"/>
+<circle cx="261.0" cy="354.2" r="3.5" fill="#9467bd"/>
+<circle cx="460.0" cy="356.6" r="3.5" fill="#9467bd"/>
+<circle cx="659.0" cy="354.4" r="3.5" fill="#9467bd"/>
+<circle cx="858.0" cy="329.6" r="3.5" fill="#9467bd"/>
+<circle cx="690" cy="54" r="4" fill="#d62728"/><text x="702" y="58" font-size="10">TANGO vanilla</text>
+<circle cx="690" cy="72" r="4" fill="#2ca02c"/><text x="702" y="76" font-size="10">TANGO-MB</text>
+<circle cx="690" cy="90" r="4" fill="#17becf"/><text x="702" y="94" font-size="10">TANGO-MB drift2</text>
+<circle cx="690" cy="108" r="4" fill="#ff7f0e"/><text x="702" y="112" font-size="10">passive</text>
+<circle cx="690" cy="126" r="4" fill="#9467bd"/><text x="702" y="130" font-size="10">passive+MB</text>
+<text transform="translate(14,220.0) rotate(-90)" text-anchor="middle" font-size="12">prototype MSE (median)</text>
+</svg>

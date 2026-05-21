@@ -1,0 +1,32 @@
+{
+  "goal": "Real VQC-stack validation: reconstruct MNIST images end-to-end via SurrogateQFL (LASA) snapshot recovery and Level-3 inversion, including weak-observation paths (LASA-QTERM tiers) with experiment-driven metric targets.",
+  "slug": "qfl-vqc-mnist-recon",
+  "parent_repo": "/workspace",
+  "sibling_runs": {
+    "lasa_qterm": "research-artifacts/qfl-terminal-snapshot",
+    "privacy_map": "research-artifacts/qfl-privacy-breakthrough"
+  },
+  "rounds_planned": 8,
+  "min_rounds_before_accept": 5,
+  "stop_mode": "until_metrics_or_round_8",
+  "supervisor_policy": "experiment_focused_strict",
+  "acceptance": {
+    "supervisor_verdicts": ["ACCEPT", "ACCEPT_WITH_MINOR"],
+    "max_critical_issues": 0,
+    "require_mnist_end_to_end": true,
+    "require_vqc_stack": "SurrogateQFL + ShardAttacker.level3_invert or JOLI",
+    "require_runnable_experiments": true,
+    "target_metrics": {
+      "input_mse_max": 0.05,
+      "psnr_min_db": 18.0,
+      "snapshot_mse_max_for_weak_path": 0.15,
+      "weak_path_must_beat_shard_snapshot_mse_within_1.5x_at_comparable_tier": false,
+      "primary_weak_tier": "T1p_or_T1b",
+      "oracle_shard_required_as_upper_bound": true
+    },
+    "forbid_accept_on_snapshot_only_without_l3_images": true,
+    "forbid_accept_before_round": 5
+  },
+  "domain_notes": "Use vendor/shard_sim pipeline + parent code/joli_invert.py. MNIST 28x28 preferred; 8x8 ablation OK. Supervisor must push experiment improvements each round (dim_g, epochs, L3 budget, snapshot path).",
+  "started_at": "2026-05-20T10:00:00Z"
+}

@@ -1,0 +1,950 @@
+{
+  "benchmark": "round10_held_out_acceptance_replication",
+  "framework_id": "QFL-PRIVACY-MAP",
+  "theorem_abt1": "ABT-1",
+  "held_out_seeds": [
+    41,
+    43,
+    47,
+    53,
+    59
+  ],
+  "development_seeds_excluded": [
+    3,
+    7,
+    11,
+    19,
+    23
+  ],
+  "stage2_config": {
+    "n_samples": 48,
+    "batch_size": 4,
+    "dim_g": 32,
+    "true_rank": 4,
+    "n_epochs": 5,
+    "noise_std": 0.01,
+    "mean_anchor_weight": 100.0,
+    "validation_fraction": 0.25,
+    "graph_lambda_grid": [
+      0.0,
+      0.003,
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1.0,
+      3.0,
+      10.0
+    ],
+    "random_fractions": [
+      1.0,
+      0.6,
+      0.4,
+      0.25,
+      0.15
+    ],
+    "target_snapshot_mse": 0.1
+  },
+  "qfl_config": {
+    "n_samples": 32,
+    "batch_size": 4,
+    "n_epochs": 10,
+    "dim_g": 32,
+    "true_rank": 4,
+    "noise_level": 0.01,
+    "partial_rows": 7,
+    "shield_rank": 2,
+    "shield_noise_std": 0.15,
+    "utility_metric": "gradient_mse"
+  },
+  "round07_config": {
+    "jasper_iters": 14,
+    "jasper_damping": 0.42,
+    "sinkhorn_tau": 0.26,
+    "sinkhorn_iters": 95,
+    "entropy_lambda": 0.1,
+    "ridge_lambda": 0.025,
+    "jasper_graph_lambda": 0.1,
+    "spectral_graph_alpha": 0.35,
+    "spectral_knn_k": 5,
+    "multi_epoch_warm_decay": 0.55,
+    "t1p_rows": 70,
+    "t1p_partial_per_epoch": 7,
+    "cert_noise_std": 0.01,
+    "cert_trace_slack": 1.08
+  },
+  "raw_runs": {
+    "gard_sparse_oracle_frac_0.25": [
+      {
+        "fraction": 0.25,
+        "observed_rows": 15,
+        "full_rows": 60,
+        "shard_ls_mse": 0.6175672024793601,
+        "gard_sparse_mse": 0.03402048896950323,
+        "selected_graph_lambda": 0.003,
+        "rank_augmented": 16,
+        "seed": 41
+      },
+      {
+        "fraction": 0.25,
+        "observed_rows": 15,
+        "full_rows": 60,
+        "shard_ls_mse": 0.659980950761783,
+        "gard_sparse_mse": 0.04395984856288523,
+        "selected_graph_lambda": 0.003,
+        "rank_augmented": 16,
+        "seed": 43
+      },
+      {
+        "fraction": 0.25,
+        "observed_rows": 15,
+        "full_rows": 60,
+        "shard_ls_mse": 0.6959486226588166,
+        "gard_sparse_mse": 0.06840399130015475,
+        "selected_graph_lambda": 0.03,
+        "rank_augmented": 16,
+        "seed": 47
+      },
+      {
+        "fraction": 0.25,
+        "observed_rows": 15,
+        "full_rows": 60,
+        "shard_ls_mse": 0.710677315880925,
+        "gard_sparse_mse": 0.042754407032512286,
+        "selected_graph_lambda": 0.003,
+        "rank_augmented": 16,
+        "seed": 53
+      },
+      {
+        "fraction": 0.25,
+        "observed_rows": 15,
+        "full_rows": 60,
+        "shard_ls_mse": 0.7228724918780759,
+        "gard_sparse_mse": 0.05635156650505244,
+        "selected_graph_lambda": 0.003,
+        "rank_augmented": 16,
+        "seed": 59
+      }
+    ],
+    "leak_cert_t1p_v2_honest": [
+      {
+        "seed": 41,
+        "empirical_t1p_mse": 0.39904731356228385,
+        "n_obs_t1p_rows": 70,
+        "cert_naive_broadcast": 1.0000012997320593,
+        "cert_naive_trace_inflated": 15.999999999874206,
+        "cert_t1p_trace_upper": 1.0799999999915089,
+        "cert_tight_upper_bound": 1.0799999999915089,
+        "naive_broadcast_over_cert": 0.9259271293888162,
+        "naive_trace_over_cert": 14.814814814814815,
+        "cert_covers_empirical": true,
+        "criterion_c_2x_honest_naive": false,
+        "criterion_c_2x_trace_inflated": true
+      },
+      {
+        "seed": 43,
+        "empirical_t1p_mse": 0.4345940446612458,
+        "n_obs_t1p_rows": 70,
+        "cert_naive_broadcast": 1.000001756582781,
+        "cert_naive_trace_inflated": 15.99999999987257,
+        "cert_t1p_trace_upper": 1.0799999999913985,
+        "cert_tight_upper_bound": 1.0799999999913985,
+        "naive_broadcast_over_cert": 0.9259275523988383,
+        "naive_trace_over_cert": 14.814814814814813,
+        "cert_covers_empirical": true,
+        "criterion_c_2x_honest_naive": false,
+        "criterion_c_2x_trace_inflated": true
+      },
+      {
+        "seed": 47,
+        "empirical_t1p_mse": 0.3593424276889217,
+        "n_obs_t1p_rows": 70,
+        "cert_naive_broadcast": 1.0000010601582396,
+        "cert_naive_trace_inflated": 15.99999999987594,
+        "cert_t1p_trace_upper": 1.0799999999916259,
+        "cert_tight_upper_bound": 1.0799999999916259,
+        "naive_broadcast_over_cert": 0.9259269075611051,
+        "naive_trace_over_cert": 14.814814814814815,
+        "cert_covers_empirical": true,
+        "criterion_c_2x_honest_naive": false,
+        "criterion_c_2x_trace_inflated": true
+      },
+      {
+        "seed": 53,
+        "empirical_t1p_mse": 0.4097317700828815,
+        "n_obs_t1p_rows": 70,
+        "cert_naive_broadcast": 1.0000014203669387,
+        "cert_naive_trace_inflated": 15.999999999873042,
+        "cert_t1p_trace_upper": 1.0799999999914305,
+        "cert_tight_upper_bound": 1.0799999999914305,
+        "naive_broadcast_over_cert": 0.9259272410878459,
+        "naive_trace_over_cert": 14.814814814814813,
+        "cert_covers_empirical": true,
+        "criterion_c_2x_honest_naive": false,
+        "criterion_c_2x_trace_inflated": true
+      },
+      {
+        "seed": 59,
+        "empirical_t1p_mse": 0.45543219545158065,
+        "n_obs_t1p_rows": 70,
+        "cert_naive_broadcast": 1.0000008141403853,
+        "cert_naive_trace_inflated": 15.999999999875294,
+        "cert_t1p_trace_upper": 1.0799999999915824,
+        "cert_tight_upper_bound": 1.0799999999915824,
+        "naive_broadcast_over_cert": 0.9259266797668328,
+        "naive_trace_over_cert": 14.814814814814815,
+        "cert_covers_empirical": true,
+        "criterion_c_2x_honest_naive": false,
+        "criterion_c_2x_trace_inflated": true
+      }
+    ],
+    "wrong40_gard": [
+      {
+        "seed": 41,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.5125,
+        "incidence_rank_used": 21,
+        "incidence_rank_true": 21,
+        "snapshot_mse": 0.9852074943743385,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.10984696221334171,
+          "residual_mse_true_h": 0.13626741678520335,
+          "ratio_true_over_used": null
+        }
+      },
+      {
+        "seed": 43,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.5375,
+        "incidence_rank_used": 21,
+        "incidence_rank_true": 21,
+        "snapshot_mse": 0.8902655631679663,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.1019400079501616,
+          "residual_mse_true_h": 0.1607986531464971,
+          "ratio_true_over_used": null
+        }
+      },
+      {
+        "seed": 47,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.5125,
+        "incidence_rank_used": 21,
+        "incidence_rank_true": 21,
+        "snapshot_mse": 1.0065445225225864,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.21284635878774788,
+          "residual_mse_true_h": 0.21527687137439022,
+          "ratio_true_over_used": null
+        }
+      },
+      {
+        "seed": 53,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.525,
+        "incidence_rank_used": 21,
+        "incidence_rank_true": 21,
+        "snapshot_mse": 0.9422511297014302,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.16669605335602258,
+          "residual_mse_true_h": 0.17303144703541543,
+          "ratio_true_over_used": null
+        }
+      },
+      {
+        "seed": 59,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.525,
+        "incidence_rank_used": 21,
+        "incidence_rank_true": 21,
+        "snapshot_mse": 0.9210831716465099,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.14489948450927118,
+          "residual_mse_true_h": 0.1912805347551298,
+          "ratio_true_over_used": null
+        }
+      },
+      {
+        "seed": 41,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.5375,
+        "incidence_rank_used": 32,
+        "incidence_rank_true": 32,
+        "snapshot_mse": 2.943367138489415,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.04439010849736983,
+          "residual_mse_true_h": 0.5750279999962764,
+          "ratio_true_over_used": null
+        }
+      },
+      {
+        "seed": 43,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.5375,
+        "incidence_rank_used": 32,
+        "incidence_rank_true": 32,
+        "snapshot_mse": 3.1394582486615406,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.027466033548363418,
+          "residual_mse_true_h": 0.44675239529258093,
+          "ratio_true_over_used": null
+        }
+      },
+      {
+        "seed": 47,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.5125,
+        "incidence_rank_used": 32,
+        "incidence_rank_true": 32,
+        "snapshot_mse": 2.373789431877019,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.02872688399865172,
+          "residual_mse_true_h": 0.32159376030214215,
+          "ratio_true_over_used": null
+        }
+      },
+      {
+        "seed": 53,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.53125,
+        "incidence_rank_used": 32,
+        "incidence_rank_true": 32,
+        "snapshot_mse": 2.143392039678777,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.05657470882938551,
+          "residual_mse_true_h": 0.43647803552726094,
+          "ratio_true_over_used": null
+        }
+      },
+      {
+        "seed": 59,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.55625,
+        "incidence_rank_used": 32,
+        "incidence_rank_true": 32,
+        "snapshot_mse": 4.141399983563425,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.0506682909334667,
+          "residual_mse_true_h": 0.6753061252880016,
+          "ratio_true_over_used": null
+        }
+      }
+    ],
+    "wrong40_jasper_q": [
+      {
+        "seed": 41,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.5125,
+        "t1p_warm_blend": 0.65,
+        "t1p_warm_mse": 0.40473168291221223,
+        "snapshot_mse": 0.964345402984276,
+        "jasper_q_hard_overlap": 0.5,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.15171199247074524,
+          "residual_mse_true_h": 0.15828029379818204,
+          "ratio_true_over_used": 1.0432945426427207
+        }
+      },
+      {
+        "seed": 43,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.5375,
+        "t1p_warm_blend": 0.65,
+        "t1p_warm_mse": 0.4355597240635989,
+        "snapshot_mse": 0.9366090119757204,
+        "jasper_q_hard_overlap": 0.475,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.1658430469736997,
+          "residual_mse_true_h": 0.18550197654519457,
+          "ratio_true_over_used": 1.1185393655641922
+        }
+      },
+      {
+        "seed": 47,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.5125,
+        "t1p_warm_blend": 0.65,
+        "t1p_warm_mse": 0.37040814150921497,
+        "snapshot_mse": 0.9453163193508495,
+        "jasper_q_hard_overlap": 0.45,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.1794308551310507,
+          "residual_mse_true_h": 0.1972342542342928,
+          "ratio_true_over_used": 1.0992215028470942
+        }
+      },
+      {
+        "seed": 53,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.525,
+        "t1p_warm_blend": 0.65,
+        "t1p_warm_mse": 0.4588024905608905,
+        "snapshot_mse": 0.9643459146607776,
+        "jasper_q_hard_overlap": 0.475,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.1722217914743799,
+          "residual_mse_true_h": 0.18699066735549047,
+          "ratio_true_over_used": 1.0857549776638318
+        }
+      },
+      {
+        "seed": 59,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.525,
+        "t1p_warm_blend": 0.65,
+        "t1p_warm_mse": 0.4675960815191569,
+        "snapshot_mse": 0.934359229843411,
+        "jasper_q_hard_overlap": 0.4875,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.20188168075259422,
+          "residual_mse_true_h": 0.21497284936681313,
+          "ratio_true_over_used": 1.064845748090745
+        }
+      },
+      {
+        "seed": 41,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.5375,
+        "t1p_warm_blend": 0.65,
+        "t1p_warm_mse": 0.38493267940455755,
+        "snapshot_mse": 0.9211193282607283,
+        "jasper_q_hard_overlap": 0.4625,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.19818131399045108,
+          "residual_mse_true_h": 0.2003025725261911,
+          "ratio_true_over_used": 1.0107036253470507
+        }
+      },
+      {
+        "seed": 43,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.5375,
+        "t1p_warm_blend": 0.65,
+        "t1p_warm_mse": 0.4451954171136743,
+        "snapshot_mse": 0.9035742847726513,
+        "jasper_q_hard_overlap": 0.4875,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.1836752451186999,
+          "residual_mse_true_h": 0.178961754696953,
+          "ratio_true_over_used": 0.9743379113570758
+        }
+      },
+      {
+        "seed": 47,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.5125,
+        "t1p_warm_blend": 0.65,
+        "t1p_warm_mse": 0.40065182841495356,
+        "snapshot_mse": 0.929671869769423,
+        "jasper_q_hard_overlap": 0.41875,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.1526990951105626,
+          "residual_mse_true_h": 0.15384789943954486,
+          "ratio_true_over_used": 1.007523321131343
+        }
+      },
+      {
+        "seed": 53,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.53125,
+        "t1p_warm_blend": 0.65,
+        "t1p_warm_mse": 0.38894246831497725,
+        "snapshot_mse": 0.8803901595325891,
+        "jasper_q_hard_overlap": 0.51875,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.18625479630129432,
+          "residual_mse_true_h": 0.18078579650104284,
+          "ratio_true_over_used": 0.9706369988378469
+        }
+      },
+      {
+        "seed": 59,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "full_rows": 80,
+        "assignment_overlap_prior": 0.55625,
+        "t1p_warm_blend": 0.65,
+        "t1p_warm_mse": 0.4376713205018766,
+        "snapshot_mse": 0.8844345465102739,
+        "jasper_q_hard_overlap": 0.50625,
+        "used_vs_true_residual": {
+          "residual_mse_used_h": 0.2060026660124162,
+          "residual_mse_true_h": 0.204110694279915,
+          "ratio_true_over_used": 0.9908157900617306
+        }
+      }
+    ]
+  },
+  "audits": {
+    "S2-oracle": {
+      "tier_id": "S2-oracle",
+      "status": "CONDITIONAL_THREAT",
+      "fraction": 0.25,
+      "observed_rows_mean": 15,
+      "full_rows": 60,
+      "row_reduction_vs_full": 0.75,
+      "gard_sparse_mse_mean": 0.049098060474021585,
+      "target_mse": 0.1,
+      "parent_mean_reaches_target": true,
+      "pass": true,
+      "verdict": "Oracle GARD-SPARSE @ 25% rows: mean MSE 0.0491 (\u2264) 0.1; 75% row reduction vs full.",
+      "per_run": [
+        {
+          "fraction": 0.25,
+          "observed_rows": 15,
+          "full_rows": 60,
+          "shard_ls_mse": 0.6175672024793601,
+          "gard_sparse_mse": 0.03402048896950323,
+          "selected_graph_lambda": 0.003,
+          "rank_augmented": 16,
+          "seed": 41
+        },
+        {
+          "fraction": 0.25,
+          "observed_rows": 15,
+          "full_rows": 60,
+          "shard_ls_mse": 0.659980950761783,
+          "gard_sparse_mse": 0.04395984856288523,
+          "selected_graph_lambda": 0.003,
+          "rank_augmented": 16,
+          "seed": 43
+        },
+        {
+          "fraction": 0.25,
+          "observed_rows": 15,
+          "full_rows": 60,
+          "shard_ls_mse": 0.6959486226588166,
+          "gard_sparse_mse": 0.06840399130015475,
+          "selected_graph_lambda": 0.03,
+          "rank_augmented": 16,
+          "seed": 47
+        },
+        {
+          "fraction": 0.25,
+          "observed_rows": 15,
+          "full_rows": 60,
+          "shard_ls_mse": 0.710677315880925,
+          "gard_sparse_mse": 0.042754407032512286,
+          "selected_graph_lambda": 0.003,
+          "rank_augmented": 16,
+          "seed": 53
+        },
+        {
+          "fraction": 0.25,
+          "observed_rows": 15,
+          "full_rows": 60,
+          "shard_ls_mse": 0.7228724918780759,
+          "gard_sparse_mse": 0.05635156650505244,
+          "selected_graph_lambda": 0.003,
+          "rank_augmented": 16,
+          "seed": 59
+        }
+      ]
+    },
+    "T1p": {
+      "tier_id": "T1p",
+      "status": "CERT_WEAK",
+      "empirical_t1p_mse_mean": 0.4116295502893827,
+      "cert_tight_mean": 1.079999999991509,
+      "naive_baseline_mean": 1.0000012701960808,
+      "naive_over_cert_ratio_mean": 0.9259271020406876,
+      "criterion_c_2x_honest_naive": false,
+      "cert_covers_empirical_all": true,
+      "round07_trace_inflated_gaming_detected": true,
+      "pass": false,
+      "verdict": "Criterion C fails under honest naive; Round 07 trace-inflated baseline was gaming.",
+      "per_run": [
+        {
+          "seed": 41,
+          "empirical_t1p_mse": 0.39904731356228385,
+          "n_obs_t1p_rows": 70,
+          "cert_naive_broadcast": 1.0000012997320593,
+          "cert_naive_trace_inflated": 15.999999999874206,
+          "cert_t1p_trace_upper": 1.0799999999915089,
+          "cert_tight_upper_bound": 1.0799999999915089,
+          "naive_broadcast_over_cert": 0.9259271293888162,
+          "naive_trace_over_cert": 14.814814814814815,
+          "cert_covers_empirical": true,
+          "criterion_c_2x_honest_naive": false,
+          "criterion_c_2x_trace_inflated": true
+        },
+        {
+          "seed": 43,
+          "empirical_t1p_mse": 0.4345940446612458,
+          "n_obs_t1p_rows": 70,
+          "cert_naive_broadcast": 1.000001756582781,
+          "cert_naive_trace_inflated": 15.99999999987257,
+          "cert_t1p_trace_upper": 1.0799999999913985,
+          "cert_tight_upper_bound": 1.0799999999913985,
+          "naive_broadcast_over_cert": 0.9259275523988383,
+          "naive_trace_over_cert": 14.814814814814813,
+          "cert_covers_empirical": true,
+          "criterion_c_2x_honest_naive": false,
+          "criterion_c_2x_trace_inflated": true
+        },
+        {
+          "seed": 47,
+          "empirical_t1p_mse": 0.3593424276889217,
+          "n_obs_t1p_rows": 70,
+          "cert_naive_broadcast": 1.0000010601582396,
+          "cert_naive_trace_inflated": 15.99999999987594,
+          "cert_t1p_trace_upper": 1.0799999999916259,
+          "cert_tight_upper_bound": 1.0799999999916259,
+          "naive_broadcast_over_cert": 0.9259269075611051,
+          "naive_trace_over_cert": 14.814814814814815,
+          "cert_covers_empirical": true,
+          "criterion_c_2x_honest_naive": false,
+          "criterion_c_2x_trace_inflated": true
+        },
+        {
+          "seed": 53,
+          "empirical_t1p_mse": 0.4097317700828815,
+          "n_obs_t1p_rows": 70,
+          "cert_naive_broadcast": 1.0000014203669387,
+          "cert_naive_trace_inflated": 15.999999999873042,
+          "cert_t1p_trace_upper": 1.0799999999914305,
+          "cert_tight_upper_bound": 1.0799999999914305,
+          "naive_broadcast_over_cert": 0.9259272410878459,
+          "naive_trace_over_cert": 14.814814814814813,
+          "cert_covers_empirical": true,
+          "criterion_c_2x_honest_naive": false,
+          "criterion_c_2x_trace_inflated": true
+        },
+        {
+          "seed": 59,
+          "empirical_t1p_mse": 0.45543219545158065,
+          "n_obs_t1p_rows": 70,
+          "cert_naive_broadcast": 1.0000008141403853,
+          "cert_naive_trace_inflated": 15.999999999875294,
+          "cert_t1p_trace_upper": 1.0799999999915824,
+          "cert_tight_upper_bound": 1.0799999999915824,
+          "naive_broadcast_over_cert": 0.9259266797668328,
+          "naive_trace_over_cert": 14.814814814814815,
+          "cert_covers_empirical": true,
+          "criterion_c_2x_honest_naive": false,
+          "criterion_c_2x_trace_inflated": true
+        }
+      ]
+    },
+    "S2-wrong40": {
+      "tier_id": "S2-wrong40",
+      "theorem_id": "ABT-1",
+      "status": "BARRIER",
+      "assignment_regime": "wrong40",
+      "fraction_checks": [
+        {
+          "fraction": 0.25,
+          "gard_mean_mse": 0.9490703762825664,
+          "jasper_mean_mse": 0.9489951757630068,
+          "abt1_floor": 0.15,
+          "barrier_holds": true
+        },
+        {
+          "fraction": 0.5,
+          "gard_mean_mse": 2.9482813684540354,
+          "jasper_mean_mse": 0.9038380377691331,
+          "abt1_floor": 0.15,
+          "barrier_holds": true
+        }
+      ],
+      "pass": true,
+      "verdict": "ABT-1 floor holds: wrong incidence blocks snapshot MSE < 0.15 at tested fractions."
+    }
+  },
+  "breakthrough_signals": {
+    "signal_1": {
+      "id": "SIGNAL-1",
+      "name": "Assignment barrier + T1 impossibility cross-cite",
+      "abt1_barrier_holds": true,
+      "abt1_audit": {
+        "tier_id": "S2-wrong40",
+        "theorem_id": "ABT-1",
+        "status": "BARRIER",
+        "assignment_regime": "wrong40",
+        "fraction_checks": [
+          {
+            "fraction": 0.25,
+            "gard_mean_mse": 0.9490703762825664,
+            "jasper_mean_mse": 0.9489951757630068,
+            "abt1_floor": 0.15,
+            "barrier_holds": true
+          },
+          {
+            "fraction": 0.5,
+            "gard_mean_mse": 2.9482813684540354,
+            "jasper_mean_mse": 0.9038380377691331,
+            "abt1_floor": 0.15,
+            "barrier_holds": true
+          }
+        ],
+        "pass": true,
+        "verdict": "ABT-1 floor holds: wrong incidence blocks snapshot MSE < 0.15 at tested fractions."
+      },
+      "t1_impossibility_ref": "/workspace/research-artifacts/qfl-terminal-snapshot/paper/impossibility_t1.md",
+      "note": "T1 broadcast floor cited from LASA-QTERM; ABT-1 replicated on held-out seeds."
+    },
+    "signal_2": {
+      "id": "SIGNAL-2",
+      "name": "Oracle GARD-SPARSE conditional threat",
+      "gard_oracle_pass": true,
+      "gard_audit": {
+        "tier_id": "S2-oracle",
+        "status": "CONDITIONAL_THREAT",
+        "fraction": 0.25,
+        "observed_rows_mean": 15,
+        "full_rows": 60,
+        "row_reduction_vs_full": 0.75,
+        "gard_sparse_mse_mean": 0.049098060474021585,
+        "target_mse": 0.1,
+        "parent_mean_reaches_target": true,
+        "pass": true,
+        "verdict": "Oracle GARD-SPARSE @ 25% rows: mean MSE 0.0491 (\u2264) 0.1; 75% row reduction vs full.",
+        "per_run": [
+          {
+            "fraction": 0.25,
+            "observed_rows": 15,
+            "full_rows": 60,
+            "shard_ls_mse": 0.6175672024793601,
+            "gard_sparse_mse": 0.03402048896950323,
+            "selected_graph_lambda": 0.003,
+            "rank_augmented": 16,
+            "seed": 41
+          },
+          {
+            "fraction": 0.25,
+            "observed_rows": 15,
+            "full_rows": 60,
+            "shard_ls_mse": 0.659980950761783,
+            "gard_sparse_mse": 0.04395984856288523,
+            "selected_graph_lambda": 0.003,
+            "rank_augmented": 16,
+            "seed": 43
+          },
+          {
+            "fraction": 0.25,
+            "observed_rows": 15,
+            "full_rows": 60,
+            "shard_ls_mse": 0.6959486226588166,
+            "gard_sparse_mse": 0.06840399130015475,
+            "selected_graph_lambda": 0.03,
+            "rank_augmented": 16,
+            "seed": 47
+          },
+          {
+            "fraction": 0.25,
+            "observed_rows": 15,
+            "full_rows": 60,
+            "shard_ls_mse": 0.710677315880925,
+            "gard_sparse_mse": 0.042754407032512286,
+            "selected_graph_lambda": 0.003,
+            "rank_augmented": 16,
+            "seed": 53
+          },
+          {
+            "fraction": 0.25,
+            "observed_rows": 15,
+            "full_rows": 60,
+            "shard_ls_mse": 0.7228724918780759,
+            "gard_sparse_mse": 0.05635156650505244,
+            "selected_graph_lambda": 0.003,
+            "rank_augmented": 16,
+            "seed": 59
+          }
+        ]
+      },
+      "note": "75% row reduction @ MSE\u22640.10 requires honest-incidence QFL (oracle assignment)."
+    },
+    "signal_3": {
+      "id": "SIGNAL-3",
+      "name": "LEAK-CERT T1p (secondary)",
+      "cert_covers_empirical": true,
+      "criterion_c_2x_honest": false,
+      "t1p_audit": {
+        "tier_id": "T1p",
+        "status": "CERT_WEAK",
+        "empirical_t1p_mse_mean": 0.4116295502893827,
+        "cert_tight_mean": 1.079999999991509,
+        "naive_baseline_mean": 1.0000012701960808,
+        "naive_over_cert_ratio_mean": 0.9259271020406876,
+        "criterion_c_2x_honest_naive": false,
+        "cert_covers_empirical_all": true,
+        "round07_trace_inflated_gaming_detected": true,
+        "pass": false,
+        "verdict": "Criterion C fails under honest naive; Round 07 trace-inflated baseline was gaming.",
+        "per_run": [
+          {
+            "seed": 41,
+            "empirical_t1p_mse": 0.39904731356228385,
+            "n_obs_t1p_rows": 70,
+            "cert_naive_broadcast": 1.0000012997320593,
+            "cert_naive_trace_inflated": 15.999999999874206,
+            "cert_t1p_trace_upper": 1.0799999999915089,
+            "cert_tight_upper_bound": 1.0799999999915089,
+            "naive_broadcast_over_cert": 0.9259271293888162,
+            "naive_trace_over_cert": 14.814814814814815,
+            "cert_covers_empirical": true,
+            "criterion_c_2x_honest_naive": false,
+            "criterion_c_2x_trace_inflated": true
+          },
+          {
+            "seed": 43,
+            "empirical_t1p_mse": 0.4345940446612458,
+            "n_obs_t1p_rows": 70,
+            "cert_naive_broadcast": 1.000001756582781,
+            "cert_naive_trace_inflated": 15.99999999987257,
+            "cert_t1p_trace_upper": 1.0799999999913985,
+            "cert_tight_upper_bound": 1.0799999999913985,
+            "naive_broadcast_over_cert": 0.9259275523988383,
+            "naive_trace_over_cert": 14.814814814814813,
+            "cert_covers_empirical": true,
+            "criterion_c_2x_honest_naive": false,
+            "criterion_c_2x_trace_inflated": true
+          },
+          {
+            "seed": 47,
+            "empirical_t1p_mse": 0.3593424276889217,
+            "n_obs_t1p_rows": 70,
+            "cert_naive_broadcast": 1.0000010601582396,
+            "cert_naive_trace_inflated": 15.99999999987594,
+            "cert_t1p_trace_upper": 1.0799999999916259,
+            "cert_tight_upper_bound": 1.0799999999916259,
+            "naive_broadcast_over_cert": 0.9259269075611051,
+            "naive_trace_over_cert": 14.814814814814815,
+            "cert_covers_empirical": true,
+            "criterion_c_2x_honest_naive": false,
+            "criterion_c_2x_trace_inflated": true
+          },
+          {
+            "seed": 53,
+            "empirical_t1p_mse": 0.4097317700828815,
+            "n_obs_t1p_rows": 70,
+            "cert_naive_broadcast": 1.0000014203669387,
+            "cert_naive_trace_inflated": 15.999999999873042,
+            "cert_t1p_trace_upper": 1.0799999999914305,
+            "cert_tight_upper_bound": 1.0799999999914305,
+            "naive_broadcast_over_cert": 0.9259272410878459,
+            "naive_trace_over_cert": 14.814814814814813,
+            "cert_covers_empirical": true,
+            "criterion_c_2x_honest_naive": false,
+            "criterion_c_2x_trace_inflated": true
+          },
+          {
+            "seed": 59,
+            "empirical_t1p_mse": 0.45543219545158065,
+            "n_obs_t1p_rows": 70,
+            "cert_naive_broadcast": 1.0000008141403853,
+            "cert_naive_trace_inflated": 15.999999999875294,
+            "cert_t1p_trace_upper": 1.0799999999915824,
+            "cert_tight_upper_bound": 1.0799999999915824,
+            "naive_broadcast_over_cert": 0.9259266797668328,
+            "naive_trace_over_cert": 14.814814814814815,
+            "cert_covers_empirical": true,
+            "criterion_c_2x_honest_naive": false,
+            "criterion_c_2x_trace_inflated": true
+          }
+        ]
+      },
+      "note": "Certificate covers empirical T1p; honest naive is not 2\u00d7 tighter than cert."
+    },
+    "two_independent_breakthrough_signals": true
+  },
+  "kill_list_confirmed": [
+    "Snapshot-DP (Round 05)",
+    "ASSIGN-LOCK (Round 02 survey-only)",
+    "trace-inflated C naive (Round 08 fix)",
+    "PROBE-RAND (Round 09 honest failure)"
+  ],
+  "acceptance": {
+    "round": 10,
+    "status": "ACCEPT",
+    "early_accept_two_signals": true,
+    "config_gate_A_oracle": true,
+    "config_gate_C_honest": false,
+    "config_gate_ABT1": true
+  },
+  "honesty_notes": [
+    "Held-out seeds never used in Rounds 01\u201309 development ensemble.",
+    "Signal 2 is conditional on oracle assignment; wrong40 breaks row-efficiency win.",
+    "Signal 3 documents valid cert coverage without claiming 2\u00d7 honest naive tightening.",
+    "No supervisor_review.md (Round 10 scientist acceptance package)."
+  ],
+  "runtime_sec": 6.6883166410261765
+}

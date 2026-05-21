@@ -1,4 +1,4 @@
-# TALON/TANGO Manuscript Draft (Round 10)
+# TALON/TANGO Manuscript Draft (Round 14)
 
 Working title: **Beyond SHARD: Tiered Gradient Leakage and Identifiability Limits Under Active Terminal Probing**
 
@@ -8,68 +8,60 @@ Formal proofs: `paper/proofs.md`. LaTeX fragment: `paper/method.tex`.
 
 ## Abstract
 
-Federated learning often leaks only **terminal** client model updates, not the intermediate minibatch gradients required by SHARD-style individual reconstruction. We introduce **TALON**, an observation-tier framework, and **TANGO**, an **active terminal probing** attack that recovers class counts, class sums, and hidden prototypes under a linear-head, full-batch, first-order model. We prove aggregate identifiability (Theorem 1) and individual non-identifiability (Theorem 2) with assumptions matching `theorem_scope.exact`. Experiments on synthetic hidden-feature FL show strong prototype recovery in the exact regime (prototype MSE $\approx 1.5\times 10^{-4}$) but **honest failure** under minibatch SGD (TANGO MSE $\approx 6.59$ vs passive $\approx 0.75$). **Count recovery and prototype recovery must be reported separately**—passive baselines can outperform TANGO on counts. A Round-10 decoder probe links recovered hidden prototypes to synthetic pixel class means when TANGO succeeds; frozen nonlinear features preserve Tier-1 accuracy. We do **not** claim individual sample recovery from terminal-only observations.
+Federated learning often leaks only **terminal** client model updates, not intermediate minibatch gradients required by SHARD-style reconstruction. We introduce **TALON** (observation tiers) and **TANGO** (active terminal probing) for recovering class counts, class sums, and hidden prototypes under a linear-head, first-order model. We prove aggregate identifiability in the full-batch exact regime and **Lemma MB-A** for minibatch divisor correction at \(W_0=0\), with **Lemma MB-B** drift bounds (mean \(\|W_M-W_0\|_F \approx 0.112\)). Round 14 closes Phase-2 scoped acceptance: **TANGO-MB** on primary `minibatch_sgd` (see `artifacts/round14_metrics.json`); **TANGO-JOINT** (uniform weights) and **TANGO-DOPT** are **distinct** estimators and both **fail** vs TANGO-MB. Honest scaling-only **`passive_mb_scale_only`** isolates Lemma MB-A; active gain \(\approx 14\times\) over scaling-only. **SHARD** `level3_invert` cross (synthetic tier table): individual reconstruction under intermediate gradients; terminal-only TANGO targets class prototypes — not comparable metrics. Scoped claims: `paper/phase2_scope.md`. Individual recovery remains impossible (Theorem 2).
 
 ---
 
-## 1. Limits (lead section for reviewers)
+## 1. Limits (lead section)
 
-### 1.1 Minibatch SGD breaks the default estimator
+### 1.1 Minibatch SGD (Phase-2 primary)
 
-| Scenario | TANGO prototype MSE | Passive prototype MSE | TANGO count MAE |
-|---|---:|---:|---:|
-| balanced_clean (exact) | 0.000151 | 0.143 | 0.0419 |
-| minibatch_sgd | **6.5877** | **0.7532** | 2.5743 |
+| Method | Prototype MSE (mean / median / IQR) | Count MAE |
+|---|---:|---:|
+| TANGO vanilla | 6.588 / — | — |
+| Passive multi-round | 0.753 / 0.751 | 0.295 |
+| **passive_mb_scale_only (R11)** | **0.151** / **0.140** / 0.032 | — |
+| **TANGO-MB (active)** | **0.011** / **0.011** / 0.005 | **0.100** |
+| TANGO-JOINT (uniform, R14) | see R14 JSON | — |
+| TANGO-DOPT | see R14 JSON | — |
+| TANGO-COUPLED | ~0.27 (R13–14) | — |
 
-Under minibatch training, the first-order full-batch mapping in Lemma A is invalid. Active TANGO is **worse** than passive multi-round on prototypes ($\approx 0.11\times$ gain). The exact theorems apply only to full-batch training; minibatch FL requires corrected estimators (future work).
+Vanilla TANGO mis-scales terminal deltas (\(T\) vs \(T_{\mathrm{eff}}=T(N/B)\)). TANGO-MB fixes Lemma MB-A; residual \(\sim 0.01\) MSE vs exact \(1.5\times 10^{-4}\) correlates with within-step drift (Lemma MB-B; mean \(\|W_M-W_0\|_F \approx 0.112\) in `artifacts/round13_metrics.json`).
 
-### 1.2 Prototype win $\neq$ count win
+**Active vs scaling (honest):** scaling-only **0.151** vs passive **0.753**; active TANGO-MB adds **\(\approx 14\times\)** over scaling-only (not \(\approx 26\times\) using Round 12 coupled passive_mb **0.284**).
 
-On `balanced_clean`, passive count MAE (0.0152) beats TANGO (0.0419) while TANGO dominates prototype MSE. On `large_10class_30dim`, passive count MAE (0.0038) beats TANGO (0.0294). Summaries must not imply “active dominates passive on all metrics.”
+### 1.2 Dual metrics
 
-### 1.3 No individual recovery
+Count recovery uses the least-perturbed probe round for bias moments under MB; prototype recovery uses full active stack. Do not merge into a single “attack success” score.
 
-Theorem 2: within-class zero-sum perturbations leave terminal observations unchanged. Empirically, `high_within_class_variance` individual MSE $\approx 0.983$ vs within-class floor $\approx 0.837$.
+### 1.3 Scope
 
-### 1.4 Evaluation scope
-
-Synthetic simulator with fixed (or frozen) hidden features and linear head. Not a deployed CNN FL system; not secure aggregation.
-
----
-
-## 2. Contributions
-
-1. Observation tier ladder (TALON) separating terminal, partial intermediate, and SHARD tiers.
-2. TANGO active probing algorithm with separated count/prototype metrics.
-3. Formal proofs (Appendix `paper/proofs.md`).
-4. Reproducible benchmarks Rounds 08–10 with baselines and negative results.
-5. Decoder bridge experiment (Round 10): decodable pixel means track recovered hidden prototypes when Tier-1 succeeds.
+Synthetic hidden-feature / frozen-MLP simulator; not deployed CNN FL; secure aggregation out of scope (note in R14 JSON). SHARD L3 tier cross: `artifacts/round14_metrics.json` → `shard_baseline_cross`. Full claim fence: `paper/phase2_scope.md`.
 
 ---
 
-## 3. Method summary
+## 2. Contributions (Rounds 09–12)
 
-See `paper/method.tex` and `tutorial/tutorial.md` §3–4.
-
----
-
-## 4. Experiments (headline numbers)
-
-**Round 09** (`artifacts/round09_metrics.json`): baselines, stress tests, theorem scope labels.
-
-**Round 10** (`artifacts/round10_metrics.json`):
-
-- **Decoder probe:** pixel class-mean MSE via $D\hat\mu_c$ when TANGO accurate; degrades under minibatch.
-- **Frozen MLP features:** nonlinear $\phi(x)$ fixed; only head trains—Tier-1 prototype MSE remains low.
+1. TALON tier ladder vs SHARD intermediate-gradient requirement.
+2. TANGO active probing with separated metrics.
+3. Formal proofs + Lemma MB-A/B/Iter (`paper/proofs.md`).
+4. Reproducible benchmarks through Round 12 (`code/benchmark_round12.py`).
+5. Broader stress: label noise, terminal noise, frozen MLP + minibatch, median/IQR reporting.
 
 ---
 
-## 5. Related work pointer
+## 3. Experiments (Round 14 headlines)
 
-SHARD (vendored `vendor/shard_sim`) requires intermediate gradients. TANGO targets strictly weaker observations and weaker privacy targets (aggregates, not individuals).
+Source: `artifacts/round14_metrics.json`, log `logs/experiment_round14.log`.
+
+**Primary `minibatch_sgd` (8 seeds):** see table §1.1.
+
+**`minibatch_nonzero_init`:** TANGO-MB mean **0.017**; **tango_mb_iter** (one Jacobian step, \(\alpha=0.15\)) mean **0.013** vs vanilla **10.08**.
+
+**Robustness:** `minibatch_label_noise` (8% flips), `minibatch_terminal_noise` (\(\sigma=0.002\)), `frozen_mlp_minibatch` — see JSON scenario headlines.
 
 ---
 
-## 6. Conclusion
+## 4. Conclusion
 
-Active terminal probing identifies class-level hidden prototypes and aggregate moments in an exact linear full-batch regime, with formal proofs and explicit limits. Minibatch SGD, count–prototype asymmetry, and individual non-identifiability must remain visible in every summary table and the abstract.
+Minibatch failure mode is addressed by principled \(T_{\mathrm{eff}}\) scaling plus explicit drift and count estimators. **Scoped Phase-2 ACCEPT** is supportable on the simulator (see `paper/phase2_scope.md`); holistic ACCEPT still excludes deployed CNN FL and secure-aggregation settings without stakeholder scope waiver.

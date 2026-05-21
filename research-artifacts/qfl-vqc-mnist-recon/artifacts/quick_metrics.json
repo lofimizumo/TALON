@@ -1,0 +1,165 @@
+{
+  "benchmark": "benchmark_quick",
+  "mode": "quick",
+  "quick_env": true,
+  "config": {
+    "resize": 14,
+    "n_samples": 12,
+    "n_epochs": 5,
+    "seeds": [
+      3,
+      7
+    ],
+    "dim_g_list": [
+      100
+    ],
+    "snapshot_paths": [
+      "lasa_qterm_T1p_graph",
+      "shard_oracle"
+    ],
+    "l3_profile": {
+      "name": "quick_iter",
+      "adam_steps": 120,
+      "lbfgs_iter": 80,
+      "n_batch_cap": 48,
+      "include_lapin": false,
+      "lapin_only_if_d_le": 0,
+      "adam_grid": [
+        120
+      ],
+      "parallel_seed_workers": 1,
+      "log_every_image": true
+    }
+  },
+  "runtime_sec": 4.891486576059833,
+  "per_seed_results": [
+    {
+      "seed": 3,
+      "dim_g": 100,
+      "resize": 14,
+      "d": 196,
+      "paths": {
+        "lasa_qterm_T1p_graph": {
+          "snapshot_recovery": {
+            "snapshot_mse": 0.030341975744014007,
+            "runtime_sec": 0.017144470941275358,
+            "tier": "T1p",
+            "method": "lasa_qterm_T1p_graph_prior",
+            "observed_terminal_gradient_rows": 15,
+            "observed_intermediate_batch_gradients": 0,
+            "graph_prior_blend": 0.35,
+            "graph_prior_lambda": 0.35,
+            "rows_per_epoch": 6,
+            "imputation_free": true,
+            "partial_graph_lambda": 0.5
+          },
+          "l3": {
+            "joli": {
+              "snapshot_mse": 0.030341975744014007,
+              "input_mse": 0.13509912393572687,
+              "input_psnr_db": 8.693474671964239,
+              "image_matching_acc": 0.0,
+              "l3_runtime_sec": 1.17348103702534,
+              "targets": {
+                "input_mse_ok": false,
+                "psnr_ok": false,
+                "both_ok": false
+              }
+            }
+          }
+        },
+        "shard_oracle": {
+          "snapshot_recovery": {
+            "snapshot_mse": 0.04785911875311543,
+            "runtime_sec": 0.12262478994671255,
+            "observed_intermediate_batch_gradients": 15,
+            "observed_terminal_gradient_rows": 0,
+            "l2_init": "graph_term_map",
+            "shard_max_iter": 80
+          },
+          "l3": {
+            "joli": {
+              "snapshot_mse": 0.04785911875311543,
+              "input_mse": 0.14977045646537085,
+              "input_psnr_db": 8.245738465795142,
+              "image_matching_acc": 0.0,
+              "l3_runtime_sec": 1.0412241030717269,
+              "targets": {
+                "input_mse_ok": false,
+                "psnr_ok": false,
+                "both_ok": false
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "dim_g": 100,
+      "resize": 14,
+      "d": 196,
+      "paths": {
+        "lasa_qterm_T1p_graph": {
+          "snapshot_recovery": {
+            "snapshot_mse": 0.010993042355622254,
+            "runtime_sec": 0.014526498038321733,
+            "tier": "T1p",
+            "method": "lasa_qterm_T1p_graph_prior",
+            "observed_terminal_gradient_rows": 15,
+            "observed_intermediate_batch_gradients": 0,
+            "graph_prior_blend": 0.35,
+            "graph_prior_lambda": 0.35,
+            "rows_per_epoch": 6,
+            "imputation_free": true,
+            "partial_graph_lambda": 0.5
+          },
+          "l3": {
+            "joli": {
+              "snapshot_mse": 0.010993042355622254,
+              "input_mse": 0.10927257710969383,
+              "input_psnr_db": 9.614888143011864,
+              "image_matching_acc": 0.0,
+              "l3_runtime_sec": 1.2079804869135842,
+              "targets": {
+                "input_mse_ok": false,
+                "psnr_ok": false,
+                "both_ok": false
+              }
+            }
+          }
+        },
+        "shard_oracle": {
+          "snapshot_recovery": {
+            "snapshot_mse": 0.018833517811198835,
+            "runtime_sec": 0.13827081792987883,
+            "observed_intermediate_batch_gradients": 15,
+            "observed_terminal_gradient_rows": 0,
+            "l2_init": "graph_term_map",
+            "shard_max_iter": 80
+          },
+          "l3": {
+            "joli": {
+              "snapshot_mse": 0.018833517811198835,
+              "input_mse": 0.10866887578382456,
+              "input_psnr_db": 9.638948258390887,
+              "image_matching_acc": 0.0,
+              "l3_runtime_sec": 1.0293444989947602,
+              "targets": {
+                "input_mse_ok": false,
+                "psnr_ok": false,
+                "both_ok": false
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "any_pass_both_targets": false,
+  "pass_cells": [],
+  "targets": {
+    "input_mse_max": 0.05,
+    "psnr_min_db": 18.0
+  }
+}

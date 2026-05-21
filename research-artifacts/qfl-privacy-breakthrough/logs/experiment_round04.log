@@ -1,0 +1,99 @@
+2026-05-20 10:27:17,482 INFO Round 04 — JASPER-Q + ASSIGN-LOCK v2 + LEAK-CERT-T1p
+2026-05-20 10:27:17,758 INFO JASPER-Q seed=3 frac=0.25 wrong20 anchor=level1_estimate gard=1.186 jasper=0.8813 overlap=0.738
+2026-05-20 10:27:18,038 INFO JASPER-Q seed=7 frac=0.25 wrong20 anchor=level1_estimate gard=1.307 jasper=0.8926 overlap=0.750
+2026-05-20 10:27:18,310 INFO JASPER-Q seed=11 frac=0.25 wrong20 anchor=level1_estimate gard=1.504 jasper=0.9098 overlap=0.725
+2026-05-20 10:27:18,593 INFO JASPER-Q seed=19 frac=0.25 wrong20 anchor=level1_estimate gard=1.243 jasper=0.9067 overlap=0.762
+2026-05-20 10:27:18,843 INFO JASPER-Q seed=23 frac=0.25 wrong20 anchor=level1_estimate gard=1.428 jasper=0.9188 overlap=0.725
+2026-05-20 10:27:19,113 INFO JASPER-Q seed=3 frac=0.25 wrong20 anchor=oracle_true gard=1.149 jasper=0.8795 overlap=0.738
+2026-05-20 10:27:19,394 INFO JASPER-Q seed=7 frac=0.25 wrong20 anchor=oracle_true gard=1.262 jasper=0.8914 overlap=0.750
+2026-05-20 10:27:19,666 INFO JASPER-Q seed=11 frac=0.25 wrong20 anchor=oracle_true gard=1.458 jasper=0.9089 overlap=0.725
+2026-05-20 10:27:19,947 INFO JASPER-Q seed=19 frac=0.25 wrong20 anchor=oracle_true gard=1.077 jasper=0.8978 overlap=0.762
+2026-05-20 10:27:20,198 INFO JASPER-Q seed=23 frac=0.25 wrong20 anchor=oracle_true gard=1.379 jasper=0.9166 overlap=0.725
+2026-05-20 10:27:20,463 INFO JASPER-Q seed=3 frac=0.25 wrong40 anchor=level1_estimate gard=2.492 jasper=0.9583 overlap=0.475
+2026-05-20 10:27:20,735 INFO JASPER-Q seed=7 frac=0.25 wrong40 anchor=level1_estimate gard=2.762 jasper=0.9786 overlap=0.450
+2026-05-20 10:27:21,001 INFO JASPER-Q seed=11 frac=0.25 wrong40 anchor=level1_estimate gard=2.777 jasper=0.9534 overlap=0.450
+2026-05-20 10:27:21,274 INFO JASPER-Q seed=19 frac=0.25 wrong40 anchor=level1_estimate gard=2.497 jasper=0.9551 overlap=0.487
+2026-05-20 10:27:21,520 INFO JASPER-Q seed=23 frac=0.25 wrong40 anchor=level1_estimate gard=2.738 jasper=0.9388 overlap=0.550
+2026-05-20 10:27:21,785 INFO JASPER-Q seed=3 frac=0.25 wrong40 anchor=oracle_true gard=2.204 jasper=0.9576 overlap=0.475
+2026-05-20 10:27:22,062 INFO JASPER-Q seed=7 frac=0.25 wrong40 anchor=oracle_true gard=2.772 jasper=0.9786 overlap=0.450
+2026-05-20 10:27:22,330 INFO JASPER-Q seed=11 frac=0.25 wrong40 anchor=oracle_true gard=2.789 jasper=0.9491 overlap=0.463
+2026-05-20 10:27:22,604 INFO JASPER-Q seed=19 frac=0.25 wrong40 anchor=oracle_true gard=2.605 jasper=0.9436 overlap=0.500
+2026-05-20 10:27:22,857 INFO JASPER-Q seed=23 frac=0.25 wrong40 anchor=oracle_true gard=2.667 jasper=0.9379 overlap=0.562
+2026-05-20 10:27:23,110 INFO JASPER-Q seed=3 frac=0.25 unknown_random anchor=level1_estimate gard=2.488 jasper=1.038 overlap=0.075
+2026-05-20 10:27:23,369 INFO JASPER-Q seed=7 frac=0.25 unknown_random anchor=level1_estimate gard=2.099 jasper=0.9886 overlap=0.150
+2026-05-20 10:27:23,626 INFO JASPER-Q seed=11 frac=0.25 unknown_random anchor=level1_estimate gard=1.944 jasper=1.008 overlap=0.138
+2026-05-20 10:27:23,885 INFO JASPER-Q seed=19 frac=0.25 unknown_random anchor=level1_estimate gard=2.378 jasper=1.005 overlap=0.138
+2026-05-20 10:27:24,120 INFO JASPER-Q seed=23 frac=0.25 unknown_random anchor=level1_estimate gard=2.478 jasper=1.012 overlap=0.100
+2026-05-20 10:27:24,370 INFO JASPER-Q seed=3 frac=0.25 unknown_random anchor=oracle_true gard=2.533 jasper=1.036 overlap=0.075
+2026-05-20 10:27:24,630 INFO JASPER-Q seed=7 frac=0.25 unknown_random anchor=oracle_true gard=2.123 jasper=0.9917 overlap=0.138
+2026-05-20 10:27:24,884 INFO JASPER-Q seed=11 frac=0.25 unknown_random anchor=oracle_true gard=1.989 jasper=1.005 overlap=0.138
+2026-05-20 10:27:25,143 INFO JASPER-Q seed=19 frac=0.25 unknown_random anchor=oracle_true gard=2.539 jasper=1.009 overlap=0.100
+2026-05-20 10:27:25,378 INFO JASPER-Q seed=23 frac=0.25 unknown_random anchor=oracle_true gard=2.398 jasper=1.015 overlap=0.125
+2026-05-20 10:27:25,651 INFO JASPER-Q seed=3 frac=0.25 oracle anchor=level1_estimate gard=0.3639 jasper=0.8453 overlap=1.000
+2026-05-20 10:27:25,930 INFO JASPER-Q seed=7 frac=0.25 oracle anchor=level1_estimate gard=0.3619 jasper=0.8512 overlap=1.000
+2026-05-20 10:27:26,207 INFO JASPER-Q seed=11 frac=0.25 oracle anchor=level1_estimate gard=0.3798 jasper=0.8507 overlap=1.000
+2026-05-20 10:27:26,489 INFO JASPER-Q seed=19 frac=0.25 oracle anchor=level1_estimate gard=0.4903 jasper=0.8624 overlap=1.000
+2026-05-20 10:27:26,742 INFO JASPER-Q seed=23 frac=0.25 oracle anchor=level1_estimate gard=0.4146 jasper=0.8569 overlap=1.000
+2026-05-20 10:27:27,015 INFO JASPER-Q seed=3 frac=0.25 oracle anchor=oracle_true gard=0.3087 jasper=0.8428 overlap=1.000
+2026-05-20 10:27:27,297 INFO JASPER-Q seed=7 frac=0.25 oracle anchor=oracle_true gard=0.321 jasper=0.8486 overlap=1.000
+2026-05-20 10:27:27,572 INFO JASPER-Q seed=11 frac=0.25 oracle anchor=oracle_true gard=0.3612 jasper=0.8499 overlap=1.000
+2026-05-20 10:27:27,857 INFO JASPER-Q seed=19 frac=0.25 oracle anchor=oracle_true gard=0.3061 jasper=0.8526 overlap=1.000
+2026-05-20 10:27:28,109 INFO JASPER-Q seed=23 frac=0.25 oracle anchor=oracle_true gard=0.3673 jasper=0.855 overlap=1.000
+2026-05-20 10:27:28,352 INFO JASPER-Q seed=3 frac=0.15 wrong20 anchor=level1_estimate gard=1.179 jasper=0.957 overlap=0.729
+2026-05-20 10:27:28,574 INFO JASPER-Q seed=7 frac=0.15 wrong20 anchor=level1_estimate gard=0.844 jasper=0.9384 overlap=0.729
+2026-05-20 10:27:28,795 INFO JASPER-Q seed=11 frac=0.15 wrong20 anchor=level1_estimate gard=1.077 jasper=0.9476 overlap=0.771
+2026-05-20 10:27:29,010 INFO JASPER-Q seed=19 frac=0.15 wrong20 anchor=level1_estimate gard=0.9088 jasper=0.942 overlap=0.792
+2026-05-20 10:27:29,241 INFO JASPER-Q seed=23 frac=0.15 wrong20 anchor=level1_estimate gard=0.9546 jasper=0.9128 overlap=0.750
+2026-05-20 10:27:29,480 INFO JASPER-Q seed=3 frac=0.15 wrong20 anchor=oracle_true gard=1.049 jasper=0.9432 overlap=0.750
+2026-05-20 10:27:29,703 INFO JASPER-Q seed=7 frac=0.15 wrong20 anchor=oracle_true gard=0.8222 jasper=0.9353 overlap=0.729
+2026-05-20 10:27:29,922 INFO JASPER-Q seed=11 frac=0.15 wrong20 anchor=oracle_true gard=1.061 jasper=0.9472 overlap=0.771
+2026-05-20 10:27:30,134 INFO JASPER-Q seed=19 frac=0.15 wrong20 anchor=oracle_true gard=0.8037 jasper=0.921 overlap=0.771
+2026-05-20 10:27:30,364 INFO JASPER-Q seed=23 frac=0.15 wrong20 anchor=oracle_true gard=0.9501 jasper=0.9287 overlap=0.750
+2026-05-20 10:27:30,597 INFO JASPER-Q seed=3 frac=0.15 wrong40 anchor=level1_estimate gard=1.024 jasper=0.9522 overlap=0.500
+2026-05-20 10:27:30,815 INFO JASPER-Q seed=7 frac=0.15 wrong40 anchor=level1_estimate gard=0.96 jasper=0.9545 overlap=0.500
+2026-05-20 10:27:31,030 INFO JASPER-Q seed=11 frac=0.15 wrong40 anchor=level1_estimate gard=1.121 jasper=0.9732 overlap=0.479
+2026-05-20 10:27:31,241 INFO JASPER-Q seed=19 frac=0.15 wrong40 anchor=level1_estimate gard=1.437 jasper=0.9893 overlap=0.479
+2026-05-20 10:27:31,464 INFO JASPER-Q seed=23 frac=0.15 wrong40 anchor=level1_estimate gard=1.357 jasper=0.9621 overlap=0.438
+2026-05-20 10:27:31,697 INFO JASPER-Q seed=3 frac=0.15 wrong40 anchor=oracle_true gard=1.067 jasper=0.9471 overlap=0.479
+2026-05-20 10:27:31,916 INFO JASPER-Q seed=7 frac=0.15 wrong40 anchor=oracle_true gard=0.9685 jasper=0.9519 overlap=0.500
+2026-05-20 10:27:32,131 INFO JASPER-Q seed=11 frac=0.15 wrong40 anchor=oracle_true gard=1.13 jasper=0.9721 overlap=0.479
+2026-05-20 10:27:32,339 INFO JASPER-Q seed=19 frac=0.15 wrong40 anchor=oracle_true gard=1.421 jasper=0.9674 overlap=0.500
+2026-05-20 10:27:32,563 INFO JASPER-Q seed=23 frac=0.15 wrong40 anchor=oracle_true gard=1.341 jasper=0.9596 overlap=0.500
+2026-05-20 10:27:32,786 INFO JASPER-Q seed=3 frac=0.15 unknown_random anchor=level1_estimate gard=1.743 jasper=1.036 overlap=0.125
+2026-05-20 10:27:32,987 INFO JASPER-Q seed=7 frac=0.15 unknown_random anchor=level1_estimate gard=1.592 jasper=1.024 overlap=0.083
+2026-05-20 10:27:33,193 INFO JASPER-Q seed=11 frac=0.15 unknown_random anchor=level1_estimate gard=1.45 jasper=1.02 overlap=0.167
+2026-05-20 10:27:33,392 INFO JASPER-Q seed=19 frac=0.15 unknown_random anchor=level1_estimate gard=1.686 jasper=0.998 overlap=0.104
+2026-05-20 10:27:33,607 INFO JASPER-Q seed=23 frac=0.15 unknown_random anchor=level1_estimate gard=1.689 jasper=1.007 overlap=0.042
+2026-05-20 10:27:33,829 INFO JASPER-Q seed=3 frac=0.15 unknown_random anchor=oracle_true gard=1.605 jasper=1.022 overlap=0.146
+2026-05-20 10:27:34,032 INFO JASPER-Q seed=7 frac=0.15 unknown_random anchor=oracle_true gard=1.615 jasper=1.017 overlap=0.083
+2026-05-20 10:27:34,237 INFO JASPER-Q seed=11 frac=0.15 unknown_random anchor=oracle_true gard=1.456 jasper=1.02 overlap=0.167
+2026-05-20 10:27:34,436 INFO JASPER-Q seed=19 frac=0.15 unknown_random anchor=oracle_true gard=1.807 jasper=1.004 overlap=0.104
+2026-05-20 10:27:34,650 INFO JASPER-Q seed=23 frac=0.15 unknown_random anchor=oracle_true gard=1.821 jasper=1.012 overlap=0.042
+2026-05-20 10:27:34,914 INFO JASPER-Q seed=3 frac=0.15 oracle anchor=level1_estimate gard=0.6576 jasper=0.8982 overlap=1.000
+2026-05-20 10:27:35,140 INFO JASPER-Q seed=7 frac=0.15 oracle anchor=level1_estimate gard=0.6358 jasper=0.9125 overlap=1.000
+2026-05-20 10:27:35,362 INFO JASPER-Q seed=11 frac=0.15 oracle anchor=level1_estimate gard=0.7377 jasper=0.9258 overlap=1.000
+2026-05-20 10:27:35,580 INFO JASPER-Q seed=19 frac=0.15 oracle anchor=level1_estimate gard=0.7454 jasper=0.9245 overlap=1.000
+2026-05-20 10:27:35,817 INFO JASPER-Q seed=23 frac=0.15 oracle anchor=level1_estimate gard=0.6079 jasper=0.8866 overlap=1.000
+2026-05-20 10:27:36,068 INFO JASPER-Q seed=3 frac=0.15 oracle anchor=oracle_true gard=0.53 jasper=0.8855 overlap=1.000
+2026-05-20 10:27:36,293 INFO JASPER-Q seed=7 frac=0.15 oracle anchor=oracle_true gard=0.6171 jasper=0.9103 overlap=1.000
+2026-05-20 10:27:36,518 INFO JASPER-Q seed=11 frac=0.15 oracle anchor=oracle_true gard=0.7245 jasper=0.9255 overlap=1.000
+2026-05-20 10:27:36,734 INFO JASPER-Q seed=19 frac=0.15 oracle anchor=oracle_true gard=0.5118 jasper=0.8959 overlap=1.000
+2026-05-20 10:27:36,971 INFO JASPER-Q seed=23 frac=0.15 oracle anchor=oracle_true gard=0.5753 jasper=0.8842 overlap=1.000
+2026-05-20 10:27:36,976 INFO ASSIGN-LOCK v2 seed=3 frac=0.25 perm_acc=0.067 broken=1.633 rec_ls=1.633 rec_gard=1.633
+2026-05-20 10:27:36,980 INFO ASSIGN-LOCK v2 seed=7 frac=0.25 perm_acc=0.067 broken=1.4 rec_ls=1.4 rec_gard=1.4
+2026-05-20 10:27:36,983 INFO ASSIGN-LOCK v2 seed=11 frac=0.25 perm_acc=0.000 broken=1.566 rec_ls=1.566 rec_gard=1.566
+2026-05-20 10:27:36,987 INFO ASSIGN-LOCK v2 seed=19 frac=0.25 perm_acc=0.067 broken=1.203 rec_ls=1.203 rec_gard=1.203
+2026-05-20 10:27:36,990 INFO ASSIGN-LOCK v2 seed=23 frac=0.25 perm_acc=0.200 broken=1.339 rec_ls=1.339 rec_gard=1.339
+2026-05-20 10:27:36,993 INFO ASSIGN-LOCK v2 seed=3 frac=0.15 perm_acc=0.444 broken=1.082 rec_ls=1.082 rec_gard=1.082
+2026-05-20 10:27:36,995 INFO ASSIGN-LOCK v2 seed=7 frac=0.15 perm_acc=0.111 broken=1.238 rec_ls=1.238 rec_gard=1.238
+2026-05-20 10:27:36,997 INFO ASSIGN-LOCK v2 seed=11 frac=0.15 perm_acc=0.111 broken=1.254 rec_ls=1.254 rec_gard=1.254
+2026-05-20 10:27:36,999 INFO ASSIGN-LOCK v2 seed=19 frac=0.15 perm_acc=0.000 broken=1.131 rec_ls=1.131 rec_gard=1.131
+2026-05-20 10:27:37,001 INFO ASSIGN-LOCK v2 seed=23 frac=0.15 perm_acc=0.222 broken=1.403 rec_ls=1.403 rec_gard=1.403
+2026-05-20 10:27:38,064 INFO LEAK-CERT-T1p seed=3 emp=0.417 cert=0.5288 naive=1 ratio=1.89 pass_C=False
+2026-05-20 10:27:38,064 INFO LEAK-CERT-T1p seed=7 emp=0.4026 cert=0.5288 naive=1 ratio=1.89 pass_C=False
+2026-05-20 10:27:38,064 INFO LEAK-CERT-T1p seed=11 emp=0.3517 cert=0.5288 naive=1 ratio=1.89 pass_C=False
+2026-05-20 10:27:38,064 INFO LEAK-CERT-T1p seed=19 emp=0.6101 cert=0.5288 naive=1 ratio=1.89 pass_C=False
+2026-05-20 10:27:38,064 INFO LEAK-CERT-T1p seed=23 emp=0.4113 cert=0.5288 naive=1 ratio=1.89 pass_C=False
+2026-05-20 10:27:38,067 INFO Wrote /workspace/research-artifacts/qfl-privacy-breakthrough/artifacts/round04_metrics.json
+2026-05-20 10:27:38,068 INFO Criteria A oracle=False wrong40=False C=False
+2026-05-20 10:27:38,068 INFO Runtime 20.58s

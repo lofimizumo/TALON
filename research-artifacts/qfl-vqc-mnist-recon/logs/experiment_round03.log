@@ -1,0 +1,111 @@
+2026-05-21 00:14:49,143 INFO Round-03 MNIST 28x28 dim_g=100 seeds=[3, 7, 11] device=cpu profile=mnist28_resume adam_grid=(250,) lbfgs=150 n_batch_cap=128 workers=1
+2026-05-21 00:14:49,144 INFO root_cause: paper/root_cause_l3_stall.md
+2026-05-21 00:14:51,849 INFO seed=3 oracle_snap_mse=0.0043 (B=1 level2_disaggregate_b1) t1p_snap_mse=0.0191
+2026-05-21 00:14:51,850 INFO seed=3 L3 start joli_l3 adam=250 n_batch=128
+2026-05-21 00:15:41,040 INFO   joli image 1/32 done 49.2s
+2026-05-21 00:16:34,571 INFO   joli image 2/32 done 53.5s
+2026-05-21 00:17:27,702 INFO   joli image 3/32 done 53.1s
+2026-05-21 00:18:43,235 INFO   joli image 4/32 done 75.5s
+2026-05-21 00:20:03,587 INFO   joli image 5/32 done 80.3s
+2026-05-21 00:21:19,743 INFO   joli image 6/32 done 76.2s
+2026-05-21 00:22:01,567 INFO   joli image 7/32 done 41.8s
+2026-05-21 00:22:51,868 INFO   joli image 8/32 done 50.3s
+2026-05-21 00:23:32,118 INFO   joli image 9/32 done 40.2s
+2026-05-21 00:24:04,677 INFO   joli image 10/32 done 32.6s
+2026-05-21 00:24:42,443 INFO   joli image 11/32 done 37.8s
+2026-05-21 00:25:35,040 INFO   joli image 12/32 done 52.6s
+2026-05-21 00:26:02,944 INFO   joli image 13/32 done 27.9s
+2026-05-21 00:26:55,373 INFO   joli image 14/32 done 52.4s
+2026-05-21 00:27:48,227 INFO   joli image 15/32 done 52.8s
+2026-05-21 00:28:29,567 INFO   joli image 16/32 done 41.3s
+2026-05-21 00:29:10,190 INFO   joli image 17/32 done 40.6s
+2026-05-21 00:30:04,616 INFO   joli image 18/32 done 54.4s
+2026-05-21 00:30:45,762 INFO   joli image 19/32 done 41.1s
+2026-05-21 00:31:27,214 INFO   joli image 20/32 done 41.5s
+2026-05-21 00:32:11,674 INFO   joli image 21/32 done 44.5s
+2026-05-21 00:32:50,698 INFO   joli image 22/32 done 39.0s
+2026-05-21 00:33:35,998 INFO   joli image 23/32 done 45.3s
+2026-05-21 00:34:15,329 INFO   joli image 24/32 done 39.3s
+2026-05-21 00:34:55,822 INFO   joli image 25/32 done 40.5s
+2026-05-21 00:35:43,140 INFO   joli image 26/32 done 47.3s
+2026-05-21 00:36:12,478 INFO   joli image 27/32 done 29.3s
+2026-05-21 00:36:59,049 INFO   joli image 28/32 done 46.6s
+2026-05-21 00:37:42,205 INFO   joli image 29/32 done 43.2s
+2026-05-21 00:38:15,824 INFO   joli image 30/32 done 33.6s
+2026-05-21 00:39:02,501 INFO   joli image 31/32 done 46.7s
+2026-05-21 00:39:49,859 INFO   joli image 32/32 done 47.4s
+2026-05-21 00:39:49,861 INFO seed=3 joli_l3 adam=250 mse=0.1741 psnr=7.59 pass=False
+2026-05-21 00:39:49,861 INFO Completed seed=3
+2026-05-21 00:39:52,845 INFO seed=7 oracle_snap_mse=0.0000 (B=1 level2_disaggregate_b1) t1p_snap_mse=0.0665
+2026-05-21 00:39:52,846 INFO seed=7 L3 start joli_l3 adam=250 n_batch=128
+2026-05-21 00:40:47,052 INFO   joli image 1/32 done 54.2s
+2026-05-21 00:41:15,558 INFO   joli image 2/32 done 28.5s
+2026-05-21 00:42:09,407 INFO   joli image 3/32 done 53.8s
+2026-05-21 00:42:50,163 INFO   joli image 4/32 done 40.8s
+2026-05-21 00:43:15,695 INFO   joli image 5/32 done 25.5s
+2026-05-21 00:44:04,631 INFO   joli image 6/32 done 48.9s
+2026-05-21 00:44:52,395 INFO   joli image 7/32 done 47.8s
+2026-05-21 00:45:30,173 INFO   joli image 8/32 done 37.8s
+2026-05-21 00:46:04,809 INFO   joli image 9/32 done 34.6s
+2026-05-21 00:46:53,117 INFO   joli image 10/32 done 48.3s
+2026-05-21 00:47:26,993 INFO   joli image 11/32 done 33.9s
+2026-05-21 00:48:11,438 INFO   joli image 12/32 done 44.4s
+2026-05-21 00:48:47,029 INFO   joli image 13/32 done 35.6s
+2026-05-21 00:49:32,790 INFO   joli image 14/32 done 45.8s
+2026-05-21 00:50:19,594 INFO   joli image 15/32 done 46.8s
+2026-05-21 00:50:47,105 INFO   joli image 16/32 done 27.5s
+2026-05-21 00:51:22,095 INFO   joli image 17/32 done 35.0s
+2026-05-21 00:51:56,796 INFO   joli image 18/32 done 34.7s
+2026-05-21 00:52:37,214 INFO   joli image 19/32 done 40.4s
+2026-05-21 00:53:26,972 INFO   joli image 20/32 done 49.8s
+2026-05-21 00:54:02,754 INFO   joli image 21/32 done 35.8s
+2026-05-21 00:54:44,340 INFO   joli image 22/32 done 41.6s
+2026-05-21 00:55:36,410 INFO   joli image 23/32 done 52.1s
+2026-05-21 00:56:11,331 INFO   joli image 24/32 done 34.9s
+2026-05-21 00:56:58,744 INFO   joli image 25/32 done 47.4s
+2026-05-21 00:57:28,531 INFO   joli image 26/32 done 29.8s
+2026-05-21 00:58:20,723 INFO   joli image 27/32 done 52.2s
+2026-05-21 00:59:08,899 INFO   joli image 28/32 done 48.2s
+2026-05-21 00:59:45,458 INFO   joli image 29/32 done 36.6s
+2026-05-21 01:00:21,163 INFO   joli image 30/32 done 35.7s
+2026-05-21 01:01:00,909 INFO   joli image 31/32 done 39.7s
+2026-05-21 01:01:35,761 INFO   joli image 32/32 done 34.9s
+2026-05-21 01:01:35,763 INFO seed=7 joli_l3 adam=250 mse=0.1928 psnr=7.15 pass=False
+2026-05-21 01:01:35,764 INFO Completed seed=7
+2026-05-21 01:01:38,719 INFO seed=11 oracle_snap_mse=0.0000 (B=1 level2_disaggregate_b1) t1p_snap_mse=0.0595
+2026-05-21 01:01:38,719 INFO seed=11 L3 start joli_l3 adam=250 n_batch=128
+2026-05-21 01:02:25,317 INFO   joli image 1/32 done 46.6s
+2026-05-21 01:03:17,266 INFO   joli image 2/32 done 51.9s
+2026-05-21 01:03:55,411 INFO   joli image 3/32 done 38.1s
+2026-05-21 01:04:32,889 INFO   joli image 4/32 done 37.5s
+2026-05-21 01:05:23,788 INFO   joli image 5/32 done 50.9s
+2026-05-21 01:05:59,893 INFO   joli image 6/32 done 36.1s
+2026-05-21 01:06:26,797 INFO   joli image 7/32 done 26.9s
+2026-05-21 01:07:10,903 INFO   joli image 8/32 done 44.1s
+2026-05-21 01:07:54,536 INFO   joli image 9/32 done 43.6s
+2026-05-21 01:08:26,949 INFO   joli image 10/32 done 32.4s
+2026-05-21 01:09:08,980 INFO   joli image 11/32 done 42.0s
+2026-05-21 01:09:57,274 INFO   joli image 12/32 done 48.3s
+2026-05-21 01:10:48,612 INFO   joli image 13/32 done 51.3s
+2026-05-21 01:11:34,894 INFO   joli image 14/32 done 46.3s
+2026-05-21 01:12:24,570 INFO   joli image 15/32 done 49.7s
+2026-05-21 01:12:53,953 INFO   joli image 16/32 done 29.4s
+2026-05-21 01:13:38,862 INFO   joli image 17/32 done 44.9s
+2026-05-21 01:14:22,245 INFO   joli image 18/32 done 43.4s
+2026-05-21 01:15:01,709 INFO   joli image 19/32 done 39.5s
+2026-05-21 01:15:40,022 INFO   joli image 20/32 done 38.3s
+2026-05-21 01:16:11,669 INFO   joli image 21/32 done 31.6s
+2026-05-21 01:16:35,622 INFO   joli image 22/32 done 23.9s
+2026-05-21 01:17:00,558 INFO   joli image 23/32 done 24.9s
+2026-05-21 01:17:08,296 INFO   joli image 24/32 done 7.7s
+2026-05-21 01:17:08,893 INFO   joli image 25/32 done 0.6s
+2026-05-21 01:17:09,512 INFO   joli image 26/32 done 0.6s
+2026-05-21 01:17:15,839 INFO   joli image 27/32 done 6.3s
+2026-05-21 01:17:16,396 INFO   joli image 28/32 done 0.5s
+2026-05-21 01:17:25,821 INFO   joli image 29/32 done 9.4s
+2026-05-21 01:17:40,418 INFO   joli image 30/32 done 14.6s
+2026-05-21 01:17:41,090 INFO   joli image 31/32 done 0.7s
+2026-05-21 01:17:41,719 INFO   joli image 32/32 done 0.6s
+2026-05-21 01:17:41,732 INFO seed=11 joli_l3 adam=250 mse=0.2043 psnr=6.90 pass=False
+2026-05-21 01:17:41,733 INFO Completed seed=11
+2026-05-21 01:17:41,861 INFO Wrote /workspace/research-artifacts/qfl-vqc-mnist-recon/artifacts/round03_metrics.json

@@ -1,0 +1,117 @@
+2026-05-20 10:17:20,454 INFO Round 02 Stage-2 stress: seeds=[3, 7, 11, 19, 23] assignments=['oracle', 'wrong20', 'wrong40', 'unknown_random']
+2026-05-20 10:17:20,464 INFO stage2 seed=3 frac=1.00 assign=oracle gard_oracle=0.002252 ls=0.002252
+2026-05-20 10:17:20,472 INFO stage2 seed=7 frac=1.00 assign=oracle gard_oracle=0.001679 ls=0.001679
+2026-05-20 10:17:20,480 INFO stage2 seed=11 frac=1.00 assign=oracle gard_oracle=0.00179 ls=0.00179
+2026-05-20 10:17:20,488 INFO stage2 seed=19 frac=1.00 assign=oracle gard_oracle=0.002243 ls=0.002243
+2026-05-20 10:17:20,495 INFO stage2 seed=23 frac=1.00 assign=oracle gard_oracle=0.001725 ls=0.001725
+2026-05-20 10:17:20,506 INFO stage2 seed=3 frac=1.00 assign=wrong20 gard_oracle=2.79 ls=2.79
+2026-05-20 10:17:20,516 INFO stage2 seed=7 frac=1.00 assign=wrong20 gard_oracle=1.573 ls=1.573
+2026-05-20 10:17:20,527 INFO stage2 seed=11 frac=1.00 assign=wrong20 gard_oracle=1.717 ls=1.717
+2026-05-20 10:17:20,537 INFO stage2 seed=19 frac=1.00 assign=wrong20 gard_oracle=1.766 ls=1.766
+2026-05-20 10:17:20,548 INFO stage2 seed=23 frac=1.00 assign=wrong20 gard_oracle=2.188 ls=2.188
+2026-05-20 10:17:20,558 INFO stage2 seed=3 frac=1.00 assign=wrong40 gard_oracle=2.535 ls=2.535
+2026-05-20 10:17:20,569 INFO stage2 seed=7 frac=1.00 assign=wrong40 gard_oracle=2.879 ls=2.879
+2026-05-20 10:17:20,579 INFO stage2 seed=11 frac=1.00 assign=wrong40 gard_oracle=4.835 ls=4.835
+2026-05-20 10:17:20,590 INFO stage2 seed=19 frac=1.00 assign=wrong40 gard_oracle=2.566 ls=2.566
+2026-05-20 10:17:20,600 INFO stage2 seed=23 frac=1.00 assign=wrong40 gard_oracle=3.316 ls=3.316
+2026-05-20 10:17:20,609 INFO stage2 seed=3 frac=1.00 assign=unknown_random gard_oracle=5.597 ls=5.597
+2026-05-20 10:17:20,617 INFO stage2 seed=7 frac=1.00 assign=unknown_random gard_oracle=5.538 ls=5.538
+2026-05-20 10:17:20,626 INFO stage2 seed=11 frac=1.00 assign=unknown_random gard_oracle=9.982 ls=9.982
+2026-05-20 10:17:20,634 INFO stage2 seed=19 frac=1.00 assign=unknown_random gard_oracle=5.552 ls=5.552
+2026-05-20 10:17:20,643 INFO stage2 seed=23 frac=1.00 assign=unknown_random gard_oracle=3.688 ls=3.688
+2026-05-20 10:17:20,652 INFO stage2 seed=3 frac=0.60 assign=oracle gard_oracle=0.0119 ls=0.2243
+2026-05-20 10:17:20,662 INFO stage2 seed=7 frac=0.60 assign=oracle gard_oracle=0.008382 ls=0.1935
+2026-05-20 10:17:20,672 INFO stage2 seed=11 frac=0.60 assign=oracle gard_oracle=0.009665 ls=0.2049
+2026-05-20 10:17:20,681 INFO stage2 seed=19 frac=0.60 assign=oracle gard_oracle=0.01099 ls=0.2252
+2026-05-20 10:17:20,691 INFO stage2 seed=23 frac=0.60 assign=oracle gard_oracle=0.01137 ls=0.2499
+2026-05-20 10:17:20,702 INFO stage2 seed=3 frac=0.60 assign=wrong20 gard_oracle=0.4296 ls=1.736
+2026-05-20 10:17:20,714 INFO stage2 seed=7 frac=0.60 assign=wrong20 gard_oracle=0.2435 ls=1.304
+2026-05-20 10:17:20,725 INFO stage2 seed=11 frac=0.60 assign=wrong20 gard_oracle=0.2331 ls=1.482
+2026-05-20 10:17:20,736 INFO stage2 seed=19 frac=0.60 assign=wrong20 gard_oracle=0.2398 ls=1.369
+2026-05-20 10:17:20,747 INFO stage2 seed=23 frac=0.60 assign=wrong20 gard_oracle=0.4185 ls=1.274
+2026-05-20 10:17:20,759 INFO stage2 seed=3 frac=0.60 assign=wrong40 gard_oracle=0.5238 ls=2.616
+2026-05-20 10:17:20,770 INFO stage2 seed=7 frac=0.60 assign=wrong40 gard_oracle=0.6811 ls=4.008
+2026-05-20 10:17:20,781 INFO stage2 seed=11 frac=0.60 assign=wrong40 gard_oracle=0.5351 ls=5.556
+2026-05-20 10:17:20,792 INFO stage2 seed=19 frac=0.60 assign=wrong40 gard_oracle=0.7266 ls=5.183
+2026-05-20 10:17:20,803 INFO stage2 seed=23 frac=0.60 assign=wrong40 gard_oracle=0.7875 ls=3.171
+2026-05-20 10:17:20,813 INFO stage2 seed=3 frac=0.60 assign=unknown_random gard_oracle=0.9306 ls=5.552
+2026-05-20 10:17:20,824 INFO stage2 seed=7 frac=0.60 assign=unknown_random gard_oracle=1.097 ls=8.874
+2026-05-20 10:17:20,834 INFO stage2 seed=11 frac=0.60 assign=unknown_random gard_oracle=1.12 ls=5.384
+2026-05-20 10:17:20,844 INFO stage2 seed=19 frac=0.60 assign=unknown_random gard_oracle=0.9154 ls=4.679
+2026-05-20 10:17:20,853 INFO stage2 seed=23 frac=0.60 assign=unknown_random gard_oracle=1.018 ls=2.937
+2026-05-20 10:17:20,863 INFO stage2 seed=3 frac=0.40 assign=oracle gard_oracle=0.02444 ls=0.5326
+2026-05-20 10:17:20,872 INFO stage2 seed=7 frac=0.40 assign=oracle gard_oracle=0.01827 ls=0.3833
+2026-05-20 10:17:20,881 INFO stage2 seed=11 frac=0.40 assign=oracle gard_oracle=0.02229 ls=0.4618
+2026-05-20 10:17:20,890 INFO stage2 seed=19 frac=0.40 assign=oracle gard_oracle=0.02624 ls=0.4935
+2026-05-20 10:17:20,899 INFO stage2 seed=23 frac=0.40 assign=oracle gard_oracle=0.02129 ls=0.5981
+2026-05-20 10:17:20,909 INFO stage2 seed=3 frac=0.40 assign=wrong20 gard_oracle=0.3978 ls=0.9962
+2026-05-20 10:17:20,919 INFO stage2 seed=7 frac=0.40 assign=wrong20 gard_oracle=0.4332 ls=0.9139
+2026-05-20 10:17:20,929 INFO stage2 seed=11 frac=0.40 assign=wrong20 gard_oracle=0.4197 ls=0.9614
+2026-05-20 10:17:20,940 INFO stage2 seed=19 frac=0.40 assign=wrong20 gard_oracle=0.2475 ls=0.9126
+2026-05-20 10:17:20,950 INFO stage2 seed=23 frac=0.40 assign=wrong20 gard_oracle=0.4468 ls=0.8884
+2026-05-20 10:17:20,960 INFO stage2 seed=3 frac=0.40 assign=wrong40 gard_oracle=0.5832 ls=1.556
+2026-05-20 10:17:20,970 INFO stage2 seed=7 frac=0.40 assign=wrong40 gard_oracle=0.7572 ls=1.729
+2026-05-20 10:17:20,980 INFO stage2 seed=11 frac=0.40 assign=wrong40 gard_oracle=0.8612 ls=1.918
+2026-05-20 10:17:20,991 INFO stage2 seed=19 frac=0.40 assign=wrong40 gard_oracle=0.7981 ls=2.1
+2026-05-20 10:17:21,001 INFO stage2 seed=23 frac=0.40 assign=wrong40 gard_oracle=0.6379 ls=1.048
+2026-05-20 10:17:21,010 INFO stage2 seed=3 frac=0.40 assign=unknown_random gard_oracle=0.974 ls=2.129
+2026-05-20 10:17:21,020 INFO stage2 seed=7 frac=0.40 assign=unknown_random gard_oracle=1.011 ls=2.82
+2026-05-20 10:17:21,029 INFO stage2 seed=11 frac=0.40 assign=unknown_random gard_oracle=1.052 ls=2.185
+2026-05-20 10:17:21,038 INFO stage2 seed=19 frac=0.40 assign=unknown_random gard_oracle=0.9187 ls=1.759
+2026-05-20 10:17:21,048 INFO stage2 seed=23 frac=0.40 assign=unknown_random gard_oracle=1.109 ls=1.681
+2026-05-20 10:17:21,056 INFO stage2 seed=3 frac=0.25 assign=oracle gard_oracle=0.05182 ls=0.6033
+2026-05-20 10:17:21,065 INFO stage2 seed=7 frac=0.25 assign=oracle gard_oracle=0.06305 ls=0.6583
+2026-05-20 10:17:21,073 INFO stage2 seed=11 frac=0.25 assign=oracle gard_oracle=0.05052 ls=0.6158
+2026-05-20 10:17:21,082 INFO stage2 seed=19 frac=0.25 assign=oracle gard_oracle=0.04089 ls=0.7034
+2026-05-20 10:17:21,091 INFO stage2 seed=23 frac=0.25 assign=oracle gard_oracle=0.03908 ls=0.6994
+2026-05-20 10:17:21,100 INFO stage2 seed=3 frac=0.25 assign=wrong20 gard_oracle=0.954 ls=0.954
+2026-05-20 10:17:21,109 INFO stage2 seed=7 frac=0.25 assign=wrong20 gard_oracle=0.3608 ls=0.8783
+2026-05-20 10:17:21,118 INFO stage2 seed=11 frac=0.25 assign=wrong20 gard_oracle=0.6716 ls=1.004
+2026-05-20 10:17:21,128 INFO stage2 seed=19 frac=0.25 assign=wrong20 gard_oracle=0.5701 ls=0.8954
+2026-05-20 10:17:21,137 INFO stage2 seed=23 frac=0.25 assign=wrong20 gard_oracle=0.5894 ls=0.9713
+2026-05-20 10:17:21,146 INFO stage2 seed=3 frac=0.25 assign=wrong40 gard_oracle=0.7851 ls=1.206
+2026-05-20 10:17:21,156 INFO stage2 seed=7 frac=0.25 assign=wrong40 gard_oracle=0.6597 ls=1.118
+2026-05-20 10:17:21,165 INFO stage2 seed=11 frac=0.25 assign=wrong40 gard_oracle=0.992 ls=1.267
+2026-05-20 10:17:21,174 INFO stage2 seed=19 frac=0.25 assign=wrong40 gard_oracle=0.8392 ls=1.078
+2026-05-20 10:17:21,183 INFO stage2 seed=23 frac=0.25 assign=wrong40 gard_oracle=0.9444 ls=1.306
+2026-05-20 10:17:21,192 INFO stage2 seed=3 frac=0.25 assign=unknown_random gard_oracle=0.8899 ls=1.671
+2026-05-20 10:17:21,201 INFO stage2 seed=7 frac=0.25 assign=unknown_random gard_oracle=0.9453 ls=1.246
+2026-05-20 10:17:21,209 INFO stage2 seed=11 frac=0.25 assign=unknown_random gard_oracle=1.074 ls=1.482
+2026-05-20 10:17:21,219 INFO stage2 seed=19 frac=0.25 assign=unknown_random gard_oracle=1.144 ls=1.476
+2026-05-20 10:17:21,228 INFO stage2 seed=23 frac=0.25 assign=unknown_random gard_oracle=1.106 ls=1.466
+2026-05-20 10:17:21,236 INFO stage2 seed=3 frac=0.15 assign=oracle gard_oracle=0.1378 ls=0.8197
+2026-05-20 10:17:21,244 INFO stage2 seed=7 frac=0.15 assign=oracle gard_oracle=0.16 ls=0.8038
+2026-05-20 10:17:21,253 INFO stage2 seed=11 frac=0.15 assign=oracle gard_oracle=0.08749 ls=0.7893
+2026-05-20 10:17:21,261 INFO stage2 seed=19 frac=0.15 assign=oracle gard_oracle=0.1329 ls=0.7412
+2026-05-20 10:17:21,269 INFO stage2 seed=23 frac=0.15 assign=oracle gard_oracle=0.1333 ls=0.797
+2026-05-20 10:17:21,278 INFO stage2 seed=3 frac=0.15 assign=wrong20 gard_oracle=0.6454 ls=0.9602
+2026-05-20 10:17:21,287 INFO stage2 seed=7 frac=0.15 assign=wrong20 gard_oracle=0.7345 ls=0.9619
+2026-05-20 10:17:21,295 INFO stage2 seed=11 frac=0.15 assign=wrong20 gard_oracle=0.8083 ls=0.9492
+2026-05-20 10:17:21,304 INFO stage2 seed=19 frac=0.15 assign=wrong20 gard_oracle=0.5448 ls=0.9052
+2026-05-20 10:17:21,313 INFO stage2 seed=23 frac=0.15 assign=wrong20 gard_oracle=0.8304 ls=0.9882
+2026-05-20 10:17:21,322 INFO stage2 seed=3 frac=0.15 assign=wrong40 gard_oracle=0.9624 ls=0.9624
+2026-05-20 10:17:21,331 INFO stage2 seed=7 frac=0.15 assign=wrong40 gard_oracle=0.8618 ls=1.09
+2026-05-20 10:17:21,339 INFO stage2 seed=11 frac=0.15 assign=wrong40 gard_oracle=0.7776 ls=1.078
+2026-05-20 10:17:21,348 INFO stage2 seed=19 frac=0.15 assign=wrong40 gard_oracle=0.8472 ls=1.08
+2026-05-20 10:17:21,357 INFO stage2 seed=23 frac=0.15 assign=wrong40 gard_oracle=0.899 ls=1.004
+2026-05-20 10:17:21,366 INFO stage2 seed=3 frac=0.15 assign=unknown_random gard_oracle=0.9612 ls=1.227
+2026-05-20 10:17:21,374 INFO stage2 seed=7 frac=0.15 assign=unknown_random gard_oracle=1.132 ls=1.326
+2026-05-20 10:17:21,382 INFO stage2 seed=11 frac=0.15 assign=unknown_random gard_oracle=1.921 ls=1.298
+2026-05-20 10:17:21,391 INFO stage2 seed=19 frac=0.15 assign=unknown_random gard_oracle=1.311 ls=1.363
+2026-05-20 10:17:21,399 INFO stage2 seed=23 frac=0.15 assign=unknown_random gard_oracle=1.047 ls=1.217
+2026-05-20 10:17:21,731 INFO ASSIGN-LOCK seed=3 frac=0.25 lock_mse=1.285 oracle_gard=0.6032
+2026-05-20 10:17:21,732 INFO ASSIGN-LOCK seed=7 frac=0.25 lock_mse=1.422 oracle_gard=0.6583
+2026-05-20 10:17:21,733 INFO ASSIGN-LOCK seed=11 frac=0.25 lock_mse=1.44 oracle_gard=0.6158
+2026-05-20 10:17:21,734 INFO ASSIGN-LOCK seed=19 frac=0.25 lock_mse=1.253 oracle_gard=0.7034
+2026-05-20 10:17:21,735 INFO ASSIGN-LOCK seed=23 frac=0.25 lock_mse=1.478 oracle_gard=0.6994
+2026-05-20 10:17:21,736 INFO ASSIGN-LOCK seed=3 frac=0.15 lock_mse=1.226 oracle_gard=0.8197
+2026-05-20 10:17:21,737 INFO ASSIGN-LOCK seed=7 frac=0.15 lock_mse=1.314 oracle_gard=0.8038
+2026-05-20 10:17:21,737 INFO ASSIGN-LOCK seed=11 frac=0.15 lock_mse=1.312 oracle_gard=0.7893
+2026-05-20 10:17:21,738 INFO ASSIGN-LOCK seed=19 frac=0.15 lock_mse=0.9987 oracle_gard=0.7412
+2026-05-20 10:17:21,739 INFO ASSIGN-LOCK seed=23 frac=0.15 lock_mse=1.288 oracle_gard=0.797
+2026-05-20 10:17:54,793 INFO Wrote /workspace/research-artifacts/qfl-privacy-breakthrough/artifacts/round02_metrics.json
+2026-05-20 10:17:54,795 INFO Criterion A oracle parent gate @0.10: True reduction=0.75
+2026-05-20 10:17:54,795 INFO Criterion A wrong40: False unknown: False
+2026-05-20 10:17:54,795 INFO Best honest reduction: {'reduction': 0.75, 'assignment': 'oracle', 'method': 'gard_oracle_graph', 'min_rows': 15}
+2026-05-20 10:17:54,795 INFO Shield feasible cells: 0
+2026-05-20 10:17:54,795 INFO Runtime 34.33s

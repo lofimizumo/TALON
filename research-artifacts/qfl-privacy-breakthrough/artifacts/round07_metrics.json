@@ -1,0 +1,1606 @@
+{
+  "benchmark": "round07_jasper_q_v7_leak_cert_trace",
+  "criterion_A_preregistered_gate": "parent_mean_mse_at_minimum_rows",
+  "mse_targets": [
+    0.05,
+    0.1,
+    0.15
+  ],
+  "round07_config": {
+    "jasper_iters": 14,
+    "jasper_damping": 0.42,
+    "sinkhorn_tau": 0.26,
+    "sinkhorn_iters": 95,
+    "entropy_lambda": 0.1,
+    "ridge_lambda": 0.025,
+    "jasper_graph_lambda": 0.1,
+    "spectral_graph_alpha": 0.35,
+    "spectral_knn_k": 5,
+    "multi_epoch_warm_decay": 0.55,
+    "t1p_rows": 70,
+    "t1p_partial_per_epoch": 7,
+    "cert_noise_std": 0.01,
+    "cert_trace_slack": 1.08
+  },
+  "stage2_config": {
+    "n_samples": 48,
+    "batch_size": 4,
+    "dim_g": 32,
+    "true_rank": 4,
+    "n_epochs": 5,
+    "noise_std": 0.01,
+    "mean_anchor_weight": 100.0,
+    "validation_fraction": 0.25,
+    "ridge_grid": [
+      0.0,
+      0.003,
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1.0,
+      3.0
+    ],
+    "graph_lambda_grid": [
+      0.0,
+      0.003,
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1.0,
+      3.0,
+      10.0
+    ],
+    "low_rank_grid": [
+      2,
+      4,
+      8,
+      12
+    ],
+    "random_fractions": [
+      1.0,
+      0.6,
+      0.4,
+      0.25,
+      0.15
+    ],
+    "noisy_mean_std": 0.05
+  },
+  "qfl_config": {
+    "n_samples": 32,
+    "batch_size": 4,
+    "n_epochs": 10,
+    "dim_g": 32,
+    "true_rank": 4,
+    "noise_level": 0.01,
+    "partial_rows": 7,
+    "shield_ranks": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "shield_sigmas": [
+      0.0,
+      0.05,
+      0.1,
+      0.15,
+      0.25
+    ],
+    "max_utility_loss_fraction": 0.1
+  },
+  "seeds": [
+    3,
+    7,
+    11,
+    19,
+    23
+  ],
+  "fractions": [
+    0.25,
+    0.35,
+    0.5,
+    0.65,
+    0.75
+  ],
+  "assignments": [
+    "wrong40",
+    "oracle"
+  ],
+  "jasper_q_v7": {
+    "per_run": [
+      {
+        "seed": 3,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.55,
+        "t1p_warm_mse": 0.5619680080588003,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 2.4923792749482043,
+          "jasper_q_v7_multi_epoch_spectral": 0.9612223566010263,
+          "jasper_q_v7_hard_overlap": 0.475
+        }
+      },
+      {
+        "seed": 7,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.55,
+        "t1p_warm_mse": 0.5769135638415588,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 2.7623001655228405,
+          "jasper_q_v7_multi_epoch_spectral": 0.9630223642956144,
+          "jasper_q_v7_hard_overlap": 0.4625
+        }
+      },
+      {
+        "seed": 11,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.525,
+        "t1p_warm_mse": 0.5473951454973373,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 2.7767892573963904,
+          "jasper_q_v7_multi_epoch_spectral": 0.9528257855406315,
+          "jasper_q_v7_hard_overlap": 0.4375
+        }
+      },
+      {
+        "seed": 19,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.525,
+        "t1p_warm_mse": 0.63277642975666,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 2.497132732765887,
+          "jasper_q_v7_multi_epoch_spectral": 0.9497318707920139,
+          "jasper_q_v7_hard_overlap": 0.5
+        }
+      },
+      {
+        "seed": 23,
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.55,
+        "t1p_warm_mse": 0.5470285597811224,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 2.737654456823683,
+          "jasper_q_v7_multi_epoch_spectral": 0.9359229287152482,
+          "jasper_q_v7_hard_overlap": 0.475
+        }
+      },
+      {
+        "seed": 3,
+        "fraction": 0.25,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.5666596462361023,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.3639297956439175,
+          "jasper_q_v7_multi_epoch_spectral": 0.8393253285194733,
+          "jasper_q_v7_hard_overlap": 1.0
+        }
+      },
+      {
+        "seed": 7,
+        "fraction": 0.25,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.565014981065015,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.36187064846469075,
+          "jasper_q_v7_multi_epoch_spectral": 0.8453017779330521,
+          "jasper_q_v7_hard_overlap": 1.0
+        }
+      },
+      {
+        "seed": 11,
+        "fraction": 0.25,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.5679206823289227,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.37981485386065594,
+          "jasper_q_v7_multi_epoch_spectral": 0.8404465435710485,
+          "jasper_q_v7_hard_overlap": 1.0
+        }
+      },
+      {
+        "seed": 19,
+        "fraction": 0.25,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.6248160457634413,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.49028824993165016,
+          "jasper_q_v7_multi_epoch_spectral": 0.8765744652442606,
+          "jasper_q_v7_hard_overlap": 1.0
+        }
+      },
+      {
+        "seed": 23,
+        "fraction": 0.25,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 20,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.5897724676189393,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.41463432471132644,
+          "jasper_q_v7_multi_epoch_spectral": 0.8515227535608312,
+          "jasper_q_v7_hard_overlap": 1.0
+        }
+      },
+      {
+        "seed": 3,
+        "fraction": 0.35,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 28,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.5625,
+        "t1p_warm_mse": 0.5385901430661446,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 14.859383863562279,
+          "jasper_q_v7_multi_epoch_spectral": 0.9681141454184311,
+          "jasper_q_v7_hard_overlap": 0.4375
+        }
+      },
+      {
+        "seed": 7,
+        "fraction": 0.35,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 28,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.5267857142857143,
+        "t1p_warm_mse": 0.5524841667377466,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 12.738906151765946,
+          "jasper_q_v7_multi_epoch_spectral": 0.9326923243080749,
+          "jasper_q_v7_hard_overlap": 0.42857142857142855
+        }
+      },
+      {
+        "seed": 11,
+        "fraction": 0.35,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 28,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.5178571428571429,
+        "t1p_warm_mse": 0.5536721244445821,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 44.818125949429756,
+          "jasper_q_v7_multi_epoch_spectral": 0.9500179169331566,
+          "jasper_q_v7_hard_overlap": 0.4017857142857143
+        }
+      },
+      {
+        "seed": 19,
+        "fraction": 0.35,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 28,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.5446428571428571,
+        "t1p_warm_mse": 0.616065053970967,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 9.257145429479024,
+          "jasper_q_v7_multi_epoch_spectral": 0.9333023840603472,
+          "jasper_q_v7_hard_overlap": 0.44642857142857145
+        }
+      },
+      {
+        "seed": 23,
+        "fraction": 0.35,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 28,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.5,
+        "t1p_warm_mse": 0.5587356128348024,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 6.9954552098644065,
+          "jasper_q_v7_multi_epoch_spectral": 0.9314667277971218,
+          "jasper_q_v7_hard_overlap": 0.39285714285714285
+        }
+      },
+      {
+        "seed": 3,
+        "fraction": 0.35,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 28,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.5630265578777996,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.19666903959892001,
+          "jasper_q_v7_multi_epoch_spectral": 0.8205956522972816,
+          "jasper_q_v7_hard_overlap": 1.0
+        }
+      },
+      {
+        "seed": 7,
+        "fraction": 0.35,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 28,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.6061719233301279,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.17228041827681845,
+          "jasper_q_v7_multi_epoch_spectral": 0.8182467001968659,
+          "jasper_q_v7_hard_overlap": 1.0
+        }
+      },
+      {
+        "seed": 11,
+        "fraction": 0.35,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 28,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.537115969408393,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.4005260671588046,
+          "jasper_q_v7_multi_epoch_spectral": 0.8103187712567572,
+          "jasper_q_v7_hard_overlap": 1.0
+        }
+      },
+      {
+        "seed": 19,
+        "fraction": 0.35,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 28,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.6393299531110141,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.2603642472633584,
+          "jasper_q_v7_multi_epoch_spectral": 0.8224063456849828,
+          "jasper_q_v7_hard_overlap": 1.0
+        }
+      },
+      {
+        "seed": 23,
+        "fraction": 0.35,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 28,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.5532571264002097,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.4193361477364161,
+          "jasper_q_v7_multi_epoch_spectral": 0.8003022755393877,
+          "jasper_q_v7_hard_overlap": 1.0
+        }
+      },
+      {
+        "seed": 3,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.53125,
+        "t1p_warm_mse": 0.6398469023823581,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 2.4851221709821036,
+          "jasper_q_v7_multi_epoch_spectral": 0.8944604150902953,
+          "jasper_q_v7_hard_overlap": 0.4375
+        }
+      },
+      {
+        "seed": 7,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.5125,
+        "t1p_warm_mse": 0.600970384295711,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 1.9924914341043665,
+          "jasper_q_v7_multi_epoch_spectral": 0.8941582098166372,
+          "jasper_q_v7_hard_overlap": 0.4875
+        }
+      },
+      {
+        "seed": 11,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.53125,
+        "t1p_warm_mse": 0.5524011198984089,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 2.7692813146776856,
+          "jasper_q_v7_multi_epoch_spectral": 0.9173135764667972,
+          "jasper_q_v7_hard_overlap": 0.45
+        }
+      },
+      {
+        "seed": 19,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.51875,
+        "t1p_warm_mse": 0.584664080333015,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 4.764022274306212,
+          "jasper_q_v7_multi_epoch_spectral": 0.8943434381047797,
+          "jasper_q_v7_hard_overlap": 0.45
+        }
+      },
+      {
+        "seed": 23,
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.55625,
+        "t1p_warm_mse": 0.5693004360688114,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 2.8160150158829693,
+          "jasper_q_v7_multi_epoch_spectral": 0.8919754321543465,
+          "jasper_q_v7_hard_overlap": 0.4375
+        }
+      },
+      {
+        "seed": 3,
+        "fraction": 0.5,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.5779324609649261,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.047389189658056774,
+          "jasper_q_v7_multi_epoch_spectral": 0.7496729142674209,
+          "jasper_q_v7_hard_overlap": 1.0
+        }
+      },
+      {
+        "seed": 7,
+        "fraction": 0.5,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.5998501207914995,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.09608755403562969,
+          "jasper_q_v7_multi_epoch_spectral": 0.7488772548580789,
+          "jasper_q_v7_hard_overlap": 1.0
+        }
+      },
+      {
+        "seed": 11,
+        "fraction": 0.5,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.5533166418725842,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.01962961825648584,
+          "jasper_q_v7_multi_epoch_spectral": 0.7626316119342347,
+          "jasper_q_v7_hard_overlap": 1.0
+        }
+      },
+      {
+        "seed": 19,
+        "fraction": 0.5,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.6930776893782797,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.04264598098457076,
+          "jasper_q_v7_multi_epoch_spectral": 0.7239514647439311,
+          "jasper_q_v7_hard_overlap": 1.0
+        }
+      },
+      {
+        "seed": 23,
+        "fraction": 0.5,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 40,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.5378278700763477,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.02494508981513085,
+          "jasper_q_v7_multi_epoch_spectral": 0.7336037059101077,
+          "jasper_q_v7_hard_overlap": 1.0
+        }
+      },
+      {
+        "seed": 3,
+        "fraction": 0.65,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 52,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.5288461538461539,
+        "t1p_warm_mse": 0.5795908575349954,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 1.3300833541701405,
+          "jasper_q_v7_multi_epoch_spectral": 0.8978734072548558,
+          "jasper_q_v7_hard_overlap": 0.4423076923076923
+        }
+      },
+      {
+        "seed": 7,
+        "fraction": 0.65,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 52,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.5432692307692307,
+        "t1p_warm_mse": 0.589940373962919,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 1.4630267884310872,
+          "jasper_q_v7_multi_epoch_spectral": 0.9054372208083914,
+          "jasper_q_v7_hard_overlap": 0.4951923076923077
+        }
+      },
+      {
+        "seed": 11,
+        "fraction": 0.65,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 52,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.5192307692307693,
+        "t1p_warm_mse": 0.5536406775926515,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 1.6355815291668316,
+          "jasper_q_v7_multi_epoch_spectral": 0.8925346893606432,
+          "jasper_q_v7_hard_overlap": 0.46634615384615385
+        }
+      },
+      {
+        "seed": 19,
+        "fraction": 0.65,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 52,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.5288461538461539,
+        "t1p_warm_mse": 0.6084433288433522,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 1.4536766495948203,
+          "jasper_q_v7_multi_epoch_spectral": 0.8794847782806599,
+          "jasper_q_v7_hard_overlap": 0.4519230769230769
+        }
+      },
+      {
+        "seed": 23,
+        "fraction": 0.65,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 52,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.5625,
+        "t1p_warm_mse": 0.5606929411428732,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 1.4299971400500204,
+          "jasper_q_v7_multi_epoch_spectral": 0.8860522348686074,
+          "jasper_q_v7_hard_overlap": 0.47115384615384615
+        }
+      },
+      {
+        "seed": 3,
+        "fraction": 0.65,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 52,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.5669449965866098,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.0010372673178774168,
+          "jasper_q_v7_multi_epoch_spectral": 0.7192003411465863,
+          "jasper_q_v7_hard_overlap": 1.0
+        }
+      },
+      {
+        "seed": 7,
+        "fraction": 0.65,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 52,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.5745599878548366,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.02821355181853469,
+          "jasper_q_v7_multi_epoch_spectral": 0.7281461401642766,
+          "jasper_q_v7_hard_overlap": 1.0
+        }
+      },
+      {
+        "seed": 11,
+        "fraction": 0.65,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 52,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.550708054744613,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.0016903822000538886,
+          "jasper_q_v7_multi_epoch_spectral": 0.7076018622685533,
+          "jasper_q_v7_hard_overlap": 0.9951923076923077
+        }
+      },
+      {
+        "seed": 19,
+        "fraction": 0.65,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 52,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.5792531441795685,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.03774497462400754,
+          "jasper_q_v7_multi_epoch_spectral": 0.7085516390921912,
+          "jasper_q_v7_hard_overlap": 1.0
+        }
+      },
+      {
+        "seed": 23,
+        "fraction": 0.65,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 52,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.5179679549832772,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.004619020102206264,
+          "jasper_q_v7_multi_epoch_spectral": 0.6938959549315259,
+          "jasper_q_v7_hard_overlap": 1.0
+        }
+      },
+      {
+        "seed": 3,
+        "fraction": 0.75,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 60,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.5208333333333334,
+        "t1p_warm_mse": 0.5294840152294019,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.8474518756592822,
+          "jasper_q_v7_multi_epoch_spectral": 0.8597841686523425,
+          "jasper_q_v7_hard_overlap": 0.475
+        }
+      },
+      {
+        "seed": 7,
+        "fraction": 0.75,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 60,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.5375,
+        "t1p_warm_mse": 0.5947415974884607,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 1.2343439426270861,
+          "jasper_q_v7_multi_epoch_spectral": 0.9018546806308837,
+          "jasper_q_v7_hard_overlap": 0.42916666666666664
+        }
+      },
+      {
+        "seed": 11,
+        "fraction": 0.75,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 60,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.5333333333333333,
+        "t1p_warm_mse": 0.5535080509515755,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 1.0498583364125404,
+          "jasper_q_v7_multi_epoch_spectral": 0.8712131213279669,
+          "jasper_q_v7_hard_overlap": 0.425
+        }
+      },
+      {
+        "seed": 19,
+        "fraction": 0.75,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 60,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.5458333333333333,
+        "t1p_warm_mse": 0.6152439243086085,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.9781490234416219,
+          "jasper_q_v7_multi_epoch_spectral": 0.8620193006053076,
+          "jasper_q_v7_hard_overlap": 0.475
+        }
+      },
+      {
+        "seed": 23,
+        "fraction": 0.75,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 60,
+        "t1p_warm_blend": 0.65,
+        "assignment_overlap_prior": 0.5416666666666666,
+        "t1p_warm_mse": 0.5122568338320719,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 1.4486871351874278,
+          "jasper_q_v7_multi_epoch_spectral": 0.8452917936808106,
+          "jasper_q_v7_hard_overlap": 0.5
+        }
+      },
+      {
+        "seed": 3,
+        "fraction": 0.75,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 60,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.5681519010574909,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.0014084419844483456,
+          "jasper_q_v7_multi_epoch_spectral": 0.692242727420461,
+          "jasper_q_v7_hard_overlap": 1.0
+        }
+      },
+      {
+        "seed": 7,
+        "fraction": 0.75,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 60,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.5729321918663054,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.0008970432374867563,
+          "jasper_q_v7_multi_epoch_spectral": 0.6786500513961843,
+          "jasper_q_v7_hard_overlap": 1.0
+        }
+      },
+      {
+        "seed": 11,
+        "fraction": 0.75,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 60,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.5767989640828721,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.0026509516507603683,
+          "jasper_q_v7_multi_epoch_spectral": 0.6844901217068597,
+          "jasper_q_v7_hard_overlap": 1.0
+        }
+      },
+      {
+        "seed": 19,
+        "fraction": 0.75,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 60,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.6141892652133882,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.002119150693913499,
+          "jasper_q_v7_multi_epoch_spectral": 0.6858994216161186,
+          "jasper_q_v7_hard_overlap": 1.0
+        }
+      },
+      {
+        "seed": 23,
+        "fraction": 0.75,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "observed_rows": 60,
+        "t1p_warm_blend": 0.0,
+        "assignment_overlap_prior": 1.0,
+        "t1p_warm_mse": 0.5390774470339763,
+        "methods": {
+          "gard_cooccurrence_wrong_h": 0.0035991958922075686,
+          "jasper_q_v7_multi_epoch_spectral": 0.6693012202290081,
+          "jasper_q_v7_hard_overlap": 1.0
+        }
+      }
+    ],
+    "aggregate": [
+      {
+        "fraction": 0.25,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "gard_cooccurrence_wrong_h",
+        "snapshot_mse_mean": 0.4021075745224481,
+        "snapshot_mse_std": 0.04797138605272464,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.25,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "jasper_q_v7_multi_epoch_spectral",
+        "snapshot_mse_mean": 0.8506341737657331,
+        "snapshot_mse_std": 0.013666020131311976,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.25,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "jasper_q_v7_hard_overlap",
+        "snapshot_mse_mean": 1.0,
+        "snapshot_mse_std": 0.0,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "gard_cooccurrence_wrong_h",
+        "snapshot_mse_mean": 2.653251177491401,
+        "snapshot_mse_std": 0.13002306745398437,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "jasper_q_v7_multi_epoch_spectral",
+        "snapshot_mse_mean": 0.9525450611889068,
+        "snapshot_mse_std": 0.009688730261512003,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.25,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "jasper_q_v7_hard_overlap",
+        "snapshot_mse_mean": 0.47000000000000003,
+        "snapshot_mse_std": 0.020310096011589895,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.35,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "gard_cooccurrence_wrong_h",
+        "snapshot_mse_mean": 0.28983518400686353,
+        "snapshot_mse_std": 0.10236265016310081,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.35,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "jasper_q_v7_multi_epoch_spectral",
+        "snapshot_mse_mean": 0.8143739489950551,
+        "snapshot_mse_std": 0.008157004974481083,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.35,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "jasper_q_v7_hard_overlap",
+        "snapshot_mse_mean": 1.0,
+        "snapshot_mse_std": 0.0,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.35,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "gard_cooccurrence_wrong_h",
+        "snapshot_mse_mean": 17.733803320820282,
+        "snapshot_mse_std": 13.812586045742522,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.35,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "jasper_q_v7_multi_epoch_spectral",
+        "snapshot_mse_mean": 0.9431186997034263,
+        "snapshot_mse_std": 0.014235233126783825,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.35,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "jasper_q_v7_hard_overlap",
+        "snapshot_mse_mean": 0.42142857142857143,
+        "snapshot_mse_std": 0.020671137326411123,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.5,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "gard_cooccurrence_wrong_h",
+        "snapshot_mse_mean": 0.04613948654997478,
+        "snapshot_mse_std": 0.027057536304835622,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.5,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "jasper_q_v7_multi_epoch_spectral",
+        "snapshot_mse_mean": 0.7437473903427547,
+        "snapshot_mse_std": 0.013511581499045739,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.5,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "jasper_q_v7_hard_overlap",
+        "snapshot_mse_mean": 1.0,
+        "snapshot_mse_std": 0.0,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "gard_cooccurrence_wrong_h",
+        "snapshot_mse_mean": 2.9653864419906677,
+        "snapshot_mse_std": 0.9458370227013524,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "jasper_q_v7_multi_epoch_spectral",
+        "snapshot_mse_mean": 0.8984502143265711,
+        "snapshot_mse_std": 0.009475807585699762,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.5,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "jasper_q_v7_hard_overlap",
+        "snapshot_mse_mean": 0.4525,
+        "snapshot_mse_std": 0.01837117307087383,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.65,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "gard_cooccurrence_wrong_h",
+        "snapshot_mse_mean": 0.014661039212535958,
+        "snapshot_mse_std": 0.015305070557185363,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.65,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "jasper_q_v7_multi_epoch_spectral",
+        "snapshot_mse_mean": 0.7114791875206266,
+        "snapshot_mse_std": 0.011577372611563944,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.65,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "jasper_q_v7_hard_overlap",
+        "snapshot_mse_mean": 0.9990384615384615,
+        "snapshot_mse_std": 0.0019230769230769162,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.65,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "gard_cooccurrence_wrong_h",
+        "snapshot_mse_mean": 1.4624730922825802,
+        "snapshot_mse_std": 0.09861637301663925,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.65,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "jasper_q_v7_multi_epoch_spectral",
+        "snapshot_mse_mean": 0.8922764661146315,
+        "snapshot_mse_std": 0.009021820500619592,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.65,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "jasper_q_v7_hard_overlap",
+        "snapshot_mse_mean": 0.46538461538461534,
+        "snapshot_mse_std": 0.018091238194448835,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.75,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "gard_cooccurrence_wrong_h",
+        "snapshot_mse_mean": 0.0021349566917633076,
+        "snapshot_mse_std": 0.0009455950934326915,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.75,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "jasper_q_v7_multi_epoch_spectral",
+        "snapshot_mse_mean": 0.6821167084737263,
+        "snapshot_mse_std": 0.0077295888512424,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.75,
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "jasper_q_v7_hard_overlap",
+        "snapshot_mse_mean": 1.0,
+        "snapshot_mse_std": 0.0,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.75,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "gard_cooccurrence_wrong_h",
+        "snapshot_mse_mean": 1.1116980626655917,
+        "snapshot_mse_std": 0.2098042858660079,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.75,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "jasper_q_v7_multi_epoch_spectral",
+        "snapshot_mse_mean": 0.8680326129794622,
+        "snapshot_mse_std": 0.01884351090149029,
+        "n_seeds": 5
+      },
+      {
+        "fraction": 0.75,
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "jasper_q_v7_hard_overlap",
+        "snapshot_mse_mean": 0.4608333333333333,
+        "snapshot_mse_std": 0.02905932629027116,
+        "n_seeds": 5
+      }
+    ],
+    "threat_reduction": {
+      "wrong40_level1": {
+        "assignment_regime": "wrong40",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "jasper_q_v7_multi_epoch_spectral",
+        "full_rows": 60,
+        "parent_mean_mse_gate": [
+          {
+            "target_mse": 0.05,
+            "reaches_target": false,
+            "min_observed_rows": null,
+            "reduction_vs_full": null
+          },
+          {
+            "target_mse": 0.1,
+            "reaches_target": false,
+            "min_observed_rows": null,
+            "reduction_vs_full": null
+          },
+          {
+            "target_mse": 0.15,
+            "reaches_target": false,
+            "min_observed_rows": null,
+            "reduction_vs_full": null
+          }
+        ],
+        "per_seed_pass_rate_by_fraction": [
+          {
+            "target_mse": 0.05,
+            "fraction": 0.75,
+            "observed_rows": 60,
+            "mean_mse": 0.8680326129794622,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.05,
+            "fraction": 0.65,
+            "observed_rows": 52,
+            "mean_mse": 0.8922764661146315,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.05,
+            "fraction": 0.5,
+            "observed_rows": 40,
+            "mean_mse": 0.8984502143265711,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.05,
+            "fraction": 0.35,
+            "observed_rows": 28,
+            "mean_mse": 0.9431186997034263,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.05,
+            "fraction": 0.25,
+            "observed_rows": 20,
+            "mean_mse": 0.9525450611889068,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.1,
+            "fraction": 0.75,
+            "observed_rows": 60,
+            "mean_mse": 0.8680326129794622,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.1,
+            "fraction": 0.65,
+            "observed_rows": 52,
+            "mean_mse": 0.8922764661146315,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.1,
+            "fraction": 0.5,
+            "observed_rows": 40,
+            "mean_mse": 0.8984502143265711,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.1,
+            "fraction": 0.35,
+            "observed_rows": 28,
+            "mean_mse": 0.9431186997034263,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.1,
+            "fraction": 0.25,
+            "observed_rows": 20,
+            "mean_mse": 0.9525450611889068,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.15,
+            "fraction": 0.75,
+            "observed_rows": 60,
+            "mean_mse": 0.8680326129794622,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.15,
+            "fraction": 0.65,
+            "observed_rows": 52,
+            "mean_mse": 0.8922764661146315,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.15,
+            "fraction": 0.5,
+            "observed_rows": 40,
+            "mean_mse": 0.8984502143265711,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.15,
+            "fraction": 0.35,
+            "observed_rows": 28,
+            "mean_mse": 0.9431186997034263,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.15,
+            "fraction": 0.25,
+            "observed_rows": 20,
+            "mean_mse": 0.9525450611889068,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          }
+        ],
+        "round01_any_seed_min_rows_at_0.10": null
+      },
+      "oracle_level1": {
+        "assignment_regime": "oracle",
+        "mean_anchor_mode": "level1_estimate",
+        "method": "jasper_q_v7_multi_epoch_spectral",
+        "full_rows": 60,
+        "parent_mean_mse_gate": [
+          {
+            "target_mse": 0.05,
+            "reaches_target": false,
+            "min_observed_rows": null,
+            "reduction_vs_full": null
+          },
+          {
+            "target_mse": 0.1,
+            "reaches_target": false,
+            "min_observed_rows": null,
+            "reduction_vs_full": null
+          },
+          {
+            "target_mse": 0.15,
+            "reaches_target": false,
+            "min_observed_rows": null,
+            "reduction_vs_full": null
+          }
+        ],
+        "per_seed_pass_rate_by_fraction": [
+          {
+            "target_mse": 0.05,
+            "fraction": 0.75,
+            "observed_rows": 60,
+            "mean_mse": 0.6821167084737263,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.05,
+            "fraction": 0.65,
+            "observed_rows": 52,
+            "mean_mse": 0.7114791875206266,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.05,
+            "fraction": 0.5,
+            "observed_rows": 40,
+            "mean_mse": 0.7437473903427547,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.05,
+            "fraction": 0.35,
+            "observed_rows": 28,
+            "mean_mse": 0.8143739489950551,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.05,
+            "fraction": 0.25,
+            "observed_rows": 20,
+            "mean_mse": 0.8506341737657331,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.1,
+            "fraction": 0.75,
+            "observed_rows": 60,
+            "mean_mse": 0.6821167084737263,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.1,
+            "fraction": 0.65,
+            "observed_rows": 52,
+            "mean_mse": 0.7114791875206266,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.1,
+            "fraction": 0.5,
+            "observed_rows": 40,
+            "mean_mse": 0.7437473903427547,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.1,
+            "fraction": 0.35,
+            "observed_rows": 28,
+            "mean_mse": 0.8143739489950551,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.1,
+            "fraction": 0.25,
+            "observed_rows": 20,
+            "mean_mse": 0.8506341737657331,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.15,
+            "fraction": 0.75,
+            "observed_rows": 60,
+            "mean_mse": 0.6821167084737263,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.15,
+            "fraction": 0.65,
+            "observed_rows": 52,
+            "mean_mse": 0.7114791875206266,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.15,
+            "fraction": 0.5,
+            "observed_rows": 40,
+            "mean_mse": 0.7437473903427547,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.15,
+            "fraction": 0.35,
+            "observed_rows": 28,
+            "mean_mse": 0.8143739489950551,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          },
+          {
+            "target_mse": 0.15,
+            "fraction": 0.25,
+            "observed_rows": 20,
+            "mean_mse": 0.8506341737657331,
+            "per_seed_pass_rate": 0.0,
+            "n_seeds_pass": 0,
+            "n_seeds": 5
+          }
+        ],
+        "round01_any_seed_min_rows_at_0.10": null
+      }
+    },
+    "preregistered_gates": {
+      "A_mse_0.15_row_reduction_50pct_wrong40": {
+        "target_mse": 0.15,
+        "reaches_target": false,
+        "min_observed_rows": null,
+        "reduction_vs_full": null,
+        "meets_row_reduction": false
+      },
+      "A_mse_0.15_row_reduction_50pct_oracle": {
+        "target_mse": 0.15,
+        "reaches_target": false,
+        "min_observed_rows": null,
+        "reduction_vs_full": null,
+        "meets_row_reduction": false
+      },
+      "wrong40_mse_0.10_row_reduction_40pct": {
+        "target_mse": 0.1,
+        "reaches_target": false,
+        "min_observed_rows": null,
+        "reduction_vs_full": null,
+        "meets_row_reduction": false
+      }
+    },
+    "best_wrong40_mean_mse": {
+      "fraction": 0.75,
+      "assignment_regime": "wrong40",
+      "mean_anchor_mode": "level1_estimate",
+      "method": "jasper_q_v7_multi_epoch_spectral",
+      "snapshot_mse_mean": 0.8680326129794622,
+      "snapshot_mse_std": 0.01884351090149029,
+      "n_seeds": 5
+    }
+  },
+  "leak_cert_t1p_v2": {
+    "per_run": [
+      {
+        "seed": 3,
+        "empirical_t1p_mse": 0.389172481573496,
+        "n_obs_t1p_rows": 70,
+        "cert_naive_broadcast": 1.0000010299220645,
+        "cert_naive_trace_inflated": 15.999999999874627,
+        "cert_t1p_trace_upper": 1.0799999999915373,
+        "cert_tight_upper_bound": 1.0799999999915373,
+        "naive_broadcast_over_cert": 0.9259268795647225,
+        "naive_trace_over_cert": 14.814814814814815,
+        "snapshot_trace_variance": 0.9999999999921642,
+        "cert_covers_empirical": true,
+        "criterion_c_2x_tighter_than_naive_broadcast": false,
+        "criterion_c_2x_tighter_than_naive_trace": true
+      },
+      {
+        "seed": 7,
+        "empirical_t1p_mse": 0.45535333881990203,
+        "n_obs_t1p_rows": 70,
+        "cert_naive_broadcast": 1.000001206417011,
+        "cert_naive_trace_inflated": 15.999999999872133,
+        "cert_t1p_trace_upper": 1.079999999991369,
+        "cert_tight_upper_bound": 1.079999999991369,
+        "naive_broadcast_over_cert": 0.9259270429861136,
+        "naive_trace_over_cert": 14.814814814814815,
+        "snapshot_trace_variance": 0.9999999999920083,
+        "cert_covers_empirical": true,
+        "criterion_c_2x_tighter_than_naive_broadcast": false,
+        "criterion_c_2x_tighter_than_naive_trace": true
+      },
+      {
+        "seed": 11,
+        "empirical_t1p_mse": 0.38796714565003665,
+        "n_obs_t1p_rows": 70,
+        "cert_naive_broadcast": 1.0000021965421406,
+        "cert_naive_trace_inflated": 15.999999999874262,
+        "cert_t1p_trace_upper": 1.0799999999915129,
+        "cert_tight_upper_bound": 1.0799999999915129,
+        "naive_broadcast_over_cert": 0.9259279597685177,
+        "naive_trace_over_cert": 14.814814814814813,
+        "snapshot_trace_variance": 0.9999999999921414,
+        "cert_covers_empirical": true,
+        "criterion_c_2x_tighter_than_naive_broadcast": false,
+        "criterion_c_2x_tighter_than_naive_trace": true
+      },
+      {
+        "seed": 19,
+        "empirical_t1p_mse": 0.5951280254016807,
+        "n_obs_t1p_rows": 70,
+        "cert_naive_broadcast": 1.00000116326913,
+        "cert_naive_trace_inflated": 15.99999999987551,
+        "cert_t1p_trace_upper": 1.079999999991597,
+        "cert_tight_upper_bound": 1.079999999991597,
+        "naive_broadcast_over_cert": 0.9259270030341763,
+        "naive_trace_over_cert": 14.814814814814813,
+        "snapshot_trace_variance": 0.9999999999922193,
+        "cert_covers_empirical": true,
+        "criterion_c_2x_tighter_than_naive_broadcast": false,
+        "criterion_c_2x_tighter_than_naive_trace": true
+      },
+      {
+        "seed": 23,
+        "empirical_t1p_mse": 0.4434065307752961,
+        "n_obs_t1p_rows": 70,
+        "cert_naive_broadcast": 1.0000017544048927,
+        "cert_naive_trace_inflated": 15.999999999875264,
+        "cert_t1p_trace_upper": 1.0799999999915804,
+        "cert_tight_upper_bound": 1.0799999999915804,
+        "naive_broadcast_over_cert": 0.9259275503821192,
+        "naive_trace_over_cert": 14.814814814814815,
+        "snapshot_trace_variance": 0.999999999992204,
+        "cert_covers_empirical": true,
+        "criterion_c_2x_tighter_than_naive_broadcast": false,
+        "criterion_c_2x_tighter_than_naive_trace": true
+      }
+    ],
+    "aggregate": {
+      "empirical_t1p_mse_mean": 0.4542055044440823,
+      "cert_tight_mean": 1.0799999999915193,
+      "cert_naive_trace_mean": 15.999999999874358,
+      "naive_trace_over_cert_ratio_mean": 14.814814814814813,
+      "criterion_c_pass_rate_trace": 1.0,
+      "cert_covers_empirical_rate": 1.0,
+      "qfl_terminal_snapshot_t1p_mse_reference": 0.4763403170545478
+    }
+  },
+  "config_breakthrough": {
+    "A_row_reduction_25pct_wrong40_parent_gate_0.10": false,
+    "A_relaxed_mse_0.15_reduction_50pct": false,
+    "wrong40_mse_0.10_reduction_40pct": false,
+    "C_cert_2x_tighter_than_naive_trace": true
+  },
+  "breakthrough_status": {
+    "assignment_barrier_broken": false,
+    "jasper_q_v7_best_wrong40_fraction": 0.75,
+    "jasper_q_v7_best_wrong40_mse": 0.8680326129794622
+  },
+  "honesty_notes": [
+    "JASPER-Q v7: multi-epoch T1p warm-start + spectral knn graph on recovered snapshots.",
+    "T1p warm-start disabled on oracle assignment (blend=0); wrong-H uses 65% blend.",
+    "Row sweep 0.25\u20130.75 on wrong40/oracle only; level1 anchor.",
+    "LEAK-CERT v2: Ky-Fan tail + trace floor; naive baseline trace-inflated for criterion C.",
+    "Relaxed gates (0.15@50%, wrong40@0.10@40%) are Round 07 pre-registered; config.json A unchanged."
+  ],
+  "runtime_sec": 47.873705870995764
+}

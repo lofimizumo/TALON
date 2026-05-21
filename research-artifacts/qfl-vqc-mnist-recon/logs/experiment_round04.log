@@ -1,0 +1,60 @@
+2026-05-21 07:44:34,410 INFO Round-04 MNIST recon seeds=[3, 7] device=cpu joli_tv_lbfgs_r3=0.005
+2026-05-21 07:44:34,410 INFO QFL_QUICK: resize=14 N=12 paths=('lasa_qterm_T1p_graph', 'shard_oracle') (full: QFL_QUICK=0 QFL_FULL=1)
+2026-05-21 07:44:34,410 INFO === resize=14 dim_g=100 ===
+2026-05-21 07:44:34,555 INFO L3 start resize=14 seed=3 path=lasa_qterm_T1p_graph inv=joli_r3 (N=12 d=196)
+2026-05-21 07:44:34,713 INFO   joli_r3 image 1/12 0.2s
+2026-05-21 07:44:34,797 INFO   joli_r3 image 2/12 0.1s
+2026-05-21 07:44:34,880 INFO   joli_r3 image 3/12 0.1s
+2026-05-21 07:44:34,970 INFO   joli_r3 image 4/12 0.1s
+2026-05-21 07:44:35,054 INFO   joli_r3 image 5/12 0.1s
+2026-05-21 07:44:35,138 INFO   joli_r3 image 6/12 0.1s
+2026-05-21 07:44:35,221 INFO   joli_r3 image 7/12 0.1s
+2026-05-21 07:44:35,304 INFO   joli_r3 image 8/12 0.1s
+2026-05-21 07:44:35,387 INFO   joli_r3 image 9/12 0.1s
+2026-05-21 07:44:35,471 INFO   joli_r3 image 10/12 0.1s
+2026-05-21 07:44:35,554 INFO   joli_r3 image 11/12 0.1s
+2026-05-21 07:44:35,637 INFO   joli_r3 image 12/12 0.1s
+2026-05-21 07:44:35,638 INFO resize=14 seed=3 dim_g=100 lasa_qterm_T1p_graph joli_r3 snap=0.0329 mse=0.1349 psnr=8.70 pass=False
+2026-05-21 07:44:35,760 INFO L3 start resize=14 seed=3 path=shard_oracle inv=joli_r3 (N=12 d=196)
+2026-05-21 07:44:35,845 INFO   joli_r3 image 1/12 0.1s
+2026-05-21 07:44:35,933 INFO   joli_r3 image 2/12 0.1s
+2026-05-21 07:44:36,016 INFO   joli_r3 image 3/12 0.1s
+2026-05-21 07:44:36,099 INFO   joli_r3 image 4/12 0.1s
+2026-05-21 07:44:36,185 INFO   joli_r3 image 5/12 0.1s
+2026-05-21 07:44:36,269 INFO   joli_r3 image 6/12 0.1s
+2026-05-21 07:44:36,352 INFO   joli_r3 image 7/12 0.1s
+2026-05-21 07:44:36,434 INFO   joli_r3 image 8/12 0.1s
+2026-05-21 07:44:36,516 INFO   joli_r3 image 9/12 0.1s
+2026-05-21 07:44:36,598 INFO   joli_r3 image 10/12 0.1s
+2026-05-21 07:44:36,685 INFO   joli_r3 image 11/12 0.1s
+2026-05-21 07:44:36,768 INFO   joli_r3 image 12/12 0.1s
+2026-05-21 07:44:36,768 INFO resize=14 seed=3 dim_g=100 shard_oracle joli_r3 snap=0.0479 mse=0.1498 psnr=8.25 pass=False
+2026-05-21 07:44:36,872 INFO L3 start resize=14 seed=7 path=lasa_qterm_T1p_graph inv=joli_r3 (N=12 d=196)
+2026-05-21 07:44:37,033 INFO   joli_r3 image 1/12 0.2s
+2026-05-21 07:44:37,117 INFO   joli_r3 image 2/12 0.1s
+2026-05-21 07:44:37,201 INFO   joli_r3 image 3/12 0.1s
+2026-05-21 07:44:37,288 INFO   joli_r3 image 4/12 0.1s
+2026-05-21 07:44:37,374 INFO   joli_r3 image 5/12 0.1s
+2026-05-21 07:44:37,458 INFO   joli_r3 image 6/12 0.1s
+2026-05-21 07:44:37,541 INFO   joli_r3 image 7/12 0.1s
+2026-05-21 07:44:37,624 INFO   joli_r3 image 8/12 0.1s
+2026-05-21 07:44:37,711 INFO   joli_r3 image 9/12 0.1s
+2026-05-21 07:44:37,794 INFO   joli_r3 image 10/12 0.1s
+2026-05-21 07:44:37,881 INFO   joli_r3 image 11/12 0.1s
+2026-05-21 07:44:37,964 INFO   joli_r3 image 12/12 0.1s
+2026-05-21 07:44:37,964 INFO resize=14 seed=7 dim_g=100 lasa_qterm_T1p_graph joli_r3 snap=0.0110 mse=0.1093 psnr=9.61 pass=False
+2026-05-21 07:44:38,103 INFO L3 start resize=14 seed=7 path=shard_oracle inv=joli_r3 (N=12 d=196)
+2026-05-21 07:44:38,191 INFO   joli_r3 image 1/12 0.1s
+2026-05-21 07:44:38,274 INFO   joli_r3 image 2/12 0.1s
+2026-05-21 07:44:38,362 INFO   joli_r3 image 3/12 0.1s
+2026-05-21 07:44:38,446 INFO   joli_r3 image 4/12 0.1s
+2026-05-21 07:44:38,534 INFO   joli_r3 image 5/12 0.1s
+2026-05-21 07:44:38,618 INFO   joli_r3 image 6/12 0.1s
+2026-05-21 07:44:38,702 INFO   joli_r3 image 7/12 0.1s
+2026-05-21 07:44:38,791 INFO   joli_r3 image 8/12 0.1s
+2026-05-21 07:44:38,876 INFO   joli_r3 image 9/12 0.1s
+2026-05-21 07:44:38,964 INFO   joli_r3 image 10/12 0.1s
+2026-05-21 07:44:39,048 INFO   joli_r3 image 11/12 0.1s
+2026-05-21 07:44:39,136 INFO   joli_r3 image 12/12 0.1s
+2026-05-21 07:44:39,136 INFO resize=14 seed=7 dim_g=100 shard_oracle joli_r3 snap=0.0188 mse=0.1087 psnr=9.64 pass=False
+2026-05-21 07:44:39,137 INFO Wrote /workspace/research-artifacts/qfl-vqc-mnist-recon/artifacts/round04_metrics.json targets_met=False
