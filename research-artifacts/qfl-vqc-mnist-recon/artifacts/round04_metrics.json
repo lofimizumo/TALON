@@ -1,0 +1,225 @@
+{
+  "benchmark": "round04_qfl_vqc_mnist_recon",
+  "method_name_stack": "SurrogateQFL + GARD-SPARSE/T1p-graph/SHARD snapshots + JOLI-R3 L3",
+  "round04_innovations": {
+    "l3": "joli_r3 tv_lbfgs from parent Round-03 Pareto",
+    "gard_sparse_oracle": "oracle incidence + partial_rows=8/epoch + chain graph MAP (privacy-breakthrough GARD patterns)",
+    "lasa_qterm_T1p_graph": "T1p partial honest disaggregate + graph_term_map polish before L3",
+    "fallback_14x14": true
+  },
+  "mnist_tracks": {
+    "primary_28x28": {
+      "resize": 28,
+      "dim_g_sweep": [
+        100
+      ],
+      "accepting_configs": []
+    },
+    "optional_14x14": {
+      "resize": 14,
+      "dim_g": [
+        100
+      ],
+      "accepting_configs": [],
+      "ran_because_28_failed": true
+    }
+  },
+  "joli_r3": {
+    "tv_lbfgs": 0.005,
+    "adam_steps": 120,
+    "lbfgs_iter": 80,
+    "n_batch_cap": 48
+  },
+  "simulator": {
+    "n_samples": 12,
+    "batch_size": 4,
+    "n_epochs": 5,
+    "partial_rows_t1p": 6,
+    "noise_level": 0.01,
+    "seeds": [
+      3,
+      7
+    ],
+    "device": "cpu"
+  },
+  "targets": {
+    "input_mse_max": 0.05,
+    "psnr_min_db": 18.0,
+    "snapshot_mse_max_weak": 0.15,
+    "pass_min_seeds_of_3": 2
+  },
+  "summary_28x28_by_dim_g": {},
+  "summary_14x14_by_dim_g": {
+    "100": {
+      "lasa_qterm_T1p_graph__joli_r3": {
+        "n_ok": 2,
+        "snapshot_mse_mean": 0.021924683468494147,
+        "snapshot_mse_std": 0.010931641112871893,
+        "input_mse_mean": 0.12210273122482695,
+        "input_mse_std": 0.012830154115133115,
+        "input_psnr_db_mean": 9.156855035482572,
+        "input_psnr_db_std": 0.4580331075292934,
+        "l3_runtime_sec_mean": 1.0874260179698467,
+        "l3_runtime_sec_std": 0.004814618965610862,
+        "pass_count_both": 0,
+        "pass_rate_both": 0.0,
+        "passes_acceptance": false
+      },
+      "shard_oracle__joli_r3": {
+        "n_ok": 2,
+        "snapshot_mse_mean": 0.03334631828215713,
+        "snapshot_mse_std": 0.014512800470958298,
+        "input_mse_mean": 0.1292196661245977,
+        "input_mse_std": 0.020550790340773145,
+        "input_psnr_db_mean": 8.942343362093014,
+        "input_psnr_db_std": 0.6966048962978721,
+        "l3_runtime_sec_mean": 1.0206194540369324,
+        "l3_runtime_sec_std": 0.012471973022911698,
+        "pass_count_both": 0,
+        "pass_rate_both": 0.0,
+        "passes_acceptance": false
+      }
+    }
+  },
+  "per_seed": [
+    {
+      "seed": 3,
+      "dim_g": 100,
+      "resize": 14,
+      "d": 196,
+      "image_shape": [
+        14,
+        14
+      ],
+      "paths": {
+        "lasa_qterm_T1p_graph": {
+          "snapshot_recovery": {
+            "snapshot_mse": 0.03285632458136604,
+            "tier": "T1p",
+            "method": "lasa_qterm_T1p_graph_prior",
+            "observed_terminal_gradient_rows": 15,
+            "observed_intermediate_batch_gradients": 0,
+            "graph_prior_blend": 0.35,
+            "graph_prior_lambda": 0.35,
+            "rows_per_epoch": 6,
+            "imputation_free": true,
+            "partial_graph_lambda": 0.5,
+            "recovery_runtime_sec": 0.04297754599247128
+          },
+          "l3": {
+            "joli_r3": {
+              "snapshot_mse": 0.03285632458136604,
+              "input_mse": 0.13493288533996006,
+              "input_psnr_db": 8.698821927953277,
+              "image_matching_acc": 0.0,
+              "l3_runtime_sec": 1.0826113990042359,
+              "tv_lbfgs": 0.005,
+              "targets": {
+                "input_mse_ok": false,
+                "psnr_ok": false,
+                "both_ok": false
+              }
+            }
+          }
+        },
+        "shard_oracle": {
+          "snapshot_recovery": {
+            "snapshot_mse": 0.04785911875311543,
+            "observed_intermediate_batch_gradients": 15,
+            "observed_terminal_gradient_rows": 0,
+            "l2_init": "graph_term_map",
+            "shard_max_iter": 80,
+            "recovery_runtime_sec": 0.12165914697106928
+          },
+          "l3": {
+            "joli_r3": {
+              "snapshot_mse": 0.04785911875311543,
+              "input_mse": 0.14977045646537085,
+              "input_psnr_db": 8.245738465795142,
+              "image_matching_acc": 0.0,
+              "l3_runtime_sec": 1.0081474810140207,
+              "tv_lbfgs": 0.005,
+              "targets": {
+                "input_mse_ok": false,
+                "psnr_ok": false,
+                "both_ok": false
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "dim_g": 100,
+      "resize": 14,
+      "d": 196,
+      "image_shape": [
+        14,
+        14
+      ],
+      "paths": {
+        "lasa_qterm_T1p_graph": {
+          "snapshot_recovery": {
+            "snapshot_mse": 0.010993042355622254,
+            "tier": "T1p",
+            "method": "lasa_qterm_T1p_graph_prior",
+            "observed_terminal_gradient_rows": 15,
+            "observed_intermediate_batch_gradients": 0,
+            "graph_prior_blend": 0.35,
+            "graph_prior_lambda": 0.35,
+            "rows_per_epoch": 6,
+            "imputation_free": true,
+            "partial_graph_lambda": 0.5,
+            "recovery_runtime_sec": 0.04836054297629744
+          },
+          "l3": {
+            "joli_r3": {
+              "snapshot_mse": 0.010993042355622254,
+              "input_mse": 0.10927257710969383,
+              "input_psnr_db": 9.614888143011864,
+              "image_matching_acc": 0.0,
+              "l3_runtime_sec": 1.0922406369354576,
+              "tv_lbfgs": 0.005,
+              "targets": {
+                "input_mse_ok": false,
+                "psnr_ok": false,
+                "both_ok": false
+              }
+            }
+          }
+        },
+        "shard_oracle": {
+          "snapshot_recovery": {
+            "snapshot_mse": 0.018833517811198835,
+            "observed_intermediate_batch_gradients": 15,
+            "observed_terminal_gradient_rows": 0,
+            "l2_init": "graph_term_map",
+            "shard_max_iter": 80,
+            "recovery_runtime_sec": 0.13858220598194748
+          },
+          "l3": {
+            "joli_r3": {
+              "snapshot_mse": 0.018833517811198835,
+              "input_mse": 0.10866887578382456,
+              "input_psnr_db": 9.638948258390887,
+              "image_matching_acc": 0.0,
+              "l3_runtime_sec": 1.0330914270598441,
+              "tv_lbfgs": 0.005,
+              "targets": {
+                "input_mse_ok": false,
+                "psnr_ok": false,
+                "both_ok": false
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "accepting_configs": [],
+  "targets_met_any_config": false,
+  "grid_png_28": null,
+  "grid_png_14": null,
+  "honest_verdict": "No config reached both targets on \u22652/3 seeds (28\u00d728 + 14\u00d714 fallback). Best weak-path candidates in summary_28x28_by_dim_g."
+}

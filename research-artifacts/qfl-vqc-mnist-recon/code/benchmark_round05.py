@@ -72,7 +72,8 @@ plot_recon_grid = _r04.plot_recon_grid
 RESEARCH_ROUND = 5
 RESIZE = 28
 SEEDS = [3, 7, 11]
-DIM_G_SWEEP = (100, 160, 256)
+# Full sweep (100,160,256) ≈ 21h CPU; default primary dim from Round-02 sweet spot.
+DIM_G_SWEEP = (160,) if os.environ.get("QFL_FULL_DIM_SWEEP") != "1" else (100, 160, 256)
 N_SAMPLES = 32
 BATCH_SIZE = 4
 N_EPOCHS = 10

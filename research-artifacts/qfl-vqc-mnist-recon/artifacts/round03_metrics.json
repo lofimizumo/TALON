@@ -1,0 +1,330 @@
+{
+  "benchmark": "round03_qfl_vqc_mnist_recon",
+  "method_name_stack": "SurrogateQFL + SHARD(B=1 oracle) + LASA-QTERM T1p + L3 (joli/lapin)",
+  "mnist_choice": {
+    "resolution": 28,
+    "dim_g": 100,
+    "d": 784,
+    "loader": "shard_sim.FederatedDataLoader"
+  },
+  "round03_tuning": {
+    "adam_steps_grid": [
+      2000,
+      4000,
+      6000
+    ],
+    "lbfgs_iter": 1000,
+    "n_batch": 500,
+    "warm_start": "encoding_lstsq_seeds_plus_random_fill",
+    "tv_lbfgs": 0.005,
+    "shard_oracle_fix": "level2_disaggregate_b1 or B=1 fallback",
+    "l3_path": "lasa_qterm_T1p",
+    "l3_inverters": [
+      "joli_l3",
+      "lapin_l3"
+    ]
+  },
+  "simulator": {
+    "n_samples": 32,
+    "batch_size": 4,
+    "n_epochs": 10,
+    "noise_level": 0.01,
+    "seeds": [
+      3,
+      7,
+      11
+    ],
+    "device": "cpu"
+  },
+  "targets": {
+    "input_mse_max": 0.05,
+    "psnr_min_db": 18.0,
+    "snapshot_mse_max_weak": 0.15
+  },
+  "per_seed": [
+    {
+      "seed": 3,
+      "dim_g": 100,
+      "d": 784,
+      "image_shape": [
+        28,
+        28
+      ],
+      "l3_budget": {
+        "adam_steps_grid": [
+          2000,
+          4000,
+          6000
+        ],
+        "lbfgs_iter": 1000,
+        "n_batch": 128,
+        "warm_start": "encoding_lstsq_seeds_plus_random_fill",
+        "tv_lbfgs": 0.005
+      },
+      "snapshot_recovery": {
+        "shard_oracle_b1": {
+          "snapshot_mse": 0.004265447648976877,
+          "recovery_runtime_sec": 0.7108616669429466,
+          "l2_method": "level2_disaggregate_b1",
+          "batch_size_track": 1,
+          "observed_intermediate_batch_gradients": 320,
+          "observed_terminal_gradient_rows": 0
+        },
+        "lasa_qterm_T1p": {
+          "snapshot_mse": 0.019057734798022603,
+          "recovery_runtime_sec": 0.4878712010104209,
+          "tier": "T1p",
+          "method": "lasa_qterm_partial_honest",
+          "observed_terminal_gradient_rows": 80,
+          "observed_intermediate_batch_gradients": 0,
+          "rows_per_epoch": 8,
+          "imputation_free": true,
+          "partial_graph_lambda": 0.5
+        }
+      },
+      "l3_grid_t1p": {
+        "joli_l3__adam250": {
+          "inverter": "joli_l3",
+          "adam_steps": 250,
+          "lbfgs_iter": 150,
+          "n_batch": 128,
+          "n_batch_max": 128,
+          "warm_start": "encoding_lstsq_seeds_plus_random_fill",
+          "tv_lbfgs": 0.005,
+          "snapshot_mse": 0.019057734798022603,
+          "input_mse": 0.17414398340574475,
+          "input_psnr_db": 7.590915256204616,
+          "image_matching_acc": 0.0,
+          "l3_runtime_sec": 1498.0092715478968,
+          "targets": {
+            "input_mse_ok": false,
+            "psnr_ok": false,
+            "both_ok": false
+          }
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "dim_g": 100,
+      "d": 784,
+      "image_shape": [
+        28,
+        28
+      ],
+      "l3_budget": {
+        "adam_steps_grid": [
+          2000,
+          4000,
+          6000
+        ],
+        "lbfgs_iter": 1000,
+        "n_batch": 128,
+        "warm_start": "encoding_lstsq_seeds_plus_random_fill",
+        "tv_lbfgs": 0.005
+      },
+      "snapshot_recovery": {
+        "shard_oracle_b1": {
+          "snapshot_mse": 1.1457556655961681e-07,
+          "recovery_runtime_sec": 0.8333066160557792,
+          "l2_method": "level2_disaggregate_b1",
+          "batch_size_track": 1,
+          "observed_intermediate_batch_gradients": 320,
+          "observed_terminal_gradient_rows": 0
+        },
+        "lasa_qterm_T1p": {
+          "snapshot_mse": 0.06653970692503053,
+          "recovery_runtime_sec": 0.5590778079349548,
+          "tier": "T1p",
+          "method": "lasa_qterm_partial_honest",
+          "observed_terminal_gradient_rows": 80,
+          "observed_intermediate_batch_gradients": 0,
+          "rows_per_epoch": 8,
+          "imputation_free": true,
+          "partial_graph_lambda": 0.5
+        }
+      },
+      "l3_grid_t1p": {
+        "joli_l3__adam250": {
+          "inverter": "joli_l3",
+          "adam_steps": 250,
+          "lbfgs_iter": 150,
+          "n_batch": 128,
+          "n_batch_max": 128,
+          "warm_start": "encoding_lstsq_seeds_plus_random_fill",
+          "tv_lbfgs": 0.005,
+          "snapshot_mse": 0.06653970692503053,
+          "input_mse": 0.19276264963015977,
+          "input_psnr_db": 7.149771127098581,
+          "image_matching_acc": 0.0,
+          "l3_runtime_sec": 1302.9160957629792,
+          "targets": {
+            "input_mse_ok": false,
+            "psnr_ok": false,
+            "both_ok": false
+          }
+        }
+      }
+    },
+    {
+      "seed": 11,
+      "dim_g": 100,
+      "d": 784,
+      "image_shape": [
+        28,
+        28
+      ],
+      "l3_budget": {
+        "adam_steps_grid": [
+          2000,
+          4000,
+          6000
+        ],
+        "lbfgs_iter": 1000,
+        "n_batch": 128,
+        "warm_start": "encoding_lstsq_seeds_plus_random_fill",
+        "tv_lbfgs": 0.005
+      },
+      "snapshot_recovery": {
+        "shard_oracle_b1": {
+          "snapshot_mse": 1.0844296048005934e-07,
+          "recovery_runtime_sec": 0.9383975770324469,
+          "l2_method": "level2_disaggregate_b1",
+          "batch_size_track": 1,
+          "observed_intermediate_batch_gradients": 320,
+          "observed_terminal_gradient_rows": 0
+        },
+        "lasa_qterm_T1p": {
+          "snapshot_mse": 0.05947490045780751,
+          "recovery_runtime_sec": 0.32984064402990043,
+          "tier": "T1p",
+          "method": "lasa_qterm_partial_honest",
+          "observed_terminal_gradient_rows": 80,
+          "observed_intermediate_batch_gradients": 0,
+          "rows_per_epoch": 8,
+          "imputation_free": true,
+          "partial_graph_lambda": 0.5
+        }
+      },
+      "l3_grid_t1p": {
+        "joli_l3__adam250": {
+          "inverter": "joli_l3",
+          "adam_steps": 250,
+          "lbfgs_iter": 150,
+          "n_batch": 128,
+          "n_batch_max": 128,
+          "warm_start": "encoding_lstsq_seeds_plus_random_fill",
+          "tv_lbfgs": 0.005,
+          "snapshot_mse": 0.05947490045780751,
+          "input_mse": 0.20426290330545266,
+          "input_psnr_db": 6.898104995086175,
+          "image_matching_acc": 0.0,
+          "l3_runtime_sec": 963.0111872289563,
+          "targets": {
+            "input_mse_ok": false,
+            "psnr_ok": false,
+            "both_ok": false
+          }
+        }
+      }
+    }
+  ],
+  "per_seed_pass_table": [
+    {
+      "seed": 3,
+      "config": "joli_l3__adam250",
+      "inverter": "joli_l3",
+      "adam_steps": 250,
+      "pass_both": false,
+      "pass_mse": false,
+      "pass_psnr": false,
+      "input_mse": 0.17414398340574475,
+      "input_psnr_db": 7.590915256204616
+    },
+    {
+      "seed": 7,
+      "config": "joli_l3__adam250",
+      "inverter": "joli_l3",
+      "adam_steps": 250,
+      "pass_both": false,
+      "pass_mse": false,
+      "pass_psnr": false,
+      "input_mse": 0.19276264963015977,
+      "input_psnr_db": 7.149771127098581
+    },
+    {
+      "seed": 11,
+      "config": "joli_l3__adam250",
+      "inverter": "joli_l3",
+      "adam_steps": 250,
+      "pass_both": false,
+      "pass_mse": false,
+      "pass_psnr": false,
+      "input_mse": 0.20426290330545266,
+      "input_psnr_db": 6.898104995086175
+    }
+  ],
+  "l3_grid_summary_t1p": {
+    "joli_l3__adam250": {
+      "n_ok": 3,
+      "input_mse_mean": 0.19038984544711904,
+      "input_mse_std": 0.012409941814248418,
+      "input_psnr_db_mean": 7.212930459463124,
+      "pass_rate_both": 0.0,
+      "pass_rate_input_mse": 0.0,
+      "pass_rate_psnr": 0.0,
+      "per_seed_pass_both": [
+        {
+          "seed": 3,
+          "pass": false,
+          "input_mse": 0.17414398340574475
+        },
+        {
+          "seed": 7,
+          "pass": false,
+          "input_mse": 0.19276264963015977
+        },
+        {
+          "seed": 11,
+          "pass": false,
+          "input_mse": 0.20426290330545266
+        }
+      ]
+    }
+  },
+  "grid_png": {
+    "joli_l3": "/workspace/research-artifacts/qfl-vqc-mnist-recon/artifacts/round03_recon_grid_joli_l3_adam250.png"
+  },
+  "headline": {
+    "best_joli_config": "joli_l3__adam250",
+    "best_lapin_config": null,
+    "best_joli": {
+      "n_ok": 3,
+      "input_mse_mean": 0.19038984544711904,
+      "input_mse_std": 0.012409941814248418,
+      "input_psnr_db_mean": 7.212930459463124,
+      "pass_rate_both": 0.0,
+      "pass_rate_input_mse": 0.0,
+      "pass_rate_psnr": 0.0,
+      "per_seed_pass_both": [
+        {
+          "seed": 3,
+          "pass": false,
+          "input_mse": 0.17414398340574475
+        },
+        {
+          "seed": 7,
+          "pass": false,
+          "input_mse": 0.19276264963015977
+        },
+        {
+          "seed": 11,
+          "pass": false,
+          "input_mse": 0.20426290330545266
+        }
+      ]
+    },
+    "best_lapin": {}
+  },
+  "honest_verdict": "Best T1p JOLI @ joli_l3__adam250: mean input MSE 0.1904 (target \u22640.05), pass_rate_both=0%."
+}

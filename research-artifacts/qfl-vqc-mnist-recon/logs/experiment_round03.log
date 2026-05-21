@@ -1,0 +1,10 @@
+2026-05-21 00:14:49,143 INFO Round-03 MNIST 28x28 dim_g=100 seeds=[3, 7, 11] device=cpu profile=mnist28_resume adam_grid=(250,) lbfgs=150 n_batch_cap=128 workers=1
+2026-05-21 00:14:49,144 INFO root_cause: paper/root_cause_l3_stall.md
+2026-05-21 00:14:51,849 INFO seed=3 oracle_snap_mse=0.0043 (B=1 level2_disaggregate_b1) t1p_snap_mse=0.0191
+2026-05-21 00:14:51,850 INFO seed=3 L3 start joli_l3 adam=250 n_batch=128
+2026-05-21 00:15:41,040 INFO   joli image 1/32 done 49.2s
+2026-05-21 00:16:34,571 INFO   joli image 2/32 done 53.5s
+2026-05-21 00:17:27,702 INFO   joli image 3/32 done 53.1s
+2026-05-21 00:18:43,235 INFO   joli image 4/32 done 75.5s
+2026-05-21 00:20:03,587 INFO   joli image 5/32 done 80.3s
+2026-05-21 00:21:19,743 INFO   joli image 6/32 done 76.2s

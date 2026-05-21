@@ -1,0 +1,2 @@
+2026-05-20 23:17:02,739 INFO Round-04 MNIST recon seeds=[3, 7, 11] device=cpu joli_tv_lbfgs_r3=0.005
+2026-05-20 23:17:02,739 INFO === resize=28 dim_g=160 ===
