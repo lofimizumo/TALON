@@ -42,18 +42,37 @@ def is_quick_mode() -> bool:
 
 def get_run_config(*, research_round: int = 0) -> RunConfig:
     if is_quick_mode():
-        d = 14 * 14
-        profile = L3Profile(
-            name="quick_iter",
-            adam_steps=120,
-            lbfgs_iter=80,
-            n_batch_cap=48,
-            include_lapin=False,
-            lapin_only_if_d_le=0,
-            adam_grid=(120,),
-            parallel_seed_workers=1,
-            log_every_image=True,
-        )
+        # Round 5+: mini L3 adam sweep on 14×14 (still minutes, not hours).
+        if research_round >= 5:
+            profile = L3Profile(
+                name="quick_r5_l3_sweep",
+                adam_steps=500,
+                lbfgs_iter=120,
+                n_batch_cap=64,
+                include_lapin=False,
+                lapin_only_if_d_le=0,
+                adam_grid=(500, 1000),
+                parallel_seed_workers=1,
+                log_every_image=True,
+            )
+            paths = ("lasa_qterm_T1p", "gard_sparse_oracle", "shard_oracle")
+            dim_list = (100, 160)
+            est = "~3-8 min (14×14, 2 seeds, 2 dim_g, 3 paths, adam∈{500,1000})"
+        else:
+            profile = L3Profile(
+                name="quick_iter",
+                adam_steps=120,
+                lbfgs_iter=80,
+                n_batch_cap=48,
+                include_lapin=False,
+                lapin_only_if_d_le=0,
+                adam_grid=(120,),
+                parallel_seed_workers=1,
+                log_every_image=True,
+            )
+            paths = ("lasa_qterm_T1p_graph", "shard_oracle")
+            dim_list = (100,)
+            est = "~5-12 min/benchmark (12 clients, 2 seeds, 14×14, 2 paths)"
         return RunConfig(
             mode="quick",
             resize=14,
@@ -61,13 +80,13 @@ def get_run_config(*, research_round: int = 0) -> RunConfig:
             batch_size=4,
             n_epochs=5,
             seeds=(3, 7),
-            dim_g_list=(100,),
-            snapshot_paths=("lasa_qterm_T1p_graph", "shard_oracle"),
+            dim_g_list=dim_list,
+            snapshot_paths=paths,
             l3_profile=profile,
             shard_max_iter=80,
             partial_rows=6,
             grid_seed=3,
-            estimate_label="~5-12 min/benchmark (12 clients, 2 seeds, 14×14, 2 paths)",
+            estimate_label=est,
         )
     d = 28 * 28
     profile = L3Profile(
@@ -146,6 +165,12 @@ def patch_module_globals(mod, *, research_round: int = 0) -> RunConfig | None:
         mod.SNAPSHOT_PATHS = cfg.snapshot_paths
     if hasattr(mod, "PASS_MIN_SEEDS"):
         mod.PASS_MIN_SEEDS = min(2, len(cfg.seeds))
+    if hasattr(mod, "RESIZE"):
+        mod.RESIZE = cfg.resize
+    if hasattr(mod, "DIM_G_SWEEP"):
+        mod.DIM_G_SWEEP = tuple(cfg.dim_g_list)
+    if hasattr(mod, "GRID_DIM_G"):
+        mod.GRID_DIM_G = cfg.dim_g_list[0]
     return cfg
 
 

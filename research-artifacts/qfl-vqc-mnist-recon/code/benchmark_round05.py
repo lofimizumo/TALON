@@ -48,6 +48,7 @@ from l3_budget import (  # noqa: E402
     joli_profile,
     shard_n_batch_capped,
 )
+from run_monitor import StallWatchdog  # noqa: E402
 
 # Round-04 helpers (GARD-SPARSE oracle, SHARD R02, metrics)
 _r04_spec = importlib.util.spec_from_file_location(
@@ -142,10 +143,12 @@ def estimate_benchmark_seconds() -> tuple[float, dict]:
             profile.adam_steps,
             profile.n_batch_cap,
         )
-        dim_total = per_block * n_blocks
+        n_adam = len(profile.adam_grid)
+        dim_total = per_block * n_blocks * n_adam
         by_dim_g[str(dim_g)] = {
-            "estimate_joli_sec_per_seed_path": per_block,
+            "estimate_joli_sec_per_seed_path": per_block * n_adam,
             "estimate_joli_sec_dim_g": dim_total,
+            "adam_grid_len": n_adam,
         }
         total += dim_total
     return total, {
@@ -228,11 +231,14 @@ def run_l3(
     profile,
     tv_lbfgs: float,
     logger: logging.Logger,
+    adam_steps: int | None = None,
+    watchdog: StallWatchdog | None = None,
 ) -> np.ndarray:
     d = int(surrogate.W_enc.shape[1])
     dim_g = int(surrogate.dim_g)
     n_batch = shard_n_batch_capped(d, dim_g, profile.n_batch_cap)
     n = snapshots.shape[0]
+    steps = adam_steps if adam_steps is not None else profile.adam_steps
     out = np.empty((n, d), dtype=np.float64)
     for i in range(n):
         t_img = time.perf_counter()
@@ -240,22 +246,26 @@ def run_l3(
             snapshots[i],
             surrogate,
             n_batch=n_batch,
-            adam_steps=profile.adam_steps,
+            adam_steps=steps,
             lbfgs_iter=profile.lbfgs_iter,
             tv_adam=0.0,
             tv_lbfgs=tv_lbfgs,
             seed=42 + i,
             device=device,
         )
+        elapsed = time.perf_counter() - t_img
         if profile.log_every_image:
             logger.info(
-                "  %s image %d/%d n_batch=%d %.1fs",
+                "  %s adam=%d image %d/%d n_batch=%d %.1fs",
                 L3_INVERTER,
+                steps,
                 i + 1,
                 n,
                 n_batch,
-                time.perf_counter() - t_img,
+                elapsed,
             )
+        if watchdog is not None:
+            watchdog.on_image_done(i + 1, n, elapsed)
     return out
 
 
@@ -286,6 +296,7 @@ def run_single_seed(
     profile,
     tv_lbfgs: float,
     capture_grid: bool,
+    watchdog: StallWatchdog | None = None,
 ) -> dict:
     torch.manual_seed(seed)
     np.random.seed(seed)
@@ -383,73 +394,96 @@ def run_single_seed(
             "recovery_runtime_sec": snap_time,
         }
         path_out = {"snapshot_recovery": snap_metrics, "l3": {}}
-
-        logger.info(
-            "L3 start seed=%d dim_g=%d path=%s inv=%s (N=%d d=%d profile=%s)",
-            seed,
-            dim_g,
-            path,
-            L3_INVERTER,
-            s_rec.shape[0],
-            d,
-            profile.name,
-        )
-        t0 = time.perf_counter()
-        try:
-            x_rec = run_l3(
-                s_rec,
-                surrogate,
-                device,
-                profile=profile,
-                tv_lbfgs=tv_lbfgs,
-                logger=logger,
-            )
-            l3_time = time.perf_counter() - t0
-            metrics = evaluate_reconstruction(x_rec, x_true, s_rec, true_snapshots)
-            metrics["l3_runtime_sec"] = l3_time
-            metrics["tv_lbfgs"] = tv_lbfgs
-            metrics["adam_steps"] = profile.adam_steps
-            metrics["lbfgs_iter"] = profile.lbfgs_iter
-            metrics["n_batch"] = shard_n_batch_capped(d, dim_g, profile.n_batch_cap)
-            metrics["targets"] = meets_targets(metrics)
-            path_out["l3"][L3_INVERTER] = metrics
+        adam_grid = getattr(profile, "adam_grid", (profile.adam_steps,))
+        for adam_steps in adam_grid:
+            inv_key = f"{L3_INVERTER}__adam{adam_steps}"
             logger.info(
-                "seed=%d dim_g=%d %s %s snap=%.4f mse=%.4f psnr=%.2f pass=%s (L3 %.0fs)",
+                "L3 start seed=%d dim_g=%d path=%s inv=%s adam=%d (N=%d d=%d profile=%s)",
                 seed,
                 dim_g,
                 path,
                 L3_INVERTER,
-                metrics["snapshot_mse"],
-                metrics["input_mse"],
-                metrics["input_psnr_db"],
-                metrics["targets"]["both_ok"],
-                l3_time,
+                adam_steps,
+                s_rec.shape[0],
+                d,
+                profile.name,
             )
-            if capture_grid and path in GRID_PATHS:
-                out["grid_panels"].append(
-                    {
-                        "label": path,
-                        "x_true": x_true[:6].tolist(),
-                        "x_rec": x_rec[:6].tolist(),
-                        "image_shape": list(image_shape),
-                    }
+            if watchdog is not None:
+                watchdog.tick()
+            t0 = time.perf_counter()
+            try:
+                x_rec = run_l3(
+                    s_rec,
+                    surrogate,
+                    device,
+                    profile=profile,
+                    tv_lbfgs=tv_lbfgs,
+                    logger=logger,
+                    adam_steps=adam_steps,
+                    watchdog=watchdog,
                 )
-        except Exception as exc:
-            path_out["l3"][L3_INVERTER] = {"error": str(exc)}
-            logger.exception(
-                "L3 failed seed=%d dim_g=%d path=%s", seed, dim_g, path
-            )
+                l3_time = time.perf_counter() - t0
+                metrics = evaluate_reconstruction(x_rec, x_true, s_rec, true_snapshots)
+                metrics["l3_runtime_sec"] = l3_time
+                metrics["tv_lbfgs"] = tv_lbfgs
+                metrics["adam_steps"] = adam_steps
+                metrics["lbfgs_iter"] = profile.lbfgs_iter
+                metrics["n_batch"] = shard_n_batch_capped(d, dim_g, profile.n_batch_cap)
+                metrics["targets"] = meets_targets(metrics)
+                path_out["l3"][inv_key] = metrics
+                logger.info(
+                    "seed=%d dim_g=%d %s %s adam=%d snap=%.4f mse=%.4f psnr=%.2f pass=%s (L3 %.0fs)",
+                    seed,
+                    dim_g,
+                    path,
+                    L3_INVERTER,
+                    adam_steps,
+                    metrics["snapshot_mse"],
+                    metrics["input_mse"],
+                    metrics["input_psnr_db"],
+                    metrics["targets"]["both_ok"],
+                    l3_time,
+                )
+                if capture_grid and path in GRID_PATHS and adam_steps == adam_grid[-1]:
+                    out["grid_panels"].append(
+                        {
+                            "label": f"{path}__adam{adam_steps}",
+                            "x_true": x_true[:6].tolist(),
+                            "x_rec": x_rec[:6].tolist(),
+                            "image_shape": list(image_shape),
+                        }
+                    )
+            except Exception as exc:
+                path_out["l3"][inv_key] = {"error": str(exc)}
+                logger.exception(
+                    "L3 failed seed=%d dim_g=%d path=%s adam=%d",
+                    seed,
+                    dim_g,
+                    path,
+                    adam_steps,
+                )
 
         out["paths"][path] = path_out
 
     return out
 
 
+def _best_l3_row(path_l3: dict) -> dict | None:
+    """Pick lowest input_mse among adam variants."""
+    candidates = []
+    for key, l3 in path_l3.items():
+        if key.startswith(L3_INVERTER) and "error" not in l3 and "input_mse" in l3:
+            candidates.append(l3)
+    if not candidates:
+        return None
+    return min(candidates, key=lambda x: x["input_mse"])
+
+
 def aggregate_method(per_seed: list[dict], path: str) -> dict:
     rows = []
     for r in per_seed:
-        l3 = r["paths"][path]["l3"].get(L3_INVERTER, {})
-        if "error" not in l3 and "input_mse" in l3:
+        l3 = _best_l3_row(r["paths"][path]["l3"])
+        if l3 is not None:
             rows.append(l3)
     if not rows:
         return {"n_ok": 0}
@@ -467,16 +501,75 @@ def aggregate_method(per_seed: list[dict], path: str) -> dict:
     return out
 
 
+def _full_mode_estimate() -> dict:
+    """JOLI wall estimate for acceptance-grade 28×28 (not run in quick mode)."""
+    d = 28 * 28
+    dim_g = 160  # acceptance primary (independent of quick-patched GRID_DIM_G)
+    full_seeds = (3, 7, 11)
+    full_n = 32
+    full_paths = (
+        "lasa_qterm_T1p",
+        "gard_sparse_oracle",
+        "shard_oracle",
+    )
+    # mnist28_quality (see l3_budget.joli_profile when QFL_FULL=1)
+    adam_steps = 400
+    n_batch_cap = 128
+    n_blocks = len(full_seeds) * len(full_paths)
+    per_block = estimate_joli_seconds(d, dim_g, full_n, adam_steps, n_batch_cap)
+    total = per_block * n_blocks
+    return {
+        "profile": "mnist28_quality",
+        "resize": 28,
+        "dim_g": dim_g,
+        "adam_steps": adam_steps,
+        "n_batch_cap": n_batch_cap,
+        "n_samples": full_n,
+        "seeds": list(full_seeds),
+        "snapshot_paths": list(full_paths),
+        "estimate_joli_sec_total": total,
+        "estimate_hours": total / 3600.0,
+        "command": (
+            "QFL_QUICK=0 QFL_FULL=1 PYTHONPATH=/workspace/vendor:/workspace/code "
+            "python3 code/benchmark_round05.py"
+        ),
+    }
+
+
 def main() -> None:
+    from quick_config import is_quick_mode, patch_module_globals
+
     logger = setup_logging()
+    quick = is_quick_mode()
+    qcfg = patch_module_globals(sys.modules[__name__], research_round=RESEARCH_ROUND)
     device = pick_device()
     tv_lbfgs = load_r3_tv_lbfgs()
     d = RESIZE * RESIZE
     profile = joli_profile(d, research_round=RESEARCH_ROUND)
     est_total, est_detail = estimate_benchmark_seconds()
+    if qcfg is not None:
+        logger.info(
+            "QFL_QUICK Round-05: resize=%d seeds=%s dim_g=%s adam_grid=%s",
+            qcfg.resize,
+            qcfg.seeds,
+            qcfg.dim_g_list,
+            profile.adam_grid,
+        )
+    watchdog = StallWatchdog.from_env(
+        logger,
+        est_total,
+        label="round05",
+    )
+    n_adam = len(profile.adam_grid)
+    watchdog.set_expected_images(
+        len(SEEDS) * len(DIM_G_SWEEP) * len(SNAPSHOT_PATHS) * N_SAMPLES * n_adam
+    )
 
     logger.info(
-        "Round-05 MNIST 28×28 recon seeds=%s dim_g=%s device=%s",
+        "Round-05 MNIST %d×%d recon mode=%s seeds=%s dim_g=%s device=%s",
+        RESIZE,
+        RESIZE,
+        "quick" if quick else "full",
         SEEDS,
         DIM_G_SWEEP,
         device,
@@ -512,8 +605,10 @@ def main() -> None:
                     profile=profile,
                     tv_lbfgs=tv_lbfgs,
                     capture_grid=(seed == GRID_SEED and dim_g == GRID_DIM_G),
+                    watchdog=watchdog,
                 )
             )
+            watchdog.tick()
         per_seed_by_dim[dim_g] = per_seed
 
     wall_sec = time.perf_counter() - wall_start
@@ -571,12 +666,64 @@ def main() -> None:
             per_seed_json.append(rj)
 
     targets_met = len(accepting_all) > 0
+
+    per_seed_pass: list[dict] = []
+    for r in per_seed_json:
+        for path in SNAPSHOT_PATHS:
+            l3 = _best_l3_row(r["paths"][path]["l3"])
+            if l3 is None:
+                continue
+            per_seed_pass.append(
+                {
+                    "seed": r["seed"],
+                    "dim_g": r["dim_g"],
+                    "resize": r["resize"],
+                    "path": path,
+                    "adam_steps": l3.get("adam_steps"),
+                    "input_mse": l3["input_mse"],
+                    "input_psnr_db": l3["input_psnr_db"],
+                    "both_ok": l3.get("targets", {}).get("both_ok", False),
+                }
+            )
+
+    full_est = _full_mode_estimate() if quick else None
+    mnist_tracks = {
+        "primary_28x28": {
+            "resize": 28,
+            "dim_g_sweep": list(DIM_G_SWEEP) if not quick else [160],
+            "ran": not quick,
+            "skipped_reason": "QFL_QUICK" if quick else None,
+            "accepting_configs": accepting_all if not quick else [],
+        },
+        "quick_14x14": {
+            "resize": RESIZE if quick else None,
+            "ran": quick,
+            "dim_g_sweep": list(DIM_G_SWEEP) if quick else [],
+            "accepting_configs": accepting_all if quick else [],
+        },
+    }
+
     payload = {
         "benchmark": "round05_qfl_vqc_mnist_recon",
         "supervisor_review": False,
+        "run_env": {
+            "QFL_QUICK": os.environ.get("QFL_QUICK", "1"),
+            "QFL_FULL": os.environ.get("QFL_FULL", "0"),
+            "QFL_FULL_DIM_SWEEP": os.environ.get("QFL_FULL_DIM_SWEEP", "0"),
+            "mode": "quick" if quick else "full",
+            "resize": RESIZE,
+            "d": d,
+            "label": (
+                "14×14 smoke (adam sweep); not acceptance-grade"
+                if quick
+                else "28×28 acceptance track"
+            ),
+        },
         "method_name_stack": (
             "SurrogateQFL + T1p/GARD-SPARSE/SHARD snapshots + JOLI quality L3"
         ),
+        "mnist_tracks": mnist_tracks,
+        "full_28x28_runtime_estimate": full_est,
         "round05_focus": {
             "dim_g_sweep": list(DIM_G_SWEEP),
             "snapshot_paths": list(SNAPSHOT_PATHS),
@@ -615,6 +762,7 @@ def main() -> None:
             "pass_min_seeds_of_3": PASS_MIN_SEEDS,
         },
         "summary_by_dim_g": summary_by_dim,
+        "per_seed_pass_best_adam": per_seed_pass,
         "per_seed": per_seed_json,
         "accepting_configs": accepting_all,
         "targets_met_any_config": targets_met,

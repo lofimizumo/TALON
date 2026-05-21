@@ -1,0 +1,62 @@
+2026-05-21 07:43:30,140 INFO MODE=quick (~5-12 min/benchmark (12 clients, 2 seeds, 14×14, 2 paths)) resize=14 N=12 seeds=(3, 7) dim_g=(100,) paths=('lasa_qterm_T1p_graph', 'shard_oracle') est~32s
+2026-05-21 07:43:30,140 INFO Fast iteration ON. Full MNIST: QFL_QUICK=0 QFL_FULL=1
+2026-05-21 07:43:30,141 INFO === dim_g=100 resize=14 ===
+2026-05-21 07:43:30,219 INFO Level 1 mean recovery: E=5, D=100, system shape=(500, 100), rank=100
+2026-05-21 07:43:30,236 INFO L3 seed=3 path=lasa_qterm_T1p_graph adam=120 (N=12 d=196)
+2026-05-21 07:43:30,428 INFO   img 1/12 0.19s
+2026-05-21 07:43:30,522 INFO   img 2/12 0.09s
+2026-05-21 07:43:30,611 INFO   img 3/12 0.09s
+2026-05-21 07:43:30,704 INFO   img 4/12 0.09s
+2026-05-21 07:43:30,796 INFO   img 5/12 0.09s
+2026-05-21 07:43:30,887 INFO   img 6/12 0.09s
+2026-05-21 07:43:30,980 INFO   img 7/12 0.09s
+2026-05-21 07:43:31,066 INFO   img 8/12 0.09s
+2026-05-21 07:43:31,150 INFO   img 9/12 0.08s
+2026-05-21 07:43:31,240 INFO   img 10/12 0.09s
+2026-05-21 07:43:31,325 INFO   img 11/12 0.08s
+2026-05-21 07:43:31,409 INFO   img 12/12 0.08s
+2026-05-21 07:43:31,410 INFO seed=3 lasa_qterm_T1p_graph snap=0.0303 mse=0.1351 psnr=8.7 pass=False
+2026-05-21 07:43:31,533 INFO L3 seed=3 path=shard_oracle adam=120 (N=12 d=196)
+2026-05-21 07:43:31,623 INFO   img 1/12 0.09s
+2026-05-21 07:43:31,709 INFO   img 2/12 0.09s
+2026-05-21 07:43:31,794 INFO   img 3/12 0.08s
+2026-05-21 07:43:31,878 INFO   img 4/12 0.08s
+2026-05-21 07:43:31,963 INFO   img 5/12 0.08s
+2026-05-21 07:43:32,048 INFO   img 6/12 0.09s
+2026-05-21 07:43:32,133 INFO   img 7/12 0.08s
+2026-05-21 07:43:32,217 INFO   img 8/12 0.08s
+2026-05-21 07:43:32,302 INFO   img 9/12 0.08s
+2026-05-21 07:43:32,392 INFO   img 10/12 0.09s
+2026-05-21 07:43:32,483 INFO   img 11/12 0.09s
+2026-05-21 07:43:32,574 INFO   img 12/12 0.09s
+2026-05-21 07:43:32,574 INFO seed=3 shard_oracle snap=0.0479 mse=0.1498 psnr=8.2 pass=False
+2026-05-21 07:43:32,640 INFO Level 1 mean recovery: E=5, D=100, system shape=(500, 100), rank=100
+2026-05-21 07:43:32,655 INFO L3 seed=7 path=lasa_qterm_T1p_graph adam=120 (N=12 d=196)
+2026-05-21 07:43:32,856 INFO   img 1/12 0.20s
+2026-05-21 07:43:32,949 INFO   img 2/12 0.09s
+2026-05-21 07:43:33,049 INFO   img 3/12 0.10s
+2026-05-21 07:43:33,142 INFO   img 4/12 0.09s
+2026-05-21 07:43:33,235 INFO   img 5/12 0.09s
+2026-05-21 07:43:33,326 INFO   img 6/12 0.09s
+2026-05-21 07:43:33,416 INFO   img 7/12 0.09s
+2026-05-21 07:43:33,505 INFO   img 8/12 0.09s
+2026-05-21 07:43:33,592 INFO   img 9/12 0.09s
+2026-05-21 07:43:33,684 INFO   img 10/12 0.09s
+2026-05-21 07:43:33,773 INFO   img 11/12 0.09s
+2026-05-21 07:43:33,862 INFO   img 12/12 0.09s
+2026-05-21 07:43:33,863 INFO seed=7 lasa_qterm_T1p_graph snap=0.0110 mse=0.1093 psnr=9.6 pass=False
+2026-05-21 07:43:34,002 INFO L3 seed=7 path=shard_oracle adam=120 (N=12 d=196)
+2026-05-21 07:43:34,095 INFO   img 1/12 0.09s
+2026-05-21 07:43:34,182 INFO   img 2/12 0.09s
+2026-05-21 07:43:34,270 INFO   img 3/12 0.09s
+2026-05-21 07:43:34,354 INFO   img 4/12 0.08s
+2026-05-21 07:43:34,438 INFO   img 5/12 0.08s
+2026-05-21 07:43:34,524 INFO   img 6/12 0.09s
+2026-05-21 07:43:34,609 INFO   img 7/12 0.09s
+2026-05-21 07:43:34,693 INFO   img 8/12 0.08s
+2026-05-21 07:43:34,778 INFO   img 9/12 0.08s
+2026-05-21 07:43:34,863 INFO   img 10/12 0.08s
+2026-05-21 07:43:34,947 INFO   img 11/12 0.08s
+2026-05-21 07:43:35,031 INFO   img 12/12 0.08s
+2026-05-21 07:43:35,032 INFO seed=7 shard_oracle snap=0.0188 mse=0.1087 psnr=9.6 pass=False
+2026-05-21 07:43:35,032 INFO Wrote /workspace/research-artifacts/qfl-vqc-mnist-recon/artifacts/quick_metrics.json passes=0 runtime=4.9s

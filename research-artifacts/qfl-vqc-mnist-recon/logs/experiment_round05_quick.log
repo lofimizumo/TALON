@@ -1,0 +1,660 @@
+2026-05-21 08:02:55,443 INFO QFL_QUICK Round-05: resize=14 seeds=(3, 7) dim_g=(100, 160) adam_grid=(500, 1000)
+2026-05-21 08:02:55,443 INFO StallWatchdog[round05] expect ~288 L3 images est_total~234s heartbeat=600s
+2026-05-21 08:02:55,443 INFO Round-05 MNIST 28×28 recon seeds=[3, 7] dim_g=(100, 160) device=cpu
+2026-05-21 08:02:55,443 INFO L3 profile=quick_r5_l3_sweep adam=500 lbfgs=120 n_batch_cap=64 lapin=False parallel_workers=1 est_total_joli_sec~234 (~3.9 min)
+2026-05-21 08:02:55,443 INFO Runtime breakdown: {
+  "profile": "quick_r5_l3_sweep",
+  "adam_steps": 500,
+  "lbfgs_iter": 120,
+  "n_batch_cap": 64,
+  "include_lapin": false,
+  "n_images_per_l3": 12,
+  "n_seed_path_blocks_per_dim_g": 6,
+  "by_dim_g": {
+    "100": {
+      "estimate_joli_sec_per_seed_path": 15.0,
+      "estimate_joli_sec_dim_g": 90.0,
+      "adam_grid_len": 2
+    },
+    "160": {
+      "estimate_joli_sec_per_seed_path": 24.0,
+      "estimate_joli_sec_dim_g": 144.0,
+      "adam_grid_len": 2
+    }
+  },
+  "estimate_joli_sec_total": 234.0
+}
+2026-05-21 08:02:55,443 INFO Root-cause doc: paper/root_cause_l3_stall.md
+2026-05-21 08:02:55,443 INFO === dim_g=100 (sequential seeds) ===
+2026-05-21 08:02:55,550 INFO seed=3 dim_g=100 snapshot+L3 est_joli~22s (8s/path × 3 paths)
+2026-05-21 08:02:55,593 INFO L3 start seed=3 dim_g=100 path=lasa_qterm_T1p inv=joli_quality adam=500 (N=12 d=196 profile=quick_r5_l3_sweep)
+2026-05-21 08:02:55,928 INFO   joli_quality adam=500 image 1/12 n_batch=64 0.3s
+2026-05-21 08:02:55,929 INFO StallWatchdog progress 1/12 (0.33s/img) round05
+2026-05-21 08:02:56,161 INFO   joli_quality adam=500 image 2/12 n_batch=64 0.2s
+2026-05-21 08:02:56,161 INFO StallWatchdog progress 2/12 (0.23s/img) round05
+2026-05-21 08:02:56,390 INFO   joli_quality adam=500 image 3/12 n_batch=64 0.2s
+2026-05-21 08:02:56,390 INFO StallWatchdog progress 3/12 (0.23s/img) round05
+2026-05-21 08:02:56,632 INFO   joli_quality adam=500 image 4/12 n_batch=64 0.2s
+2026-05-21 08:02:56,632 INFO StallWatchdog progress 4/12 (0.24s/img) round05
+2026-05-21 08:02:56,878 INFO   joli_quality adam=500 image 5/12 n_batch=64 0.2s
+2026-05-21 08:02:56,879 INFO StallWatchdog progress 5/12 (0.25s/img) round05
+2026-05-21 08:02:57,121 INFO   joli_quality adam=500 image 6/12 n_batch=64 0.2s
+2026-05-21 08:02:57,125 INFO StallWatchdog progress 6/12 (0.24s/img) round05
+2026-05-21 08:02:57,372 INFO   joli_quality adam=500 image 7/12 n_batch=64 0.2s
+2026-05-21 08:02:57,373 INFO StallWatchdog progress 7/12 (0.25s/img) round05
+2026-05-21 08:02:57,612 INFO   joli_quality adam=500 image 8/12 n_batch=64 0.2s
+2026-05-21 08:02:57,612 INFO StallWatchdog progress 8/12 (0.24s/img) round05
+2026-05-21 08:02:57,849 INFO   joli_quality adam=500 image 9/12 n_batch=64 0.2s
+2026-05-21 08:02:57,849 INFO StallWatchdog progress 9/12 (0.24s/img) round05
+2026-05-21 08:02:58,083 INFO   joli_quality adam=500 image 10/12 n_batch=64 0.2s
+2026-05-21 08:02:58,083 INFO StallWatchdog progress 10/12 (0.23s/img) round05
+2026-05-21 08:02:58,319 INFO   joli_quality adam=500 image 11/12 n_batch=64 0.2s
+2026-05-21 08:02:58,322 INFO StallWatchdog progress 11/12 (0.24s/img) round05
+2026-05-21 08:02:58,559 INFO   joli_quality adam=500 image 12/12 n_batch=64 0.2s
+2026-05-21 08:02:58,559 INFO StallWatchdog progress 12/12 (0.24s/img) round05
+2026-05-21 08:02:58,560 INFO seed=3 dim_g=100 lasa_qterm_T1p joli_quality adam=500 snap=0.0674 mse=0.1495 psnr=8.25 pass=False (L3 3s)
+2026-05-21 08:02:58,560 INFO L3 start seed=3 dim_g=100 path=lasa_qterm_T1p inv=joli_quality adam=1000 (N=12 d=196 profile=quick_r5_l3_sweep)
+2026-05-21 08:02:58,917 INFO   joli_quality adam=1000 image 1/12 n_batch=64 0.4s
+2026-05-21 08:02:58,917 INFO StallWatchdog progress 1/12 (0.36s/img) round05
+2026-05-21 08:02:59,267 INFO   joli_quality adam=1000 image 2/12 n_batch=64 0.3s
+2026-05-21 08:02:59,267 INFO StallWatchdog progress 2/12 (0.35s/img) round05
+2026-05-21 08:02:59,609 INFO   joli_quality adam=1000 image 3/12 n_batch=64 0.3s
+2026-05-21 08:02:59,609 INFO StallWatchdog progress 3/12 (0.34s/img) round05
+2026-05-21 08:02:59,953 INFO   joli_quality adam=1000 image 4/12 n_batch=64 0.3s
+2026-05-21 08:02:59,953 INFO StallWatchdog progress 4/12 (0.34s/img) round05
+2026-05-21 08:03:00,304 INFO   joli_quality adam=1000 image 5/12 n_batch=64 0.4s
+2026-05-21 08:03:00,304 INFO StallWatchdog progress 5/12 (0.35s/img) round05
+2026-05-21 08:03:00,655 INFO   joli_quality adam=1000 image 6/12 n_batch=64 0.4s
+2026-05-21 08:03:00,655 INFO StallWatchdog progress 6/12 (0.35s/img) round05
+2026-05-21 08:03:01,011 INFO   joli_quality adam=1000 image 7/12 n_batch=64 0.4s
+2026-05-21 08:03:01,011 INFO StallWatchdog progress 7/12 (0.36s/img) round05
+2026-05-21 08:03:01,361 INFO   joli_quality adam=1000 image 8/12 n_batch=64 0.4s
+2026-05-21 08:03:01,361 INFO StallWatchdog progress 8/12 (0.35s/img) round05
+2026-05-21 08:03:01,718 INFO   joli_quality adam=1000 image 9/12 n_batch=64 0.4s
+2026-05-21 08:03:01,718 INFO StallWatchdog progress 9/12 (0.36s/img) round05
+2026-05-21 08:03:02,072 INFO   joli_quality adam=1000 image 10/12 n_batch=64 0.4s
+2026-05-21 08:03:02,072 INFO StallWatchdog progress 10/12 (0.35s/img) round05
+2026-05-21 08:03:02,422 INFO   joli_quality adam=1000 image 11/12 n_batch=64 0.4s
+2026-05-21 08:03:02,423 INFO StallWatchdog progress 11/12 (0.35s/img) round05
+2026-05-21 08:03:02,777 INFO   joli_quality adam=1000 image 12/12 n_batch=64 0.4s
+2026-05-21 08:03:02,777 INFO StallWatchdog progress 12/12 (0.35s/img) round05
+2026-05-21 08:03:02,777 INFO seed=3 dim_g=100 lasa_qterm_T1p joli_quality adam=1000 snap=0.0674 mse=0.1498 psnr=8.24 pass=False (L3 4s)
+2026-05-21 08:03:02,786 INFO L3 start seed=3 dim_g=100 path=gard_sparse_oracle inv=joli_quality adam=500 (N=12 d=196 profile=quick_r5_l3_sweep)
+2026-05-21 08:03:03,126 INFO   joli_quality adam=500 image 1/12 n_batch=64 0.3s
+2026-05-21 08:03:03,126 INFO StallWatchdog progress 1/12 (0.34s/img) round05
+2026-05-21 08:03:03,358 INFO   joli_quality adam=500 image 2/12 n_batch=64 0.2s
+2026-05-21 08:03:03,358 INFO StallWatchdog progress 2/12 (0.23s/img) round05
+2026-05-21 08:03:03,588 INFO   joli_quality adam=500 image 3/12 n_batch=64 0.2s
+2026-05-21 08:03:03,588 INFO StallWatchdog progress 3/12 (0.23s/img) round05
+2026-05-21 08:03:03,819 INFO   joli_quality adam=500 image 4/12 n_batch=64 0.2s
+2026-05-21 08:03:03,819 INFO StallWatchdog progress 4/12 (0.23s/img) round05
+2026-05-21 08:03:04,047 INFO   joli_quality adam=500 image 5/12 n_batch=64 0.2s
+2026-05-21 08:03:04,047 INFO StallWatchdog progress 5/12 (0.23s/img) round05
+2026-05-21 08:03:04,273 INFO   joli_quality adam=500 image 6/12 n_batch=64 0.2s
+2026-05-21 08:03:04,273 INFO StallWatchdog progress 6/12 (0.23s/img) round05
+2026-05-21 08:03:04,506 INFO   joli_quality adam=500 image 7/12 n_batch=64 0.2s
+2026-05-21 08:03:04,506 INFO StallWatchdog progress 7/12 (0.23s/img) round05
+2026-05-21 08:03:04,755 INFO   joli_quality adam=500 image 8/12 n_batch=64 0.2s
+2026-05-21 08:03:04,755 INFO StallWatchdog progress 8/12 (0.25s/img) round05
+2026-05-21 08:03:05,005 INFO   joli_quality adam=500 image 9/12 n_batch=64 0.2s
+2026-05-21 08:03:05,005 INFO StallWatchdog progress 9/12 (0.25s/img) round05
+2026-05-21 08:03:05,259 INFO   joli_quality adam=500 image 10/12 n_batch=64 0.3s
+2026-05-21 08:03:05,259 INFO StallWatchdog progress 10/12 (0.25s/img) round05
+2026-05-21 08:03:05,517 INFO   joli_quality adam=500 image 11/12 n_batch=64 0.3s
+2026-05-21 08:03:05,517 INFO StallWatchdog progress 11/12 (0.26s/img) round05
+2026-05-21 08:03:05,772 INFO   joli_quality adam=500 image 12/12 n_batch=64 0.3s
+2026-05-21 08:03:05,772 INFO StallWatchdog progress 12/12 (0.25s/img) round05
+2026-05-21 08:03:05,773 INFO seed=3 dim_g=100 gard_sparse_oracle joli_quality adam=500 snap=0.0142 mse=0.0687 psnr=11.63 pass=False (L3 3s)
+2026-05-21 08:03:05,773 INFO L3 start seed=3 dim_g=100 path=gard_sparse_oracle inv=joli_quality adam=1000 (N=12 d=196 profile=quick_r5_l3_sweep)
+2026-05-21 08:03:06,176 INFO   joli_quality adam=1000 image 1/12 n_batch=64 0.4s
+2026-05-21 08:03:06,176 INFO StallWatchdog progress 1/12 (0.40s/img) round05
+2026-05-21 08:03:06,570 INFO   joli_quality adam=1000 image 2/12 n_batch=64 0.4s
+2026-05-21 08:03:06,570 INFO StallWatchdog progress 2/12 (0.39s/img) round05
+2026-05-21 08:03:06,956 INFO   joli_quality adam=1000 image 3/12 n_batch=64 0.4s
+2026-05-21 08:03:06,956 INFO StallWatchdog progress 3/12 (0.39s/img) round05
+2026-05-21 08:03:07,356 INFO   joli_quality adam=1000 image 4/12 n_batch=64 0.4s
+2026-05-21 08:03:07,356 INFO StallWatchdog progress 4/12 (0.40s/img) round05
+2026-05-21 08:03:07,753 INFO   joli_quality adam=1000 image 5/12 n_batch=64 0.4s
+2026-05-21 08:03:07,754 INFO StallWatchdog progress 5/12 (0.40s/img) round05
+2026-05-21 08:03:08,149 INFO   joli_quality adam=1000 image 6/12 n_batch=64 0.4s
+2026-05-21 08:03:08,149 INFO StallWatchdog progress 6/12 (0.40s/img) round05
+2026-05-21 08:03:08,556 INFO   joli_quality adam=1000 image 7/12 n_batch=64 0.4s
+2026-05-21 08:03:08,556 INFO StallWatchdog progress 7/12 (0.41s/img) round05
+2026-05-21 08:03:08,949 INFO   joli_quality adam=1000 image 8/12 n_batch=64 0.4s
+2026-05-21 08:03:08,949 INFO StallWatchdog progress 8/12 (0.39s/img) round05
+2026-05-21 08:03:09,349 INFO   joli_quality adam=1000 image 9/12 n_batch=64 0.4s
+2026-05-21 08:03:09,349 INFO StallWatchdog progress 9/12 (0.40s/img) round05
+2026-05-21 08:03:09,739 INFO   joli_quality adam=1000 image 10/12 n_batch=64 0.4s
+2026-05-21 08:03:09,739 INFO StallWatchdog progress 10/12 (0.39s/img) round05
+2026-05-21 08:03:10,144 INFO   joli_quality adam=1000 image 11/12 n_batch=64 0.4s
+2026-05-21 08:03:10,145 INFO StallWatchdog progress 11/12 (0.41s/img) round05
+2026-05-21 08:03:10,536 INFO   joli_quality adam=1000 image 12/12 n_batch=64 0.4s
+2026-05-21 08:03:10,536 INFO StallWatchdog progress 12/12 (0.39s/img) round05
+2026-05-21 08:03:10,537 INFO seed=3 dim_g=100 gard_sparse_oracle joli_quality adam=1000 snap=0.0142 mse=0.0719 psnr=11.44 pass=False (L3 5s)
+2026-05-21 08:03:10,659 INFO L3 start seed=3 dim_g=100 path=shard_oracle inv=joli_quality adam=500 (N=12 d=196 profile=quick_r5_l3_sweep)
+2026-05-21 08:03:10,882 INFO   joli_quality adam=500 image 1/12 n_batch=64 0.2s
+2026-05-21 08:03:10,882 INFO StallWatchdog progress 1/12 (0.22s/img) round05
+2026-05-21 08:03:11,139 INFO   joli_quality adam=500 image 2/12 n_batch=64 0.3s
+2026-05-21 08:03:11,139 INFO StallWatchdog progress 2/12 (0.26s/img) round05
+2026-05-21 08:03:11,393 INFO   joli_quality adam=500 image 3/12 n_batch=64 0.3s
+2026-05-21 08:03:11,393 INFO StallWatchdog progress 3/12 (0.25s/img) round05
+2026-05-21 08:03:11,648 INFO   joli_quality adam=500 image 4/12 n_batch=64 0.3s
+2026-05-21 08:03:11,648 INFO StallWatchdog progress 4/12 (0.25s/img) round05
+2026-05-21 08:03:11,900 INFO   joli_quality adam=500 image 5/12 n_batch=64 0.3s
+2026-05-21 08:03:11,900 INFO StallWatchdog progress 5/12 (0.25s/img) round05
+2026-05-21 08:03:12,156 INFO   joli_quality adam=500 image 6/12 n_batch=64 0.3s
+2026-05-21 08:03:12,156 INFO StallWatchdog progress 6/12 (0.26s/img) round05
+2026-05-21 08:03:12,407 INFO   joli_quality adam=500 image 7/12 n_batch=64 0.3s
+2026-05-21 08:03:12,407 INFO StallWatchdog progress 7/12 (0.25s/img) round05
+2026-05-21 08:03:12,659 INFO   joli_quality adam=500 image 8/12 n_batch=64 0.3s
+2026-05-21 08:03:12,659 INFO StallWatchdog progress 8/12 (0.25s/img) round05
+2026-05-21 08:03:12,914 INFO   joli_quality adam=500 image 9/12 n_batch=64 0.3s
+2026-05-21 08:03:12,914 INFO StallWatchdog progress 9/12 (0.26s/img) round05
+2026-05-21 08:03:13,174 INFO   joli_quality adam=500 image 10/12 n_batch=64 0.3s
+2026-05-21 08:03:13,174 INFO StallWatchdog progress 10/12 (0.26s/img) round05
+2026-05-21 08:03:13,423 INFO   joli_quality adam=500 image 11/12 n_batch=64 0.2s
+2026-05-21 08:03:13,423 INFO StallWatchdog progress 11/12 (0.25s/img) round05
+2026-05-21 08:03:13,680 INFO   joli_quality adam=500 image 12/12 n_batch=64 0.3s
+2026-05-21 08:03:13,680 INFO StallWatchdog progress 12/12 (0.26s/img) round05
+2026-05-21 08:03:13,681 INFO seed=3 dim_g=100 shard_oracle joli_quality adam=500 snap=0.0479 mse=0.1337 psnr=8.74 pass=False (L3 3s)
+2026-05-21 08:03:13,681 INFO L3 start seed=3 dim_g=100 path=shard_oracle inv=joli_quality adam=1000 (N=12 d=196 profile=quick_r5_l3_sweep)
+2026-05-21 08:03:14,076 INFO   joli_quality adam=1000 image 1/12 n_batch=64 0.4s
+2026-05-21 08:03:14,076 INFO StallWatchdog progress 1/12 (0.39s/img) round05
+2026-05-21 08:03:14,480 INFO   joli_quality adam=1000 image 2/12 n_batch=64 0.4s
+2026-05-21 08:03:14,480 INFO StallWatchdog progress 2/12 (0.40s/img) round05
+2026-05-21 08:03:14,881 INFO   joli_quality adam=1000 image 3/12 n_batch=64 0.4s
+2026-05-21 08:03:14,881 INFO StallWatchdog progress 3/12 (0.40s/img) round05
+2026-05-21 08:03:15,271 INFO   joli_quality adam=1000 image 4/12 n_batch=64 0.4s
+2026-05-21 08:03:15,271 INFO StallWatchdog progress 4/12 (0.39s/img) round05
+2026-05-21 08:03:15,667 INFO   joli_quality adam=1000 image 5/12 n_batch=64 0.4s
+2026-05-21 08:03:15,667 INFO StallWatchdog progress 5/12 (0.40s/img) round05
+2026-05-21 08:03:16,066 INFO   joli_quality adam=1000 image 6/12 n_batch=64 0.4s
+2026-05-21 08:03:16,066 INFO StallWatchdog progress 6/12 (0.40s/img) round05
+2026-05-21 08:03:16,463 INFO   joli_quality adam=1000 image 7/12 n_batch=64 0.4s
+2026-05-21 08:03:16,464 INFO StallWatchdog progress 7/12 (0.40s/img) round05
+2026-05-21 08:03:16,858 INFO   joli_quality adam=1000 image 8/12 n_batch=64 0.4s
+2026-05-21 08:03:16,858 INFO StallWatchdog progress 8/12 (0.39s/img) round05
+2026-05-21 08:03:17,255 INFO   joli_quality adam=1000 image 9/12 n_batch=64 0.4s
+2026-05-21 08:03:17,255 INFO StallWatchdog progress 9/12 (0.40s/img) round05
+2026-05-21 08:03:17,654 INFO   joli_quality adam=1000 image 10/12 n_batch=64 0.4s
+2026-05-21 08:03:17,655 INFO StallWatchdog progress 10/12 (0.40s/img) round05
+2026-05-21 08:03:18,044 INFO   joli_quality adam=1000 image 11/12 n_batch=64 0.4s
+2026-05-21 08:03:18,044 INFO StallWatchdog progress 11/12 (0.39s/img) round05
+2026-05-21 08:03:18,429 INFO   joli_quality adam=1000 image 12/12 n_batch=64 0.4s
+2026-05-21 08:03:18,429 INFO StallWatchdog progress 12/12 (0.39s/img) round05
+2026-05-21 08:03:18,430 INFO seed=3 dim_g=100 shard_oracle joli_quality adam=1000 snap=0.0479 mse=0.1349 psnr=8.70 pass=False (L3 5s)
+2026-05-21 08:03:18,565 INFO seed=7 dim_g=100 snapshot+L3 est_joli~22s (8s/path × 3 paths)
+2026-05-21 08:03:18,613 INFO L3 start seed=7 dim_g=100 path=lasa_qterm_T1p inv=joli_quality adam=500 (N=12 d=196 profile=quick_r5_l3_sweep)
+2026-05-21 08:03:18,971 INFO   joli_quality adam=500 image 1/12 n_batch=64 0.4s
+2026-05-21 08:03:18,972 INFO StallWatchdog progress 1/12 (0.36s/img) round05
+2026-05-21 08:03:19,259 INFO   joli_quality adam=500 image 2/12 n_batch=64 0.3s
+2026-05-21 08:03:19,259 INFO StallWatchdog progress 2/12 (0.29s/img) round05
+2026-05-21 08:03:19,541 INFO   joli_quality adam=500 image 3/12 n_batch=64 0.3s
+2026-05-21 08:03:19,541 INFO StallWatchdog progress 3/12 (0.28s/img) round05
+2026-05-21 08:03:19,821 INFO   joli_quality adam=500 image 4/12 n_batch=64 0.3s
+2026-05-21 08:03:19,821 INFO StallWatchdog progress 4/12 (0.28s/img) round05
+2026-05-21 08:03:20,092 INFO   joli_quality adam=500 image 5/12 n_batch=64 0.3s
+2026-05-21 08:03:20,092 INFO StallWatchdog progress 5/12 (0.27s/img) round05
+2026-05-21 08:03:20,366 INFO   joli_quality adam=500 image 6/12 n_batch=64 0.3s
+2026-05-21 08:03:20,366 INFO StallWatchdog progress 6/12 (0.27s/img) round05
+2026-05-21 08:03:20,652 INFO   joli_quality adam=500 image 7/12 n_batch=64 0.3s
+2026-05-21 08:03:20,652 INFO StallWatchdog progress 7/12 (0.29s/img) round05
+2026-05-21 08:03:20,941 INFO   joli_quality adam=500 image 8/12 n_batch=64 0.3s
+2026-05-21 08:03:20,941 INFO StallWatchdog progress 8/12 (0.29s/img) round05
+2026-05-21 08:03:21,224 INFO   joli_quality adam=500 image 9/12 n_batch=64 0.3s
+2026-05-21 08:03:21,225 INFO StallWatchdog progress 9/12 (0.28s/img) round05
+2026-05-21 08:03:21,511 INFO   joli_quality adam=500 image 10/12 n_batch=64 0.3s
+2026-05-21 08:03:21,511 INFO StallWatchdog progress 10/12 (0.29s/img) round05
+2026-05-21 08:03:21,790 INFO   joli_quality adam=500 image 11/12 n_batch=64 0.3s
+2026-05-21 08:03:21,790 INFO StallWatchdog progress 11/12 (0.28s/img) round05
+2026-05-21 08:03:22,077 INFO   joli_quality adam=500 image 12/12 n_batch=64 0.3s
+2026-05-21 08:03:22,077 INFO StallWatchdog progress 12/12 (0.29s/img) round05
+2026-05-21 08:03:22,079 INFO seed=7 dim_g=100 lasa_qterm_T1p joli_quality adam=500 snap=0.0115 mse=0.0934 psnr=10.29 pass=False (L3 3s)
+2026-05-21 08:03:22,079 INFO L3 start seed=7 dim_g=100 path=lasa_qterm_T1p inv=joli_quality adam=1000 (N=12 d=196 profile=quick_r5_l3_sweep)
+2026-05-21 08:03:22,527 INFO   joli_quality adam=1000 image 1/12 n_batch=64 0.4s
+2026-05-21 08:03:22,528 INFO StallWatchdog progress 1/12 (0.45s/img) round05
+2026-05-21 08:03:22,957 INFO   joli_quality adam=1000 image 2/12 n_batch=64 0.4s
+2026-05-21 08:03:22,957 INFO StallWatchdog progress 2/12 (0.43s/img) round05
+2026-05-21 08:03:23,357 INFO   joli_quality adam=1000 image 3/12 n_batch=64 0.4s
+2026-05-21 08:03:23,358 INFO StallWatchdog progress 3/12 (0.40s/img) round05
+2026-05-21 08:03:23,797 INFO   joli_quality adam=1000 image 4/12 n_batch=64 0.4s
+2026-05-21 08:03:23,798 INFO StallWatchdog progress 4/12 (0.44s/img) round05
+2026-05-21 08:03:24,199 INFO   joli_quality adam=1000 image 5/12 n_batch=64 0.4s
+2026-05-21 08:03:24,199 INFO StallWatchdog progress 5/12 (0.40s/img) round05
+2026-05-21 08:03:24,606 INFO   joli_quality adam=1000 image 6/12 n_batch=64 0.4s
+2026-05-21 08:03:24,606 INFO StallWatchdog progress 6/12 (0.40s/img) round05
+2026-05-21 08:03:25,022 INFO   joli_quality adam=1000 image 7/12 n_batch=64 0.4s
+2026-05-21 08:03:25,022 INFO StallWatchdog progress 7/12 (0.42s/img) round05
+2026-05-21 08:03:25,421 INFO   joli_quality adam=1000 image 8/12 n_batch=64 0.4s
+2026-05-21 08:03:25,421 INFO StallWatchdog progress 8/12 (0.40s/img) round05
+2026-05-21 08:03:25,819 INFO   joli_quality adam=1000 image 9/12 n_batch=64 0.4s
+2026-05-21 08:03:25,820 INFO StallWatchdog progress 9/12 (0.40s/img) round05
+2026-05-21 08:03:26,245 INFO   joli_quality adam=1000 image 10/12 n_batch=64 0.4s
+2026-05-21 08:03:26,245 INFO StallWatchdog progress 10/12 (0.43s/img) round05
+2026-05-21 08:03:26,660 INFO   joli_quality adam=1000 image 11/12 n_batch=64 0.4s
+2026-05-21 08:03:26,660 INFO StallWatchdog progress 11/12 (0.41s/img) round05
+2026-05-21 08:03:27,075 INFO   joli_quality adam=1000 image 12/12 n_batch=64 0.4s
+2026-05-21 08:03:27,075 INFO StallWatchdog progress 12/12 (0.41s/img) round05
+2026-05-21 08:03:27,075 INFO seed=7 dim_g=100 lasa_qterm_T1p joli_quality adam=1000 snap=0.0115 mse=0.0792 psnr=11.01 pass=False (L3 5s)
+2026-05-21 08:03:27,088 INFO L3 start seed=7 dim_g=100 path=gard_sparse_oracle inv=joli_quality adam=500 (N=12 d=196 profile=quick_r5_l3_sweep)
+2026-05-21 08:03:27,451 INFO   joli_quality adam=500 image 1/12 n_batch=64 0.4s
+2026-05-21 08:03:27,454 INFO StallWatchdog progress 1/12 (0.36s/img) round05
+2026-05-21 08:03:27,700 INFO   joli_quality adam=500 image 2/12 n_batch=64 0.2s
+2026-05-21 08:03:27,700 INFO StallWatchdog progress 2/12 (0.25s/img) round05
+2026-05-21 08:03:27,944 INFO   joli_quality adam=500 image 3/12 n_batch=64 0.2s
+2026-05-21 08:03:27,945 INFO StallWatchdog progress 3/12 (0.24s/img) round05
+2026-05-21 08:03:28,194 INFO   joli_quality adam=500 image 4/12 n_batch=64 0.2s
+2026-05-21 08:03:28,195 INFO StallWatchdog progress 4/12 (0.25s/img) round05
+2026-05-21 08:03:28,445 INFO   joli_quality adam=500 image 5/12 n_batch=64 0.2s
+2026-05-21 08:03:28,446 INFO StallWatchdog progress 5/12 (0.25s/img) round05
+2026-05-21 08:03:28,697 INFO   joli_quality adam=500 image 6/12 n_batch=64 0.3s
+2026-05-21 08:03:28,697 INFO StallWatchdog progress 6/12 (0.25s/img) round05
+2026-05-21 08:03:28,962 INFO   joli_quality adam=500 image 7/12 n_batch=64 0.3s
+2026-05-21 08:03:28,962 INFO StallWatchdog progress 7/12 (0.26s/img) round05
+2026-05-21 08:03:29,219 INFO   joli_quality adam=500 image 8/12 n_batch=64 0.3s
+2026-05-21 08:03:29,219 INFO StallWatchdog progress 8/12 (0.26s/img) round05
+2026-05-21 08:03:29,483 INFO   joli_quality adam=500 image 9/12 n_batch=64 0.3s
+2026-05-21 08:03:29,483 INFO StallWatchdog progress 9/12 (0.26s/img) round05
+2026-05-21 08:03:29,749 INFO   joli_quality adam=500 image 10/12 n_batch=64 0.3s
+2026-05-21 08:03:29,749 INFO StallWatchdog progress 10/12 (0.27s/img) round05
+2026-05-21 08:03:30,008 INFO   joli_quality adam=500 image 11/12 n_batch=64 0.3s
+2026-05-21 08:03:30,008 INFO StallWatchdog progress 11/12 (0.26s/img) round05
+2026-05-21 08:03:30,267 INFO   joli_quality adam=500 image 12/12 n_batch=64 0.3s
+2026-05-21 08:03:30,267 INFO StallWatchdog progress 12/12 (0.26s/img) round05
+2026-05-21 08:03:30,268 INFO seed=7 dim_g=100 gard_sparse_oracle joli_quality adam=500 snap=0.0042 mse=0.0771 psnr=11.13 pass=False (L3 3s)
+2026-05-21 08:03:30,268 INFO L3 start seed=7 dim_g=100 path=gard_sparse_oracle inv=joli_quality adam=1000 (N=12 d=196 profile=quick_r5_l3_sweep)
+2026-05-21 08:03:30,683 INFO   joli_quality adam=1000 image 1/12 n_batch=64 0.4s
+2026-05-21 08:03:30,683 INFO StallWatchdog progress 1/12 (0.42s/img) round05
+2026-05-21 08:03:31,089 INFO   joli_quality adam=1000 image 2/12 n_batch=64 0.4s
+2026-05-21 08:03:31,089 INFO StallWatchdog progress 2/12 (0.41s/img) round05
+2026-05-21 08:03:31,495 INFO   joli_quality adam=1000 image 3/12 n_batch=64 0.4s
+2026-05-21 08:03:31,495 INFO StallWatchdog progress 3/12 (0.41s/img) round05
+2026-05-21 08:03:31,901 INFO   joli_quality adam=1000 image 4/12 n_batch=64 0.4s
+2026-05-21 08:03:31,901 INFO StallWatchdog progress 4/12 (0.41s/img) round05
+2026-05-21 08:03:32,311 INFO   joli_quality adam=1000 image 5/12 n_batch=64 0.4s
+2026-05-21 08:03:32,312 INFO StallWatchdog progress 5/12 (0.41s/img) round05
+2026-05-21 08:03:32,708 INFO   joli_quality adam=1000 image 6/12 n_batch=64 0.4s
+2026-05-21 08:03:32,708 INFO StallWatchdog progress 6/12 (0.40s/img) round05
+2026-05-21 08:03:33,119 INFO   joli_quality adam=1000 image 7/12 n_batch=64 0.4s
+2026-05-21 08:03:33,119 INFO StallWatchdog progress 7/12 (0.41s/img) round05
+2026-05-21 08:03:33,513 INFO   joli_quality adam=1000 image 8/12 n_batch=64 0.4s
+2026-05-21 08:03:33,513 INFO StallWatchdog progress 8/12 (0.39s/img) round05
+2026-05-21 08:03:33,909 INFO   joli_quality adam=1000 image 9/12 n_batch=64 0.4s
+2026-05-21 08:03:33,909 INFO StallWatchdog progress 9/12 (0.40s/img) round05
+2026-05-21 08:03:34,299 INFO   joli_quality adam=1000 image 10/12 n_batch=64 0.4s
+2026-05-21 08:03:34,300 INFO StallWatchdog progress 10/12 (0.39s/img) round05
+2026-05-21 08:03:34,691 INFO   joli_quality adam=1000 image 11/12 n_batch=64 0.4s
+2026-05-21 08:03:34,691 INFO StallWatchdog progress 11/12 (0.39s/img) round05
+2026-05-21 08:03:35,082 INFO   joli_quality adam=1000 image 12/12 n_batch=64 0.4s
+2026-05-21 08:03:35,083 INFO StallWatchdog progress 12/12 (0.39s/img) round05
+2026-05-21 08:03:35,083 INFO seed=7 dim_g=100 gard_sparse_oracle joli_quality adam=1000 snap=0.0042 mse=0.0614 psnr=12.12 pass=False (L3 5s)
+2026-05-21 08:03:35,220 INFO L3 start seed=7 dim_g=100 path=shard_oracle inv=joli_quality adam=500 (N=12 d=196 profile=quick_r5_l3_sweep)
+2026-05-21 08:03:35,478 INFO   joli_quality adam=500 image 1/12 n_batch=64 0.3s
+2026-05-21 08:03:35,478 INFO StallWatchdog progress 1/12 (0.26s/img) round05
+2026-05-21 08:03:35,735 INFO   joli_quality adam=500 image 2/12 n_batch=64 0.3s
+2026-05-21 08:03:35,735 INFO StallWatchdog progress 2/12 (0.26s/img) round05
+2026-05-21 08:03:35,992 INFO   joli_quality adam=500 image 3/12 n_batch=64 0.3s
+2026-05-21 08:03:35,992 INFO StallWatchdog progress 3/12 (0.26s/img) round05
+2026-05-21 08:03:36,252 INFO   joli_quality adam=500 image 4/12 n_batch=64 0.3s
+2026-05-21 08:03:36,252 INFO StallWatchdog progress 4/12 (0.26s/img) round05
+2026-05-21 08:03:36,507 INFO   joli_quality adam=500 image 5/12 n_batch=64 0.3s
+2026-05-21 08:03:36,507 INFO StallWatchdog progress 5/12 (0.25s/img) round05
+2026-05-21 08:03:36,764 INFO   joli_quality adam=500 image 6/12 n_batch=64 0.3s
+2026-05-21 08:03:36,764 INFO StallWatchdog progress 6/12 (0.26s/img) round05
+2026-05-21 08:03:37,022 INFO   joli_quality adam=500 image 7/12 n_batch=64 0.3s
+2026-05-21 08:03:37,022 INFO StallWatchdog progress 7/12 (0.26s/img) round05
+2026-05-21 08:03:37,281 INFO   joli_quality adam=500 image 8/12 n_batch=64 0.3s
+2026-05-21 08:03:37,281 INFO StallWatchdog progress 8/12 (0.26s/img) round05
+2026-05-21 08:03:37,540 INFO   joli_quality adam=500 image 9/12 n_batch=64 0.3s
+2026-05-21 08:03:37,540 INFO StallWatchdog progress 9/12 (0.26s/img) round05
+2026-05-21 08:03:37,795 INFO   joli_quality adam=500 image 10/12 n_batch=64 0.3s
+2026-05-21 08:03:37,795 INFO StallWatchdog progress 10/12 (0.25s/img) round05
+2026-05-21 08:03:38,055 INFO   joli_quality adam=500 image 11/12 n_batch=64 0.3s
+2026-05-21 08:03:38,055 INFO StallWatchdog progress 11/12 (0.26s/img) round05
+2026-05-21 08:03:38,285 INFO   joli_quality adam=500 image 12/12 n_batch=64 0.2s
+2026-05-21 08:03:38,285 INFO StallWatchdog progress 12/12 (0.23s/img) round05
+2026-05-21 08:03:38,285 INFO seed=7 dim_g=100 shard_oracle joli_quality adam=500 snap=0.0188 mse=0.0928 psnr=10.32 pass=False (L3 3s)
+2026-05-21 08:03:38,285 INFO L3 start seed=7 dim_g=100 path=shard_oracle inv=joli_quality adam=1000 (N=12 d=196 profile=quick_r5_l3_sweep)
+2026-05-21 08:03:38,640 INFO   joli_quality adam=1000 image 1/12 n_batch=64 0.4s
+2026-05-21 08:03:38,640 INFO StallWatchdog progress 1/12 (0.35s/img) round05
+2026-05-21 08:03:38,992 INFO   joli_quality adam=1000 image 2/12 n_batch=64 0.4s
+2026-05-21 08:03:38,992 INFO StallWatchdog progress 2/12 (0.35s/img) round05
+2026-05-21 08:03:39,340 INFO   joli_quality adam=1000 image 3/12 n_batch=64 0.3s
+2026-05-21 08:03:39,341 INFO StallWatchdog progress 3/12 (0.35s/img) round05
+2026-05-21 08:03:39,697 INFO   joli_quality adam=1000 image 4/12 n_batch=64 0.4s
+2026-05-21 08:03:39,697 INFO StallWatchdog progress 4/12 (0.36s/img) round05
+2026-05-21 08:03:40,045 INFO   joli_quality adam=1000 image 5/12 n_batch=64 0.3s
+2026-05-21 08:03:40,045 INFO StallWatchdog progress 5/12 (0.35s/img) round05
+2026-05-21 08:03:40,399 INFO   joli_quality adam=1000 image 6/12 n_batch=64 0.4s
+2026-05-21 08:03:40,399 INFO StallWatchdog progress 6/12 (0.35s/img) round05
+2026-05-21 08:03:40,755 INFO   joli_quality adam=1000 image 7/12 n_batch=64 0.4s
+2026-05-21 08:03:40,755 INFO StallWatchdog progress 7/12 (0.36s/img) round05
+2026-05-21 08:03:41,105 INFO   joli_quality adam=1000 image 8/12 n_batch=64 0.3s
+2026-05-21 08:03:41,105 INFO StallWatchdog progress 8/12 (0.35s/img) round05
+2026-05-21 08:03:41,488 INFO   joli_quality adam=1000 image 9/12 n_batch=64 0.4s
+2026-05-21 08:03:41,488 INFO StallWatchdog progress 9/12 (0.38s/img) round05
+2026-05-21 08:03:41,893 INFO   joli_quality adam=1000 image 10/12 n_batch=64 0.4s
+2026-05-21 08:03:41,893 INFO StallWatchdog progress 10/12 (0.40s/img) round05
+2026-05-21 08:03:42,288 INFO   joli_quality adam=1000 image 11/12 n_batch=64 0.4s
+2026-05-21 08:03:42,288 INFO StallWatchdog progress 11/12 (0.40s/img) round05
+2026-05-21 08:03:42,664 INFO   joli_quality adam=1000 image 12/12 n_batch=64 0.4s
+2026-05-21 08:03:42,665 INFO StallWatchdog progress 12/12 (0.38s/img) round05
+2026-05-21 08:03:42,665 INFO seed=7 dim_g=100 shard_oracle joli_quality adam=1000 snap=0.0188 mse=0.0890 psnr=10.51 pass=False (L3 4s)
+2026-05-21 08:03:42,666 INFO === dim_g=160 (sequential seeds) ===
+2026-05-21 08:03:42,967 INFO seed=3 dim_g=160 snapshot+L3 est_joli~36s (12s/path × 3 paths)
+2026-05-21 08:03:43,016 INFO L3 start seed=3 dim_g=160 path=lasa_qterm_T1p inv=joli_quality adam=500 (N=12 d=196 profile=quick_r5_l3_sweep)
+2026-05-21 08:03:43,347 INFO   joli_quality adam=500 image 1/12 n_batch=64 0.3s
+2026-05-21 08:03:43,347 INFO StallWatchdog progress 1/12 (0.33s/img) round05
+2026-05-21 08:03:43,612 INFO   joli_quality adam=500 image 2/12 n_batch=64 0.3s
+2026-05-21 08:03:43,612 INFO StallWatchdog progress 2/12 (0.27s/img) round05
+2026-05-21 08:03:43,878 INFO   joli_quality adam=500 image 3/12 n_batch=64 0.3s
+2026-05-21 08:03:43,878 INFO StallWatchdog progress 3/12 (0.27s/img) round05
+2026-05-21 08:03:44,143 INFO   joli_quality adam=500 image 4/12 n_batch=64 0.3s
+2026-05-21 08:03:44,143 INFO StallWatchdog progress 4/12 (0.27s/img) round05
+2026-05-21 08:03:44,408 INFO   joli_quality adam=500 image 5/12 n_batch=64 0.3s
+2026-05-21 08:03:44,409 INFO StallWatchdog progress 5/12 (0.27s/img) round05
+2026-05-21 08:03:44,680 INFO   joli_quality adam=500 image 6/12 n_batch=64 0.3s
+2026-05-21 08:03:44,680 INFO StallWatchdog progress 6/12 (0.27s/img) round05
+2026-05-21 08:03:44,947 INFO   joli_quality adam=500 image 7/12 n_batch=64 0.3s
+2026-05-21 08:03:44,947 INFO StallWatchdog progress 7/12 (0.27s/img) round05
+2026-05-21 08:03:45,210 INFO   joli_quality adam=500 image 8/12 n_batch=64 0.3s
+2026-05-21 08:03:45,210 INFO StallWatchdog progress 8/12 (0.26s/img) round05
+2026-05-21 08:03:45,480 INFO   joli_quality adam=500 image 9/12 n_batch=64 0.3s
+2026-05-21 08:03:45,480 INFO StallWatchdog progress 9/12 (0.27s/img) round05
+2026-05-21 08:03:45,746 INFO   joli_quality adam=500 image 10/12 n_batch=64 0.3s
+2026-05-21 08:03:45,746 INFO StallWatchdog progress 10/12 (0.27s/img) round05
+2026-05-21 08:03:46,015 INFO   joli_quality adam=500 image 11/12 n_batch=64 0.3s
+2026-05-21 08:03:46,015 INFO StallWatchdog progress 11/12 (0.27s/img) round05
+2026-05-21 08:03:46,291 INFO   joli_quality adam=500 image 12/12 n_batch=64 0.3s
+2026-05-21 08:03:46,291 INFO StallWatchdog progress 12/12 (0.28s/img) round05
+2026-05-21 08:03:46,292 INFO seed=3 dim_g=160 lasa_qterm_T1p joli_quality adam=500 snap=0.0163 mse=0.0564 psnr=12.48 pass=False (L3 3s)
+2026-05-21 08:03:46,292 INFO L3 start seed=3 dim_g=160 path=lasa_qterm_T1p inv=joli_quality adam=1000 (N=12 d=196 profile=quick_r5_l3_sweep)
+2026-05-21 08:03:46,734 INFO   joli_quality adam=1000 image 1/12 n_batch=64 0.4s
+2026-05-21 08:03:46,734 INFO StallWatchdog progress 1/12 (0.44s/img) round05
+2026-05-21 08:03:47,168 INFO   joli_quality adam=1000 image 2/12 n_batch=64 0.4s
+2026-05-21 08:03:47,168 INFO StallWatchdog progress 2/12 (0.43s/img) round05
+2026-05-21 08:03:47,615 INFO   joli_quality adam=1000 image 3/12 n_batch=64 0.4s
+2026-05-21 08:03:47,616 INFO StallWatchdog progress 3/12 (0.45s/img) round05
+2026-05-21 08:03:48,048 INFO   joli_quality adam=1000 image 4/12 n_batch=64 0.4s
+2026-05-21 08:03:48,049 INFO StallWatchdog progress 4/12 (0.43s/img) round05
+2026-05-21 08:03:48,491 INFO   joli_quality adam=1000 image 5/12 n_batch=64 0.4s
+2026-05-21 08:03:48,492 INFO StallWatchdog progress 5/12 (0.44s/img) round05
+2026-05-21 08:03:48,943 INFO   joli_quality adam=1000 image 6/12 n_batch=64 0.5s
+2026-05-21 08:03:48,943 INFO StallWatchdog progress 6/12 (0.45s/img) round05
+2026-05-21 08:03:49,377 INFO   joli_quality adam=1000 image 7/12 n_batch=64 0.4s
+2026-05-21 08:03:49,377 INFO StallWatchdog progress 7/12 (0.43s/img) round05
+2026-05-21 08:03:49,805 INFO   joli_quality adam=1000 image 8/12 n_batch=64 0.4s
+2026-05-21 08:03:49,806 INFO StallWatchdog progress 8/12 (0.43s/img) round05
+2026-05-21 08:03:50,277 INFO   joli_quality adam=1000 image 9/12 n_batch=64 0.5s
+2026-05-21 08:03:50,278 INFO StallWatchdog progress 9/12 (0.47s/img) round05
+2026-05-21 08:03:50,710 INFO   joli_quality adam=1000 image 10/12 n_batch=64 0.4s
+2026-05-21 08:03:50,711 INFO StallWatchdog progress 10/12 (0.43s/img) round05
+2026-05-21 08:03:51,169 INFO   joli_quality adam=1000 image 11/12 n_batch=64 0.5s
+2026-05-21 08:03:51,169 INFO StallWatchdog progress 11/12 (0.46s/img) round05
+2026-05-21 08:03:51,586 INFO   joli_quality adam=1000 image 12/12 n_batch=64 0.4s
+2026-05-21 08:03:51,587 INFO StallWatchdog progress 12/12 (0.42s/img) round05
+2026-05-21 08:03:51,588 INFO seed=3 dim_g=160 lasa_qterm_T1p joli_quality adam=1000 snap=0.0163 mse=0.0541 psnr=12.67 pass=False (L3 5s)
+2026-05-21 08:03:51,605 INFO L3 start seed=3 dim_g=160 path=gard_sparse_oracle inv=joli_quality adam=500 (N=12 d=196 profile=quick_r5_l3_sweep)
+2026-05-21 08:03:51,952 INFO   joli_quality adam=500 image 1/12 n_batch=64 0.3s
+2026-05-21 08:03:51,952 INFO StallWatchdog progress 1/12 (0.35s/img) round05
+2026-05-21 08:03:52,187 INFO   joli_quality adam=500 image 2/12 n_batch=64 0.2s
+2026-05-21 08:03:52,188 INFO StallWatchdog progress 2/12 (0.24s/img) round05
+2026-05-21 08:03:52,424 INFO   joli_quality adam=500 image 3/12 n_batch=64 0.2s
+2026-05-21 08:03:52,424 INFO StallWatchdog progress 3/12 (0.24s/img) round05
+2026-05-21 08:03:52,657 INFO   joli_quality adam=500 image 4/12 n_batch=64 0.2s
+2026-05-21 08:03:52,658 INFO StallWatchdog progress 4/12 (0.23s/img) round05
+2026-05-21 08:03:52,892 INFO   joli_quality adam=500 image 5/12 n_batch=64 0.2s
+2026-05-21 08:03:52,892 INFO StallWatchdog progress 5/12 (0.23s/img) round05
+2026-05-21 08:03:53,140 INFO   joli_quality adam=500 image 6/12 n_batch=64 0.2s
+2026-05-21 08:03:53,140 INFO StallWatchdog progress 6/12 (0.25s/img) round05
+2026-05-21 08:03:53,384 INFO   joli_quality adam=500 image 7/12 n_batch=64 0.2s
+2026-05-21 08:03:53,384 INFO StallWatchdog progress 7/12 (0.24s/img) round05
+2026-05-21 08:03:53,636 INFO   joli_quality adam=500 image 8/12 n_batch=64 0.3s
+2026-05-21 08:03:53,636 INFO StallWatchdog progress 8/12 (0.25s/img) round05
+2026-05-21 08:03:53,870 INFO   joli_quality adam=500 image 9/12 n_batch=64 0.2s
+2026-05-21 08:03:53,870 INFO StallWatchdog progress 9/12 (0.23s/img) round05
+2026-05-21 08:03:54,132 INFO   joli_quality adam=500 image 10/12 n_batch=64 0.3s
+2026-05-21 08:03:54,132 INFO StallWatchdog progress 10/12 (0.26s/img) round05
+2026-05-21 08:03:54,386 INFO   joli_quality adam=500 image 11/12 n_batch=64 0.3s
+2026-05-21 08:03:54,386 INFO StallWatchdog progress 11/12 (0.25s/img) round05
+2026-05-21 08:03:54,641 INFO   joli_quality adam=500 image 12/12 n_batch=64 0.3s
+2026-05-21 08:03:54,641 INFO StallWatchdog progress 12/12 (0.26s/img) round05
+2026-05-21 08:03:54,642 INFO seed=3 dim_g=160 gard_sparse_oracle joli_quality adam=500 snap=0.0030 mse=0.0406 psnr=13.91 pass=False (L3 3s)
+2026-05-21 08:03:54,642 INFO L3 start seed=3 dim_g=160 path=gard_sparse_oracle inv=joli_quality adam=1000 (N=12 d=196 profile=quick_r5_l3_sweep)
+2026-05-21 08:03:55,042 INFO   joli_quality adam=1000 image 1/12 n_batch=64 0.4s
+2026-05-21 08:03:55,043 INFO StallWatchdog progress 1/12 (0.40s/img) round05
+2026-05-21 08:03:55,450 INFO   joli_quality adam=1000 image 2/12 n_batch=64 0.4s
+2026-05-21 08:03:55,451 INFO StallWatchdog progress 2/12 (0.41s/img) round05
+2026-05-21 08:03:55,907 INFO   joli_quality adam=1000 image 3/12 n_batch=64 0.5s
+2026-05-21 08:03:55,907 INFO StallWatchdog progress 3/12 (0.46s/img) round05
+2026-05-21 08:03:56,341 INFO   joli_quality adam=1000 image 4/12 n_batch=64 0.4s
+2026-05-21 08:03:56,341 INFO StallWatchdog progress 4/12 (0.43s/img) round05
+2026-05-21 08:03:56,775 INFO   joli_quality adam=1000 image 5/12 n_batch=64 0.4s
+2026-05-21 08:03:56,775 INFO StallWatchdog progress 5/12 (0.43s/img) round05
+2026-05-21 08:03:57,202 INFO   joli_quality adam=1000 image 6/12 n_batch=64 0.4s
+2026-05-21 08:03:57,203 INFO StallWatchdog progress 6/12 (0.43s/img) round05
+2026-05-21 08:03:57,626 INFO   joli_quality adam=1000 image 7/12 n_batch=64 0.4s
+2026-05-21 08:03:57,626 INFO StallWatchdog progress 7/12 (0.42s/img) round05
+2026-05-21 08:03:58,049 INFO   joli_quality adam=1000 image 8/12 n_batch=64 0.4s
+2026-05-21 08:03:58,050 INFO StallWatchdog progress 8/12 (0.42s/img) round05
+2026-05-21 08:03:58,489 INFO   joli_quality adam=1000 image 9/12 n_batch=64 0.4s
+2026-05-21 08:03:58,490 INFO StallWatchdog progress 9/12 (0.44s/img) round05
+2026-05-21 08:03:58,933 INFO   joli_quality adam=1000 image 10/12 n_batch=64 0.4s
+2026-05-21 08:03:58,934 INFO StallWatchdog progress 10/12 (0.44s/img) round05
+2026-05-21 08:03:59,372 INFO   joli_quality adam=1000 image 11/12 n_batch=64 0.4s
+2026-05-21 08:03:59,373 INFO StallWatchdog progress 11/12 (0.44s/img) round05
+2026-05-21 08:03:59,795 INFO   joli_quality adam=1000 image 12/12 n_batch=64 0.4s
+2026-05-21 08:03:59,797 INFO StallWatchdog progress 12/12 (0.42s/img) round05
+2026-05-21 08:03:59,798 INFO seed=3 dim_g=160 gard_sparse_oracle joli_quality adam=1000 snap=0.0030 mse=0.0390 psnr=14.09 pass=False (L3 5s)
+2026-05-21 08:03:59,935 INFO L3 start seed=3 dim_g=160 path=shard_oracle inv=joli_quality adam=500 (N=12 d=196 profile=quick_r5_l3_sweep)
+2026-05-21 08:04:00,206 INFO   joli_quality adam=500 image 1/12 n_batch=64 0.3s
+2026-05-21 08:04:00,206 INFO StallWatchdog progress 1/12 (0.27s/img) round05
+2026-05-21 08:04:00,474 INFO   joli_quality adam=500 image 2/12 n_batch=64 0.3s
+2026-05-21 08:04:00,474 INFO StallWatchdog progress 2/12 (0.27s/img) round05
+2026-05-21 08:04:00,749 INFO   joli_quality adam=500 image 3/12 n_batch=64 0.3s
+2026-05-21 08:04:00,749 INFO StallWatchdog progress 3/12 (0.27s/img) round05
+2026-05-21 08:04:01,021 INFO   joli_quality adam=500 image 4/12 n_batch=64 0.3s
+2026-05-21 08:04:01,022 INFO StallWatchdog progress 4/12 (0.27s/img) round05
+2026-05-21 08:04:01,292 INFO   joli_quality adam=500 image 5/12 n_batch=64 0.3s
+2026-05-21 08:04:01,293 INFO StallWatchdog progress 5/12 (0.27s/img) round05
+2026-05-21 08:04:01,561 INFO   joli_quality adam=500 image 6/12 n_batch=64 0.3s
+2026-05-21 08:04:01,562 INFO StallWatchdog progress 6/12 (0.27s/img) round05
+2026-05-21 08:04:01,826 INFO   joli_quality adam=500 image 7/12 n_batch=64 0.3s
+2026-05-21 08:04:01,826 INFO StallWatchdog progress 7/12 (0.26s/img) round05
+2026-05-21 08:04:02,094 INFO   joli_quality adam=500 image 8/12 n_batch=64 0.3s
+2026-05-21 08:04:02,094 INFO StallWatchdog progress 8/12 (0.27s/img) round05
+2026-05-21 08:04:02,367 INFO   joli_quality adam=500 image 9/12 n_batch=64 0.3s
+2026-05-21 08:04:02,368 INFO StallWatchdog progress 9/12 (0.27s/img) round05
+2026-05-21 08:04:02,638 INFO   joli_quality adam=500 image 10/12 n_batch=64 0.3s
+2026-05-21 08:04:02,638 INFO StallWatchdog progress 10/12 (0.27s/img) round05
+2026-05-21 08:04:02,911 INFO   joli_quality adam=500 image 11/12 n_batch=64 0.3s
+2026-05-21 08:04:02,912 INFO StallWatchdog progress 11/12 (0.27s/img) round05
+2026-05-21 08:04:03,186 INFO   joli_quality adam=500 image 12/12 n_batch=64 0.3s
+2026-05-21 08:04:03,187 INFO StallWatchdog progress 12/12 (0.27s/img) round05
+2026-05-21 08:04:03,188 INFO seed=3 dim_g=160 shard_oracle joli_quality adam=500 snap=0.0287 mse=0.0871 psnr=10.60 pass=False (L3 3s)
+2026-05-21 08:04:03,188 INFO L3 start seed=3 dim_g=160 path=shard_oracle inv=joli_quality adam=1000 (N=12 d=196 profile=quick_r5_l3_sweep)
+2026-05-21 08:04:03,620 INFO   joli_quality adam=1000 image 1/12 n_batch=64 0.4s
+2026-05-21 08:04:03,621 INFO StallWatchdog progress 1/12 (0.43s/img) round05
+2026-05-21 08:04:04,045 INFO   joli_quality adam=1000 image 2/12 n_batch=64 0.4s
+2026-05-21 08:04:04,045 INFO StallWatchdog progress 2/12 (0.42s/img) round05
+2026-05-21 08:04:04,460 INFO   joli_quality adam=1000 image 3/12 n_batch=64 0.4s
+2026-05-21 08:04:04,461 INFO StallWatchdog progress 3/12 (0.42s/img) round05
+2026-05-21 08:04:04,877 INFO   joli_quality adam=1000 image 4/12 n_batch=64 0.4s
+2026-05-21 08:04:04,877 INFO StallWatchdog progress 4/12 (0.42s/img) round05
+2026-05-21 08:04:05,288 INFO   joli_quality adam=1000 image 5/12 n_batch=64 0.4s
+2026-05-21 08:04:05,288 INFO StallWatchdog progress 5/12 (0.41s/img) round05
+2026-05-21 08:04:05,702 INFO   joli_quality adam=1000 image 6/12 n_batch=64 0.4s
+2026-05-21 08:04:05,702 INFO StallWatchdog progress 6/12 (0.41s/img) round05
+2026-05-21 08:04:06,116 INFO   joli_quality adam=1000 image 7/12 n_batch=64 0.4s
+2026-05-21 08:04:06,116 INFO StallWatchdog progress 7/12 (0.41s/img) round05
+2026-05-21 08:04:06,527 INFO   joli_quality adam=1000 image 8/12 n_batch=64 0.4s
+2026-05-21 08:04:06,527 INFO StallWatchdog progress 8/12 (0.41s/img) round05
+2026-05-21 08:04:06,941 INFO   joli_quality adam=1000 image 9/12 n_batch=64 0.4s
+2026-05-21 08:04:06,941 INFO StallWatchdog progress 9/12 (0.41s/img) round05
+2026-05-21 08:04:07,361 INFO   joli_quality adam=1000 image 10/12 n_batch=64 0.4s
+2026-05-21 08:04:07,362 INFO StallWatchdog progress 10/12 (0.42s/img) round05
+2026-05-21 08:04:07,781 INFO   joli_quality adam=1000 image 11/12 n_batch=64 0.4s
+2026-05-21 08:04:07,781 INFO StallWatchdog progress 11/12 (0.42s/img) round05
+2026-05-21 08:04:08,206 INFO   joli_quality adam=1000 image 12/12 n_batch=64 0.4s
+2026-05-21 08:04:08,206 INFO StallWatchdog progress 12/12 (0.42s/img) round05
+2026-05-21 08:04:08,207 INFO seed=3 dim_g=160 shard_oracle joli_quality adam=1000 snap=0.0287 mse=0.0875 psnr=10.58 pass=False (L3 5s)
+2026-05-21 08:04:08,449 INFO seed=7 dim_g=160 snapshot+L3 est_joli~36s (12s/path × 3 paths)
+2026-05-21 08:04:08,497 INFO L3 start seed=7 dim_g=160 path=lasa_qterm_T1p inv=joli_quality adam=500 (N=12 d=196 profile=quick_r5_l3_sweep)
+2026-05-21 08:04:08,854 INFO   joli_quality adam=500 image 1/12 n_batch=64 0.4s
+2026-05-21 08:04:08,854 INFO StallWatchdog progress 1/12 (0.36s/img) round05
+2026-05-21 08:04:09,130 INFO   joli_quality adam=500 image 2/12 n_batch=64 0.3s
+2026-05-21 08:04:09,130 INFO StallWatchdog progress 2/12 (0.28s/img) round05
+2026-05-21 08:04:09,397 INFO   joli_quality adam=500 image 3/12 n_batch=64 0.3s
+2026-05-21 08:04:09,397 INFO StallWatchdog progress 3/12 (0.27s/img) round05
+2026-05-21 08:04:09,665 INFO   joli_quality adam=500 image 4/12 n_batch=64 0.3s
+2026-05-21 08:04:09,665 INFO StallWatchdog progress 4/12 (0.27s/img) round05
+2026-05-21 08:04:09,932 INFO   joli_quality adam=500 image 5/12 n_batch=64 0.3s
+2026-05-21 08:04:09,933 INFO StallWatchdog progress 5/12 (0.27s/img) round05
+2026-05-21 08:04:10,199 INFO   joli_quality adam=500 image 6/12 n_batch=64 0.3s
+2026-05-21 08:04:10,199 INFO StallWatchdog progress 6/12 (0.27s/img) round05
+2026-05-21 08:04:10,462 INFO   joli_quality adam=500 image 7/12 n_batch=64 0.3s
+2026-05-21 08:04:10,462 INFO StallWatchdog progress 7/12 (0.26s/img) round05
+2026-05-21 08:04:10,728 INFO   joli_quality adam=500 image 8/12 n_batch=64 0.3s
+2026-05-21 08:04:10,729 INFO StallWatchdog progress 8/12 (0.27s/img) round05
+2026-05-21 08:04:10,994 INFO   joli_quality adam=500 image 9/12 n_batch=64 0.3s
+2026-05-21 08:04:10,994 INFO StallWatchdog progress 9/12 (0.27s/img) round05
+2026-05-21 08:04:11,257 INFO   joli_quality adam=500 image 10/12 n_batch=64 0.3s
+2026-05-21 08:04:11,257 INFO StallWatchdog progress 10/12 (0.26s/img) round05
+2026-05-21 08:04:11,520 INFO   joli_quality adam=500 image 11/12 n_batch=64 0.3s
+2026-05-21 08:04:11,520 INFO StallWatchdog progress 11/12 (0.26s/img) round05
+2026-05-21 08:04:11,795 INFO   joli_quality adam=500 image 12/12 n_batch=64 0.3s
+2026-05-21 08:04:11,795 INFO StallWatchdog progress 12/12 (0.27s/img) round05
+2026-05-21 08:04:11,795 INFO seed=7 dim_g=160 lasa_qterm_T1p joli_quality adam=500 snap=0.0118 mse=0.0836 psnr=10.78 pass=False (L3 3s)
+2026-05-21 08:04:11,795 INFO L3 start seed=7 dim_g=160 path=lasa_qterm_T1p inv=joli_quality adam=1000 (N=12 d=196 profile=quick_r5_l3_sweep)
+2026-05-21 08:04:12,211 INFO   joli_quality adam=1000 image 1/12 n_batch=64 0.4s
+2026-05-21 08:04:12,212 INFO StallWatchdog progress 1/12 (0.42s/img) round05
+2026-05-21 08:04:12,633 INFO   joli_quality adam=1000 image 2/12 n_batch=64 0.4s
+2026-05-21 08:04:12,634 INFO StallWatchdog progress 2/12 (0.42s/img) round05
+2026-05-21 08:04:13,063 INFO   joli_quality adam=1000 image 3/12 n_batch=64 0.4s
+2026-05-21 08:04:13,063 INFO StallWatchdog progress 3/12 (0.43s/img) round05
+2026-05-21 08:04:13,480 INFO   joli_quality adam=1000 image 4/12 n_batch=64 0.4s
+2026-05-21 08:04:13,480 INFO StallWatchdog progress 4/12 (0.42s/img) round05
+2026-05-21 08:04:13,899 INFO   joli_quality adam=1000 image 5/12 n_batch=64 0.4s
+2026-05-21 08:04:13,899 INFO StallWatchdog progress 5/12 (0.42s/img) round05
+2026-05-21 08:04:14,340 INFO   joli_quality adam=1000 image 6/12 n_batch=64 0.4s
+2026-05-21 08:04:14,340 INFO StallWatchdog progress 6/12 (0.44s/img) round05
+2026-05-21 08:04:14,760 INFO   joli_quality adam=1000 image 7/12 n_batch=64 0.4s
+2026-05-21 08:04:14,760 INFO StallWatchdog progress 7/12 (0.42s/img) round05
+2026-05-21 08:04:15,187 INFO   joli_quality adam=1000 image 8/12 n_batch=64 0.4s
+2026-05-21 08:04:15,187 INFO StallWatchdog progress 8/12 (0.43s/img) round05
+2026-05-21 08:04:15,612 INFO   joli_quality adam=1000 image 9/12 n_batch=64 0.4s
+2026-05-21 08:04:15,612 INFO StallWatchdog progress 9/12 (0.43s/img) round05
+2026-05-21 08:04:16,033 INFO   joli_quality adam=1000 image 10/12 n_batch=64 0.4s
+2026-05-21 08:04:16,033 INFO StallWatchdog progress 10/12 (0.42s/img) round05
+2026-05-21 08:04:16,460 INFO   joli_quality adam=1000 image 11/12 n_batch=64 0.4s
+2026-05-21 08:04:16,461 INFO StallWatchdog progress 11/12 (0.43s/img) round05
+2026-05-21 08:04:16,886 INFO   joli_quality adam=1000 image 12/12 n_batch=64 0.4s
+2026-05-21 08:04:16,886 INFO StallWatchdog progress 12/12 (0.43s/img) round05
+2026-05-21 08:04:16,887 INFO seed=7 dim_g=160 lasa_qterm_T1p joli_quality adam=1000 snap=0.0118 mse=0.0777 psnr=11.09 pass=False (L3 5s)
+2026-05-21 08:04:16,907 INFO L3 start seed=7 dim_g=160 path=gard_sparse_oracle inv=joli_quality adam=500 (N=12 d=196 profile=quick_r5_l3_sweep)
+2026-05-21 08:04:17,278 INFO   joli_quality adam=500 image 1/12 n_batch=64 0.4s
+2026-05-21 08:04:17,278 INFO StallWatchdog progress 1/12 (0.37s/img) round05
+2026-05-21 08:04:17,538 INFO   joli_quality adam=500 image 2/12 n_batch=64 0.3s
+2026-05-21 08:04:17,538 INFO StallWatchdog progress 2/12 (0.26s/img) round05
+2026-05-21 08:04:17,799 INFO   joli_quality adam=500 image 3/12 n_batch=64 0.3s
+2026-05-21 08:04:17,799 INFO StallWatchdog progress 3/12 (0.26s/img) round05
+2026-05-21 08:04:18,063 INFO   joli_quality adam=500 image 4/12 n_batch=64 0.3s
+2026-05-21 08:04:18,063 INFO StallWatchdog progress 4/12 (0.26s/img) round05
+2026-05-21 08:04:18,325 INFO   joli_quality adam=500 image 5/12 n_batch=64 0.3s
+2026-05-21 08:04:18,325 INFO StallWatchdog progress 5/12 (0.26s/img) round05
+2026-05-21 08:04:18,587 INFO   joli_quality adam=500 image 6/12 n_batch=64 0.3s
+2026-05-21 08:04:18,587 INFO StallWatchdog progress 6/12 (0.26s/img) round05
+2026-05-21 08:04:18,847 INFO   joli_quality adam=500 image 7/12 n_batch=64 0.3s
+2026-05-21 08:04:18,847 INFO StallWatchdog progress 7/12 (0.26s/img) round05
+2026-05-21 08:04:19,105 INFO   joli_quality adam=500 image 8/12 n_batch=64 0.3s
+2026-05-21 08:04:19,106 INFO StallWatchdog progress 8/12 (0.26s/img) round05
+2026-05-21 08:04:19,371 INFO   joli_quality adam=500 image 9/12 n_batch=64 0.3s
+2026-05-21 08:04:19,371 INFO StallWatchdog progress 9/12 (0.27s/img) round05
+2026-05-21 08:04:19,631 INFO   joli_quality adam=500 image 10/12 n_batch=64 0.3s
+2026-05-21 08:04:19,632 INFO StallWatchdog progress 10/12 (0.26s/img) round05
+2026-05-21 08:04:19,889 INFO   joli_quality adam=500 image 11/12 n_batch=64 0.3s
+2026-05-21 08:04:19,889 INFO StallWatchdog progress 11/12 (0.26s/img) round05
+2026-05-21 08:04:20,143 INFO   joli_quality adam=500 image 12/12 n_batch=64 0.3s
+2026-05-21 08:04:20,143 INFO StallWatchdog progress 12/12 (0.25s/img) round05
+2026-05-21 08:04:20,144 INFO seed=7 dim_g=160 gard_sparse_oracle joli_quality adam=500 snap=0.0088 mse=0.0872 psnr=10.59 pass=False (L3 3s)
+2026-05-21 08:04:20,144 INFO L3 start seed=7 dim_g=160 path=gard_sparse_oracle inv=joli_quality adam=1000 (N=12 d=196 profile=quick_r5_l3_sweep)
+2026-05-21 08:04:20,550 INFO   joli_quality adam=1000 image 1/12 n_batch=64 0.4s
+2026-05-21 08:04:20,550 INFO StallWatchdog progress 1/12 (0.41s/img) round05
+2026-05-21 08:04:20,958 INFO   joli_quality adam=1000 image 2/12 n_batch=64 0.4s
+2026-05-21 08:04:20,959 INFO StallWatchdog progress 2/12 (0.41s/img) round05
+2026-05-21 08:04:21,364 INFO   joli_quality adam=1000 image 3/12 n_batch=64 0.4s
+2026-05-21 08:04:21,364 INFO StallWatchdog progress 3/12 (0.40s/img) round05
+2026-05-21 08:04:21,770 INFO   joli_quality adam=1000 image 4/12 n_batch=64 0.4s
+2026-05-21 08:04:21,770 INFO StallWatchdog progress 4/12 (0.41s/img) round05
+2026-05-21 08:04:22,174 INFO   joli_quality adam=1000 image 5/12 n_batch=64 0.4s
+2026-05-21 08:04:22,174 INFO StallWatchdog progress 5/12 (0.40s/img) round05
+2026-05-21 08:04:22,597 INFO   joli_quality adam=1000 image 6/12 n_batch=64 0.4s
+2026-05-21 08:04:22,597 INFO StallWatchdog progress 6/12 (0.42s/img) round05
+2026-05-21 08:04:23,017 INFO   joli_quality adam=1000 image 7/12 n_batch=64 0.4s
+2026-05-21 08:04:23,018 INFO StallWatchdog progress 7/12 (0.42s/img) round05
+2026-05-21 08:04:23,448 INFO   joli_quality adam=1000 image 8/12 n_batch=64 0.4s
+2026-05-21 08:04:23,448 INFO StallWatchdog progress 8/12 (0.43s/img) round05
+2026-05-21 08:04:23,867 INFO   joli_quality adam=1000 image 9/12 n_batch=64 0.4s
+2026-05-21 08:04:23,867 INFO StallWatchdog progress 9/12 (0.42s/img) round05
+2026-05-21 08:04:24,286 INFO   joli_quality adam=1000 image 10/12 n_batch=64 0.4s
+2026-05-21 08:04:24,286 INFO StallWatchdog progress 10/12 (0.42s/img) round05
+2026-05-21 08:04:24,706 INFO   joli_quality adam=1000 image 11/12 n_batch=64 0.4s
+2026-05-21 08:04:24,707 INFO StallWatchdog progress 11/12 (0.42s/img) round05
+2026-05-21 08:04:25,126 INFO   joli_quality adam=1000 image 12/12 n_batch=64 0.4s
+2026-05-21 08:04:25,126 INFO StallWatchdog progress 12/12 (0.42s/img) round05
+2026-05-21 08:04:25,127 INFO seed=7 dim_g=160 gard_sparse_oracle joli_quality adam=1000 snap=0.0088 mse=0.0839 psnr=10.76 pass=False (L3 5s)
+2026-05-21 08:04:25,302 INFO L3 start seed=7 dim_g=160 path=shard_oracle inv=joli_quality adam=500 (N=12 d=196 profile=quick_r5_l3_sweep)
+2026-05-21 08:04:25,577 INFO   joli_quality adam=500 image 1/12 n_batch=64 0.3s
+2026-05-21 08:04:25,578 INFO StallWatchdog progress 1/12 (0.28s/img) round05
+2026-05-21 08:04:25,839 INFO   joli_quality adam=500 image 2/12 n_batch=64 0.3s
+2026-05-21 08:04:25,839 INFO StallWatchdog progress 2/12 (0.26s/img) round05
+2026-05-21 08:04:26,100 INFO   joli_quality adam=500 image 3/12 n_batch=64 0.3s
+2026-05-21 08:04:26,100 INFO StallWatchdog progress 3/12 (0.26s/img) round05
+2026-05-21 08:04:26,369 INFO   joli_quality adam=500 image 4/12 n_batch=64 0.3s
+2026-05-21 08:04:26,369 INFO StallWatchdog progress 4/12 (0.27s/img) round05
+2026-05-21 08:04:26,640 INFO   joli_quality adam=500 image 5/12 n_batch=64 0.3s
+2026-05-21 08:04:26,640 INFO StallWatchdog progress 5/12 (0.27s/img) round05
+2026-05-21 08:04:26,904 INFO   joli_quality adam=500 image 6/12 n_batch=64 0.3s
+2026-05-21 08:04:26,904 INFO StallWatchdog progress 6/12 (0.26s/img) round05
+2026-05-21 08:04:27,169 INFO   joli_quality adam=500 image 7/12 n_batch=64 0.3s
+2026-05-21 08:04:27,169 INFO StallWatchdog progress 7/12 (0.26s/img) round05
+2026-05-21 08:04:27,437 INFO   joli_quality adam=500 image 8/12 n_batch=64 0.3s
+2026-05-21 08:04:27,437 INFO StallWatchdog progress 8/12 (0.27s/img) round05
+2026-05-21 08:04:27,701 INFO   joli_quality adam=500 image 9/12 n_batch=64 0.3s
+2026-05-21 08:04:27,701 INFO StallWatchdog progress 9/12 (0.26s/img) round05
+2026-05-21 08:04:27,967 INFO   joli_quality adam=500 image 10/12 n_batch=64 0.3s
+2026-05-21 08:04:27,967 INFO StallWatchdog progress 10/12 (0.27s/img) round05
+2026-05-21 08:04:28,234 INFO   joli_quality adam=500 image 11/12 n_batch=64 0.3s
+2026-05-21 08:04:28,234 INFO StallWatchdog progress 11/12 (0.27s/img) round05
+2026-05-21 08:04:28,504 INFO   joli_quality adam=500 image 12/12 n_batch=64 0.3s
+2026-05-21 08:04:28,504 INFO StallWatchdog progress 12/12 (0.27s/img) round05
+2026-05-21 08:04:28,504 INFO seed=7 dim_g=160 shard_oracle joli_quality adam=500 snap=0.0336 mse=0.1400 psnr=8.54 pass=False (L3 3s)
+2026-05-21 08:04:28,505 INFO L3 start seed=7 dim_g=160 path=shard_oracle inv=joli_quality adam=1000 (N=12 d=196 profile=quick_r5_l3_sweep)
+2026-05-21 08:04:28,934 INFO   joli_quality adam=1000 image 1/12 n_batch=64 0.4s
+2026-05-21 08:04:28,934 INFO StallWatchdog progress 1/12 (0.43s/img) round05
+2026-05-21 08:04:29,355 INFO   joli_quality adam=1000 image 2/12 n_batch=64 0.4s
+2026-05-21 08:04:29,355 INFO StallWatchdog progress 2/12 (0.42s/img) round05
+2026-05-21 08:04:29,771 INFO   joli_quality adam=1000 image 3/12 n_batch=64 0.4s
+2026-05-21 08:04:29,771 INFO StallWatchdog progress 3/12 (0.42s/img) round05
+2026-05-21 08:04:30,190 INFO   joli_quality adam=1000 image 4/12 n_batch=64 0.4s
+2026-05-21 08:04:30,190 INFO StallWatchdog progress 4/12 (0.42s/img) round05
+2026-05-21 08:04:30,612 INFO   joli_quality adam=1000 image 5/12 n_batch=64 0.4s
+2026-05-21 08:04:30,613 INFO StallWatchdog progress 5/12 (0.42s/img) round05
+2026-05-21 08:04:31,025 INFO   joli_quality adam=1000 image 6/12 n_batch=64 0.4s
+2026-05-21 08:04:31,026 INFO StallWatchdog progress 6/12 (0.41s/img) round05
+2026-05-21 08:04:31,444 INFO   joli_quality adam=1000 image 7/12 n_batch=64 0.4s
+2026-05-21 08:04:31,444 INFO StallWatchdog progress 7/12 (0.42s/img) round05
+2026-05-21 08:04:31,855 INFO   joli_quality adam=1000 image 8/12 n_batch=64 0.4s
+2026-05-21 08:04:31,855 INFO StallWatchdog progress 8/12 (0.41s/img) round05
+2026-05-21 08:04:32,279 INFO   joli_quality adam=1000 image 9/12 n_batch=64 0.4s
+2026-05-21 08:04:32,279 INFO StallWatchdog progress 9/12 (0.42s/img) round05
+2026-05-21 08:04:32,697 INFO   joli_quality adam=1000 image 10/12 n_batch=64 0.4s
+2026-05-21 08:04:32,697 INFO StallWatchdog progress 10/12 (0.42s/img) round05
+2026-05-21 08:04:33,108 INFO   joli_quality adam=1000 image 11/12 n_batch=64 0.4s
+2026-05-21 08:04:33,108 INFO StallWatchdog progress 11/12 (0.41s/img) round05
+2026-05-21 08:04:33,533 INFO   joli_quality adam=1000 image 12/12 n_batch=64 0.4s
+2026-05-21 08:04:33,533 INFO StallWatchdog progress 12/12 (0.42s/img) round05
+2026-05-21 08:04:33,534 INFO seed=7 dim_g=160 shard_oracle joli_quality adam=1000 snap=0.0336 mse=0.1365 psnr=8.65 pass=False (L3 5s)
+2026-05-21 08:04:33,979 INFO Wrote grid /workspace/research-artifacts/qfl-vqc-mnist-recon/artifacts/round05_recon_grid.png
+2026-05-21 08:04:33,980 INFO Wrote /workspace/research-artifacts/qfl-vqc-mnist-recon/artifacts/round05_metrics.json targets_met=False wall=98s est_joli~234s (~3.9 min)
+EXPECTED_RUNTIME_SEC=234 EXPECTED_RUNTIME_MIN=3.9 ACTUAL_WALL_SEC=98

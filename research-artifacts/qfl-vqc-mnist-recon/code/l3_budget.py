@@ -51,15 +51,15 @@ def joli_profile(d: int, *, research_round: int) -> L3Profile:
             log_every_image=True,
         )
     if research_round >= 5:
-        # Profiled ~50-90 s/image at d=784, dim_g=160, adam=250, n_batch=128 on CPU.
+        # Profiled ~50-90 s/image at d=784, dim_g=160, adam=400, n_batch=128 on CPU.
         return L3Profile(
             name="mnist28_quality",
-            adam_steps=250,
+            adam_steps=400,
             lbfgs_iter=200,
             n_batch_cap=128,
             include_lapin=False,
             lapin_only_if_d_le=128,
-            adam_grid=(250,),
+            adam_grid=(400,),
             parallel_seed_workers=1,
             log_every_image=True,
         )
